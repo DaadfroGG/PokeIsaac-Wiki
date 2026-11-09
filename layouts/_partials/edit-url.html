@@ -1,0 +1,3 @@
+{{- /* GitHub's editor for this page's file */ -}}
+{{- $u := "" }}{{ with .File }}{{ $u = printf "%s/edit/%s/content/%s/%s" site.Params.repo site.Params.branch $.Lang (.Path | strings.TrimPrefix "/") }}{{ end -}}
+{{- return $u -}}

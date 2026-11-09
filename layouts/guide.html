@@ -1,5 +1,6 @@
 {{ define "main" }}
 <h1 class="title">{{ .Title }}<span class="sub">{{ T "guide_sub" }}</span>{{ partial "status.html" . }}</h1>
+{{ partial "ai-band.html" . }}
 <div class="content guide"{{ with .Params.text_lang }} lang="{{ . }}"{{ end }}><p class="note">{{ T "guides_note" }}</p>
 {{ .Content }}
 <details class="navbox" open><summary data-hide="{{ T "hide" }}" data-show="{{ T "show" }}">{{ T "guides" }}</summary><table><tr><td>

@@ -158,3 +158,5 @@ ai_notice_title: ⚠ Ce wiki a été créé avec une IA
 ai_notice_p: 'Ses pages ont été écrites à l''aide d''outils d''IA et peuvent contenir des erreurs. Les pages marquées GÉNÉRÉ PAR IA n''ont pas encore été vérifiées par une personne ; celles marquées VÉRIFIÉ ont été contrôlées dans le jeu. Si vous jouez à PokéIsaac, vous pouvez aider : vérifiez une page, corrigez-la si besoin et marquez-la comme vérifiée (lien de modification en bas de chaque page).'
 ai_notice_count: '{{ .n }} pages vérifiées sur {{ .total }} pour l''instant.'
 footer_ai: 'Créé avec une IA : les informations peuvent être inexactes.'
+ai_band: 'Cet article a été écrit avec une IA et n''a pas encore été vérifié par une personne : il peut contenir des erreurs. Vous connaissez le jeu ? Vérifiez-le, corrigez ce qui est faux et marquez-le comme vérifié.'
+ai_band_btn: Modifier et vérifier

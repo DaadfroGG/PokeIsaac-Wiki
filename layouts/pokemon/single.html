@@ -20,6 +20,7 @@
     (dict "k" (T "g_speed") "v" $s.speed) (dict "k" (T "g_range") "v" $s.range) (dict "k" (T "g_shot") "v" $s.shot_speed) (dict "k" (T "g_luck") "v" (string ($s.luck | default 0))) -}}
 {{- $col := "#ffd23c" }}{{ with $p.types }}{{ with site.GetPage (printf "/types/%s" (index . 0)) }}{{ $col = .Params.color }}{{ end }}{{ end -}}
 <h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T "sub_pokemon" }}</span>{{ partial "status.html" . }}</h1>
+{{ partial "ai-band.html" . }}
 <div class="content">
 {{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $col "rows" $rows "sec" (T "h_stats") "rows2" $stats) }}
 <div class="body lead-first">{{ .Content }}</div>

@@ -27,6 +27,7 @@
 {{- else }}{{ $lead = printf "%s %s" $lead (T "lead_nopool") }}{{ end -}}
 
 <h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $p.kind) }}</span>{{ partial "status.html" . }}</h1>
+{{ partial "ai-band.html" . }}
 <div class="content">
 {{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $col "rows" $rows) }}
 <p class="lead">{{ $lead | safeHTML }}</p>

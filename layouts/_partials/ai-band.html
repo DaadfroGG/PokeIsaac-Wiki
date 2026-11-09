@@ -1,0 +1,4 @@
+{{- /* Under the title of an article nobody has verified yet: ask readers to check it and mark it verified. */ -}}
+{{- if not .Params.verified }}{{ with partial "edit-url.html" . }}
+<div class="ai-band"><p>{{ T "ai_band" }}</p><a class="ai-band-btn" href="{{ . }}">{{ T "ai_band_btn" }}</a></div>
+{{- end }}{{ end -}}

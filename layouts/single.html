@@ -8,6 +8,7 @@
 {{- with $p.dex }}{{ $rows = $rows | append (dict "k" (T "f_pokemon") "v" (printf "#%s" .)) }}{{ end -}}
 {{- $rows = $rows | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
 <h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $sec) }}</span>{{ partial "status.html" . }}</h1>
+{{ partial "ai-band.html" . }}
 <div class="content">
 {{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $p.color "rows" $rows) }}
 <div class="body lead-first">{{ .Content }}</div>
