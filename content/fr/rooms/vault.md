@@ -1,0 +1,50 @@
+---
+title: Entrepôt de la Team Rocket
+id: vault
+color: '#e8323e'
+labels:
+- text: SALON
+  color: '#e8323e'
+icon: icons/rooms/vault.png
+details:
+- label: Où
+  value: Porte avec un « R » rouge ; demande 2 clés. Apparaît dans ≈15 % des étages à partir du 3e.
+- label: Contenu
+  value: 5 coffres (6 dès l’étage 15), un ou deux dorés, et quelques pièces
+- label: Le voleur
+  value: 'Dans 1 entrepôt sur 5 : Miaouss se réveille au bout de 22 s'
+- label: Clés
+  value: '2'
+names:
+  en:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  es:
+    name: Almacén del Team Rocket
+    desc: 'Un almacén escondido del Team Rocket lleno de cofres (uno dorado seguro) y pilas de cajas. Un Meowth duerme en su cojín; a veces tiene el sueño ligero: se despierta, corre a por un cofre y huye con él. Dispárale tres veces y lo suelta.'
+  de:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  it:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  pt:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  ru:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  ja:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  ko:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  zh:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+  zt:
+    name: Team Rocket Warehouse
+    desc: 'A hidden Team Rocket warehouse full of chests (one golden for sure) and stacks of crates. A Meowth sleeps on its cushion; sometimes it’s a light sleeper: it wakes up, runs for a chest and escapes with it. Shoot it three times and it drops it.'
+---
+Un entrepôt caché de la Team Rocket plein de coffres (un doré à coup sûr) et de piles de caisses. Un Miaouss dort sur son coussin ; parfois il a le sommeil léger : il se réveille, court vers un coffre et s’enfuit avec. Tirez-lui dessus trois fois et il le lâche.

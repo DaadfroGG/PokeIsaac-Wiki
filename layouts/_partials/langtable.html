@@ -1,0 +1,13 @@
+{{- /* The game's names for this page in its other languages (front matter "names"). Links when the wiki has that language. */ -}}
+{{- $p := . -}}
+{{- with .Params.names -}}
+{{- $names := . -}}
+<h2>{{ T "h_langs" }}</h2>
+<div class="table-wrap"><table class="wikitable"><thead><tr><th>{{ T "col_language" }}</th><th>{{ T "col_name" }}</th><th>{{ T "col_description" }}</th></tr></thead><tbody>
+{{- range hugo.Data.languages }}{{ $l := . }}{{ with index $names $l.code }}{{ $n := . }}
+<tr><td>{{ $l.name }}</td><td lang="{{ $l.html }}">
+{{- with where $p.Translations "Lang" $l.code }}<a href="{{ (index . 0).RelPermalink }}">{{ $n.name }}</a>{{ else }}{{ $n.name }}{{ end -}}
+</td><td class="desc" lang="{{ $l.html }}">{{ $n.desc }}</td></tr>
+{{- end }}{{ end }}
+</tbody></table></div>
+{{- end -}}

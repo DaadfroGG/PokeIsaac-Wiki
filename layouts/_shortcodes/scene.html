@@ -1,0 +1,3 @@
+{{- /* A screenshot from static/assets/scenes/: {{< scene src="arena-bosque.webp" caption="…" >}} */ -}}
+{{- $root := partial "root.html" . -}}
+<figure class="scene"><img src="{{ $root }}assets/scenes/{{ .Get "src" }}" width="384" height="216" alt="{{ .Get "caption" }}" loading="lazy"><figcaption>{{ .Get "caption" }}</figcaption></figure>

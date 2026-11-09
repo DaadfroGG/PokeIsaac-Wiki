@@ -1,0 +1,31 @@
+# Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
+core:
+  en: Core
+  fr: Base
+plate:
+  en: Plate
+  fr: Plaque
+weapon:
+  en: Weapon
+  fr: Arme
+module:
+  en: Module
+  fr: Module
+defense:
+  en: Defense
+  fr: Défense
+familiar:
+  en: Companion
+  fr: Compagnon
+supersecret:
+  en: Super secret
+  fr: Super secret
+cursed:
+  en: Cursed
+  fr: Maudit
+cosmic:
+  en: Cosmic
+  fr: Cosmique
+ability:
+  en: Ability
+  fr: Talent

@@ -1,0 +1,37 @@
+# Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
+- key: treasure
+  color: '#ffd23c'
+  en: Treasure room
+  fr: Salle au trésor
+- key: boss
+  color: '#ff5a5a'
+  en: After beating a boss
+  fr: Après avoir vaincu un boss
+- key: shop
+  color: '#6fdc5a'
+  en: Shop
+  fr: Boutique
+- key: devil
+  color: '#a070ff'
+  en: Distortion Room (deal)
+  fr: Salle Distorsion (pacte)
+- key: angel
+  color: '#bfe6ff'
+  en: Celestial Room (wish)
+  fr: Salle Céleste (vœu)
+- key: secret
+  color: '#9a9aa6'
+  en: Secret room (Kecleon or altar)
+  fr: Salle secrète (Kecleon ou autel)
+- key: supersecret
+  color: '#c8c4d8'
+  en: Super secret room (Halloween)
+  fr: Salle super secrète (Halloween)
+- key: cursed
+  color: '#c0506e'
+  en: Gengar's room (curse)
+  fr: Salle d'Ectoplasma (malédiction)
+- key: cosmic
+  color: '#8ec8ff'
+  en: Observatory
+  fr: Observatoire

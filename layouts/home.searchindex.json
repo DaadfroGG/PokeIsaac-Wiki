@@ -1,0 +1,11 @@
+{{- /* search.json for wiki.js: t title, a other names, u path below /<lang>/, k section, i icon, c section name */ -}}
+{{- $root := partial "root.html" . -}}
+{{- $base := printf "%s%s/" $root .Lang -}}
+{{- $out := slice -}}
+{{- range site.RegularPages -}}
+{{- $p := .Params -}}
+{{- $a := slice }}{{ range slice $p.id $p.dex }}{{ with . }}{{ $a = $a | append (string .) }}{{ end }}{{ end -}}
+{{- with $p.names }}{{ range slice "en" "es" }}{{ with index $p.names . }}{{ $a = $a | append .name }}{{ end }}{{ end }}{{ end -}}
+{{- $out = $out | append (dict "t" .Title "a" (delimit (uniq $a) " ") "u" (strings.TrimPrefix $base .RelPermalink) "k" .Section "i" (printf "assets/%s" ($p.icon | default "unknown.svg")) "c" (T (printf "sec_%s" .Section))) -}}
+{{- end -}}
+{{- $out | jsonify -}}

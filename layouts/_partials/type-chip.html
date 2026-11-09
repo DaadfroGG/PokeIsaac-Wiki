@@ -1,0 +1,4 @@
+{{- /* a type id ("fire") as a chip linking to its type page */ -}}
+{{- with site.GetPage (printf "/types/%s" .) -}}
+{{ partial "chip.html" (dict "text" .Title "color" (.Params.color | default "#9a9aa6") "href" .RelPermalink) }}
+{{- end -}}

@@ -1,0 +1,56 @@
+---
+title: Charjabug
+id: charjabug
+dex: '0737'
+types:
+- bug
+- electric
+rarity: rare
+region: alola
+how: gacha
+icon: portrait/0737/Normal.png
+stats:
+  hp: 8
+  damage: '4.1'
+  fire_rate: '4.6'
+  speed: '4.3'
+  range: '308'
+  shot_speed: '9.0'
+  luck: 0
+evolves_from:
+- grubbin
+evolves_to:
+- vikavolt
+names:
+  es:
+    name: Charjabug
+    desc: Dispara más deprisa. Sus rayos pueden encadenarse entre enemigos. (los disparos alternan los dos tipos)
+  fr:
+    name: Chrysapile
+    desc: Tire plus vite. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (les tirs alternent entre les deux types)
+  de:
+    name: Akkup
+    desc: Schießt schneller. Seine Blitze können sich zwischen Gegnern verketten. (die Schüsse wechseln zwischen beiden Typen)
+  it:
+    name: Charjabug
+    desc: Spara più velocemente. I suoi fulmini possono propagarsi a catena tra i nemici. (i tiri alternano i due tipi)
+  pt:
+    name: Charjabug
+    desc: Atira mais rápido. Os raios dele podem se encadear entre inimigos. (os tiros alternam os dois tipos)
+  ru:
+    name: Charjabug
+    desc: Стреляет чаще. Его молнии могут перескакивать между врагами. (выстрелы чередуют оба типа)
+  ja:
+    name: デンヂムシ
+    desc: より速く撃つ。 その雷は敵同士で連鎖することがある。 (ショットが2つのタイプを交互に撃つ)
+  ko:
+    name: 전지충이
+    desc: 더 빠르게 쏜다. 번개가 적 사이를 연쇄할 수 있다. (탄이 두 타입을 번갈아 쓴다)
+  zh:
+    name: 虫电宝
+    desc: 射得更快。 它的闪电可在敌人之间连锁。 (弹会交替使用两种属性)
+  zt:
+    name: 蟲電寶
+    desc: 射擊更快。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
+---
+Fires faster. Its lightning can chain between enemies. (shots alternate between the two types)

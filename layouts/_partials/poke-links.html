@@ -1,0 +1,4 @@
+{{- /* dict "ids" (Pokémon page ids) "here" (page, optional) */ -}}
+{{- $here := .here -}}
+{{- range .ids }}{{ with site.GetPage (printf "/pokemon/%s" .) }}<a{{ if eq . $here }} class="self"{{ end }} href="{{ .RelPermalink }}">{{ partial "img.html" (dict "icon" .Params.icon) }}{{ .Title }}</a>
+{{ end }}{{ end -}}

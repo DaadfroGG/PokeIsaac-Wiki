@@ -1,0 +1,47 @@
+# PokéIsaac Wiki. Pages live in content/<lang>/, layouts in layouts/, images and styles in static/assets/.
+# Local preview: hugo server   ·   Build: hugo --minify (output in public/)
+baseURL = "http://localhost:1313/"
+title = "PokéIsaac Wiki"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+disableDefaultLanguageRedirect = true
+uglyURLs = true
+summaryLength = 1
+enableRobotsTXT = false
+disableKinds = ["taxonomy", "term", "rss", "sitemap"]
+
+[taxonomies]
+
+[params]
+repo = "https://github.com/DaadfroGG/PokeIsaac-Wiki"
+branch = "main"
+build = "1.1.1-108d03b1"   # the game build the pages describe
+
+[languages.en]
+contentDir = "content/en"
+label = "English"
+weight = 1
+[languages.fr]
+contentDir = "content/fr"
+label = "Français"
+weight = 2
+
+[markup.goldmark.renderer]
+unsafe = true   # pages may use a little HTML (notes, images with a size)
+
+[outputFormats.SearchIndex]
+mediaType = "application/json"
+baseName = "search"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["html", "SearchIndex"]
+section = ["html"]
+page = ["html"]
+
+[markup.goldmark.extensions.typographer]
+disable = true   # keep quotes and "..." as written
+
+[markup.highlight]
+codeFences = false   # code blocks stay plain, in the wiki's colours

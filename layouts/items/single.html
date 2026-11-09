@@ -1,0 +1,41 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+{{- $idx := .Parent.RelPermalink -}}
+{{- $cats := partialCached "lookup.html" "categories" "categories" -}}
+{{- $pools := partialCached "lookup.html" "pools" "pools" -}}
+{{- $col := "#ffd23c" }}{{ with $p.category }}{{ with index $cats . }}{{ $col = .color }}{{ end }}{{ end -}}
+{{- $floor := index hugo.Data.tiers.floor (int $p.tier) | default "?" -}}
+{{- $famname := $p.family }}{{ with index hugo.Data.families $p.family }}{{ $famname = index . $.Lang | default $p.family }}{{ end -}}
+
+{{- $rows := slice (dict "k" (T "f_type") "v" (partial "chip.html" (dict "text" (T (printf "kind_%s" $p.kind)) "color" "#e8e8f0" "href" (printf "%s?kind=%s" $idx $p.kind)))) -}}
+{{- with $p.category }}{{ $rows = $rows | append (dict "k" (T "f_category") "v" (partial "chip.html" (dict "text" (T (printf "cat_%s" .)) "color" $col "href" (printf "%s?cat=%s" $idx .)))) }}{{ end -}}
+{{- $rows = $rows | append (dict "k" (T "f_family") "v" (printf `<a href="%s?family=%s">%s</a>` $idx $p.family (htmlEscape $famname))) -}}
+{{- $rows = $rows | append (dict "k" (T "f_tier") "v" (printf "%s&nbsp; %s" (partial "tier.html" $p.tier) (htmlEscape (T "tier_floor" (dict "tier" $p.tier "floor" $floor))))) -}}
+{{- $chips := slice }}{{ range $p.pools }}{{ $c := index $pools . }}{{ $chips = $chips | append (partial "chip.html" (dict "text" (index $c $.Lang) "color" $c.color "href" (printf "%s?pool=%s" $idx .))) }}{{ end -}}
+{{- $rows = $rows | append (dict "k" (T "f_pools") "v" (cond (gt (len $chips) 0) (delimit $chips " ") (printf `<span class="note">%s</span>` (T "none")))) -}}
+{{- if isset $p "pool_weight" }}{{ $rows = $rows | append (dict "k" (T "f_weight") "v" (string $p.pool_weight)) }}{{ end -}}
+{{- if isset $p "charge" }}{{ $rows = $rows | append (dict "k" (T "f_charge") "v" (string $p.charge)) }}{{ end -}}
+{{- with $p.stats }}{{ $s := slice }}{{ range . }}{{ $s = $s | append (printf `<span style="color:%s">%s</span>` (cond .good "#9be58c" "#ff8a8a") (htmlEscape .text)) }}{{ end }}{{ $rows = $rows | append (dict "k" (T "f_stats") "v" (delimit $s "<br>")) }}{{ end -}}
+{{- $rows = $rows | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
+
+{{- $b := printf "<b>%s</b>" (htmlEscape .Title) -}}
+{{- $lead := "" -}}
+{{- if eq $p.kind "active" }}{{ $lead = T "lead_active" (dict "name" $b) }}
+{{- else }}{{ $lead = T "lead_passive" (dict "name" $b "cat" (printf `<a href="%s?cat=%s">%s</a>` $idx $p.category (T (printf "cat_%s" (string $p.category))))) }}{{ end -}}
+{{- if $p.pools }}{{ $names := slice }}{{ range $p.pools }}{{ $names = $names | append (index (index $pools .) $.Lang) }}{{ end }}
+{{- $lead = printf "%s %s" $lead (T "lead_pools" (dict "floor" $floor "tier" $p.tier "pools" (delimit $names ", "))) }}
+{{- else }}{{ $lead = printf "%s %s" $lead (T "lead_nopool") }}{{ end -}}
+
+<h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $p.kind) }}</span></h1>
+<div class="content">
+{{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $col "rows" $rows) }}
+<p class="lead">{{ $lead | safeHTML }}</p>
+<h2>{{ T "h_effect" }}</h2>
+{{ .Content }}
+{{ partial "details.html" . }}
+{{ partial "langtable.html" . }}
+{{ partial "item-navbox.html" . }}
+<div class="catlinks"><b>{{ T "catlinks" }}</b><a href="{{ $idx }}">{{ T "items_title" }}</a><a href="{{ $idx }}?kind={{ $p.kind }}">{{ T "x_items" (dict "x" (T (printf "kind_%s" $p.kind))) }}</a><a href="{{ $idx }}?tier={{ $p.tier }}">{{ T "x_items" (dict "x" (T "tier_n" (dict "n" $p.tier))) }}</a><a href="{{ $idx }}?family={{ $p.family }}">{{ T "x_items" (dict "x" $famname) }}</a>
+{{- with $p.category }}<a href="{{ $idx }}?cat={{ . }}">{{ T "x_items" (dict "x" (T (printf "cat_%s" .))) }}</a>{{ end }}</div>
+</div>
+{{ end }}

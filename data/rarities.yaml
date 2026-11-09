@@ -1,0 +1,21 @@
+# Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
+- key: common
+  color: '#b8b8c8'
+  stars: 1
+  en: Common
+  fr: Commun
+- key: rare
+  color: '#4fb3ff'
+  stars: 2
+  en: Rare
+  fr: Rare
+- key: epic
+  color: '#c878ff'
+  stars: 3
+  en: Epic
+  fr: Épique
+- key: legendary
+  color: '#ffd23c'
+  stars: 4
+  en: Legendary
+  fr: Légendaire

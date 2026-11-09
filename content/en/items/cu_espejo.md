@@ -1,0 +1,53 @@
+---
+title: Broken Mirror
+id: cu_espejo
+kind: passive
+category: defense
+family: cursed
+tier: 1
+pools:
+- cursed
+pool_weight: 1
+stats:
+- text: Luck -2
+  good: false
+details:
+- label: Blocks hits
+  value: 20 %
+- label: Luck
+  value: '-2'
+icon: items-ps/hold-item/wide-lens.png
+sprite: true
+names:
+  es:
+    name: Espejo Roto
+    desc: Un 20 % de los golpes que recibes no te hacen nada, pero la suerte te abandona (-2).
+  fr:
+    name: Miroir Brisé
+    desc: 20 % des coups que vous recevez ne vous font rien, mais la chance vous abandonne (-2).
+  de:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  it:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  pt:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  ru:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  ja:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  ko:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  zh:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+  zt:
+    name: Broken Mirror
+    desc: 20% of the hits you take do nothing, but luck abandons you (-2).
+---
+20% of the hits you take do nothing, but luck abandons you (-2).

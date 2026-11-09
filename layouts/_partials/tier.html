@@ -1,0 +1,3 @@
+{{- $t := int . -}}
+<span class="tier" title="{{ T "tier_n" (dict "n" $t) }}">{{ range seq 0 3 }}<i class="{{ if lt . $t }}on{{ end }}"></i>{{ end }}</span>
+{{- /**/ -}}

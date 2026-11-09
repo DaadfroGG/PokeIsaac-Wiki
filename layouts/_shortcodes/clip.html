@@ -1,0 +1,6 @@
+{{- /* The item's recorded clip: static/assets/clips/<id>.webp, with a still <id>.png for reduced motion. */ -}}
+{{- $root := partial "root.html" . -}}
+{{- $c := printf "%sassets/clips/%s" $root (.Get 0 | default .Page.Params.id) -}}
+<h2>{{ T "h_clip" }}</h2>
+<figure class="clip"><picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ $c }}.png"><img src="{{ $c }}.webp" width="384" height="288" alt="{{ .Page.Title }}" loading="lazy"></picture>
+<figcaption>{{ T "clip_note" }}</figcaption></figure>

@@ -1,0 +1,4 @@
+{{- /* dict "pages" "here" "icons" */ -}}
+{{- $here := .here }}{{ $icons := .icons -}}
+{{- range .pages.ByTitle }}<a{{ if eq . $here }} class="self"{{ end }} href="{{ .RelPermalink }}">{{ if $icons }}{{ partial "img.html" (dict "icon" .Params.icon) }}{{ end }}{{ .Title }}</a>
+{{ end -}}

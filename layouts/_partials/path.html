@@ -1,0 +1,4 @@
+{{- /* This page's path below /<lang>/, the same in every language (wiki.js switches language with it). */ -}}
+{{- $p := strings.TrimPrefix (printf "%s%s/" (partial "root.html" .) .Lang) .RelPermalink -}}
+{{- if or (eq $p "") (strings.HasSuffix $p "/") }}{{ $p = printf "%sindex.html" $p }}{{ end -}}
+{{- return $p -}}

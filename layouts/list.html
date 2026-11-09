@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{- /* Index of an in-game wiki section. Enemies and bosses show some detail rows as columns (rows with a "key"). */ -}}
+{{- $sec := .Section -}}
+{{- $ents := (where .RegularPages "Params.id" "!=" nil).ByTitle -}}
+{{- $cols := index (dict "enemies" (slice "hp" "speed" "contact" "appears") "bosses" (slice "hp" "signature" "appears")) $sec -}}
+{{- $typed := in (slice "enemies" "bosses") $sec -}}
+<h1 class="title">{{ .Title }}<span class="sub">{{ T "n_entries" (dict "n" (len $ents)) }}</span></h1>
+<div class="content">
+<div class="lead">{{ .Content }}</div>
+{{- if eq $sec "world" }}{{ with site.GetPage "/world/floors" }}<p>{{ T "see_also" }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+{{- if eq $sec "mechanics" }}{{ with site.GetPage "/mechanics/guides" }}
+<h2>{{ T "guides" }}</h2><p class="note">{{ T "guides_note" }}</p><ul class="guides">{{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
+<h2>{{ T "sec_mechanics" }}</h2>{{ end }}{{ end }}
+<div class="filters" data-table="{{ $sec }}-table">
+  <input type="search" placeholder="{{ T "filter_ph" }}" aria-label="{{ T "aria_filter" }}">
+  {{- if $typed }}{{ $used := slice }}{{ range $ents }}{{ with .Params.element }}{{ $used = $used | append . }}{{ end }}{{ end }}
+  <select name="type" aria-label="{{ T "f_type" }}"><option value="">{{ T "all_types" }}</option>{{ range (site.GetPage "/types").RegularPages.ByTitle }}{{ if in $used .Params.id }}<option value="{{ .Params.id }}">{{ .Title }}</option>{{ end }}{{ end }}</select>{{ end }}
+  <span class="count" data-tpl="{{ T "n_shown" (dict "n" "{n}") }}"></span>
+</div>
+<div class="table-wrap"><table class="wikitable sortable" id="{{ $sec }}-table">
+<thead><tr><th class="nosort"></th><th>{{ T "col_name" }}</th>{{ if $typed }}<th class="nosort">{{ T "f_type" }}</th>{{ end }}
+{{- range $cols }}<th>{{ T (printf "col_%s_%s" $sec .) }}</th>{{ end }}{{ if not $cols }}<th class="nosort">{{ T "col_description" }}</th>{{ end }}</tr></thead>
+<tbody>
+{{- range $ents }}{{ $p := .Params }}
+<tr data-type="{{ $p.element }}"><td class="ic">{{ partial "img.html" (dict "icon" $p.icon) }}</td><td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td>
+{{- if $typed }}<td>{{ with $p.element }}{{ partial "type-chip.html" . }}{{ end }}</td>{{ end }}
+{{- range $cols }}{{ $v := "" }}{{ range where ($p.details | default slice) "key" . }}{{ $v = .value }}{{ end }}<td{{ if findRE `^-?\d+(\.\d+)?$` $v }} class="num"{{ end }} data-sort="{{ $v }}">{{ $v | default "—" }}</td>{{ end }}
+{{- if not $cols }}<td class="desc">{{ range $p.labels }}{{ partial "chip.html" (dict "text" .text "color" .color) }} {{ end }}{{ .Summary | plainify | htmlUnescape }}</td>{{ end }}</tr>
+{{- end }}
+</tbody></table></div>
+</div>
+{{ end }}

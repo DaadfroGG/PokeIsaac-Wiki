@@ -1,0 +1,16 @@
+{{- /* The item's family, one row per drop category; only the item's own row shows icons. */ -}}
+{{- $me := . -}}
+{{- $fam := where (where site.RegularPages "Section" "items") "Params.family" .Params.family -}}
+{{- $mycat := .Params.category | default "active" -}}
+{{- $keys := slice }}{{ range hugo.Data.categories }}{{ $keys = $keys | append .key }}{{ end }}{{ $keys = $keys | append "active" -}}
+{{- $famname := index (index hugo.Data.families .Params.family | default dict) .Lang | default .Params.family -}}
+<details class="navbox" open><summary data-hide="{{ T "hide" }}" data-show="{{ T "show" }}">{{ T "x_items" (dict "x" $famname) }}</summary><table>
+{{- range $keys }}{{ $k := . }}
+{{- $group := slice }}{{ range $fam }}{{ if eq (.Params.category | default "active") $k }}{{ $group = $group | append . }}{{ end }}{{ end }}
+{{- if $group }}{{ $color := "#e8e8f0" }}{{ range where hugo.Data.categories "key" $k }}{{ $color = .color }}{{ end -}}
+<tr><th style="{{ printf "--c:%s" $color | safeCSS }}">{{ if eq $k "active" }}{{ T "kind_active" }}{{ else }}{{ T (printf "cat_%s" $k) }}{{ end }}</th><td>
+{{- range sort $group "Title" }}<a{{ if eq . $me }} class="self"{{ end }} href="{{ .RelPermalink }}">{{ if eq $k $mycat }}{{ partial "img.html" (dict "icon" .Params.icon) }}{{ end }}{{ .Title }}</a>
+{{ end }}</td></tr>
+{{- end }}{{ end }}
+{{ partialCached "family-row.html" . .Lang .Params.family }}
+</table></details>

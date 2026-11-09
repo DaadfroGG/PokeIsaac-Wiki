@@ -1,0 +1,56 @@
+---
+title: Piloswine
+id: piloswine
+dex: '0221'
+types:
+- ice
+- ground
+rarity: rare
+region: johto
+how: gacha
+icon: portrait/0221/Normal.png
+stats:
+  hp: 8
+  damage: '4.1'
+  fire_rate: '4.3'
+  speed: '3.9'
+  range: '291'
+  shot_speed: '9.0'
+  luck: 0
+evolves_from:
+- swinub
+evolves_to:
+- mamoswine
+names:
+  es:
+    name: Piloswine
+    desc: Sus disparos pueden ralentizar. Disparos más grandes que empujan a veces. (los disparos alternan los dos tipos)
+  fr:
+    name: Cochignon
+    desc: Ses tirs peuvent ralentir. Tirs plus gros qui repoussent parfois. (les tirs alternent entre les deux types)
+  de:
+    name: Keifel
+    desc: Seine Schüsse können verlangsamen. Größere Schüsse, die manchmal zurückstoßen. (die Schüsse wechseln zwischen beiden Typen)
+  it:
+    name: Piloswine
+    desc: I suoi tiri possono rallentare. Tiri più grandi che a volte respingono. (i tiri alternano i due tipi)
+  pt:
+    name: Piloswine
+    desc: Os tiros dele podem retardar. Tiros maiores que às vezes empurram. (os tiros alternam os dois tipos)
+  ru:
+    name: Piloswine
+    desc: Его выстрелы могут замедлять. Более крупные выстрелы, иногда отбрасывают. (выстрелы чередуют оба типа)
+  ja:
+    name: イノムー
+    desc: ショットで足止めすることがある。 ときどき敵を押し返す、より大きなショット。 (ショットが2つのタイプを交互に撃つ)
+  ko:
+    name: 메꾸리
+    desc: 탄이 적을 느리게 만들 수 있다. 가끔 넉백하는 더 큰 탄. (탄이 두 타입을 번갈아 쓴다)
+  zh:
+    name: 长毛猪
+    desc: 它的弹可造成减速。 更大的射弹，有时会击退。 (弹会交替使用两种属性)
+  zt:
+    name: 長毛豬
+    desc: 牠的彈可讓敵人減速。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
+---
+Its shots can slow. Bigger shots that sometimes knock back. (shots alternate between the two types)

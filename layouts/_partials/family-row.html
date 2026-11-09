@@ -1,0 +1,7 @@
+{{- /* Every item family with its size, biggest first (same for every item of a family: cached per family). */ -}}
+{{- $items := where site.RegularPages "Section" "items" -}}
+{{- $idx := .Parent.RelPermalink -}}
+{{- $list := slice }}{{ range $slug, $names := hugo.Data.families }}{{ $list = $list | append (dict "slug" $slug "name" (index $names $.Lang) "n" (len (where $items "Params.family" $slug))) }}{{ end -}}
+<tr><th>{{ T "all_families" }}</th><td>
+{{- range sort (sort $list "name") "n" "desc" }}{{ if .n }}<a href="{{ $idx }}?family={{ .slug }}"{{ if eq .slug $.Params.family }} class="self"{{ end }}>{{ .name }} ({{ .n }})</a>
+{{ end }}{{ end }}</td></tr>

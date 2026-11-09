@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- /* Pages of the in-game wiki's sections: enemies, bosses, types, rooms, world, mechanics. */ -}}
+{{- $p := .Params }}{{ $sec := .Section -}}
+{{- $rows := slice -}}
+{{- with $p.labels }}{{ $l := slice }}{{ range . }}{{ $l = $l | append (partial "chip.html" (dict "text" .text "color" .color)) }}{{ end }}{{ $rows = $rows | append (dict "k" (T "f_tags") "v" (delimit $l " ")) }}{{ end -}}
+{{- with $p.element }}{{ $rows = $rows | append (dict "k" (T "f_type") "v" (partial "type-chip.html" .)) }}{{ end -}}
+{{- with $p.pokemon }}{{ with site.GetPage (printf "/pokemon/%s" .) }}{{ $rows = $rows | append (dict "k" (T "f_pokemon") "v" (printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title))) }}{{ end }}{{ end -}}
+{{- with $p.dex }}{{ $rows = $rows | append (dict "k" (T "f_pokemon") "v" (printf "#%s" .)) }}{{ end -}}
+{{- $rows = $rows | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
+<h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $sec) }}</span></h1>
+<div class="content">
+{{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $p.color "rows" $rows) }}
+<div class="body lead-first">{{ .Content }}</div>
+{{ partial "details.html" . }}
+{{- with $p.hint }}<p class="note">{{ . }}</p>{{ end }}
+{{- if eq $sec "types" }}{{ $id := $p.id }}
+  {{- $pk := where (where site.RegularPages "Section" "pokemon") "Params.types" "intersect" (slice $id) }}
+  {{- with $pk }}<h2>{{ T "h_type_pokemon" }} <span class="note">({{ len . }})</span></h2>
+<p><a href="{{ (site.GetPage "/pokemon").RelPermalink }}?type={{ $id }}">{{ T "see_list" }}</a></p>
+<div class="linkgrid">{{ $ids := slice }}{{ range sort . "Params.dex" }}{{ $ids = $ids | append .Params.id }}{{ end }}{{ partial "poke-links.html" (dict "ids" $ids) }}</div>{{ end }}
+  {{- range slice "enemies" "bosses" }}{{ with where (where site.RegularPages "Section" .) "Params.element" $id }}
+<h2>{{ T (printf "h_type_%s" (index . 0).Section) }} <span class="note">({{ len . }})</span></h2>
+<div class="linkgrid">{{ partial "entry-links.html" (dict "pages" . "icons" true) }}</div>{{ end }}{{ end }}
+{{- end }}
+{{- if eq $sec "world" }}{{ with site.GetPage "/world/floors" }}<p class="note">{{ T "see_also" }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+{{ partial "langtable.html" . }}
+<details class="navbox" open><summary data-hide="{{ T "hide" }}" data-show="{{ T "show" }}">{{ T (printf "sec_%s" $sec) }}</summary><table><tr><td>
+{{- partial "entry-links.html" (dict "pages" (where .Parent.RegularPages "Params.id" "!=" nil) "here" . "icons" (in (slice "types" "rooms" "world") $sec)) -}}
+</td></tr></table></details>
+</div>
+{{ end }}

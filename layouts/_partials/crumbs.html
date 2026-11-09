@@ -1,0 +1,6 @@
+<div class="crumbs"><a href="{{ site.Home.RelPermalink }}">PokéIsaac Wiki</a>
+{{- if .IsSection }}{{ with .Parent }}{{ if not .IsHome }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }} › {{ .Title }}
+{{- else if .IsPage }}{{ with .Parent }}{{ with .Parent }}{{ if not .IsHome }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+{{- if eq .Layout "article" }} › {{ .Title }}{{ end }}
+{{- with .Params.family }}{{ $f := index hugo.Data.families . }} › <a href="{{ $.Parent.RelPermalink }}?family={{ . }}">{{ index $f $.Lang }}</a>{{ end }}
+{{- end }}</div>

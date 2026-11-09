@@ -1,0 +1,48 @@
+{{ define "main" }}
+{{- $p := .Params -}}
+{{- $idx := .Parent.RelPermalink -}}
+{{- $rar := partialCached "lookup.html" "rarities" "rarities" -}}
+{{- $reg := partialCached "lookup.html" "regions" "regions" -}}
+{{- $types := slice }}{{ range $p.types }}{{ $types = $types | append (partial "type-chip.html" .) }}{{ end -}}
+{{- $rows := slice (dict "k" (T "f_dex") "v" (printf "#%s" $p.dex)) (dict "k" (T "f_type") "v" (delimit $types " ")) -}}
+{{- with $p.rarity }}{{ with index $rar . }}{{ $rows = $rows | append (dict "k" (T "f_rarity") "v" (partial "chip.html" (dict "text" (index . $.Lang) "color" .color "href" (printf "%s?rarity=%s" $idx .key)))) }}{{ end }}{{ end -}}
+{{- with $p.region }}{{ with index $reg . }}{{ $rows = $rows | append (dict "k" (T "f_region") "v" (printf `<a href="%s?region=%s">%s</a>` $idx .key (index . $.Lang))) }}{{ end }}{{ end -}}
+{{- $how := T (printf "how_%s" $p.how) -}}
+{{- if eq $p.how "gacha" }}{{ with site.GetPage "/mechanics/fichas" }}{{ $how = printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title) }}{{ end }}
+{{- else if eq $p.how "mega" }}{{ with site.GetPage "/mechanics/banner_mega" }}{{ $how = printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title) }}{{ end }}
+{{- else if eq $p.how "special" }}{{ $how = htmlEscape ($p.unlock | default $how) }}{{ end -}}
+{{- $rows = $rows | append (dict "k" (T "f_how") "v" $how) | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
+{{- $s := $p.stats -}}
+{{- $hp := int ($s.hp | default 0) -}}
+{{- $stats := slice (dict "k" (T "g_hp") "v" (printf `%d ♥ <span class=note>(%d)</span>` (div (add $hp 1) 2) $hp))
+    (dict "k" (T "g_damage") "v" $s.damage)
+    (dict "k" (T "g_rate") "v" (cond (isset $s "fire_rate") (printf "%v/s" $s.fire_rate) "—"))
+    (dict "k" (T "g_speed") "v" $s.speed) (dict "k" (T "g_range") "v" $s.range) (dict "k" (T "g_shot") "v" $s.shot_speed) (dict "k" (T "g_luck") "v" (string ($s.luck | default 0))) -}}
+{{- $col := "#ffd23c" }}{{ with $p.types }}{{ with site.GetPage (printf "/types/%s" (index . 0)) }}{{ $col = .Params.color }}{{ end }}{{ end -}}
+<h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T "sub_pokemon" }}</span></h1>
+<div class="content">
+{{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $col "rows" $rows "sec" (T "h_stats") "rows2" $stats) }}
+<div class="body lead-first">{{ .Content }}</div>
+{{- $fam := slice . -}}
+{{- if or $p.evolves_from $p.evolves_to $p.stone_evolutions $p.mega $p.mega_of }}
+<h2>{{ T "h_evolution" }}</h2><table class="wikitable kv"><tbody>
+{{- with $p.evolves_from }}<tr><th>{{ T "f_evo_from" }}</th><td class="links">{{ partial "poke-links.html" (dict "ids" .) }}</td></tr>{{ end }}
+{{- with $p.evolves_to }}<tr><th>{{ T "f_evo" }}</th><td class="links">{{ partial "poke-links.html" (dict "ids" .) }}</td></tr>{{ end }}
+{{- with $p.stone_evolutions }}<tr><th>{{ T "f_evo_stone" }}</th><td class="links">{{ partial "poke-links.html" (dict "ids" .) }}</td></tr>{{ end }}
+{{- with $p.mega }}<tr><th>{{ T "f_mega" }}</th><td class="links">{{ partial "poke-links.html" (dict "ids" (slice .)) }}</td></tr>{{ end }}
+{{- with $p.mega_of }}<tr><th>{{ T "f_mega_of" }}</th><td class="links">{{ partial "poke-links.html" (dict "ids" (slice .)) }}</td></tr>{{ end }}
+</tbody></table>
+{{- end }}
+{{ partial "langtable.html" . }}
+{{- $ids := slice $p.id }}{{ range (slice $p.evolves_from $p.evolves_to $p.stone_evolutions) }}{{ range . }}{{ $ids = $ids | append . }}{{ end }}{{ end }}{{ with $p.mega }}{{ $ids = $ids | append . }}{{ end }}{{ with $p.mega_of }}{{ $ids = $ids | append . }}{{ end -}}
+{{- $line := slice }}{{ range uniq $ids }}{{ with site.GetPage (printf "/pokemon/%s" .) }}{{ $line = $line | append . }}{{ end }}{{ end -}}
+{{- $sorted := slice }}{{ range sort $line "Params.dex" }}{{ $sorted = $sorted | append .Params.id }}{{ end }}
+<details class="navbox" open><summary data-hide="{{ T "hide" }}" data-show="{{ T "show" }}">{{ T "sec_pokemon" }}</summary><table>
+<tr><th>{{ T "h_evolution" }}</th><td>{{ partial "poke-links.html" (dict "ids" $sorted "here" .) }}</td></tr>
+<tr><th>{{ T "f_region" }}</th><td>{{ range hugo.Data.regions }}<a href="{{ $idx }}?region={{ .key }}">{{ index . $.Lang }}</a>
+{{ end }}</td></tr>
+<tr><th>{{ T "f_rarity" }}</th><td>{{ range hugo.Data.rarities }}<a href="{{ $idx }}?rarity={{ .key }}">{{ index . $.Lang }}</a>
+{{ end }}</td></tr></table></details>
+<div class="catlinks"><b>{{ T "catlinks" }}</b><a href="{{ $idx }}">{{ T "sec_pokemon" }}</a>{{ range $p.types }}{{ with site.GetPage (printf "/types/%s" .) }}<a href="{{ $idx }}?type={{ .Params.id }}">{{ .Title }}</a>{{ end }}{{ end }}{{ with $p.region }}{{ with index $reg . }}<a href="{{ $idx }}?region={{ .key }}">{{ index . $.Lang }}</a>{{ end }}{{ end }}</div>
+</div>
+{{ end }}

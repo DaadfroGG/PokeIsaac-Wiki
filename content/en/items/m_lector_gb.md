@@ -1,0 +1,51 @@
+---
+title: GB Sounds
+id: m_lector_gb
+kind: passive
+category: shot
+family: module
+tier: 2
+pools:
+- treasure
+- shop
+pool_weight: 2
+details:
+- label: Laser
+  value: Every 1 s on average, 75 % damage
+icon: items-ps/key-item/gb-sounds.png
+sprite: true
+names:
+  es:
+    name: Lector GB
+    desc: Mientras disparas, de vez en cuando sale además un láser
+  fr:
+    name: Lecteur GB
+    desc: Pendant que vous tirez, un laser sort aussi de temps en temps
+  de:
+    name: GB-Player
+    desc: Während du schießt, kommt hin und wieder zusätzlich ein Laser heraus
+  it:
+    name: Lettore GB
+    desc: Mentre spari, di tanto in tanto esce anche un laser
+  pt:
+    name: GB Sounds
+    desc: Enquanto você atira, de vez em quando também sai um laser
+  ru:
+    name: GB-плеер
+    desc: Пока стреляешь, время от времени вылетает еще и лазер
+  ja:
+    name: ＧＢプレイヤー
+    desc: ショット中、ときどきレーザーも出ます
+  ko:
+    name: GB플레이어
+    desc: 발사하는 동안 가끔 레이저도 나간다
+  zh:
+    name: ＧＢ播放器
+    desc: 射击时，偶尔还会射出一道激光
+  zt:
+    name: ＧＢ播放器
+    desc: 射擊時，偶爾會額外射出雷射
+---
+While you fire, a laser comes out every now and then
+
+{{< clip >}}

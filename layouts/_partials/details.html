@@ -1,0 +1,4 @@
+{{- with .Params.details -}}
+<h2>{{ T "h_details" }}</h2>
+<table class="wikitable kv"><tbody>{{ range . }}<tr><th>{{ .label }}</th><td>{{ .value }}</td></tr>{{ end }}</tbody></table>
+{{- end -}}

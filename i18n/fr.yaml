@@ -1,0 +1,153 @@
+search_ph: Rechercher dans le wiki…  ( / )
+nav: Navigation
+categories: Catégories
+main_page: Accueil
+random_page: Page au hasard
+random_item: Objet au hasard
+sec_items: Objets
+sec_pokemon: Pokémon
+sec_enemies: Ennemis
+sec_bosses: Boss
+sec_types: Types
+sec_rooms: Salles
+sec_world: Monde
+sec_mechanics: Mécaniques
+blurb_pokemon: Starters, Pokémon du Gacha et Méga avec leurs statistiques
+soon: BIENTÔT
+footer: Référence faite par des fans, écrite par les joueurs (build {{ .build }} du jeu). Sans lien avec PokéIsaac, Nintendo, Game Freak, Creatures ou The Pokémon Company. Les noms et images Pokémon appartiennent à leurs propriétaires.
+kind_passive: Passif
+kind_active: Actif
+sub_passive: OBJET PASSIF
+sub_active: OBJET ACTIF
+f_type: Type
+f_category: Catégorie
+f_family: Famille
+f_tier: Niveau
+f_pools: Où il apparaît
+f_weight: Poids
+f_charge: Charge
+f_stats: Statistiques
+f_id: ID interne
+tier_floor: '{{ .tier }} · dès l''étage {{ .floor }}'
+none: aucun
+h_effect: Effet
+h_details: Détails
+h_langs: Dans d'autres langues
+col_language: Langue
+col_name: Nom
+col_description: Description
+catlinks: CATÉGORIES
+x_items: 'Objets : {{ .x }}'
+lead_passive: '{{ .name }} est un objet passif de la catégorie {{ .cat }}.'
+lead_active: '{{ .name }} est un objet actif.'
+lead_pools: 'Il peut apparaître à ces endroits dès l''étage {{ .floor }} (niveau {{ .tier }}) : {{ .pools }}.'
+lead_nopool: Il n'apparaît nulle part.
+items_title: Objets
+items_count: '{{ .n }} OBJETS'
+items_lead: 'Tous les objets que l''on peut trouver dans le jeu actuel : passifs, actifs, armes, modules, Méga-Gemmes et plus. Chaque objet passif appartient à l''une des huit catégories de butin du jeu, que chaque salle mélange dans des proportions fixes.'
+filter_ph: Filtrer par nom ou effet…
+all_categories: Toutes les catégories
+all_families: Toutes les familles
+all_tiers: Tous les niveaux
+tier_n: Niveau {{ .n }}
+all_pools: Tous les endroits
+kind_all: Passifs + actifs
+n_shown: '{{ .n }} AFFICHÉS'
+col_kind: Genre
+col_effect: Effet
+welcome: Bienvenue sur le Wiki PokéIsaac
+welcome_p: 'Une référence pour PokéIsaac, le shooter roguelike Pokémon, écrite par ses joueurs. Chaque page peut être modifiée : ouvrez une pull request sur GitHub.'
+st_build: VERSION
+st_items: OBJETS
+st_langs: LANGUES
+showcase: Compagnons
+about: À propos de ce wiki
+about_p: Écrite pour le build {{ .build }} du jeu et tenue à jour par les joueurs. Une erreur ? Utilisez le lien de modification en bas de chaque page.
+press_slash: Appuyez sur / n'importe où pour rechercher.
+cat_stats: Statistiques
+cat_shot: Tir
+cat_familiar: Compagnon
+cat_defense: Défense
+cat_utility: Utilitaire
+cat_weapon: Arme
+cat_voltorb: Voltorbe
+cat_evo: Évolution
+st_pokemon: POKÉMON
+sub_pokemon: POKÉMON JOUABLE
+sub_enemies: ENNEMI
+sub_bosses: BOSS
+sub_types: TYPE
+sub_rooms: SALLE
+sub_world: MONDE
+sub_mechanics: MÉCANIQUE
+pokemon_count: '{{ .n }} POKÉMON'
+pokemon_lead: 'Tous les Pokémon jouables : les starters, les Pokémon des bannières du Gacha et les Méga-Pokémon. Les statistiques sont affichées comme dans le panneau de personnage du jeu.'
+pokemon_stats_note: ♥ = réceptacles de cœur (le jeu compte la vie en demi-cœurs). La cadence est en tirs par seconde, comme dans le panneau de personnage.
+f_dex: Pokédex
+f_rarity: Rareté
+f_region: Région
+f_how: Comment l'obtenir
+f_tags: Étiquettes
+f_pokemon: Pokémon
+h_stats: Statistiques
+h_passive: Passif
+h_evolution: Évolution
+f_evo_from: Évolue de
+f_evo: Lignée d'évolution
+f_evo_stone: Avec une pierre
+f_mega: Méga-Évolution
+f_mega_of: Méga-Évolution de
+how_start: Disponible dès le début
+how_special: Se débloque en jouant
+how_gacha: Gacha
+how_mega: Bannière Méga
+how_all: Toutes les façons
+all_types: Tous les types
+all_rarities: Toutes les raretés
+all_regions: Toutes les régions
+n_entries: '{{ .n }} ENTRÉES'
+h_type_pokemon: Pokémon de ce type
+h_type_enemies: Ennemis de ce type
+h_type_bosses: Boss de ce type
+see_list: Les voir dans la liste des Pokémon
+see_also: Voir aussi
+floors_title: Étages et chapitres
+floors_lead: 'Les étages du jeu : les ennemis qui apparaissent sur chacun (avec leur poids d''apparition) et les boss qui peuvent le terminer. Les chapitres réutilisent ces étages sous de nouveaux noms et de nouvelles règles ; voir'
+h_floors: Étages
+h_chapters: Chapitres (mode Classique)
+col_rooms: Salles
+col_enemies: Ennemis (poids)
+col_bosses: Boss
+col_chapter: Chapitre
+col_floors: Étages
+col_variants: Variantes d'étage
+col_alt: Route alternative
+floors_note: Les variantes ajoutent des ennemis et changent des règles par-dessus leur étage de base, ce que ce tableau ne fusionne pas.
+guides: Guides
+guide_sub: GUIDE
+guides_note: Notes détaillées sur les mécaniques du jeu. En anglais uniquement.
+menu: Menu
+aria_search: Rechercher
+aria_filter: Filtrer
+hide: masquer
+show: afficher
+h_clip: En action
+clip_note: 'Enregistré dans le jeu : Évoli à l''étage 1. Les cibles (Papilusion et des Pokémon sauvages de cet étage) restent sur place et ne peuvent pas être vaincues.'
+h_shots: Captures d'écran
+shots_note: Prises dans le jeu ; le boss de chaque image est celui que l'étage a tiré.
+edit_page: Modifier cette page
+page_source: Source de la page
+g_hp: Vie
+g_damage: Dégâts
+g_rate: Cadence
+g_speed: Vitesse
+g_range: Portée
+g_shot: Vit. tir
+g_luck: Chance
+col_enemies_hp: Vie
+col_enemies_speed: Vitesse
+col_enemies_contact: Dégâts de contact
+col_enemies_appears: Apparaît dans
+col_bosses_hp: Vie
+col_bosses_signature: Capacité signature
+col_bosses_appears: Apparaît dans

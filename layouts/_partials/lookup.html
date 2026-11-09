@@ -1,0 +1,4 @@
+{{- /* data/<name>.yaml (an ordered list of {key: ...}) as a map from key to entry. Call with partialCached. */ -}}
+{{- $m := dict -}}
+{{- range index hugo.Data . }}{{ $m = merge $m (dict .key .) }}{{ end -}}
+{{- return $m -}}

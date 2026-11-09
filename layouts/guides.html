@@ -1,0 +1,5 @@
+{{ define "main" }}
+<h1 class="title">{{ .Title }}</h1>
+<div class="content"><p class="note">{{ T "guides_note" }}</p>
+<ul class="guides">{{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul></div>
+{{ end }}

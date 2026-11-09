@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{- $items := .RegularPages.ByTitle -}}
+{{- $cats := partialCached "lookup.html" "categories" "categories" -}}
+{{- $pools := partialCached "lookup.html" "pools" "pools" -}}
+<h1 class="title">{{ .Title }}<span class="sub">{{ T "items_count" (dict "n" (len $items)) }}</span></h1>
+<div class="content">
+<div class="lead">{{ .Content }}</div>
+<p>{{ range hugo.Data.categories }}{{ $n := len (where $items "Params.category" .key) }}{{ if $n }}{{ partial "chip.html" (dict "text" (printf "%s · %d" (T (printf "cat_%s" .key)) $n) "color" .color "href" (printf "?cat=%s" .key)) }}{{ end }}{{ end -}}
+{{ partial "chip.html" (dict "text" (printf "%s · %d" (T "kind_active") (len (where $items "Params.kind" "active"))) "color" "#e8e8f0" "href" "?kind=active") }}</p>
+<div class="filters" data-table="items-table">
+  <input type="search" placeholder="{{ T "filter_ph" }}" aria-label="{{ T "aria_filter" }}">
+  <select name="cat" aria-label="{{ T "f_category" }}"><option value="">{{ T "all_categories" }}</option>{{ range hugo.Data.categories }}<option value="{{ .key }}">{{ T (printf "cat_%s" .key) }}</option>{{ end }}</select>
+  {{- $fl := slice }}{{ range $slug, $names := hugo.Data.families }}{{ $fl = $fl | append (dict "slug" $slug "name" (index $names $.Lang) "n" (len (where $items "Params.family" $slug))) }}{{ end }}
+  <select name="family" aria-label="{{ T "f_family" }}"><option value="">{{ T "all_families" }}</option>{{ range sort (sort $fl "name") "n" "desc" }}{{ if .n }}<option value="{{ .slug }}">{{ .name }} ({{ .n }})</option>{{ end }}{{ end }}</select>
+  <select name="tier" aria-label="{{ T "f_tier" }}"><option value="">{{ T "all_tiers" }}</option>{{ range seq 4 }}<option value="{{ . }}">{{ T "tier_n" (dict "n" .) }}</option>{{ end }}</select>
+  <select name="pool" aria-label="{{ T "f_pools" }}"><option value="">{{ T "all_pools" }}</option>{{ range hugo.Data.pools }}{{ $k := .key }}{{ if where $items "Params.pools" "intersect" (slice $k) }}<option value="{{ .key }}">{{ index . $.Lang }}</option>{{ end }}{{ end }}</select>
+  <select name="kind" aria-label="{{ T "col_kind" }}"><option value="">{{ T "kind_all" }}</option><option value="passive">{{ T "kind_passive" }}</option><option value="active">{{ T "kind_active" }}</option></select>
+  <span class="count" data-tpl="{{ T "n_shown" (dict "n" "{n}") }}"></span>
+</div>
+<div class="table-wrap"><table class="wikitable sortable" id="items-table">
+<thead><tr><th class="nosort"></th><th>{{ T "col_name" }}</th><th>{{ T "col_kind" }}</th><th>{{ T "f_category" }}</th><th>{{ T "f_family" }}</th><th class="num">{{ T "f_tier" }}</th><th class="nosort">{{ T "f_pools" }}</th><th class="nosort">{{ T "col_effect" }}</th></tr></thead>
+<tbody>
+{{- range $items }}{{ $p := .Params }}
+<tr data-cat="{{ $p.category }}" data-family="{{ $p.family }}" data-tier="{{ $p.tier }}" data-kind="{{ $p.kind }}" data-pool="{{ delimit ($p.pools | default slice) " " }}"><td class="ic">{{ partial "img.html" (dict "icon" $p.icon) }}</td><td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td><td>{{ T (printf "kind_%s" $p.kind) }}</td>
+<td data-sort="{{ $p.category | default "~" }}">{{ with $p.category }}{{ partial "chip.html" (dict "text" (T (printf "cat_%s" .)) "color" (index $cats .).color) }}{{ else }}<span class="note">—</span>{{ end }}</td>
+<td>{{ with index hugo.Data.families $p.family }}{{ index . $.Lang }}{{ else }}{{ $p.family }}{{ end }}</td><td class="num" data-sort="{{ $p.tier }}">{{ partial "tier.html" $p.tier }}</td>
+<td>{{ range $p.pools }}{{ $c := index $pools . }}{{ partial "chip.html" (dict "text" (index $c $.Lang) "color" $c.color) }} {{ end }}</td><td class="desc">{{ .Summary | plainify | htmlUnescape }}</td></tr>
+{{- end }}
+</tbody></table></div>
+</div>
+{{ end }}

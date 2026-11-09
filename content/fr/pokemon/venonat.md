@@ -1,0 +1,54 @@
+---
+title: Mimitoss
+id: venonat
+dex: 0048
+types:
+- poison
+- bug
+rarity: common
+region: kanto
+how: gacha
+icon: portrait/0048/Normal.png
+stats:
+  hp: 6
+  damage: '3.2'
+  fire_rate: '4.0'
+  speed: '3.8'
+  range: '297'
+  shot_speed: '9.0'
+  luck: 1
+evolves_to:
+- venomoth
+names:
+  en:
+    name: Venonat
+    desc: Its shots can poison. Fires faster. (shots alternate between the two types)
+  es:
+    name: Venonat
+    desc: Sus disparos pueden envenenar. Dispara más deprisa. (los disparos alternan los dos tipos)
+  de:
+    name: Bluzuk
+    desc: Seine Schüsse können vergiften. Schießt schneller. (die Schüsse wechseln zwischen beiden Typen)
+  it:
+    name: Venonat
+    desc: I suoi tiri possono avvelenare. Spara più velocemente. (i tiri alternano i due tipi)
+  pt:
+    name: Venonat
+    desc: Os tiros dele podem envenenar. Atira mais rápido. (os tiros alternam os dois tipos)
+  ru:
+    name: Venonat
+    desc: Его выстрелы могут отравлять. Стреляет чаще. (выстрелы чередуют оба типа)
+  ja:
+    name: コンパン
+    desc: ショットでどく状態にすることがある。 より速く撃つ。 (ショットが2つのタイプを交互に撃つ)
+  ko:
+    name: 콘팡
+    desc: 탄이 적을 독 상태로 만들 수 있다. 더 빠르게 쏜다. (탄이 두 타입을 번갈아 쓴다)
+  zh:
+    name: 毛球
+    desc: 它的弹可使敌人中毒。 射得更快。 (弹会交替使用两种属性)
+  zt:
+    name: 毛球
+    desc: 牠的彈可讓敵人中毒。 射擊更快。 (彈會交替使用兩種屬性)
+---
+Ses tirs peuvent empoisonner. Tire plus vite. (les tirs alternent entre les deux types)

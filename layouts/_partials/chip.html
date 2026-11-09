@@ -1,0 +1,4 @@
+{{- /* dict "text" "color" "href" (optional) */ -}}
+{{- $style := printf "--c:%s" .color | safeCSS -}}
+{{- if .href -}}<a class="chip" href="{{ .href }}" style="{{ $style }}">{{ .text }}</a>
+{{- else -}}<span class="chip" style="{{ $style }}">{{ .text }}</span>{{- end -}}

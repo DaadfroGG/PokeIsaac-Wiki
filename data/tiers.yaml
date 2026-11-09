@@ -1,0 +1,7 @@
+# Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
+floor:
+- 0
+- 1
+- 4
+- 9
+- 15

@@ -1,0 +1,17 @@
+# Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
+- key: stats
+  color: '#ffd23c'
+- key: shot
+  color: '#ff7a33'
+- key: familiar
+  color: '#6fdc5a'
+- key: defense
+  color: '#4fb3ff'
+- key: utility
+  color: '#b8b4c8'
+- key: weapon
+  color: '#ff5a5a'
+- key: voltorb
+  color: '#ff9ae0'
+- key: evo
+  color: '#c878ff'

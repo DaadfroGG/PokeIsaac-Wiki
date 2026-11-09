@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{- $pokes := sort .RegularPages "Params.dex" -}}
+{{- $rar := partialCached "lookup.html" "rarities" "rarities" -}}
+{{- $reg := partialCached "lookup.html" "regions" "regions" -}}
+{{- $hows := slice "start" "special" "gacha" "mega" -}}
+{{- $regpos := dict }}{{ range $i, $r := hugo.Data.regions }}{{ $regpos = merge $regpos (dict $r.key $i) }}{{ end -}}
+<h1 class="title">{{ .Title }}<span class="sub">{{ T "pokemon_count" (dict "n" (len $pokes)) }}</span></h1>
+<div class="content">
+<div class="lead">{{ .Content }}</div>
+<p>{{ range $hows }}{{ $n := len (where $pokes "Params.how" .) }}{{ if $n }}{{ partial "chip.html" (dict "text" (printf "%s · %d" (T (printf "how_%s" .)) $n) "color" "#e8e8f0" "href" (printf "?how=%s" .)) }}{{ end }}{{ end }}</p>
+<div class="filters" data-table="poke-table">
+  <input type="search" placeholder="{{ T "filter_ph" }}" aria-label="{{ T "aria_filter" }}">
+  <select name="type" aria-label="{{ T "f_type" }}"><option value="">{{ T "all_types" }}</option>{{ range (site.GetPage "/types").RegularPages.ByTitle }}<option value="{{ .Params.id }}">{{ .Title }}</option>{{ end }}</select>
+  <select name="rarity" aria-label="{{ T "f_rarity" }}"><option value="">{{ T "all_rarities" }}</option>{{ range hugo.Data.rarities }}<option value="{{ .key }}">{{ index . $.Lang }}</option>{{ end }}</select>
+  <select name="region" aria-label="{{ T "f_region" }}"><option value="">{{ T "all_regions" }}</option>{{ range hugo.Data.regions }}<option value="{{ .key }}">{{ index . $.Lang }}</option>{{ end }}</select>
+  <select name="how" aria-label="{{ T "f_how" }}"><option value="">{{ T "how_all" }}</option>{{ range $hows }}<option value="{{ . }}">{{ T (printf "how_%s" .) }}</option>{{ end }}</select>
+  <span class="count" data-tpl="{{ T "n_shown" (dict "n" "{n}") }}"></span>
+</div>
+<div class="table-wrap"><table class="wikitable sortable" id="poke-table">
+<thead><tr><th class="nosort"></th><th class="num">#</th><th>{{ T "col_name" }}</th><th class="nosort">{{ T "f_type" }}</th><th>{{ T "f_rarity" }}</th><th>{{ T "f_region" }}</th>
+<th class="num" title="{{ T "g_hp" }}">♥</th><th class="num">{{ T "g_damage" }}</th><th class="num">{{ T "g_rate" }}</th><th class="num">{{ T "g_speed" }}</th><th class="num">{{ T "g_range" }}</th><th class="num">{{ T "g_luck" }}</th></tr></thead>
+<tbody>
+{{- range $pokes }}{{ $p := .Params }}{{ $s := $p.stats }}{{ $r := "" }}{{ with $p.rarity }}{{ $r = index $rar . }}{{ end }}{{ $g := "" }}{{ with $p.region }}{{ $g = index $reg . }}{{ end }}
+<tr data-type="{{ delimit $p.types " " }}" data-rarity="{{ $p.rarity }}" data-region="{{ $p.region }}" data-how="{{ $p.how }}"><td class="ic">{{ partial "img.html" (dict "icon" $p.icon) }}</td><td class="num">{{ $p.dex }}</td>
+<td><a href="{{ .RelPermalink }}">{{ .Title }}</a></td><td class="types">{{ range $p.types }}{{ partial "type-chip.html" . }} {{ end }}</td>
+<td data-sort="{{ with $r }}{{ .stars }}{{ else }}0{{ end }}">{{ with $r }}{{ partial "chip.html" (dict "text" (index . $.Lang) "color" .color) }}{{ end }}</td>
+<td data-sort="{{ with $p.region }}{{ index $regpos . }}{{ else }}99{{ end }}">{{ with $g }}{{ index . $.Lang }}{{ else }}—{{ end }}</td>
+<td class="num">{{ div (add (int ($s.hp | default 0)) 1) 2 }}</td><td class="num">{{ $s.damage }}</td><td class="num">{{ $s.fire_rate | default "—" }}</td><td class="num">{{ $s.speed }}</td><td class="num">{{ $s.range }}</td><td class="num">{{ $s.luck | default 0 }}</td></tr>
+{{- end }}
+</tbody></table></div>
+<p class="note">{{ T "pokemon_stats_note" }}</p>
+</div>
+{{ end }}

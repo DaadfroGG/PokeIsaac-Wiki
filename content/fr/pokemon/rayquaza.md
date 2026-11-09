@@ -1,0 +1,53 @@
+---
+title: Rayquaza
+id: rayquaza
+dex: 0384
+types:
+- dragon
+- flying
+rarity: legendary
+region: hoenn
+how: gacha
+icon: portrait/0384/Normal.png
+stats:
+  hp: 14
+  damage: '6.3'
+  fire_rate: '5.5'
+  speed: '4.4'
+  range: '302'
+  shot_speed: '9.0'
+  luck: 0
+mega: mega0384
+names:
+  en:
+    name: Rayquaza
+    desc: Strong at everything. Very fast. (shots alternate between the two types)
+  es:
+    name: Rayquaza
+    desc: Fuerte en todo. Muy rápido. (los disparos alternan los dos tipos)
+  de:
+    name: Rayquaza
+    desc: In allem stark. Sehr schnell. (die Schüsse wechseln zwischen beiden Typen)
+  it:
+    name: Rayquaza
+    desc: Forte in tutto. Molto veloce. (i tiri alternano i due tipi)
+  pt:
+    name: Rayquaza
+    desc: Forte em tudo. Muito rápido. (os tiros alternam os dois tipos)
+  ru:
+    name: Rayquaza
+    desc: Силен во всем. Очень быстрый. (выстрелы чередуют оба типа)
+  ja:
+    name: レックウザ
+    desc: すべてに強い。 とても速い。 (ショットが2つのタイプを交互に撃つ)
+  ko:
+    name: 레쿠쟈
+    desc: 모든 면에서 강하다. 매우 빠르다. (탄이 두 타입을 번갈아 쓴다)
+  zh:
+    name: 烈空坐
+    desc: 全面强大。 非常快。 (弹会交替使用两种属性)
+  zt:
+    name: 烈空坐
+    desc: 樣樣都強。 非常快。 (彈會交替使用兩種屬性)
+---
+Fort en tout. Très rapide. (les tirs alternent entre les deux types)

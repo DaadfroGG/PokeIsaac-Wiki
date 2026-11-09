@@ -1,0 +1,4 @@
+{{- /* dict "icon" (path under static/assets/, may be empty) "cls" "alt" */ -}}
+{{- $root := partial "root.html" . -}}
+<img class="{{ .cls | default "px" }}" src="{{ $root }}assets/{{ .icon | default "unknown.svg" }}" alt="{{ .alt }}" loading="lazy">
+{{- /**/ -}}

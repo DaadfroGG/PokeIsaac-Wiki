@@ -1,0 +1,6 @@
+{{- /* dict "name" "icon" "color" "rows" (slice of (slice label html)) "sec" (title of a second table) "rows2" */ -}}
+<aside class="infobox" style="--c:{{ .color | default "#ffd23c" | safeCSS }}"><div class="ib-head">{{ .name }}</div>
+<div class="ib-art">{{ partial "img.html" (dict "icon" .icon "alt" .name) }}</div>
+<table>{{ range .rows }}<tr><th>{{ .k }}</th><td>{{ .v | safeHTML }}</td></tr>{{ end }}</table>
+{{- with .rows2 }}<div class="ib-sec">{{ $.sec }}</div><table>{{ range . }}<tr><th>{{ .k }}</th><td>{{ .v | safeHTML }}</td></tr>{{ end }}</table>{{ end -}}
+</aside>

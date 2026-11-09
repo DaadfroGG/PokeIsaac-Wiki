@@ -1,0 +1,53 @@
+---
+title: Grumpig
+id: grumpig
+dex: '0326'
+types:
+- psychic
+rarity: rare
+region: hoenn
+how: gacha
+icon: portrait/0326/Normal.png
+stats:
+  hp: 8
+  damage: '3.9'
+  fire_rate: '4.3'
+  speed: '3.9'
+  range: '312'
+  shot_speed: '10.0'
+  luck: 1
+evolves_from:
+- spoink
+names:
+  es:
+    name: Grumpig
+    desc: 'Algunos disparos persiguen al enemigo. Tipo puro: su pasiva es un 50 % más probable.'
+  fr:
+    name: Groret
+    desc: 'Certains tirs poursuivent les ennemis. Type pur : son passif est 50 % plus probable.'
+  de:
+    name: Groink
+    desc: 'Manche Schüsse verfolgen den Gegner. Reiner Typ: Sein Passiveffekt ist 50 % wahrscheinlicher.'
+  it:
+    name: Grumpig
+    desc: 'Alcuni tiri inseguono il nemico. Tipo puro: la sua passiva è il 50 % più probabile.'
+  pt:
+    name: Grumpig
+    desc: 'Alguns tiros perseguem o inimigo. Tipo puro: sua passiva é 50% mais provável.'
+  ru:
+    name: Grumpig
+    desc: 'Некоторые выстрелы преследуют врагов. Чистый тип: его пассивка срабатывает на 50 % чаще.'
+  ja:
+    name: ブーピッグ
+    desc: 一部の弾は敵を追尾します。 ピュアタイプ：パッシブの発動率が50%上がる。
+  ko:
+    name: 피그킹
+    desc: '일부 탄은 적을 추적한다. 단일 타입: 패시브 발동 확률이 50 % 높다.'
+  zh:
+    name: 噗噗猪
+    desc: 部分弹会追踪敌人。 纯属性：其被动效果的触发概率提高50 %。
+  zt:
+    name: 噗噗豬
+    desc: 部分彈會追蹤敵人。 單一屬性：被動效果的發動機率提高50 %。
+---
+Some shots home in on enemies. Pure type: its passive is 50 % more likely.

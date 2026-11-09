@@ -1,0 +1,3 @@
+{{- /* Path of the site root ("/" locally, "/PokeIsaac-Wiki/" on GitHub Pages). Everything under static/ is below it. */ -}}
+{{- $p := (urls.Parse site.BaseURL).Path | default "/" -}}
+{{- return $p -}}
