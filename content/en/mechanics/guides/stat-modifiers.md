@@ -1,5 +1,5 @@
 ---
-title: PokéIsaac — How player stats are computed (v1.1.1-108d03b1)
+title: How player stats are computed
 layout: guide
 weight: 1
 text_lang: en
@@ -76,7 +76,7 @@ rate = max(5, rate)
 
 ## Mastery side abilities (`MasterySkill`): off on the live site
 
-New in build 1.1.1-108d03b1, but gated: `MasteryUI.enabled = !!query.mastery` and the live site deletes URL flags. The patch notes don't mention it. Treat it as upcoming: **it doesn't apply to any live run today**.
+New in the 2026-11-06 update, but gated: `MasteryUI.enabled = !!query.mastery` and the live site deletes URL flags. The patch notes don't mention it. Treat it as upcoming: **it doesn't apply to any live run today**.
 
 When on, each Pokémon (first 4 digits of `dex`, `MASTERY.ABIL`, 971 entries) has one ability, which you switch on by hand at rank VIII (`MasterySkill.RANK`), meaning 1700 points or more (`RANKS`). It only works solo in Classic and League, without race, bot, co-op or gameplay mods (`MasteryRun.on`).
 
@@ -113,7 +113,7 @@ Measured in the headless sim, with no items: Marill with potencia, damage 3.7 �
 
 ## Global penalties
 
-- **Backpack cap: 100 items per run** (`ITEM_CAP`, added in 1.1.0 on 26/10/2026). When the backpack is full, pedestal pickups are refused ("¡Mochila llena!") until you drop an item from the Inventory. Actives and consumable pickups don't count. The check lives in `fullMsg`/`pickUp`.
+- **Backpack cap: 100 items per run** (`ITEM_CAP`, added on 26/10/2026). When the backpack is full, pedestal pickups are refused ("¡Mochila llena!") until you drop an item from the Inventory. Actives and consumable pickups don't count. The check lives in `fullMsg`/`pickUp`.
   - A few paths add items without the check: a Mega colour-variant perk item (+1), and save/co-op state restore. Patch (`a_parche`) only swaps items 1-for-1. So in practice you stay at about 100.
 - **Item hoarding penalty** (`NERF.itemK`): in code, holding more than 130 *offensive* items (anything except defense, utility and evo) multiplies all your damage by `exp(-0.022 × (n − 130))`.
   - This was added in 1.0.11/1.0.13, before the 100-item cap existed. Since the cap, **it is effectively unreachable in normal play**. It's a leftover safety net.

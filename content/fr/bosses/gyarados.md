@@ -18,8 +18,8 @@ details:
   value: Danse Draco, Hydrocanon, 3 charges enchaînées, Anneau de 16 tirs, Laser, Rafale
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Grotte du Mont Argenté'
+hint: 'Boss de : Grotte du Mont Argenté.'
 names:
   en:
     name: Gyarados

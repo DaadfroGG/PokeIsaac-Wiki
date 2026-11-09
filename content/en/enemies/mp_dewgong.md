@@ -17,8 +17,8 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'Mt. Silver Foothills'
+hint: 'You''ll find it in: Mt. Silver Foothills.'
 names:
   es:
     name: Dewgong

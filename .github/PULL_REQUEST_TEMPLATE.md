@@ -8,3 +8,4 @@
 
 - [ ] English and French pages say the same thing (or I noted which one still needs translating)
 - [ ] New images are in `static/assets/` and are small (sprites as PNG, clips as WebP)
+- [ ] If I marked a page `verified: true`, I checked every fact on it in the game

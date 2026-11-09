@@ -18,8 +18,8 @@ details:
   value: Toile Élek, 4 charges enchaînées, Bélier, Anneau de 14 tirs, Rafale
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Sommet du Mont Argenté'
+hint: 'Boss de : Sommet du Mont Argenté.'
 names:
   en:
     name: Pikachu

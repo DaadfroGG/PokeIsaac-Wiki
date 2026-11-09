@@ -18,8 +18,8 @@ details:
   value: Murs troués, Tempête de sable, Anneau de 14 tirs, Bélier, Rafale
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Contreforts du Mont Argenté'
+hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
 names:
   en:
     name: Tyranitar

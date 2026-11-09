@@ -18,8 +18,8 @@ details:
   value: Walls with a gap, Sandstorm, Ring of 14 shots, Take Down, Volley
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'Boss of: Mt. Moon.'
+  value: 'Mt. Moon, Mt. Silver Foothills'
+hint: 'Boss of: Mt. Moon, Mt. Silver Foothills.'
 names:
   es:
     name: Tyranitar

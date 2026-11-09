@@ -18,8 +18,8 @@ details:
   value: Dragon Dance, Hydro Pump, 3 chained charges, Ring of 16 shots, Laser, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'Mt. Silver Cave'
+hint: 'Boss of: Mt. Silver Cave.'
 names:
   es:
     name: Gyarados

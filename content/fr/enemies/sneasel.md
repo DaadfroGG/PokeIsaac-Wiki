@@ -17,8 +17,8 @@ details:
   value: 1 ♥
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Contreforts du Mont Argenté, Sommet du Mont Argenté'
+hint: 'Où le trouver : Caverne Azurée, Contreforts du Mont Argenté, Sommet du Mont Argenté.'
 names:
   en:
     name: Sneasel

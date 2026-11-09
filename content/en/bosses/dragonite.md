@@ -18,8 +18,8 @@ details:
   value: Crossed Hyper Beams, Dive, Ring of 16 shots, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'Mt. Silver Cave'
+hint: 'Boss of: Mt. Silver Cave.'
 names:
   es:
     name: Dragonite

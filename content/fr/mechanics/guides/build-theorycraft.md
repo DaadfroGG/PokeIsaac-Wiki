@@ -4,11 +4,11 @@ layout: guide
 weight: 5
 text_lang: en
 ---
-Worked out from how the game behaves in build 1.1.1-108d03b1, not from play sessions. **Where a calculation here disagrees with [Measured in the headless sim](#measured-in-the-headless-sim-2026-11-07), the measurement wins.**
+Worked out from how the game behaves (update of 2026-11-06), not from play sessions. **Where a calculation here disagrees with [Measured in the headless sim](#measured-in-the-headless-sim-2026-11-07), the measurement wins.**
 
-## Build 1.1.1-108d03b1 (2026-11-06): what changed for builds (verified)
+## Update of 2026-11-06: what changed for builds (verified)
 
-Items, characters, enemies and bosses are unchanged from 1.1.1-23b08787, and so is floor generation. So the build rankings below still stand. The in-game note calls this patch 1.1.2; `PI_VERSION` is still 1.1.1.
+Items, characters, enemies and bosses are unchanged from the previous update, and so is floor generation. So the build rankings below still stand. The in-game patch note calls this update 1.1.2.
 
 - **Mastery side abilities exist but are off on the live site.** `MasteryUI.enabled` needs `query.mastery`, and the live site deletes all URL flags. Details and numbers: [How player stats are computed](stat-modifiers.html).
 - **Upgrade shop no longer adds slots.** Each vitamin replaces a shop pickup first, then any pedestal after the first 2 regular ones (`upgradeStock`). If nothing is left to replace, that vitamin isn't offered.
@@ -462,7 +462,7 @@ Every stacking effect has a hard maximum:
 
 So stacking damage alone eventually loses. Depth is set by how many separate capped stages you multiply together, plus HP-percentage damage like Comet Shard, which doesn't lose value with depth. The weapon system (about 6,000 lines) hasn't been fully read and might contain an uncapped source, though floor 178 was reached with no weapon item, so it can't be the whole answer.
 
-## Deep Sea Tooth nerf, build 1.1.1-28bc3e4e (2026-11-03, verified)
+## Deep Sea Tooth nerf, update of 2026-11-03 (verified)
 
 The numbers on this page already include it.
 - **Needle chance:** `min(10%, 3% + 0.5% per luck)`, at most one per second. It was `min(25%, 4% + 1%)`.

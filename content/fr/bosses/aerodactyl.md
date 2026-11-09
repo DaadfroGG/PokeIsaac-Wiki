@@ -18,8 +18,8 @@ details:
   value: Piqué, Pluie de 8 rochers, 5 tirs à tête chercheuse, Rafale
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Contreforts du Mont Argenté'
+hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
 names:
   en:
     name: Aerodactyl

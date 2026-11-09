@@ -26,7 +26,7 @@
 {{- $lead = printf "%s %s" $lead (T "lead_pools" (dict "floor" $floor "tier" $p.tier "pools" (delimit $names ", "))) }}
 {{- else }}{{ $lead = printf "%s %s" $lead (T "lead_nopool") }}{{ end -}}
 
-<h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $p.kind) }}</span></h1>
+<h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $p.kind) }}</span>{{ partial "status.html" . }}</h1>
 <div class="content">
 {{ partial "infobox.html" (dict "name" .Title "icon" $p.icon "color" $col "rows" $rows) }}
 <p class="lead">{{ $lead | safeHTML }}</p>

@@ -14,7 +14,7 @@ sec_world: World
 sec_mechanics: Mechanics
 blurb_pokemon: Starters, Gacha Pokémon and Megas with their stats
 soon: SOON
-footer: Fan-made reference, written by players (game build {{ .build }}). Not affiliated with PokéIsaac, Nintendo, Game Freak, Creatures or The Pokémon Company. Pokémon names and art belong to their owners.
+footer: Fan-made reference. Not affiliated with PokéIsaac, Nintendo, Game Freak, Creatures or The Pokémon Company. Pokémon names and art belong to their owners.
 kind_passive: Passive
 kind_active: Active
 sub_passive: PASSIVE ITEM
@@ -57,12 +57,11 @@ col_kind: Kind
 col_effect: Effect
 welcome: Welcome to the PokéIsaac Wiki
 welcome_p: 'A reference for PokéIsaac, the Pokémon roguelike shooter, written by its players. Every page can be edited: open a pull request on GitHub.'
-st_build: BUILD
 st_items: ITEMS
 st_langs: LANGUAGES
 showcase: Companions
 about: About this wiki
-about_p: Written for game build {{ .build }} and kept up to date by players. Found a mistake? Use the edit link at the bottom of any page.
+about_p: Kept up to date by players. Found a mistake? Use the edit link at the bottom of any page.
 press_slash: Press / anywhere to search.
 cat_stats: Stats
 cat_shot: Shot
@@ -151,3 +150,11 @@ col_enemies_appears: Appears in
 col_bosses_hp: Health
 col_bosses_signature: Signature move
 col_bosses_appears: Appears in
+status_ai: AI-GENERATED
+status_ok: HUMAN VERIFIED
+status_ai_tip: 'Written with AI and not yet checked by a person: it may be wrong.'
+status_ok_tip: Checked against the game by a person
+ai_notice_title: ⚠ This wiki was made with AI
+ai_notice_p: 'Its pages were written with the help of AI tools and may contain mistakes. Pages marked AI-GENERATED have not been checked by a person yet; pages marked HUMAN VERIFIED have been checked in the game. If you play PokéIsaac, you can help: check a page, fix it if needed, and mark it verified (see the edit link at the bottom of every page).'
+ai_notice_count: '{{ .n }} of {{ .total }} pages verified so far.'
+footer_ai: 'Made with AI: information may be inaccurate.'

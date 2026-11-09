@@ -17,8 +17,8 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Où le trouver : Mont Sélénite.'
+  value: 'Mont Sélénite, Contreforts du Mont Argenté'
+hint: 'Où le trouver : Mont Sélénite, Contreforts du Mont Argenté.'
 names:
   en:
     name: Swinub

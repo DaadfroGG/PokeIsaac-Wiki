@@ -18,8 +18,8 @@ details:
   value: Dive, Rain of 8 rocks, 5 homing shots, Volley
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'Boss of: Mt. Moon.'
+  value: 'Mt. Moon, Mt. Silver Foothills'
+hint: 'Boss of: Mt. Moon, Mt. Silver Foothills.'
 names:
   es:
     name: Aerodactyl

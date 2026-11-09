@@ -17,8 +17,8 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, Mt. Silver Foothills'
+hint: 'You''ll find it in: Mt. Moon, Mt. Silver Foothills.'
 names:
   es:
     name: Phanpy

@@ -17,8 +17,8 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Sommet du Mont Argenté'
+hint: 'Où le trouver : Caverne Azurée, Sommet du Mont Argenté.'
 names:
   en:
     name: Dragonair

@@ -18,8 +18,8 @@ details:
   value: Electroweb, 4 chained charges, Take Down, Ring of 14 shots, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'Mt. Silver Summit'
+hint: 'Boss of: Mt. Silver Summit.'
 names:
   es:
     name: Pikachu

@@ -17,8 +17,8 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, Mt. Silver Cave'
+hint: 'You''ll find it in: Pokémon Tower, Mt. Silver Cave.'
 names:
   es:
     name: Misdreavus

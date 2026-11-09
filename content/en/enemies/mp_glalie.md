@@ -17,8 +17,8 @@ details:
   value: 1 ♥
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'Mt. Silver Cave, Mt. Silver Summit'
+hint: 'You''ll find it in: Mt. Silver Cave, Mt. Silver Summit.'
 names:
   es:
     name: Glalie

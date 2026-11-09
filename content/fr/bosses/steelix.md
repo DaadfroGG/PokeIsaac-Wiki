@@ -18,8 +18,8 @@ details:
   value: Double balayage, Pluie de 8 rochers, Tunnel, Anneau de 12 tirs
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Contreforts du Mont Argenté'
+hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
 names:
   en:
     name: Steelix

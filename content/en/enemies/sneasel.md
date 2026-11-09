@@ -17,8 +17,8 @@ details:
   value: 1 ♥
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, Mt. Silver Foothills, Mt. Silver Summit'
+hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Foothills, Mt. Silver Summit.'
 names:
   es:
     name: Sneasel

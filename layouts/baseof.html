@@ -30,7 +30,7 @@
 {{ block "main" . }}{{ end }}
 </main>
 </div>
-<footer class="foot">{{ T "footer" (dict "build" site.Params.build) }}
+<footer class="foot">{{ T "footer_ai" }} {{ T "footer" }}
 {{- with .File }} · <a href="{{ site.Params.repo }}/edit/{{ site.Params.branch }}/content/{{ $.Lang }}/{{ .Path | strings.TrimPrefix "/" }}">{{ T "edit_page" }}</a>{{ end }}</footer>
 <script src="{{ $root }}assets/wiki.js" defer></script>
 </body>

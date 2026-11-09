@@ -14,7 +14,7 @@ sec_world: Monde
 sec_mechanics: Mécaniques
 blurb_pokemon: Starters, Pokémon du Gacha et Méga avec leurs statistiques
 soon: BIENTÔT
-footer: Référence faite par des fans, écrite par les joueurs (build {{ .build }} du jeu). Sans lien avec PokéIsaac, Nintendo, Game Freak, Creatures ou The Pokémon Company. Les noms et images Pokémon appartiennent à leurs propriétaires.
+footer: Référence faite par des fans. Sans lien avec PokéIsaac, Nintendo, Game Freak, Creatures ou The Pokémon Company. Les noms et images Pokémon appartiennent à leurs propriétaires.
 kind_passive: Passif
 kind_active: Actif
 sub_passive: OBJET PASSIF
@@ -57,12 +57,11 @@ col_kind: Genre
 col_effect: Effet
 welcome: Bienvenue sur le Wiki PokéIsaac
 welcome_p: 'Une référence pour PokéIsaac, le shooter roguelike Pokémon, écrite par ses joueurs. Chaque page peut être modifiée : ouvrez une pull request sur GitHub.'
-st_build: VERSION
 st_items: OBJETS
 st_langs: LANGUES
 showcase: Compagnons
 about: À propos de ce wiki
-about_p: Écrite pour le build {{ .build }} du jeu et tenue à jour par les joueurs. Une erreur ? Utilisez le lien de modification en bas de chaque page.
+about_p: Tenue à jour par les joueurs. Une erreur ? Utilisez le lien de modification en bas de chaque page.
 press_slash: Appuyez sur / n'importe où pour rechercher.
 cat_stats: Statistiques
 cat_shot: Tir
@@ -151,3 +150,11 @@ col_enemies_appears: Apparaît dans
 col_bosses_hp: Vie
 col_bosses_signature: Capacité signature
 col_bosses_appears: Apparaît dans
+status_ai: GÉNÉRÉ PAR IA
+status_ok: VÉRIFIÉ
+status_ai_tip: 'Écrit avec une IA et pas encore vérifié par une personne : peut contenir des erreurs.'
+status_ok_tip: Vérifié dans le jeu par une personne
+ai_notice_title: ⚠ Ce wiki a été créé avec une IA
+ai_notice_p: 'Ses pages ont été écrites à l''aide d''outils d''IA et peuvent contenir des erreurs. Les pages marquées GÉNÉRÉ PAR IA n''ont pas encore été vérifiées par une personne ; celles marquées VÉRIFIÉ ont été contrôlées dans le jeu. Si vous jouez à PokéIsaac, vous pouvez aider : vérifiez une page, corrigez-la si besoin et marquez-la comme vérifiée (lien de modification en bas de chaque page).'
+ai_notice_count: '{{ .n }} pages vérifiées sur {{ .total }} pour l''instant.'
+footer_ai: 'Créé avec une IA : les informations peuvent être inexactes.'

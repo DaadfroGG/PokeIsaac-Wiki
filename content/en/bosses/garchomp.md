@@ -18,8 +18,8 @@ details:
   value: Dig, Earthquake, Rain of 10 rocks, Take Down
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'Mt. Silver Cave'
+hint: 'Boss of: Mt. Silver Cave.'
 names:
   es:
     name: Garchomp

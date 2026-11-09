@@ -1,0 +1,6 @@
+{{- /* Badge after a page title: HUMAN VERIFIED when the front matter says `verified: true`, AI-GENERATED otherwise. */ -}}
+{{- if .Params.verified -}}
+<span class="status ok" title="{{ T "status_ok_tip" }}{{ with .Params.verified_by }} ({{ . }}){{ end }}">{{ T "status_ok" }}</span>
+{{- else -}}
+<a class="status ai" href="{{ .Site.Home.RelPermalink }}#ai-notice" title="{{ T "status_ai_tip" }}">{{ T "status_ai" }}</a>
+{{- end -}}

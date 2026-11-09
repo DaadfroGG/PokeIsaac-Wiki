@@ -17,8 +17,8 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Grotte du Mont Argenté, Sommet du Mont Argenté'
+hint: 'Où le trouver : Grotte du Mont Argenté, Sommet du Mont Argenté.'
 names:
   en:
     name: Jynx

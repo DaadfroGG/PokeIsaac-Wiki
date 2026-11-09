@@ -4,7 +4,6 @@ layout: guide
 weight: 4
 text_lang: en
 ---
-_Written for PokéIsaac build 1.1.1 (108d03b1)._
 
 140 enemy definitions, 45 bosses.
 

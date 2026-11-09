@@ -17,8 +17,8 @@ details:
   value: 1 ♥
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Où le trouver : Mont Sélénite.'
+  value: 'Mont Sélénite, Grotte du Mont Argenté'
+hint: 'Où le trouver : Mont Sélénite, Grotte du Mont Argenté.'
 names:
   en:
     name: Graveler

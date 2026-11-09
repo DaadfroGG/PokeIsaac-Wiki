@@ -15,7 +15,6 @@ disableKinds = ["taxonomy", "term", "rss", "sitemap"]
 [params]
 repo = "https://github.com/DaadfroGG/PokeIsaac-Wiki"
 branch = "main"
-build = "1.1.1-108d03b1"   # the game build the pages describe
 
 [languages.en]
 contentDir = "content/en"

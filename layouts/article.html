@@ -1,4 +1,4 @@
 {{ define "main" }}
-<h1 class="title">{{ .Title }}</h1>
+<h1 class="title">{{ .Title }}{{ partial "status.html" . }}</h1>
 <div class="content article">{{ .Content }}</div>
 {{ end }}

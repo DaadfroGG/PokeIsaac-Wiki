@@ -18,8 +18,8 @@ details:
   value: Tunnel, Séisme, Pluie de 10 rochers, Bélier
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Grotte du Mont Argenté'
+hint: 'Boss de : Grotte du Mont Argenté.'
 names:
   en:
     name: Garchomp

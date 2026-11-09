@@ -17,8 +17,8 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Grotte du Mont Argenté'
+hint: 'Où le trouver : Tour Pokémon, Grotte du Mont Argenté.'
 names:
   en:
     name: Misdreavus

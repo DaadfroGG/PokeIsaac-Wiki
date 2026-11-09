@@ -18,8 +18,8 @@ details:
   value: Double sweep, Rain of 8 rocks, Dig, Ring of 12 shots
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'Boss of: Mt. Moon.'
+  value: 'Mt. Moon, Mt. Silver Foothills'
+hint: 'Boss of: Mt. Moon, Mt. Silver Foothills.'
 names:
   es:
     name: Steelix

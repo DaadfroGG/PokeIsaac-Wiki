@@ -17,8 +17,8 @@ details:
   value: 1 ♥
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'Mt. Silver Cave'
+hint: 'You''ll find it in: Mt. Silver Cave.'
 names:
   es:
     name: Pupitar

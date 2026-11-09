@@ -18,8 +18,8 @@ details:
   value: 4 charges enchaînées, Rafale, Anneau de 16 tirs, Piqué
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Grotte du Mont Argenté'
+hint: 'Boss de : Grotte du Mont Argenté.'
 names:
   en:
     name: Salamence

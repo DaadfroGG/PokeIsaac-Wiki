@@ -17,8 +17,8 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, Mt. Silver Foothills'
+hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Foothills.'
 names:
   es:
     name: Skarmory

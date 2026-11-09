@@ -1,16 +1,21 @@
 {{ define "main" }}
 {{- $items := where site.RegularPages "Section" "items" -}}
 {{- $comps := where (where $items "Params.category" "familiar") "Params.sprite" true -}}
-<div class="content"><div class="hero">
+<div class="content">
+{{- $all := where site.RegularPages "Params.id" "!=" nil }}{{ $ok := where $all "Params.verified" true }}
+<aside class="ai-notice" id="ai-notice"><b>{{ T "ai_notice_title" }}</b>
+<p>{{ T "ai_notice_p" }}</p>
+<p>{{ T "ai_notice_count" (dict "n" (len $ok) "total" (len $all)) }} <span class="status ai">{{ T "status_ai" }}</span> <span class="status ok">{{ T "status_ok" }}</span></p></aside>
+<div class="hero">
 <h1>{{ .Params.welcome }}</h1>
 {{ .Content }}
-<div class="stats"><span>{{ T "st_build" }} <b>{{ site.Params.build }}</b></span><span>{{ T "st_items" }} <b>{{ len $items }}</b></span><span>{{ T "st_pokemon" }} <b>{{ len (where site.RegularPages "Section" "pokemon") }}</b></span><span>{{ T "st_langs" }} <b>{{ len hugo.Sites }}</b></span></div>
+<div class="stats"><span>{{ T "st_items" }} <b>{{ len $items }}</b></span><span>{{ T "st_pokemon" }} <b>{{ len (where site.RegularPages "Section" "pokemon") }}</b></span><span>{{ T "st_langs" }} <b>{{ len hugo.Sites }}</b></span></div>
 <div class="art">{{ range first 5 $comps }}{{ partial "img.html" (dict "icon" .Params.icon) }}{{ end }}</div>
 </div>
 <div class="tiles">{{ range hugo.Data.sections }}{{ $s := . }}{{ with site.GetPage (printf "/%s" .key) }}
 <a class="tile" href="{{ .RelPermalink }}" style="{{ printf "--c:var(%s)" $s.color | safeCSS }}"><b>{{ T (printf "sec_%s" $s.key) }}</b><span>{{ .Params.blurb | default (.Summary | plainify | htmlUnescape) }}</span><em>{{ len (where .RegularPages "Params.id" "!=" nil) }}</em></a>{{ end }}{{ end }}</div>
 <div class="cols">
 <div class="box"><h2>{{ T "showcase" }}</h2><div class="igrid">{{ range $comps }}<a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ partial "img.html" (dict "icon" .Params.icon "alt" .Title) }}</a>{{ end }}</div></div>
-<div class="box"><h2>{{ T "about" }}</h2><p>{{ T "about_p" (dict "build" site.Params.build) }}</p><p class="note">{{ T "press_slash" }}</p></div>
+<div class="box"><h2>{{ T "about" }}</h2><p>{{ T "about_p" }}</p><p class="note">{{ T "press_slash" }}</p></div>
 </div></div>
 {{ end }}

@@ -51,6 +51,17 @@ Links between pages are ordinary relative links: from an item, `[Leftovers](rest
 
 Pages may use a little HTML where Markdown can't do it (a `<p class="note">` for a grey note, an `<img>` with a size). Two shortcodes are there for media: `{{</* clip */>}}` shows the item's recording from `static/assets/clips/<id>.webp` (with a `<id>.png` still), and `{{</* scenes */>}}…{{</* /scenes */>}}` with `{{</* scene src="arena-bosque.webp" caption="…" */>}}` lays out screenshots from `static/assets/scenes/`.
 
+## AI-generated and human-verified pages
+
+The wiki was first written with AI tools, so every page starts out marked **AI-GENERATED**, and the main page warns readers about it. When you have checked a page against the game (numbers, names, where it appears, what it does), fix whatever was wrong and add this to its front matter, in both languages:
+
+```yaml
+verified: true
+verified_by: your-github-name
+```
+
+The page then shows **HUMAN VERIFIED** instead, and the main page counts it. Only mark what you actually checked; if one number couldn't be checked, leave the page unverified and say so in the pull request.
+
 ## Adding a page
 
 Copy a page of the same section and change it, or let Hugo fill in the fields:
