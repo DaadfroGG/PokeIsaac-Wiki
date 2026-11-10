@@ -14,11 +14,13 @@ details:
   value: '2.6'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, League: Johto, Hoenn, Unova, Alola, Paldea'
+- label: League
+  value: 'Johto: Goldenrod City Gym; Hoenn: Petalburg City Gym; Unova: Nacrene City Gym; Alola: Verdant Cavern Gym; Paldea: Medali Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Hoenn, Unova, Alola, Paldea.'
 names:
   es:
     name: Zangoose

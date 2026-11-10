@@ -13,6 +13,8 @@ details:
   value: Drop one in the Inventory
 - label: Does not count
   value: The active item
+- label: Bag order
+  value: Items are listed in the order you picked them up
 names:
   es:
     name: Mochila de 100 objetos

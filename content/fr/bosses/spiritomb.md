@@ -1,5 +1,5 @@
 ---
-title: Spiritomb
+title: Spiritomb (Tour Pokémon)
 id: spiritomb
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Murs troués, Téléport, Anneau de gaz toxique (14), 5 tirs à tête chercheuse, Invoque 3 Polichombr
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Boss de : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Sinnoh, Paldea'
+- label: Ligue
+  value: 'Sinnoh : Arène d''Unionpolis (boss bonus); Paldea : Arène de Frigao (boss bonus)'
+hint: 'Boss de : Tour Pokémon, Ligue : Sinnoh, Paldea.'
 names:
   en:
     name: Spiritomb

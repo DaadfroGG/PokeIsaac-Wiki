@@ -1,5 +1,5 @@
 ---
-title: Machamp
+title: Machamp (Kanto League)
 id: lg_machamp
 color: '#d8613c'
 element: fighting
@@ -18,8 +18,10 @@ details:
   value: 4 chained charges, Spinning cross of 6, Volley, Earthquake, Take Down
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Elite Four; Johto: Cianwood City Gym (extra boss); Johto: Elite Four'
+hint: 'Boss of: League: Kanto, Johto.'
 names:
   es:
     name: Machamp
@@ -52,4 +54,4 @@ names:
     name: 怪力
     desc: 希巴的四拳. 樓層頭目。
 ---
-Bruno's four fists. Floor boss.
+Bruno's four fists. League boss.

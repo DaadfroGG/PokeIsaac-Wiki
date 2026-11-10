@@ -14,11 +14,13 @@ details:
   value: '1.9'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Mt. Moon, Cinnabar Mansion
-hint: 'You''ll find it in: Mt. Moon, Cinnabar Mansion.'
+  value: 'Mt. Moon, Cinnabar Mansion, League: Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: League
+  value: 'Johto: Cianwood City Gym; Hoenn: Dewford Town Gym; Sinnoh: Veilstone City Gym; Kalos: Shalour City Gym; Alola: Iki Town Gym; Galar: Stow-on-Side Gym'
+hint: 'You''ll find it in: Mt. Moon, Cinnabar Mansion, League: Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   es:
     name: Machop

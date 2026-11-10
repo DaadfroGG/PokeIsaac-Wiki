@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'You''ll find it in: Viridian Forest.'
+  value: 'Viridian Forest, League: Johto, Hoenn, Unova'
+- label: League
+  value: 'Johto: Violet City Gym; Hoenn: Fortree City Gym; Unova: Mistralton City Gym'
+hint: 'You''ll find it in: Viridian Forest, League: Johto, Hoenn, Unova.'
 names:
   es:
     name: Spearow

@@ -1,5 +1,5 @@
 ---
-title: Mélofée
+title: Mélofée (Mont Sélénite)
 id: clefairy
 color: '#ff9ad8'
 element: fairy
@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Où le trouver : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kalos, Galar'
+- label: Ligue
+  value: 'Kalos : Arène de Romant-sous-Bois; Galar : Arène de Corrifey'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Kalos, Galar.'
 names:
   en:
     name: Clefairy

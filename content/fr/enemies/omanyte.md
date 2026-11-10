@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Où le trouver : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Alola, Galar, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène d''Azuria; Hoenn : Arène d''Atalanopolis; Sinnoh : Arène de Verchamps; Alola : Arène de Colline Clapotis; Galar : Arène de Skifford; Paldea : Arène de Jarramanca'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Alola, Galar, Paldea.'
 names:
   en:
     name: Omanyte

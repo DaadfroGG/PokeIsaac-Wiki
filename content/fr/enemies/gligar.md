@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Grotte du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Grotte du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Kanto.'
 names:
   en:
     name: Gligar

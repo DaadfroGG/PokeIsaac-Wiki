@@ -18,8 +18,10 @@ details:
   value: Hands from the ground, Teleport, Poison gas ring (12), Summons 3 Duskull, 5 homing shots
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'Boss of: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Sinnoh, Paldea'
+- label: League
+  value: 'Sinnoh: Hearthome City Gym (extra boss); Paldea: Montenevera Gym (extra boss)'
+hint: 'Boss of: Pokémon Tower, League: Sinnoh, Paldea.'
 names:
   es:
     name: Dusknoir

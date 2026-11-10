@@ -18,8 +18,10 @@ details:
   value: Ring of fire, 2 chained charges, Volley, Ring of 12 shots, Summons 2 Houndour
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'Boss of: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Johto, Alola, Galar'
+- label: League
+  value: 'Kanto: Cinnabar Island Gym (extra boss); Johto: Elite Four; Alola: Malie City Gym (extra boss); Galar: Spikemuth Gym (extra boss)'
+hint: 'Boss of: Cinnabar Mansion, League: Kanto, Johto, Alola, Galar.'
 names:
   es:
     name: Houndoom

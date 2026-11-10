@@ -14,11 +14,13 @@ details:
   value: '2.6'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Foothills, Mt. Silver Summit'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Foothills, Mt. Silver Summit.'
+  value: 'Cerulean Cave, League: Johto, Alola, Galar'
+- label: League
+  value: 'Johto: Mahogany Town Gym; Alola: Malie City Gym; Galar: Spikemuth Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Alola, Galar.'
 names:
   es:
     name: Sneasel

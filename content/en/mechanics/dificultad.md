@@ -17,6 +17,8 @@ details:
   value: '1 in 5 rooms: second wave, double coins'
 - label: Boss affixes
   value: From floor 21, plus one per Endless level
+- label: Chapter 4 damage
+  value: Enemy hits of a full heart only on the Armored Mewtwo floor
 names:
   es:
     name: Dificultad por planta

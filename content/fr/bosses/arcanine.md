@@ -18,8 +18,10 @@ details:
   value: 4 charges enchaînées, Rafale, Anneau de 12 tirs, Invoque 2 Caninos
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Boss de : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène de Cramois''Île; Hoenn : Arène de Vermilava (boss bonus); Alola : Arène de Volcan Wela (boss bonus); Galar : Arène de Motorby (boss bonus)'
+hint: 'Boss de : Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Alola, Galar.'
 names:
   en:
     name: Arcanine

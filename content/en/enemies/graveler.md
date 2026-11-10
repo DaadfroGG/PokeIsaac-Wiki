@@ -14,11 +14,13 @@ details:
   value: '0.9'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: 'Mt. Moon, Mt. Silver Cave'
-hint: 'You''ll find it in: Mt. Moon, Mt. Silver Cave.'
+  value: 'Mt. Moon, League: Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: League
+  value: 'Kanto: Pewter City Gym; Hoenn: Rustboro City Gym; Sinnoh: Oreburgh City Gym; Kalos: Cyllage City Gym; Alola: Konikoni City Gym; Galar: Circhester Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   es:
     name: Graveler

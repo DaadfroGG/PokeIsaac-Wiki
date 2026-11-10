@@ -34,19 +34,19 @@ names:
     desc: Seigneur de l'espace. Boss final d'un chapitre du mode Classique (5, 6 ou le Néant).
   de:
     name: Palkia
-    desc: Lord of Space. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
+    desc: Herr des Raumes. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
   it:
     name: Palkia
-    desc: Lord of Space. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
+    desc: Il signore dello spazio. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
   pt:
     name: Palkia
-    desc: Lord of Space. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
+    desc: O senhor do espaço. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
   ru:
     name: Palkia
     desc: Властелин пространства. Финальный босс главы режима Классика (5, 6 или Пустота).
   ja:
     name: パルキア
-    desc: Lord of Space. クラシックモードの章のラストボス（第5章、第6章、虚空）。
+    desc: 空間の主. クラシックモードの章のラストボス（第5章、第6章、虚空）。
   ko:
     name: 펄기아
     desc: 공간의 지배자. 클래식 모드 챕터의 최종 보스 (5, 6 또는 공허).

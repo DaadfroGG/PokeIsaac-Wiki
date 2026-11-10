@@ -18,8 +18,10 @@ details:
   value: Beam, 3-arm spiral, Ring of 16 shots, Hydro Pump, Floor zones
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Elite Four'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Lapras
@@ -52,4 +54,4 @@ names:
     name: 拉普拉斯
     desc: 科拿之歌. 樓層頭目。
 ---
-Lorelei's song. Floor boss.
+Lorelei's song. League boss.

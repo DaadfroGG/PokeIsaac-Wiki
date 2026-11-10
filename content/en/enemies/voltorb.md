@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea'
+- label: League
+  value: 'Kanto: Vermilion City Gym; Hoenn: Mauville City Gym; Sinnoh: Sunyshore City Gym; Unova: Nimbasa City Gym; Kalos: Lumiose City Gym; Alola: Hokulani Observatory Gym; Paldea: Levincia Gym'
+hint: 'You''ll find it in: League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea.'
 names:
   es:
     name: Voltorb

@@ -18,8 +18,10 @@ details:
   value: Damier de flaques, Téléport, Anneau de gaz toxique (10), 4 tirs à tête chercheuse, Invoque 1 Mimitoss
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Kanto, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Céladopole (boss bonus); Unys : Arène de Volucité (boss bonus); Kalos : Arène de Neuvartault (boss bonus); Paldea : Arène de Sevaro (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Kanto, Unys, Kalos, Paldea.'
 names:
   en:
     name: Venomoth

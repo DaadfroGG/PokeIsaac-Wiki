@@ -18,8 +18,10 @@ details:
   value: Dive, Rain of 8 rocks, 5 homing shots, Volley
 - key: appears
   label: Appears in
-  value: 'Mt. Moon, Mt. Silver Foothills'
-hint: 'Boss of: Mt. Moon, Mt. Silver Foothills.'
+  value: 'Mt. Moon, League: Kanto, Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: League
+  value: 'Kanto: Pewter City Gym (extra boss); Johto: Violet City Gym (extra boss); Johto: Champion; Hoenn: Rustboro City Gym (extra boss); Sinnoh: Oreburgh City Gym (extra boss); Kalos: Cyllage City Gym (extra boss); Alola: Konikoni City Gym (extra boss); Galar: Circhester Gym (extra boss)'
+hint: 'Boss of: Mt. Moon, League: Kanto, Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   es:
     name: Aerodactyl

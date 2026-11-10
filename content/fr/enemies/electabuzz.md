@@ -14,11 +14,13 @@ details:
   value: 1,4
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Carmin sur Mer; Hoenn : Arène de Lavandia; Sinnoh : Arène de Rivamar; Unys : Arène de Méanville; Kalos : Arène d''Illumis; Alola : Arène d''Observatoire de Hokulani; Paldea : Arène de Levalendura'
+hint: 'Où le trouver : Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea.'
 names:
   en:
     name: Electabuzz

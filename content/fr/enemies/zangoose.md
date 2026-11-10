@@ -14,11 +14,13 @@ details:
   value: 2,6
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Johto, Hoenn, Unys, Alola, Paldea'
+- label: Ligue
+  value: 'Johto : Arène de Doublonville; Hoenn : Arène de Clémenti-Ville; Unys : Arène de Maillard; Alola : Arène de Grotte Verdoyante; Paldea : Arène de Mezclamora'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Hoenn, Unys, Alola, Paldea.'
 names:
   en:
     name: Zangoose

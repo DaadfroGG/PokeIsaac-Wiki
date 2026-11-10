@@ -18,7 +18,7 @@ details:
 - key: appears
   label: Apparaît dans
   value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+hint: 'Où le trouver : Manoir de Cramois''Île.'
 names:
   en:
     name: Trubbish

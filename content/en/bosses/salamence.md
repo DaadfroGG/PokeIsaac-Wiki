@@ -1,5 +1,5 @@
 ---
-title: Salamence
+title: Salamence (Unova League)
 id: salamence
 color: '#7a5cff'
 element: dragon
@@ -18,8 +18,10 @@ details:
   value: 4 chained charges, Volley, Ring of 16 shots, Dive
 - key: appears
   label: Appears in
-  value: 'Mt. Silver Cave'
-hint: 'Boss of: Mt. Silver Cave.'
+  value: 'League: Unova, Galar'
+- label: League
+  value: 'Unova: Opelucid City Gym (extra boss); Galar: Hammerlocke Gym (extra boss)'
+hint: 'Boss of: League: Unova, Galar.'
 names:
   es:
     name: Salamence
@@ -52,4 +54,4 @@ names:
     name: 暴飛龍
     desc: 天空之龍. 樓層頭目。
 ---
-The sky dragon. Floor boss.
+The sky dragon. League boss.

@@ -18,8 +18,10 @@ details:
   value: Lance-Flammes, Zones au sol, Anneau de 16 tirs, Invoque 2 Limagma
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Boss de : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène de Cramois''Île (boss bonus); Hoenn : Arène de Vermilava (boss bonus); Alola : Arène de Volcan Wela (boss bonus); Galar : Arène de Motorby (boss bonus)'
+hint: 'Boss de : Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Alola, Galar.'
 names:
   en:
     name: Magmortar

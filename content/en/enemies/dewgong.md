@@ -14,11 +14,13 @@ details:
   value: '1.7'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Hoenn, Sinnoh, Alola, Galar, Paldea'
+- label: League
+  value: 'Hoenn: Sootopolis City Gym; Sinnoh: Pastoria City Gym; Alola: Brooklet Hill Gym; Galar: Hulbury Gym; Paldea: Cascarrafa Gym'
+hint: 'You''ll find it in: League: Hoenn, Sinnoh, Alola, Galar, Paldea.'
 names:
   es:
     name: Dewgong

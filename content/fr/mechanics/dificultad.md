@@ -17,6 +17,8 @@ details:
   value: '1 salle sur 5 : seconde vague, pièces doublées'
 - label: Affixes des boss
   value: Dès l'étage 21, et un de plus par niveau d'infini
+- label: Dégâts au chapitre 4
+  value: Coups d'un cœur entier seulement à l'étage de Mewtwo Cuirassé
 names:
   en:
     name: Difficulty by floor

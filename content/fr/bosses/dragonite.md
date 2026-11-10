@@ -18,8 +18,10 @@ details:
   value: Ultralasers croisés, Piqué, Anneau de 16 tirs, Rafale
 - key: appears
   label: Apparaît dans
-  value: 'Grotte du Mont Argenté'
-hint: 'Boss de : Grotte du Mont Argenté.'
+  value: 'Ligue : Kanto, Johto, Unys, Galar'
+- label: Ligue
+  value: 'Kanto : Conseil 4; Johto : Arène d''Ébènelle (boss bonus); Johto : Maître; Unys : Arène de Janusia (boss bonus); Galar : Arène de Kickenham (boss bonus)'
+hint: 'Boss de : Ligue : Kanto, Johto, Unys, Galar.'
 names:
   en:
     name: Dragonite
@@ -52,4 +54,4 @@ names:
     name: 快龍
     desc: 溫柔之龍. 樓層頭目。
 ---
-Le dragon bienveillant. Boss d'étage.
+Le dragon bienveillant. Boss de la Ligue.

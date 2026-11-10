@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Sinnoh, Paldea'
+- label: League
+  value: 'Sinnoh: Hearthome City Gym; Paldea: Montenevera Gym'
+hint: 'You''ll find it in: Pokémon Tower, League: Sinnoh, Paldea.'
 names:
   es:
     name: Yamask

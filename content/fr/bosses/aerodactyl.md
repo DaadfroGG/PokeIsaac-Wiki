@@ -18,8 +18,10 @@ details:
   value: Piqué, Pluie de 8 rochers, 5 tirs à tête chercheuse, Rafale
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Contreforts du Mont Argenté'
-hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Kanto, Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta (boss bonus); Johto : Arène de Mauville (boss bonus); Johto : Maître; Hoenn : Arène de Mérouville (boss bonus); Sinnoh : Arène de Charbourg (boss bonus); Kalos : Arène de Relifac-le-Haut (boss bonus); Alola : Arène de Konikoni (boss bonus); Galar : Arène de Ludester (boss bonus)'
+hint: 'Boss de : Mont Sélénite, Ligue : Kanto, Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Aerodactyl

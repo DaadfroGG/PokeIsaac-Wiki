@@ -1,5 +1,5 @@
 ---
-title: Magmar (Indigo League)
+title: Magmar (Kanto League)
 id: lg_magmar
 color: '#ff7a33'
 element: fire
@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Kanto, Hoenn, Alola, Galar'
+- label: League
+  value: 'Kanto: Cinnabar Island Gym; Hoenn: Lavaridge Town Gym; Alola: Wela Volcano Gym; Galar: Motostoke Gym'
+hint: 'You''ll find it in: League: Kanto, Hoenn, Alola, Galar.'
 names:
   es:
     name: Magmar

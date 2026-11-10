@@ -18,8 +18,10 @@ details:
   value: Beam, 3-arm spiral, Poison gas ring (12), Ring of 12 shots, Summons 3 Oddish
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'Boss of: Viridian Forest.'
+  value: 'Viridian Forest, League: Kanto, Sinnoh, Unova, Kalos, Alola, Galar, Paldea'
+- label: League
+  value: 'Kanto: Celadon City Gym; Sinnoh: Eterna City Gym (extra boss); Unova: Striaton City Gym (extra boss); Kalos: Coumarine City Gym (extra boss); Alola: Lush Jungle Gym (extra boss); Galar: Turffield Gym (extra boss); Paldea: Artazon Gym (extra boss)'
+hint: 'Boss of: Viridian Forest, League: Kanto, Sinnoh, Unova, Kalos, Alola, Galar, Paldea.'
 names:
   es:
     name: Vileplume

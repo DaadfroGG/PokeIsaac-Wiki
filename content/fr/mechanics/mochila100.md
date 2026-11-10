@@ -13,6 +13,8 @@ details:
   value: Lâchez-en un dans l’inventaire
 - label: Ne compte pas
   value: L’objet actif
+- label: Ordre du Sac
+  value: Les objets sont listés dans leur ordre de ramassage
 names:
   en:
     name: 100-item Bag

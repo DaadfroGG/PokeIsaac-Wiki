@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Johto, Sinnoh, Unova, Kalos, Paldea'
+- label: League
+  value: 'Johto: Mahogany Town Gym; Sinnoh: Snowpoint City Gym; Unova: Icirrus City Gym; Kalos: Snowbelle City Gym; Paldea: Glaseado Gym'
+hint: 'You''ll find it in: League: Johto, Sinnoh, Unova, Kalos, Paldea.'
 names:
   es:
     name: Snorunt

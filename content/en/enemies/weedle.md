@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'You''ll find it in: Viridian Forest.'
+  value: 'Viridian Forest, League: Johto'
+- label: League
+  value: 'Johto: Azalea Town Gym'
+hint: 'You''ll find it in: Viridian Forest, League: Johto.'
 names:
   es:
     name: Weedle

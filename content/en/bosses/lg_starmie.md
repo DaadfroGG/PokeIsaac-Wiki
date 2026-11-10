@@ -18,8 +18,10 @@ details:
   value: Hydro Pump, 3-arm spiral, Ring of 14 shots, Teleport, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Cerulean City Gym'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Starmie
@@ -52,4 +54,4 @@ names:
     name: 寶石海星
     desc: 小霞之星. 樓層頭目。
 ---
-Misty's star. Floor boss.
+Misty's star. League boss.

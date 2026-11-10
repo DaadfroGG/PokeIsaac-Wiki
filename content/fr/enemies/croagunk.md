@@ -14,11 +14,13 @@ details:
   value: 2,0
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Parmanie'
+hint: 'Où le trouver : Manoir de Cramois''Île, Ligue : Kanto.'
 names:
   en:
     name: Croagunk

@@ -18,8 +18,10 @@ details:
   value: Mains surgies du sol, Téléport, Anneau de gaz toxique (12), Invoque 3 Skelénox, 5 tirs à tête chercheuse
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Boss de : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Sinnoh, Paldea'
+- label: Ligue
+  value: 'Sinnoh : Arène d''Unionpolis (boss bonus); Paldea : Arène de Frigao (boss bonus)'
+hint: 'Boss de : Tour Pokémon, Ligue : Sinnoh, Paldea.'
 names:
   en:
     name: Dusknoir

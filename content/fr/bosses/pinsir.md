@@ -18,8 +18,10 @@ details:
   value: 2 charges enchaînées, Rafale, Invoque 2 Chenipan
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia (boss bonus); Unys : Arène de Volucité (boss bonus); Kalos : Arène de Neuvartault (boss bonus); Paldea : Arène de Sevaro (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea.'
 names:
   en:
     name: Pinsir

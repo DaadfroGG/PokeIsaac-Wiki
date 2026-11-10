@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'You''ll find it in: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, League: Kanto.'
 names:
   es:
     name: Koffing

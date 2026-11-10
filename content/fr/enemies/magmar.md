@@ -1,5 +1,5 @@
 ---
-title: Magmar
+title: Magmar (Manoir de Cramois'Île)
 id: magmar
 color: '#ff7a33'
 element: fire
@@ -14,11 +14,13 @@ details:
   value: 1,2
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île, Caverne Azurée
-hint: 'Où le trouver : Manoir de Cramois''Île, Caverne Azurée.'
+  value: 'Manoir de Cramois''Île, Caverne Azurée, Ligue : Hoenn, Alola, Galar'
+- label: Ligue
+  value: 'Hoenn : Arène de Vermilava; Alola : Arène de Volcan Wela; Galar : Arène de Motorby'
+hint: 'Où le trouver : Manoir de Cramois''Île, Caverne Azurée, Ligue : Hoenn, Alola, Galar.'
 names:
   en:
     name: Magmar

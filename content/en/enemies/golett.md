@@ -14,11 +14,13 @@ details:
   value: '1.0'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Unova'
+- label: League
+  value: 'Unova: Driftveil City Gym'
+hint: 'You''ll find it in: Pokémon Tower, League: Unova.'
 names:
   es:
     name: Golett

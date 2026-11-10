@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Où le trouver : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia; Unys : Arène de Volucité; Kalos : Arène de Neuvartault; Paldea : Arène de Sevaro'
+hint: 'Où le trouver : Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea.'
 names:
   en:
     name: Wurmple

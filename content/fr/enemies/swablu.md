@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Johto, Hoenn, Unys'
+- label: Ligue
+  value: 'Johto : Arène de Mauville; Hoenn : Arène de Cimetronelle; Unys : Arène de Parsemille'
+hint: 'Où le trouver : Ligue : Johto, Hoenn, Unys.'
 names:
   en:
     name: Swablu

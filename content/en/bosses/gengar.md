@@ -1,5 +1,5 @@
 ---
-title: Gengar
+title: Gengar (Pokémon Tower)
 id: gengar
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Ambush, 2 clones, Ring of 12 shots, Summons 2 Gastly, Volley
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'Boss of: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Elite Four; Johto: Ecruteak City Gym'
+hint: 'Boss of: Pokémon Tower, League: Kanto, Johto.'
 names:
   es:
     name: Gengar
@@ -37,7 +39,7 @@ names:
     name: Gengar
     desc: O brincalhão das sombras. Chefe do andar.
   ru:
-    name: Gengar
+    name: Генгар
     desc: Шутник теней. Босс этажа.
   ja:
     name: ゲンガー

@@ -14,11 +14,13 @@ details:
   value: '2.1'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Cave'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Cave.'
+  value: 'Cerulean Cave, League: Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: League
+  value: 'Johto: Cianwood City Gym; Hoenn: Dewford Town Gym; Sinnoh: Veilstone City Gym; Kalos: Shalour City Gym; Alola: Iki Town Gym; Galar: Stow-on-Side Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   es:
     name: Machoke

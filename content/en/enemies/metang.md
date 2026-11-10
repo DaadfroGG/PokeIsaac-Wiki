@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Cave'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Cave.'
+  value: 'Cerulean Cave, League: Kanto, Johto, Sinnoh'
+- label: League
+  value: 'Kanto: Saffron City Gym; Johto: Olivine City Gym; Sinnoh: Canalave City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Kanto, Johto, Sinnoh.'
 names:
   es:
     name: Metang

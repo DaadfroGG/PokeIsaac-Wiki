@@ -21,8 +21,10 @@ details:
   value: Barrier, Wave with a gap, Teleport, Laser, 2-arm spiral, 4 homing shots
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'Boss of: Cerulean Cave.'
+  value: 'Cerulean Cave, League: Hoenn, Kalos, Paldea'
+- label: League
+  value: 'Hoenn: Mossdeep City Gym (extra boss); Kalos: Anistar City Gym (extra boss); Paldea: Alfornada Gym (extra boss)'
+hint: 'Boss of: Cerulean Cave, League: Hoenn, Kalos, Paldea.'
 names:
   es:
     name: Mewtwo

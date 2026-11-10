@@ -18,8 +18,10 @@ details:
   value: Hydrocanon, Spirale à 3 bras, Anneau de 14 tirs, Téléport, Rafale
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène d''Azuria'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Starmie
@@ -52,4 +54,4 @@ names:
     name: 寶石海星
     desc: 小霞之星. 樓層頭目。
 ---
-L'étoile d'Ondine. Boss d'étage.
+L'étoile d'Ondine. Boss de la Ligue.

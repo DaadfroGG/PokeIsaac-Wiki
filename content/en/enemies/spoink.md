@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Kanto, Hoenn, Kalos, Paldea'
+- label: League
+  value: 'Kanto: Saffron City Gym; Hoenn: Mossdeep City Gym; Kalos: Anistar City Gym; Paldea: Alfornada Gym'
+hint: 'You''ll find it in: Pokémon Tower, League: Kanto, Hoenn, Kalos, Paldea.'
 names:
   es:
     name: Spoink

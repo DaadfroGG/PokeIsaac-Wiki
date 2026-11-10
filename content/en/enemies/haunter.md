@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower, Cerulean Cave
-hint: 'You''ll find it in: Pokémon Tower, Cerulean Cave.'
+  value: 'Pokémon Tower, Cerulean Cave, League: Johto, Sinnoh, Paldea'
+- label: League
+  value: 'Johto: Ecruteak City Gym; Sinnoh: Hearthome City Gym; Paldea: Montenevera Gym'
+hint: 'You''ll find it in: Pokémon Tower, Cerulean Cave, League: Johto, Sinnoh, Paldea.'
 names:
   es:
     name: Haunter

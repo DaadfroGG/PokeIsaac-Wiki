@@ -14,11 +14,13 @@ details:
   value: '0.8'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, League: Johto, Unova, Galar'
+- label: League
+  value: 'Johto: Blackthorn City Gym; Unova: Opelucid City Gym; Galar: Hammerlocke Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Unova, Galar.'
 names:
   es:
     name: Shelgon

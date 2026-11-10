@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Foothills, Mt. Silver Cave'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Foothills, Mt. Silver Cave.'
+  value: 'Cerulean Cave, League: Kanto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Kanto.'
 names:
   es:
     name: Golbat

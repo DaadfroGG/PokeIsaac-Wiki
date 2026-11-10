@@ -14,11 +14,11 @@ details:
   value: 2,0
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
   value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+hint: 'Où le trouver : Caverne Azurée.'
 names:
   en:
     name: Seviper

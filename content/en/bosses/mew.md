@@ -18,8 +18,10 @@ details:
   value: Copies two moves, Copies a move, Teleport, Laser, Ring of 18 shots
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto, Hoenn, Kalos, Paldea'
+- label: League
+  value: 'Kanto: Saffron City Gym (extra boss); Hoenn: Mossdeep City Gym (extra boss); Kalos: Anistar City Gym (extra boss); Paldea: Alfornada Gym (extra boss)'
+hint: 'Boss of: League: Kanto, Hoenn, Kalos, Paldea.'
 names:
   es:
     name: Mew
@@ -52,4 +54,4 @@ names:
     name: 夢幻
     desc: 萬物之源. 樓層頭目。
 ---
-The origin of all. Floor boss.
+The origin of all. League boss.

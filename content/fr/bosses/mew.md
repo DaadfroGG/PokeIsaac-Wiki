@@ -18,8 +18,10 @@ details:
   value: Copie deux capacités, Copie une capacité, Téléport, Laser, Anneau de 18 tirs
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto, Hoenn, Kalos, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Safrania (boss bonus); Hoenn : Arène d''Algatia (boss bonus); Kalos : Arène de Flusselles (boss bonus); Paldea : Arène d''Alforneira (boss bonus)'
+hint: 'Boss de : Ligue : Kanto, Hoenn, Kalos, Paldea.'
 names:
   en:
     name: Mew
@@ -52,4 +54,4 @@ names:
     name: 夢幻
     desc: 萬物之源. 樓層頭目。
 ---
-L'origine de tout. Boss d'étage.
+L'origine de tout. Boss de la Ligue.

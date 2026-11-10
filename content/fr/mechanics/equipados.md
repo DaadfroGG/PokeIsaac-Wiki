@@ -16,7 +16,7 @@ details:
 - label: Lâcher
   value: 'Depuis le Sac (carte TENU, LÂCHER) : il reste au sol de la salle'
 - label: Fusionner
-  value: 'Depuis le Sac (FUSIONNER, avec des Poké Dollars) : son effet fonctionne toujours, avec n''importe quel Pokémon de l''équipe, et l''emplacement est libéré. Jusqu''à 5 et jamais deux identiques'
+  value: 'Depuis le Sac (FUSIONNER, avec des Poké Dollars) : son effet fonctionne toujours, avec n''importe quel Pokémon de l''équipe, et l''emplacement est libéré. Jusqu''à 5 et jamais deux identiques. Les objets fusionnés ont leur propre poche dans le Sac'
 names:
   en:
     name: Held items

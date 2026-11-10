@@ -14,11 +14,13 @@ details:
   value: 2,1
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Grotte du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Grotte du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Irisia; Hoenn : Arène de Myokara; Sinnoh : Arène de Voilaroc; Kalos : Arène d''Yantreizh; Alola : Arène de Lili’i; Galar : Arène d''Old Chister'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Machoke

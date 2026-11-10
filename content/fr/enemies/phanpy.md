@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Contreforts du Mont Argenté'
-hint: 'Où le trouver : Mont Sélénite, Contreforts du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Kanto, Unys'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle; Unys : Arène de Port Yoneuve'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Kanto, Unys.'
 names:
   en:
     name: Phanpy

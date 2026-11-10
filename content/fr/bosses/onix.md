@@ -18,8 +18,10 @@ details:
   value: Tunnel, Pluie de 8 rochers, Balayage d'une demi-salle, Invoque 1 Racaillou, Anneau de 8 tirs
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta'
+hint: 'Boss de : Mont Sélénite, Ligue : Kanto.'
 names:
   en:
     name: Onix

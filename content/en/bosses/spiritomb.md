@@ -1,5 +1,5 @@
 ---
-title: Spiritomb
+title: Spiritomb (Pokémon Tower)
 id: spiritomb
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Walls with a gap, Teleport, Poison gas ring (14), 5 homing shots, Summons 3 Shuppet
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'Boss of: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Sinnoh, Paldea'
+- label: League
+  value: 'Sinnoh: Hearthome City Gym (extra boss); Paldea: Montenevera Gym (extra boss)'
+hint: 'Boss of: Pokémon Tower, League: Sinnoh, Paldea.'
 names:
   es:
     name: Spiritomb

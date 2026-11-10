@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Appears in
   value: Chapter 4 (Classic mode)
+- label: In chapter 4
+  value: 30% less health
 hint: Reach the end of chapter 4 of Classic mode.
 names:
   es:

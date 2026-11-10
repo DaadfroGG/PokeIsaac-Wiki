@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Où le trouver : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia'
+hint: 'Où le trouver : Forêt de Jade, Ligue : Johto.'
 names:
   en:
     name: Kakuna

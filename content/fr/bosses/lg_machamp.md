@@ -1,5 +1,5 @@
 ---
-title: Mackogneur
+title: Mackogneur (Ligue de Kanto)
 id: lg_machamp
 color: '#d8613c'
 element: fighting
@@ -18,8 +18,10 @@ details:
   value: 4 charges enchaînées, Croix tournoyante de 6, Rafale, Séisme, Bélier
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto, Johto'
+- label: Ligue
+  value: 'Kanto : Conseil 4; Johto : Arène d''Irisia (boss bonus); Johto : Conseil 4'
+hint: 'Boss de : Ligue : Kanto, Johto.'
 names:
   en:
     name: Machamp
@@ -52,4 +54,4 @@ names:
     name: 怪力
     desc: 希巴的四拳. 樓層頭目。
 ---
-Les quatre poings d'Aldo. Boss d'étage.
+Les quatre poings d'Aldo. Boss de la Ligue.

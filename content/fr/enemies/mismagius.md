@@ -18,7 +18,7 @@ details:
 - key: appears
   label: Apparaît dans
   value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+hint: 'Où le trouver : Tour Pokémon.'
 names:
   en:
     name: Mismagius

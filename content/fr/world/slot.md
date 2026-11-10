@@ -1,5 +1,5 @@
 ---
-title: Machine à sous
+title: Machines à sous
 id: slot
 color: '#c8283a'
 labels:
@@ -9,9 +9,10 @@ icon: icons/world/slot.png
 details:
 - label: Où
   value: Salles secrètes.
+hint: Salles secrètes.
 names:
   en:
-    name: Slot machine
+    name: Slot machines
     desc: 'Spend coins on a spin: sometimes a prize, sometimes it breaks.'
   es:
     name: Tragaperras

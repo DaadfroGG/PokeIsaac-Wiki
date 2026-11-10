@@ -18,8 +18,10 @@ details:
   value: Crossed Hyper Beams, Dive, Ring of 16 shots, Volley
 - key: appears
   label: Appears in
-  value: 'Mt. Silver Cave'
-hint: 'Boss of: Mt. Silver Cave.'
+  value: 'League: Kanto, Johto, Unova, Galar'
+- label: League
+  value: 'Kanto: Elite Four; Johto: Blackthorn City Gym (extra boss); Johto: Champion; Unova: Opelucid City Gym (extra boss); Galar: Hammerlocke Gym (extra boss)'
+hint: 'Boss of: League: Kanto, Johto, Unova, Galar.'
 names:
   es:
     name: Dragonite
@@ -52,4 +54,4 @@ names:
     name: 快龍
     desc: 溫柔之龍. 樓層頭目。
 ---
-The gentle dragon. Floor boss.
+The gentle dragon. League boss.

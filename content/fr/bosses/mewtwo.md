@@ -21,8 +21,10 @@ details:
   value: Bouclier, Onde trouée, Téléport, Laser, Spirale à 2 bras, 4 tirs à tête chercheuse
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Boss de : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Hoenn, Kalos, Paldea'
+- label: Ligue
+  value: 'Hoenn : Arène d''Algatia (boss bonus); Kalos : Arène de Flusselles (boss bonus); Paldea : Arène d''Alforneira (boss bonus)'
+hint: 'Boss de : Caverne Azurée, Ligue : Hoenn, Kalos, Paldea.'
 names:
   en:
     name: Mewtwo

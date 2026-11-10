@@ -1,5 +1,5 @@
 ---
-title: Chandelure
+title: Chandelure (Pokémon Tower)
 id: chandelure
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Haze, Will-o'-wisps, Laser, Ring of 14 shots, Summons 3 Litwick
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'Boss of: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Sinnoh, Paldea'
+- label: League
+  value: 'Sinnoh: Hearthome City Gym (extra boss); Paldea: Montenevera Gym (extra boss)'
+hint: 'Boss of: Pokémon Tower, League: Sinnoh, Paldea.'
 names:
   es:
     name: Chandelure

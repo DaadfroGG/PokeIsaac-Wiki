@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest, Mt. Moon
-hint: 'You''ll find it in: Viridian Forest, Mt. Moon.'
+  value: 'Viridian Forest, Mt. Moon, League: Johto, Unova, Kalos, Paldea'
+- label: League
+  value: 'Johto: Azalea Town Gym; Unova: Castelia City Gym; Kalos: Santalune City Gym; Paldea: Cortondo Gym'
+hint: 'You''ll find it in: Viridian Forest, Mt. Moon, League: Johto, Unova, Kalos, Paldea.'
 names:
   es:
     name: Paras

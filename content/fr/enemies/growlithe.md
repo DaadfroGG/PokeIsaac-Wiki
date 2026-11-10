@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île, Caverne Azurée
-hint: 'Où le trouver : Manoir de Cramois''Île, Caverne Azurée.'
+  value: 'Manoir de Cramois''Île, Caverne Azurée, Ligue : Kanto, Hoenn, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène de Cramois''Île; Hoenn : Arène de Vermilava; Alola : Arène de Volcan Wela; Galar : Arène de Motorby'
+hint: 'Où le trouver : Manoir de Cramois''Île, Caverne Azurée, Ligue : Kanto, Hoenn, Alola, Galar.'
 names:
   en:
     name: Growlithe

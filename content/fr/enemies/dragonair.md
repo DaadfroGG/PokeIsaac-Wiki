@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Sommet du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Sommet du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Johto, Unys, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Ébènelle; Unys : Arène de Janusia; Galar : Arène de Kickenham'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Unys, Galar.'
 names:
   en:
     name: Dragonair

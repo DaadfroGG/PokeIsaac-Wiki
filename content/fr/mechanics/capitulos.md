@@ -15,6 +15,8 @@ details:
   value: Tour Pokémon, Tour Cendrée ou Manoir Pokémon · Mewtwo
 - label: Chapitre 4
   value: Caverne Azurée · Mewtwo Cuirassé (victoire)
+- label: Dégâts au chapitre 4
+  value: Coups d'un cœur entier seulement à l'étage de Mewtwo Cuirassé
 - label: Chapitre 5
   value: Monde Distorsion (Giratina) ou Colonnes Lances (Dialga ou Palkia)
 - label: Chapitre 6

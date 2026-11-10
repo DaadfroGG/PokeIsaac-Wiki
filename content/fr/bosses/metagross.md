@@ -1,5 +1,5 @@
 ---
-title: Métalosse
+title: Métalosse (Ligue de Kanto)
 id: metagross
 color: '#b8c4d4'
 element: steel
@@ -18,8 +18,10 @@ details:
   value: Chute du ciel, Laser, Pluie de 12 rochers, Anneau de 16 tirs
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto, Johto, Sinnoh'
+- label: Ligue
+  value: 'Kanto : Arène de Safrania (boss bonus); Johto : Arène d''Oliville (boss bonus); Sinnoh : Arène de Joliberges (boss bonus)'
+hint: 'Boss de : Ligue : Kanto, Johto, Sinnoh.'
 names:
   en:
     name: Metagross
@@ -52,4 +54,4 @@ names:
     name: 巨金怪
     desc: 鋼鐵心智. 樓層頭目。
 ---
-L'esprit de fer. Boss d'étage.
+L'esprit de fer. Boss de la Ligue.

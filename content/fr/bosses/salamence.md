@@ -1,5 +1,5 @@
 ---
-title: Drattak
+title: Drattak (Ligue d'Unys)
 id: salamence
 color: '#7a5cff'
 element: dragon
@@ -18,8 +18,10 @@ details:
   value: 4 charges enchaînées, Rafale, Anneau de 16 tirs, Piqué
 - key: appears
   label: Apparaît dans
-  value: 'Grotte du Mont Argenté'
-hint: 'Boss de : Grotte du Mont Argenté.'
+  value: 'Ligue : Unys, Galar'
+- label: Ligue
+  value: 'Unys : Arène de Janusia (boss bonus); Galar : Arène de Kickenham (boss bonus)'
+hint: 'Boss de : Ligue : Unys, Galar.'
 names:
   en:
     name: Salamence
@@ -52,4 +54,4 @@ names:
     name: 暴飛龍
     desc: 天空之龍. 樓層頭目。
 ---
-Le dragon du ciel. Boss d'étage.
+Le dragon du ciel. Boss de la Ligue.

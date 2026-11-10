@@ -18,8 +18,10 @@ details:
   value: Puddle checkerboard, Teleport, Poison gas ring (10), 4 homing shots, Summons 1 Venonat
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'Boss of: Viridian Forest.'
+  value: 'Viridian Forest, League: Kanto, Unova, Kalos, Paldea'
+- label: League
+  value: 'Kanto: Celadon City Gym (extra boss); Unova: Castelia City Gym (extra boss); Kalos: Santalune City Gym (extra boss); Paldea: Cortondo Gym (extra boss)'
+hint: 'Boss of: Viridian Forest, League: Kanto, Unova, Kalos, Paldea.'
 names:
   es:
     name: Venomoth

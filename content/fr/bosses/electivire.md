@@ -1,5 +1,5 @@
 ---
-title: Élekable
+title: Élekable (Manoir de Cramois'Île)
 id: electivire
 color: '#ffe44d'
 element: electric
@@ -18,8 +18,10 @@ details:
   value: Croix tournoyante de 8, Colonnes de foudre, Laser, Invoque 2 Magnéti
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Boss de : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Carmin sur Mer (boss bonus); Hoenn : Arène de Lavandia (boss bonus); Sinnoh : Arène de Rivamar (boss bonus); Unys : Arène de Méanville (boss bonus); Kalos : Arène d''Illumis (boss bonus); Alola : Arène d''Observatoire de Hokulani (boss bonus); Paldea : Arène de Levalendura (boss bonus)'
+hint: 'Boss de : Manoir de Cramois''Île, Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea.'
 names:
   en:
     name: Electivire

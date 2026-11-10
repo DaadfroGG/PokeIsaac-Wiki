@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite, Tour Pokémon
-hint: 'Où le trouver : Mont Sélénite, Tour Pokémon.'
+  value: 'Mont Sélénite, Tour Pokémon, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Parmanie'
+hint: 'Où le trouver : Mont Sélénite, Tour Pokémon, Ligue : Kanto.'
 names:
   en:
     name: Zubat

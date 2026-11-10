@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade, Mont Sélénite
-hint: 'Où le trouver : Forêt de Jade, Mont Sélénite.'
+  value: 'Forêt de Jade, Mont Sélénite, Ligue : Johto, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia; Unys : Arène de Volucité; Kalos : Arène de Neuvartault; Paldea : Arène de Sevaro'
+hint: 'Où le trouver : Forêt de Jade, Mont Sélénite, Ligue : Johto, Unys, Kalos, Paldea.'
 names:
   en:
     name: Paras

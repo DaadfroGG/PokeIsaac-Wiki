@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Contreforts du Mont Argenté'
-hint: 'Où le trouver : Mont Sélénite, Contreforts du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Johto, Sinnoh, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Acajou; Sinnoh : Arène de Frimapic; Unys : Arène de Flocombe; Kalos : Arène d''Auffrac-les-Congères; Paldea : Arène de Mont Nappé'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Johto, Sinnoh, Unys, Kalos, Paldea.'
 names:
   en:
     name: Swinub

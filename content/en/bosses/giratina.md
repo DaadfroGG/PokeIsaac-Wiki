@@ -34,19 +34,19 @@ names:
     desc: Seigneur du Monde Distorsion. Boss final d'un chapitre du mode Classique (5, 6 ou le Néant).
   de:
     name: Giratina
-    desc: Lord of the Distortion World. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
+    desc: Herr der Zerrwelt. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
   it:
     name: Giratina
-    desc: Lord of the Distortion World. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
+    desc: Il signore del Mondo Distorto. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
   pt:
     name: Giratina
-    desc: Lord of the Distortion World. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
+    desc: O senhor do Mundo Distorção. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
   ru:
     name: Giratina
     desc: Властелин Мира Искажений. Финальный босс главы режима Классика (5, 6 или Пустота).
   ja:
     name: ギラティナ
-    desc: Lord of the Distortion World. クラシックモードの章のラストボス（第5章、第6章、虚空）。
+    desc: やぶれたせかいの主. クラシックモードの章のラストボス（第5章、第6章、虚空）。
   ko:
     name: 기라티나
     desc: 깨어진세계의 지배자. 클래식 모드 챕터의 최종 보스 (5, 6 또는 공허).

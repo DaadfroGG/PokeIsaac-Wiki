@@ -18,8 +18,10 @@ details:
   value: Roulade, Anneau de 12 tirs, Pluie de 8 rochers
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kanto, Johto, Hoenn, Sinnoh, Unys, Kalos, Alola, Galar, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta (boss bonus); Johto : Arène de Doublonville (boss bonus); Hoenn : Arène de Myokara (boss bonus); Hoenn : Arène de Clémenti-Ville (boss bonus); Hoenn : Arène de Cimetronelle (boss bonus); Sinnoh : Arène de Voilaroc (boss bonus); Sinnoh : Arène de Frimapic (boss bonus); Unys : Arène de Maillard (boss bonus); Unys : Arène de Parsemille (boss bonus); Unys : Arène de Flocombe (boss bonus); Kalos : Arène d''Yantreizh (boss bonus); Kalos : Arène de Romant-sous-Bois (boss bonus); Kalos : Arène d''Auffrac-les-Congères (boss bonus); Alola : Arène de Grotte Verdoyante (boss bonus); Alola : Arène de Lili’i (boss bonus); Galar : Arène d''Old Chister (boss bonus); Galar : Arène de Corrifey (boss bonus); Paldea : Arène de Mezclamora (boss bonus); Paldea : Arène de Mont Nappé (boss bonus)'
+hint: 'Boss de : Mont Sélénite, Ligue : Kanto, Johto, Hoenn, Sinnoh, Unys, Kalos, Alola, Galar, Paldea.'
 names:
   en:
     name: Golem

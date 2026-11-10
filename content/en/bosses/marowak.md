@@ -18,8 +18,10 @@ details:
   value: Boomerang bones, Marked rain, Take Down, Summons 2 Cubone
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'Boss of: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Kanto, Johto, Unova'
+- label: League
+  value: 'Kanto: Viridian City Gym (extra boss); Johto: Goldenrod City Gym (extra boss); Unova: Driftveil City Gym (extra boss)'
+hint: 'Boss of: Pokémon Tower, League: Kanto, Johto, Unova.'
 names:
   es:
     name: Marowak

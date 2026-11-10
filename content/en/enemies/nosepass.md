@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, League: Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: League
+  value: 'Kanto: Pewter City Gym; Hoenn: Rustboro City Gym; Sinnoh: Oreburgh City Gym; Kalos: Cyllage City Gym; Alola: Konikoni City Gym; Galar: Circhester Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   es:
     name: Nosepass

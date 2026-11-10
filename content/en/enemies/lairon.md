@@ -14,11 +14,13 @@ details:
   value: '1.2'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Cave'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Cave.'
+  value: 'Cerulean Cave, League: Johto, Sinnoh'
+- label: League
+  value: 'Johto: Olivine City Gym; Sinnoh: Canalave City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Sinnoh.'
 names:
   es:
     name: Lairon

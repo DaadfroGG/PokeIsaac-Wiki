@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Kanto, Unys'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle; Unys : Arène de Port Yoneuve'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Kanto, Unys.'
 names:
   en:
     name: Cubone

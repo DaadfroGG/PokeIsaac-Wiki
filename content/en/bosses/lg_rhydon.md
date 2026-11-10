@@ -18,8 +18,10 @@ details:
   value: Dig, Earthquake, Rain of 12 rocks, Ring of 12 shots
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Viridian City Gym'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Rhydon
@@ -52,4 +54,4 @@ names:
     name: 鑽角犀獸
     desc: 坂木的鑽頭. 樓層頭目。
 ---
-Giovanni's drill. Floor boss.
+Giovanni's drill. League boss.

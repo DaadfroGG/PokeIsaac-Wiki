@@ -1,5 +1,5 @@
 ---
-title: Garchomp
+title: Garchomp (Unova League)
 id: garchomp
 color: '#7a5cff'
 element: dragon
@@ -18,8 +18,10 @@ details:
   value: Dig, Earthquake, Rain of 10 rocks, Take Down
 - key: appears
   label: Appears in
-  value: 'Mt. Silver Cave'
-hint: 'Boss of: Mt. Silver Cave.'
+  value: 'League: Unova, Galar'
+- label: League
+  value: 'Unova: Opelucid City Gym (extra boss); Galar: Hammerlocke Gym (extra boss)'
+hint: 'Boss of: League: Unova, Galar.'
 names:
   es:
     name: Garchomp
@@ -52,4 +54,4 @@ names:
     name: 烈咬陸鯊
     desc: 陸地之鯊. 樓層頭目。
 ---
-The land shark. Floor boss.
+The land shark. League boss.

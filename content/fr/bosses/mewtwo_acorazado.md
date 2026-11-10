@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Apparaît dans
   value: Chapitre 4 (mode Classique)
+- label: Au chapitre 4
+  value: 30 % de vie en moins
 hint: Atteignez la fin du chapitre 4 du mode Classique.
 names:
   en:

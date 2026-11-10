@@ -18,8 +18,10 @@ details:
   value: Os boomerang, Pluie marquée, Bélier, Invoque 2 Osselait
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Boss de : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Kanto, Johto, Unys'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle (boss bonus); Johto : Arène de Doublonville (boss bonus); Unys : Arène de Port Yoneuve (boss bonus)'
+hint: 'Boss de : Tour Pokémon, Ligue : Kanto, Johto, Unys.'
 names:
   en:
     name: Marowak

@@ -34,7 +34,7 @@ text_lang: en
 | chest | 7 |
 | secret | 20 |
 
-## Economy formulas (`ECON`)
+## Economy formulas (`ECON`, line 32122)
 
 - Wallet cap: 99 coins, 150 from floor 10, 250 from floor 30.
 - Price multiplier per floor f: `1 + 0.035·f` below floor 30, then `min(6, 2.05 + 0.04·(f−29))`.
@@ -111,9 +111,9 @@ text_lang: en
 | pack_dorados_m | 1650 | {"gold": 15, "pay": "fichas"} |
 | pack_dorados_l | 4000 | {"gold": 40, "pay": "fichas"} |
 | eleccion | 120 | {"n": 1} |
-| &lt; | x | "p" |
-| &lt; | x | "p" |
-| &lt; | x | "p" |
-| &lt; | x | "p" |
-| &lt; | x | "p" |
-| &lt; | x | "p" |
+| < | x | "p" |
+| < | x | "p" |
+| < | x | "p" |
+| < | x | "p" |
+| < | x | "p" |
+| < | x | "p" |

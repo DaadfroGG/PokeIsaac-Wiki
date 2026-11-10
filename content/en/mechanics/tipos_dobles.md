@@ -11,6 +11,10 @@ details:
   value: Shots alternate between both types
 - label: Pure type
   value: Its passive, ×1.5
+- label: Enemies and bosses
+  value: Both of their types count against your shots
+- label: Weak + resistant
+  value: Neutral damage (×1); otherwise both multipliers stack, from ×0.45 to ×2.25
 - label: Flying
   value: Flies over rocks and crates
 - label: Ghost
@@ -47,4 +51,4 @@ names:
     name: 雙屬性與單一屬性
     desc: 雙屬性寶可夢（耿鬼、噴火龍、妙蛙種子……）的彈會在兩種屬性間交替：各自帶有被動效果和對敵人的相剋效果；受到傷害時兩種屬性都會計算（兩個弱點會造成雙倍影響）。單屬性寶可夢是「單一屬性」：其被動效果的觸發率提高50 %。只要帶有飛行屬性（不論是第一還是第二屬性），就能飛越岩石和箱子；用彈穿過岩石是幽靈屬性的專長（沒有道具能提供）。
 ---
-Pokémon with two types (Gengar, Charizard, Bulbasaur...) alternate their shots between the two: each with its own passive and its effectiveness against the enemy, and when taking damage both types count (two weaknesses weigh double). Single-type Pokémon are "pure": their passive triggers 50 % more often. Flying types, in either of their two types, fly over rocks and crates; shots passing through rocks belong to Ghost types (no item gives it).
+Pokémon with two types (Gengar, Charizard, Bulbasaur...) alternate their shots between the two: each with its own passive and its effectiveness against the enemy, and when taking damage both types count (two weaknesses weigh double). Single-type Pokémon are "pure": their passive triggers 50 % more often. Flying types, in either of their two types, fly over rocks and crates; shots passing through rocks belong to Ghost types (no item gives it). Enemies and bosses also count both of their types when your shots hit them. If one of the two types is weak to the shot and the other resists it, the hit does neutral damage; otherwise both multipliers stack, from ×0.45 to ×2.25. The same rule applies to the damage you take.

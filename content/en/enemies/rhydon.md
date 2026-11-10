@@ -14,11 +14,13 @@ details:
   value: '1.2'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, League: Unova'
+- label: League
+  value: 'Unova: Driftveil City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Unova.'
 names:
   es:
     name: Rhydon

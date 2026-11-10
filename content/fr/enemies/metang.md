@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Grotte du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Grotte du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Kanto, Johto, Sinnoh'
+- label: Ligue
+  value: 'Kanto : Arène de Safrania; Johto : Arène d''Oliville; Sinnoh : Arène de Joliberges'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Kanto, Johto, Sinnoh.'
 names:
   en:
     name: Metang

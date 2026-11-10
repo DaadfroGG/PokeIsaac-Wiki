@@ -14,11 +14,13 @@ details:
   value: '1.4'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'You''ll find it in: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea'
+- label: League
+  value: 'Kanto: Vermilion City Gym; Hoenn: Mauville City Gym; Sinnoh: Sunyshore City Gym; Unova: Nimbasa City Gym; Kalos: Lumiose City Gym; Alola: Hokulani Observatory Gym; Paldea: Levincia Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea.'
 names:
   es:
     name: Electabuzz

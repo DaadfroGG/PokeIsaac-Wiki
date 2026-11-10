@@ -1,5 +1,5 @@
 ---
-title: Dracaufeu (Ligue Indigo)
+title: Dracaufeu (Ligue de Kanto)
 id: lg_charizard
 color: '#ff7a33'
 element: fire
@@ -18,8 +18,10 @@ details:
   value: Boutefeu, Lance-Flammes, Anneau de 14 tirs, Chute du ciel, Rafale
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Maître'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Charizard
@@ -52,4 +54,4 @@ names:
     name: 噴火龍
     desc: 冠軍的王牌. 樓層頭目。
 ---
-L'atout du Maître. Boss d'étage.
+L'atout du Maître. Boss de la Ligue.

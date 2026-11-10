@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Johto, Sinnoh, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Acajou; Sinnoh : Arène de Frimapic; Unys : Arène de Flocombe; Kalos : Arène d''Auffrac-les-Congères; Paldea : Arène de Mont Nappé'
+hint: 'Où le trouver : Ligue : Johto, Sinnoh, Unys, Kalos, Paldea.'
 names:
   en:
     name: Snorunt

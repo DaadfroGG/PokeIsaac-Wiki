@@ -18,8 +18,10 @@ details:
   value: Zones au sol, Éventail de 7 tirs, Invoque 3 Tadmorv, Anneau de 14 tirs, Bélier
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Boss de : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Johto'
+- label: Ligue
+  value: 'Kanto : Arène de Parmanie (boss bonus); Johto : Arène de Rosalia (boss bonus)'
+hint: 'Boss de : Manoir de Cramois''Île, Ligue : Kanto, Johto.'
 names:
   en:
     name: Muk

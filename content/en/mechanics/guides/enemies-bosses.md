@@ -5,9 +5,9 @@ weight: 4
 text_lang: en
 ---
 
-140 enemy definitions, 45 bosses.
+126 enemy definitions, 45 bosses.
 
-AI kinds: charger (27), shooter (26), chase (25), flyer (22), wander (10), turret (9), ghost (7), teleporter (7), burrow (6), copy (1)
+AI kinds: chase (24), shooter (24), charger (23), flyer (21), wander (8), turret (7), teleporter (7), ghost (6), burrow (5), copy (1)
 
 ## Bosses
 

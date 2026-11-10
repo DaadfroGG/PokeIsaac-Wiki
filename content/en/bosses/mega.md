@@ -2,6 +2,7 @@
 title: Mega bosses
 id: mega
 color: '#ff5ce6'
+element: null
 labels:
 - text: SHINY
   color: '#ffd23c'

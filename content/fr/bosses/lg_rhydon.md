@@ -18,8 +18,10 @@ details:
   value: Tunnel, Séisme, Pluie de 12 rochers, Anneau de 12 tirs
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Rhydon
@@ -52,4 +54,4 @@ names:
     name: 鑽角犀獸
     desc: 坂木的鑽頭. 樓層頭目。
 ---
-La foreuse de Giovanni. Boss d'étage.
+La foreuse de Giovanni. Boss de la Ligue.

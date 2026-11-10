@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Cerulean City Gym'
+hint: 'You''ll find it in: League: Kanto.'
 names:
   es:
     name: Shellder

@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Alola, Galar'
+- label: League
+  value: 'Alola: Malie City Gym; Galar: Spikemuth Gym'
+hint: 'You''ll find it in: Pokémon Tower, League: Alola, Galar.'
 names:
   es:
     name: Sableye

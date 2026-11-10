@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Johto, Unys, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Ébènelle; Unys : Arène de Janusia; Galar : Arène de Kickenham'
+hint: 'Où le trouver : Ligue : Johto, Unys, Galar.'
 names:
   en:
     name: Altaria

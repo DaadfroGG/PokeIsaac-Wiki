@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, League: Kanto, Hoenn, Sinnoh, Alola, Galar, Paldea'
+- label: League
+  value: 'Kanto: Cerulean City Gym; Hoenn: Sootopolis City Gym; Sinnoh: Pastoria City Gym; Alola: Brooklet Hill Gym; Galar: Hulbury Gym; Paldea: Cascarrafa Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kanto, Hoenn, Sinnoh, Alola, Galar, Paldea.'
 names:
   es:
     name: Omanyte

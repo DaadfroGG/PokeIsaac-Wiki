@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène d''Azuria'
+hint: 'Où le trouver : Ligue : Kanto.'
 names:
   en:
     name: Krabby

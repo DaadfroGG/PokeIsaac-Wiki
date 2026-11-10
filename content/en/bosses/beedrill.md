@@ -18,8 +18,10 @@ details:
   value: Bursting needles, 2 chained charges, Summons 2 Weedle, Volley
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'Boss of: Viridian Forest.'
+  value: 'Viridian Forest, League: Johto'
+- label: League
+  value: 'Johto: Azalea Town Gym (extra boss)'
+hint: 'Boss of: Viridian Forest, League: Johto.'
 names:
   es:
     name: Beedrill

@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Sinnoh, Paldea'
+- label: Ligue
+  value: 'Sinnoh : Arène d''Unionpolis; Paldea : Arène de Frigao'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Sinnoh, Paldea.'
 names:
   en:
     name: Yamask

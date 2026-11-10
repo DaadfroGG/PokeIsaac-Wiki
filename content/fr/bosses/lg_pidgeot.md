@@ -18,8 +18,10 @@ details:
   value: Piqué, Tornade, Anneau de 14 tirs, Rafale
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto, Johto'
+- label: Ligue
+  value: 'Kanto : Maître; Johto : Arène de Mauville'
+hint: 'Boss de : Ligue : Kanto, Johto.'
 names:
   en:
     name: Pidgeot
@@ -52,4 +54,4 @@ names:
     name: 大比鳥
     desc: 冠軍之翼. 樓層頭目。
 ---
-Les ailes du Maître. Boss d'étage.
+Les ailes du Maître. Boss de la Ligue.

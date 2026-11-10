@@ -14,11 +14,13 @@ details:
   value: 1,0
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Unys'
+- label: Ligue
+  value: 'Unys : Arène de Port Yoneuve'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Unys.'
 names:
   en:
     name: Golett

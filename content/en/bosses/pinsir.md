@@ -18,8 +18,10 @@ details:
   value: 2 chained charges, Volley, Summons 2 Caterpie
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'Boss of: Viridian Forest.'
+  value: 'Viridian Forest, League: Johto, Unova, Kalos, Paldea'
+- label: League
+  value: 'Johto: Azalea Town Gym (extra boss); Unova: Castelia City Gym (extra boss); Kalos: Santalune City Gym (extra boss); Paldea: Cortondo Gym (extra boss)'
+hint: 'Boss of: Viridian Forest, League: Johto, Unova, Kalos, Paldea.'
 names:
   es:
     name: Pinsir

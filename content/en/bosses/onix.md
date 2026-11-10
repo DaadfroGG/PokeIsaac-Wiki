@@ -18,8 +18,10 @@ details:
   value: Dig, Rain of 8 rocks, Half-room sweep, Summons 1 Geodude, Ring of 8 shots
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'Boss of: Mt. Moon.'
+  value: 'Mt. Moon, League: Kanto'
+- label: League
+  value: 'Kanto: Pewter City Gym'
+hint: 'Boss of: Mt. Moon, League: Kanto.'
 names:
   es:
     name: Onix

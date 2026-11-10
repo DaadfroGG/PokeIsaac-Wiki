@@ -18,8 +18,10 @@ details:
   value: Double sweep, Rain of 8 rocks, Dig, Ring of 12 shots
 - key: appears
   label: Appears in
-  value: 'Mt. Moon, Mt. Silver Foothills'
-hint: 'Boss of: Mt. Moon, Mt. Silver Foothills.'
+  value: 'Mt. Moon, League: Kanto, Johto, Sinnoh'
+- label: League
+  value: 'Kanto: Viridian City Gym (extra boss); Johto: Olivine City Gym; Sinnoh: Canalave City Gym (extra boss)'
+hint: 'Boss of: Mt. Moon, League: Kanto, Johto, Sinnoh.'
 names:
   es:
     name: Steelix

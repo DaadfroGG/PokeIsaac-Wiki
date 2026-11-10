@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Carmin sur Mer; Hoenn : Arène de Lavandia; Sinnoh : Arène de Rivamar; Unys : Arène de Méanville; Kalos : Arène d''Illumis; Alola : Arène d''Observatoire de Hokulani; Paldea : Arène de Levalendura'
+hint: 'Où le trouver : Ligue : Kanto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea.'
 names:
   en:
     name: Voltorb

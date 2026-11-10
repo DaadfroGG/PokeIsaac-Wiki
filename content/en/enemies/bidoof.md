@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'You''ll find it in: Viridian Forest.'
+  value: 'Viridian Forest, League: Johto, Hoenn, Unova, Alola, Paldea'
+- label: League
+  value: 'Johto: Goldenrod City Gym; Hoenn: Petalburg City Gym; Unova: Nacrene City Gym; Alola: Verdant Cavern Gym; Paldea: Medali Gym'
+hint: 'You''ll find it in: Viridian Forest, League: Johto, Hoenn, Unova, Alola, Paldea.'
 names:
   es:
     name: Bidoof

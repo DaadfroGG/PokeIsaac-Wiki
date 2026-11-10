@@ -14,11 +14,13 @@ details:
   value: 2,2
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Hoenn : Arène de Myokara; Sinnoh : Arène de Voilaroc; Kalos : Arène d''Yantreizh; Alola : Arène de Lili’i; Galar : Arène d''Old Chister'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Machamp

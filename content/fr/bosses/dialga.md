@@ -34,19 +34,19 @@ names:
     desc: El señor del tiempo. Jefe final de un capítulo del modo Clásico (5, 6 o el Vacío).
   de:
     name: Dialga
-    desc: Lord of Time. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
+    desc: Herr der Zeit. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
   it:
     name: Dialga
-    desc: Lord of Time. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
+    desc: Il signore del tempo. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
   pt:
     name: Dialga
-    desc: Lord of Time. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
+    desc: O senhor do tempo. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
   ru:
     name: Dialga
     desc: Властелин времени. Финальный босс главы режима Классика (5, 6 или Пустота).
   ja:
     name: ディアルガ
-    desc: Lord of Time. クラシックモードの章のラストボス（第5章、第6章、虚空）。
+    desc: 時間の主. クラシックモードの章のラストボス（第5章、第6章、虚空）。
   ko:
     name: 디아루가
     desc: 시간의 지배자. 클래식 모드 챕터의 최종 보스 (5, 6 또는 공허).

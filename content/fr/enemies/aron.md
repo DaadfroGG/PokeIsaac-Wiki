@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Où le trouver : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kanto, Johto, Sinnoh'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta; Johto : Arène d''Oliville; Sinnoh : Arène de Joliberges'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Kanto, Johto, Sinnoh.'
 names:
   en:
     name: Aron

@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Kanto, Sinnoh, Unys, Kalos, Alola, Galar, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Céladopole; Sinnoh : Arène de Vestigion; Unys : Arène d''Ogoesse; Kalos : Arène de Port Tempères; Alola : Arène de Jungle Sombrefeuille; Galar : Arène de Greenbury; Paldea : Arène de Cuencia'
+hint: 'Où le trouver : Ligue : Kanto, Sinnoh, Unys, Kalos, Alola, Galar, Paldea.'
 names:
   en:
     name: Tangela

@@ -18,8 +18,10 @@ details:
   value: Anneau de feu, 2 charges enchaînées, Rafale, Anneau de 12 tirs, Invoque 2 Malosse
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Boss de : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Johto, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène de Cramois''Île (boss bonus); Johto : Conseil 4; Alola : Arène de Malié (boss bonus); Galar : Arène de Smashings (boss bonus)'
+hint: 'Boss de : Manoir de Cramois''Île, Ligue : Kanto, Johto, Alola, Galar.'
 names:
   en:
     name: Houndoom

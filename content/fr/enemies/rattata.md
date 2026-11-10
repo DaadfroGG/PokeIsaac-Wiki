@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Où le trouver : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto, Hoenn, Unys, Alola, Paldea'
+- label: Ligue
+  value: 'Johto : Arène de Doublonville; Hoenn : Arène de Clémenti-Ville; Unys : Arène de Maillard; Alola : Arène de Grotte Verdoyante; Paldea : Arène de Mezclamora'
+hint: 'Où le trouver : Forêt de Jade, Ligue : Johto, Hoenn, Unys, Alola, Paldea.'
 names:
   en:
     name: Rattata

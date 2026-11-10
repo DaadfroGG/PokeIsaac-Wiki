@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Kanto, Johto, Hoenn, Sinnoh, Alola, Galar, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène d''Azuria; Johto : Arène d''Irisia; Hoenn : Arène d''Atalanopolis; Sinnoh : Arène de Verchamps; Alola : Arène de Colline Clapotis; Galar : Arène de Skifford; Paldea : Arène de Jarramanca'
+hint: 'Où le trouver : Ligue : Kanto, Johto, Hoenn, Sinnoh, Alola, Galar, Paldea.'
 names:
   en:
     name: Poliwag

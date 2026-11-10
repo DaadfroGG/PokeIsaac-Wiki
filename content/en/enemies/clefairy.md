@@ -1,5 +1,5 @@
 ---
-title: Clefairy
+title: Clefairy (Mt. Moon)
 id: clefairy
 color: '#ff9ad8'
 element: fairy
@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, League: Kalos, Galar'
+- label: League
+  value: 'Kalos: Laverre City Gym; Galar: Ballonlea Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kalos, Galar.'
 names:
   es:
     name: Clefairy

@@ -1,5 +1,5 @@
 ---
-title: Electivire
+title: Electivire (Cinnabar Mansion)
 id: electivire
 color: '#ffe44d'
 element: electric
@@ -18,8 +18,10 @@ details:
   value: Spinning cross of 8, Lightning columns, Laser, Summons 2 Magnemite
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'Boss of: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea'
+- label: League
+  value: 'Kanto: Vermilion City Gym (extra boss); Hoenn: Mauville City Gym (extra boss); Sinnoh: Sunyshore City Gym (extra boss); Unova: Nimbasa City Gym (extra boss); Kalos: Lumiose City Gym (extra boss); Alola: Hokulani Observatory Gym (extra boss); Paldea: Levincia Gym (extra boss)'
+hint: 'Boss of: Cinnabar Mansion, League: Kanto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea.'
 names:
   es:
     name: Electivire

@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Kanto, Hoenn, Kalos, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Safrania; Hoenn : Arène d''Algatia; Kalos : Arène de Flusselles; Paldea : Arène d''Alforneira'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Kanto, Hoenn, Kalos, Paldea.'
 names:
   en:
     name: Spoink

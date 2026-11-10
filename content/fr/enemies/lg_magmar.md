@@ -1,5 +1,5 @@
 ---
-title: Magmar (Ligue Indigo)
+title: Magmar (Ligue de Kanto)
 id: lg_magmar
 color: '#ff7a33'
 element: fire
@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Invoqué par les boss
-hint: Invoqué par un boss.
+  value: 'Ligue : Kanto, Hoenn, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène de Cramois''Île; Hoenn : Arène de Vermilava; Alola : Arène de Volcan Wela; Galar : Arène de Motorby'
+hint: 'Où le trouver : Ligue : Kanto, Hoenn, Alola, Galar.'
 names:
   en:
     name: Magmar

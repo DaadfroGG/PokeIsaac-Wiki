@@ -18,8 +18,10 @@ details:
   value: Murs troués, Tempête de sable, Anneau de 14 tirs, Bélier, Rafale
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Contreforts du Mont Argenté'
-hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Ébènelle (boss bonus); Hoenn : Arène de Mérouville (boss bonus); Sinnoh : Arène de Charbourg (boss bonus); Kalos : Arène de Relifac-le-Haut (boss bonus); Alola : Arène de Konikoni (boss bonus); Galar : Arène de Ludester (boss bonus)'
+hint: 'Boss de : Mont Sélénite, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Tyranitar

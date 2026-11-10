@@ -14,11 +14,13 @@ details:
   value: 1,9
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite, Manoir de Cramois'Île
-hint: 'Où le trouver : Mont Sélénite, Manoir de Cramois''Île.'
+  value: 'Mont Sélénite, Manoir de Cramois''Île, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Irisia; Hoenn : Arène de Myokara; Sinnoh : Arène de Voilaroc; Kalos : Arène d''Yantreizh; Alola : Arène de Lili’i; Galar : Arène d''Old Chister'
+hint: 'Où le trouver : Mont Sélénite, Manoir de Cramois''Île, Ligue : Johto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Machop

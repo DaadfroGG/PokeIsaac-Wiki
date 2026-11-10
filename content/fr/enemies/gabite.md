@@ -14,11 +14,13 @@ details:
   value: 2,4
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Johto, Unys, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Ébènelle; Unys : Arène de Janusia; Galar : Arène de Kickenham'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Unys, Galar.'
 names:
   en:
     name: Gabite

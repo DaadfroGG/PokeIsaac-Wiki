@@ -1,5 +1,5 @@
 ---
-title: Magmar
+title: Magmar (Cinnabar Mansion)
 id: magmar
 color: '#ff7a33'
 element: fire
@@ -14,11 +14,13 @@ details:
   value: '1.2'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion, Cerulean Cave
-hint: 'You''ll find it in: Cinnabar Mansion, Cerulean Cave.'
+  value: 'Cinnabar Mansion, Cerulean Cave, League: Hoenn, Alola, Galar'
+- label: League
+  value: 'Hoenn: Lavaridge Town Gym; Alola: Wela Volcano Gym; Galar: Motostoke Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, Cerulean Cave, League: Hoenn, Alola, Galar.'
 names:
   es:
     name: Magmar

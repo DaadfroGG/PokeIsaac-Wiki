@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Où le trouver : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto, Hoenn, Unys'
+- label: Ligue
+  value: 'Johto : Arène de Mauville; Hoenn : Arène de Cimetronelle; Unys : Arène de Parsemille'
+hint: 'Où le trouver : Forêt de Jade, Ligue : Johto, Hoenn, Unys.'
 names:
   en:
     name: Pidgey

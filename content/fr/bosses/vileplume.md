@@ -18,8 +18,10 @@ details:
   value: Rayon, Spirale à 3 bras, Anneau de gaz toxique (12), Anneau de 12 tirs, Invoque 3 Mystherbe
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Kanto, Sinnoh, Unys, Kalos, Alola, Galar, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Céladopole; Sinnoh : Arène de Vestigion (boss bonus); Unys : Arène d''Ogoesse (boss bonus); Kalos : Arène de Port Tempères (boss bonus); Alola : Arène de Jungle Sombrefeuille (boss bonus); Galar : Arène de Greenbury (boss bonus); Paldea : Arène de Cuencia (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Kanto, Sinnoh, Unys, Kalos, Alola, Galar, Paldea.'
 names:
   en:
     name: Vileplume

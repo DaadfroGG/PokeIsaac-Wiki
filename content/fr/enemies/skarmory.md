@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Contreforts du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Contreforts du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Johto, Sinnoh'
+- label: Ligue
+  value: 'Johto : Arène d''Oliville; Sinnoh : Arène de Joliberges'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Sinnoh.'
 names:
   en:
     name: Skarmory

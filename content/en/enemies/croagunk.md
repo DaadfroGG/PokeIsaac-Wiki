@@ -14,11 +14,13 @@ details:
   value: '2.0'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'You''ll find it in: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, League: Kanto.'
 names:
   es:
     name: Croagunk

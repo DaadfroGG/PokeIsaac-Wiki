@@ -1,5 +1,5 @@
 ---
-title: Lugulabre
+title: Lugulabre (Tour Pokémon)
 id: chandelure
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Brume, Feux follets, Laser, Anneau de 14 tirs, Invoque 3 Funécire
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Boss de : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Sinnoh, Paldea'
+- label: Ligue
+  value: 'Sinnoh : Arène d''Unionpolis (boss bonus); Paldea : Arène de Frigao (boss bonus)'
+hint: 'Boss de : Tour Pokémon, Ligue : Sinnoh, Paldea.'
 names:
   en:
     name: Chandelure

@@ -14,11 +14,13 @@ details:
   value: 2,6
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: 'Caverne Azurée, Contreforts du Mont Argenté, Sommet du Mont Argenté'
-hint: 'Où le trouver : Caverne Azurée, Contreforts du Mont Argenté, Sommet du Mont Argenté.'
+  value: 'Caverne Azurée, Ligue : Johto, Alola, Galar'
+- label: Ligue
+  value: 'Johto : Arène d''Acajou; Alola : Arène de Malié; Galar : Arène de Smashings'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Johto, Alola, Galar.'
 names:
   en:
     name: Sneasel

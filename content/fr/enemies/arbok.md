@@ -14,11 +14,13 @@ details:
   value: 2,0
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Parmanie'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Kanto.'
 names:
   en:
     name: Arbok

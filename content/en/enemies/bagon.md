@@ -14,11 +14,13 @@ details:
   value: '2.2'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Johto, Unova, Galar'
+- label: League
+  value: 'Johto: Blackthorn City Gym; Unova: Opelucid City Gym; Galar: Hammerlocke Gym'
+hint: 'You''ll find it in: League: Johto, Unova, Galar.'
 names:
   es:
     name: Bagon

@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cerulean Cave
-hint: 'You''ll find it in: Cerulean Cave.'
+  value: 'Cerulean Cave, League: Kanto, Hoenn, Kalos, Paldea'
+- label: League
+  value: 'Kanto: Saffron City Gym; Hoenn: Mossdeep City Gym; Kalos: Anistar City Gym; Paldea: Alfornada Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Kanto, Hoenn, Kalos, Paldea.'
 names:
   es:
     name: Kadabra

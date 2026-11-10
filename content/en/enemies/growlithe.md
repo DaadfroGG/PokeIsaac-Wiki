@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion, Cerulean Cave
-hint: 'You''ll find it in: Cinnabar Mansion, Cerulean Cave.'
+  value: 'Cinnabar Mansion, Cerulean Cave, League: Kanto, Hoenn, Alola, Galar'
+- label: League
+  value: 'Kanto: Cinnabar Island Gym; Hoenn: Lavaridge Town Gym; Alola: Wela Volcano Gym; Galar: Motostoke Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, Cerulean Cave, League: Kanto, Hoenn, Alola, Galar.'
 names:
   es:
     name: Growlithe

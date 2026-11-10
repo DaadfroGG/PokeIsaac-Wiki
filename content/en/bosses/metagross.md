@@ -1,5 +1,5 @@
 ---
-title: Metagross
+title: Metagross (Kanto League)
 id: metagross
 color: '#b8c4d4'
 element: steel
@@ -18,8 +18,10 @@ details:
   value: Sky drop, Laser, Rain of 12 rocks, Ring of 16 shots
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto, Johto, Sinnoh'
+- label: League
+  value: 'Kanto: Saffron City Gym (extra boss); Johto: Olivine City Gym (extra boss); Sinnoh: Canalave City Gym (extra boss)'
+hint: 'Boss of: League: Kanto, Johto, Sinnoh.'
 names:
   es:
     name: Metagross
@@ -52,4 +54,4 @@ names:
     name: 巨金怪
     desc: 鋼鐵心智. 樓層頭目。
 ---
-The iron mind. Floor boss.
+The iron mind. League boss.

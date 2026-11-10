@@ -18,8 +18,10 @@ details:
   value: Haze, Self-Destruct, Poison gas ring (16), Summons 3 Koffing, Volley
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'Boss of: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym; Johto: Ecruteak City Gym (extra boss)'
+hint: 'Boss of: Cinnabar Mansion, League: Kanto, Johto.'
 names:
   es:
     name: Weezing

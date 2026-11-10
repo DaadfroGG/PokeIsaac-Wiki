@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Cave'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Cave.'
+  value: 'Cerulean Cave, League: Kanto'
+- label: League
+  value: 'Kanto: Viridian City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Kanto.'
 names:
   es:
     name: Gligar

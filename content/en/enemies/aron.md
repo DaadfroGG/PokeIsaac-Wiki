@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, League: Kanto, Johto, Sinnoh'
+- label: League
+  value: 'Kanto: Pewter City Gym; Johto: Olivine City Gym; Sinnoh: Canalave City Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kanto, Johto, Sinnoh.'
 names:
   es:
     name: Aron

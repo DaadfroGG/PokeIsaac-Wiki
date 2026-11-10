@@ -18,8 +18,10 @@ details:
   value: Toile Élek, 4 charges enchaînées, Anneau de 14 tirs, Rafale, Invoque 2 Voltorbe
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Carmin sur Mer'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Raichu
@@ -52,4 +54,4 @@ names:
     name: 雷丘
     desc: 馬志士的雷霆. 樓層頭目。
 ---
-Le tonnerre du Major Bob. Boss d'étage.
+Le tonnerre du Major Bob. Boss de la Ligue.

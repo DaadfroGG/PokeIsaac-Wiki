@@ -18,8 +18,10 @@ details:
   value: Dive, Gust, Ring of 14 shots, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Champion; Johto: Violet City Gym'
+hint: 'Boss of: League: Kanto, Johto.'
 names:
   es:
     name: Pidgeot
@@ -52,4 +54,4 @@ names:
     name: 大比鳥
     desc: 冠軍之翼. 樓層頭目。
 ---
-The Champion's wings. Floor boss.
+The Champion's wings. League boss.

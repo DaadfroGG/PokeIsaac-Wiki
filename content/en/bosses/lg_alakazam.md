@@ -18,8 +18,10 @@ details:
   value: Teleport, Wave with a gap, Future Sight, Ring of 14 shots, 2 clones
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Saffron City Gym'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Alakazam
@@ -52,4 +54,4 @@ names:
     name: 胡地
     desc: 娜姿的心智. 樓層頭目。
 ---
-Sabrina's mind. Floor boss.
+Sabrina's mind. League boss.

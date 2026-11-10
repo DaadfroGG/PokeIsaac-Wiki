@@ -34,19 +34,19 @@ names:
     desc: Le Pokémon Alpha. Boss final d'un chapitre du mode Classique (5, 6 ou le Néant).
   de:
     name: Arceus
-    desc: The Alpha Pokémon. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
+    desc: Das Alpha-Pokémon. Endboss eines Kapitels im Klassisch-Modus (5, 6 oder die Leere).
   it:
     name: Arceus
-    desc: The Alpha Pokémon. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
+    desc: Il Pokémon Alfa. Boss finale di un capitolo della modalità Classica (5, 6 o il Vuoto).
   pt:
     name: Arceus
-    desc: The Alpha Pokémon. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
+    desc: O Pokémon Alfa. Chefe final de um capítulo do modo Clássico (5, 6 ou o Vazio).
   ru:
     name: Arceus
     desc: Альфа-покемон. Финальный босс главы режима Классика (5, 6 или Пустота).
   ja:
     name: アルセウス
-    desc: The Alpha Pokémon. クラシックモードの章のラストボス（第5章、第6章、虚空）。
+    desc: そうぞうポケモン. クラシックモードの章のラストボス（第5章、第6章、虚空）。
   ko:
     name: 아르세우스
     desc: 알파 포켓몬. 클래식 모드 챕터의 최종 보스 (5, 6 또는 공허).

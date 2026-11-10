@@ -14,7 +14,7 @@ details:
   value: '2.0'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
   value: Cerulean Cave

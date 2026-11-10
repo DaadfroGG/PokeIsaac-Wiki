@@ -14,11 +14,13 @@ details:
   value: '1.1'
 - key: contact
   label: Contact damage
-  value: 1 ♥
+  value: 1 heart
 - key: appears
   label: Appears in
-  value: Mt. Moon
-hint: 'You''ll find it in: Mt. Moon.'
+  value: 'Mt. Moon, League: Kanto, Unova'
+- label: League
+  value: 'Kanto: Viridian City Gym; Unova: Driftveil City Gym'
+hint: 'You''ll find it in: Mt. Moon, League: Kanto, Unova.'
 names:
   es:
     name: Rhyhorn

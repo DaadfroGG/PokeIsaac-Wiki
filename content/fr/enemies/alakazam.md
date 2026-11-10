@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+  value: 'Caverne Azurée, Ligue : Hoenn, Kalos, Paldea'
+- label: Ligue
+  value: 'Hoenn : Arène d''Algatia; Kalos : Arène de Flusselles; Paldea : Arène d''Alforneira'
+hint: 'Où le trouver : Caverne Azurée, Ligue : Hoenn, Kalos, Paldea.'
 names:
   en:
     name: Alakazam

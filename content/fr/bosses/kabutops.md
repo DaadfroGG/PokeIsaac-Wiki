@@ -18,8 +18,10 @@ details:
   value: Croix tournoyante de 8, 2 charges enchaînées, Invoque 2 Kabuto, Anneau de 12 tirs
 - key: appears
   label: Apparaît dans
-  value: Mont Sélénite
-hint: 'Boss de : Mont Sélénite.'
+  value: 'Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta (boss bonus); Hoenn : Arène de Mérouville (boss bonus); Sinnoh : Arène de Charbourg (boss bonus); Kalos : Arène de Relifac-le-Haut (boss bonus); Alola : Arène de Konikoni (boss bonus); Galar : Arène de Ludester (boss bonus)'
+hint: 'Boss de : Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Kabutops

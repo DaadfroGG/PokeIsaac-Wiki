@@ -16,7 +16,7 @@ details:
 - label: Drop
   value: 'From the Bag (HELD card, DROP): it stays on the floor of the room'
 - label: Fuse
-  value: 'From the Bag (FUSE, with Poké Dollars): its effect always works, with any Pokémon on the team, and the slot is freed. Up to 5 and never two alike'
+  value: 'From the Bag (FUSE, with Poké Dollars): its effect always works, with any Pokémon on the team, and the slot is freed. Up to 5 and never two alike. Fused items have their own pocket in the Bag'
 names:
   es:
     name: Objetos equipados

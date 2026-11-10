@@ -15,6 +15,8 @@ details:
   value: Pokémon Tower, Burned Tower or Pokémon Mansion · Mewtwo
 - label: Chapter 4
   value: Cerulean Cave · Armored Mewtwo (victory)
+- label: Chapter 4 damage
+  value: Enemy hits of a full heart only on the Armored Mewtwo floor
 - label: Chapter 5
   value: Distortion World (Giratina) or Spear Pillar (Dialga or Palkia)
 - label: Chapter 6

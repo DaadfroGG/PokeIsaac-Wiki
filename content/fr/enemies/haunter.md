@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon, Caverne Azurée
-hint: 'Où le trouver : Tour Pokémon, Caverne Azurée.'
+  value: 'Tour Pokémon, Caverne Azurée, Ligue : Johto, Sinnoh, Paldea'
+- label: Ligue
+  value: 'Johto : Arène de Rosalia; Sinnoh : Arène d''Unionpolis; Paldea : Arène de Frigao'
+hint: 'Où le trouver : Tour Pokémon, Caverne Azurée, Ligue : Johto, Sinnoh, Paldea.'
 names:
   en:
     name: Haunter

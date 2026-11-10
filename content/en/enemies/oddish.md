@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'You''ll find it in: Viridian Forest.'
+  value: 'Viridian Forest, League: Kanto, Sinnoh, Unova, Kalos, Alola, Galar, Paldea'
+- label: League
+  value: 'Kanto: Celadon City Gym; Sinnoh: Eterna City Gym; Unova: Striaton City Gym; Kalos: Coumarine City Gym; Alola: Lush Jungle Gym; Galar: Turffield Gym; Paldea: Artazon Gym'
+hint: 'You''ll find it in: Viridian Forest, League: Kanto, Sinnoh, Unova, Kalos, Alola, Galar, Paldea.'
 names:
   es:
     name: Oddish

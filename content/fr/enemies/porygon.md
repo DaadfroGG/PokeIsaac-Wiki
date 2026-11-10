@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Johto, Hoenn, Unys, Alola, Paldea'
+- label: Ligue
+  value: 'Johto : Arène de Doublonville; Hoenn : Arène de Clémenti-Ville; Unys : Arène de Maillard; Alola : Arène de Grotte Verdoyante; Paldea : Arène de Mezclamora'
+hint: 'Où le trouver : Manoir de Cramois''Île, Ligue : Johto, Hoenn, Unys, Alola, Paldea.'
 names:
   en:
     name: Porygon

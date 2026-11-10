@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Où le trouver : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Parmanie'
+hint: 'Où le trouver : Forêt de Jade, Ligue : Kanto.'
 names:
   en:
     name: Ekans

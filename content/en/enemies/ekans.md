@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'You''ll find it in: Viridian Forest.'
+  value: 'Viridian Forest, League: Kanto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym'
+hint: 'You''ll find it in: Viridian Forest, League: Kanto.'
 names:
   es:
     name: Ekans

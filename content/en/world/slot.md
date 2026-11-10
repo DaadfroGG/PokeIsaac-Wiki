@@ -1,5 +1,5 @@
 ---
-title: Slot machine
+title: Slot machines
 id: slot
 color: '#c8283a'
 labels:
@@ -9,12 +9,13 @@ icon: icons/world/slot.png
 details:
 - label: Where
   value: Secret rooms.
+hint: Secret rooms.
 names:
   es:
     name: Tragaperras
     desc: 'Gasta monedas por una tirada: a veces premio, a veces se rompe.'
   fr:
-    name: Machine à sous
+    name: Machines à sous
     desc: 'Dépensez des pièces pour un tour : parfois un gain, parfois la machine casse.'
   de:
     name: Spielautomat

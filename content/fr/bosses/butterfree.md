@@ -18,8 +18,10 @@ details:
   value: Tornade, Zones au sol, Invoque 3 Chenipan, Anneau de 14 tirs
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Kanto, Johto'
+- label: Ligue
+  value: 'Kanto : Arène de Céladopole (boss bonus); Johto : Arène d''Écorcia (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Kanto, Johto.'
 names:
   en:
     name: Butterfree

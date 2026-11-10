@@ -2,6 +2,7 @@
 title: Méga-boss
 id: mega
 color: '#ff5ce6'
+element: null
 labels:
 - text: CHROMA
   color: '#ffd23c'

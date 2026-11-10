@@ -49,4 +49,4 @@ names:
     name: 等級與進化
     desc: 在經典模式與石英聯盟中，每隻寶可夢都會從擊倒的敵人身上獲得經驗並升級（頭目給的經驗多得多，召喚出的小兵幾乎沒有）。每升一級會稍微提升傷害、射速和速度，並回復半顆愛心。牠們會自行進化：第一次進化在Lv.14（只有兩階段的進化線則為Lv.20），第二次在Lv.32。遊戲結束後等級會歸零。
 ---
-In Classic mode and the Indigo League each Pokémon levels up from the enemies it defeats (bosses give far more experience and summoned minions almost none). Each level gives a touch of damage, fire rate and speed and heals half a heart. They evolve on their own: the first evolution at level 14 (20 if the line only has two stages) and the second at 32. The level is lost when the run ends.
+In Classic mode and the League each Pokémon levels up from the enemies it defeats (bosses give far more experience and summoned minions almost none). Each level gives a touch of damage, fire rate and speed and heals half a heart. They evolve on their own: the first evolution at level 14 (20 if the line only has two stages) and the second at 32. The level is lost when the run ends.

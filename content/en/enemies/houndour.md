@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'You''ll find it in: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Alola, Galar'
+- label: League
+  value: 'Alola: Malie City Gym; Galar: Spikemuth Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, League: Alola, Galar.'
 names:
   es:
     name: Houndour

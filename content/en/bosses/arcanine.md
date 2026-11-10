@@ -18,8 +18,10 @@ details:
   value: 4 chained charges, Volley, Ring of 12 shots, Summons 2 Growlithe
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'Boss of: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Hoenn, Alola, Galar'
+- label: League
+  value: 'Kanto: Cinnabar Island Gym; Hoenn: Lavaridge Town Gym (extra boss); Alola: Wela Volcano Gym (extra boss); Galar: Motostoke Gym (extra boss)'
+hint: 'Boss of: Cinnabar Mansion, League: Kanto, Hoenn, Alola, Galar.'
 names:
   es:
     name: Arcanine

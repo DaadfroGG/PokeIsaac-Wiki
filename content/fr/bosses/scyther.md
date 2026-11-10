@@ -18,8 +18,10 @@ details:
   value: 3 charges enchaînées, Rafale, 2 charges enchaînées, Anneau de 8 tirs
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia; Unys : Arène de Volucité (boss bonus); Kalos : Arène de Neuvartault (boss bonus); Paldea : Arène de Sevaro (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Johto, Unys, Kalos, Paldea.'
 names:
   en:
     name: Scyther

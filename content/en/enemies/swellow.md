@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Summoned by bosses
-hint: Summoned by some boss.
+  value: 'League: Johto, Hoenn, Unova'
+- label: League
+  value: 'Johto: Violet City Gym; Hoenn: Fortree City Gym; Unova: Mistralton City Gym'
+hint: 'You''ll find it in: League: Johto, Hoenn, Unova.'
 names:
   es:
     name: Swellow

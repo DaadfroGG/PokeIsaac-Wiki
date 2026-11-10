@@ -18,8 +18,10 @@ details:
   value: Rayon, Spirale à 3 bras, Anneau de 16 tirs, Hydrocanon, Zones au sol
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Conseil 4'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Lapras
@@ -52,4 +54,4 @@ names:
     name: 拉普拉斯
     desc: 科拿之歌. 樓層頭目。
 ---
-Le chant d'Olga. Boss d'étage.
+Le chant d'Olga. Boss de la Ligue.

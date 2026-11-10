@@ -1,5 +1,5 @@
 ---
-title: Magnemite
+title: Magnemite (Cinnabar Mansion)
 id: magnemite
 color: '#ffe44d'
 element: electric
@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'You''ll find it in: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea'
+- label: League
+  value: 'Kanto: Vermilion City Gym; Johto: Olivine City Gym; Hoenn: Mauville City Gym; Sinnoh: Sunyshore City Gym; Unova: Nimbasa City Gym; Kalos: Lumiose City Gym; Alola: Hokulani Observatory Gym; Paldea: Levincia Gym'
+hint: 'You''ll find it in: Cinnabar Mansion, League: Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola, Paldea.'
 names:
   es:
     name: Magnemite

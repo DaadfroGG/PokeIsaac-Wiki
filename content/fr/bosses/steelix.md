@@ -18,8 +18,10 @@ details:
   value: Double balayage, Pluie de 8 rochers, Tunnel, Anneau de 12 tirs
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Contreforts du Mont Argenté'
-hint: 'Boss de : Mont Sélénite, Contreforts du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Kanto, Johto, Sinnoh'
+- label: Ligue
+  value: 'Kanto : Arène de Jadielle (boss bonus); Johto : Arène d''Oliville; Sinnoh : Arène de Joliberges (boss bonus)'
+hint: 'Boss de : Mont Sélénite, Ligue : Kanto, Johto, Sinnoh.'
 names:
   en:
     name: Steelix

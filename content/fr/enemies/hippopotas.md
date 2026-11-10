@@ -18,7 +18,7 @@ details:
 - key: appears
   label: Apparaît dans
   value: Caverne Azurée
-hint: 'Où le trouver : Caverne Azurée.'
+hint: 'Où le trouver : Caverne Azurée.'
 names:
   en:
     name: Hippopotas

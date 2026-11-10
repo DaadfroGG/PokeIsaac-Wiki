@@ -18,8 +18,10 @@ details:
   value: Floor zones, Fan of 7 shots, Summons 3 Grimer, Ring of 14 shots, Take Down
 - key: appears
   label: Appears in
-  value: Cinnabar Mansion
-hint: 'Boss of: Cinnabar Mansion.'
+  value: 'Cinnabar Mansion, League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym (extra boss); Johto: Ecruteak City Gym (extra boss)'
+hint: 'Boss of: Cinnabar Mansion, League: Kanto, Johto.'
 names:
   es:
     name: Muk

@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Où le trouver : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Alola, Galar'
+- label: Ligue
+  value: 'Alola : Arène de Malié; Galar : Arène de Smashings'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Alola, Galar.'
 names:
   en:
     name: Murkrow

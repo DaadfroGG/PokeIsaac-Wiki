@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Foothills'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Foothills.'
+  value: 'Cerulean Cave, League: Johto, Sinnoh'
+- label: League
+  value: 'Johto: Olivine City Gym; Sinnoh: Canalave City Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Sinnoh.'
 names:
   es:
     name: Skarmory

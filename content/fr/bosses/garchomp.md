@@ -1,5 +1,5 @@
 ---
-title: Carchacrok
+title: Carchacrok (Ligue d'Unys)
 id: garchomp
 color: '#7a5cff'
 element: dragon
@@ -18,8 +18,10 @@ details:
   value: Tunnel, Séisme, Pluie de 10 rochers, Bélier
 - key: appears
   label: Apparaît dans
-  value: 'Grotte du Mont Argenté'
-hint: 'Boss de : Grotte du Mont Argenté.'
+  value: 'Ligue : Unys, Galar'
+- label: Ligue
+  value: 'Unys : Arène de Janusia (boss bonus); Galar : Arène de Kickenham (boss bonus)'
+hint: 'Boss de : Ligue : Unys, Galar.'
 names:
   en:
     name: Garchomp
@@ -52,4 +54,4 @@ names:
     name: 烈咬陸鯊
     desc: 陸地之鯊. 樓層頭目。
 ---
-Le requin terrestre. Boss d'étage.
+Le requin terrestre. Boss de la Ligue.

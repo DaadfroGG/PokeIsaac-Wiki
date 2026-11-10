@@ -18,8 +18,10 @@ details:
   value: Aiguilles explosives, 2 charges enchaînées, Invoque 2 Aspicot, Rafale
 - key: appears
   label: Apparaît dans
-  value: Forêt de Jade
-hint: 'Boss de : Forêt de Jade.'
+  value: 'Forêt de Jade, Ligue : Johto'
+- label: Ligue
+  value: 'Johto : Arène d''Écorcia (boss bonus)'
+hint: 'Boss de : Forêt de Jade, Ligue : Johto.'
 names:
   en:
     name: Beedrill

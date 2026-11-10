@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Mt. Moon, Pokémon Tower
-hint: 'You''ll find it in: Mt. Moon, Pokémon Tower.'
+  value: 'Mt. Moon, Pokémon Tower, League: Kanto'
+- label: League
+  value: 'Kanto: Fuchsia City Gym'
+hint: 'You''ll find it in: Mt. Moon, Pokémon Tower, League: Kanto.'
 names:
   es:
     name: Zubat

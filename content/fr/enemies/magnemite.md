@@ -1,5 +1,5 @@
 ---
-title: Magnéti
+title: Magnéti (Manoir de Cramois'Île)
 id: magnemite
 color: '#ffe44d'
 element: electric
@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Kanto, Johto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea'
+- label: Ligue
+  value: 'Kanto : Arène de Carmin sur Mer; Johto : Arène d''Oliville; Hoenn : Arène de Lavandia; Sinnoh : Arène de Rivamar; Unys : Arène de Méanville; Kalos : Arène d''Illumis; Alola : Arène d''Observatoire de Hokulani; Paldea : Arène de Levalendura'
+hint: 'Où le trouver : Manoir de Cramois''Île, Ligue : Kanto, Johto, Hoenn, Sinnoh, Unys, Kalos, Alola, Paldea.'
 names:
   en:
     name: Magnemite

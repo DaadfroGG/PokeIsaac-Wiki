@@ -18,8 +18,10 @@ details:
   value: Electroweb, 4 chained charges, Ring of 14 shots, Volley, Summons 2 Voltorb
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Vermilion City Gym'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Raichu
@@ -52,4 +54,4 @@ names:
     name: 雷丘
     desc: 馬志士的雷霆. 樓層頭目。
 ---
-Lt. Surge's thunder. Floor boss.
+Lt. Surge's thunder. League boss.

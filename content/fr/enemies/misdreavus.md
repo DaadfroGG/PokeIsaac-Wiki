@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: 'Tour Pokémon, Grotte du Mont Argenté'
-hint: 'Où le trouver : Tour Pokémon, Grotte du Mont Argenté.'
+  value: 'Tour Pokémon, Ligue : Johto, Sinnoh, Paldea'
+- label: Ligue
+  value: 'Johto : Arène de Rosalia; Sinnoh : Arène d''Unionpolis; Paldea : Arène de Frigao'
+hint: 'Où le trouver : Tour Pokémon, Ligue : Johto, Sinnoh, Paldea.'
 names:
   en:
     name: Misdreavus

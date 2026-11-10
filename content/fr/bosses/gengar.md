@@ -1,5 +1,5 @@
 ---
-title: Ectoplasma
+title: Ectoplasma (Tour Pokémon)
 id: gengar
 color: '#8e6cff'
 element: ghost
@@ -18,8 +18,10 @@ details:
   value: Embuscade, 2 clones, Anneau de 12 tirs, Invoque 2 Fantominus, Rafale
 - key: appears
   label: Apparaît dans
-  value: Tour Pokémon
-hint: 'Boss de : Tour Pokémon.'
+  value: 'Tour Pokémon, Ligue : Kanto, Johto'
+- label: Ligue
+  value: 'Kanto : Conseil 4; Johto : Arène de Rosalia'
+hint: 'Boss de : Tour Pokémon, Ligue : Kanto, Johto.'
 names:
   en:
     name: Gengar
@@ -37,7 +39,7 @@ names:
     name: Gengar
     desc: O brincalhão das sombras. Chefe do andar.
   ru:
-    name: Gengar
+    name: Генгар
     desc: Шутник теней. Босс этажа.
   ja:
     name: ゲンガー

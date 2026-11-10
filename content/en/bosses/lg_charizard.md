@@ -1,5 +1,5 @@
 ---
-title: Charizard (Indigo League)
+title: Charizard (Kanto League)
 id: lg_charizard
 color: '#ff7a33'
 element: fire
@@ -18,8 +18,10 @@ details:
   value: Flare Blitz, Flamethrower, Ring of 14 shots, Sky drop, Volley
 - key: appears
   label: Appears in
-  value: Deep floors
-hint: Found on deeper floors.
+  value: 'League: Kanto'
+- label: League
+  value: 'Kanto: Champion'
+hint: 'Boss of: League: Kanto.'
 names:
   es:
     name: Charizard
@@ -52,4 +54,4 @@ names:
     name: 噴火龍
     desc: 冠軍的王牌. 樓層頭目。
 ---
-The Champion's ace. Floor boss.
+The Champion's ace. League boss.

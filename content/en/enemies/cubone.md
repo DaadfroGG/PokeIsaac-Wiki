@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: Pokémon Tower
-hint: 'You''ll find it in: Pokémon Tower.'
+  value: 'Pokémon Tower, League: Kanto, Unova'
+- label: League
+  value: 'Kanto: Viridian City Gym; Unova: Driftveil City Gym'
+hint: 'You''ll find it in: Pokémon Tower, League: Kanto, Unova.'
 names:
   es:
     name: Cubone

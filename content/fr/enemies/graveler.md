@@ -14,11 +14,13 @@ details:
   value: 0,9
 - key: contact
   label: Dégâts de contact
-  value: 1 ♥
+  value: 1 cœur
 - key: appears
   label: Apparaît dans
-  value: 'Mont Sélénite, Grotte du Mont Argenté'
-hint: 'Où le trouver : Mont Sélénite, Grotte du Mont Argenté.'
+  value: 'Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar'
+- label: Ligue
+  value: 'Kanto : Arène d''Argenta; Hoenn : Arène de Mérouville; Sinnoh : Arène de Charbourg; Kalos : Arène de Relifac-le-Haut; Alola : Arène de Konikoni; Galar : Arène de Ludester'
+hint: 'Où le trouver : Mont Sélénite, Ligue : Kanto, Hoenn, Sinnoh, Kalos, Alola, Galar.'
 names:
   en:
     name: Graveler

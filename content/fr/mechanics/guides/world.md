@@ -49,30 +49,143 @@ text_lang: en
 | Curse of the Lost | No map: you only remember the rooms you walk into |
 | Curse of Unown | Items stay hidden until you pick them up |
 
-## League mode: gyms
+## League mode (one region per month, in this order: Kanto, Johto, Hoenn, Sinnoh, Unova, Kalos, Alola, Galar, Paldea)
+
+### Kanto
 
 | City | Leader | Type | Boss | Weak to |
 |---|---|---|---|---|
 | Pewter City | Brock | rock | onix | water, grass |
 | Cerulean City | Misty | water | lg_starmie | grass, electric |
-| Vermilion City | Teniente Surge | electric | lg_raichu | ground |
+| Vermilion City | Lt. Surge | electric | lg_raichu | ground |
 | Celadon City | Erika | grass | vileplume | fire, ice, flying |
 | Fuchsia City | Koga | poison | weezing | ground, psychic |
 | Saffron City | Sabrina | psychic | lg_alakazam | ghost, dark, bug |
 | Cinnabar Island | Blaine | fire | arcanine | water, ground, rock |
 | Viridian City | Giovanni | ground | lg_rhydon | water, grass, ice |
 
-Elite Four: Lorelei (ice, boss lg_lapras); Bruno (fighting, boss lg_machamp); Agatha (ghost, boss gengar); Lance (dragon, boss dragonite). Champion Azul with lg_pidgeot, gyarados, lg_charizard. 6 waves per gym.
+Elite Four: Lorelei (ice, boss lg_lapras); Bruno (fighting, boss lg_machamp); Agatha (ghost, boss gengar); Lance (dragon, boss dragonite). Champion Blue with lg_pidgeot, gyarados, lg_charizard. 6 waves per gym.
 
-## Mt. Silver mode
+### Johto
 
-| id | Name | Rooms | Enemies |
-|---|---|---|---|
-| plateado1 | Mt. Silver Foothills | 9 | mp_teddiursa, mp_ursaring, mp_piloswine, mp_donphan, phanpy, sneasel, swinub, mp_snorunt, mp_delibird, golbat, mp_dewgong, skarmory |
-| plateado2 | Mt. Silver Cave | 10 | golbat, larvitar, mp_pupitar, graveler, machoke, lairon, misdreavus, mp_jynx, mp_glalie, mp_cloyster, mp_weavile, mp_froslass, gligar, metang |
-| plateado3 | Mt. Silver Summit | 6 | mp_mamoswine, mp_weavile, mp_ursaring, mp_glalie, mp_cloyster, mp_froslass, sneasel, mp_delibird, dragonair, mp_jynx |
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Violet City | Falkner | flying | lg_pidgeot | electric, ice, rock |
+| Azalea Town | Bugsy | bug | scyther | fire, flying, rock |
+| Goldenrod City | Whitney | normal | lg_miltank | fighting |
+| Ecruteak City | Morty | ghost | gengar | ghost, dark |
+| Cianwood City | Chuck | fighting | lg_poliwrath | psychic, flying |
+| Olivine City | Jasmine | steel | steelix | fire, fighting, ground |
+| Mahogany Town | Pryce | ice | lg_piloswine | fire, fighting, rock |
+| Blackthorn City | Clair | dragon | lg_kingdra | dragon, ice |
 
-Final team: mp_pikachu, mp_espeon, mp_snorlax, mp_venusaur, mp_charizard, mp_blastoise
+Elite Four: Will (psychic, boss lg_xatu); Koga (poison, boss lg_crobat); Bruno (fighting, boss lg_machamp); Karen (dark, boss houndoom). Champion Lance with gyarados, aerodactyl, dragonite. 6 waves per gym.
+
+### Hoenn
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Rustboro City | Roxanne | rock | lr_0299 | water, grass, ground |
+| Dewford Town | Brawly | fighting | lr_0297 | psychic, flying, fairy |
+| Mauville City | Wattson | electric | lr_0310 | ground |
+| Lavaridge Town | Flannery | fire | lr_0324 | water, rock, ground |
+| Petalburg City | Norman | normal | lr_0289 | fighting |
+| Fortree City | Winona | flying | lr_0334 | electric, rock, ice |
+| Mossdeep City | Tate & Liza | psychic | lr_0338 | ghost, bug, dark |
+| Sootopolis City | Wallace | water | lr_0350 | electric, grass |
+
+Elite Four: Sidney (dark, boss lr_0359); Phoebe (ghost, boss lr_0356); Glacia (ice, boss lr_0365); Drake (dragon, boss lr_0373). Champion Maximum with lr_0227, lr_0306, lr_0376. 6 waves per gym.
+
+### Sinnoh
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Oreburgh City | Roark | rock | lr_0409 | water, grass, ground |
+| Eterna City | Gardenia | grass | lr_0407 | fire, poison, bug |
+| Veilstone City | Maylene | fighting | lr_0448 | psychic, flying, fairy |
+| Pastoria City | Crasher Wake | water | lr_0419 | electric, grass |
+| Hearthome City | Fantina | ghost | lr_0429 | ghost, dark |
+| Canalave City | Byron | steel | lr_0411 | fire, ground, fighting |
+| Snowpoint City | Candice | ice | lr_0460 | fire, rock, fighting |
+| Sunyshore City | Volkner | electric | lr_0466 | ground |
+
+Elite Four: Aaron (bug, boss lr_0452); Bertha (ground, boss lr_0450); Flint (fire, boss lr_0392); Lucian (psychic, boss lr_0437). Champion Cynthia with lr_0442, lr_0350, lr_0445. 6 waves per gym.
+
+### Unova
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Striaton City | Cilan | grass | lr_0512 | fire, poison, bug |
+| Nacrene City | Lenora | normal | lr_0505 | fighting |
+| Castelia City | Burgh | bug | lr_0542 | fire, rock, flying |
+| Nimbasa City | Elesa | electric | lr_0587 | ground |
+| Driftveil City | Clay | ground | lr_0530 | water, grass, ice |
+| Mistralton City | Skyla | flying | lr_0581 | electric, rock, ice |
+| Icirrus City | Brycen | ice | lr_0614 | fire, rock, fighting |
+| Opelucid City | Drayden | dragon | lr_0612 | dragon, ice, fairy |
+
+Elite Four: Shauntal (ghost, boss lr_0609); Grimsley (dark, boss lr_0625); Caitlin (psychic, boss lr_0576); Marshal (fighting, boss lr_0534). Champion Alder with lr_0508, lr_0621, lr_0637. 6 waves per gym.
+
+### Kalos
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Santalune City | Violet | bug | lr_0666 | fire, rock, flying |
+| Cyllage City | Grant | rock | lr_0697 | water, grass, ground |
+| Shalour City | Korrina | fighting | lr_0701 | psychic, flying, fairy |
+| Coumarine City | Ramos | grass | lr_0673 | fire, poison, bug |
+| Lumiose City | Clemont | electric | lr_0695 | ground |
+| Laverre City | Valerie | fairy | lr_0700 | poison, steel |
+| Anistar City | Olympia | psychic | lr_0678 | ghost, bug, dark |
+| Snowbelle City | Wulfric | ice | lr_0713 | fire, rock, fighting |
+
+Elite Four: Malva (fire, boss lr_0663); Siebold (water, boss lr_0689); Wikstrom (steel, boss lr_0681); Drasna (dragon, boss lr_0715). Champion Diantha with lr_0706, lr_0699, lr_0282. 6 waves per gym.
+
+### Alola
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Verdant Cavern | Ilima | normal | lr_0734 | fighting |
+| Iki Town | Hala | fighting | lr_0740 | psychic, flying, fairy |
+| Brooklet Hill | Lana | water | lr_0752 | electric, grass |
+| Wela Volcano | Kiawe | fire | lr_0758 | water, rock, ground |
+| Lush Jungle | Mallow | grass | lr_0754 | fire, poison, bug |
+| Konikoni City | Olivia | rock | lr_0745 | water, grass, ground |
+| Hokulani Observatory | Sophocles | electric | lr_0738 | ground |
+| Malie City | Nanu | dark | lr_0553 | bug, fighting, fairy |
+
+Elite Four: Molayne (steel, boss lr_0462); Acerola (ghost, boss lr_0770); Kahili (flying, boss lr_0741); Hapu (ground, boss lr_0750). Champion Kukui with lr_0143, lr_0628, lr_0727. 6 waves per gym.
+
+### Galar
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Turffield | Milo | grass | lr_0830 | fire, poison, bug |
+| Hulbury | Nessa | water | lr_0834 | electric, grass |
+| Motostoke | Kabu | fire | lr_0851 | water, rock, ground |
+| Stow-on-Side | Bea | fighting | lr_0068 | psychic, flying, fairy |
+| Ballonlea | Opal | fairy | lr_0869 | poison, steel |
+| Circhester | Gordie | rock | lr_0874 | water, grass, ground |
+| Spikemuth | Piers | dark | lr_0862 | bug, fighting, fairy |
+| Hammerlocke | Raihan | dragon | lr_0884 | dragon, ice, fairy |
+
+Elite Four: Bede (fairy, boss lr_0858); Marnie (dark, boss lr_0861); Allister (ghost, boss lr_0094); Hop (flying, boss lr_0823). Champion Leon with lr_0681, lr_0887, lr_0006. 6 waves per gym.
+
+### Paldea
+
+| City | Leader | Type | Boss | Weak to |
+|---|---|---|---|---|
+| Cortondo | Katy | bug | lr_0920 | fire, rock, flying |
+| Artazon | Brassius | grass | lr_0185 | fire, poison, bug |
+| Levincia | Iono | electric | lr_0939 | ground |
+| Cascarrafa | Kofu | water | lr_0740 | electric, grass |
+| Medali | Larry | normal | lr_0398 | fighting |
+| Montenevera | Lime | ghost | lr_0849 | ghost, dark |
+| Alfornada | Tulip | psychic | lr_0671 | ghost, bug, dark |
+| Glaseado | Grusha | ice | lr_0975 | fire, rock, fighting |
+
+Elite Four: Rika (ground, boss lr_0980); Poppy (steel, boss lr_0959); Larry (flying, boss lr_0334); Hassel (dragon, boss lr_0998). Champion Geeta with lr_0673, lr_0983, lr_0970. 6 waves per gym.
+
 
 ## Room types
 

@@ -17,8 +17,10 @@ details:
   value: ½ cœur
 - key: appears
   label: Apparaît dans
-  value: Manoir de Cramois'Île
-hint: 'Où le trouver : Manoir de Cramois''Île.'
+  value: 'Manoir de Cramois''Île, Ligue : Alola, Galar'
+- label: Ligue
+  value: 'Alola : Arène de Malié; Galar : Arène de Smashings'
+hint: 'Où le trouver : Manoir de Cramois''Île, Ligue : Alola, Galar.'
 names:
   en:
     name: Houndour

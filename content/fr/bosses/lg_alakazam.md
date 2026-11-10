@@ -18,8 +18,10 @@ details:
   value: Téléport, Onde trouée, Prescience, Anneau de 14 tirs, 2 clones
 - key: appears
   label: Apparaît dans
-  value: Étages profonds
-hint: Se trouve dans des étages plus profonds.
+  value: 'Ligue : Kanto'
+- label: Ligue
+  value: 'Kanto : Arène de Safrania'
+hint: 'Boss de : Ligue : Kanto.'
 names:
   en:
     name: Alakazam
@@ -52,4 +54,4 @@ names:
     name: 胡地
     desc: 娜姿的心智. 樓層頭目。
 ---
-L'esprit de Morgane. Boss d'étage.
+L'esprit de Morgane. Boss de la Ligue.

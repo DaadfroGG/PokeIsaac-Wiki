@@ -17,8 +17,10 @@ details:
   value: ½ heart
 - key: appears
   label: Appears in
-  value: 'Cerulean Cave, Mt. Silver Summit'
-hint: 'You''ll find it in: Cerulean Cave, Mt. Silver Summit.'
+  value: 'Cerulean Cave, League: Johto, Unova, Galar'
+- label: League
+  value: 'Johto: Blackthorn City Gym; Unova: Opelucid City Gym; Galar: Hammerlocke Gym'
+hint: 'You''ll find it in: Cerulean Cave, League: Johto, Unova, Galar.'
 names:
   es:
     name: Dragonair

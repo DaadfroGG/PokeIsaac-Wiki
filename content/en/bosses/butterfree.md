@@ -18,8 +18,10 @@ details:
   value: Gust, Floor zones, Summons 3 Caterpie, Ring of 14 shots
 - key: appears
   label: Appears in
-  value: Viridian Forest
-hint: 'Boss of: Viridian Forest.'
+  value: 'Viridian Forest, League: Kanto, Johto'
+- label: League
+  value: 'Kanto: Celadon City Gym (extra boss); Johto: Azalea Town Gym (extra boss)'
+hint: 'Boss of: Viridian Forest, League: Kanto, Johto.'
 names:
   es:
     name: Butterfree
