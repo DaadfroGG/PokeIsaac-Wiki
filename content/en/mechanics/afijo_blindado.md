@@ -24,7 +24,7 @@ An Armored boss has a shield bar on top of its health: until you break it, your 
 
 ## How the shield takes damage
 - The shield holds 15 % of the boss's maximum health (12 % for League bosses). When the boss gets more health (co-op, Colossal bosses, endless mode), the shield grows with it.
-- Each hit goes into the shield with the damage it left your Pokémon with. [Crits](criticos.html) count, but [type effectiveness](tabla_tipos.html), item effects that trigger on a hit and the [penalty for carrying many items](rendimientos.html) don't: a super effective type does nothing extra against the shield.
+- Each hit goes into the shield with the damage it left your Pokémon with. [Crits](criticos.html) count, but [type effectiveness](tabla_tipos.html) and item effects that trigger on a hit don't: a super effective type does nothing extra against the shield.
 - When a hit breaks the shield, the rest of its damage goes into the boss's health straight away, with all the usual bonuses.
 - Burn and poison wear the shield down too.
 - "Shield broken!" shows when it breaks. It doesn't come back.
@@ -38,7 +38,6 @@ The shield works like a second health bar, but a hit on it skips most of what a 
 | Type effectiveness | Ignored | Applied (×0.45 to ×2.25) |
 | Venom (+50 % on poisoned targets) | Ignored | Applied |
 | Item and weapon effects on hit | Don't trigger | Trigger |
-| [Penalty for carrying many items](rendimientos.html) | Not applied | Applied |
 | Burn, poison, slow and other effects of your shots | Not applied | Applied |
 | Damage numbers and hit sound | None | Shown |
 | Counts toward phase changes | No | Yes |

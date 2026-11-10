@@ -24,7 +24,7 @@ Un boss Blindé a une barre de bouclier en plus de sa vie : tant que vous ne l'a
 
 ## Comment le bouclier prend les dégâts
 - Le bouclier vaut 15 % de la vie maximale du boss (12 % pour les boss de la Ligue). Quand le boss gagne de la vie (coop, Boss colossaux, mode infini), le bouclier grandit avec elle.
-- Chaque coup frappe le bouclier avec les dégâts qu'il avait en quittant votre Pokémon. Les [coups critiques](criticos.html) comptent, mais pas l'[efficacité des types](tabla_tipos.html), les effets d'objets qui se déclenchent au contact ni la [pénalité quand vous portez beaucoup d'objets](rendimientos.html) : un type super efficace ne fait rien de plus contre le bouclier.
+- Chaque coup frappe le bouclier avec les dégâts qu'il avait en quittant votre Pokémon. Les [coups critiques](criticos.html) comptent, mais pas l'[efficacité des types](tabla_tipos.html) ni les effets d'objets qui se déclenchent au contact : un type super efficace ne fait rien de plus contre le bouclier.
 - Quand un coup brise le bouclier, le reste de ses dégâts passe tout de suite dans la vie du boss, avec tous les bonus habituels.
 - La brûlure et le poison usent aussi le bouclier.
 - « Bouclier brisé ! » s'affiche quand il casse. Il ne revient pas.
@@ -38,7 +38,6 @@ Le bouclier fonctionne comme une deuxième barre de vie, mais un coup sur le bou
 | Efficacité des types | Ignorée | Appliquée (×0,45 à ×2,25) |
 | Venin (+50 % sur les cibles empoisonnées) | Ignoré | Appliqué |
 | Effets d'objets et d'armes au contact | Ne se déclenchent pas | Se déclenchent |
-| [Pénalité quand vous portez beaucoup d'objets](rendimientos.html) | Non appliquée | Appliquée |
 | Brûlure, poison, ralentissement et autres effets de vos tirs | Non appliqués | Appliqués |
 | Chiffres de dégâts et son d'impact | Aucun | Affichés |
 | Compte pour les changements de phase | Non | Oui |

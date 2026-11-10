@@ -19,8 +19,6 @@ details:
   value: 12 cœurs (cœurs d'âme à part)
 - label: Soins
   value: Au plus 30 % de votre vie max (2 cœurs minimum) toutes les 10 secondes
-- label: Objets offensifs au-delà de 130
-  value: Chacun en plus baisse tous vos dégâts d'environ 2 % ; avec le Sac de 100 objets, ça n'arrive pas en jeu normal
 - label: Minimums
   value: Dégâts 0,5, vitesse 1,6, portée 120, vitesse des tirs 4
 names:

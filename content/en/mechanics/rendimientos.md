@@ -19,8 +19,6 @@ details:
   value: 12 hearts (soul hearts separate)
 - label: Healing
   value: At most 30 % of your max health (2 hearts minimum) every 10 seconds
-- label: Offensive items past 130
-  value: Each extra one lowers all your damage by about 2 %; with the 100-item Bag this doesn't happen in normal play
 - label: Minimums
   value: Damage 0.5, speed 1.6, range 120, shot speed 4
 names:
