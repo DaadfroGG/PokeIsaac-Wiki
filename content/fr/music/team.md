@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les écrans Mon équipe et le choix du mode.
+- label: Durée
+  value: '2:36'
 - label: En boucle
   value: Oui
+audio: music/team.mp3
 ---
 **Où on l'entend :** Les écrans Mon équipe et le choix du mode.
 

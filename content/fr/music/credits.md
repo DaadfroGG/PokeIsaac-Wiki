@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les crédits.
+- label: Durée
+  value: '2:32'
 - label: En boucle
   value: Oui
+audio: music/credits.mp3
 ---
 **Où on l'entend :** Les crédits.
 

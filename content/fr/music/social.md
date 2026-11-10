@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les écrans Amis, discussion, clan et coop.
+- label: Durée
+  value: '1:32'
 - label: En boucle
   value: Oui
+audio: music/social.mp3
 ---
 **Où on l'entend :** Les écrans Amis, discussion, clan et coop.
 

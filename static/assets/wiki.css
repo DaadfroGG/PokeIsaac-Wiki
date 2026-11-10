@@ -351,3 +351,6 @@ figure.scene figcaption { margin-top: 6px; font-size: 12px; color: var(--muted);
 .ai-band p { flex: 1 1 280px; margin: 0; font-size: 13px; color: #e8d6c8; }
 .ai-band-btn { padding: 6px 12px; border: 1px solid #ff7a33; border-radius: 6px; background: rgba(255, 122, 51, .18); color: #ffd2ad; font: 8px/1.4 var(--pixel); white-space: nowrap; }
 .ai-band-btn:hover { background: rgba(255, 122, 51, .3); text-decoration: none; }
+
+/* music track player */
+audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color-scheme: dark; }

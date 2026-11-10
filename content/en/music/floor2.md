@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: 'Mt. Moon floors. Other floors without a theme of their own play it too, by floor number: 2, 7, 12, 17…'
+- label: Length
+  value: '2:14'
 - label: Loops
   value: 'Yes'
+audio: music/floor2.mp3
 ---
 **Where it plays:** [Mt. Moon](../world/floors.html) floors. Other floors without a theme of their own play it too, by floor number: 2, 7, 12, 17…
 

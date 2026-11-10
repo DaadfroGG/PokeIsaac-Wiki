@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: 'Pokémon Tower floors. Other floors without a theme of their own play it too, by floor number: 3, 8, 13, 18…'
+- label: Length
+  value: '3:03'
 - label: Loops
   value: 'Yes'
+audio: music/floor3.mp3
 ---
 **Where it plays:** [Pokémon Tower](../world/floors.html) floors. Other floors without a theme of their own play it too, by floor number: 3, 8, 13, 18…
 

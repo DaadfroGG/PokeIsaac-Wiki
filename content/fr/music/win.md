@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: L'écran de victoire. Joué une fois.
+- label: Durée
+  value: '1:16'
 - label: En boucle
   value: Non, joué une fois
+audio: music/win.mp3
 ---
 **Où on l'entend :** L'écran de victoire. Joué une fois.
 

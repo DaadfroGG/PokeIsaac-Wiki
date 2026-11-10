@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Market, and the Mystery Trade room.
+- label: Length
+  value: '1:16'
 - label: Loops
   value: 'Yes'
+audio: music/market.mp3
 ---
 **Where it plays:** The Market, and the [Mystery Trade](../rooms/trade.html) room.
 

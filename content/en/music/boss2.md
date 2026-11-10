@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: Boss fights on even floors (2, 4, 6…).
+- label: Length
+  value: '3:10'
 - label: Loops
   value: 'Yes'
+audio: music/boss2.mp3
 ---
 **Where it plays:** Boss fights on even floors (2, 4, 6…).
 

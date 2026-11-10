@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: Fights against the final bosses and Armored Mewtwo.
+- label: Length
+  value: '1:53'
 - label: Loops
   value: 'Yes'
+audio: music/final.mp3
 ---
 **Where it plays:** Fights against the final bosses and Armored Mewtwo.
 

@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Treasure room, the Celestial Room, the Trainer Room, the Spike Trial and the Observatory.
+- label: Length
+  value: '1:22'
 - label: Loops
   value: 'Yes'
+audio: music/treasure.mp3
 ---
 **Where it plays:** The [Treasure room](../rooms/treasure.html), the [Celestial Room](../rooms/angel.html), the [Trainer Room](../rooms/trainer.html), the [Spike Trial](../rooms/spikes.html) and the [Observatory](../rooms/observatory.html).
 

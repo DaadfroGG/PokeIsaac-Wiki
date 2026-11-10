@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Le Gacha et la Pension, et le Casino.
+- label: Durée
+  value: 0:51
 - label: En boucle
   value: Oui
+audio: music/gacha.mp3
 ---
 **Où on l'entend :** Le Gacha et la Pension, et le [Casino](../rooms/casino.html).
 

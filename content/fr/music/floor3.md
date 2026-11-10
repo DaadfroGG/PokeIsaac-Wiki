@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: 'Les étages Tour Pokémon. Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 3, 8, 13, 18…'
+- label: Durée
+  value: '3:03'
 - label: En boucle
   value: Oui
+audio: music/floor3.mp3
 ---
 **Où on l'entend :** Les étages [Tour Pokémon](../world/floors.html). Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 3, 8, 13, 18…
 

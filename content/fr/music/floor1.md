@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: 'Les étages Forêt de Jade. Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 1, 6, 11, 16…'
+- label: Durée
+  value: '2:03'
 - label: En boucle
   value: Oui
+audio: music/floor1.mp3
 ---
 **Où on l'entend :** Les étages [Forêt de Jade](../world/floors.html). Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 1, 6, 11, 16…
 

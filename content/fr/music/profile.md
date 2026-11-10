@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Votre Profil et l'écran des Missions.
+- label: Durée
+  value: '1:41'
 - label: En boucle
   value: Oui
+audio: music/profile.mp3
 ---
 **Où on l'entend :** Votre Profil et l'écran des Missions.
 

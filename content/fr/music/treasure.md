@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: La Salle au trésor, la Salle Céleste, la Salle du Dresseur, l'Épreuve des Piques et l'Observatoire.
+- label: Durée
+  value: '1:22'
 - label: En boucle
   value: Oui
+audio: music/treasure.mp3
 ---
 **Où on l'entend :** La [Salle au trésor](../rooms/treasure.html), la [Salle Céleste](../rooms/angel.html), la [Salle du Dresseur](../rooms/trainer.html), l'[Épreuve des Piques](../rooms/spikes.html) et l'[Observatoire](../rooms/observatory.html).
 

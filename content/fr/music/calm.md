@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: L'écran d'aide, les Options (hors partie) et le wiki du jeu.
+- label: Durée
+  value: '2:51'
 - label: En boucle
   value: Oui
+audio: music/calm.mp3
 ---
 **Où on l'entend :** L'écran d'aide, les Options (hors partie) et le wiki du jeu.
 

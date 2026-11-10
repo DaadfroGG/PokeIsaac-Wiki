@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: La Salle Distorsion, la Salle d'Ectoplasma et un étage sur deux du mode infini.
+- label: Durée
+  value: '1:36'
 - label: En boucle
   value: Oui
+audio: music/abyss.mp3
 ---
 **Où on l'entend :** La [Salle Distorsion](../rooms/devil.html), la [Salle d'Ectoplasma](../rooms/gengar.html) et un étage sur deux du [mode infini](../mechanics/modo_infinito.html).
 

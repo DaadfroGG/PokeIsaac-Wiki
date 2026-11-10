@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les combats de boss aux étages pairs (2, 4, 6…).
+- label: Durée
+  value: '3:10'
 - label: En boucle
   value: Oui
+audio: music/boss2.mp3
 ---
 **Où on l'entend :** Les combats de boss aux étages pairs (2, 4, 6…).
 

@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The My Team screens and the mode selection.
+- label: Length
+  value: '2:36'
 - label: Loops
   value: 'Yes'
+audio: music/team.mp3
 ---
 **Where it plays:** The My Team screens and the mode selection.
 

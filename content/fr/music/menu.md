@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Le menu principal et l'écran de choix du Pokémon.
+- label: Durée
+  value: '3:27'
 - label: En boucle
   value: Oui
+audio: music/menu.mp3
 ---
 **Où on l'entend :** Le menu principal et l'écran de choix du Pokémon.
 

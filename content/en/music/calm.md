@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The help screen, the Options (outside a run) and the in-game wiki.
+- label: Length
+  value: '2:51'
 - label: Loops
   value: 'Yes'
+audio: music/calm.mp3
 ---
 **Where it plays:** The help screen, the Options (outside a run) and the in-game wiki.
 

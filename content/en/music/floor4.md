@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: 'Cinnabar Mansion floors. Other floors without a theme of their own play it too, by floor number: 4, 9, 14, 19…'
+- label: Length
+  value: '2:19'
 - label: Loops
   value: 'Yes'
+audio: music/floor4.mp3
 ---
 **Where it plays:** [Cinnabar Mansion](../world/floors.html) floors. Other floors without a theme of their own play it too, by floor number: 4, 9, 14, 19…
 

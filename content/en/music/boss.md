@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: Boss fights on odd floors (1, 3, 5…), the Battle Tower and the Hall of the Four.
+- label: Length
+  value: '1:33'
 - label: Loops
   value: 'Yes'
+audio: music/boss.mp3
 ---
 **Where it plays:** Boss fights on odd floors (1, 3, 5…), the [Battle Tower](../rooms/tower.html) and the [Hall of the Four](../rooms/four.html).
 

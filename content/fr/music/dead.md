@@ -15,8 +15,11 @@ details:
   value: 15 Melodic RPG Chiptunes
 - label: Où
   value: L'écran de défaite. Joué une fois.
+- label: Durée
+  value: 0:30
 - label: En boucle
   value: Non, joué une fois
+audio: music/dead.mp3
 ---
 **Où on l'entend :** L'écran de défaite. Joué une fois.
 

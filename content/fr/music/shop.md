@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: La Boutique.
+- label: Durée
+  value: '2:16'
 - label: En boucle
   value: Oui
+audio: music/shop.mp3
 ---
 **Où on l'entend :** La [Boutique](../rooms/shop.html).
 

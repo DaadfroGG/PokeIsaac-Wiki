@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: 'Les étages Caverne Azurée. Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 5, 10, 15, 20…'
+- label: Durée
+  value: '2:23'
 - label: En boucle
   value: Oui
+audio: music/floor5.mp3
 ---
 **Où on l'entend :** Les étages [Caverne Azurée](../world/floors.html). Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 5, 10, 15, 20…
 

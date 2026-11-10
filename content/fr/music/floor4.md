@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: 'Les étages Manoir de Cramois''Île. Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 4, 9, 14, 19…'
+- label: Durée
+  value: '2:19'
 - label: En boucle
   value: Oui
+audio: music/floor4.mp3
 ---
 **Où on l'entend :** Les étages [Manoir de Cramois'Île](../world/floors.html). Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 4, 9, 14, 19…
 

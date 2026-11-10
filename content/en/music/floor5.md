@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: 'Cerulean Cave floors. Other floors without a theme of their own play it too, by floor number: 5, 10, 15, 20…'
+- label: Length
+  value: '2:23'
 - label: Loops
   value: 'Yes'
+audio: music/floor5.mp3
 ---
 **Where it plays:** [Cerulean Cave](../world/floors.html) floors. Other floors without a theme of their own play it too, by floor number: 5, 10, 15, 20…
 

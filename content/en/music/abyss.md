@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Distortion Room, Gengar's Room and every other floor of endless mode.
+- label: Length
+  value: '1:36'
 - label: Loops
   value: 'Yes'
+audio: music/abyss.mp3
 ---
 **Where it plays:** The [Distortion Room](../rooms/devil.html), [Gengar's Room](../rooms/gengar.html) and every other floor of [endless mode](../mechanics/modo_infinito.html).
 

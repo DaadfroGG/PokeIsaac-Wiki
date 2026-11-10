@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: Friends, chat, clan and co-op screens.
+- label: Length
+  value: '1:32'
 - label: Loops
   value: 'Yes'
+audio: music/social.mp3
 ---
 **Where it plays:** Friends, chat, clan and co-op screens.
 

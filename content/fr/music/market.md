@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Le Marché, et la salle Échange Mystère.
+- label: Durée
+  value: '1:16'
 - label: En boucle
   value: Oui
+audio: music/market.mp3
 ---
 **Où on l'entend :** Le Marché, et la salle [Échange Mystère](../rooms/trade.html).
 

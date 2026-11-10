@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Team Rocket tab of the Market.
+- label: Length
+  value: '2:03'
 - label: Loops
   value: 'Yes'
+audio: music/rocket.mp3
 ---
 **Where it plays:** The Team Rocket tab of the Market.
 

@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: L'onglet Team Rocket du Marché.
+- label: Durée
+  value: '2:03'
 - label: En boucle
   value: Oui
+audio: music/rocket.mp3
 ---
 **Où on l'entend :** L'onglet Team Rocket du Marché.
 

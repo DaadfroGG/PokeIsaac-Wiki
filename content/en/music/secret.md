@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Secret room, the Super secret room, the Team Rocket Warehouse, the Diglett Burrow, the Unown Ruins and the MissingNo. Room.
+- label: Length
+  value: '1:16'
 - label: Loops
   value: 'Yes'
+audio: music/secret.mp3
 ---
 **Where it plays:** The [Secret room](../rooms/secret.html), the [Super secret room](../rooms/supersecret.html), the [Team Rocket Warehouse](../rooms/vault.html), the [Diglett Burrow](../rooms/burrow.html), the [Unown Ruins](../rooms/ruins.html) and the [MissingNo. Room](../rooms/glitch.html).
 

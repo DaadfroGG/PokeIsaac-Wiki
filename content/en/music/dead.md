@@ -15,8 +15,11 @@ details:
   value: 15 Melodic RPG Chiptunes
 - label: Plays in
   value: The game over screen. Plays once.
+- label: Length
+  value: 0:30
 - label: Loops
   value: No, plays once
+audio: music/dead.mp3
 ---
 **Where it plays:** The game over screen. Plays once.
 

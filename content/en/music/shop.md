@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Shop.
+- label: Length
+  value: '2:16'
 - label: Loops
   value: 'Yes'
+audio: music/shop.mp3
 ---
 **Where it plays:** The [Shop](../rooms/shop.html).
 

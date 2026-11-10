@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: 'Les étages Mont Sélénite. Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 2, 7, 12, 17…'
+- label: Durée
+  value: '2:14'
 - label: En boucle
   value: Oui
+audio: music/floor2.mp3
 ---
 **Où on l'entend :** Les étages [Mont Sélénite](../world/floors.html). Les autres étages sans thème à eux le jouent aussi, selon leur numéro : 2, 7, 12, 17…
 

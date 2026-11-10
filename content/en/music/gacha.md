@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Gacha and the Day Care, and the Game Corner.
+- label: Length
+  value: 0:51
 - label: Loops
   value: 'Yes'
+audio: music/gacha.mp3
 ---
 **Where it plays:** The Gacha and the Day Care, and the [Game Corner](../rooms/casino.html).
 

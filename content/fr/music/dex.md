@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: La collection du Pokédex, et le Laboratoire du Professeur.
+- label: Durée
+  value: '2:50'
 - label: En boucle
   value: Oui
+audio: music/dex.mp3
 ---
 **Où on l'entend :** La collection du Pokédex, et le [Laboratoire du Professeur](../rooms/lab.html).
 

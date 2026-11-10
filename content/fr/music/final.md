@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les combats contre les boss finaux et Mewtwo Cuirassé.
+- label: Durée
+  value: '1:53'
 - label: En boucle
   value: Oui
+audio: music/final.mp3
 ---
 **Où on l'entend :** Les combats contre les boss finaux et Mewtwo Cuirassé.
 

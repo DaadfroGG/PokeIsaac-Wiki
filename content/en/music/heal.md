@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Plays in
   value: The Healing room.
+- label: Length
+  value: 0:32
 - label: Loops
   value: 'Yes'
+audio: music/heal.mp3
 ---
 **Where it plays:** The [Healing room](../rooms/heal.html).
 

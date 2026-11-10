@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: La Salle de soin.
+- label: Durée
+  value: 0:32
 - label: En boucle
   value: Oui
+audio: music/heal.mp3
 ---
 **Où on l'entend :** La [Salle de soin](../rooms/heal.html).
 

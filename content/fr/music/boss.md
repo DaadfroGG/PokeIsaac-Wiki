@@ -15,8 +15,11 @@ details:
   value: Full 8-bit JRPG Soundtrack
 - label: Où
   value: Les combats de boss aux étages impairs (1, 3, 5…), la Tour de Combat et la Salle des Quatre.
+- label: Durée
+  value: '1:33'
 - label: En boucle
   value: Oui
+audio: music/boss.mp3
 ---
 **Où on l'entend :** Les combats de boss aux étages impairs (1, 3, 5…), la [Tour de Combat](../rooms/tower.html) et la [Salle des Quatre](../rooms/four.html).
 
