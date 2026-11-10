@@ -1,0 +1,31 @@
+{{- /* Stat radar like the game's Pokémon card: dict "stats" (page stats) "label" (aria label).
+       Five axes from the top, clockwise: health, damage, fire rate, speed, luck. Each value is divided by the game's
+       scale (12 half-hearts, 6 damage, 8 shots/s, 5.5 speed, 4 luck) and kept between 6 % and 100 % of the radius.
+       Colors come from the infobox's --c (the first type's color) in wiki.css. */ -}}
+{{- $s := .stats | default dict -}}
+{{- $R := 54.0 -}}
+{{- $raw := slice
+    (div (float ($s.hp | default 0)) 12.0)
+    (div (float ($s.damage | default 0)) 6.0)
+    (div (float ($s.fire_rate | default 0)) 8.0)
+    (div (float ($s.speed | default 0)) 5.5)
+    (div (float ($s.luck | default 0)) 4.0) -}}
+{{- $outer := slice }}{{ $half := slice }}{{ $data := slice }}{{ $spokes := slice }}{{ $dots := slice -}}
+{{- range $i, $v := $raw -}}
+  {{- $a := add (div math.Pi -2.0) (mul (float $i) (div (mul 2.0 math.Pi) 5.0)) -}}
+  {{- $cx := math.Cos $a }}{{ $sy := math.Sin $a -}}
+  {{- $r := mul $R (math.Max 0.06 (math.Min 1.0 $v)) -}}
+  {{- $outer = $outer | append (printf "%.1f,%.1f" (mul $cx $R) (mul $sy $R)) -}}
+  {{- $half = $half | append (printf "%.1f,%.1f" (mul $cx (div $R 2.0)) (mul $sy (div $R 2.0))) -}}
+  {{- $data = $data | append (printf "%.1f,%.1f" (mul $cx $r) (mul $sy $r)) -}}
+  {{- $spokes = $spokes | append (printf "M0,0L%.1f,%.1f" (mul $cx $R) (mul $sy $R)) -}}
+  {{- $dots = $dots | append (printf `<circle cx="%.1f" cy="%.1f" r="2.6"/>` (mul $cx $r) (mul $sy $r)) -}}
+{{- end -}}
+<svg class="radar" viewBox="-62 -62 124 120" role="img" aria-label="{{ .label }}">
+<polygon class="r-bg" points="{{ delimit $outer " " }}"/>
+<polygon class="r-half" points="{{ delimit $half " " }}"/>
+<path class="r-spoke" d="{{ delimit $spokes "" }}"/>
+<polygon class="r-data" points="{{ delimit $data " " }}"/>
+<g class="r-dot">{{ delimit $dots "" | safeHTML }}</g>
+</svg>
+{{- /**/ -}}

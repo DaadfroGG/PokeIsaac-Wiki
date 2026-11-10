@@ -354,3 +354,13 @@ figure.scene figcaption { margin-top: 6px; font-size: 12px; color: var(--muted);
 
 /* music track player */
 audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color-scheme: dark; }
+
+/* Pokémon stat radar, drawn like the game's Pokémon card */
+.infobox .ib-chart { display: flex; justify-content: center; padding: 10px 0 4px; }
+.radar { width: 170px; height: auto; overflow: visible; }
+.radar .r-bg { fill: #1a1528; stroke: #3a3450; stroke-width: 1.5; }
+.radar .r-half { fill: none; stroke: #3a3450; stroke-width: 1; }
+.radar .r-spoke { fill: none; stroke: #2a2440; stroke-width: 1; }
+.radar .r-data { fill: color-mix(in srgb, var(--c) 55%, transparent); stroke: color-mix(in srgb, var(--c), #fff 45%); stroke-width: 2; stroke-linejoin: round; }
+.radar .r-dot { fill: color-mix(in srgb, var(--c), #fff 45%); }
+.infobox i.sw { display: inline-block; width: 7px; height: 7px; border-radius: 2px; background: var(--sw); margin-right: 6px; vertical-align: 1px; }
