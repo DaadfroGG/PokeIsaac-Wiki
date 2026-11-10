@@ -16,7 +16,6 @@
 {{- if isset $p "pool_weight" }}{{ $rows = $rows | append (dict "k" (T "f_weight") "v" (string $p.pool_weight)) }}{{ end -}}
 {{- if isset $p "charge" }}{{ $rows = $rows | append (dict "k" (T "f_charge") "v" (string $p.charge)) }}{{ end -}}
 {{- with $p.stats }}{{ $s := slice }}{{ range . }}{{ $s = $s | append (printf `<span style="color:%s">%s</span>` (cond .good "#9be58c" "#ff8a8a") (htmlEscape .text)) }}{{ end }}{{ $rows = $rows | append (dict "k" (T "f_stats") "v" (delimit $s "<br>")) }}{{ end -}}
-{{- $rows = $rows | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
 
 {{- $b := printf "<b>%s</b>" (htmlEscape .Title) -}}
 {{- $lead := "" -}}

@@ -29,7 +29,6 @@ f_pools: Où il apparaît
 f_weight: Poids
 f_charge: Charge
 f_stats: Statistiques
-f_id: ID interne
 tier_floor: '{{ .tier }} · dès l''étage {{ .floor }}'
 none: aucun
 h_effect: Effet

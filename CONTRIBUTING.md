@@ -30,7 +30,7 @@ The part between the two `---` lines (the *front matter*) holds the facts: they 
 ```markdown
 ---
 title: Clear Bell
-id: campana_clara        # the game's internal id; also the file name
+id: campana_clara        # page id: also the file name and the URL
 kind: active
 family: core
 tier: 1

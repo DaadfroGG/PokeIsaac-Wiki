@@ -1,5 +1,5 @@
 ---
-title: Affixes des Méga-boss
+title: Affixes des boss
 id: afijos
 color: '#ff9a60'
 labels:
@@ -51,4 +51,20 @@ names:
     name: 超級頭目詞綴
     desc: 從第40層起，超級頭目和里程碑頭目會帶有詞綴：第40層一個，第60層兩個，第90層三個，從第100層起每50層再多一個。詞綴會顯示在牠們的血條和登場卡片上。
 ---
-Dès l'étage 40, les méga-boss et les boss à trophée ont des affixes : un au 40, deux au 60, trois au 90 et un de plus tous les 50 étages à partir du 100. Ils s'affichent sur leur barre et sur leur carte d'entrée.
+Les affixes sont des règles en plus que reçoivent certains boss. Ils s'affichent sur la barre de vie du boss et sur sa carte d'entrée, et un boss n'a jamais deux fois le même.
+
+## Les six affixes
+- [Blindé](afijo_blindado.html) : une barre de bouclier à briser avant que sa vie baisse.
+- [Rapide](afijo_veloz.html) : se déplace plus vite et attend moins entre ses attaques.
+- [Invocateur](afijo_invocador.html) : appelle trois Pokémon sauvages de son type à chaque nouvelle phase.
+- [Miroir](afijo_espejo.html) : renvoie environ un de vos tirs sur dix qui le touchent.
+- [Vampire](afijo_vampiro.html) : se soigne chaque fois que vous perdez de la vie.
+- [Furieux](afijo_furioso.html) : commence le combat en phase 2.
+
+## Quels boss les reçoivent
+- **Méga-boss et boss à trophée** : un affixe dès l'étage 40, deux dès le 60, trois dès le 90 et quatre dès le 150, jamais plus. En [mode infini](modo_infinito.html), ils ont aussi au moins un affixe par tranche de deux niveaux d'infini.
+- **Autres boss du mode Classique** : un affixe dès l'étage 21, deux dès le 31 et trois dès le 41.
+- **Semaine des boss** (événement) : chaque boss du Classique, sauf les méga-boss, reçoit un affixe de plus, jusqu'à quatre.
+- **[Boss adaptatifs](jefes_adaptativos.html)** : un boss qui s'adapte très fortement à votre partie reçoit un affixe s'il n'en a aucun.
+- **Boss de la [Ligue](liga.html)** : un affixe dès la 4e arène, deux dès la 7e et trois pour le Conseil 4 et le Maître. Ils ne reçoivent que Rapide, Blindé, Furieux ou Invocateur.
+- Steelix ne reçoit jamais Rapide, et Mewtwo jamais Rapide ni Furieux.

@@ -11,7 +11,7 @@
 {{- if eq $p.how "gacha" }}{{ with site.GetPage "/mechanics/fichas" }}{{ $how = printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title) }}{{ end }}
 {{- else if eq $p.how "mega" }}{{ with site.GetPage "/mechanics/banner_mega" }}{{ $how = printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title) }}{{ end }}
 {{- else if eq $p.how "special" }}{{ $how = htmlEscape ($p.unlock | default $how) }}{{ end -}}
-{{- $rows = $rows | append (dict "k" (T "f_how") "v" $how) | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
+{{- $rows = $rows | append (dict "k" (T "f_how") "v" $how) -}}
 {{- $s := $p.stats -}}
 {{- $hp := int ($s.hp | default 0) -}}
 {{- $stats := slice (dict "k" (printf `<i class="sw" style="--sw:#ff6b6b"></i>%s` (T "g_hp")) "v" (printf `%d ♥ <span class=note>(%d)</span>` (div (add $hp 1) 2) $hp))

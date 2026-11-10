@@ -29,7 +29,6 @@ f_pools: Pools
 f_weight: Weight
 f_charge: Charge
 f_stats: Stats
-f_id: Internal ID
 tier_floor: '{{ .tier }} · from floor {{ .floor }}'
 none: none
 h_effect: Effect

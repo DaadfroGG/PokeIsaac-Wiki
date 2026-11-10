@@ -1,5 +1,5 @@
 ---
-title: Mega boss affixes
+title: Boss affixes
 id: afijos
 color: '#ff9a60'
 labels:
@@ -51,4 +51,20 @@ names:
     name: 超級頭目詞綴
     desc: 從第40層起，超級頭目和里程碑頭目會帶有詞綴：第40層一個，第60層兩個，第90層三個，從第100層起每50層再多一個。詞綴會顯示在牠們的血條和登場卡片上。
 ---
-From floor 40, mega bosses and milestones have affixes: one on 40, two on 60, three on 90 and one more every 50 floors from 100. They show on their health bar and intro card.
+Affixes are extra rules that some bosses get. They show on the boss's health bar and on its intro card, and a boss never gets the same one twice.
+
+## The six affixes
+- [Armored](afijo_blindado.html): a shield bar you must break before its health goes down.
+- [Swift](afijo_veloz.html): moves faster and waits less between attacks.
+- [Summoner](afijo_invocador.html): calls three wild Pokémon of its type at each new phase.
+- [Mirror](afijo_espejo.html): sends back about one in ten of your shots that hit it.
+- [Vampire](afijo_vampiro.html): heals each time you lose health.
+- [Enraged](afijo_furioso.html): starts the fight in phase 2.
+
+## Which bosses get them
+- **Mega bosses and milestone bosses**: one affix from floor 40, two from floor 60, three from floor 90 and four from floor 150, never more. In [endless mode](modo_infinito.html) they also get at least one affix per two endless levels.
+- **Other bosses in Classic mode**: one affix from floor 21, two from floor 31 and three from floor 41.
+- **Boss week** (live event): every Classic boss except mega bosses gets one more affix, up to four.
+- **[Adaptive bosses](jefes_adaptativos.html)**: a boss that adapts very strongly to your run gets one affix if it has none.
+- **[League](liga.html) bosses**: one affix from the 4th gym, two from the 7th and three for the Elite Four and the Champion. They only get Swift, Armored, Enraged or Summoner.
+- Steelix never gets Swift, and Mewtwo never gets Swift or Enraged.

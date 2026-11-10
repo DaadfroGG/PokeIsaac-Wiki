@@ -6,7 +6,6 @@
 {{- with $p.element }}{{ $rows = $rows | append (dict "k" (T "f_type") "v" (partial "type-chip.html" .)) }}{{ end -}}
 {{- with $p.pokemon }}{{ with site.GetPage (printf "/pokemon/%s" .) }}{{ $rows = $rows | append (dict "k" (T "f_pokemon") "v" (printf `<a href="%s">%s</a>` .RelPermalink (htmlEscape .Title))) }}{{ end }}{{ end -}}
 {{- with $p.dex }}{{ $rows = $rows | append (dict "k" (T "f_pokemon") "v" (printf "#%s" .)) }}{{ end -}}
-{{- $rows = $rows | append (dict "k" (T "f_id") "v" (printf "<code>%s</code>" $p.id)) -}}
 <h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $sec) }}</span>{{ partial "status.html" . }}</h1>
 {{ partial "ai-band.html" . }}
 <div class="content">
