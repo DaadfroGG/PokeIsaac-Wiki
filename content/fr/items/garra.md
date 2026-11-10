@@ -5,42 +5,47 @@ kind: passive
 category: shot
 family: core
 tier: 2
+pools:
+- treasure
+- boss
 pool_weight: 2
-stats:
-- text: Dégâts +0,5
-  good: true
+details:
+- label: Par tir réussi
+  value: +4 % de dégâts (max. +40 % avec 10 d'affilée)
+- label: En cas d'échec
+  value: Un tir qui heurte un mur sans avoir touché personne remet la série à zéro
 icon: items/razor-claw.png
 sprite: true
 names:
   en:
     name: Razor Claw
-    desc: Critical hits and damage +0.5
+    desc: 'Every shot that hits sharpens the claw: +4% damage, up to +40%. If a shot is wasted against a wall, the streak resets to zero'
   es:
     name: Garra Afilada
-    desc: Golpes críticos y daño +0.5
+    desc: 'Cada disparo que acierta afila la garra: +4 % de daño, hasta +40 %. Si un disparo se pierde contra la pared, la racha vuelve a cero'
   de:
     name: Scharfklaue
-    desc: Volltreffer und Schaden +0,5
+    desc: ''
   it:
     name: Affilartigli
-    desc: Colpi critici e danni +0,5
+    desc: ''
   pt:
     name: Garra Afiada
-    desc: Golpes críticos e dano +0,5
+    desc: ''
   ru:
     name: Острый коготь
-    desc: Критические удары и урон +0,5
+    desc: ''
   ja:
     name: するどいツメ
-    desc: 急所とダメージ+0.5
+    desc: ''
   ko:
     name: 예리한손톱
-    desc: 급소, 대미지 +0.5
+    desc: ''
   zh:
     name: 锐利之爪
-    desc: 暴击和伤害+0.5
+    desc: ''
   zt:
     name: 銳利之爪
-    desc: 會心一擊與傷害+0.5
+    desc: ''
 ---
-Coups critiques et dégâts +0,5
+Chaque tir qui touche aiguise la griffe : +4 % de dégâts, jusqu'à +40 %. Si un tir se perd contre un mur, la série retombe à zéro
