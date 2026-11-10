@@ -1,6 +1,8 @@
 # Lookup table used by the layouts. Edit freely; keys are what pages write in their front matter.
 - key: items
   color: --c-items
+- key: held
+  color: --c-held
 - key: pokemon
   color: --c-pokemon
 - key: enemies

@@ -50,3 +50,5 @@ names:
     desc: 隊伍中每隻寶可夢都能攜帶一個道具，且只在該寶可夢上場時生效：換寶可夢也會換掉你帶的效果。都是小型的情境效果。碰到就會撿起；如果你已經帶著一個，它會留在地上原本的位置。不計入100個道具的上限。
 ---
 Chaque Pokémon de votre équipe peut tenir un objet, qui ne fonctionne que lorsque ce Pokémon est sur le terrain : changer de Pokémon change aussi ce que vous portez. Ce sont de petits effets de situation. On les ramasse en les touchant ; si vous en teniez déjà un, il reste au sol à sa place. Ils ne comptent pas dans la limite de 100 objets.
+
+Les 49, une page chacun : [Objets tenus](../held/index.html).
