@@ -63,7 +63,7 @@ code, .mono { font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monos
 .logo { display: flex; align-items: center; gap: 10px; color: var(--gold) !important; text-decoration: none !important; white-space: nowrap; }
 .logo b { font: 16px var(--pixel); text-shadow: 3px 3px 0 #2a1030; letter-spacing: 1px; }
 .logo small { font: 8px var(--pixel); color: var(--muted); letter-spacing: 2px; }
-.logo .ball { width: 26px; height: 26px; flex: none; }
+.logo .ball { width: 30px; height: 30px; flex: none; border-radius: 7px; }
 .search { position: relative; flex: 1; max-width: 520px; margin-left: auto; }
 .search input {
   width: 100%; padding: 9px 12px 9px 36px;

@@ -8,13 +8,14 @@
 <meta name="description" content="{{ (.Summary | plainify | htmlUnescape | strings.TrimSpace) | default .Title }}">
 <meta name="theme-color" content="#1b1528">
 <link rel="icon" href="{{ $root }}assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ $root }}assets/apple-touch-icon.png">
 <link rel="stylesheet" href="{{ $root }}assets/wiki.css">
 {{- range .Translations }}<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .RelPermalink }}">{{ end }}
 </head>
 <body>
 <header class="top">
   <button class="menu-btn" type="button" aria-label="{{ T "menu" }}">{{ T "menu" | upper }}</button>
-  <a class="logo" href="{{ site.Home.RelPermalink }}"><svg class="ball" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7" fill="#fff" stroke="#1b1528" stroke-width="1.4"/><path d="M1.2 7.3a6.8 6.8 0 0 1 13.6 0z" fill="#ff5a5a"/><path d="M1 8h14" stroke="#1b1528" stroke-width="1.4"/><circle cx="8" cy="8" r="2.3" fill="#fff" stroke="#1b1528" stroke-width="1.4"/></svg><span><b>PokéIsaac</b><br><small>WIKI</small></span></a>
+  <a class="logo" href="{{ site.Home.RelPermalink }}"><img class="ball" src="{{ $root }}assets/favicon.svg" alt=""><span><b>PokéIsaac</b><br><small>WIKI</small></span></a>
   <div class="search"><input type="search" placeholder="{{ T "search_ph" }}" aria-label="{{ T "aria_search" }}" autocomplete="off"><ul></ul></div>
   <label class="lang"><select aria-label="{{ T "col_language" }}">{{ range hugo.Sites }}<option value="{{ .Language.Lang }}"{{ if eq .Language.Lang $.Lang }} selected{{ end }}>{{ .Language.Label }}</option>{{ end }}</select></label>
 </header>
