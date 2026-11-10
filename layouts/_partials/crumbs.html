@@ -1,4 +1,4 @@
-<div class="crumbs"><a href="{{ site.Home.RelPermalink }}">PokéIsaac Wiki</a>
+<div class="crumbs"><a href="{{ site.Home.RelPermalink }}">{{ T "site_name" }}</a>
 {{- if .IsSection }}{{ with .Parent }}{{ if not .IsHome }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }} › {{ .Title }}
 {{- else if .IsPage }}{{ with .Parent }}{{ with .Parent }}{{ if not .IsHome }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}{{ end }} › <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
 {{- if eq .Layout "article" }} › {{ .Title }}{{ end }}

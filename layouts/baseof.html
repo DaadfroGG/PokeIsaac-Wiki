@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{{ .Title }} · PokéIsaac Wiki</title>
+<title>{{ .Title }} · {{ T "site_name" }}</title>
 <meta name="description" content="{{ (.Summary | plainify | htmlUnescape | strings.TrimSpace) | default .Title }}">
 <meta name="theme-color" content="#1b1528">
 <link rel="icon" href="{{ $root }}assets/favicon.svg" type="image/svg+xml">
@@ -15,7 +15,7 @@
 <body>
 <header class="top">
   <button class="menu-btn" type="button" aria-label="{{ T "menu" }}">{{ T "menu" | upper }}</button>
-  <a class="logo" href="{{ site.Home.RelPermalink }}"><img class="ball" src="{{ $root }}assets/favicon.svg" alt=""><span><b>PokéIsaac</b><br><small>WIKI</small></span></a>
+  <a class="logo" href="{{ site.Home.RelPermalink }}"><img class="ball" src="{{ $root }}assets/favicon.svg" alt=""><span><b>PokéIsaac</b><br><small>{{ T "wiki_tag" }}</small></span></a>
   <div class="search"><input type="search" placeholder="{{ T "search_ph" }}" aria-label="{{ T "aria_search" }}" autocomplete="off"><ul></ul></div>
   <label class="lang"><select aria-label="{{ T "col_language" }}">{{ range hugo.Sites }}<option value="{{ .Language.Lang }}"{{ if eq .Language.Lang $.Lang }} selected{{ end }}>{{ .Language.Label }}</option>{{ end }}</select></label>
 </header>

@@ -1,7 +1,7 @@
 # PokéIsaac Wiki. Pages live in content/<lang>/, layouts in layouts/, images and styles in static/assets/.
 # Local preview: hugo server   ·   Build: hugo --minify (output in public/)
 baseURL = "http://localhost:1313/"
-title = "PokéIsaac Wiki"
+title = "Unofficial PokéIsaac Wiki"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 disableDefaultLanguageRedirect = true

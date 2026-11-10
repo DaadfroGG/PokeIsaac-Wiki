@@ -1,6 +1,6 @@
 # PokeIsaac-Wiki
 
-A Terraria-wiki-style reference for PokéIsaac, styled like the game itself (Press Start 2P, the game's gold-on-dark panels, pixel sprites), in English and French. Every page is a Markdown file in this repository: anyone can fix or add a page with a pull request, and GitHub Pages publishes the site when it's merged. See [CONTRIBUTING.md](CONTRIBUTING.md).
+An unofficial, Terraria-wiki-style reference for PokéIsaac (not the game's official wiki), styled like the game itself (Press Start 2P, the game's gold-on-dark panels, pixel sprites), in English and French. Every page is a Markdown file in this repository: anyone can fix or add a page with a pull request, and GitHub Pages publishes the site when it's merged. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Sections: Items (391), Held items (49), Pokémon (1009), Enemies, Bosses, Types, Rooms, World (plus Floors and chapters), Mechanics (plus guides) and Music, about 1,700 pages per language.
 

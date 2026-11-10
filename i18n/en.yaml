@@ -16,7 +16,7 @@ sec_world: World
 sec_mechanics: Mechanics
 blurb_pokemon: Starters, Gacha Pokémon and Megas with their stats
 soon: SOON
-footer: Fan-made reference. Not affiliated with PokéIsaac, Nintendo, Game Freak, Creatures or The Pokémon Company. Pokémon names and art belong to their owners.
+footer: Unofficial, fan-made reference. Not affiliated with PokéIsaac, Nintendo, Game Freak, Creatures or The Pokémon Company. Pokémon names and art belong to their owners.
 kind_passive: Passive
 kind_active: Active
 sub_passive: PASSIVE ITEM
@@ -57,7 +57,9 @@ kind_all: Passive + active
 n_shown: '{{ .n }} SHOWN'
 col_kind: Kind
 col_effect: Effect
-welcome: Welcome to the PokéIsaac Wiki
+welcome: Welcome to the unofficial PokéIsaac Wiki
+site_name: Unofficial PokéIsaac Wiki
+wiki_tag: UNOFFICIAL WIKI
 welcome_p: 'A reference for PokéIsaac, the Pokémon roguelike shooter, written by its players. Every page can be edited: open a pull request on GitHub.'
 st_items: ITEMS
 st_langs: LANGUAGES

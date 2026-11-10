@@ -1,4 +1,4 @@
-# Editing the PokéIsaac Wiki
+# Editing the unofficial PokéIsaac Wiki
 
 Every page of the wiki is a Markdown file in this repository. To fix or add something, change the file and open a pull request; once it's merged, the site updates by itself in a few minutes.
 
