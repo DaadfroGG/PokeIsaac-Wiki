@@ -43,6 +43,14 @@ details:
   value: Stuns more often; from rank 4, hits of 2 or more hurt you 1 less.
 - label: Fairy
   value: Charms more often; from rank 4, the charm makes them attack their own.
+- label: Rank outside Classic and League
+  value: One every 10 floors, up to 3
+- label: Highest rank
+  value: '10'
+- label: Matching type item
+  value: Holding the item of your type adds 2 ranks
+- label: Numbers per rank
+  value: Rock and Ground +3 % damage; Dragon +2 %; Fighting +1 %; Fighting and Dark +1.5 % crit chance and +10 % crit damage; Bug −1.2 % time between shots; Flying +1.5 % dodge (max 10 %); Grass 3 % extra pierce; Psychic 4 % homing; Electric +4 % chain damage (max 40 %)
 names:
   es:
     name: Pasivas de tipo que escalan

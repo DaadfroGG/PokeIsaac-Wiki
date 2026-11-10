@@ -17,6 +17,14 @@ details:
   value: Niveaux 14 et 32 (20 s'il n'a que deux stades) ; les objets d'évolution fonctionnent toujours
 - label: Niveau max
   value: 60 ; affiché sous les cœurs et à côté de chaque portrait de l'équipe
+- label: Expérience pour monter
+  value: 4 + 2 × le niveau actuel
+- label: Au niveau 60
+  value: +47 % de dégâts, cadence ×1,3, +12 % de vitesse
+- label: 1re évolution
+  value: +1 cœur max (et soigne 1), +1 de dégâts (compte comme des dégâts d'objet), plus grand
+- label: 2e évolution
+  value: +1 cœur max (et soigne 1), +1,5 de dégâts, plus grand, un peu plus lent
 names:
   en:
     name: Levels and evolution

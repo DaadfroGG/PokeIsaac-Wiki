@@ -8,13 +8,21 @@ labels:
 icon: icons/mechanics/rendimientos.png
 details:
 - label: Item damage
-  value: The first +3 in full; from +3 to +8, at half; after that, at a quarter
+  value: The first +3 counts in full; from +3 to +8, half; from +8 to +40, a quarter; beyond +40, 5 %. Damage penalties always count in full
 - label: Damage multipliers
-  value: Up to ×2 in total
+  value: 'All multiplied together: up to ×2.3 counts in full, only a quarter of anything above, and never more than ×3'
 - label: Fire rate
-  value: The first upgrade in full; after that, less and less
+  value: The first 3 points of fire rate count in full, the next 4 at half, the rest at a quarter. Slowdowns count in full
+- label: Luck
+  value: Up to 10 counts in full; above 10, only a quarter
 - label: Max health
   value: 12 hearts (soul hearts separate)
+- label: Healing
+  value: At most 30 % of your max health (2 hearts minimum) every 10 seconds
+- label: Offensive items past 130
+  value: Each extra one lowers all your damage by about 2 %; with the 100-item Bag this doesn't happen in normal play
+- label: Minimums
+  value: Damage 0.5, speed 1.6, range 120, shot speed 4
 names:
   es:
     name: Rendimientos decrecientes
@@ -48,3 +56,5 @@ names:
     desc: 道具總會疊加，但累積得越多，每件的效果就越小：這樣本局後期就不會失衡。
 ---
 Items always add up, but the more you stack, the less each one counts: that way the run doesn't break late on.
+
+Example: Pikachu has 3.5 base damage. With +10 damage from items, only 3 + 2.5 + 0.5 = 6 of it counts, so it deals 9.5 instead of 13.5. Two ×2 multipliers make ×4 on paper but ×2.725 in practice (2.3, plus a quarter of the 1.7 above it).

@@ -9,6 +9,8 @@ icon: icons/rooms/normal.png
 details:
 - label: Où
   value: Presque toutes les salles de la carte.
+- label: Récompense
+  value: 40 % de chance, +2 % par point de chance
 names:
   en:
     name: Combat room

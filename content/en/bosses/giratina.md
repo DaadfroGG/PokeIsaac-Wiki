@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Appears in
   value: Distortion World (chapter 5)
+- label: Run reward
+  value: +200 tokens and +3 Mega Tickets when the run ends
 hint: Reach the end of chapters 5, 6 or the Void.
 names:
   es:

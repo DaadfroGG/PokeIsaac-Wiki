@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Appears in
   value: Newmoon Island (chapter 6)
+- label: Run reward
+  value: +250 tokens and +4 Mega Tickets when the run ends
 hint: Reach the end of chapters 5, 6 or the Void.
 names:
   es:

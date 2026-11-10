@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Appears in
   value: Ultra Space (the Void)
+- label: Run reward
+  value: +400 tokens and +6 Mega Tickets when the run ends
 hint: Reach the end of chapters 5, 6 or the Void.
 names:
   es:

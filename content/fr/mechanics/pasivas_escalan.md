@@ -43,6 +43,14 @@ details:
   value: Étourdit plus souvent ; dès le rang 4, les coups de 2 ou plus vous font 1 de moins.
 - label: Fairy
   value: Charme plus souvent ; dès le rang 4, le charme les pousse à attaquer les leurs.
+- label: Rang hors Classique et Ligue
+  value: Un tous les 10 étages, jusqu'à 3
+- label: Rang maximum
+  value: '10'
+- label: Objet de votre type
+  value: Tenir l'objet de votre type ajoute 2 rangs
+- label: Chiffres par rang
+  value: Roche et Sol +3 % de dégâts ; Dragon +2 % ; Combat +1 % ; Combat et Ténèbres +1,5 % de chance de critique et +10 % de dégâts critiques ; Insecte −1,2 % de temps entre les tirs ; Vol +1,5 % d'esquive (max 10 %) ; Plante 3 % de perforation en plus ; Psy 4 % de tirs à tête chercheuse ; Électrik +4 % de dégâts en chaîne (max 40 %)
 names:
   en:
     name: Scaling type passives

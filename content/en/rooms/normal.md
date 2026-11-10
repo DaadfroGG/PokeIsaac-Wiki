@@ -9,6 +9,8 @@ icon: icons/rooms/normal.png
 details:
 - label: Where
   value: Almost every room on the map.
+- label: Clear reward
+  value: 40 % chance, +2 % per point of luck
 names:
   es:
     name: Sala de combate

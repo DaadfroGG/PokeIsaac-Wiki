@@ -9,6 +9,12 @@ icon: icons/rooms/shop.png
 details:
 - label: Où
   value: Porte verrouillée (sauf la boutique gratuite).
+- label: Prix de base
+  value: Objet ou actif 15, cœur 3, demi-cœur 2, cœur d'âme 5, Voltorbe 5, clé 5, pépite 10, coffre 7
+- label: Prix selon l'étage
+  value: +3,5 % par étage jusqu'à l'étage 30, puis +4 % par étage, jusqu'à ×6
+- label: Renouveler
+  value: 'Parlez à Miaouss pour changer le stock : 3 Pokédollars la première fois, puis ×1,45 à chaque fois (selon l''étage aussi)'
 names:
   en:
     name: Shop

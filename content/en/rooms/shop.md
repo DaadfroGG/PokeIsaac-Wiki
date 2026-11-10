@@ -9,6 +9,12 @@ icon: icons/rooms/shop.png
 details:
 - label: Where
   value: Locked door (except the free shop).
+- label: Base prices
+  value: Item or active 15, heart 3, half heart 2, soul heart 5, Voltorb 5, key 5, nugget 10, chest 7
+- label: Prices by floor
+  value: +3.5 % per floor up to floor 30, then +4 % per floor, up to ×6
+- label: Restock
+  value: 'Talk to Meowth to change the stock: 3 PokéDollars the first time, then ×1.45 each time (also scaled by floor)'
 names:
   es:
     name: Tienda

@@ -9,6 +9,10 @@ icon: icons/world/coin.png
 details:
 - label: Où
   value: Partout.
+- label: Bourse
+  value: Jusqu'à 99 ; 150 dès l'étage 10 ; 250 dès l'étage 30
+- label: Butin sur un ennemi
+  value: 6 % de chance, +0,5 % par point de chance
 names:
   en:
     name: PokéDollar

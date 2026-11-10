@@ -8,13 +8,21 @@ labels:
 icon: icons/mechanics/rendimientos.png
 details:
 - label: Dégâts des objets
-  value: Les +3 premiers en entier ; de +3 à +8, à moitié ; ensuite, au quart
+  value: Les +3 premiers comptent en entier ; de +3 à +8, à moitié ; de +8 à +40, au quart ; au-delà de +40, à 5 %. Les malus de dégâts comptent toujours en entier
 - label: Multiplicateurs de dégâts
-  value: Jusqu'à ×2 au total
+  value: 'Tous multipliés entre eux : jusqu''à ×2,3 en entier, seulement un quart de ce qui dépasse, et jamais plus de ×3'
 - label: Cadence
-  value: La première amélioration en entier ; ensuite, de moins en moins
+  value: Les 3 premiers points de cadence comptent en entier, les 4 suivants à moitié, le reste au quart. Les ralentissements comptent en entier
+- label: Chance
+  value: Jusqu'à 10 en entier ; au-delà de 10, seulement un quart
 - label: Vie max
   value: 12 cœurs (cœurs d'âme à part)
+- label: Soins
+  value: Au plus 30 % de votre vie max (2 cœurs minimum) toutes les 10 secondes
+- label: Objets offensifs au-delà de 130
+  value: Chacun en plus baisse tous vos dégâts d'environ 2 % ; avec le Sac de 100 objets, ça n'arrive pas en jeu normal
+- label: Minimums
+  value: Dégâts 0,5, vitesse 1,6, portée 120, vitesse des tirs 4
 names:
   en:
     name: Diminishing returns
@@ -48,3 +56,5 @@ names:
     desc: 道具總會疊加，但累積得越多，每件的效果就越小：這樣本局後期就不會失衡。
 ---
 Les objets s'additionnent toujours, mais plus vous en cumulez, moins chacun compte : ainsi la partie ne se déséquilibre pas en fin de course.
+
+Exemple : Pikachu a 3,5 de dégâts de base. Avec +10 de dégâts venant d'objets, seuls 3 + 2,5 + 0,5 = 6 comptent, donc il fait 9,5 au lieu de 13,5. Deux multiplicateurs ×2 donnent ×4 sur le papier, mais ×2,725 en pratique (2,3, plus un quart des 1,7 qui dépassent).

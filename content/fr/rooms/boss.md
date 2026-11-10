@@ -9,6 +9,8 @@ icon: icons/rooms/boss.png
 details:
 - label: Où
   value: À la fin de chaque étage.
+- label: Pokédollars
+  value: 3, plus 1 tous les 5 étages ; le double dans certains cas
 names:
   en:
     name: Boss room

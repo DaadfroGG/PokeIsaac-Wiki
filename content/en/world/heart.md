@@ -9,6 +9,8 @@ icon: icons/world/heart.png
 details:
 - label: Where
   value: Rooms, bosses and shops.
+- label: Healing cap
+  value: At most 30 % of your max health (2 hearts minimum) every 10 seconds
 names:
   es:
     name: Corazón

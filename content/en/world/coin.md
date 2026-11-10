@@ -9,6 +9,10 @@ icon: icons/world/coin.png
 details:
 - label: Where
   value: Everywhere.
+- label: Wallet
+  value: Up to 99; 150 from floor 10; 250 from floor 30
+- label: Drop on kill
+  value: 6 % chance, +0.5 % per point of luck
 names:
   es:
     name: Pokédólar

@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Apparaît dans
   value: Île Nouvellune (chapitre 6)
+- label: Récompense de partie
+  value: +250 jetons et +4 Tickets Méga à la fin de la partie
 hint: Atteignez la fin des chapitres 5, 6 ou du Néant.
 names:
   en:

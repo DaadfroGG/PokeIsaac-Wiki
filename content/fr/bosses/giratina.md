@@ -24,6 +24,8 @@ details:
 - key: appears
   label: Apparaît dans
   value: Monde Distorsion (chapitre 5)
+- label: Récompense de partie
+  value: +200 jetons et +3 Tickets Méga à la fin de la partie
 hint: Atteignez la fin des chapitres 5, 6 ou du Néant.
 names:
   en:

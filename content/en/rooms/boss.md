@@ -9,6 +9,8 @@ icon: icons/rooms/boss.png
 details:
 - label: Where
   value: At the end of each floor.
+- label: PokéDollars
+  value: 3, plus 1 every 5 floors; double in some cases
 names:
   es:
     name: Sala del jefe

@@ -9,6 +9,8 @@ icon: icons/world/heart.png
 details:
 - label: Où
   value: Salles, boss et boutiques.
+- label: Limite de soins
+  value: Au plus 30 % de votre vie max (2 cœurs minimum) toutes les 10 secondes
 names:
   en:
     name: Heart

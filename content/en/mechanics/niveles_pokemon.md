@@ -17,6 +17,14 @@ details:
   value: Levels 14 and 32 (20 if it only has two stages); evolution items still work
 - label: Max level
   value: 60; shown under the hearts and next to each team portrait
+- label: Experience to level up
+  value: 4 + 2 × the current level
+- label: At level 60
+  value: +47 % damage, fire rate ×1.3, +12 % speed
+- label: 1st evolution
+  value: +1 max heart (and heals 1), +1 damage (counts as item damage), bigger
+- label: 2nd evolution
+  value: +1 max heart (and heals 1), +1.5 damage, bigger, a little slower
 names:
   es:
     name: Niveles y evolución
