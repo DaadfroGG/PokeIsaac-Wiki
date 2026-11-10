@@ -11,6 +11,7 @@ sec_bosses: Boss
 sec_types: Types
 sec_rooms: Salles
 sec_held: Objets tenus
+sec_music: Musique
 sec_world: Monde
 sec_mechanics: Mécaniques
 blurb_pokemon: Starters, Pokémon du Gacha et Méga avec leurs statistiques
@@ -79,6 +80,7 @@ sub_bosses: BOSS
 sub_types: TYPE
 sub_rooms: SALLE
 sub_held: OBJET TENU
+sub_music: MUSIQUE
 sub_world: MONDE
 sub_mechanics: MÉCANIQUE
 pokemon_count: '{{ .n }} POKÉMON'

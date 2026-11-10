@@ -11,6 +11,7 @@ sec_bosses: Bosses
 sec_types: Types
 sec_rooms: Rooms
 sec_held: Held items
+sec_music: Music
 sec_world: World
 sec_mechanics: Mechanics
 blurb_pokemon: Starters, Gacha Pokémon and Megas with their stats
@@ -79,6 +80,7 @@ sub_bosses: BOSS
 sub_types: TYPE
 sub_rooms: ROOM
 sub_held: HELD ITEM
+sub_music: MUSIC
 sub_world: WORLD
 sub_mechanics: MECHANIC
 pokemon_count: '{{ .n }} POKÉMON'

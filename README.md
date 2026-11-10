@@ -2,7 +2,7 @@
 
 A Terraria-wiki-style reference for PokéIsaac, styled like the game itself (Press Start 2P, the game's gold-on-dark panels, pixel sprites), in English and French. Every page is a Markdown file in this repository: anyone can fix or add a page with a pull request, and GitHub Pages publishes the site when it's merged. See [CONTRIBUTING.md](CONTRIBUTING.md).
 
-Sections: Items (391), Held items (49), Pokémon (1009), Enemies, Bosses, Types, Rooms, World (plus Floors and chapters) and Mechanics (plus guides), about 1,700 pages per language.
+Sections: Items (391), Held items (49), Pokémon (1009), Enemies, Bosses, Types, Rooms, World (plus Floors and chapters), Mechanics (plus guides) and Music, about 1,700 pages per language.
 
 ## Build
 
@@ -19,7 +19,7 @@ hugo --minify && python3 -I tools/check_links.py public   # build into public/ a
 
 | Path | What |
 |---|---|
-| `content/en/`, `content/fr/` | the pages: one Markdown file per item, held item, Pokémon, enemy, boss, type, room, world object and mechanic, plus the floors page and the guides |
+| `content/en/`, `content/fr/` | the pages: one Markdown file per item, held item, Pokémon, enemy, boss, type, room, world object, mechanic and music track, plus the floors page and the guides |
 | `data/*.yaml` | shared tables the layouts read: item families, categories, pools, rarities, regions, tiers, languages, sections |
 | `i18n/en.yaml`, `i18n/fr.yaml` | interface labels |
 | `layouts/` | Hugo templates: page chrome, infoboxes, section lists with filters, navboxes, search index (`search.json`) |
