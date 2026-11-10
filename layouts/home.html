@@ -9,6 +9,7 @@
 <div class="hero">
 <h1>{{ .Params.welcome }}</h1>
 {{ .Content }}
+<p class="note">{{ T "official_wiki" | safeHTML }}</p>
 <div class="stats"><span>{{ T "st_items" }} <b>{{ len $items }}</b></span><span>{{ T "st_pokemon" }} <b>{{ len (where site.RegularPages "Section" "pokemon") }}</b></span><span>{{ T "st_langs" }} <b>{{ len hugo.Sites }}</b></span></div>
 <div class="art">{{ range first 5 $comps }}{{ partial "img.html" (dict "icon" .Params.icon) }}{{ end }}</div>
 </div>

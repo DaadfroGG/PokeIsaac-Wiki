@@ -31,7 +31,7 @@
 {{ block "main" . }}{{ end }}
 </main>
 </div>
-<footer class="foot">{{ T "footer_ai" }} {{ T "footer" }}
+<footer class="foot">{{ T "footer_ai" }} {{ T "footer" }} · {{ T "official_wiki" | safeHTML }}
 {{- with partial "edit-url.html" . }} · <a href="{{ . }}">{{ T "edit_page" }}</a>{{ end }}</footer>
 <script src="{{ $root }}assets/wiki.js" defer></script>
 </body>

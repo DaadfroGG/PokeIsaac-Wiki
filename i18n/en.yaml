@@ -164,5 +164,6 @@ ai_notice_title: ⚠ This wiki was made with AI
 ai_notice_p: 'Its pages were written with the help of AI tools and may contain mistakes. Pages marked AI-GENERATED have not been checked by a person yet; pages marked HUMAN VERIFIED have been checked in the game. If you play PokéIsaac, you can help: check a page, fix it if needed, and mark it verified (see the edit link at the bottom of every page).'
 ai_notice_count: '{{ .n }} of {{ .total }} pages verified so far.'
 footer_ai: 'Made with AI: information may be inaccurate.'
+official_wiki: 'Official wiki: <a href="https://wiki.pokeisaac.com/">wiki.pokeisaac.com</a>'
 ai_band: This article was written with AI and hasn't been checked by a person yet, so it may contain mistakes. Know the game? Check it, fix what's wrong, and mark it verified.
 ai_band_btn: Edit and verify
