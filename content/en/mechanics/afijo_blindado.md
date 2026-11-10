@@ -29,8 +29,27 @@ An Armored boss has a shield bar on top of its health: until you break it, your 
 - Burn and poison wear the shield down too.
 - "Shield broken!" shows when it breaks. It doesn't come back.
 
+## Shield vs health
+The shield works like a second health bar, but a hit on it skips most of what a hit on health goes through:
+
+| | Shield | Health |
+|---|---|---|
+| Crits and growing shots | Count | Count |
+| Type effectiveness | Ignored | Applied (×0.45 to ×2.25) |
+| Venom (+50 % on poisoned targets) | Ignored | Applied |
+| Item and weapon effects on hit | Don't trigger | Trigger |
+| [Penalty for carrying many items](rendimientos.html) | Not applied | Applied |
+| Burn, poison, slow and other effects of your shots | Not applied | Applied |
+| Damage numbers and hit sound | None | Shown |
+| Counts toward phase changes | No | Yes |
+| Counted by [adaptive bosses](jefes_adaptativos.html) | No | Yes |
+| Heals back | Never | With [Vampire](afijo_vampiro.html) |
+
+The hit that breaks the shield counts as a health hit for what's left of it. Example: a 10-damage Electric shot on a Water boss (×2) takes 10 off the shield, but 20 off its health once the shield is gone. If the shield only has 4 left, the shield loses 4 and the boss's health loses (10 − 4) × 2 = 12.
+
 ## Tips
 - Only total damage counts against the shield: many small shots and a few big ones break it just as well.
-- Your type advantage only starts to matter once the shield is gone.
+- With a super effective type, the shield costs you as much as 30 % of the boss's health would. With a resisted type (×0.5), it's cheaper than the same amount of health.
+- Burn, poison, slow and charm only start working once the shield is gone.
 
 All affixes and which bosses get them: [Boss affixes](afijos.html).
