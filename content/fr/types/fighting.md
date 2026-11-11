@@ -45,3 +45,5 @@ names:
     desc: 更多會心一擊。
 ---
 Plus de coups critiques.
+
+Passif de type : [Passif Combat](../mechanics/pasiva_fighting.html).

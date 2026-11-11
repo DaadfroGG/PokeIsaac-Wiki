@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人中毒。
 ---
 Ses tirs peuvent empoisonner.
+
+Passif de type : [Passif Poison](../mechanics/pasiva_poison.html).

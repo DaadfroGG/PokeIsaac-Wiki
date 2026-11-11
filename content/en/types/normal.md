@@ -45,3 +45,5 @@ names:
     desc: 運氣非常好。
 ---
 Very lucky.
+
+Type passive: [Normal passive](../mechanics/pasiva_normal.html).

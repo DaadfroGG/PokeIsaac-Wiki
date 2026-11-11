@@ -45,3 +45,5 @@ names:
     desc: 更多會心一擊。
 ---
 More critical hits.
+
+Type passive: [Dark passive](../mechanics/pasiva_dark.html).

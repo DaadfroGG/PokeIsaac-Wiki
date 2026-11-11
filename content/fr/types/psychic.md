@@ -45,3 +45,5 @@ names:
     desc: 部分彈會追蹤敵人。
 ---
 Certains tirs poursuivent les ennemis.
+
+Passif de type : [Passif Psy](../mechanics/pasiva_psychic.html).

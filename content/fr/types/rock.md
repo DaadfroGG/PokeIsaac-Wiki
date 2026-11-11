@@ -45,3 +45,5 @@ names:
     desc: 更大的彈，有時能擊退。
 ---
 Tirs plus gros qui repoussent parfois.
+
+Passif de type : [Passif Roche](../mechanics/pasiva_rock.html).

@@ -45,3 +45,5 @@ names:
     desc: 非常快。
 ---
 Very fast.
+
+Type passive: [Flying passive](../mechanics/pasiva_flying.html).

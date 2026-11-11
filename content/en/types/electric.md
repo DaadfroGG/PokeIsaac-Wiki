@@ -45,3 +45,5 @@ names:
     desc: 牠的閃電可在敵人之間連鎖。
 ---
 Its lightning can chain between enemies.
+
+Type passive: [Electric passive](../mechanics/pasiva_electric.html).

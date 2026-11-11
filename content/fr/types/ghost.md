@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可穿過岩石。
 ---
 Ses tirs traversent les rochers.
+
+Passif de type : [Passif Spectre](../mechanics/pasiva_ghost.html).

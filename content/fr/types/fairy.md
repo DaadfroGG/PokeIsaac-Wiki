@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。
 ---
 Ses tirs peuvent charmer : l'ennemi reste immobile un instant.
+
+Passif de type : [Passif Fée](../mechanics/pasiva_fairy.html).

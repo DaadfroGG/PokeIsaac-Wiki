@@ -45,3 +45,5 @@ names:
     desc: 樣樣都強。
 ---
 Fort en tout.
+
+Passif de type : [Passif Dragon](../mechanics/pasiva_dragon.html).

@@ -45,3 +45,5 @@ names:
     desc: 牠的彈會擊退敵人。
 ---
 Ses tirs repoussent les ennemis.
+
+Passif de type : [Passif Eau](../mechanics/pasiva_water.html).

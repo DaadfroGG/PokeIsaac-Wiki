@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可貫穿敵人。
 ---
 Ses tirs peuvent transpercer les ennemis.
+
+Passif de type : [Passif Plante](../mechanics/pasiva_grass.html).

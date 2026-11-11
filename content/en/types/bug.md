@@ -45,3 +45,5 @@ names:
     desc: 射擊更快。
 ---
 Fires faster.
+
+Type passive: [Bug passive](../mechanics/pasiva_bug.html).

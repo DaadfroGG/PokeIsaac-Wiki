@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可造成灼傷。
 ---
 Its shots can burn.
+
+Type passive: [Fire passive](../mechanics/pasiva_fire.html).

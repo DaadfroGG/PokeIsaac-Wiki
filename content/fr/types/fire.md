@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可造成灼傷。
 ---
 Ses tirs peuvent brûler.
+
+Passif de type : [Passif Feu](../mechanics/pasiva_fire.html).

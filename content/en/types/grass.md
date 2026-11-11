@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可貫穿敵人。
 ---
 Its shots can pierce enemies.
+
+Type passive: [Grass passive](../mechanics/pasiva_grass.html).

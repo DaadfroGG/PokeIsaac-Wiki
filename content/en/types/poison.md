@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人中毒。
 ---
 Its shots can poison.
+
+Type passive: [Poison passive](../mechanics/pasiva_poison.html).

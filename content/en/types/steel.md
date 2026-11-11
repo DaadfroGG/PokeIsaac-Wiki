@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人暈眩。
 ---
 Its shots can stun enemies.
+
+Type passive: [Steel passive](../mechanics/pasiva_steel.html).

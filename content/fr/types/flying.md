@@ -45,3 +45,5 @@ names:
     desc: 非常快。
 ---
 Très rapide.
+
+Passif de type : [Passif Vol](../mechanics/pasiva_flying.html).

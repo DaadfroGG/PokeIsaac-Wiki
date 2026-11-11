@@ -45,3 +45,5 @@ names:
     desc: 牠的彈會擊退敵人。
 ---
 Its shots knock enemies back.
+
+Type passive: [Water passive](../mechanics/pasiva_water.html).

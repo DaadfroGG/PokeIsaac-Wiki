@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人減速。
 ---
 Ses tirs peuvent ralentir.
+
+Passif de type : [Passif Glace](../mechanics/pasiva_ice.html).

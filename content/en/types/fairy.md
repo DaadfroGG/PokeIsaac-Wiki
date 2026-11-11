@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。
 ---
 Its shots can charm: the enemy stands still for a moment.
+
+Type passive: [Fairy passive](../mechanics/pasiva_fairy.html).

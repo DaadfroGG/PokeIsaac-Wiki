@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可穿過岩石。
 ---
 Its shots pass through rocks.
+
+Type passive: [Ghost passive](../mechanics/pasiva_ghost.html).

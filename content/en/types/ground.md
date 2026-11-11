@@ -45,3 +45,5 @@ names:
     desc: 更大的彈，有時能擊退。
 ---
 Bigger shots that sometimes knock back.
+
+Type passive: [Ground passive](../mechanics/pasiva_ground.html).

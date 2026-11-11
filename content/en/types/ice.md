@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人減速。
 ---
 Its shots can slow.
+
+Type passive: [Ice passive](../mechanics/pasiva_ice.html).

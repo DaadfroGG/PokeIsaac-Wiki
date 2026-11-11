@@ -45,3 +45,5 @@ names:
     desc: 牠的彈可讓敵人暈眩。
 ---
 Ses tirs peuvent étourdir les ennemis.
+
+Passif de type : [Passif Acier](../mechanics/pasiva_steel.html).

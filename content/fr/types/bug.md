@@ -45,3 +45,5 @@ names:
     desc: 射擊更快。
 ---
 Tire plus vite.
+
+Passif de type : [Passif Insecte](../mechanics/pasiva_bug.html).

@@ -45,3 +45,5 @@ names:
     desc: 樣樣都強。
 ---
 Strong at everything.
+
+Type passive: [Dragon passive](../mechanics/pasiva_dragon.html).

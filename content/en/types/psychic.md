@@ -45,3 +45,5 @@ names:
     desc: 部分彈會追蹤敵人。
 ---
 Some shots home in on enemies.
+
+Type passive: [Psychic passive](../mechanics/pasiva_psychic.html).

@@ -45,3 +45,5 @@ names:
     desc: 牠的閃電可在敵人之間連鎖。
 ---
 Ses éclairs peuvent rebondir d'un ennemi à l'autre.
+
+Passif de type : [Passif Électrik](../mechanics/pasiva_electric.html).
