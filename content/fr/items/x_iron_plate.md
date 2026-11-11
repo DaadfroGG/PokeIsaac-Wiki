@@ -52,3 +52,13 @@ names:
     desc: 強化鋼屬性：如果你的寶可夢是鋼屬性，其屬性被動提升2階級，該屬性的彈傷害+15%
 ---
 Renforce le type Acier : si votre Pokémon est de type Acier, son passif de type gagne 2 rangs et ses tirs de ce type infligent +15 % de dégâts
+
+## Fonctionnement
+- Elle ne marche que si le Pokémon que vous jouez a le type Acier. La Plaque peut apparaître dès que quelqu'un dans l'équipe a un Pokémon Acier, banc compris, mais un Pokémon sans ce type n'en tire rien.
+- Un Pokémon à double type n'a le bonus que sur ses tirs Acier, un tir sur deux.
+- Le +15 % s'applique quand un tir Acier touche, il n'apparaît donc pas dans votre stat Dégâts du HUD. Il n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
+- Les +2 rangs vont au [Passif Acier](../mechanics/pasiva_steel.html). Ils ne changent pas non plus la stat Dégâts.
+- Les ticks de brûlure et de poison n'ont pas le +15 %.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien (toujours +2 rangs et +15 %).

@@ -52,3 +52,13 @@ names:
     desc: 強化妖精屬性：如果你的寶可夢是妖精屬性，其屬性被動提升2階級，該屬性的彈傷害+15%
 ---
 Boosts the Fairy type: if your Pokémon is Fairy-type, its type passive goes up 2 ranks and its shots of that type deal +15% damage
+
+## How it works
+- It only works if the Pokémon you are playing has the Fairy type. The Plate can appear as soon as anyone on the team has a Fairy Pokémon, bench included, but a Pokémon without that type gets nothing from it.
+- A dual-type Pokémon only gets the bonus on its Fairy shots, one shot in two.
+- The +15 % is applied when a Fairy shot hits, so it does not show in your Damage stat on the HUD. It is not limited by the ×3 cap on damage multipliers.
+- The +2 ranks go to the [Fairy passive](../mechanics/pasiva_fairy.html). They don't change the Damage stat either.
+- Burn and poison ticks don't get the +15 %.
+
+## Stacking
+- It does not stack: a second copy adds nothing (still +2 ranks and +15 %).
