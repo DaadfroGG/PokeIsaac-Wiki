@@ -13,7 +13,7 @@ details:
 - label: Aura
   value: 25 % of your damage, 60 px
 - label: Inside
-  value: Damage ×1.5
+  value: Damage ×1.5, with your other multipliers (never past ×3)
 icon: items-ps/ball/cherish.png
 sprite: true
 names:
@@ -51,3 +51,26 @@ names:
 A Misdreavus floats around the room with an aura that hurts enemies; while inside it, you deal 50 % more damage
 
 {{< clip >}}
+
+## Damage bonus
+
+- You count as inside when you are within 60 px of Misdreavus. The bonus ends almost as soon as you step out.
+- Misdreavus does not follow you: it drifts in a straight line and bounces off the walls, so you have to move with it.
+- The ×1.5 is multiplied with your other damage multipliers from items, and the total then goes through [diminishing returns](../mechanics/rendimientos.html): it counts in full up to ×2.3, only a quarter of anything above that counts, and the total never goes past ×3.
+- So the bonus is worth less on a strong build:
+
+| Your other multipliers | Total inside the aura | What the Cherish Ball adds |
+|---|---|---|
+| None (×1) | ×1.5 | +50 % |
+| ×1.8 | ×2.4 (2.7 on paper) | +33 % |
+| ×2 | ×2.475 (3 on paper) | +24 % |
+| ×4.1 or more | ×3 | Nothing |
+
+- The Damage stat on the HUD shows the bonus once you have stayed inside for about half a second.
+
+## Aura damage
+
+- Six times per second, every enemy within 60 px of Misdreavus takes 25 % of your damage (at least 0.5).
+- That damage uses your current damage, so it also gets the ×1.5 while you are inside.
+- It is [Ghost](../types/ghost.html)-type damage for the type chart, whatever your Pokémon's type.
+- It causes no knockback and does not trigger your on-hit items.

@@ -13,7 +13,7 @@ details:
 - label: Aura
   value: 25 % de vos dégâts, 60 px
 - label: Dedans
-  value: Dégâts ×1,5
+  value: Dégâts ×1,5, avec vos autres multiplicateurs (jamais plus de ×3)
 icon: items-ps/ball/cherish.png
 sprite: true
 names:
@@ -51,3 +51,26 @@ names:
 Un Feuforêve flotte dans la salle avec une aura qui blesse les ennemis ; si vous êtes dedans, vous frappez 50 % plus fort
 
 {{< clip >}}
+
+## Bonus de dégâts
+
+- Vous êtes dans l'aura quand vous êtes à moins de 60 px de Feuforêve. Le bonus s'arrête presque dès que vous en sortez.
+- Feuforêve ne vous suit pas : il avance en ligne droite et rebondit sur les murs, il faut donc vous déplacer avec lui.
+- Le ×1,5 est multiplié avec vos autres multiplicateurs de dégâts venant d'objets, puis le total passe par les [rendements décroissants](../mechanics/rendimientos.html) : il compte en entier jusqu'à ×2,3, seulement un quart de ce qui dépasse compte, et le total ne dépasse jamais ×3.
+- Le bonus vaut donc moins sur un build déjà fort :
+
+| Vos autres multiplicateurs | Total dans l'aura | Ce qu'ajoute la Mémoire Ball |
+|---|---|---|
+| Aucun (×1) | ×1,5 | +50 % |
+| ×1,8 | ×2,4 (2,7 sur le papier) | +33 % |
+| ×2 | ×2,475 (3 sur le papier) | +24 % |
+| ×4,1 ou plus | ×3 | Rien |
+
+- La stat Dégâts du HUD affiche le bonus après environ une demi-seconde dans l'aura.
+
+## Dégâts de l'aura
+
+- Six fois par seconde, chaque ennemi à moins de 60 px de Feuforêve subit 25 % de vos dégâts (au moins 0,5).
+- Ces dégâts partent de vos dégâts actuels, donc ils profitent aussi du ×1,5 quand vous êtes dedans.
+- Ce sont des dégâts de type [Spectre](../types/ghost.html) pour la table des types, quel que soit le type de votre Pokémon.
+- Ils ne repoussent pas les ennemis et ne déclenchent pas vos objets « à l'impact ».
