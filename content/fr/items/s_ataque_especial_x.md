@@ -50,3 +50,14 @@ names:
     desc: 傷害×1.5並+0.5
 ---
 Dégâts ×1,5 et +0,5
+
+## Cumul
+
+- **Le ×1,5 ne se cumule pas.** Un second exemplaire donne toujours ×1,5, pas ×2,25.
+- **Le +0,5 de Dégâts se cumule.** Chaque exemplaire ajoute +0,5 à vos Dégâts, donc deux exemplaires donnent +1.
+- Avec deux exemplaires, vous avez ×1,5 une seule fois et +1 de Dégâts.
+
+## Comment ça s'additionne
+
+- Le ×1,5 est multiplié avec vos autres multiplicateurs de dégâts venant d'objets. Le total passe ensuite par les [rendements décroissants](../mechanics/rendimientos.html) : il compte en entier jusqu'à ×2,3, seulement un quart de ce qui dépasse compte, et le total ne dépasse jamais ×3.
+- Le +0,5 s'ajoute à vos autres bonus de dégâts fixes venant d'objets, qui passent aussi par les [rendements décroissants](../mechanics/rendimientos.html) : les +3 premiers comptent en entier, puis la moitié jusqu'à +8, puis un quart jusqu'à +40, puis 5 %.

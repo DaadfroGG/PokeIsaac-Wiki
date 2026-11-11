@@ -50,3 +50,14 @@ names:
     desc: 傷害×1.5並+0.5
 ---
 Damage ×1.5 and +0.5
+
+## Stacking
+
+- **The ×1.5 does not stack.** A second copy still gives ×1.5, not ×2.25.
+- **The +0.5 Damage stacks.** Each copy adds +0.5 to your Damage, so two copies give +1.
+- With two copies, you get ×1.5 once and +1 Damage.
+
+## How it adds up
+
+- The ×1.5 is multiplied with your other damage multipliers from items. The total then goes through [diminishing returns](../mechanics/rendimientos.html): it counts in full up to ×2.3, only a quarter of anything above that counts, and the total never goes past ×3.
+- The +0.5 is added to your other flat damage bonuses from items, which also go through [diminishing returns](../mechanics/rendimientos.html): the first +3 counts in full, then half up to +8, then a quarter up to +40, then 5 %.
