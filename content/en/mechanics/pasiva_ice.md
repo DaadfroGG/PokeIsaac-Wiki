@@ -17,6 +17,10 @@ Ice shots slow enemies. The passive slows more often and, from rank 3, freezes e
 - +3 % slow chance per rank.
 - From rank 3, hitting an enemy that is already slowed can freeze it, if that hit didn't slow it again. The chance is 6 % + 3 % per rank. A frozen enemy can't move for 1.2 s; a boss is slowed for 2 s instead.
 
+## Against bosses
+- Ice slows bosses like any other enemy (1.5 s). Bosses are never frozen: from rank 3, a freeze becomes a 2 s slow instead.
+- A slowed boss only walks at half speed between two attacks. Its attacks, dashes and the pause between attacks are not slowed at all.
+
 ## Rank by rank
 | Rank | Slow chance (single / dual type) | Freeze chance |
 |---|---|---|

@@ -17,6 +17,10 @@ Les tirs Glace ralentissent les ennemis. Le passif ralentit plus souvent et, dè
 - +3 % de chances de ralentir par rang.
 - Dès le rang 3, toucher un ennemi déjà ralenti peut le geler, si ce coup ne l'a pas ralenti de nouveau. La chance est de 6 % + 3 % par rang. Un ennemi gelé ne peut plus bouger pendant 1,2 s ; un boss est ralenti pendant 2 s à la place.
 
+## Contre les boss
+- La Glace ralentit les boss comme les autres ennemis (1,5 s). Les boss ne sont jamais gelés : dès le rang 3, un gel devient un ralentissement de 2 s.
+- Un boss ralenti marche seulement deux fois moins vite entre deux attaques. Ses attaques, ses charges et la pause entre ses attaques ne sont pas ralenties du tout.
+
 ## Rang par rang
 | Rang | Chance de ralentir (type unique / double) | Chance de geler |
 |---|---|---|

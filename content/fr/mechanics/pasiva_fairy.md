@@ -17,6 +17,11 @@ Les tirs Fée charment les ennemis. Le passif charme plus souvent et, dès le ra
 - +2,5 % de chances de charmer par rang.
 - Dès le rang 4, chaque coup peut retourner l'ennemi contre ses alliés pendant 1,5 s : 4 % au rang 4, +4 % par rang ensuite. Il attaque les autres ennemis et ne vous blesse pas au contact. Les boss ne peuvent pas être retournés.
 
+## Contre les boss
+- Un charme ne fait que ralentir un boss pendant 1 s : il n'est jamais arrêté et jamais retourné contre ses alliés.
+- Un boss ralenti marche seulement deux fois moins vite entre deux attaques. Ses attaques, ses charges et la pause entre ses attaques ne sont pas ralenties du tout.
+- Contre les boss, le rang rend seulement le ralentissement plus fréquent (+2,5 % par rang).
+
 ## Rang par rang
 | Rang | Chance de charmer (type unique / double) | Chance de retourner |
 |---|---|---|

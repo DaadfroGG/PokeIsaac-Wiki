@@ -18,6 +18,10 @@ Grass shots sometimes pierce through enemies. The passive makes them pierce more
 - From rank 3, every shot that already pierces pierces one more enemy.
 - From rank 3, each hit has a chance to root the enemy: 5 % at rank 3, +3 % per rank after that. A rooted enemy can't move for 0.5 s; a boss is slowed for 0.7 s instead.
 
+## Against bosses
+- Bosses are never rooted: from rank 3, a root becomes a 0.7 s slow instead.
+- A slowed boss only walks at half speed between two attacks. Its attacks, dashes and the pause between attacks are not slowed at all.
+
 ## Rank by rank
 | Rank | Pierce chance (single / dual type) | Extra pierce roll | Root chance |
 |---|---|---|---|

@@ -17,6 +17,11 @@ Fairy shots charm enemies. The passive charms more often and, from rank 4, the c
 - +2.5 % charm chance per rank.
 - From rank 4, each hit has a chance to turn the enemy against its allies for 1.5 s: 4 % at rank 4, +4 % per rank after that. It attacks other enemies and doesn't hurt you on contact. Bosses can't be turned.
 
+## Against bosses
+- A charm only slows a boss for 1 s: it is never stopped and never turned against its allies.
+- A slowed boss only walks at half speed between two attacks. Its attacks, dashes and the pause between attacks are not slowed at all.
+- Against bosses, the rank only makes the slow more frequent (+2.5 % per rank).
+
 ## Rank by rank
 | Rank | Charm chance (single / dual type) | Turn chance |
 |---|---|---|

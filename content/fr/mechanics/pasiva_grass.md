@@ -18,6 +18,10 @@ Les tirs Plante transpercent parfois les ennemis. Le passif les fait transpercer
 - Dès le rang 3, chaque tir qui transperce déjà transperce un ennemi de plus.
 - Dès le rang 3, chaque coup peut enraciner l'ennemi : 5 % au rang 3, +3 % par rang ensuite. Un ennemi enraciné ne peut plus bouger pendant 0,5 s ; un boss est ralenti pendant 0,7 s à la place.
 
+## Contre les boss
+- Les boss ne sont jamais enracinés : dès le rang 3, un enracinement devient un ralentissement de 0,7 s.
+- Un boss ralenti marche seulement deux fois moins vite entre deux attaques. Ses attaques, ses charges et la pause entre ses attaques ne sont pas ralenties du tout.
+
 ## Rang par rang
 | Rang | Chance de transpercer (type unique / double) | Second tirage | Chance d'enraciner |
 |---|---|---|---|
