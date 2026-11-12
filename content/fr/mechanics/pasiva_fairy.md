@@ -11,11 +11,11 @@ element: fairy
 Les tirs Fée charment les ennemis. Le passif charme plus souvent et, dès le rang 4, le charme peut retourner les ennemis contre leurs alliés.
 
 ## Au rang 0
-- Chaque coup a 18 % de chances de charmer (27 % pour un Pokémon à type unique), +2 % par point de Chance. Un ennemi charmé est arrêté pendant 0,8 s et ralenti pendant 1 s ; un boss est seulement ralenti.
+- Chaque coup a 18 % de chances de charmer (27 % pour un Pokémon à type unique), +2 % par point de Chance. Un ennemi charmé est arrêté pendant 0,8 s et ralenti pendant 1 s, les deux commençant en même temps (le ralentissement dure 0,2 s de plus que l'arrêt) ; un boss est seulement ralenti. Chaque coup refait le tirage, même sur un ennemi déjà charmé : un succès n'ajoute pas de temps, il remet seulement l'arrêt et le ralentissement au maximum.
 
 ## Avec le rang
 - +2,5 % de chances de charmer par rang.
-- Dès le rang 4, chaque coup peut retourner l'ennemi contre ses alliés pendant 1,5 s : 4 % au rang 4, +4 % par rang ensuite. Il attaque les autres ennemis et ne vous blesse pas au contact. Les boss ne peuvent pas être retournés.
+- Dès le rang 4, chaque coup peut retourner l'ennemi contre ses alliés pendant 1,5 s : 4 % au rang 4, +4 % par rang ensuite. Chaque coup refait le tirage, même si l'ennemi est déjà retourné ; un succès remet seulement les 1,5 s au maximum. Il attaque les autres ennemis et ne vous blesse pas au contact. Les boss ne peuvent pas être retournés.
 
 ## Contre les boss
 - Un charme ne fait que ralentir un boss pendant 1 s : il n'est jamais arrêté et jamais retourné contre ses alliés.

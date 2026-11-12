@@ -11,11 +11,11 @@ element: fairy
 Fairy shots charm enemies. The passive charms more often and, from rank 4, the charm can turn enemies against their allies.
 
 ## At rank 0
-- Each hit has an 18 % chance to charm (27 % for a single-type Pokémon), +2 % per point of Luck. A charmed enemy is stopped for 0.8 s and slowed for 1 s; a boss is only slowed.
+- Each hit has an 18 % chance to charm (27 % for a single-type Pokémon), +2 % per point of Luck. A charmed enemy is stopped for 0.8 s and slowed for 1 s, both starting at the same time (the slow lasts 0.2 s longer than the stop); a boss is only slowed. Every hit rolls again, even on an enemy that is already charmed: a success does not add time, it only resets the stop and the slow to full.
 
 ## With rank
 - +2.5 % charm chance per rank.
-- From rank 4, each hit has a chance to turn the enemy against its allies for 1.5 s: 4 % at rank 4, +4 % per rank after that. It attacks other enemies and doesn't hurt you on contact. Bosses can't be turned.
+- From rank 4, each hit has a chance to turn the enemy against its allies for 1.5 s: 4 % at rank 4, +4 % per rank after that. Every hit rolls again, even while the enemy is already turned; a success only resets the 1.5 s. It attacks other enemies and doesn't hurt you on contact. Bosses can't be turned.
 
 ## Against bosses
 - A charm only slows a boss for 1 s: it is never stopped and never turned against its allies.
