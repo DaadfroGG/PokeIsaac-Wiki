@@ -7,31 +7,34 @@ labels:
   color: '#ff9a3c'
 icon: icons/mechanics/criticos.png
 ---
-Your Pokémon attacks by firing projectiles. Critical hits, status effects and type passives are decided **for each projectile that hits**, not once per attack.
+Every projectile you fire gets its own chance to trigger effects (burn, charm, critical hit…). The more projectiles that hit, the more often your effects happen.
 
-<div class="mx-flow">
-<div class="mx-step"><b>Attack</b><span>at most 12 per second</span></div>
-<div class="mx-arrow">➜</div>
-<div class="mx-step"><b>Projectiles</b><span>1 to 9 per attack</span></div>
-<div class="mx-arrow">➜</div>
-<div class="mx-step"><b>Hit</b><span>once per enemy</span></div>
-<div class="mx-arrow">➜</div>
-<div class="mx-step"><b>Damage</b><span>type chart, items</span></div>
-<div class="mx-arrow">➜</div>
-<div class="mx-step"><b>Effects</b><span>rolled after the damage</span></div>
-</div>
+## In short
 
-## From attack to projectile
+1. **Each projectile rolls separately.** Three projectiles that hit = three chances to burn, charm, etc.
+2. **Each enemy hit is a new chance.** A projectile that pierces through two enemies tries on both.
+3. **Hitting an enemy that already has an effect doesn't make it last longer.** It only puts the timer back to full.
+4. **Bosses resist control.** They can't be stunned, confused, scared or turned; charm, freeze and roots only slow them a little.
 
-<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attacks at most (fire rate cap)</div></div><div class="mx-tile"><div class="v">1 – 9</div><div class="k">projectiles per attack: 1 + multishot</div></div><div class="mx-tile"><div class="v">1 roll</div><div class="k">per projectile, when fired: crit, homing, pierce</div></div><div class="mx-tile"><div class="v">1 in 2</div><div class="k">projectiles use each type of a dual-type Pokémon</div></div></div>
+<figure class="mx-fig"><svg viewBox="0 0 640 230" role="img" aria-label="One attack, 3 projectiles: each enemy hit is one chance to trigger your effects. The piercing projectile gets a chance on both enemies."><circle cx="60" cy="115" r="26" fill="rgba(255,210,60,.18)" stroke="#ffd23c" stroke-width="2"/><text x="60" y="120" fill="#e8e8f0" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">You</text><line x1="86" y1="105" x2="318" y2="52" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="79" r="5" fill="#ffd23c"/><circle cx="340" cy="47" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="302" y="2" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="340" y="16" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 chance</text><line x1="88" y1="115" x2="590" y2="115" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="115" r="5" fill="#ffd23c"/><circle cx="560" cy="115" r="5" fill="#ffd23c"/><circle cx="330" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><circle cx="470" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="292" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="330" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 chance</text><rect x="432" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="470" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 chance</text><text x="400" y="150" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">pierces →</text><line x1="86" y1="125" x2="520" y2="205" stroke="#9a9aa6" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/><circle cx="200" cy="146" r="5" fill="#ffd23c"/><text x="520" y="224" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">missed: no chance</text></svg><figcaption>One attack, 3 projectiles: each enemy hit is one chance to trigger your effects. The piercing projectile gets a chance on both enemies.</figcaption></figure>
 
-<figure class="mx-fig"><svg viewBox="0 0 640 230" role="img" aria-label="One attack with 3 projectiles: every projectile that hits rolls the effects once per enemy it touches. The piercing one rolls on both enemies it goes through."><circle cx="60" cy="115" r="26" fill="rgba(255,210,60,.18)" stroke="#ffd23c" stroke-width="2"/><text x="60" y="120" fill="#e8e8f0" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">You</text><line x1="86" y1="105" x2="318" y2="52" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="79" r="5" fill="#ffd23c"/><circle cx="340" cy="47" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="302" y="2" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="340" y="16" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><line x1="88" y1="115" x2="590" y2="115" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="115" r="5" fill="#ffd23c"/><circle cx="560" cy="115" r="5" fill="#ffd23c"/><circle cx="330" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><circle cx="470" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="292" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="330" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><rect x="432" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="470" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><text x="400" y="150" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">pierces →</text><line x1="86" y1="125" x2="520" y2="205" stroke="#9a9aa6" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/><circle cx="200" cy="146" r="5" fill="#ffd23c"/><text x="520" y="224" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">missed: no roll</text></svg><figcaption>One attack with 3 projectiles: every projectile that hits rolls the effects once per enemy it touches. The piercing one rolls on both enemies it goes through.</figcaption></figure>
+## What it means for you
 
-## What happens in a hit, in order
+- More projectiles (multishot) and piercing both mean more effects triggered.
+- Attacking faster helps too, but you can't attack more than 12 times per second.
+- Burn and poison damage comes from the hit that applied them, not from later hits.
+
+## Limits
+
+<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attacks at most</div></div><div class="mx-tile"><div class="v">9</div><div class="k">projectiles per attack at most</div></div><div class="mx-tile"><div class="v">450</div><div class="k">of your projectiles at once in a room</div></div><div class="mx-tile"><div class="v">300</div><div class="k">default range of a projectile</div></div></div>
+
+<details class="mx-more"><summary>For the curious: the full detail</summary>
+
+### What happens in a hit, in order
 
 <ol class="mx-steps"><li><b>Venom</b> — ×1.5 if the enemy is poisoned and your shot has venom</li><li><b>Type chart</b> — ×0.45 to ×2.25, your projectiles only</li><li><b>Item and weapon effects</b> — bonuses that apply on impact</li><li><b>Damage dealt</b> — the enemy is pushed back a little, except bosses</li><li><b>Status effects</b> — burn, poison, slow, stun, charm, push, chain lightning, type passive</li></ol>
 
-## The algorithm, step by step
+### The algorithm, step by step
 
 <pre class="mx-code"><span class="kw">WHEN</span> you attack                      <span class="cm">// at most 12 times per second</span>
   <span class="kw">FOR EACH</span> projectile                <span class="cm">// 1 + multishot, up to 9</span>
@@ -55,7 +58,7 @@ Your Pokémon attacks by firing projectiles. Critical hits, status effects and t
   <span class="kw">ROLL</span> <a href="pasivas_escalan.html">type passive</a> effects       <span class="cm">// spread, freeze, turn…</span>
   <span class="kw">IF</span> enemies hit <span class="op">></span> pierce <span class="op">→</span> projectile disappears</pre>
 
-## Which effects, and when
+### Which effects, and when
 
 | When | Effects |
 |---|---|
@@ -64,7 +67,7 @@ Your Pokémon attacks by firing projectiles. Critical hits, status effects and t
 | <span class="mx-tag once">Once per projectile</span> | Some item effects only trigger on the first enemy a projectile hits. |
 | <span class="mx-tag boss">Bosses</span> | Stun, confusion, fear and turning never work. Charm, freeze and root become a simple slow. |
 
-## Projectiles that do less
+### Projectiles that do less
 
 | | Damage | Item effects | Type passive | Type chart |
 |---|---|---|---|---|
@@ -75,12 +78,10 @@ Your Pokémon attacks by firing projectiles. Critical hits, status effects and t
 
 Companion and some weapon projectiles also skip most item effects.
 
-## Limits
-
-<div class="mx-tiles"><div class="mx-tile"><div class="v">450</div><div class="k">of your projectiles per room; the oldest go first</div></div><div class="mx-tile"><div class="v">300</div><div class="k">default range: the projectile disappears after it</div></div></div>
-
 - A projectile also disappears when it leaves the room, or hits a rock, an obstacle or a pit, unless it can bounce.
 - Ghost projectiles go through rocks.
 - Past 450, projectiles created by other projectiles are removed first.
+
+</details>
 
 Related pages: [Diminishing returns](rendimientos.html) · [Critical hits](criticos.html) · [Type chart](tabla_tipos.html) · [Scaling type passives](pasivas_escalan.html)

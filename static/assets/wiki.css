@@ -400,3 +400,6 @@ audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color
 .mx-code .cm { color: var(--muted); font-style: italic; }
 .mx-code .op { color: #ff9ad8; }
 .mx-code a { color: var(--link); text-decoration: underline dotted; }
+.mx-more { background: var(--bg2); border: 1.5px solid var(--line); border-radius: 10px; padding: 4px 16px; margin: 20px 0; }
+.mx-more > summary { cursor: pointer; padding: 10px 0; font-family: var(--pixel); font-size: 11px; color: var(--gold); }
+.mx-more[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 8px; }
