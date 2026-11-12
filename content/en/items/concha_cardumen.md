@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Chance
+  value: 25 % each time you clear a normal room
+- label: Reward
+  value: A chest
 icon: items-ps/valuable-item/shoal-shell.png
 sprite: true
 names:

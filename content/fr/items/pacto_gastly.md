@@ -8,6 +8,13 @@ tier: 1
 pools:
 - devil
 pool_weight: 2
+details:
+- label: Dégâts
+  value: ×1,3 par rapport aux autres compagnons
+- label: Effroi
+  value: 25 % par coup, 2 s (pas les boss)
+- label: Tirs
+  value: Traversent les rochers
 icon: items-ps/hold-item/griseous-orb.png
 sprite: true
 names:

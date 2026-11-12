@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 35 % per rock broken
+- label: Reward
+  value: 1 coin
 icon: items-ps/incense/rock.png
 sprite: true
 names:

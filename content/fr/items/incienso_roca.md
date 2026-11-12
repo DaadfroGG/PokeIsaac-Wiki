@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 35 % par rocher cassé
+- label: Récompense
+  value: 1 pièce
 icon: items-ps/incense/rock.png
 sprite: true
 names:

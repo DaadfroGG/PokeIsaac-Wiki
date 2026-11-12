@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 30 % à chaque coup reçu
+- label: Soin
+  value: ½ cœur
 icon: items-ps/berry/enigma.png
 sprite: true
 names:

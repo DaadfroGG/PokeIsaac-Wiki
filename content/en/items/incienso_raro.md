@@ -14,6 +14,8 @@ details:
   value: Burn, freeze, lightning, pierce, bounce, homing, slow, knock back, poison, splash or grow
 - label: Duration
   value: Until you clear the room
+- label: Chance
+  value: 'Each effect has the same chance: 1 in 11 (about 9 %)'
 icon: items-ps/incense/odd.png
 sprite: true
 names:

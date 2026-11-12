@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 30 % each time you are hit
+- label: Heal
+  value: ½ heart
 icon: items-ps/berry/enigma.png
 sprite: true
 names:

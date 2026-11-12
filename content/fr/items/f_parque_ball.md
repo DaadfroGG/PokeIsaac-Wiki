@@ -8,6 +8,9 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Type de chaque tir
+  value: Au hasard parmi les 18 types, chacun 1 sur 18 (environ 5,6 %)
 icon: items-ps/ball/park.png
 sprite: true
 names:

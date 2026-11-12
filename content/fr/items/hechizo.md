@@ -12,6 +12,9 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,7
   good: true
+details:
+- label: Cœur d'âme
+  value: 5 % par ennemi vaincu, +0,5 % par point de Chance
 icon: items/spell-tag.png
 sprite: true
 names:

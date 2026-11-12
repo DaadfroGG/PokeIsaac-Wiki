@@ -44,3 +44,15 @@ names:
     desc: 口袋拉霸機：支付1寶可幣，有時能得到一個可拾取物（不需充能）
 ---
 Pocket slot machine: pay 1 PokéDollar and sometimes win a pickup (no charge)
+
+## Odds
+| Result | Chance |
+|---|---|
+| Nothing | 32 % |
+| Coin | 23 % |
+| Half heart | 15 % |
+| Key | 10 % |
+| Bomb | 10 % |
+| Heart | 6 % |
+| Soul heart | 3 % |
+| Nugget | 1 % |

@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 1 sur 6 chacun (environ 17 %)
+- label: Bonus possibles
+  value: Dégâts +1,5 · Cadence ++ · Vitesse +0,7 · Portée +160 · Chance +3 · Vitesse des tirs +3
 icon: items-ps/other-item/bottle-cap.png
 sprite: true
 names:

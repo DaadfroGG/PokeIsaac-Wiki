@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Chance
+  value: 25 % à chaque salle normale nettoyée
+- label: Récompense
+  value: Un coffre
 icon: items-ps/valuable-item/shoal-shell.png
 sprite: true
 names:

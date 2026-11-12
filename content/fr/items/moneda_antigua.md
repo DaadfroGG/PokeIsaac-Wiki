@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Chance
+  value: 30 % par achat
+- label: Remboursement
+  value: Le prix entier
 icon: items-ps/valuable-item/relic-gold.png
 sprite: true
 names:

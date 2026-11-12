@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Chance
+  value: 15 % per enemy, when you enter a normal room
+- label: Reward
+  value: The enemy leaves and drops 1 coin
+- label: Never
+  value: Bosses, or the last enemy of the room
 icon: items-ps/valuable-item/relic-crown.png
 sprite: true
 names:

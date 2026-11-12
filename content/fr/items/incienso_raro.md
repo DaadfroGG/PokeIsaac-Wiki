@@ -14,6 +14,8 @@ details:
   value: Brûler, geler, éclairs, traverser, rebondir, téléguidé, ralentir, repousser, poison, éclabousser ou grandir
 - label: Durée
   value: Jusqu'à ce que la salle soit nettoyée
+- label: Chance
+  value: 'Chaque effet a la même chance : 1 sur 11 (environ 9 %)'
 icon: items-ps/incense/odd.png
 sprite: true
 names:

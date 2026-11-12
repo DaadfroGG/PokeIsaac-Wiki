@@ -12,6 +12,9 @@ pool_weight: 2
 stats:
 - text: Damage +0.7
   good: true
+details:
+- label: Soul heart
+  value: 5 % per enemy defeated, +0.5 % per point of Luck
 icon: items/spell-tag.png
 sprite: true
 names:

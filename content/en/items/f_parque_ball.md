@@ -8,6 +8,9 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Type of each shot
+  value: Random among the 18 types, each 1 in 18 (about 5.6 %)
 icon: items-ps/ball/park.png
 sprite: true
 names:

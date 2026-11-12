@@ -9,6 +9,13 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Distance
+  value: Ennemis à moins de 70 px de vous (pas les boss)
+- label: Chance
+  value: 1,2 % à chaque image, environ 50 % par seconde passée aussi près
+- label: Charme
+  value: '4 s : l''ennemi se bat de votre côté'
 icon: items-ps/other-item/pink-nectar.png
 sprite: true
 names:

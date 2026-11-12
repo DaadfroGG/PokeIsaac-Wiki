@@ -44,3 +44,15 @@ names:
     desc: 口袋拉霸機：支付1寶可幣，有時能得到一個可拾取物（不需充能）
 ---
 Machine à sous de poche : payez 1 Pokédollar et gagnez parfois un bonus (sans charge)
+
+## Chances
+| Résultat | Chance |
+|---|---|
+| Rien | 32 % |
+| Pièce | 23 % |
+| Demi-cœur | 15 % |
+| Clé | 10 % |
+| Bombe | 10 % |
+| Cœur | 6 % |
+| Cœur d'âme | 3 % |
+| Pépite | 1 % |

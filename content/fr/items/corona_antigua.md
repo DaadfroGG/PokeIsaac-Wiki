@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Chance
+  value: 15 % par ennemi, en entrant dans une salle normale
+- label: Récompense
+  value: L'ennemi s'en va et laisse 1 pièce
+- label: Jamais
+  value: Les boss, ni le dernier ennemi de la salle
 icon: items-ps/valuable-item/relic-crown.png
 sprite: true
 names:

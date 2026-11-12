@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Chance
+  value: 25 % per enemy defeated
+- label: Explosion
+  value: 80 px around the enemy
+- label: Damage
+  value: 1.5 × your Damage (at least 2), ignores the type chart
 icon: items-ps/evo-item/reaper-cloth.png
 sprite: true
 names:

@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Compagnon
+  value: '1 sur 9 chacun : Pichu, Toudoudou, Mélo, Magby, Natu, Élekid, Nosferapti, Phanpy, Togepi'
+- label: Dégâts
+  value: 2 + 0,4 par étage
+- label: Durée
+  value: Jusqu'à ce que vous quittiez la salle
 icon: items-ps/storage/pokemon-box.png
 sprite: true
 names:

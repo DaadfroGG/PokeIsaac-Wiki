@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Companion
+  value: '1 in 9 each: Pichu, Igglybuff, Cleffa, Magby, Natu, Elekid, Zubat, Phanpy, Togepi'
+- label: Damage
+  value: 2 + 0.4 per floor
+- label: Lasts
+  value: Until you leave the room
 icon: items-ps/storage/pokemon-box.png
 sprite: true
 names:

@@ -8,6 +8,13 @@ tier: 1
 pools:
 - devil
 pool_weight: 2
+details:
+- label: Damage
+  value: ×1.3 compared to other companions
+- label: Scare
+  value: 25 % per hit, 2 s (not bosses)
+- label: Shots
+  value: Go through rocks
 icon: items-ps/hold-item/griseous-orb.png
 sprite: true
 names:

@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Chance
+  value: 1 in 6 each (about 17 %)
+- label: Possible bonuses
+  value: Damage +1.5 · Fire rate ++ · Speed +0.7 · Range +160 · Luck +3 · Shot speed +3
 icon: items-ps/other-item/bottle-cap.png
 sprite: true
 names:
