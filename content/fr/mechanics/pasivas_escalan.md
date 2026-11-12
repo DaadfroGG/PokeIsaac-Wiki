@@ -87,3 +87,5 @@ Le passif de chaque type s'améliore avec le niveau de votre Pokémon : un rang
 
 ## Le passif de chaque type
 Chaque type a sa page avec les chiffres exacts, rang par rang : [Passif Feu](pasiva_fire.html), [Passif Eau](pasiva_water.html), [Passif Plante](pasiva_grass.html), [Passif Électrik](pasiva_electric.html), [Passif Psy](pasiva_psychic.html), [Passif Spectre](pasiva_ghost.html), [Passif Poison](pasiva_poison.html), [Passif Roche](pasiva_rock.html), [Passif Sol](pasiva_ground.html), [Passif Combat](pasiva_fighting.html), [Passif Vol](pasiva_flying.html), [Passif Insecte](pasiva_bug.html), [Passif Normal](pasiva_normal.html), [Passif Ténèbres](pasiva_dark.html), [Passif Dragon](pasiva_dragon.html), [Passif Glace](pasiva_ice.html), [Passif Acier](pasiva_steel.html), [Passif Fée](pasiva_fairy.html).
+
+Voir aussi : [Projectiles et dégâts](proyectiles.html).

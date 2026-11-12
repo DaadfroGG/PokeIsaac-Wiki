@@ -87,3 +87,5 @@ Each type's passive improves with your Pokémon's level: one rank every 8 levels
 
 ## Each type's passive
 Every type has its own page with the exact numbers, rank by rank: [Fire passive](pasiva_fire.html), [Water passive](pasiva_water.html), [Grass passive](pasiva_grass.html), [Electric passive](pasiva_electric.html), [Psychic passive](pasiva_psychic.html), [Ghost passive](pasiva_ghost.html), [Poison passive](pasiva_poison.html), [Rock passive](pasiva_rock.html), [Ground passive](pasiva_ground.html), [Fighting passive](pasiva_fighting.html), [Flying passive](pasiva_flying.html), [Bug passive](pasiva_bug.html), [Normal passive](pasiva_normal.html), [Dark passive](pasiva_dark.html), [Dragon passive](pasiva_dragon.html), [Ice passive](pasiva_ice.html), [Steel passive](pasiva_steel.html), [Fairy passive](pasiva_fairy.html).
+
+See also: [Projectiles and damage](proyectiles.html).
