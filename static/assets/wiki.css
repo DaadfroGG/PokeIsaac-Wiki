@@ -364,3 +364,39 @@ audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color
 .radar .r-data { fill: color-mix(in srgb, var(--c) 55%, transparent); stroke: color-mix(in srgb, var(--c), #fff 45%); stroke-width: 2; stroke-linejoin: round; }
 .radar .r-dot { fill: color-mix(in srgb, var(--c), #fff 45%); }
 .infobox i.sw { display: inline-block; width: 7px; height: 7px; border-radius: 2px; background: var(--sw); margin-right: 6px; vertical-align: 1px; }
+
+/* Explainer blocks for mechanics pages: flow, tiles, numbered steps, tags, diagrams */
+.mx-flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; margin: 16px 0 20px; }
+.mx-flow .mx-step { flex: 1 1 110px; background: var(--bg2); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px 12px; text-align: center; }
+.mx-flow .mx-step b { display: block; font-family: var(--pixel); font-size: 9.5px; color: var(--gold); margin-bottom: 6px; letter-spacing: .5px; text-transform: uppercase; }
+.mx-flow .mx-step span { font-size: 13px; color: var(--ink); line-height: 1.35; }
+.mx-flow .mx-arrow { align-self: center; color: var(--muted); font-size: 18px; }
+.mx-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin: 14px 0; }
+.mx-tile { background: var(--bg2); border: 1.5px solid var(--line); border-radius: 10px; padding: 12px; text-align: center; }
+.mx-tile .v { font-family: var(--pixel); font-size: 17px; color: var(--gold); }
+.mx-tile .k { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.35; }
+.mx-steps { list-style: none; padding: 0; margin: 14px 0; counter-reset: mx; display: grid; gap: 8px; }
+.mx-steps li { counter-increment: mx; position: relative; background: var(--bg2); border: 1.5px solid var(--line); border-left: 4px solid var(--gold); border-radius: 8px; padding: 10px 12px 10px 48px; }
+.mx-steps li::before { content: counter(mx); position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 24px; height: 24px; border-radius: 50%; background: var(--gold); color: #1b1528; font-family: var(--pixel); font-size: 10px; display: grid; place-items: center; }
+.mx-steps li b { color: var(--ink); }
+.mx-steps li em { font-style: normal; color: var(--gold); font-family: var(--pixel); font-size: 10px; margin-left: 6px; }
+.mx-tag { display: inline-block; font-family: var(--pixel); font-size: 9px; padding: 4px 7px; border-radius: 6px; white-space: nowrap; border: 1px solid; }
+.mx-tag.every { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 50%, transparent); background: color-mix(in srgb, var(--ok) 12%, transparent); }
+.mx-tag.cond { color: var(--gold); border-color: color-mix(in srgb, var(--gold) 50%, transparent); background: color-mix(in srgb, var(--gold) 12%, transparent); }
+.mx-tag.once { color: var(--link); border-color: color-mix(in srgb, var(--link) 50%, transparent); background: color-mix(in srgb, var(--link) 12%, transparent); }
+.mx-tag.boss { color: var(--err); border-color: color-mix(in srgb, var(--err) 50%, transparent); background: color-mix(in srgb, var(--err) 12%, transparent); }
+.mx-yes { color: var(--ok); font-weight: 600; }
+.mx-no { color: var(--err); font-weight: 600; }
+.mx-fig { background: var(--bg2); border: 1.5px solid var(--line); border-radius: 10px; padding: 10px; margin: 14px 0; }
+.mx-fig svg { display: block; width: 100%; height: auto; }
+.mx-fig figcaption { font-size: 12.5px; color: var(--muted); text-align: center; margin-top: 6px; }
+@media (max-width: 640px) {
+  .mx-flow { flex-direction: column; }
+  .mx-flow .mx-step { flex: 0 0 auto; }
+  .mx-flow .mx-arrow { transform: rotate(90deg); }
+}
+.mx-code { background: #0e0b16; border: 1.5px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 14px 0; font-family: ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace; font-size: 13px; line-height: 1.65; white-space: pre-wrap; overflow-x: auto; color: var(--ink); }
+.mx-code .kw { color: var(--gold); font-weight: 700; }
+.mx-code .cm { color: var(--muted); font-style: italic; }
+.mx-code .op { color: #ff9ad8; }
+.mx-code a { color: var(--link); text-decoration: underline dotted; }

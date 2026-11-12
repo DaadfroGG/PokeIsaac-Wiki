@@ -7,39 +7,80 @@ labels:
   color: '#ff9a3c'
 icon: icons/mechanics/criticos.png
 ---
-Your Pokémon attacks by firing projectiles. Most of what an attack does (critical hits, status effects, type passives) is decided for each projectile, not once per attack.
+Your Pokémon attacks by firing projectiles. Critical hits, status effects and type passives are decided **for each projectile that hits**, not once per attack.
+
+<div class="mx-flow">
+<div class="mx-step"><b>Attack</b><span>at most 12 per second</span></div>
+<div class="mx-arrow">➜</div>
+<div class="mx-step"><b>Projectiles</b><span>1 to 9 per attack</span></div>
+<div class="mx-arrow">➜</div>
+<div class="mx-step"><b>Hit</b><span>once per enemy</span></div>
+<div class="mx-arrow">➜</div>
+<div class="mx-step"><b>Damage</b><span>type chart, items</span></div>
+<div class="mx-arrow">➜</div>
+<div class="mx-step"><b>Effects</b><span>rolled after the damage</span></div>
+</div>
 
 ## From attack to projectile
-- Your fire rate sets how often you attack, at most 12 times per second.
-- Each attack fires 1 projectile, plus 1 for each point of multishot, up to 9.
-- Each projectile rolls on its own, when it is fired: critical hit, homing, pierce, and the bonuses of its type passive.
-- A dual-type Pokémon alternates its two types: one projectile in two uses each type.
 
-## When a projectile hits
-- A projectile hits each enemy only once. It disappears after its first hit, unless it can pierce: it then goes through as many enemies as it can pierce.
-- The effects below are rolled again for each enemy it hits, so a piercing projectile rolls on each enemy it goes through.
-- With several projectiles per attack, a target gets one roll per projectile that hits it. Three projectiles that all hit mean three rolls.
+<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attacks at most (fire rate cap)</div></div><div class="mx-tile"><div class="v">1 – 9</div><div class="k">projectiles per attack: 1 + multishot</div></div><div class="mx-tile"><div class="v">1 roll</div><div class="k">per projectile, when fired: crit, homing, pierce</div></div><div class="mx-tile"><div class="v">1 in 2</div><div class="k">projectiles use each type of a dual-type Pokémon</div></div></div>
+
+<figure class="mx-fig"><svg viewBox="0 0 640 230" role="img" aria-label="One attack with 3 projectiles: every projectile that hits rolls the effects once per enemy it touches. The piercing one rolls on both enemies it goes through."><circle cx="60" cy="115" r="26" fill="rgba(255,210,60,.18)" stroke="#ffd23c" stroke-width="2"/><text x="60" y="120" fill="#e8e8f0" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">You</text><line x1="86" y1="105" x2="318" y2="52" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="79" r="5" fill="#ffd23c"/><circle cx="340" cy="47" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="302" y="2" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="340" y="16" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><line x1="88" y1="115" x2="590" y2="115" stroke="#ffd23c" stroke-width="2" stroke-dasharray="6 5"/><circle cx="200" cy="115" r="5" fill="#ffd23c"/><circle cx="560" cy="115" r="5" fill="#ffd23c"/><circle cx="330" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><circle cx="470" cy="115" r="22" fill="rgba(255,107,107,.18)" stroke="#ff6b6b" stroke-width="2"/><rect x="292" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="330" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><rect x="432" y="70" width="76" height="20" rx="6" fill="rgba(111,220,90,.15)" stroke="#6fdc5a"/><text x="470" y="84" fill="#6fdc5a" font-size="12" text-anchor="middle" font-family="system-ui,sans-serif">1 roll</text><text x="400" y="150" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">pierces →</text><line x1="86" y1="125" x2="520" y2="205" stroke="#9a9aa6" stroke-width="2" stroke-dasharray="3 6" opacity=".7"/><circle cx="200" cy="146" r="5" fill="#ffd23c"/><text x="520" y="224" fill="#9a9aa6" font-size="13" text-anchor="middle" font-family="system-ui,sans-serif">missed: no roll</text></svg><figcaption>One attack with 3 projectiles: every projectile that hits rolls the effects once per enemy it touches. The piercing one rolls on both enemies it goes through.</figcaption></figure>
 
 ## What happens in a hit, in order
-1. If the enemy is poisoned and your shot has the venom modifier, the damage is ×1.5.
-2. The [type chart](tabla_tipos.html) multiplies the damage (between ×0.45 and ×2.25). Only your own projectiles use it.
-3. Item and weapon effects that change the damage on hit.
-4. The damage is dealt, and the enemy is pushed back a little (not bosses).
-5. Status effects are rolled after the damage: burn, poison, slow, stun, charm, push, chain lightning, and the [type passive](pasivas_escalan.html) effects.
 
-## Which effects are rolled where
-- **Every hit, no condition:** burn, poison, slow, stun, charm, knockback and chain lightning from your type and your items. A success never adds time to an effect that is already running, it only resets it to its full length.
-- **Every hit, with a condition:** freezing needs an enemy that is already slowed. Passive effects that start at a rank (spread, splash, turning an enemy) only work from that rank.
-- **Once per projectile:** some item effects only trigger on the first enemy a projectile hits.
-- **Bosses:** stun, confusion, fear and turning don't work on bosses. Charm, freeze and root become a simple slow.
+<ol class="mx-steps"><li><b>Venom</b> — ×1.5 if the enemy is poisoned and your shot has venom</li><li><b>Type chart</b> — ×0.45 to ×2.25, your projectiles only</li><li><b>Item and weapon effects</b> — bonuses that apply on impact</li><li><b>Damage dealt</b> — the enemy is pushed back a little, except bosses</li><li><b>Status effects</b> — burn, poison, slow, stun, charm, push, chain lightning, type passive</li></ol>
+
+## The algorithm, step by step
+
+<pre class="mx-code"><span class="kw">WHEN</span> you attack                      <span class="cm">// at most 12 times per second</span>
+  <span class="kw">FOR EACH</span> projectile                <span class="cm">// 1 + multishot, up to 9</span>
+    type <span class="op">←</span> your type                   <span class="cm">// a dual type alternates, 1 in 2</span>
+    damage <span class="op">←</span> your Damage stat          <span class="cm">// <a href="rendimientos.html">diminishing returns</a> already applied</span>
+    <span class="kw">ROLL</span> <a href="criticos.html">critical hit</a>                <span class="cm">// damage ×2 or more</span>
+    <span class="kw">ROLL</span> homing, pierce             <span class="cm">// <a href="pasiva_psychic.html">Psychic</a>, <a href="pasiva_grass.html">Grass</a>, items</span>
+    <span class="kw">APPLY</span> <a href="pasivas_escalan.html">type passive</a> bonuses     <span class="cm">// damage, size, crit…</span>
+
+<span class="kw">WHEN</span> a projectile touches an enemy
+  <span class="kw">IF</span> it already hit this enemy <span class="op">→</span> <span class="kw">SKIP</span>
+  <span class="kw">IF</span> boss: barrier, <a href="afijo_espejo.html">mirror</a>, <a href="afijo_blindado.html">shield</a>, <a href="armadura_acorazado.html">armor</a> <span class="op">→</span> absorb first
+     <span class="cm">// fully absorbed: nothing below happens</span>
+  <span class="kw">IF</span> enemy poisoned <span class="kw">AND</span> venom <span class="op">→</span> damage ×1.5
+  damage <span class="op">×</span> <a href="tabla_tipos.html">type chart</a>                <span class="cm">// 0.45 to 2.25</span>
+  damage <span class="op">×</span> item effects on impact    <span class="cm">// e.g. Plate +15 %</span>
+  enemy loses damage; pushed back      <span class="cm">// not bosses</span>
+  <span class="kw">FOR EACH</span> status effect             <span class="cm">// rolled on every hit</span>
+    <a href="pasiva_fire.html">burn</a> · <a href="pasiva_poison.html">poison</a> · <a href="pasiva_ice.html">slow</a> · <a href="pasiva_steel.html">stun</a> · <a href="pasiva_fairy.html">charm</a> · <a href="pasiva_water.html">push</a> · <a href="pasiva_electric.html">chain lightning</a>
+    <span class="kw">IF</span> success <span class="op">→</span> reset to full length    <span class="cm">// never longer</span>
+  <span class="kw">ROLL</span> <a href="pasivas_escalan.html">type passive</a> effects       <span class="cm">// spread, freeze, turn…</span>
+  <span class="kw">IF</span> enemies hit <span class="op">></span> pierce <span class="op">→</span> projectile disappears</pre>
+
+## Which effects, and when
+
+| When | Effects |
+|---|---|
+| <span class="mx-tag every">Every hit</span> | Burn, poison, slow, stun, charm, push, chain lightning, from your type or your items. A success resets the effect to its full length; it never adds time. |
+| <span class="mx-tag cond">Every hit, with a condition</span> | Freeze needs an enemy that is already slowed. Passive effects that start at a rank (spread, splash, turning) only work from that rank. |
+| <span class="mx-tag once">Once per projectile</span> | Some item effects only trigger on the first enemy a projectile hits. |
+| <span class="mx-tag boss">Bosses</span> | Stun, confusion, fear and turning never work. Charm, freeze and root become a simple slow. |
 
 ## Projectiles that do less
-- Projectiles created by an effect (the small ones from split shots, chain lightning, companions, some weapons) don't use most of your item effects.
-- Split shots deal half damage and don't carry your item modifiers or your type passive.
-- Burn and poison ticks are not projectiles: they ignore the type chart and don't trigger on-hit effects.
+
+| | Damage | Item effects | Type passive | Type chart |
+|---|---|---|---|---|
+| **Normal projectile** | 100 % | <span class="mx-yes">Yes</span> | <span class="mx-yes">Yes</span> | <span class="mx-yes">Yes</span> |
+| **Split shot** | 50 % | <span class="mx-no">No</span> | <span class="mx-no">No</span> | <span class="mx-yes">Yes</span> |
+| **Chain lightning** | 60 % and more | <span class="mx-no">No</span> | <span class="mx-no">No</span> | <span class="mx-yes">Yes</span> (Electric) |
+| **Burn / poison tick** | a % of the shot | <span class="mx-no">No</span> | — | <span class="mx-no">No</span> |
+
+Companion and some weapon projectiles also skip most item effects.
 
 ## Limits
-- At most 450 of your projectiles can exist in a room. Beyond that, the oldest are removed first, starting with the ones created by other projectiles.
-- A projectile disappears when it has travelled its range (300 by default), when it leaves the room, or when it hits a rock, an obstacle or a pit, unless it can bounce. Ghost projectiles go through rocks.
 
-Related pages: [Diminishing returns](rendimientos.html), [Critical hits](criticos.html), [Type chart](tabla_tipos.html), [Scaling type passives](pasivas_escalan.html).
+<div class="mx-tiles"><div class="mx-tile"><div class="v">450</div><div class="k">of your projectiles per room; the oldest go first</div></div><div class="mx-tile"><div class="v">300</div><div class="k">default range: the projectile disappears after it</div></div></div>
+
+- A projectile also disappears when it leaves the room, or hits a rock, an obstacle or a pit, unless it can bounce.
+- Ghost projectiles go through rocks.
+- Past 450, projectiles created by other projectiles are removed first.
+
+Related pages: [Diminishing returns](rendimientos.html) · [Critical hits](criticos.html) · [Type chart](tabla_tipos.html) · [Scaling type passives](pasivas_escalan.html)
