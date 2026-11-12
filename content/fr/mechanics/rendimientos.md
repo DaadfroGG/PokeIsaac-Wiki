@@ -20,7 +20,7 @@ details:
 - label: Soins
   value: Au plus 30 % de votre vie max (2 cœurs minimum) toutes les 10 secondes
 - label: Minimums
-  value: Dégâts 0,5, vitesse 1,6, portée 120, vitesse des tirs 4
+  value: Dégâts 0,5, vitesse 1,6, portée 120, vitesse des tirs 4, au plus 12 tirs par seconde
 names:
   en:
     name: Diminishing returns
@@ -55,4 +55,74 @@ names:
 ---
 Les objets s'additionnent toujours, mais plus vous en cumulez, moins chacun compte : ainsi la partie ne se déséquilibre pas en fin de course.
 
-Exemple : Pikachu a 3,5 de dégâts de base. Avec +10 de dégâts venant d'objets, seuls 3 + 2,5 + 0,5 = 6 comptent, donc il fait 9,5 au lieu de 13,5. Deux multiplicateurs ×2 donnent ×4 sur le papier, mais ×2,725 en pratique (2,3, plus un quart des 1,7 qui dépassent).
+## Comment vos Dégâts sont calculés
+1. On additionne les bonus de dégâts fixes de vos objets (par exemple +0,5, +1…).
+2. On applique à ce total les rendements décroissants ci-dessous. Les malus de dégâts sautent cette étape et comptent en entier.
+3. On ajoute le résultat aux dégâts de base de votre Pokémon.
+4. On multiplie entre eux tous les multiplicateurs de dégâts des objets (×1,5, ×2…), puis on applique le plafond des multiplicateurs ci-dessous.
+5. On multiplie l'étape 3 par l'étape 4, puis par le niveau, le shiny et les autres bonus. Les dégâts ne descendent jamais sous 0,5.
+
+## Bonus de dégâts fixes
+| Partie du bonus | Compte |
+|---|---|
+| 0 à +3 | 100 % |
+| +3 à +8 | 50 % |
+| +8 à +40 | 25 % |
+| au-delà de +40 | 5 % |
+
+| Bonus des objets | Ce qui compte | Part qui compte |
+|---|---|---|
+| +1 | +1 | `████████████████████` 100 % |
+| +3 | +3 | `████████████████████` 100 % |
+| +5 | +4 | `████████████████░░░░` 80 % |
+| +8 | +5,5 | `██████████████░░░░░░` 69 % |
+| +10 | +6 | `████████████░░░░░░░░` 60 % |
+| +15 | +7,25 | `██████████░░░░░░░░░░` 48 % |
+| +20 | +8,5 | `████████░░░░░░░░░░░░` 42 % |
+| +30 | +11 | `███████░░░░░░░░░░░░░` 37 % |
+| +40 | +13,5 | `███████░░░░░░░░░░░░░` 34 % |
+| +50 | +14 | `██████░░░░░░░░░░░░░░` 28 % |
+
+## Multiplicateurs de dégâts
+Jusqu'à ×2,3, tout compte ; au-delà, seulement un quart de ce qui dépasse ; le total ne dépasse jamais ×3 (atteint à ×5,1 sur le papier).
+
+| Multiplicateurs × entre eux | Ce qui compte |
+|---|---|
+| ×1,5 | ×1,5 `████░░░░░░░░░░░░░░░░` |
+| ×2 | ×2 `█████░░░░░░░░░░░░░░░` |
+| ×2,3 | ×2,3 `██████░░░░░░░░░░░░░░` |
+| ×3 | ×2,47 `██████░░░░░░░░░░░░░░` |
+| ×4 | ×2,72 `███████░░░░░░░░░░░░░` |
+| ×5,1 | ×3 `████████░░░░░░░░░░░░` |
+| ×8 | ×3 `████████░░░░░░░░░░░░` |
+
+## Cadence
+Les bonus de cadence des objets réduisent le temps entre vos tirs. Les 3 premiers points comptent en entier, les 4 suivants à moitié, le reste au quart. Les ralentissements comptent toujours en entier. Vous ne pouvez jamais tirer plus de 12 fois par seconde.
+
+| Bonus de cadence | Ce qui compte |
+|---|---|
+| 1 | 1 |
+| 3 | 3 |
+| 5 | 4 |
+| 7 | 5 |
+| 10 | 5,75 |
+| 15 | 7 |
+
+## Chance
+Votre Chance totale (objets, passif de type, shiny…) compte en entier jusqu'à 10 ; au-delà, seulement un quart compte.
+
+| Chance totale | Ce qui compte |
+|---|---|
+| 5 | 5 |
+| 10 | 10 |
+| 14 | 11 |
+| 20 | 12,5 |
+| 30 | 15 |
+
+## Exemple complet
+Pikachu, 3,5 de dégâts de base, avec +10 de dégâts d'objets et deux objets ×2 :
+
+1. +10 devient 3 + 2,5 + 0,5 = **6**.
+2. 3,5 + 6 = **9,5** (au lieu de 13,5).
+3. ×2 × ×2 = ×4 sur le papier, qui devient 2,3 + 0,25 × 1,7 = **×2,725**.
+4. 9,5 × 2,725 ≈ **25,9** dégâts, au lieu de 54 sans rendements décroissants.

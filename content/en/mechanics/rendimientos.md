@@ -20,7 +20,7 @@ details:
 - label: Healing
   value: At most 30 % of your max health (2 hearts minimum) every 10 seconds
 - label: Minimums
-  value: Damage 0.5, speed 1.6, range 120, shot speed 4
+  value: Damage 0.5, speed 1.6, range 120, shot speed 4, at most 12 shots per second
 names:
   es:
     name: Rendimientos decrecientes
@@ -55,4 +55,74 @@ names:
 ---
 Items always add up, but the more you stack, the less each one counts: that way the run doesn't break late on.
 
-Example: Pikachu has 3.5 base damage. With +10 damage from items, only 3 + 2.5 + 0.5 = 6 of it counts, so it deals 9.5 instead of 13.5. Two ×2 multipliers make ×4 on paper but ×2.725 in practice (2.3, plus a quarter of the 1.7 above it).
+## How your Damage is calculated
+1. Add up the flat damage bonuses from your items (for example +0.5, +1…).
+2. Apply the diminishing returns below to that total. Damage penalties skip this step and count in full.
+3. Add the result to your Pokémon's base damage.
+4. Multiply all the damage multipliers from items together (×1.5, ×2…), then apply the multiplier cap below.
+5. Multiply step 3 by step 4, then by your level, shiny and other bonuses. Damage never goes below 0.5.
+
+## Flat damage bonuses
+| Part of the bonus | Counts |
+|---|---|
+| 0 to +3 | 100 % |
+| +3 to +8 | 50 % |
+| +8 to +40 | 25 % |
+| above +40 | 5 % |
+
+| Bonus from items | What counts | Share that counts |
+|---|---|---|
+| +1 | +1 | `████████████████████` 100 % |
+| +3 | +3 | `████████████████████` 100 % |
+| +5 | +4 | `████████████████░░░░` 80 % |
+| +8 | +5.5 | `██████████████░░░░░░` 69 % |
+| +10 | +6 | `████████████░░░░░░░░` 60 % |
+| +15 | +7.25 | `██████████░░░░░░░░░░` 48 % |
+| +20 | +8.5 | `████████░░░░░░░░░░░░` 42 % |
+| +30 | +11 | `███████░░░░░░░░░░░░░` 37 % |
+| +40 | +13.5 | `███████░░░░░░░░░░░░░` 34 % |
+| +50 | +14 | `██████░░░░░░░░░░░░░░` 28 % |
+
+## Damage multipliers
+Up to ×2.3 counts in full; above that, only a quarter of the extra counts; the total never goes past ×3 (reached at ×5.1 on paper).
+
+| Multipliers × together | What counts |
+|---|---|
+| ×1.5 | ×1.5 `████░░░░░░░░░░░░░░░░` |
+| ×2 | ×2 `█████░░░░░░░░░░░░░░░` |
+| ×2.3 | ×2.3 `██████░░░░░░░░░░░░░░` |
+| ×3 | ×2.47 `██████░░░░░░░░░░░░░░` |
+| ×4 | ×2.72 `███████░░░░░░░░░░░░░` |
+| ×5.1 | ×3 `████████░░░░░░░░░░░░` |
+| ×8 | ×3 `████████░░░░░░░░░░░░` |
+
+## Fire rate
+Fire-rate bonuses from items lower the time between your shots. The first 3 points count in full, the next 4 at half, the rest at a quarter. Slowdowns always count in full. You can never shoot more than 12 times per second.
+
+| Fire-rate bonus | What counts |
+|---|---|
+| 1 | 1 |
+| 3 | 3 |
+| 5 | 4 |
+| 7 | 5 |
+| 10 | 5.75 |
+| 15 | 7 |
+
+## Luck
+Your total Luck (items, type passive, shiny…) counts in full up to 10; above 10, only a quarter counts.
+
+| Total Luck | What counts |
+|---|---|
+| 5 | 5 |
+| 10 | 10 |
+| 14 | 11 |
+| 20 | 12.5 |
+| 30 | 15 |
+
+## Full example
+Pikachu, 3.5 base damage, with +10 damage from items and two ×2 items:
+
+1. +10 becomes 3 + 2.5 + 0.5 = **6**.
+2. 3.5 + 6 = **9.5** (instead of 13.5).
+3. ×2 × ×2 = ×4 on paper, which becomes 2.3 + 0.25 × 1.7 = **×2.725**.
+4. 9.5 × 2.725 ≈ **25.9** damage, instead of 54 without diminishing returns.
