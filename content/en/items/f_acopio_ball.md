@@ -61,6 +61,9 @@ A Ditto copies all your shots, with their effects, at 75 % damage
 - Each copy deals **75 %** of the damage (it rolls its own critical hit first) and gets your item effects when fired, like your own shots.
 - It doesn't copy the extra shots of other items ([Go-Goggles](m_gafas_aislantes.html), [Dragon Skull](m_craneo_dragon.html), [Marble](m_canica.html), [Red Nectar](m_nectar_rojo.html)…), and Go-Goggles don't split its copies.
 - If you use a weapon instead of normal shots, Ditto fires 1 + multishot shots (5 at most) in a narrow fan, 8° apart, at 75 %.
+- Ditto floats about 34 px **in front of you**, toward where you last shot, so its copies start a little closer to the enemies. It never shoots on its own: no attack from you, no copy.
+- The copies are your own shots, not companion shots: they use your Damage, Range, Shot speed, Luck, crit chance, type passive and shot effects. [Silver Powder](polvo_plata.html) splits them and [Vs. Recorder](camara_lucha.html) repeats them. [Exp. Share](repartir_exp.html) does nothing for them.
+- They don't trigger [Marble](m_canica.html), and a copy that misses doesn't reset [Ring Target](m_blanco.html).
 - How all the extra shots add up: [Extra shots](../mechanics/disparos_extra.html).
 
 ## Stacking

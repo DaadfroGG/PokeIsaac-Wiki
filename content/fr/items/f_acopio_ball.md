@@ -61,6 +61,9 @@ Un Métamorph copie tous vos tirs, avec leurs effets, à 75 % des dégâts
 - Chaque copie inflige **75 %** des dégâts (elle tire d'abord au sort son propre coup critique) et reçoit les effets de vos objets au moment du tir, comme vos propres tirs.
 - Il ne copie pas les tirs en plus des autres objets ([Lunettes Sable](m_gafas_aislantes.html), [Crâne Dragon](m_craneo_dragon.html), [Bille](m_canica.html), [Nectar Rouge](m_nectar_rojo.html)…), et les Lunettes Sable ne divisent pas ses copies.
 - Si vous utilisez une arme au lieu des tirs normaux, Métamorph tire 1 + tir multiple tirs (5 au maximum) en éventail serré, à 8° d'écart, à 75 %.
+- Métamorph flotte à environ 34 px **devant vous**, vers votre dernier tir : ses copies partent donc un peu plus près des ennemis. Il ne tire jamais tout seul : pas d'attaque de votre part, pas de copie.
+- Les copies sont vos propres tirs, pas des tirs de compagnon : elles utilisent vos Dégâts, votre Portée, la Vitesse des tirs, la Chance, le coup critique, votre passif de type et vos effets de tir. La [Poudre Argentée](polvo_plata.html) les divise et le [Magnéto VS](camara_lucha.html) les répète. Le [Multi Exp](repartir_exp.html) ne leur fait rien.
+- Elles ne déclenchent pas la [Bille](m_canica.html), et une copie qui rate ne remet pas à zéro le [Point de Mire](m_blanco.html).
 - Comment tous les tirs en plus s'additionnent : [Tirs supplémentaires](../mechanics/disparos_extra.html).
 
 ## Cumul
