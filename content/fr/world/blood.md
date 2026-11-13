@@ -8,7 +8,17 @@ labels:
 icon: icons/world/blood.png
 details:
 - label: Où
-  value: Parfois dans les salles de combat.
+  value: Salles de combat (2,5 % de chance, dès l'étage 2, une par étage au plus) ; rarement dans les salles secrètes, à côté d'une machine à sous
+- label: Coût
+  value: ½ cœur par don (1 cœur dès l'étage 7)
+- label: Donne
+  value: 1 à 3 pièces par don (chacune a 15 % de chance d'être une pépite)
+- label: Il faut
+  value: Plus de vie que le coût ; pas de bouclier actif
+- label: S'use
+  value: Après 3 à 9 dons, puis 50 % de chance à chaque don
+- label: Laisse
+  value: Jus de Baie 30 %, Eau Fraîche 15 %, rien 55 %
 names:
   en:
     name: Donation machine
@@ -42,3 +52,15 @@ names:
     desc: 碰觸它可捐出半顆愛心（第7層起為一整顆），並掉出金幣。捐了幾次後可能會爆開並留下一個錢袋。它絕不會讓你失去所有生命。
 ---
 Touchez-la pour donner un demi-cœur (un entier dès l'étage 7) et elle lâche des pièces. Après plusieurs dons, elle peut exploser et laisser une bourse. Elle ne vous laisse jamais sans vie.
+
+## Fonctionnement
+- Marchez dessus pour donner : vous perdez ½ cœur (1 cœur à partir de l'étage 7) et elle lâche 1 à 3 pièces. Chaque pièce a 15 % de chance d'être une pépite.
+- Vous pouvez redonner environ toutes les 0,6 s tant que vous restez au contact.
+- Elle refuse si votre vie n'est pas supérieure au coût : elle ne peut donc jamais vous tuer. Elle refuse aussi tant qu'un bouclier vous protège.
+- Un don compte comme une blessure : les objets qui réagissent quand vous êtes touché réagissent aussi.
+- Chaque machine accepte 3 à 9 dons (au hasard). Ensuite, chaque don a 50 % de chance de la casser. Quand elle casse ainsi, elle laisse du [Jus de Baie](../items/bolsa_sangre.html) (30 %), de l'[Eau Fraîche](../items/bolsa_suero.html) (15 %) ou rien (55 %).
+- La faire exploser avec une bombe la casse tout de suite : elle lâche 2 à 4 pièces, et seulement 30 % du temps elle tente aussi de laisser du Jus de Baie ou de l'Eau Fraîche (soit 9 % de Jus de Baie, 4,5 % d'Eau Fraîche).
+
+## Où la trouver
+- Dans une salle de combat, avec 2,5 % de chance, jamais au premier étage et au plus une fois par étage.
+- Dans certaines salles secrètes, comme deuxième machine à côté d'une machine à sous.

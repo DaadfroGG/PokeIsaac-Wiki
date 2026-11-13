@@ -55,7 +55,7 @@ Utilisez-la : payez 3 Pokédollars pour soigner un demi-cœur
 - Chaque utilisation coûte 3 Pokédollars et rend un demi-cœur. Il n'a jamais besoin de charge, vous pouvez donc l'utiliser autant que vous pouvez payer.
 - Il est inutilisable à PV pleins ou avec moins de 3 Pokédollars, et rien n'est alors dépensé.
 - La limite de soin des objets ne s'y applique pas.
-- Il n'est ni vendu ni trouvé dans les salles d'objets habituelles.
+- Il n'est ni vendu ni trouvé dans les salles d'objets habituelles. Il ne vient que d'une [machine à dons](../world/blood.html) : 15 % quand elle s'use à force de dons, 4,5 % quand vous la faites exploser.
 
 ## Cumul
 - Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal.

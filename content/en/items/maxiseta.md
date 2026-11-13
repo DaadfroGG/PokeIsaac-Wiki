@@ -54,6 +54,7 @@ Dynamax! You grow and deal ×2 damage for 8 seconds
 
 ## How it works
 - For 8 seconds your Damage is doubled and your Pokémon grows to 1.5 times its size.
+- Your hitbox grows with you (about ×1.5, up to a 26 px radius), so you are easier to hit while it lasts.
 - The ×2 is a multiplier on your Damage stat (shown on the HUD), so it follows the [diminishing returns](../mechanics/rendimientos.html) on multipliers: on its own it counts in full, but together with other multipliers the total is still capped at ×3.
 - It always goes off when you press it, even in an empty room, and uses the charge.
 

@@ -62,7 +62,7 @@ Heart +1, heals you and raises damage a little
 - It heals 3 hearts when you pick it up; this heal ignores the healing limit.
 
 ## How to get it
-- It is not in any item pool. It can be left by a [donation machine](../world/blood.html) that wears out after several donations: 30 % chance of Berry Juice (15 % of [Fresh Water](bolsa_suero.html) instead).
+- It is not in any item pool. It can be left by a [donation machine](../world/blood.html) that wears out after several donations: 30 % chance of Berry Juice (15 % of [Fresh Water](bolsa_suero.html) instead). Blowing the machine up with a bomb gives Berry Juice only 9 % of the time.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage) and its heal.

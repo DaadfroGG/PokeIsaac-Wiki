@@ -58,7 +58,7 @@ One Pokémon on your team holds it, and it only works while that Pokémon is on 
 ## How it works
 - When only one enemy is left alive in the room, it takes double damage from your hits.
 - It never applies to bosses, even when the boss is alone.
-- It works on every hit of your shots, including split shots, [Icy Rock](icy_rock.html) shards and your [companions](../mechanics/companeros.html)' shots. Burn and poison ticks, chain lightning, explosions and contact damage don't get it.
+- It works on every hit of your shots, including split shots, [Icy Rock](icy_rock.html) shards and your [companions](../mechanics/companeros.html)' shots. It also works on your weapon hits and on your companions' touch, laser and bite hits. Burn and poison ticks, chain lightning and Voltorb explosions don't get it.
 - It is applied when the shot hits, so it does not show in your Damage stat on the HUD and is not limited by the ×3 cap on damage multipliers.
 
 ## Stacking

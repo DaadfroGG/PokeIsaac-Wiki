@@ -62,7 +62,7 @@ Cœur +1, vous soigne et augmente un peu les dégâts
 - Il vous soigne de 3 cœurs en le ramassant ; ce soin ignore la limite de soins.
 
 ## Obtention
-- Il n'est dans aucune réserve d'objets. Une [machine à dons](../world/blood.html) qui s'use après plusieurs dons peut le laisser : 30 % de chances d'avoir le Jus de Baie (15 % d'[Eau Fraîche](bolsa_suero.html) à la place).
+- Il n'est dans aucune réserve d'objets. Une [machine à dons](../world/blood.html) qui s'use après plusieurs dons peut le laisser : 30 % de chances d'avoir le Jus de Baie (15 % d'[Eau Fraîche](bolsa_suero.html) à la place). Faire exploser la machine avec une bombe ne donne du Jus de Baie que 9 % du temps.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts) et son soin.

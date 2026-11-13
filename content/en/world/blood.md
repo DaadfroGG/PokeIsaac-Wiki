@@ -8,7 +8,17 @@ labels:
 icon: icons/world/blood.png
 details:
 - label: Where
-  value: Sometimes in combat rooms.
+  value: Combat rooms (2.5 % chance, from floor 2, at most one per floor); rarely in secret rooms, next to a slot machine
+- label: Cost
+  value: ½ heart per donation (1 heart from floor 7)
+- label: Gives
+  value: 1 to 3 coins per donation (each 15 % chance to be a nugget)
+- label: Needs
+  value: More health than the cost; no active shield
+- label: Wears out
+  value: After 3 to 9 donations, then 50 % chance per donation
+- label: Leaves
+  value: Berry Juice 30 %, Fresh Water 15 %, nothing 55 %
 names:
   es:
     name: Máquina de donación
@@ -42,3 +52,15 @@ names:
     desc: 碰觸它可捐出半顆愛心（第7層起為一整顆），並掉出金幣。捐了幾次後可能會爆開並留下一個錢袋。它絕不會讓你失去所有生命。
 ---
 Touch it to donate half a heart (a full one from floor 7) and it drops coins. After several donations it may burst and leave a bag. It never leaves you without health.
+
+## How it works
+- Walk into it to donate: you lose ½ heart (1 heart from floor 7 on) and it drops 1 to 3 coins. Each coin has a 15 % chance to be a nugget instead.
+- You can donate again about every 0.6 s while you stay in contact.
+- It refuses if your health is not higher than the cost, so it can never kill you. It also refuses while a shield protects you.
+- A donation counts as getting hurt: items that react when you take a hit react to it too.
+- Each machine can take 3 to 9 donations (random). After that, every donation has a 50 % chance to break it. When it breaks this way it leaves [Berry Juice](../items/bolsa_sangre.html) (30 %), [Fresh Water](../items/bolsa_suero.html) (15 %) or nothing (55 %).
+- Blowing it up with a bomb breaks it at once: it drops 2 to 4 coins, and only 30 % of the time it also rolls for Berry Juice or Fresh Water (so 9 % Berry Juice, 4.5 % Fresh Water).
+
+## Where it appears
+- In a combat room, with a 2.5 % chance, never on the first floor and at most once per floor.
+- In some secret rooms, as the second machine next to a slot machine.

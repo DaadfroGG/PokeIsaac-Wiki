@@ -55,7 +55,7 @@ Un Pokémon de votre équipe le tient, et il ne fonctionne que lorsque ce Pokém
 
 ## Fonctionnement
 - Chaque touche sur un ennemi qui vole inflige 20 % de plus, boss compris.
-- Il fonctionne sur chaque touche de vos tirs, y compris les tirs divisés, les éclats du [Roche Glace](icy_rock.html) et les tirs de vos [compagnons](../mechanics/companeros.html). Les dégâts de brûlure et de poison, les éclairs en chaîne, les explosions et les dégâts de contact n'en profitent pas.
+- Il fonctionne sur chaque touche de vos tirs, y compris les tirs divisés, les éclats du [Roche Glace](icy_rock.html) et les tirs de vos [compagnons](../mechanics/companeros.html). Il marche aussi sur les coups de vos armes et sur les coups au contact, laser et morsure de vos compagnons. Les dégâts de brûlure et de poison, les éclairs en chaîne et les explosions des Voltorbe n'en profitent pas.
 - Il s'applique quand le tir touche : il n'apparaît donc pas dans votre stat Dégâts du HUD et n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
 
 ## Cumul

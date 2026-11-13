@@ -55,7 +55,7 @@ Use it: pay 3 Pokédollars to heal half a heart
 - Each use costs 3 PokéDollars and heals half a heart. It never needs charge, so you can use it as often as you can pay.
 - It can't be used at full health or with fewer than 3 PokéDollars, and then nothing is spent.
 - The healing limit on items does not apply to it.
-- It is not sold or found in the usual item rooms.
+- It is not sold or found in the usual item rooms. It only comes from a [donation machine](../world/blood.html): 15 % when it wears out from donations, 4.5 % when you blow it up.
 
 ## Stacking
 - Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal.

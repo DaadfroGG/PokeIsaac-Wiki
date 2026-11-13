@@ -54,6 +54,7 @@ Dynamax ! Vous grandissez et infligez ×2 dégâts pendant 8 secondes
 
 ## Fonctionnement
 - Pendant 8 secondes vos Dégâts sont doublés et votre Pokémon grandit à 1,5 fois sa taille.
+- Votre zone d'impact grandit avec vous (environ ×1,5, jusqu'à 26 px de rayon) : vous êtes plus facile à toucher pendant l'effet.
 - Le ×2 est un multiplicateur de votre stat de Dégâts (affiché sur le HUD), donc il suit les [rendements décroissants](../mechanics/rendimientos.html) des multiplicateurs : seul il compte en entier, mais avec d'autres multiplicateurs le total reste plafonné à ×3.
 - Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
 
