@@ -13,7 +13,7 @@ details:
 - label: Guardian arena
   value: 'Each guardian brings its own arena attack: stomps, lightning, lava geysers, spores, electric columns, hands from the grave or the Void singularity'
 - label: Reward
-  value: 'Beating the guardian opens three pedestals: you choose ONE piece of its type (Gem, Plate or Berry) and earn the zone trophy on your Profile'
+  value: 'Beating the guardian opens three pedestals of its type: Gem (or Z-Crystal once you have the Gem), Plate and resistance berry; you keep ONE and earn the zone trophy on your Profile'
 - label: Rule, zone 1
   value: 'Blizzard: the wind pushes you and ice patches are slippery'
 - label: Rule, zone 2
@@ -65,3 +65,48 @@ names:
     desc: 從第31層起，無盡模式分成每10層一個的區域，一個等級一區。每個區域都有自己的場景（色彩、裝飾和光線）、該屬性的敵人家族和該屬性的頭目；第10層有守護者等著你，那是與區域屬性相同的超級頭目（第30、50、80和100層仍是原本的頭目）。進入時會出現區域告示，右下角會顯示你在哪個區域、等級以及區域內的第幾層。每個週目有8個區域（第31至110層）；之後會以不同的順序開始新的週目。
 ---
 From floor 31 the Infinite mode is split into ZONES of 10 floors, one per level. Each zone has its own place (colors, decor and light), a family of enemies of its types and bosses of that type; on the 10th floor the guardian waits, a mega boss of the zone's type (on 30, 50, 80 and 100 the usual ones remain). The zone card appears when you enter and the bottom-right corner tells you which zone, level and floor of the zone you are on. There are 8 zones per lap (floors 31 to 110); then another lap starts in a different order.
+
+## Guardian reward
+When the guardian falls, three pedestals appear. You take one and the other two disappear. The pieces always match the guardian's type:
+
+1. **Gem** of that type. If you already have it, the **Z-Crystal** of that type takes its place. Only offered if someone on the team has a Pokémon of that type (bench included).
+2. **Plate** of that type. Same condition: someone on the team must have that type.
+3. **Resistance berry** of that type. Always offered, whatever your team.
+
+A piece you already hold is not offered again. Each missing spot (no Pokémon of that type on the team, piece already held, or no piece for that type) is filled with a normal boss-room item. Gems, Z-Crystals and resistance berries are found nowhere else.
+
+### Guardian type by zone
+| Zone | Possible guardian types |
+|---|---|
+| The Frozen Foothills | Ice, Water |
+| The Sky Pillar | Dragon |
+| The Ashen Crater | Fire, Ground, Rock |
+| The Spore Jungle | Grass, Poison |
+| The Observatory | Psychic, Steel, Electric |
+| The Eternal Graveyard | Ghost, Dark |
+| The Distorted Sanctum | Psychic |
+| The Void | Any type |
+
+For now no mega boss is Bug-type or Flying-type, so the pieces of those two types cannot be obtained. Normal, Fighting and Fairy guardians can only come from The Void. There is no Fairy resistance berry.
+
+### Pieces by type
+| Type | Gem | Z-Crystal | Plate | Resistance berry |
+|---|---|---|---|---|
+| [Normal](../types/normal.html) | — | [Normalium Z](../items/x_normalium_z_bag.html) | — | [Chilan Berry](../items/x_chilan_berry.html) |
+| [Fire](../types/fire.html) | [Fire Gem](../items/x_fire_gem.html) | [Firium Z](../items/x_firium_z_bag.html) | [Flame Plate](../items/x_flame_plate.html) | [Occa Berry](../items/x_occa_berry.html) |
+| [Water](../types/water.html) | [Water Gem](../items/x_water_gem.html) | [Waterium Z](../items/x_waterium_z_bag.html) | [Splash Plate](../items/x_splash_plate.html) | [Passho Berry](../items/x_passho_berry.html) |
+| [Grass](../types/grass.html) | [Grass Gem](../items/x_grass_gem.html) | [Grassium Z](../items/x_grassium_z_bag.html) | [Meadow Plate](../items/x_meadow_plate.html) | [Rindo Berry](../items/x_rindo_berry.html) |
+| [Electric](../types/electric.html) | [Electric Gem](../items/x_electric_gem.html) | [Electrium Z](../items/x_electrium_z_bag.html) | [Zap Plate](../items/x_zap_plate.html) | [Wacan Berry](../items/x_wacan_berry.html) |
+| [Ice](../types/ice.html) | [Ice Gem](../items/x_ice_gem.html) | [Icium Z](../items/x_icium_z_bag.html) | [Icicle Plate](../items/x_icicle_plate.html) | [Yache Berry](../items/x_yache_berry.html) |
+| [Fighting](../types/fighting.html) | [Fighting Gem](../items/x_fighting_gem.html) | [Fightinium Z](../items/x_fightinium_z_bag.html) | [Fist Plate](../items/x_fist_plate.html) | [Chople Berry](../items/x_chople_berry.html) |
+| [Poison](../types/poison.html) | [Poison Gem](../items/x_poison_gem.html) | [Poisonium Z](../items/x_poisonium_z_bag.html) | [Toxic Plate](../items/x_toxic_plate.html) | [Kebia Berry](../items/x_kebia_berry.html) |
+| [Ground](../types/ground.html) | [Ground Gem](../items/x_ground_gem.html) | [Groundium Z](../items/x_groundium_z_bag.html) | [Earth Plate](../items/x_earth_plate.html) | [Shuca Berry](../items/x_shuca_berry.html) |
+| [Flying](../types/flying.html) | [Flying Gem](../items/x_flying_gem.html) | [Flyinium Z](../items/x_flyinium_z_bag.html) | [Sky Plate](../items/x_sky_plate.html) | [Coba Berry](../items/x_coba_berry.html) |
+| [Psychic](../types/psychic.html) | [Psychic Gem](../items/x_psychic_gem.html) | [Psychium Z](../items/x_psychium_z_bag.html) | [Mind Plate](../items/x_mind_plate.html) | [Payapa Berry](../items/x_payapa_berry.html) |
+| [Bug](../types/bug.html) | [Bug Gem](../items/x_bug_gem.html) | [Buginium Z](../items/x_buginium_z_bag.html) | [Insect Plate](../items/x_insect_plate.html) | [Tanga Berry](../items/x_tanga_berry.html) |
+| [Rock](../types/rock.html) | [Rock Gem](../items/x_rock_gem.html) | [Rockium Z](../items/x_rockium_z_bag.html) | [Stone Plate](../items/x_stone_plate.html) | [Charti Berry](../items/x_charti_berry.html) |
+| [Ghost](../types/ghost.html) | [Ghost Gem](../items/x_ghost_gem.html) | [Ghostium Z](../items/x_ghostium_z_bag.html) | [Spooky Plate](../items/x_spooky_plate.html) | [Kasib Berry](../items/x_kasib_berry.html) |
+| [Dragon](../types/dragon.html) | [Dragon Gem](../items/x_dragon_gem.html) | [Dragonium Z](../items/x_dragonium_z_bag.html) | [Draco Plate](../items/x_draco_plate.html) | [Haban Berry](../items/x_haban_berry.html) |
+| [Dark](../types/dark.html) | [Dark Gem](../items/x_dark_gem.html) | [Darkinium Z](../items/x_darkinium_z_bag.html) | [Dread Plate](../items/x_dread_plate.html) | [Colbur Berry](../items/x_colbur_berry.html) |
+| [Steel](../types/steel.html) | [Steel Gem](../items/x_steel_gem.html) | [Steelium Z](../items/x_steelium_z_bag.html) | [Iron Plate](../items/x_iron_plate.html) | [Babiri Berry](../items/x_babiri_berry.html) |
+| [Fairy](../types/fairy.html) | [Fairy Gem](../items/x_fairy_gem.html) | [Fairium Z](../items/x_fairium_z_bag.html) | [Pixie Plate](../items/x_pixie_plate.html) | — |

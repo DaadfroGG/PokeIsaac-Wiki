@@ -17,6 +17,8 @@ details:
   value: +15 % aux tirs de type Spectre
 - label: Apparaît
   value: Seulement si quelqu'un a un Pokémon de type Spectre
+- label: Gardien de zone
+  value: Aussi proposée par les gardiens de zone de son type (mode infini)
 icon: items-ps/plate/spooky.png
 sprite: true
 names:

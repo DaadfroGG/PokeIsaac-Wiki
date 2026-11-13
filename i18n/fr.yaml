@@ -43,6 +43,7 @@ lead_passive: '{{ .name }} est un objet passif de la catégorie {{ .cat }}.'
 lead_active: '{{ .name }} est un objet actif.'
 lead_pools: 'Il peut apparaître à ces endroits dès l''étage {{ .floor }} (niveau {{ .tier }}) : {{ .pools }}.'
 lead_nopool: Il n'apparaît nulle part.
+lead_zone_guardian: 'Il n''apparaît dans aucune salle ni boutique : c''est une récompense des <a href="../mechanics/zonas_infinito.html">gardiens de zone</a> du mode infini.'
 items_title: Objets
 items_count: '{{ .n }} OBJETS'
 items_lead: 'Tous les objets que l''on peut trouver dans le jeu actuel : passifs, actifs, armes, modules, Méga-Gemmes et plus. Chaque objet passif appartient à l''une des huit catégories de butin du jeu, que chaque salle mélange dans des proportions fixes.'

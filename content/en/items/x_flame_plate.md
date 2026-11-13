@@ -17,6 +17,8 @@ details:
   value: +15% to Fire-type shots
 - label: Appears
   value: Only if someone has a Fire-type Pokémon
+- label: Zone guardian
+  value: Also offered by zone guardians of its type (endless mode)
 icon: items-ps/plate/flame.png
 sprite: true
 names:

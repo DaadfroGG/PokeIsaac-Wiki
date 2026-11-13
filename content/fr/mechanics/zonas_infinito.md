@@ -13,7 +13,7 @@ details:
 - label: Arène du gardien
   value: 'Chaque gardien apporte sa propre attaque d''arène : piétinements, éclairs, geysers de lave, spores, colonnes électriques, mains surgies de la tombe ou la singularité du Néant'
 - label: Récompense
-  value: 'En battant le gardien, trois piédestaux apparaissent : choisissez UNE pièce de son type (Joyau, Plaque ou Baie) et gagnez le trophée de la zone dans votre Profil'
+  value: 'En battant le gardien, trois piédestaux de son type apparaissent : Joyau (ou Cristal Z si vous avez déjà le Joyau), Plaque et Baie de résistance ; vous n''en gardez qu''UN et gagnez le trophée de la zone dans votre Profil'
 - label: Règle, zone 1
   value: 'Blizzard : le vent vous pousse et des plaques de glace font glisser'
 - label: Règle, zone 2
@@ -65,3 +65,48 @@ names:
     desc: 從第31層起，無盡模式分成每10層一個的區域，一個等級一區。每個區域都有自己的場景（色彩、裝飾和光線）、該屬性的敵人家族和該屬性的頭目；第10層有守護者等著你，那是與區域屬性相同的超級頭目（第30、50、80和100層仍是原本的頭目）。進入時會出現區域告示，右下角會顯示你在哪個區域、等級以及區域內的第幾層。每個週目有8個區域（第31至110層）；之後會以不同的順序開始新的週目。
 ---
 À partir de l'étage 31, l'Infini se divise en ZONES de 10 étages, une par niveau. Chaque zone a son propre lieu (couleurs, décor et lumière), une famille d'ennemis de ses types et des boss de ce type ; au 10e étage attend le gardien, un méga-boss du type de la zone (aux étages 30, 50, 80 et 100, ce sont toujours les habituels). L'annonce de la zone apparaît quand vous y entrez et le coin inférieur droit vous indique la zone, le niveau et l'étage de la zone où vous êtes. Il y a 8 zones par cycle (étages 31 à 110) ; ensuite, un nouveau cycle commence dans un autre ordre.
+
+## Récompense du gardien
+Quand le gardien tombe, trois piédestaux apparaissent. Vous en prenez un et les deux autres disparaissent. Les pièces sont toujours du type du gardien :
+
+1. **Joyau** de ce type. Si vous l'avez déjà, le **Cristal Z** de ce type prend sa place. Proposé seulement si quelqu'un dans l'équipe a un Pokémon de ce type (banc compris).
+2. **Plaque** de ce type. Même condition : quelqu'un dans l'équipe doit avoir ce type.
+3. **Baie de résistance** de ce type. Toujours proposée, quelle que soit votre équipe.
+
+Une pièce que vous avez déjà n'est plus proposée. Chaque place vide (pas de Pokémon de ce type dans l'équipe, pièce déjà prise ou pas de pièce pour ce type) est remplie par un objet normal de salle de boss. Les Joyaux, les Cristaux Z et les Baies de résistance ne se trouvent nulle part ailleurs.
+
+### Type du gardien selon la zone
+| Zone | Types de gardien possibles |
+|---|---|
+| Les Contreforts Gelés | Glace, Eau |
+| Le Pilier Céleste | Dragon |
+| Le Cratère de Cendres | Feu, Sol, Roche |
+| La Jungle Sporée | Plante, Poison |
+| L'Observatoire | Psy, Acier, Électrik |
+| Le Cimetière Éternel | Spectre, Ténèbres |
+| Le Sanctuaire Distordu | Psy |
+| Le Néant | N'importe quel type |
+
+Pour l'instant, aucun méga-boss n'est de type Insecte ou Vol : les pièces de ces deux types sont impossibles à obtenir. Les gardiens Normal, Combat et Fée ne peuvent venir que du Néant. Il n'existe pas de Baie de résistance Fée.
+
+### Pièces par type
+| Type | Joyau | Cristal Z | Plaque | Baie de résistance |
+|---|---|---|---|---|
+| [Normal](../types/normal.html) | — | [Normazélite](../items/x_normalium_z_bag.html) | — | [Baie Zalis](../items/x_chilan_berry.html) |
+| [Feu](../types/fire.html) | [Joyau Feu](../items/x_fire_gem.html) | [Pyrozélite](../items/x_firium_z_bag.html) | [Plaque Flamme](../items/x_flame_plate.html) | [Baie Chocco](../items/x_occa_berry.html) |
+| [Eau](../types/water.html) | [Joyau Eau](../items/x_water_gem.html) | [Aquazélite](../items/x_waterium_z_bag.html) | [Plaque Hydro](../items/x_splash_plate.html) | [Baie Pocpoc](../items/x_passho_berry.html) |
+| [Plante](../types/grass.html) | [Joyau Plante](../items/x_grass_gem.html) | [Florazélite](../items/x_grassium_z_bag.html) | [Plaque Herbe](../items/x_meadow_plate.html) | [Baie Ratam](../items/x_rindo_berry.html) |
+| [Électrik](../types/electric.html) | [Joyau Électrik](../items/x_electric_gem.html) | [Voltazélite](../items/x_electrium_z_bag.html) | [Plaque Volt](../items/x_zap_plate.html) | [Baie Parma](../items/x_wacan_berry.html) |
+| [Glace](../types/ice.html) | [Joyau Glace](../items/x_ice_gem.html) | [Cryozélite](../items/x_icium_z_bag.html) | [Plaque Glace](../items/x_icicle_plate.html) | [Baie Nanone](../items/x_yache_berry.html) |
+| [Combat](../types/fighting.html) | [Joyau Combat](../items/x_fighting_gem.html) | [Combazélite](../items/x_fightinium_z_bag.html) | [Plaque Poing](../items/x_fist_plate.html) | [Baie Pomroz](../items/x_chople_berry.html) |
+| [Poison](../types/poison.html) | [Joyau Poison](../items/x_poison_gem.html) | [Toxizélite](../items/x_poisonium_z_bag.html) | [Plaque Toxicité](../items/x_toxic_plate.html) | [Baie Kébia](../items/x_kebia_berry.html) |
+| [Sol](../types/ground.html) | [Joyau Sol](../items/x_ground_gem.html) | [Terrazélite](../items/x_groundium_z_bag.html) | [Plaque Terre](../items/x_earth_plate.html) | [Baie Jouca](../items/x_shuca_berry.html) |
+| [Vol](../types/flying.html) | [Joyau Vol](../items/x_flying_gem.html) | [Aérozélite](../items/x_flyinium_z_bag.html) | [Plaque Ciel](../items/x_sky_plate.html) | [Baie Cobaba](../items/x_coba_berry.html) |
+| [Psy](../types/psychic.html) | [Joyau Psy](../items/x_psychic_gem.html) | [Psychézélite](../items/x_psychium_z_bag.html) | [Plaque Esprit](../items/x_mind_plate.html) | [Baie Yapap](../items/x_payapa_berry.html) |
+| [Insecte](../types/bug.html) | [Joyau Insecte](../items/x_bug_gem.html) | [Insectozélite](../items/x_buginium_z_bag.html) | [Plaque Insecte](../items/x_insect_plate.html) | [Baie Panga](../items/x_tanga_berry.html) |
+| [Roche](../types/rock.html) | [Joyau Roche](../items/x_rock_gem.html) | [Rocazélite](../items/x_rockium_z_bag.html) | [Plaque Roc](../items/x_stone_plate.html) | [Baie Charti](../items/x_charti_berry.html) |
+| [Spectre](../types/ghost.html) | [Joyau Spectre](../items/x_ghost_gem.html) | [Spectrozélite](../items/x_ghostium_z_bag.html) | [Plaque Fantôme](../items/x_spooky_plate.html) | [Baie Sédra](../items/x_kasib_berry.html) |
+| [Dragon](../types/dragon.html) | [Joyau Dragon](../items/x_dragon_gem.html) | [Dracozélite](../items/x_dragonium_z_bag.html) | [Plaque Draco](../items/x_draco_plate.html) | [Baie Fraigo](../items/x_haban_berry.html) |
+| [Ténèbres](../types/dark.html) | [Joyau Ténèbres](../items/x_dark_gem.html) | [Ténébrozélite](../items/x_darkinium_z_bag.html) | [Plaque Ombre](../items/x_dread_plate.html) | [Baie Lampou](../items/x_colbur_berry.html) |
+| [Acier](../types/steel.html) | [Joyau Acier](../items/x_steel_gem.html) | [Métallozélite](../items/x_steelium_z_bag.html) | [Plaque Fer](../items/x_iron_plate.html) | [Baie Babiri](../items/x_babiri_berry.html) |
+| [Fée](../types/fairy.html) | [Joyau Fée](../items/x_fairy_gem.html) | [Nymphézélite](../items/x_fairium_z_bag.html) | [Plaque Pixie](../items/x_pixie_plate.html) | — |

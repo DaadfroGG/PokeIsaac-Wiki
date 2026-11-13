@@ -17,6 +17,8 @@ details:
   value: +15% to Poison-type shots
 - label: Appears
   value: Only if someone has a Poison-type Pokémon
+- label: Zone guardian
+  value: Also offered by zone guardians of its type (endless mode)
 icon: items-ps/plate/toxic.png
 sprite: true
 names:

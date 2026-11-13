@@ -17,6 +17,8 @@ details:
   value: +15% to Flying-type shots
 - label: Appears
   value: Only if someone has a Flying-type Pokémon
+- label: Zone guardian
+  value: Also offered by zone guardians of its type (endless mode)
 icon: items-ps/plate/sky.png
 sprite: true
 names:

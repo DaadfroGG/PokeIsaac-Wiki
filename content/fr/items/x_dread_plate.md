@@ -17,6 +17,8 @@ details:
   value: +15 % aux tirs de type Ténèbres
 - label: Apparaît
   value: Seulement si quelqu'un a un Pokémon de type Ténèbres
+- label: Gardien de zone
+  value: Aussi proposée par les gardiens de zone de son type (mode infini)
 icon: items-ps/plate/dread.png
 sprite: true
 names:

@@ -23,6 +23,7 @@
 {{- else }}{{ $lead = T "lead_passive" (dict "name" $b "cat" (printf `<a href="%s?cat=%s">%s</a>` $idx $p.category (T (printf "cat_%s" (string $p.category))))) }}{{ end -}}
 {{- if $p.pools }}{{ $names := slice }}{{ range $p.pools }}{{ $names = $names | append (index (index $pools .) $.Lang) }}{{ end }}
 {{- $lead = printf "%s %s" $lead (T "lead_pools" (dict "floor" $floor "tier" $p.tier "pools" (delimit $names ", "))) }}
+{{- else if eq $p.obtain "zone_guardian" }}{{ $lead = printf "%s %s" $lead (T "lead_zone_guardian") }}
 {{- else }}{{ $lead = printf "%s %s" $lead (T "lead_nopool") }}{{ end -}}
 
 <h1 class="title">{{ partial "img.html" (dict "icon" $p.icon) }}{{ .Title }}<span class="sub">{{ T (printf "sub_%s" $p.kind) }}</span>{{ partial "status.html" . }}</h1>

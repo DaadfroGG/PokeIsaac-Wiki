@@ -43,6 +43,7 @@ lead_passive: '{{ .name }} is a passive item in the {{ .cat }} drop category.'
 lead_active: '{{ .name }} is an active item.'
 lead_pools: 'It can appear in these item pools from floor {{ .floor }} onward (tier {{ .tier }}): {{ .pools }}.'
 lead_nopool: It is not in any item pool.
+lead_zone_guardian: 'It never appears in rooms or shops: it is a reward from the <a href="../mechanics/zonas_infinito.html">zone guardians</a> of endless mode.'
 items_title: Items
 items_count: '{{ .n }} ITEMS'
 items_lead: 'Every item you can find in the current game: passive items, actives, weapons, modules, Mega Stones and more. Each passive item belongs to one of the game''s eight drop categories, which item pools mix in fixed shares.'

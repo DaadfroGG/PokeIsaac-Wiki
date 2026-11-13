@@ -17,6 +17,8 @@ details:
   value: +15 % aux tirs de type Feu
 - label: Apparaît
   value: Seulement si quelqu'un a un Pokémon de type Feu
+- label: Gardien de zone
+  value: Aussi proposée par les gardiens de zone de son type (mode infini)
 icon: items-ps/plate/flame.png
 sprite: true
 names:

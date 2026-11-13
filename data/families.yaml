@@ -5,6 +5,15 @@ core:
 plate:
   en: Plate
   fr: Plaque
+gem:
+  en: Gem
+  fr: Joyau
+zcrystal:
+  en: Z-Crystal
+  fr: Cristal Z
+resberry:
+  en: Resistance berry
+  fr: Baie de résistance
 weapon:
   en: Weapon
   fr: Arme
