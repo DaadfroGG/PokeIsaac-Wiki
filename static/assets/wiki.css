@@ -403,3 +403,49 @@ audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color
 .mx-more { background: var(--bg2); border: 1.5px solid var(--line); border-radius: 10px; padding: 4px 16px; margin: 20px 0; }
 .mx-more > summary { cursor: pointer; padding: 10px 0; font-family: var(--pixel); font-size: 11px; color: var(--gold); }
 .mx-more[open] > summary { border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+
+/* Type chart (mechanics/tabla_tipos): 18x18 grid, sticky headers, per-type cards */
+.tc-wrap { overflow: auto; max-height: 80vh; margin: 12px 0 20px; border: 1.5px solid var(--line); border-radius: 10px; background: var(--pn); }
+.tc-grid { border-collapse: separate; border-spacing: 0; font-size: 12.5px; margin: 0 auto; }
+.tc-grid th, .tc-grid td { border-right: 1px solid rgba(58, 52, 80, .55); border-bottom: 1px solid rgba(58, 52, 80, .55); }
+.tc-grid thead th { position: sticky; top: 0; z-index: 2; background: var(--pn); }
+.tc-grid tbody th { position: sticky; left: 0; z-index: 1; background: var(--pn); }
+.tc-grid .tc-corner { left: 0; z-index: 3; font: 7px/1.6 var(--pixel); color: var(--muted); padding: 6px 8px; text-align: left; white-space: normal; width: 84px; max-width: 84px; }
+.tc-def { padding: 6px 2px 4px; vertical-align: bottom; }
+.tc-def a { display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; }
+.tc-def span { writing-mode: vertical-rl; transform: rotate(180deg); font: 7px/1 var(--pixel); color: color-mix(in srgb, var(--c), #fff 30%); text-transform: uppercase; letter-spacing: .5px; }
+.tc-att { padding: 4px 10px 4px 6px; text-align: left; white-space: nowrap; }
+.tc-att a { display: flex; align-items: center; gap: 6px; color: color-mix(in srgb, var(--c), #fff 30%); font: 8px/1 var(--pixel); text-transform: uppercase; text-decoration: none; }
+.tc-def img, .tc-att img { image-rendering: pixelated; }
+.tc-grid td { width: 34px; min-width: 34px; height: 30px; text-align: center; font-weight: 700; font-variant-numeric: tabular-nums; }
+.tc-grid td.tc-s { color: #0a2a12; background: #7fe07f; }
+.tc-grid td.tc-w { color: #2a0608; background: #ff8a7a; font-size: 11px; }
+.tc-grid td.tc-n { color: transparent; }
+.tc-grid tbody tr:hover th, .tc-grid tbody tr:hover td.tc-n { background-color: rgba(255, 255, 255, .07); }
+.tc-grid td:hover { outline: 2px solid var(--gold); outline-offset: -2px; }
+.tc-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin: 14px 0 20px; }
+.tc-card { background: var(--bg2); border: 1.5px solid var(--line); border-top: 4px solid var(--c); border-radius: 10px; padding: 10px 12px; }
+.tc-card h3 { margin: 0 0 6px; font: 10px/1.4 var(--pixel); }
+.tc-card h3 a { display: inline-flex; align-items: center; gap: 8px; color: color-mix(in srgb, var(--c), #fff 30%); text-decoration: none; text-transform: uppercase; }
+.tc-card .tc-sub { margin: 8px 0 4px; font-size: 11.5px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.tc-row { display: grid; grid-template-columns: 96px 1fr; gap: 6px; align-items: start; margin: 3px 0; font-size: 12.5px; }
+.tc-row .k { color: var(--ink); padding-top: 3px; }
+.tc-row .v em { color: var(--muted); font-style: normal; }
+.tc-grid:has(tbody td:nth-child(2):hover) :is(td,th):nth-child(2) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(3):hover) :is(td,th):nth-child(3) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(4):hover) :is(td,th):nth-child(4) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(5):hover) :is(td,th):nth-child(5) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(6):hover) :is(td,th):nth-child(6) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(7):hover) :is(td,th):nth-child(7) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(8):hover) :is(td,th):nth-child(8) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(9):hover) :is(td,th):nth-child(9) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(10):hover) :is(td,th):nth-child(10) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(11):hover) :is(td,th):nth-child(11) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(12):hover) :is(td,th):nth-child(12) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(13):hover) :is(td,th):nth-child(13) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(14):hover) :is(td,th):nth-child(14) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(15):hover) :is(td,th):nth-child(15) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(16):hover) :is(td,th):nth-child(16) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(17):hover) :is(td,th):nth-child(17) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(18):hover) :is(td,th):nth-child(18) { background-color: rgba(255,255,255,.07); }
+.tc-grid:has(tbody td:nth-child(19):hover) :is(td,th):nth-child(19) { background-color: rgba(255,255,255,.07); }

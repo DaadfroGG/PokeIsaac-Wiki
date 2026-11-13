@@ -49,7 +49,7 @@ Chaque projectile que vous tirez a sa propre chance de déclencher un effet (br�
   <span class="kw">SI</span> boss : barrière, <a href="afijo_espejo.html">miroir</a>, <a href="afijo_blindado.html">bouclier</a>, <a href="armadura_acorazado.html">armure</a> <span class="op">→</span> absorbe d'abord
      <span class="cm">// tout absorbé : rien de ce qui suit n'a lieu</span>
   <span class="kw">SI</span> ennemi empoisonné <span class="kw">ET</span> venin <span class="op">→</span> dégâts ×1,5
-  dégâts <span class="op">×</span> <a href="tabla_tipos.html">table des types</a>          <span class="cm">// 0,45 à 2,25</span>
+  dégâts <span class="op">×</span> <a href="tabla_tipos.html#table">table des types</a>          <span class="cm">// 0,45 à 2,25</span>
   dégâts <span class="op">×</span> effets d'objets à l'impact  <span class="cm">// ex. Plaque +15 %</span>
   l'ennemi perd les dégâts ; repoussé   <span class="cm">// pas les boss</span>
   <span class="kw">POUR CHAQUE</span> effet de statut        <span class="cm">// tiré à chaque touche</span>

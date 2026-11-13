@@ -49,7 +49,7 @@ Every projectile you fire gets its own chance to trigger effects (burn, charm, c
   <span class="kw">IF</span> boss: barrier, <a href="afijo_espejo.html">mirror</a>, <a href="afijo_blindado.html">shield</a>, <a href="armadura_acorazado.html">armor</a> <span class="op">→</span> absorb first
      <span class="cm">// fully absorbed: nothing below happens</span>
   <span class="kw">IF</span> enemy poisoned <span class="kw">AND</span> venom <span class="op">→</span> damage ×1.5
-  damage <span class="op">×</span> <a href="tabla_tipos.html">type chart</a>                <span class="cm">// 0.45 to 2.25</span>
+  damage <span class="op">×</span> <a href="tabla_tipos.html#table">type chart</a>                <span class="cm">// 0.45 to 2.25</span>
   damage <span class="op">×</span> item effects on impact    <span class="cm">// e.g. Plate +15 %</span>
   enemy loses damage; pushed back      <span class="cm">// not bosses</span>
   <span class="kw">FOR EACH</span> status effect             <span class="cm">// rolled on every hit</span>
