@@ -52,4 +52,4 @@ La monnaie du jeu : à dépenser à la boutique.
 - S'il ne lâche rien, il a encore 1,5 % de chance, +0,3 % par point de Chance, de lâcher une [clé](key.html).
 - La [Poche à Renforts](../items/d_bolsillo_mejoras.html) double ces deux chances.
 - Le [Max Leurre](../items/cebo_max.html) ajoute une chance séparée de 20 % d'avoir une pièce de plus.
-- Les chances utilisent la Chance du joueur à qui revient l'ennemi vaincu.
+- Les chances utilisent la Chance du joueur à qui revient l'ennemi vaincu. Tous les détails : [Butin des ennemis](../mechanics/botin_enemigos.html).

@@ -52,4 +52,4 @@ The game's currency: spend it in the shop.
 - If it drops nothing, it still has a 1.5 % chance, +0.3 % per point of Luck, to drop a [key](key.html).
 - [Power-Up Pocket](../items/d_bolsillo_mejoras.html) doubles both chances.
 - [Max Lure](../items/cebo_max.html) adds a separate 20 % chance of one more coin.
-- The chances use the Luck of the player who gets the kill.
+- The chances use the Luck of the player who gets the kill. Full details: [Enemy drops](../mechanics/botin_enemigos.html).

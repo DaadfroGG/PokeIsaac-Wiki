@@ -55,7 +55,7 @@ names:
 Each enemy you defeat releases three shots (fire, electric and ice) at the others
 
 ## How it works
-- Every enemy you defeat (bosses included) releases three homing shots from where it died, each aimed at one of the three closest enemies left. With fewer enemies, they share targets; with none, they fly off in three directions.
+- Every enemy you defeat (not bosses) releases three homing shots from where it died, each aimed at one of the three closest enemies left. With fewer enemies, they share targets; with none, they fly off in three directions.
 - Each shot deals 60 % of your Damage (at least 1.5) and has its own type, so the [type chart](../mechanics/tabla_tipos.html) uses Fire, Electric or Ice, not your type.
 - **Fire**: always burns the enemy it hits (4 s with the [Heat Rock](roca_calor.html), 2 s otherwise).
 - **Electric**: always sends lightning to up to 2 other enemies within 180 px, for 60 % of the shot's damage.

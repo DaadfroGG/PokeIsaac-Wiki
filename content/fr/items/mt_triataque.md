@@ -55,7 +55,7 @@ names:
 Chaque ennemi vaincu libère trois tirs (Feu, Électrik et Glace) vers les autres
 
 ## Fonctionnement
-- Chaque ennemi que vous battez (boss compris) lâche trois tirs à tête chercheuse depuis l'endroit où il meurt, chacun visant l'un des trois ennemis restants les plus proches. S'il y a moins d'ennemis, ils se partagent les cibles ; s'il n'y en a plus, ils partent dans trois directions.
+- Chaque ennemi que vous battez (sauf les boss) lâche trois tirs à tête chercheuse depuis l'endroit où il meurt, chacun visant l'un des trois ennemis restants les plus proches. S'il y a moins d'ennemis, ils se partagent les cibles ; s'il n'y en a plus, ils partent dans trois directions.
 - Chaque tir inflige 60 % de vos Dégâts (au moins 1,5) et a son propre type : la [table des types](../mechanics/tabla_tipos.html) utilise Feu, Électrik ou Glace, pas votre type.
 - **Feu** : brûle toujours l'ennemi touché (4 s avec la [Roche Chaude](roca_calor.html), 2 s sinon).
 - **Électrik** : envoie toujours un éclair à 2 autres ennemis au plus dans un rayon de 180 px, pour 60 % des dégâts du tir.

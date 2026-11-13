@@ -54,7 +54,7 @@ names:
 Damage +0.7; enemies sometimes drop soul hearts
 
 ## How it works
-- Every enemy you defeat (bosses included) has a 5 % chance, plus 0.5 % per point of Luck, to drop a [soul heart](../mechanics/corazones_alma.html). With 10 Luck it is 10 %.
+- Every enemy you defeat (not bosses) has a 5 % chance, plus 0.5 % per point of Luck, to drop a [soul heart](../mechanics/corazones_alma.html). With 10 Luck it is 10 %.
 - This roll comes on top of the normal drops of the enemy.
 - The Damage +0.7 is a normal stat bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
 

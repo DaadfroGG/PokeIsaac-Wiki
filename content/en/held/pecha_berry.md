@@ -58,7 +58,7 @@ One Pokémon on your team holds it, and it only works while that Pokémon is on 
 ## How it works
 - Every 12th enemy you defeat while it is active drops a half heart where it died.
 - It is a fixed count, not a chance: kills 12, 24, 36 and so on. The count keeps going from room to room and floor to floor, and pauses while the item is not active.
-- Every kill counts, whatever finished the enemy: your shots, your companions, bombs, burns. In co-op a kill goes to the player who last hit the enemy with a shot or an attack (player 1 if nobody did).
+- Every kill counts, whatever finished the enemy: your shots, your companions, bombs, burns. In co-op a kill goes to the player who last hit the enemy with a shot or an attack (player 1 if nobody did). Bosses don't count.
 
 ## Stacking
 - A second copy does nothing more: the effect is either on or off. Having it held and fused, or held by two Pokémon of the team, is the same as having it once. The game won't let you fuse two alike, and new drops avoid the ones you already have.

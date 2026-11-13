@@ -58,7 +58,7 @@ Un Pokémon de votre équipe le tient, et il ne fonctionne que lorsque ce Pokém
 ## Fonctionnement
 - Chaque 12e ennemi vaincu pendant qu'il est actif lâche un demi-cœur là où il meurt.
 - C'est un compte fixe, pas une chance : les ennemis 12, 24, 36, etc. Le compte continue d'une salle et d'un étage à l'autre, et se met en pause quand l'objet n'est pas actif.
-- Chaque ennemi vaincu compte, quoi qu'il l'ait achevé : vos tirs, vos compagnons, les bombes, la brûlure. En coopération, il revient au joueur qui l'a touché en dernier avec un tir ou une attaque (le joueur 1 si personne ne l'a touché).
+- Chaque ennemi vaincu compte, quoi qu'il l'ait achevé : vos tirs, vos compagnons, les bombes, la brûlure. En coopération, il revient au joueur qui l'a touché en dernier avec un tir ou une attaque (le joueur 1 si personne ne l'a touché). Les boss ne comptent pas.
 
 ## Cumul
 - Un deuxième exemplaire n'apporte rien : l'effet est actif ou non. L'avoir tenu et fusionné, ou tenu par deux Pokémon de l'équipe, revient à l'avoir une seule fois. Le jeu refuse de fusionner deux objets identiques, et les nouveaux objets tenus évitent ceux que vous avez déjà.

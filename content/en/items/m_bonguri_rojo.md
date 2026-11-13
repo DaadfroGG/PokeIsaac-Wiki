@@ -52,7 +52,7 @@ Each enemy you defeat in a room raises your damage by 6 % until you leave (max. 
 
 ## How it works
 - Each enemy you defeat adds one level, up to 10. Each level is +6 % damage, so +60 % at 10 kills. It is applied to all your damage like a multiplier.
-- It counts every kill credited to you, including those of your companions, bombs and burns. In co-op a kill goes to the player who last hit the enemy with a shot or an attack. The bonus is reset when you enter another room.
+- It counts every kill credited to you, including those of your companions, bombs and burns. In co-op a kill goes to the player who last hit the enemy with a shot or an attack. Bosses don't count. The bonus is reset when you enter another room.
 - Kills by burn, poison or other lingering damage you applied also count.
 
 ## Stacking

@@ -54,7 +54,7 @@ names:
 Dégâts +0,7 ; les ennemis lâchent parfois des cœurs d'âme
 
 ## Fonctionnement
-- Chaque ennemi que vous battez (boss compris) a 5 % de chances, plus 0,5 % par point de Chance, de lâcher un [cœur d'âme](../mechanics/corazones_alma.html). Avec 10 de Chance, c'est 10 %.
+- Chaque ennemi que vous battez (sauf les boss) a 5 % de chances, plus 0,5 % par point de Chance, de lâcher un [cœur d'âme](../mechanics/corazones_alma.html). Avec 10 de Chance, c'est 10 %.
 - Ce tirage s'ajoute aux butins normaux de l'ennemi.
 - Le Dégâts +0,7 est un bonus de stat normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
 
