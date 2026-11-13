@@ -10,10 +10,10 @@ pools:
 - shop
 pool_weight: 2
 details:
-- label: Chance
+- label: Pièce
   value: 35 % par rocher cassé
-- label: Récompense
-  value: 1 pièce
+- label: Chance
+  value: Aucun effet
 icon: items-ps/incense/rock.png
 sprite: true
 names:
@@ -49,3 +49,11 @@ names:
     desc: 你打碎的岩石有時會掉落金幣
 ---
 Les rochers que vous brisez lâchent parfois des pièces
+
+## Fonctionnement
+- Chaque rocher qui se casse, quelle que soit la façon (vos Voltorbs, les objets qui font casser les rochers à vos tirs, les armes), a 35 % de chances de lâcher une pièce à sa place.
+- La Chance ne change pas ce pourcentage.
+- En coop, ça marche pour toute l'équipe dès qu'un joueur le porte.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours 35 %.

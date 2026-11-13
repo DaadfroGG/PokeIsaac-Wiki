@@ -8,6 +8,11 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Damage
+  value: ×1.25
+- label: Condition
+  value: None, always on
 icon: items-ps/hold-item/lustrous-orb.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 傷害×1.25
 ---
 Damage ×1.25
+
+## How it works
+- Your Damage is multiplied by 1.25 at all times, whatever your type.
+- It is a damage multiplier shown on the HUD: it multiplies with your other multipliers, and the total follows the [diminishing returns](../mechanics/rendimientos.html) (full up to ×2.3, then a quarter, ×3 at most).
+
+## Stacking
+- A second copy does nothing more: still ×1.25.

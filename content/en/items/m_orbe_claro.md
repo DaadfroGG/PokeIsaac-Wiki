@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Light beam
-  value: 10 % per hit, ×3
+  value: 10 % per hit (+1 % per Luck), ×3
+- label: Area
+  value: Radius 30 px, after 0.1 s
 icon: items-ps/key-item/light-stone.png
 sprite: true
 names:
@@ -49,3 +51,10 @@ names:
 Sometimes, on hit, a beam of light strikes the enemy for ×3 damage
 
 {{< clip >}}
+
+## How it works
+- Each hit has a 10 % chance (+1 % per Luck) to call down a beam of light on the enemy hit. After 0.1 s it deals ×3 the damage of that hit to every enemy within 30 px of the spot.
+- The beam works on bosses. Its damage does not trigger item effects.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance.

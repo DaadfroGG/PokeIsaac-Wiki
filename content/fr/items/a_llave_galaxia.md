@@ -9,6 +9,11 @@ pools:
 - secret
 pool_weight: 2
 charge: 4
+details:
+- label: Destination
+  value: La salle secrète, sinon la salle au trésor
+- label: Pas pendant
+  value: Un combat de boss ou d'arène
 icon: items-ps/key-item/galactic-key.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 帶你前往本層的祕密房間（沒有的話則前往寶物房間）
 ---
 Vous emmène à la salle secrète de l'étage (ou, à défaut, à la salle au trésor)
+
+## Fonctionnement
+- Vous êtes envoyé directement dans la salle secrète de l'étage, qui apparaît sur votre carte. S'il n'y en a pas, vous allez dans la salle au trésor.
+- Les salles super secrètes ne sont jamais choisies.
+- Il ne marche pas tant qu'un boss est en vie dans la salle ni pendant un combat d'arène ; vous gardez la charge. Si vous êtes déjà dans la salle secrète, il vous envoie dans la salle au trésor.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : vous ne voyagez qu'une fois.

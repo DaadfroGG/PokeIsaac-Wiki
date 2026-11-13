@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Vit. tir +2
   good: true
+details:
+- label: Cadence
+  value: +2 (0,033 s de moins entre les tirs)
+- label: Vitesse des tirs
+  value: '+2'
 icon: items-ps/av-candy/courage.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 射速 + 且彈速更快
 ---
 Cadence + et tirs plus rapides
+
+## Fonctionnement
+- Cadence +2 : 0,033 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- Vitesse des tirs +2 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Cadence).

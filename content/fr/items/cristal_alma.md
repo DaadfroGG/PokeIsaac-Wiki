@@ -8,6 +8,9 @@ tier: 1
 pools:
 - devil
 pool_weight: 2
+details:
+- label: Cœurs d'âme
+  value: +3 à la prise
 icon: items-ps/hold-item/soul-dew.png
 sprite: true
 names:
@@ -43,3 +46,10 @@ names:
     desc: 三顆靈魂之心
 ---
 Trois cœurs d'âme
+
+## Fonctionnement
+- Dès que vous le ramassez, vous gagnez 3 [cœurs d'âme](../mechanics/corazones_alma.html), dans la limite de 6 cœurs d'âme.
+- Il n'a aucun autre effet : il ne vous soigne pas et n'augmente pas vos PV maximum.
+
+## Cumul
+- Chaque exemplaire donne 3 cœurs d'âme de plus à la prise, tant que vous êtes sous la limite de 6.

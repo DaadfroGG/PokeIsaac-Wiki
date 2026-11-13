@@ -10,9 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2 s without firing
+  value: 2 s without firing for a full charge
 - label: Volley
-  value: Up to 10 shots
+  value: Up to 10 extra shots (at least 2)
+- label: Extra shots
+  value: Full damage each, spread over about ±23°
 icon: items-ps/partner-gift/tropical-shell.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 不射擊時會充能；再次射擊時會一口氣射出一陣額外的彈
 ---
 It charges while you're not firing; when you fire again, a burst of extra shots comes out at once
+
+## How it works
+- While you are not holding a fire key, the shell charges: it fills in 2 s.
+- When you start firing again, it releases a burst of extra shots at once, on top of your normal volley. The number is the charge ×10, rounded: up to 10 shots. A charge below 15 % (less than 0.3 s idle) releases nothing, so the smallest burst is 2 shots.
+- Burst shots are fired in the direction you aim, spread about 23° either side, at 75 % to 120 % of the normal shot speed, and each deals your full damage. They are marked as extra shots (see [Extra shots](../mechanics/disparos_extra.html)).
+- The charge is lost as soon as you keep firing; it starts again from zero when you stop.
+
+## Stacking
+- It does not stack: a second copy does not give a bigger burst.

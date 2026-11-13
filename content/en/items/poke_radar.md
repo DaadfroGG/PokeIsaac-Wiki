@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Charge
+  value: 4 rooms
+- label: Targets
+  value: All non-boss enemies in the room
+- label: Reward
+  value: 3 coins per marked enemy killed
+- label: Bosses
+  value: Not affected
 icon: items-ps/key-item/poke-radar.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 房間內的敵人會變成異色並掉落金幣
 ---
 Enemies in the room turn shiny and drop coins
+
+## How it works
+- Charge: 4 rooms. Every room you clear gives 1 charge.
+- Every living enemy in the room that is not a boss turns shiny.
+- Each shiny enemy drops 3 coins when it dies, whatever kills it (your shots, bombs, other enemies, hazards).
+- The effect has no time limit: it lasts until the enemy dies or you leave the room.
+- Bosses are not affected. It can't be used when no non-boss enemy is left, and then no charge is spent.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With a [Cell Battery](d_pila.html) the item can store twice its charge.

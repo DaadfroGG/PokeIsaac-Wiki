@@ -11,6 +11,11 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Hearts
+  value: +1 heart (and heals it)
+- label: Room clear
+  value: Heals ½ heart
 icon: items/shell-bell.png
 sprite: true
 names:
@@ -46,3 +51,12 @@ names:
     desc: 愛心 +1，清空房間時回復半顆愛心
 ---
 Heart +1 and recover half a heart when you clear a room
+
+## How it works
+- On pickup: +1 max heart, and that heart is filled.
+- Every time a room is cleared, you recover half a heart (if you are not at full health).
+- The room-clear healing ignores the limit on item healing.
+
+## Stacking
+- The max heart is added again with each copy.
+- The room-clear healing is the same effect as [Leftovers](restos.html): owning both, or two Shell Bells, still heals only half a heart per room.

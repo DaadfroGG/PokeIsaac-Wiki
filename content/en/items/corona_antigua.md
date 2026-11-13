@@ -50,3 +50,11 @@ names:
     desc: 你就是國王：有時進入房間時，會有敵人投降並留下一枚金幣給你
 ---
 You're the king: sometimes, when you enter a room, an enemy surrenders and leaves you a coin
+
+## How it works
+- When you enter a normal combat room, each enemy has a 15 % chance to give up: it leaves the room and drops 1 [coin](../world/coin.html) where it stood.
+- It never takes bosses, and never the last enemy of the room, so the room is never emptied.
+- These coins count towards the limit on coins dropped by items: at most 3 per room and, per floor, 6 plus half the floor number (rounded).
+
+## Stacking
+- It is an on/off effect: a second Relic Crown does not give a second roll.

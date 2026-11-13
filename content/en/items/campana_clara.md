@@ -14,6 +14,8 @@ details:
   value: 6 seconds
 - label: Each hit
   value: Heals you half a heart instead of hurting you
+- label: After each hit
+  value: 1.17 s of invulnerability
 - label: Only you
   value: Doesn't heal your teammates
 icon: items-ps/key-item/clear-bell.png
@@ -51,3 +53,15 @@ names:
     desc: 6秒內，你受到的攻擊會為你回復半顆愛心，而不是傷害你
 ---
 For 6 seconds, hits you take heal you half a heart instead of hurting you
+
+## How it works
+- For 6 seconds, every hit that would hurt you (shots, contact, explosions, hazards) does no damage and heals you half a heart instead.
+- After each such hit you are invulnerable for 1.17 seconds, so at most about 5 hits can heal you.
+- This heal counts toward the limit on item healing over 10 seconds: once that limit is reached, hits still do nothing but no longer heal.
+- In co-op it only protects the player who used it.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 6 seconds.

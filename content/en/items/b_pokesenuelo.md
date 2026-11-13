@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: +5 Voltorb
   good: true
+details:
+- label: Voltorbs
+  value: '+5'
+- label: Homing range
+  value: 420 px
+- label: Roll speed
+  value: 108 px/s
+- label: Explodes
+  value: On touching an enemy
 icon: items-ps/other-item/poke-toy.png
 sprite: true
 names:
@@ -47,3 +56,12 @@ names:
     desc: +5顆霹靂電球；滾向最近的敵人，接觸即爆炸
 ---
 +5 Voltorbs; they roll toward the nearest enemy and explode on contact
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, a placed Voltorb rolls toward the nearest enemy within 420 px at about 108 px/s (it cannot go through rocks) and explodes the moment it touches it, without waiting for the fuse.
+- If no enemy is in range it stays where it was placed and explodes at the end of the 1.5 s fuse. It also works on the small Voltorbs of the [Candy Jar](b_tarro.html).
+- With the [Colress Machine](w_acromaquina.html), its rolling Voltorbs also steer toward enemies like homing shots.
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

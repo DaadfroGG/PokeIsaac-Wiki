@@ -15,7 +15,7 @@ details:
 - label: Dégâts
   value: +0,5
 - label: En entrant dans une salle avec des ennemis
-  value: Météorite sur celui qui a le plus de vie (×3 vos dégâts)
+  value: Météorite sur l'ennemi qui a le plus de vie (×3 vos dégâts)
 icon: items-ps/key-item/meteorite-shard.png
 sprite: true
 names:
@@ -51,3 +51,13 @@ names:
     desc: Damage +0.5. When you enter a room with enemies, a meteorite falls on the one with the most health (×3 your damage).
 ---
 Dégâts +0,5. En entrant dans une salle avec des ennemis, une météorite tombe sur celui qui a le plus de vie (×3 vos dégâts).
+
+## Fonctionnement
+
+- Ajoute +0,5 Dégâts.
+- Chaque fois que vous entrez dans une salle qui contient encore des ennemis, une météorite tombe sur l'ennemi qui a le plus de vie actuelle pour 3 fois vos Dégâts. Cela marche aussi dans les salles de boss.
+- Elle tombe une fois par salle, dès le début, et pas dans une salle déjà nettoyée.
+
+## Cumul
+
+- Chaque exemplaire ajoute +0,5 Dégâts. La météorite est simplement activée : pas de seconde météorite.

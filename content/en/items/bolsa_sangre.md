@@ -13,6 +13,13 @@ stats:
   good: true
 - text: Heals 3 hearts
   good: true
+details:
+- label: Max HP
+  value: +1 heart
+- label: Damage
+  value: '+0.3'
+- label: Healing
+  value: 3 hearts when picked up
 icon: items-ps/medicine/berry-juice.png
 sprite: true
 names:
@@ -48,3 +55,14 @@ names:
     desc: 愛心 +1，回復生命並稍微提升傷害
 ---
 Heart +1, heals you and raises damage a little
+
+## How it works
+- One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
+- The +0.3 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- It heals 3 hearts when you pick it up; this heal ignores the healing limit.
+
+## How to get it
+- It is not in any item pool. It can be left by a [donation machine](../world/blood.html) that wears out after several donations: 30 % chance of Berry Juice (15 % of [Fresh Water](bolsa_suero.html) instead).
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage) and its heal.

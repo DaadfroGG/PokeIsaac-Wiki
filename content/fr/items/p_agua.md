@@ -13,10 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
+- label: Évolue
+  value: Évoli > Aquali
 - label: Rayon
-  value: 130 px
+  value: 130 px autour de l'ennemi touché
 - label: Boss
-  value: Ils ne bougent pas
+  value: Ils ne sont pas attirés
 icon: items/water-stone.png
 sprite: true
 names:
@@ -52,3 +54,23 @@ names:
     desc: 讓伊布進化。此外，每次命中都會把附近的敵人拉向被擊中的敵人（將牠們聚集起來）
 ---
 Fait évoluer Évoli. De plus, chaque coup attire vers l'ennemi touché ceux qui sont à proximité (il les regroupe)
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Aquali, et son type devient Eau.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Les Pokémon autres qu'Évoli n'évoluent pas avec cette pierre ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Chaque fois qu'un de vos tirs touche un ennemi, tous les autres ennemis non-boss à moins de 130 px de lui sont attirés vers lui, ce qui regroupe les ennemis.
+- Les tirs divisés et autres tirs enfants n'attirent pas.
+- Les [boss](../mechanics/jefes_adaptativos.html) ne sont jamais attirés.
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

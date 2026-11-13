@@ -11,11 +11,17 @@ pools:
 pool_weight: 2
 details:
 - label: Marques
-  value: Jusqu'à 4, 5 s, avec vos coups
+  value: Jusqu'à 4 ennemis, 5 s chacune (relancées par de nouveaux coups), avec vos coups
 - label: Liens
-  value: 'Toutes les 0,2 s : ×0,17 de vos dégâts depuis vous et ×0,26 entre les marques, à tout ce qui les touche'
-- label: Avec toute arme
-  value: 'C''est un module : il ne remplace pas votre arme'
+  value: 'Toutes les 0,2 s : ×0,17 Dégâts de vous à la 1re marque, ×0,26 entre marques, à tout ce qui touche la ligne'
+- label: Portée des liens
+  value: La chaîne se coupe au-delà de 300 px
+- label: Équilibrage
+  value: ×0,62 sur les liens
+- label: Éclair bonus
+  value: ×0,4 Dégâts sur un autre ennemi à moins de 170 px, au plus toutes les 0,13 s
+- label: Module
+  value: Marche avec toute arme
 icon: items-ps/key-item/fame-checker.png
 sprite: true
 names:
@@ -51,5 +57,14 @@ names:
     desc: 你的攻擊會標記敵人（最多4個，持續5秒），標記之間會以來自你寶可夢的連線相連，傷害碰到連線的所有東西
 ---
 Vos coups marquent les ennemis (jusqu'à 4, 5 s) et les marques sont reliées à votre Pokémon par des liens qui blessent tout ce qui les touche
+
+## Fonctionnement
+- C'est un **module** : il marche avec toute arme et ne la remplace pas.
+- Chaque coup de vos tirs normaux et armes (au plus une fois par délai entre deux tirs) marque l'ennemi touché pendant 5 s ; toucher un ennemi marqué relance la marque. Vous pouvez avoir 4 marques : une 5e supprime la plus ancienne. Les marques disparaissent à la mort de l'ennemi ou en quittant la salle.
+- Toutes les 0,2 s, un lien relie votre Pokémon à la première marque, puis de marque en marque dans l'ordre où elles ont été posées. Le lien depuis vous inflige ×0,17 de vos Dégâts et les liens entre marques ×0,26, à chaque ennemi qui touche la ligne (5 px de large). Le tout est multiplié par un facteur d'équilibrage ×0,62. Si une marque est à plus de 300 px du point précédent, la chaîne se coupe là (pas de dégâts sur ce lien).
+- À chacun de vos coups, un éclair saute aussi vers un autre ennemi à moins de 170 px pour ×0,4 de vos Dégâts (au plus toutes les 0,13 s).
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Dégâts
-  value: De ×0,5 à ×2
+  value: ×0,5 à ×2, aléatoire par tir
+- label: Rochers
+  value: Les tirs brisent les rochers
 icon: items-ps/other-item/armorite-ore.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 岩石彈：能打碎岩石，每發威力不同（×0.5至×2）
 ---
 Tirs de roche : ils brisent les rochers et chacun frappe différemment (de ×0,5 à ×2)
+
+## Fonctionnement
+- Chaque tir inflige un multiple aléatoire de vos dégâts entre ×0,5 et ×2 (tirage uniforme), soit ×1,25 en moyenne.
+- Un tir qui touche un rocher ordinaire le brise et disparaît. Les rochers brisés lâchent leur butin habituel.
+- Cela ne fait pas traverser les rochers, et ne brise pas les obstacles indestructibles.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

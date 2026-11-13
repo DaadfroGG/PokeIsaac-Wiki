@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Luck +1
   good: true
+details:
+- label: On pickup
+  value: Luck +1
+- label: Each secret room
+  value: Luck +1 the first time you enter it
+- label: Not counted
+  value: Super secret rooms
 icon: items-ps/valuable-item/star-piece.png
 sprite: true
 names:
@@ -46,3 +53,12 @@ names:
     desc: 每找到一間祕密房間，幸運+1
 ---
 Luck +1 for each secret room you find
+
+## How it works
+- Luck +1 when you pick it up.
+- Then, each time you walk into a secret room for the first time, you gain Luck +1 for the rest of the run. Going back into the same room gives nothing.
+- Super secret rooms don't count.
+- Luck follows the [diminishing returns](../mechanics/rendimientos.html): full up to 10, then a quarter.
+
+## Stacking
+- A second copy adds its Luck +1, but the secret room bonus stays at +1 per room.

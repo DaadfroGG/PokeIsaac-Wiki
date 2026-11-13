@@ -9,10 +9,12 @@ pools:
 - secret
 pool_weight: 2
 details:
-- label: Chance
-  value: 30 % per purchase
 - label: Refund
-  value: The full price
+  value: 30 % per purchase
+- label: Amount
+  value: The full price (up to your wallet limit)
+- label: Luck
+  value: No effect
 icon: items-ps/valuable-item/relic-gold.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 購買東西時，有時會退還金錢
 ---
 When you buy something, you sometimes get your money back
+
+## How it works
+- Every time you pay PokéDollars for something (shop items, shop pickups, golden chests for sale), there is a 30 % chance you get the whole price back.
+- The refund can't go over your wallet limit (99 PokéDollars at first): the extra is lost.
+- Deals paid with hearts are not purchases and never refund.
+- Luck does not change the chance.
+
+## Stacking
+- A second copy does nothing more: still 30 %.

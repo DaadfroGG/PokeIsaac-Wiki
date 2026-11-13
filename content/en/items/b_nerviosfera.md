@@ -13,8 +13,14 @@ stats:
 - text: +5 Voltorb
   good: true
 details:
+- label: Voltorbs
+  value: '+5'
 - label: Beams
-  value: Your damage ×3 each
+  value: 4 in a cross, each max(8, 3 × your Damage)
+- label: Beam width
+  value: 18 px
+- label: Breaks
+  value: Rocks and crates on the way
 icon: items-ps/hold-item/adrenaline-orb.png
 sprite: true
 names:
@@ -50,3 +56,13 @@ names:
     desc: +5霹靂電球；爆炸時向四個方向發射十字光束，會破壞路徑上的岩石和箱子
 ---
 +5 Voltorbs; when they explode, they fire four beams in a cross that break the rocks and crates in their path
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, each Voltorb also fires four beams (up, down, left, right) that run to the wall. Each beam is 18 px wide, pierces every enemy and deals max(8, 3 × your Damage). They break the rocks and crates they cross and never hurt you.
+- Small Voltorbs from the [Candy Jar](b_tarro.html) do not fire beams.
+- With the [Colress Machine](w_acromaquina.html), every 6th explosion of its Voltorbs fires four thinner beams (12 px) of max(3, 0.8 × your Damage).
+- Devil-deal item: it is offered in devil deals and in treasure rooms.
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

@@ -9,8 +9,12 @@ pools:
 - treasure
 pool_weight: 2
 details:
-- label: Extra
-  value: 25 % par salve
+- label: Chance
+  value: 25 % + 1 % par point de Chance, par attaque (sans plafond)
+- label: Tirs en plus
+  value: 1 ou 2 (une chance sur deux), dans des directions aléatoires
+- label: Dégâts
+  value: Pleins
 icon: items-ps/partner-gift/marble.png
 sprite: true
 names:
@@ -46,5 +50,16 @@ names:
     desc: 有時會額外朝隨機方向射出一到兩發
 ---
 Parfois, vous tirez aussi un ou deux tirs dans des directions aléatoires
+
+## Fonctionnement
+- À chaque attaque, il y a 25 % de chance, +1 % par point de Chance (sans plafond), de tirer aussi **1 ou 2 tirs** (une chance sur deux) dans des directions complètement aléatoires, tout autour de vous.
+- C'est tiré au sort **une fois par attaque**, pas une fois par tir, et pas une deuxième fois pour la salve arrière du [Nœud Destin](lazo_destino.html).
+- Les tirs infligent des dégâts pleins et tirent au sort leurs propres coups critiques et effets au toucher, mais ils comptent comme des tirs secondaires : les effets d'objets qui ne marchent qu'avec vos tirs principaux ne se déclenchent pas avec eux.
+- Ils s'ajoutent à votre salve et ne comptent pas dans la limite de 9 tirs. Les [Lunettes Sable](m_gafas_aislantes.html) ne les divisent pas.
+- La plupart des armes ont aussi droit aux attaques aléatoires en plus.
+- Comment tous les tirs en plus s'additionnent : [Tirs supplémentaires](../mechanics/disparos_extra.html).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours un seul tirage par attaque, même chance.
 
 {{< clip >}}

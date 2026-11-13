@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Damage
+  value: +0.2 for every 10 PokéDollars you carry
+- label: Cap
+  value: +1.8 with 99 P$ (+2 once your wallet holds 100 or more)
 icon: items-ps/valuable-item/stardust.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 每攜帶10寶可幣，傷害+0.2（最多+1.8）
 ---
 Damage +0.2 for every 10 PokéDollars you carry (up to +1.8)
+
+## How it works
+- The bonus is counted live from the coins in your wallet: +0.2 for each full 10 PokéDollars. 9 P$ give nothing, 10 to 19 give +0.2, and so on.
+- Your wallet holds 99 PokéDollars at first, so the bonus is +1.8 at most. On deeper floors the wallet grows (150, then 250), and the bonus then stops at +2.
+- Spending coins lowers the bonus right away.
+- It is a normal flat Damage bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+
+## Stacking
+- A second copy does nothing more.

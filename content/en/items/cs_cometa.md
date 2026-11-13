@@ -22,6 +22,8 @@ details:
   value: '+2'
 - label: Range
   value: '+60'
+- label: Stacking
+  value: Adds up per copy
 icon: items-ps/valuable-item/comet-shard.png
 sprite: true
 names:
@@ -57,3 +59,10 @@ names:
     desc: Speed +0.5, shot speed + and range +60.
 ---
 Speed +0.5, shot speed + and range +60.
+
+## How it works
+- Plain stat bonuses, always on: Speed +0.5, Shot speed +2 and Range +60. There is no condition and no trigger.
+- Found only in the [Observatory](../rooms/observatory.html) (free cosmic item, you pick one of three).
+
+## Stacking
+- Each extra copy adds the same bonuses again (two copies: Speed +1, Shot speed +4, Range +120). Stat bonuses are simply added up (see [Item stacking](../mechanics/acumulacion.html)).

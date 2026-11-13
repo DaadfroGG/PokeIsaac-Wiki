@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 5
+details:
+- label: Duration
+  value: 8 s
+- label: Blocks
+  value: Every kind of damage
 icon: items-ps/other-item/max-repel.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 護盾保護你8秒，免疫一切傷害
 ---
 A shield protects you from everything for 8 seconds
+
+## How it works
+- For 8 seconds a shield surrounds you and nothing can hurt you: shots, contact, explosions and floor hazards.
+- While it lasts you can't use machines that cost health.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 8 seconds.

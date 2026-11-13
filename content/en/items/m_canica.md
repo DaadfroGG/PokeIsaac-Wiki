@@ -9,8 +9,12 @@ pools:
 - treasure
 pool_weight: 2
 details:
-- label: Extra
-  value: 25 % per volley
+- label: Chance
+  value: 25 % + 1 % per Luck, per attack (no cap)
+- label: Extra shots
+  value: 1 or 2 (even odds), in random directions
+- label: Damage
+  value: Full
 icon: items-ps/partner-gift/marble.png
 sprite: true
 names:
@@ -46,5 +50,16 @@ names:
     desc: 有時會額外朝隨機方向射出一到兩發
 ---
 Sometimes you also fire one or two shots in random directions
+
+## How it works
+- Each time you attack, there is a 25 % chance, +1 % per point of Luck (no cap), to also fire **1 or 2 shots** (even odds) in completely random directions, all around you.
+- It is rolled **once per attack**, not once per shot, and not again for the backward volley of [Destiny Knot](lazo_destino.html).
+- The shots deal full damage and roll their own critical hits and effects on hit, but they count as secondary shots: item effects that only work with your main shots don't trigger with them.
+- They are added on top of your volley and don't count towards the 9-shot limit. [Go-Goggles](m_gafas_aislantes.html) don't split them.
+- Most weapons also get the extra random attacks.
+- How all the extra shots add up: [Extra shots](../mechanics/disparos_extra.html).
+
+## Stacking
+- A second copy does nothing more: still one roll per attack, same chance.
 
 {{< clip >}}

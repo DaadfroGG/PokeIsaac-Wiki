@@ -10,7 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Joltik
-  value: 10 % per hit, up to 4
+  value: 10 % per hit (+1 % per Luck), up to 4 at a time
+- label: Bite
+  value: 2× your Damage (at least 2), Bug type
+- label: Lifetime
+  value: 2 bites or 10 s, gone when you leave the room
 icon: items-ps/valuable-item/balm-mushroom.png
 sprite: true
 names:
@@ -46,3 +50,13 @@ names:
     desc: 有時命中敵人時會孵出一隻電電蟲攻擊其他敵人（最多四隻）
 ---
 Sometimes, on hitting an enemy, a Joltik hatches and attacks the others (up to four)
+
+## How it works
+- Each time one of your shots hits an enemy, there is a 10 % chance (+1 % per point of Luck) that a Joltik hatches on it.
+- The Joltik runs at the nearest enemy (up to 600 px away) and bites it for twice your Damage (at least 2), as a Bug-type hit. After its second bite, or after 10 seconds, it disappears.
+- You can have at most 4 Joltiks at the same time. They are temporary [companions](../mechanics/companeros.html): they don't count toward your companion limit and they vanish when you leave the room.
+- Any hit can hatch one, including split shots, but not companion hits or hits that never trigger items (bounces, vines, chain lightning).
+- [Exp. Share](repartir_exp.html) doesn't double the Joltik bites.
+
+## Stacking
+- A second copy does nothing more: same chance, same limit of 4.

@@ -9,6 +9,13 @@ pool_weight: 2
 stats:
 - text: Portée -60
   good: false
+details:
+- label: Perforation
+  value: +1 ennemi par tir
+- label: Portée
+  value: '-60'
+- label: Où
+  value: Dans aucune réserve d'objets en ce moment
 icon: items-ps/curry-ingredient/salad-mix.png
 sprite: true
 names:
@@ -46,3 +53,14 @@ names:
 Vos tirs transpercent les ennemis, mais portent moins loin
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque tir traverse un ennemi et peut en toucher un deuxième. Il ne touche toujours chaque ennemi qu'une fois.
+- Pousser une bombe avec un tir compte aussi comme une perforation.
+- Les -60 de Portée font aller les tirs 60 px moins loin (la portée ne descend jamais sous 120 px).
+
+## Obtention
+- Il n'est dans aucune réserve d'objets en ce moment : salles au trésor, boutiques et boss ne le proposent pas.
+
+## Cumul
+- Les deux parties se cumulent : chaque exemplaire fait traverser un ennemi de plus aux tirs, et retire encore 60 px de portée.

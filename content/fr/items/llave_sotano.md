@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Gain
+  value: 1 clé
+- label: Plafond
+  value: 99 clés
 icon: items-ps/key-item/basement-key.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 給你一把鑰匙
 ---
 Vous donne une clé
+
+## Fonctionnement
+- Vous gagnez une clé.
+- À 99 clés il est inutilisable et vous gardez la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous gagnez 2 clés.

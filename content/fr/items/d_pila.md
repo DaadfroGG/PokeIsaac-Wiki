@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Limite de charge
+  value: Doublée
+- label: Effet
+  value: Deux utilisations de suite
 icon: items-ps/hold-item/cell-battery.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 主動道具可儲存雙倍充能：可以連續使用兩次
 ---
 Votre objet actif peut stocker le double de charge : utilisez-le deux fois de suite
+
+## Fonctionnement
+- Votre objet actif peut stocker le double de sa charge habituelle, affichée sous forme d'une seconde barre à côté de la normale.
+- Quand vous l'utilisez, il dépense un jeu de charges. Si vous étiez complètement plein (charge double), vous gardez l'autre jeu complet et pouvez le réutiliser aussitôt.
+- Si vous étiez entre une charge complète et une charge double, l'utilisation le vide entièrement.
+- Les charges viennent toujours de la fin des salles (1 par salle) : remplir la seconde barre demande donc autant de salles que la première.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Pile ne triple pas la limite.
+- Il fonctionne avec l'[Élixir Max](elixir_max.html) et l'[Huile](eter.html), qui peuvent aussi remplir la seconde barre.

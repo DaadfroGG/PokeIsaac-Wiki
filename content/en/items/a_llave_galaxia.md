@@ -9,6 +9,11 @@ pools:
 - secret
 pool_weight: 2
 charge: 4
+details:
+- label: Goes to
+  value: The secret room, or else the treasure room
+- label: Not during
+  value: A boss fight or a gym battle
 icon: items-ps/key-item/galactic-key.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 帶你前往本層的祕密房間（沒有的話則前往寶物房間）
 ---
 Takes you to the floor's secret room (or, if there isn't one, the treasure room)
+
+## How it works
+- You are taken straight to the floor's secret room, and it shows on your map. If the floor has none, you go to the treasure room instead.
+- Super secret rooms are never chosen.
+- It doesn't work while a boss is alive in the room or during a gym battle; you keep the charge. If you are already in the secret room, it takes you to the treasure room.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: you only travel once.

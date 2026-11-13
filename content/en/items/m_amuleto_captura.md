@@ -6,6 +6,11 @@ category: shot
 family: module
 tier: 2
 pool_weight: 2
+details:
+- label: Homing
+  value: Shots curve toward the nearest enemy
+- label: Turn rate
+  value: About 300° per second
 icon: items-ps/key-item/catching-charm.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
 Your shots home in on enemies
 
 {{< clip >}}
+
+## How it works
+- Every shot steers toward the closest enemy in the room, wherever it is, instead of flying straight. It turns up to about 300° per second, so tight turns are possible but shots can still miss fast enemies.
+- The target is re-chosen constantly: the shot always follows whichever enemy is nearest at that moment.
+- It is the standard homing effect: it combines with other shot items, and some weapon or spiral shots use it to aim.
+
+## Stacking
+- It does not stack: a second copy does not make shots turn faster.

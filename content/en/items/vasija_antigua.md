@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Saves
+  value: 1 coin per combat room cleared (max. 15)
+- label: Next floor
+  value: Drops twice the coins saved, 20 coins at most
+- label: Not counted
+  value: Boss rooms
 icon: items-ps/valuable-item/relic-vase.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 每清空一個房間存下一枚金幣，前往下一層時加倍返還
 ---
 Saves a coin for each room you clear and gives you double when you go down a floor
+
+## How it works
+- Each combat room you clear (gyms count too) puts one coin in the vase, up to 15. You must be alive when the room is cleared.
+- Boss rooms don't add anything.
+- When you go down a floor, the vase empties: it drops twice the saved coins around you, then starts again from 0.
+- It never drops more than 20 coins at once, so saving more than 10 rooms on one floor gives nothing extra.
+
+## Stacking
+- A second copy does nothing more: same vase.

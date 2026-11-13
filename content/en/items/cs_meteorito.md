@@ -15,7 +15,7 @@ details:
 - label: Damage
   value: '+0.5'
 - label: When entering a room with enemies
-  value: Meteorite on the one with the most health (×3 your damage)
+  value: Meteorite on the enemy with the most health (×3 your damage)
 icon: items-ps/key-item/meteorite-shard.png
 sprite: true
 names:
@@ -51,3 +51,13 @@ names:
     desc: Damage +0.5. When you enter a room with enemies, a meteorite falls on the one with the most health (×3 your damage).
 ---
 Damage +0.5. When you enter a room with enemies, a meteorite falls on the one with the most health (×3 your damage).
+
+## How it works
+
+- Adds +0.5 Damage.
+- Each time you enter a room that still has live enemies, a meteorite falls on the enemy with the most current health for 3 times your Damage. This works in boss rooms too.
+- It falls once per room, as soon as the room starts, and not in rooms already cleared.
+
+## Stacking
+
+- Each copy adds +0.5 Damage. The meteorite is just switched on: no second meteorite.

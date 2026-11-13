@@ -8,7 +8,9 @@ tier: 1
 pool_weight: 2
 details:
 - label: Confusion
-  value: 12 % par coup, 3 s
+  value: 12 % par coup (+1 % par Chance), 3 s
+- label: Boss
+  value: Jamais confus
 icon: items-ps/incense/rose.png
 sprite: true
 names:
@@ -44,3 +46,11 @@ names:
     desc: 你的射擊有時會使敵人混亂：敵人會漫無目的地亂走，幾秒內不會攻擊
 ---
 Parfois, vos tirs rendent confus : l'ennemi erre sans but et n'attaque pas pendant quelques secondes
+
+## Fonctionnement
+- Chaque coup sur un ennemi (hors boss) a 12 % de chance (+1 % par Chance) de le rendre confus 3 s.
+- Un ennemi confus ne peut pas attaquer : il erre dans des directions aléatoires à 70 % de sa vitesse, en changeant de direction toutes les 0,5 s.
+- La peur prime sur la confusion si les deux touchent le même ennemi.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente ni la chance ni la durée.

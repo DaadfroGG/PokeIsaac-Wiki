@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Cœurs
+  value: +1 cœur (et soigné)
+- label: Vitesse
+  value: +0,3
+- label: Pièges au sol
+  value: Sans effet sur vous
 icon: items-ps/key-item/acro-bike.png
 sprite: true
 names:
@@ -48,4 +55,13 @@ names:
     name: 越野自行車
     desc: 你會飛行：水窪（毒、酸液、熔岩、水、蛛網……）和冰面都不會影響你；愛心+1、速度+
 ---
-Vous volez : les flaques (poison, acide, lave, eau, toile...) et la glace ne vous affectent pas ; cœur +1 et vitesse +
+Vous roulez au-dessus des pièges au sol : les flaques (poison, acide, lave, eau, sable, toiles...) ne vous affectent pas ; cœur +1 et Vitesse +0,3
+
+## Fonctionnement
+- Au ramassage : +1 cœur max (rempli) et +0,3 de Vitesse.
+- Les zones de pièges au sol ne vous font rien : flaques, acide, lave, eau, sable, toiles, nuages de spores, poudre sommeil et broussailles. Elles ne vous blessent ni ne vous ralentissent.
+- Les plaques de glace et le vent vous affectent toujours ; seuls les Pokémon de type Vol flottent au-dessus.
+- Les tirs et attaques ennemis vous touchent normalement.
+
+## Cumul
+- Le cœur et la Vitesse s'ajoutent de nouveau avec chaque exemplaire. L'immunité aux pièges ne se cumule pas.

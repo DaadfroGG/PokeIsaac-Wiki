@@ -12,6 +12,11 @@ pool_weight: 2
 stats:
 - text: Damage +0.5
   good: true
+details:
+- label: Damage
+  value: '+0.5'
+- label: Electric Pokémon
+  value: Damage ×2
 icon: items-ps/hold-item/light-ball.png
 sprite: true
 names:
@@ -47,3 +52,11 @@ names:
     desc: 傷害+0.5；如果你的寶可夢是電屬性，傷害再×2
 ---
 Damage +0.5; if your Pokémon is Electric, also damage ×2
+
+## How it works
+- Damage +0.5: a flat bonus that follows the [diminishing returns](../mechanics/rendimientos.html) on flat Damage (full up to +3, half to +8, a quarter to +40, then 5 %).
+- If the Pokémon you play is Electric-type, your Damage is also multiplied by 2. This is a Damage multiplier, so it is combined with the other multipliers: they count in full up to ×2.3 in total, then only a quarter of the rest, and never more than ×3 (see [Diminishing returns](../mechanics/rendimientos.html)).
+- A Pokémon of any other type only gets the +0.5.
+
+## Stacking
+- The flat +0.5 is added again by each copy. The ×2 is an on/off effect: a second Light Ball does not make it ×4.

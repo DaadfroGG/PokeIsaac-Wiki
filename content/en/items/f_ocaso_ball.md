@@ -10,6 +10,10 @@ pools:
 - devil
 pool_weight: 2
 details:
+- label: Companion
+  value: Zubat (Poison)
+- label: Bite
+  value: 0.45 × your Damage (at least 1.2), every 1/3 s
 - label: Healing
   value: Half a heart every 8 kills
 icon: items-ps/ball/dusk.png
@@ -49,3 +53,14 @@ names:
 A Zubat chases enemies; every 8 it defeats heal you half a heart
 
 {{< clip >}}
+
+## How it works
+
+- Zubat flies at the nearest enemy (within 700 px) and keeps biting it every third of a second for 0.45 times your Damage (at least 1.2), as Poison-type damage.
+- Every 8th enemy it finishes off with a bite heals you half a heart. Only kills by Zubat itself count.
+- It does not shoot.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

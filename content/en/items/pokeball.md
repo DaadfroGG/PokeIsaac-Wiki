@@ -8,6 +8,15 @@ pools:
 - treasure
 - shop
 charge: 4
+details:
+- label: Charge
+  value: 4 rooms
+- label: Target
+  value: Non-boss enemy at 40 % health or less
+- label: Range
+  value: 220 px
+- label: Companion
+  value: Permanent; power 1.5 + 0.4 per floor
 icon: items/poke-ball.png
 sprite: true
 names:
@@ -43,3 +52,14 @@ names:
     desc: 捕捉一個虛弱的敵人：牠會跟著你
 ---
 Captures a weak enemy: it will follow you
+
+## How it works
+- Charge: 4 rooms. Every room you clear gives 1 charge.
+- It captures the nearest enemy within 220 px that is not a boss and has 40 % of its max health or less. If there is no such enemy, nothing happens and no charge is spent.
+- It can't be used if your [companions](../mechanics/companeros.html) are already at their limit.
+- The captured enemy disappears and joins you as a permanent companion of its own species. It keeps shooting for you for the rest of the run, with the attack style of that species.
+- The companion's damage depends on the floor where you caught it: 1.5, plus 0.4 for every floor already passed (1.5 on the first floor, 1.9 on the second...). It never gets stronger afterwards.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With a [Cell Battery](d_pila.html) the item can store twice its charge.

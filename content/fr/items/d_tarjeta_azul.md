@@ -9,6 +9,11 @@ pools:
 - shop
 - secret
 pool_weight: 2
+details:
+- label: Prix en boutique
+  value: Divisés par 2
+- label: Arrondi
+  value: Au supérieur, minimum 1
 icon: items-ps/key-item/blue-card.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 商店裡所有東西半價
 ---
 Tout coûte moitié prix en boutique
+
+## Fonctionnement
+- Tout ce qui est en vente dans la [boutique](../rooms/shop.html) coûte moitié prix (arrondi au supérieur, jamais moins de 1 Pokédollar).
+- Quand vous le ramassez, les objets et ramassables déjà en vente dans les boutiques de la partie sont réduits de moitié aussitôt ; les boutiques que vous visitez ensuite sont aussi à moitié prix.
+- Il ne change que les prix de boutique.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Carte Bleue ne ramène pas les prix au quart.

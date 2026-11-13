@@ -11,7 +11,7 @@ pools:
 pool_weight: 2
 details:
 - label: Durée
-  value: 5 secondes après avoir utilisé l'actif
+  value: 5 secondes après l'utilisation de l'actif
 - label: Cadence
   value: ×1,5
 - label: Taille des tirs
@@ -51,3 +51,13 @@ names:
     desc: 使用主動道具時：5秒內射速×1.5，且彈變大
 ---
 Quand vous utilisez votre objet actif : 5 secondes de cadence ×1,5 et tirs plus gros
+
+## Fonctionnement
+
+- Chaque fois que vous utilisez votre objet actif, vous gagnez 5 secondes de tir plus rapide (le temps entre les tirs tombe à 67 %, soit une cadence ×1,5) et des tirs 25 % plus gros.
+- Réutiliser l'actif pendant l'effet relance les 5 secondes.
+- La limite de cadence de 12 tirs par seconde s'applique toujours.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

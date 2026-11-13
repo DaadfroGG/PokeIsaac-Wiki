@@ -18,6 +18,17 @@ stats:
   good: false
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Dégâts
+  value: +0,7
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: 1 cœur à la prise
+- label: Vitesse
+  value: −0,2
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items-ps/curry-ingredient/mixed-mushrooms.png
 sprite: true
 names:
@@ -53,3 +64,11 @@ names:
     desc: 傷害+0.7、愛心+1，速度下降
 ---
 Dégâts +0,7 et cœur +1, vitesse -
+
+## Fonctionnement
+- Dégâts +0,7 : un bonus fixe ajouté aux Dégâts de base de votre Pokémon. Tous les bonus fixes de Dégâts des objets sont d'abord additionnés ; les 3 premiers points comptent en entier, de +3 à +8 pour moitié, de +8 à +40 pour un quart et au-delà pour 5 % (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- PV max +1 cœur : augmente vos PV maximum de 1 cœur (jusqu'à la limite de 12 cœurs ; les cœurs d'âme sont à part). Il soigne aussi 1 cœur dès que vous le ramassez. À 12 cœurs, le maximum n'augmente plus, mais vous êtes quand même soigné.
+- Vitesse −0,2 : retirée en entier de votre vitesse de déplacement. Votre vitesse ne peut jamais descendre sous le minimum de 1,6.
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

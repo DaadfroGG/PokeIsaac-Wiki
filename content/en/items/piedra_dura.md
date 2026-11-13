@@ -13,6 +13,15 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Max HP
+  value: +1 heart
+- label: Healing
+  value: 1 heart when picked up
+- label: Knockback
+  value: Strength 6 (3 + 3 per knockback item)
+- label: Bosses
+  value: Never pushed
 icon: items/hard-stone.png
 sprite: true
 names:
@@ -48,3 +57,11 @@ names:
     desc: 愛心 +1 且子彈會擊退
 ---
 Heart +1 and shots that knock back
+
+## How it works
+- You get one more heart container (up to the limit of 12 hearts) and heal 1 heart when you pick it up. This heal ignores the healing limit. At 12 hearts you get no container, but still the heal.
+- Every hit of your shots pushes the enemy away in the direction the shot was flying, much harder than the small push every shot gives.
+- It works on every hit, split shots included. Bosses are never pushed.
+
+## Stacking
+- Both parts stack: each copy gives one more heart (and its heal), and the push gets stronger (strength 6, then 9, then 12…).

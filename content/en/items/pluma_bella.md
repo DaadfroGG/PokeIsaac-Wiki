@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Speed
+  value: Up to +1, grows over 15 s without getting hit
+- label: Reset
+  value: To 0 every time you get hit
 icon: items-ps/valuable-item/pretty-wing.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 越久沒受到傷害，移動越快
 ---
 The longer you go without taking damage, the faster you move
+
+## How it works
+- From the last time you were hit, your Speed rises steadily: +0.07 per second, up to +1 after 15 seconds.
+- The timer keeps running everywhere, also between rooms and in cleared rooms.
+- Any hit you take puts the bonus back to 0.
+
+## Stacking
+- A second copy does nothing more: still +1 at most.

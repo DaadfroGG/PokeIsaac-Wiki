@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Damage
+  value: '+0.8'
+- label: Max HP
+  value: +1 heart
+- label: Healing
+  value: 1 heart when picked up
 icon: items-ps/av-candy/tough.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 傷害+、愛心+1
 ---
 Damage + and heart +1
+
+## How it works
+- The +0.8 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
+- It heals 1 heart when you pick it up; this heal ignores the healing limit.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage) and its heal.

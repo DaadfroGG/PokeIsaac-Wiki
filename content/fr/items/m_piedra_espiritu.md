@@ -6,6 +6,9 @@ category: shot
 family: module
 tier: 1
 pool_weight: 2
+details:
+- label: Traverse les rochers
+  value: Seulement si votre Pokémon est de type Spectre
 icon: items-ps/other-item/odd-keystone.png
 sprite: true
 names:
@@ -41,3 +44,10 @@ names:
     desc: 你的彈會穿過岩石
 ---
 Vos tirs traversent les rochers
+
+## Fonctionnement
+- Vos tirs traversent les rochers au lieu de s'y arrêter. Cela ne fonctionne que pour les Pokémon de type [Spectre](../types/ghost.html) (l'un de leurs types) ou pour les tirs de type Spectre ; pour tout autre Pokémon, l'effet est perdu dès que le tir vole.
+- Les murs arrêtent toujours les tirs.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

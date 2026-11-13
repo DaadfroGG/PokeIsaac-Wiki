@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Portée +80
   good: true
+details:
+- label: Portée
+  value: '+80'
+- label: Orbite
+  value: Environ 0,5 s autour de vous
+- label: Lancement
+  value: Vers votre visée, jusqu'à 260 px devant
 icon: items-ps/key-item/lunar-wing.png
 sprite: true
 names:
@@ -48,3 +55,11 @@ names:
 Vos tirs tournent autour de vous comme des lunes puis partent là où vous visez
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque tir fait d'abord le tour de votre Pokémon comme une lune, en s'écartant en spirale de 26 à 60 px, puis après environ 0,5 s part vers l'endroit que vous visez.
+- Les tirs consécutifs tournent en sens opposés. Une fois lancé, un tir s'incurve vers un ennemi à moins de 95 px s'il est loin de sa trajectoire.
+- Les tirs en orbite disparaissent s'ils touchent un rocher, sauf si vous êtes de type [Spectre](../types/ghost.html).
+
+## Cumul
+- L'orbite ne change pas ; +80 de Portée s'ajoute à chaque exemplaire.

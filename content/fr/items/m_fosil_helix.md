@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Deuxième touche
+  value: ×2 sur chaque ennemi après le premier
+- label: Type Plante
+  value: +1 perforation
 icon: items-ps/fossil/helix.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 你穿透敵人的彈會對第二個敵人造成雙倍傷害；如果你是草屬性，則一定會穿透第一個
 ---
 Vos tirs qui transpercent les ennemis infligent le double au deuxième ; si vous êtes de type Plante, ils transpercent toujours le premier
+
+## Fonctionnement
+- Un tir qui traverse des ennemis inflige le double de dégâts à chaque ennemi touché après le premier.
+- Si votre Pokémon est de type Plante (l'un de ses deux types), chaque tir gagne aussi +1 perforation, donc il traverse le premier ennemi seul.
+- Les explosions et rayons des objets d'arme infligent aussi ×2 à chaque cible après la première.
+- Sans perforation (d'un autre objet ou du type Plante), les tirs s'arrêtent au premier ennemi et le bonus ne se déclenche jamais.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

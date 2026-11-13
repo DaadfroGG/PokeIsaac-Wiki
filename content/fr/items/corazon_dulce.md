@@ -11,6 +11,11 @@ pool_weight: 2
 stats:
 - text: Soin complet
   good: true
+details:
+- label: Soin
+  value: Soin complet
+- label: Cœurs d'âme
+  value: +3 à la prise
 icon: items-ps/medicine/sweet-heart.png
 sprite: true
 names:
@@ -46,3 +51,11 @@ names:
     desc: 完全恢復你的生命，並給你三顆靈魂之心
 ---
 Vous soigne complètement et vous donne trois cœurs d'âme
+
+## Fonctionnement
+- Dès que vous le ramassez, vous êtes entièrement soigné et vous gagnez 3 [cœurs d'âme](../mechanics/corazones_alma.html), dans la limite de 6 cœurs d'âme.
+- Le soin n'est pas retenu par la limite de soin des objets.
+- Il n'augmente pas vos PV maximum.
+
+## Cumul
+- Chaque exemplaire vous soigne entièrement et donne 3 cœurs d'âme de plus à la prise.

@@ -13,7 +13,7 @@ details:
 - label: Compagnon
   value: '1 sur 9 chacun : Pichu, Toudoudou, Mélo, Magby, Natu, Élekid, Nosferapti, Phanpy, Togepi'
 - label: Dégâts
-  value: 2 + 0,4 par étage
+  value: 2 au premier étage, +0,4 par étage
 - label: Durée
   value: Jusqu'à ce que vous quittiez la salle
 icon: items-ps/storage/pokemon-box.png
@@ -51,3 +51,14 @@ names:
     desc: 隨機出現一個夥伴，在這個房間協助你
 ---
 Un compagnon aléatoire apparaît pour vous aider dans cette salle
+
+## Fonctionnement
+- Un bébé compagnon au hasard apparaît à côté de vous et se bat comme d'habitude (Pichu, Natu et Togepi tirent, Mélo et Magby tournent autour de vous, Élekid lance un laser, Nosferapti mord, Phanpy charge, Toudoudou tire plus fort mais plus lentement).
+- Ses dégâts ne dépendent pas des vôtres : 2 au premier étage, +0,4 par étage ensuite. Les objets qui renforcent les compagnons le renforcent aussi.
+- Il est temporaire : il ne compte pas dans votre limite de [compagnons](../mechanics/companeros.html) et s'en va quand vous quittez la salle.
+- Vous pouvez le réutiliser dans la même salle pour en avoir plusieurs.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : deux compagnons apparaissent (tirés séparément).

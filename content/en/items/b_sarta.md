@@ -13,8 +13,14 @@ stats:
 - text: +5 Voltorb
   good: true
 details:
+- label: Voltorbs
+  value: '+5'
 - label: Pickup
-  value: 35 %
+  value: 35 % per explosion, if an enemy is within 110 px
+- label: Pool
+  value: Pokédollar 10 %, key 5 %, Voltorb 5 %, ½ heart 5 %, heart 5 %, Nugget 5 %
+- label: Luck
+  value: No effect
 icon: items-ps/valuable-item/pearl-string.png
 sprite: true
 names:
@@ -50,3 +56,13 @@ names:
     desc: +5顆霹靂電球；在敵人附近爆炸時，有時會留下掉落物
 ---
 +5 Voltorbs; when they explode near an enemy, they sometimes leave a pickup
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, each Voltorb explosion has a 35 % chance to drop a pickup, but only if an enemy is within 110 px of the blast.
+- The drop is one of 7 equal entries, two of which are a Pokédollar: Pokédollar (10 % per explosion), key, Voltorb, half heart, heart or Nugget (5 % each).
+- Small Voltorbs from the [Candy Jar](b_tarro.html) do not drop anything. Luck changes nothing.
+- With the [Colress Machine](w_acromaquina.html), each explosion of its Voltorbs has a 3 % chance (enemy within 100 px) to drop a Pokédollar (40 %), key, Voltorb or half heart (20 % each).
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

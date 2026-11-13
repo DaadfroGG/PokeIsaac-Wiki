@@ -14,6 +14,17 @@ stats:
   good: false
 - text: Damage +1
   good: true
+details:
+- label: Damage
+  value: '+1'
+- label: Fire rate
+  value: -5 (slower)
+- label: Fragments
+  value: 8 per ball (+2 per extra shot in the volley)
+- label: Fragment damage
+  value: 11 % of the ball's damage each
+- label: Fragment range
+  value: 90 to 180 px
 icon: items-ps/partner-gift/polished-mud-ball.png
 sprite: true
 names:
@@ -51,3 +62,12 @@ names:
 Your shots fly in an arc and, on landing, burst into a shower of fragments
 
 {{< clip >}}
+
+## How it works
+- Your shots are lobbed in an arc. They fly over rocks and obstacles and land at the end of their range.
+- When the ball lands, or as soon as it touches an enemy, it bursts into 8 fragments flying in all directions. Each extra shot in your volley adds 2 fragments to every burst (never fewer than 2 fragments).
+- The ball deals its normal damage on a direct hit. Each fragment deals 11 % of the ball's damage, is smaller than the ball and flies 90 to 180 px.
+- Fragments are child shots: they do not trigger on-hit item effects.
+
+## Stacking
+- The arc and burst do not change with more copies, but the stats do: +1 Damage and -5 Fire rate per copy.

@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Hearts
+  value: +1 heart (and heals it)
+- label: Speed
+  value: '+0.3'
+- label: Ground hazards
+  value: Don't affect you
 icon: items-ps/key-item/acro-bike.png
 sprite: true
 names:
@@ -48,4 +55,13 @@ names:
     name: 越野自行車
     desc: 你會飛行：水窪（毒、酸液、熔岩、水、蛛網……）和冰面都不會影響你；愛心+1、速度+
 ---
-You fly: puddles (poison, acid, lava, water, web...) and ice don't affect you; heart +1 and speed +
+You ride over ground hazards: puddles (poison, acid, lava, water, sand, webs...) don't affect you; heart +1 and Speed +0.3
+
+## How it works
+- On pickup: +1 max heart (filled) and +0.3 Speed.
+- Ground hazard patches do nothing to you: puddles, acid, lava, water, sand, webs, spore clouds, sleep powder and brush patches. They neither hurt you nor slow you down.
+- Ice patches and wind still affect you; only Flying-type Pokémon float over those.
+- Enemy shots and attacks hit you as usual.
+
+## Stacking
+- The heart and Speed are added again with each copy. The hazard immunity does not stack.

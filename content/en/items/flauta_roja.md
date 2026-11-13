@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Heal
+  value: Half a heart per enemy in the room
+- label: Cap
+  value: 3 hearts
+- label: Healing limit
+  value: Ignores it
 icon: items-ps/flute/red.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 房間裡每有一個敵人，就回復半顆愛心（最多3顆愛心）
 ---
 You recover half a heart for each enemy in the room (up to 3 hearts)
+
+## How it works
+- You heal half a heart for each living enemy in the room, bosses included, up to 6 half-hearts (3 hearts).
+- This heal ignores the limit on item healing over 10 seconds.
+- With no enemy in the room, or at full health, it can't be used and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you heal twice (up to 6 hearts).

@@ -16,6 +16,13 @@ stats:
   good: true
 - text: Shot spd +2
   good: true
+details:
+- label: Damage
+  value: '+0.5'
+- label: Range
+  value: +60 px
+- label: Shot speed
+  value: '+2'
 icon: items-ps/curry-ingredient/instant-noodles.png
 sprite: true
 names:
@@ -51,3 +58,11 @@ names:
     desc: 傷害+0.5、射程+、彈速更快
 ---
 Damage +0.5, range + and faster shots
+
+## How it works
+- The +0.5 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Range +60: your shots travel 60 px farther, with no diminishing returns.
+- Shot speed +2: your shots fly faster (they reach their range sooner). It never goes below 4.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

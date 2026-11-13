@@ -9,10 +9,10 @@ pools:
 - supersecret
 pool_weight: 1
 details:
-- label: Quand vous battez un ennemi
+- label: Quand vous vainquez un ennemi
   value: Son âme frappe le plus proche
 - label: Dégâts
-  value: 10 % de sa vie max (boss 2 %), au moins vos dégâts
+  value: 10 % de ses PV max (boss 2 %), au moins vos Dégâts
 - label: Portée
   value: 300 px
 icon: items-ps/key-item/dark-stone.png
@@ -50,3 +50,10 @@ names:
     desc: 敵人倒下時，牠的靈魂會跳到最近的敵人身上，奪走其最大生命的10%（頭目為2%）。
 ---
 Quand un ennemi tombe, son âme bondit sur l'ennemi le plus proche et lui retire 10 % de sa vie max (2 % aux boss).
+
+## Fonctionnement
+- Chaque fois que vous vainquez un ennemi, son âme bondit vers l'ennemi le plus proche dans un rayon de 300 px autour de l'endroit où il est tombé.
+- L'âme inflige 10 % des PV max de cet ennemi (2 % pour un boss), ou vos Dégâts si c'est plus.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

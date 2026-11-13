@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: Damage +0.3
   good: true
+details:
+- label: Reach
+  value: 260 px
+- label: Pulls
+  value: Coins, nuggets, keys, Voltorbs, hearts, soul hearts
+- label: Never
+  value: Shop items, chests, held items
+- label: Stat
+  value: Damage +0.3
 icon: items/magnet.png
 sprite: true
 names:
@@ -47,3 +56,13 @@ names:
     desc: 將地上的金幣、鑰匙、霹靂電球和愛心吸向你；傷害+0.3
 ---
 Pulls coins, keys, Voltorbs and hearts on the floor toward you; damage +0.3
+
+## How it works
+- Every pickup lying within 260 px of you slides toward you, faster the closer it is.
+- It skips what you could not take: hearts when your health is full, soul hearts when you have 12, coins when your wallet is full, Voltorbs or keys when you have 99.
+- It never moves shop items, chests or golden chests, or held items lying on the floor.
+- In co-op each pickup goes to the nearest player who has a Magnet and can take it.
+- The Damage +0.3 is a normal stat bonus that follows the [diminishing returns](../mechanics/rendimientos.html).
+
+## Stacking
+- A second copy adds Damage +0.3 again; the pull stays the same.

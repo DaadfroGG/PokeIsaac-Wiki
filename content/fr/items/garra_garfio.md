@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,3
   good: true
+details:
+- label: Dégâts
+  value: +0,3
+- label: Attraction
+  value: Courte attraction vers vous à chaque coup, pas les boss
+- label: Effet secondaire
+  value: Remplace tout le recul de vos tirs
 icon: items-ps/hold-item/grip-claw.png
 sprite: true
 names:
@@ -46,3 +53,11 @@ names:
     desc: 你的彈會把敵人拉向你
 ---
 Vos tirs attirent les ennemis vers vous
+
+## Fonctionnement
+- Chaque coup tire l'ennemi vers vous d'une courte secousse, au lieu de le repousser.
+- Les boss ne sont pas attirés.
+- Tant que vous l'avez, tout le recul que vos tirs causeraient normalement (tirs repoussants, poussées du type Eau, Roche et Sol, [Fossile Nageoire](m_fosil_aleta.html)) est remplacé par cette attraction.
+
+## Cumul
+- Dégâts +0,3 s'ajoute à chaque exemplaire. L'attraction ne devient pas plus forte.

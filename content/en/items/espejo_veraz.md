@@ -51,3 +51,14 @@ names:
     desc: 8秒內，你的倒影會出現在房間另一側，和你一起射擊
 ---
 For 8 seconds, your reflection appears on the other side of the room and shoots with you
+
+## How it works
+- For 8 seconds your reflection appears on the other side of the room, mirrored left to right (if you stand near the left wall, it stands near the right wall).
+- Every time you fire, it fires the same volley flipped left to right: same number of shots, same damage, type and item effects on shots.
+- Its shots count as extra shots, so effects that only work on your main shots don't trigger on them (see [extra shots](../mechanics/disparos_extra.html)).
+- The reflection can't be hurt and doesn't block anything.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 8 seconds.

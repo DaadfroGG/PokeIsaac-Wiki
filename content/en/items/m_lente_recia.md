@@ -17,6 +17,12 @@ stats:
 details:
 - label: Damage
   value: ×1.6 and +4
+- label: Fire rate
+  value: -16 (much slower)
+- label: Size
+  value: +2.5 radius
+- label: Grass type
+  value: A shot that finishes an enemy pierces +1
 icon: items-ps/ev-item/power-lens.png
 sprite: true
 names:
@@ -54,3 +60,10 @@ names:
 Giant shots: damage ×1.6 and +4, but you shoot much slower; if you are Grass-type, shots that finish an enemy keep going
 
 {{< clip >}}
+
+## How it works
+- Your shots are bigger (+2.5 radius), your damage is multiplied by 1.6 and increased by +4, but you fire much more slowly.
+- If your Pokémon is Grass-type, a shot that would defeat a non-boss enemy gains +1 pierce and keeps going.
+
+## Stacking
+- The ×1.6 does not stack. +4 Damage, the slower fire rate and +2.5 radius are added for each copy.

@@ -10,7 +10,7 @@ pools:
 pool_weight: 2
 details:
 - label: Fire rate
-  value: ×3.5
+  value: Delay ×0.28 (about ×3.5 faster, max 12 shots/s)
 - label: Damage
   value: ×0.45
 icon: items-ps/evo-item/whipped-dream.png
@@ -48,3 +48,11 @@ names:
     desc: 射速大幅提升，但每發彈的傷害非常低
 ---
 You fire much, much faster, but each shot deals very little damage
+
+## How it works
+- The time between shots is cut to 28 % of what it was, about 3.5 times as many shots, but every shot deals only 45 % of your damage. Per second, that is roughly 1.6 times your damage.
+- The 12 shots per second limit still applies, so on an already fast build the gain is smaller.
+- The 0.45 is a damage multiplier like the others, so it is counted with them (see [Diminishing returns](../mechanics/rendimientos.html)).
+
+## Stacking
+- It does not stack: a second copy changes nothing.

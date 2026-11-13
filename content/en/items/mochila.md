@@ -14,6 +14,13 @@ stats:
   good: true
 - text: +2 key
   good: true
+details:
+- label: Voltorbs
+  value: '+5'
+- label: Keys
+  value: '+2'
+- label: Cap
+  value: 99 of each
 icon: items-ps/key-item/forage-bag.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: +5顆霹靂電球與+2把鑰匙
 ---
 +5 Voltorbs and +2 keys
+
+## How it works
+- On pickup you immediately get 5 Voltorbs and 2 keys. Each stock is capped at 99: anything above is lost.
+- It has no other effect.
+
+## Stacking
+- Each copy gives another +5 Voltorbs and +2 keys when you pick it up.

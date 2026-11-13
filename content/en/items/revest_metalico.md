@@ -11,9 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Price
-  value: 3 $ per half heart
+  value: 3 PokéDollars per half heart
+- label: Condition
+  value: No soul hearts
 - label: Not enough money
   value: The hit hurts you as usual
+- label: After
+  value: 1.2 s of invulnerability
 icon: items-ps/hold-item/metal-coat.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
     desc: 如果你身上有寶可幣（且沒有靈魂之心），受到攻擊時每半顆愛心會改扣3 P$，而不是扣生命
 ---
 If you carry PokéDollars (and have no soul hearts left), hits take 3 $ per half heart instead of health
+
+## How it works
+- If you have no soul hearts and enough PokéDollars, a hit costs you 3 PokéDollars per half heart of damage instead of health (a 1-heart hit costs 6, always rounded up).
+- The hit is then treated as if it never landed: no damage, you get the usual 1.2 seconds of invulnerability, and your on-hit items don't trigger.
+- If you can't afford the whole price, or you have a soul heart, the hit hurts you as usual.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

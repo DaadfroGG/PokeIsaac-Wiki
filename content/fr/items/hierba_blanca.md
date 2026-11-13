@@ -11,11 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Effet
-  value: Annule les baisses de statistiques de vos objets
+  value: Annule les baisses de stats de vos objets
 - label: Portée
-  value: Ceux que vous avez et ceux que vous ramasserez ensuite
-- label: Vie max
-  value: La restaure aussi (jusqu'au plafond de 12 cœurs)
+  value: Ceux que vous portez et ceux que vous prendrez
+- label: Stats
+  value: Dégâts, Cadence, Vitesse, Portée, Vitesse des tirs, Chance, PV max
+- label: PV max
+  value: Les rend aussi (jusqu'au plafond de 12 cœurs)
 icon: items-ps/hold-item/white-herb.png
 sprite: true
 names:
@@ -51,3 +53,13 @@ names:
     desc: 道具造成的能力下降不再生效（已攜帶的道具也包括在內）
 ---
 Les statistiques réduites par vos objets ne baissent plus (y compris pour ceux que vous portez déjà)
+
+## Fonctionnement
+- Quand vous la prenez, elle passe sur tous les objets que vous portez déjà et retire chaque **ligne de stat négative** : Dégâts en moins, Vitesse en moins, Portée en moins, Vitesse des tirs en moins, Chance en moins, cœurs en moins et Cadence plus lente. Les bonnes lignes de ces objets restent.
+- À partir de là, chaque objet que vous prenez arrive sans ses lignes de stats négatives.
+- Les cœurs de PV max perdus reviennent (jamais au-dessus du plafond de 12 cœurs), mais ils reviennent vides.
+- Elle ne touche que les lignes de stats affichées sur la fiche de l'objet. Les multiplicateurs de dégâts sous ×1 et les autres défauts qui font partie de l'effet d'un objet restent.
+- Si vous perdez plus tard un objet, l'herbe est prise en compte : vous ne perdez pas une baisse qui n'a jamais été appliquée.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus.

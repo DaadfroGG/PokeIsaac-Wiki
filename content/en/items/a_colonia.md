@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Joltik
+  value: 4 to 6
+- label: Damage
+  value: Your Damage ×2 (min. 2) per hit, Bug type
+- label: Each Joltik
+  value: 2 hits, or 10 s
+- label: Lasts
+  value: Until you leave the room
 icon: items-ps/other-item/lure.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 出現4至6隻電電蟲，衝向房間裡的敵人
 ---
 4 to 6 Joltik appear and charge at the room's enemies
+
+## How it works
+- 4 to 6 big Joltik appear around you (same chance for each number).
+- Each one runs at the nearest enemy within 600 px and bites it for twice your Damage (at least 2), as Bug damage. It bites twice, then disappears. Its bites don't trigger your items.
+- Each Joltik disappears after 10 seconds at most (a Joltik with nothing to bite circles around you). They also leave when you leave the room.
+- They attack bosses too. They don't count toward your [companion](../mechanics/companeros.html) limit.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two swarms appear (8 to 12 Joltik).

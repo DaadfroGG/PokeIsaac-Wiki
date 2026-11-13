@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Damage -0.3
   good: false
+details:
+- label: Fire rate
+  value: +4 (0.067 s less between shots)
+- label: Damage
+  value: '-0.3'
 icon: items/quick-claw.png
 sprite: true
 names:
@@ -49,3 +54,11 @@ names:
     desc: 射速 ++，傷害 -0.3
 ---
 Fire rate ++, damage -0.3
+
+## How it works
+- Fire rate +4: 0.067 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- The -0.3 Damage is taken off your flat bonuses; penalties count in full. Your Damage never goes below 0.5.
+- On its own, the +4 fire rate counts as +3.5 (the 4th point is already at half); with other fire-rate items it counts for less.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Fire rate).

@@ -8,6 +8,13 @@ tier: 2
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Compagnons
+  value: ×2 dégâts sur leurs tirs et coups au contact
+- label: XP du banc
+  value: 70 % au lieu de 35 % (Classique et Ligue)
+- label: Où
+  value: Boutiques uniquement
 icon: items-ps/key-item/exp-share.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 夥伴的彈和攻擊造成雙倍傷害
 ---
 Les tirs et coups de vos compagnons infligent le double de dégâts
+
+## Fonctionnement
+- Les tirs et coups au contact de vos [compagnons](../mechanics/companeros.html) infligent deux fois plus de dégâts.
+- Ça s'applique aux dégâts des compagnons, pas aux vôtres : votre stat Dégâts ne change pas, et ce n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
+- Il ne double pas les Statitik du [Champi Suave](m_seta_aroma.html).
+- En modes Classique et Ligue, où les Pokémon gagnent des niveaux, les Pokémon de votre banc reçoivent 70 % de l'expérience de vos victoires au lieu de 35 % (voir [niveaux](../mechanics/niveles_pokemon.html)).
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus : toujours ×2.

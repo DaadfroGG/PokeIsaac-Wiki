@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Cadence
+  value: Un tir toutes les 0,43 s
+- label: Dégâts
+  value: Vos Dégâts ×0,8 (min. 2), Électrik
+- label: Portée
+  value: Ennemis à moins de 520 px
+- label: Durée
+  value: Jusqu'à ce que vous quittiez la salle
 icon: items-ps/key-item/card-key.png
 sprite: true
 names:
@@ -44,3 +53,13 @@ names:
     desc: 你會放下一隻小磁怪，牠會射擊敵人，直到你離開房間
 ---
 Vous posez un Magnéti qui tire sur les ennemis jusqu'à ce que vous quittiez la salle
+
+## Fonctionnement
+- Un gros Magnéti est posé à 30 px devant vous. Il ne bouge jamais.
+- Il tire sur l'ennemi le plus proche à moins de 520 px toutes les 0,43 seconde. Chaque tir inflige 0,8 fois vos Dégâts au moment où vous le posez (au moins 2), en dégâts Électrik ; les objets qui renforcent les compagnons le renforcent aussi. Ses tirs ne portent pas les effets de vos objets.
+- Il est temporaire : il ne compte pas dans votre limite de [compagnons](../mechanics/companeros.html) et part quand vous quittez la salle. Chaque utilisation dans la même salle ajoute un Magnéti.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : deux Magnéti sont posés.

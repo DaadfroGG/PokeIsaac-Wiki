@@ -11,7 +11,13 @@ pool_weight: 2
 charge: 2
 details:
 - label: Damage
-  value: ×10
+  value: ×10 your shot
+- label: Size
+  value: At least 22 px
+- label: Pierce
+  value: Every enemy
+- label: Range
+  value: ×1.3
 icon: items-ps/other-item/dynamax-candy.png
 sprite: true
 names:
@@ -47,3 +53,13 @@ names:
     desc: 你射出一發巨大的彈，造成×10傷害並貫穿所有敵人
 ---
 You fire a giant shot that deals ×10 damage and pierces everyone
+
+## How it works
+- You fire one giant shot in the direction you are facing. It deals 10 times the damage of one of your normal shots, goes through every enemy on its path, and flies 30 % farther than your Range.
+- It is one of your shots: it uses your type, can be a [critical hit](../mechanics/criticos.html) (×10 on top of the ×2) and carries the effects of your items that change shots.
+- It hits bosses normally.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you fire two giant shots.

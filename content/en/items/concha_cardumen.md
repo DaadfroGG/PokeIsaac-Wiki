@@ -48,3 +48,11 @@ names:
     desc: 清空房間時，有時會出現寶箱
 ---
 When you clear a room, a chest sometimes appears
+
+## How it works
+- Each time you clear a normal combat room, there is a 25 % chance that a [chest](../world/chest.html) appears in the room, at a free spot at least 60 px from you. Luck does not change the chance.
+- This chest is on top of the normal reward for clearing the room.
+- Boss rooms and other kinds of room do not give a chest.
+
+## Stacking
+- It is an on/off effect: a second Shoal Shell does not give a second roll.

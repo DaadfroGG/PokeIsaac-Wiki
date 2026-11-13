@@ -11,7 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Puddle
-  value: 2 s, slows and hurts
+  value: 2 s, radius 18 px
+- label: Damage
+  value: 25 % of your damage every 0.25 s (min. 0.5)
+- label: Slow
+  value: 0.7 s, renewed while inside
+- label: Flying
+  value: Not affected
 icon: items-ps/other-item/honey.png
 sprite: true
 names:
@@ -49,3 +55,11 @@ names:
 Your shots leave honey puddles that slow and hurt enemies that step in them
 
 {{< clip >}}
+
+## How it works
+- Your shots drop a honey puddle about every 0.12 s while they fly. A puddle lasts 2 s and has a radius of 18 px.
+- Every 0.25 s each non-flying enemy standing in a puddle takes 25 % of your damage (at least 0.5) and is slowed for 0.7 s.
+- At most 24 puddles exist at once, so the trail thins out in long fights.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Healing
-  value: Half a heart every 25 s
+  value: ½ heart every 25 s of combat
+- label: Counter
+  value: Only counts while enemies are alive in the room
 icon: items-ps/medicine/health-wing.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 戰鬥中每25秒回復半顆愛心
 ---
 Every 25 seconds of combat you recover half a heart
+
+## How it works
+- A timer runs only while the room still has enemies. After 25 seconds of it, you recover half a heart.
+- The timer then restarts, even if you were already at full health (no heart is given then).
+- It ignores the limit on item healing.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

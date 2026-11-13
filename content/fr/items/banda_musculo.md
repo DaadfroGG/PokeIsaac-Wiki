@@ -11,9 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Distance
-  value: À moins de 2 cases de l'ennemi
+  value: À moins de 120 px de l'ennemi (bord)
 - label: Dégâts
-  value: ×1,6
+  value: ×1,6 sur ce coup
 icon: items/muscle-band.png
 sprite: true
 names:
@@ -49,3 +49,13 @@ names:
     desc: 近距離射擊：在離你很近處命中的射擊傷害×1.6
 ---
 À bout portant : les tirs qui touchent tout près de vous infligent ×1,6
+
+## Fonctionnement
+
+- Un coup inflige ×1,6 de dégâts quand vous êtes à moins de 120 px (2 cases) de l'ennemi, mesuré jusqu'à son bord.
+- La vérification se fait à chaque coup, au moment de l'impact : le bonus n'apparaît pas dans la stat de Dégâts et n'est pas limité par le plafond ×3 des multiplicateurs de dégâts.
+- Il s'applique aussi aux tirs de vos compagnons si vous êtes près de la cible.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

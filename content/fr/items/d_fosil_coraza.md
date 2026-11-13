@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Bouclier
-  value: 1 s toutes les 8
+  value: 1 s toutes les 8 s
+- label: Bloque
+  value: Tous les dégâts
 icon: items-ps/fossil/armor.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 每8秒中有1秒，任何攻擊都傷不到你（身上會發光）
 ---
 Toutes les 8 secondes, rien ne vous blesse pendant une seconde (vous brillez)
+
+## Fonctionnement
+- Le jeu déroule un cycle de 8 secondes. Pendant la dernière seconde de chaque cycle, vous brillez et rien ne peut vous blesser.
+- Le cycle tourne en permanence, dans toutes les salles, dès que vous avez l'objet. Il n'est lié ni à un coup ni à une salle.
+- Un coup qui arrive pendant la lueur ne fait rien et ne donne qu'un bref éclair d'invulnérabilité.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

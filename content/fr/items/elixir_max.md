@@ -8,6 +8,11 @@ tier: 2
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Recharge
+  value: +1 charge en plus par salle nettoyée
+- label: Salles
+  value: Salles normales et de boss
 icon: items-ps/medicine/max-elixir.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 主動道具的充能速度加倍
 ---
 Votre objet actif se recharge deux fois plus vite
+
+## Fonctionnement
+- Votre objet actif gagne normalement 1 charge à chaque salle nettoyée. Avec l'Élixir Max, nettoyer une salle normale ou une salle de boss donne 1 charge supplémentaire, soit 2 au total.
+- Il ne dépasse jamais la limite de charge de votre objet actif.
+- Il ne fait rien si vous n'avez pas d'objet actif.
+
+## Cumul
+- C'est un effet tout ou rien : un second Élixir Max ne donne pas une troisième charge par salle.
+- Avec la [Pile](d_pila.html), la charge en plus aide aussi à remplir la seconde barre.

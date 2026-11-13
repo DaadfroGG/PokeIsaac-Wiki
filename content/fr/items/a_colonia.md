@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Statitik
+  value: 4 à 6
+- label: Dégâts
+  value: Vos Dégâts ×2 (min. 2) par coup, type Insecte
+- label: Chaque Statitik
+  value: 2 coups, ou 10 s
+- label: Durée
+  value: Jusqu'à ce que vous quittiez la salle
 icon: items-ps/other-item/lure.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 出現4至6隻電電蟲，衝向房間裡的敵人
 ---
 De 4 à 6 Statitik apparaissent et foncent sur les ennemis de la salle
+
+## Fonctionnement
+- 4 à 6 gros Statitik apparaissent autour de vous (même chance pour chaque nombre).
+- Chacun court vers l'ennemi le plus proche à moins de 600 px et le mord pour deux fois vos Dégâts (au moins 2), en dégâts Insecte. Il mord deux fois puis disparaît. Ses morsures ne déclenchent pas vos objets.
+- Chaque Statitik disparaît au bout de 10 secondes au plus (sans rien à mordre, il tourne autour de vous). Ils s'en vont aussi quand vous quittez la salle.
+- Ils attaquent aussi les boss. Ils ne comptent pas dans votre limite de [compagnons](../mechanics/companeros.html).
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : deux nuées apparaissent (8 à 12 Statitik).

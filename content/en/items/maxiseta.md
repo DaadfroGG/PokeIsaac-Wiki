@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 5
+details:
+- label: Duration
+  value: 8 s
+- label: Damage
+  value: ×2
+- label: Size
+  value: ×1.5
 icon: items-ps/battle-item/max-mushrooms.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 極巨化！體型變大，8秒內傷害×2
 ---
 Dynamax! You grow and deal ×2 damage for 8 seconds
+
+## How it works
+- For 8 seconds your Damage is doubled and your Pokémon grows to 1.5 times its size.
+- The ×2 is a multiplier on your Damage stat (shown on the HUD), so it follows the [diminishing returns](../mechanics/rendimientos.html) on multipliers: on its own it counts in full, but together with other multipliers the total is still capped at ×3.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 8 seconds.

@@ -9,6 +9,15 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Entering a boss room
+- label: Reward
+  value: 1 soul heart
+- label: Frequency
+  value: Once per boss room
+- label: Cap
+  value: 6 soul hearts in total
 icon: items-ps/battle-item/x-defense.png
 sprite: true
 names:
@@ -44,3 +53,11 @@ names:
     desc: 每次進入頭目房間時獲得一顆靈魂之心
 ---
 A soul heart when you enter each boss room
+
+## How it works
+- When you enter a boss room, you gain a full [soul heart](../mechanics/corazones_alma.html).
+- It triggers once per boss room: leaving and re-entering the same one doesn't give another.
+- It stops adding when you already carry 6 soul hearts.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

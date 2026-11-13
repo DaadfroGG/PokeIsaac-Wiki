@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Terminer une salle de boss
+- label: Soin
+  value: 1 cœur
 icon: items-ps/medicine/energy-powder.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 擊敗頭目時，恢復一顆愛心
 ---
 Vaincre un boss vous rend un cœur
+
+## Fonctionnement
+- Quand vous terminez une salle de boss, vous récupérez 1 cœur.
+- Le soin ignore la limite de soin des objets.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

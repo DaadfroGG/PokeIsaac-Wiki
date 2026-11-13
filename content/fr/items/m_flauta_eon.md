@@ -8,6 +8,11 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Dégâts
+  value: ×1,15
+- label: Trajectoire
+  value: 'Zigzag : oscille à gauche et à droite environ toutes les 0,4 s'
 icon: items-ps/key-item/eon-flute.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 你的彈會呈Z字形飛行，傷害提升15 %
 ---
 Vos tirs zigzaguent et frappent 15 % plus fort
+
+## Fonctionnement
+- Vos tirs ondulent de gauche à droite pendant leur vol, ce qui les rend plus difficiles à esquiver et leur fait couvrir une bande plus large.
+- Ils infligent 15 % de dégâts en plus. La portée et la vitesse sont inchangées.
+- Le guidage marche toujours avec lui ; le Rebond fonctionne comme d'habitude.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

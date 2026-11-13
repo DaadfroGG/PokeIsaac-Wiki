@@ -9,6 +9,13 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Soul hearts
+  value: +2 on pickup
+- label: Revive
+  value: Fallen co-op teammates, with 2 hearts
+- label: Invulnerability
+  value: 1.5 s after reviving
 icon: items-ps/medicine/sacred-ash.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 復活瀕死的隊友，並給你兩顆靈魂之心
 ---
 Revives fainted teammates and gives you two soul hearts
+
+## How it works
+- The moment you pick it up you gain 2 [soul hearts](../mechanics/corazones_alma.html), up to the limit of 6 soul hearts.
+- In co-op, every teammate who has fallen (and not left the game) is revived with 2 hearts and is invulnerable for 1.5 seconds.
+- Nothing happens afterwards: it does not revive anyone later on. It works once, at the moment you pick it up.
+- Playing alone you only get the soul hearts.
+
+## Stacking
+- Each copy gives 2 more soul hearts and revives any teammate who is down at that moment.

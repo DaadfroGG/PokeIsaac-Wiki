@@ -11,15 +11,21 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2 fois votre cadence (max. 1,2 s)
+  value: 2 × votre délai entre deux tirs, 0,37 à 1,2 s (min 25 % pour lâcher)
 - label: Blizzard
-  value: De ×0,38 à ×0,78 toutes les 0,25 s, pendant 2,5 à 5 s
+  value: ×0,38 à ×0,78 Dégâts toutes les 0,25 s, pendant 2,5 à 5,3 s
 - label: Zone
-  value: À 90-240 px devant ; rayon de 46 à 98 px
-- label: Gèle
-  value: 'Type Glace seulement : ralentit et, tous les 3 coups, peut geler ; deux blizzards ne se cumulent pas'
+  value: À 90-240 px devant ; rayon de 46 à 98 px (+7 par Taille)
+- label: Type Glace seulement
+  value: Ralentit 0,8 s à chaque coup ; un tick sur 3 peut geler
+- label: Zones
+  value: Jusqu'à 4 avec tirs multiples (31° d'écart), 6 max à l'écran
+- label: Récupération
+  value: 1,5 × votre délai (au moins 0,5 s)
+- label: Équilibrage
+  value: ×0,72
 - label: Si secondaire
-  value: Toutes les 4 attaques, un petit blizzard sur l'ennemi le plus proche
+  value: 'Toutes les 4 attaques : petit blizzard (×0,4, 44 px, 1,8 s) sur l''ennemi le plus proche à moins de 320 px'
 icon: items-ps/hold-item/chill-drive.png
 sprite: true
 names:
@@ -54,6 +60,20 @@ names:
     name: 冰凍卡帶
     desc: 蓄力後在面前釋放暴風雪：一片冰凍區域，會傷害範圍內的所有人；如果你是冰屬性，還會使其減速並冰凍
 ---
-Chargez et lâchez un blizzard devant vous : une zone de glace qui blesse quiconque s'y trouve ; si vous êtes de type Glace, elle ralentit et gèle aussi
+Chargez et lâchez un blizzard devant vous : une zone de glace qui blesse quiconque s'y trouve ; si vous êtes de type Glace, elle ralentit et gèle aussi
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,72. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 1,5 fois votre délai normal entre deux tirs, et jamais moins de 0,5 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Maintenez la touche d'arme pour charger (2 × votre délai entre deux tirs, de 0,37 s à 1,2 s pour une charge complète), relâchez pour poser le blizzard (au moins 25 % de charge requis). La zone apparaît à 90-240 px devant vous selon la charge, avec un rayon de 46 à 98 px (+7 px par Taille), et dure de 2,5 s (petite charge) à 5,3 s (complète).
+- Toutes les 0,25 s, elle inflige ×0,38 à ×0,78 de vos Dégâts (selon la charge) à chaque ennemi dedans ; un même ennemi n'est pas touché deux fois en moins de 0,2 s.
+- **Type Glace seulement :** chaque coup ralentit l'ennemi environ 0,8 s, et un tick sur 3 ajoute une chance de gel. Les autres types n'ont que les dégâts. Plusieurs blizzards ne cumulent ni gel ni ralentissement.
+- Les tirs multiples posent jusqu'à 4 zones en éventail à 31° ; 6 blizzards au maximum peuvent exister en même temps.
+- **Si secondaire :** toutes les 4 attaques, un petit blizzard (×0,4 Dégâts, rayon de 44 px +5 par Taille, 1,8 s) tombe sur l'ennemi le plus proche à moins de 320 px.
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

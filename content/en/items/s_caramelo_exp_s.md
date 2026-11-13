@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Damage -0.3
   good: false
+details:
+- label: Fire rate
+  value: +3 (0.05 s less between shots)
+- label: Speed
+  value: '+0.3'
+- label: Damage
+  value: '-0.3'
 icon: items-ps/exp-candy/s.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 射速和速度 +，傷害 -
 ---
 Fire rate and speed +, damage -
+
+## How it works
+- Fire rate +3: 0.05 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- Speed +0.3 has no diminishing returns. Your speed never goes below 1.6.
+- The -0.3 Damage is taken off your flat bonuses; penalties count in full. Your Damage never goes below 0.5.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Fire rate).

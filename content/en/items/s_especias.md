@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Range +80
   good: true
+details:
+- label: Damage
+  value: '+0.8'
+- label: Range
+  value: +80 px
 icon: items-ps/curry-ingredient/spice-mix.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+、射程+
 ---
 Damage + and range +
+
+## How it works
+- The +0.8 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Range +80: your shots travel 80 px farther, with no diminishing returns.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

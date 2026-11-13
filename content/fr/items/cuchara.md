@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Vitesse -0,3
   good: false
+details:
+- label: Dégâts
+  value: +1,2
+- label: Vitesse
+  value: -0,3
 icon: items/twisted-spoon.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+1.2，速度下降
 ---
 Dégâts +1,2, vitesse -
+
+## Fonctionnement
+- Le +1,2 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- La Vitesse -0,3 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

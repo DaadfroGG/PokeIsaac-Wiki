@@ -9,6 +9,13 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Companion
+  value: Happiny (Normal)
+- label: Reward
+  value: 1 heart
+- label: Every
+  value: 4 cleared rooms
 icon: items-ps/ball/heal.png
 sprite: true
 names:
@@ -46,3 +53,13 @@ names:
 A Happiny follows you and gives you a heart every 4 cleared rooms
 
 {{< clip >}}
+
+## How it works
+
+- Every 4th room you clear, Happiny drops a heart pickup next to itself.
+- It never shoots or fights.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Each companion counts its own rooms.

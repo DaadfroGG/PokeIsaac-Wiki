@@ -6,6 +6,13 @@ category: shot
 family: core
 tier: 2
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 cœur ou moins, sans cœur d'âme
+- label: Effet
+  value: Tous vos tirs sont des coups critiques
+- label: Dégâts critiques
+  value: ×2 (jusqu'à ×3 avec les objets de dégâts critiques)
 icon: items-ps/berry/lansat.png
 sprite: true
 names:
@@ -41,3 +48,14 @@ names:
     desc: 剩一顆愛心以下時，所有子彈都是會心一擊
 ---
 Avec un cœur ou moins, tous vos tirs sont critiques
+
+## Fonctionnement
+
+- Tant que vous avez 1 cœur ou moins de vie rouge et aucun cœur d'âme, chacun de vos tirs est un [coup critique](../mechanics/criticos.html), quelle que soit sa chance de critique normale.
+- Un tir qui allait déjà être critique n'est pas doublé une seconde fois. Les critiques forcés infligent ×2, plus le bonus des objets de dégâts critiques (le bonus compte jusqu'à +1, donc ×3 au maximum).
+- Obtenir un cœur d'âme ou remonter au-dessus de 1 cœur le désactive.
+- Cet objet n'apparaît plus dans les réserves d'objets habituelles.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

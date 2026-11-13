@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Rayon
+  value: 120 px
+- label: Dégâts
+  value: Le double de vos Dégâts (au moins 3)
 icon: items-ps/hold-item/rocky-helmet.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，對附近所有敵人造成傷害
 ---
 Quand vous êtes touché, vous blessez tous les ennemis proches
+
+## Fonctionnement
+- Après un coup reçu, une onde touche tous les ennemis dans un rayon de 120 px autour de vous, boss compris.
+- Chacun subit le double de vos Dégâts (au moins 3).
+- Elle se déclenche à chaque coup et n'a pas de délai de recharge. Elle ne se déclenche pas si le coup a été bloqué ou esquivé.
+- Ce sont des dégâts bruts : ils n'appliquent ni vos effets de tir ni vos bonus de type.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

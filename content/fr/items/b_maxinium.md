@@ -13,8 +13,12 @@ stats:
 - text: +5 Voltorbe
   good: true
 details:
+- label: Voltorbes
+  value: '+5'
 - label: Explosion
-  value: ×1,5 de rayon, ×2 de dégâts
+  value: Rayon ×1,5 (95 → 140 px), dégâts ×2
+- label: Vous blesse
+  value: Oui, sur le plus grand rayon
 icon: items-ps/other-item/dynite-ore.png
 sprite: true
 names:
@@ -49,4 +53,14 @@ names:
     name: 極礦石
     desc: +5顆霹靂電球；爆炸大得多，傷害加倍
 ---
-+5 Voltorbes ; explosions bien plus grandes qui infligent le double de dégâts
++5 Voltorbes ; explosions bien plus grandes qui infligent le double de dégâts
+
+## Fonctionnement
+- Un Voltorbe normal (posé avec la touche bombe) explose après 1,5 s dans un rayon de 95 px pour max(25, 7 × vos Dégâts), et il vous blesse aussi (1 cœur) si vous êtes dans la zone.
+- Avec cet objet, chaque Voltorbe que vous posez a un rayon de 140 px (au lieu de 95, soit environ ×1,5) et inflige ×2 dégâts, soit 2 × max(25, 7 × vos Dégâts). Le Voltorbe paraît aussi plus gros.
+- Vous êtes aussi blessé par la plus grande explosion : restez plus loin.
+- Les petits Voltorbes de la [Bonbonnière](b_tarro.html) ne sont pas agrandis.
+- Avec le [Nikodule](w_acromaquina.html), ses Voltorbes sont 1,5 fois plus gros et leurs explosions gagnent ×1,4 de rayon et ×1,35 de dégâts (son explosion bonus de 15 % gagne ×1,3 de rayon).
+
+## Cumul
+- L'effet est simplement activé : un second exemplaire n'ajoute rien. Chaque exemplaire donne quand même +5 Voltorbes.

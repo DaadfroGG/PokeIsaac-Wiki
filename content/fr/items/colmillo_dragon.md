@@ -13,7 +13,7 @@ details:
 - label: Par coup
   value: +8 % contre cet ennemi
 - label: Plafond
-  value: +72 % (10 coups)
+  value: +72 % (10e coup)
 icon: items/dragon-fang.png
 sprite: true
 names:
@@ -49,3 +49,13 @@ names:
     desc: 撕裂：對同一個敵人的每次攻擊都比上一次多8 %傷害（最多+72 %）
 ---
 Lacération : chaque coup sur un même ennemi inflige 8 % de plus que le précédent (jusqu'à +72 %)
+
+## Fonctionnement
+
+- Chaque ennemi garde son propre compteur de coups reçus. Votre 1er coup inflige des dégâts normaux, le 2e +8 %, le 3e +16 % et ainsi de suite, jusqu'à +72 % dès le 10e coup.
+- Le compteur appartient à l'ennemi et ne se réinitialise pas quand vous arrêtez de tirer ; il disparaît à la mort de l'ennemi.
+- Le bonus s'applique par coup : il n'apparaît pas dans la stat de Dégâts et n'est pas limité par le plafond ×3 des multiplicateurs de dégâts.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

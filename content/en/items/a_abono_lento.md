@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Duration
+  value: 6 s
+- label: Enemies
+  value: Walk at half speed
+- label: Enemy shots
+  value: Shots already flying go half as fast
 icon: items-ps/mulch/damp.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 房間內的敵人進入慢動作6秒
 ---
 The room's enemies move in slow motion for 6 seconds
+
+## How it works
+- Every enemy in the room, bosses included, is slowed for 6 seconds: it walks at half speed. Their attacks themselves are not slowed.
+- Every enemy shot already in the air is slowed to half its speed for the rest of its flight. Shots fired after you use it fly at normal speed.
+- Only the enemies already in the room are affected.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): the slow lasts the same 6 seconds, but shots already in the air are slowed twice (a quarter of their speed).

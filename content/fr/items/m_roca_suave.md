@@ -12,6 +12,10 @@ pool_weight: 2
 details:
 - label: Rebond
   value: Tous les 70 px, moitié des dégâts sur 32 px
+- label: Effets d'objets
+  value: Jamais sur les rebonds
+- label: Pas avec
+  value: Orbe Toxique, Sachet Senteur
 icon: items-ps/hold-item/smooth-rock.png
 sprite: true
 names:
@@ -49,3 +53,14 @@ names:
 Vos tirs ricochent sur le sol comme un galet et, à chaque rebond, blessent les ennemis alentour
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs sautillent sur le sol. Tous les 70 px parcourus (à 70, 140, 210 px…), ils touchent le sol et blessent tous les ennemis à moins de 32 px pour 50 % des dégâts du tir.
+- Le rebond a le type de votre tir : la [table des types](../mechanics/tabla_tipos.html) s'applique, et il peut quand même infliger des statuts (votre [passif de type](../mechanics/pasivas_escalan.html) et les effets de tir comme brûlure ou poison).
+- Les rebonds ne déclenchent jamais les effets d'objets qui demandent un vrai coup (clous explosifs, division, Statitik…).
+- Le tir lui-même vole et touche normalement : un ennemi juste sous un rebond prend le rebond puis le coup normal.
+- Les rebonds touchent aussi les boss.
+- Sans effet sur les tirs qui volent déjà en cloche ([Orbe Toxique](m_toxisfera.html)) ou en spirale ([Sachet Senteur](m_saquito.html)).
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus.

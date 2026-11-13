@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Second hit
+  value: ×2 on every enemy after the first one
+- label: Grass type
+  value: +1 pierce
 icon: items-ps/fossil/helix.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 你穿透敵人的彈會對第二個敵人造成雙倍傷害；如果你是草屬性，則一定會穿透第一個
 ---
 Your shots that pierce enemies deal double to the second one; if you are Grass-type, they always pierce the first
+
+## How it works
+- A shot that passes through enemies deals double damage to every enemy it hits after the first one.
+- If your Pokémon is Grass-type (either type), each shot also gets +1 pierce, so it passes through the first enemy by itself.
+- Explosions and beams from weapon items also deal ×2 to every target after the first.
+- Without pierce (from another item or Grass type) shots stop at the first enemy and the bonus never triggers.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

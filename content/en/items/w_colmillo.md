@@ -10,12 +10,20 @@ pools:
 - boss
 pool_weight: 1
 details:
+- label: Use
+  value: Weapon key (Shift/F, right click, LB)
 - label: Bite
-  value: Your damage ×1.1 in a cone, 60 px
+  value: ×1.1 Damage to every enemy in a cone, 60 px (+7 per Size)
+- label: Bites
+  value: Up to 3 with multishot (40° apart)
 - label: Defense Down
-  value: +12 % damage taken per stack, up to ×3, 4 s
+  value: +12 % damage taken per stack, max 3 stacks (+36 %), 4 s, refreshed by each bite
+- label: Cooldown
+  value: 1.5 × your delay (at least 0.35 s)
+- label: Balance
+  value: ×0.37
 - label: If not in charge
-  value: A fang spins around you (×1.2)
+  value: 'A fang orbits you: ×1.2 Damage, each enemy at most every 0.2 s'
 icon: items-ps/evo-item/razor-fang.png
 sprite: true
 names:
@@ -51,5 +59,18 @@ names:
     desc: 啃咬前方的目標；每次啃咬都會造成「防禦降低」：敵人受到你所有攻擊的傷害都會提高（最多+36 %）
 ---
 You bite whatever is in front of you; each bite leaves Defense Down: the enemy takes more damage from everything you do (up to +36 %)
+
+## How it works
+- It is a **weapon**: it only works as your equipped weapon ([Equipped weapon](../mechanics/arma_principal.html)); with another main weapon it only adds the small effect listed under "If not in charge". Your normal shots are not replaced.
+- Balance: while this is your equipped weapon, the damage it deals is further multiplied by ×0.37. The multipliers below are applied before it.
+- After each attack the weapon is ready again after 1.5 times your normal delay between shots, and never less than 0.35 s.
+- Crits, burn, poison, slow and the other effects of your items apply to its hits, and its hits carry your Pokémon's type. See [Weapons and shot effects](../mechanics/armas.html).
+- Each attack is a bite in a cone in front of you: reach 60 px (+7 per Size), about 49° each side. It hits every enemy in the cone for ×1.1 of your Damage and breaks crates in front of you.
+- Multishot adds bites (up to 3, 40° apart); extra-direction items add more.
+- **Defense Down:** each bite on an enemy that survives adds a stack: +12 % damage taken from your hits, up to 3 stacks (+36 %). Stacks last 4 s and each new bite restarts the 4 s; after they expire it starts again at one stack.
+- **If not in charge:** a fang circles you about once a second and hits enemies it touches (14 px +3 per Size) for ×1.2 Damage, each enemy at most every 0.2 s. It does not apply Defense Down.
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

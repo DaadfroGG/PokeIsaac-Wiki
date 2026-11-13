@@ -16,7 +16,15 @@ stats:
   good: true
 details:
 - label: Explosion
-  value: ×0,8 de dégâts, 55 px ; empoisonne seulement si vous êtes de type Poison
+  value: ×0,8 de dégâts, 55 px ; empoisonne seulement si vous êtes de type Poison
+- label: Cadence
+  value: -10 (0,167 s de plus entre les tirs)
+- label: Dégâts
+  value: '+1'
+- label: Portée
+  value: ×0,8
+- label: Prix chez Darkrai
+  value: 1 réceptacle de cœur (parfois 3 cœurs d'âme)
 icon: items-ps/hold-item/toxic-orb.png
 sprite: true
 names:
@@ -54,3 +62,19 @@ names:
 Vos tirs volent en arc et explosent à l'atterrissage (sans vous blesser ; ils empoisonnent si votre Pokémon est de type Poison) ; vous tirez plus lentement
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs volent en cloche : ils passent au-dessus des rochers et vont 20 % moins loin.
+- Un tir explose quand il retombe au bout de sa portée, ou dès qu'il touche un ennemi (cet ennemi prend le tir et l'explosion).
+- L'explosion blesse chaque ennemi à moins de 55 px (+6 px pour chaque objet qui grossit les tirs) pour 80 % des dégâts du tir. Elle a votre type et peut infliger les statuts de vos tirs. Elle blesse aussi les boss.
+- Si votre Pokémon est de type [Poison](../types/poison.html), chaque ennemi pris dans l'explosion est empoisonné 2,5 s.
+- L'explosion ne vous blesse jamais. Elle casse les rochers et les objets du décor proches et ouvre les salles secrètes dont elle atteint le mur.
+- La perte de cadence compte en entier (les ralentissements échappent aux [rendements décroissants](../mechanics/rendimientos.html)). Le +1 en Dégâts est un bonus fixe normal.
+- Les rebonds de la [Roche Lisse](m_roca_suave.html) ne marchent pas sur les tirs en cloche.
+- Avec une arme spéciale au lieu des tirs normaux, chaque coup a 25 % de chances (+1 % par point de Chance) de provoquer la même explosion, pour 80 % de vos Dégâts.
+
+## Où le trouver
+- Salles au trésor et Salle Distorsion ([pacte de Darkrai](../rooms/devil.html)) : là, il coûte 1 réceptacle de cœur, ou parfois 3 cœurs d'âme.
+
+## Cumul
+- La cloche et l'explosion ne changent pas avec un deuxième exemplaire. Les stats s'ajoutent à nouveau : encore -10 en cadence et +1 en Dégâts.

@@ -8,6 +8,13 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Enemies
+  value: +1 per combat room
+- label: Extra coin
+  value: 20 % per enemy killed
+- label: Coin limit
+  value: 3 per room, 6 + ½ floor per floor
 icon: items-ps/other-item/max-lure.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 每個房間的敵人更多，但會掉落更多金幣
 ---
 More enemies in each room, but they drop more coins
+
+## How it works
+- When a normal combat room is filled, one extra enemy appears: a copy of a random enemy already in the room, with the same health, speed and damage, placed at least 170 px away from you.
+- Each enemy you defeat has a 20 % chance to drop one extra [coin](../world/coin.html), on top of its normal drop.
+- These extra coins have limits: at most 3 per room and, per floor, 6 plus half the floor number (rounded).
+- It does not affect boss rooms or other kinds of room.
+
+## Stacking
+- It is an on/off effect: a second copy does not add a second enemy or raise the coin chance.
+- It cancels out the [Clear Amulet](amuleto_puro.html), which removes one enemy from the same rooms.

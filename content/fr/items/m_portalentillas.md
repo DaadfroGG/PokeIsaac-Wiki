@@ -11,6 +11,11 @@ pool_weight: 2
 stats:
 - text: Cadence -
   good: false
+details:
+- label: Tirs par salve
+  value: 3 (+2 par exemplaire en plus, max 9)
+- label: Cadence
+  value: -8 (plus lente)
 icon: items-ps/key-item/lens-case.png
 sprite: true
 names:
@@ -48,3 +53,10 @@ names:
 Tir triple, mais vous tirez plus lentement
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque salve tire 3 tirs au lieu d'un seul, en éventail. Vous tirez plus lentement.
+- Le nombre total de tirs d'une salve est plafonné à 9 (voir [Tirs supplémentaires](../mechanics/disparos_extra.html)).
+
+## Cumul
+- Chaque exemplaire ajoute 2 tirs de plus par salve (5 avec deux exemplaires, jusqu'à 9) et -8 de Cadence.

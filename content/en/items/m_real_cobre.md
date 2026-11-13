@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: PokéDollar
-  value: 5 % per hit
+  value: 5 % per hit, +0.5 % per point of Luck
+- label: Cap
+  value: 6 coins per room
+- label: Shots
+  value: Your main shots only
 icon: items-ps/valuable-item/relic-copper.png
 sprite: true
 names:
@@ -47,3 +51,12 @@ names:
     desc: 擊中敵人時，有時會掉落一枚寶可幣
 ---
 Hitting an enemy sometimes makes it drop a PokéDollar
+
+## How it works
+- Each time one of your shots hits an enemy, there is a 5 % chance, plus 0.5 % per point of Luck, that a coin drops at the enemy's feet.
+- At most 6 coins per room this way.
+- Only your main shots count: extra shots created by other items (split shots, chain bolts), companion shots and secondary weapon effects don't.
+- Bosses count like any other enemy.
+
+## Stacking
+- A second copy does nothing more: same chance, same cap of 6.

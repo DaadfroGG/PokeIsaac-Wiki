@@ -9,6 +9,13 @@ pools:
 - boss
 pool_weight: 2
 charge: 4
+details:
+- label: Radius
+  value: 160 px around you
+- label: Damage
+  value: Your Damage ×14 (at least 28)
+- label: You
+  value: Not hurt
 icon: items-ps/tm/normal.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 在你周圍引發不會傷害你的大爆炸
 ---
 A big explosion around you that doesn't hurt you
+
+## How it works
+- A big explosion goes off around you. Every enemy within 160 px takes 14 times your Damage (at least 28), bosses included.
+- It can be a [critical hit](../mechanics/criticos.html) and triggers your items' on-hit effects.
+- It never hurts you. It breaks every rock, crate and barrel within 160 px and opens hidden secret-room doors close to you.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two explosions go off.

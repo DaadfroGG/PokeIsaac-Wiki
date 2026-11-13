@@ -6,6 +6,13 @@ category: shot
 family: module
 tier: 2
 pool_weight: 2
+details:
+- label: Éclairs
+  value: 1 par coup
+- label: Portée
+  value: Ennemis à moins de 180 px de celui touché
+- label: Dégâts de l'éclair
+  value: 60 % du tir
 icon: items-ps/apricorn/yellow.png
 sprite: true
 names:
@@ -41,3 +48,11 @@ names:
     desc: 你的彈會放出跳向附近敵人的電弧
 ---
 Vos tirs libèrent des éclairs qui sautent sur les ennemis proches
+
+## Fonctionnement
+- Chaque coup sur un ennemi envoie un éclair vers un autre ennemi situé à moins de 180 px de lui. L'éclair inflige 60 % des dégâts du tir.
+- L'éclair est instantané. Il ne déclenche pas d'effets d'objets et ne rebondit pas à nouveau, et il ne blesse pas l'ennemi touché.
+- S'il n'y a pas d'autre ennemi à proximité, rien ne se passe. Les éclairs sont des dégâts électriques et apparaissent comme un éclair de foudre.
+
+## Cumul
+- Chaque exemplaire supplémentaire ajoute un éclair de plus par coup (dans la limite des ennemis à portée), chacun toujours à 60 % de dégâts.

@@ -10,6 +10,8 @@ pools:
 pool_weight: 2
 charge: 3
 details:
+- label: Charge
+  value: 3 rooms
 - label: Duration
   value: 5 seconds
 - label: Awakening
@@ -51,3 +53,14 @@ names:
     desc: 讓敵人睡著5秒；對睡著的敵人的第一次攻擊造成三倍傷害並把牠叫醒
 ---
 Puts enemies to sleep for 5 seconds; the first hit on a sleeping one deals triple and wakes it
+
+## How it works
+- Charge: 3 rooms. Every room you clear gives 1 charge, so it is ready again after 3 cleared rooms.
+- Every living enemy in the room that is not a boss falls asleep for 5 seconds. A sleeping enemy can't move or attack. Bosses are never affected, but their minions are.
+- The first hit on a sleeping enemy deals triple damage (×3) and wakes it up at once. This comes on top of your other damage bonuses.
+- If a sleeping enemy isn't hit, it wakes up on its own after 5 seconds.
+- It can't be used when there is no non-boss enemy left in the room, and then no charge is spent.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With a [Cell Battery](d_pila.html) the item can store twice its charge.

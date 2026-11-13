@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Cadence -
   good: false
+details:
+- label: Dégâts
+  value: '+2'
+- label: Cadence
+  value: -4 (0,067 s de plus entre les tirs)
+- label: Prix chez Darkrai
+  value: 2 réceptacles de cœur
 icon: items/choice-band.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 傷害+2、射速-
 ---
 Dégâts +2, cadence -
+
+## Fonctionnement
+- Le +2 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Cadence -4 : 0,067 s de plus entre deux tirs. Les ralentissements comptent toujours en entier.
+- Dans la Salle Distorsion ([pacte de Darkrai](../rooms/devil.html)), il coûte 2 réceptacles de cœur.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

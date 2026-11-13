@@ -8,6 +8,13 @@ tier: 2
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Faille après un boss
+  value: S'ouvre toujours (100 %)
+- label: Mène à
+  value: Salle Céleste (Salle Distorsion après un pacte avec Darkrai)
+- label: Jamais
+  value: Au premier étage, ni aux étages de fin de partie
 icon: items-ps/medicine/resist-wing.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 每次打倒頭目後，一定會開啟一道裂縫：如果你從未和達克萊伊訂下契約，會是通往天界房間的金色裂縫；否則是通往扭曲房間的裂縫
 ---
 Après chaque boss, une faille s'ouvre toujours : la dorée vers la Salle Céleste si vous n'avez jamais pactisé avec Darkrai ; sinon, celle de la Distorsion
+
+## Fonctionnement
+- Après chaque boss, une faille s'ouvre toujours. Normalement, elle ne s'ouvre que par hasard.
+- La faille mène à la [Salle Céleste](../rooms/angel.html) (la faille dorée) tant que personne dans l'équipe n'a jamais conclu de pacte avec Darkrai ; sinon, c'est la [Salle Distorsion](../rooms/devil.html).
+- Aucune faille ne s'ouvre au premier étage, ni dans la dernière partie d'une partie Classique.
+- Elle l'emporte sur les [Crins Sombres](d_crin_negra.html), qui forcent la Salle Distorsion, sauf si un pacte avec Darkrai a été conclu.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Plume Armure ne change rien. En coop, un seul coéquipier qui l'a suffit.

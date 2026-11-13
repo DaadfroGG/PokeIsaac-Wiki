@@ -16,6 +16,15 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Max health
+  value: +1 heart
+- label: Heal
+  value: 1 heart on pickup
+- label: Speed
+  value: '+0.3'
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/curry-ingredient/fresh-cream.png
 sprite: true
 names:
@@ -51,3 +60,10 @@ names:
     desc: 愛心 +1，速度 +
 ---
 Heart +1 and speed +
+
+## How it works
+- Max health +1 heart: raises your maximum health by 1 heart (up to the limit of 12 hearts; soul hearts are separate). It also heals 1 heart the moment you pick it up. At 12 hearts the maximum no longer grows, but you are still healed.
+- Speed +0.3: added straight to your movement speed, with no diminishing returns. Your speed can never drop below the minimum of 1.6.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

@@ -9,6 +9,15 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Puddle
+  value: 34 px radius, 2.7 s
+- label: Damage
+  value: 25 % of your Damage every 0.25 s (water)
+- label: Slow
+  value: 1.2 s
 icon: items-ps/incense/wave.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 受到攻擊時，會留下一灘使敵人減速並受傷的水窪
 ---
 When you get hit, you leave a puddle that slows and hurts enemies
+
+## How it works
+- After you take a hit, a puddle appears under you. It lasts about 2.7 seconds and has a radius of 34 px.
+- Every 0.25 seconds, each enemy standing in it takes Water-type damage equal to 25 % of your Damage (at least 0.5) and is slowed for 1.2 seconds (refreshed as long as it stays inside).
+- Flying enemies are not affected. The puddle's hits don't trigger your shot effects.
+- Each hit you take makes a new puddle.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

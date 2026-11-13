@@ -74,3 +74,7 @@ Un Feuforêve flotte dans la salle avec une aura qui blesse les ennemis ; si vo
 - Ces dégâts partent de vos dégâts actuels, donc ils profitent aussi du ×1,5 quand vous êtes dedans.
 - Ce sont des dégâts de type [Spectre](../types/ghost.html) pour la table des types, quel que soit le type de votre Pokémon.
 - Ils ne repoussent pas les ennemis et ne déclenchent pas vos objets « à l'impact ».
+
+## Cumul
+
+- Chaque exemplaire amène un autre Feuforêve ; chacun a sa propre aura et le ×1,5 ne s'applique pas deux fois (vous êtes dans une aura ou non). Voir [Compagnons](../mechanics/companeros.html) pour la limite.

@@ -48,3 +48,11 @@ names:
     desc: 清空房間時，有時會出現寶箱
 ---
 Quand vous nettoyez une salle, un coffre apparaît parfois
+
+## Fonctionnement
+- Chaque fois que vous nettoyez une salle de combat normale, il y a 25 % de chances qu'un [coffre](../world/chest.html) apparaisse dans la salle, à un endroit libre à au moins 60 px de vous. La Chance ne change pas cette probabilité.
+- Ce coffre s'ajoute à la récompense normale de fin de salle.
+- Les salles de boss et les autres types de salle ne donnent pas de coffre.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Coquille Tréfonds ne donne pas un second tirage.

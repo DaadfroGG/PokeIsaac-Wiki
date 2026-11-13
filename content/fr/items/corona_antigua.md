@@ -50,3 +50,11 @@ names:
     desc: 你就是國王：有時進入房間時，會有敵人投降並留下一枚金幣給你
 ---
 Vous êtes le roi : parfois, en entrant dans une salle, un ennemi se rend et vous laisse une pièce
+
+## Fonctionnement
+- Quand vous entrez dans une salle de combat normale, chaque ennemi a 15 % de chances de se rendre : il quitte la salle et laisse 1 [pièce](../world/coin.html) à l'endroit où il se trouvait.
+- Il ne prend jamais les boss, ni le dernier ennemi de la salle : la salle n'est donc jamais vidée.
+- Ces pièces comptent dans la limite des pièces lâchées par les objets : 3 au maximum par salle et, par étage, 6 plus la moitié du numéro d'étage (arrondi).
+
+## Cumul
+- C'est un effet tout ou rien : un second Vieux Tortil ne donne pas un second tirage.

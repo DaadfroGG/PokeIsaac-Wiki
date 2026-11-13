@@ -13,7 +13,9 @@ details:
 - label: Tirs
   value: Jusqu'à 40, désormais à vous
 - label: Dégâts
-  value: Vos dégâts (minimum 1 cœur)
+  value: Vos Dégâts (au moins 2)
+- label: Visée
+  value: Chacun vers l'ennemi le plus proche
 icon: items-ps/key-item/sun-flute.png
 sprite: true
 names:
@@ -49,3 +51,15 @@ names:
     desc: 房間內的敵方彈會倒戈，轉而攻擊敵人
 ---
 Les tirs ennemis de la salle changent de camp et visent les ennemis
+
+## Fonctionnement
+- Jusqu'à 40 tirs ennemis de la salle deviennent vos tirs. Chacun se tourne vers l'ennemi le plus proche de lui et part vers lui.
+- Chaque tir converti inflige vos Dégâts (au moins 2) avec votre type, porte vos bonus de tir et vos statuts, et va jusqu'à 520 px. Sa taille dépend du tir d'origine.
+- Ils comptent comme des tirs supplémentaires, donc les effets réservés à vos tirs principaux ne se déclenchent pas avec eux.
+- Ils touchent aussi les boss : une salve d'un boss peut lui être renvoyée.
+- Sans tir ennemi dans la salle, rien ne se passe et vous gardez la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : une seconde vague convertit jusqu'à 40 tirs ennemis de plus, s'il en reste.

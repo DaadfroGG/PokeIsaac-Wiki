@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Clearing a boss room
+- label: Heal
+  value: 1 heart
 icon: items-ps/medicine/energy-powder.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 擊敗頭目時，恢復一顆愛心
 ---
 Defeating a boss heals you one heart
+
+## How it works
+- When you clear a boss room, you recover 1 heart.
+- The healing ignores the limit on item healing.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

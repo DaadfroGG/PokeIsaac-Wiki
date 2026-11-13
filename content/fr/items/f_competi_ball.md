@@ -8,6 +8,15 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Compagnon
+  value: Phanpy (Sol)
+- label: Charge
+  value: Environ 0,6 s, environ 240 px
+- label: Dégâts
+  value: 2,5 × vos Dégâts (au moins 3)
+- label: Délai
+  value: 2,5 s
 icon: items-ps/ball/sport.png
 sprite: true
 names:
@@ -45,3 +54,15 @@ names:
 Un Phanpy fonce en roulant là où vous tirez, puis revient
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Phanpy vous suit et ne tire pas. Quand vous tirez, qu'il reste des ennemis et qu'il est prêt, il roule dans la direction de votre tir pendant environ 0,6 seconde (environ 240 px), puis revient vous suivre.
+- Chaque ennemi sur son passage est touché une fois par charge pour 2,5 fois vos Dégâts (au moins 3), en dégâts de type Sol. Les ennemis non-boss sont aussi repoussés ; les [boss](../mechanics/jefes_adaptativos.html) non.
+- Il lui faut 2,5 secondes entre deux charges.
+- Contrairement aux compagnons qui tirent, les dégâts de sa charge dépendent de votre propre stat de Dégâts.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément.

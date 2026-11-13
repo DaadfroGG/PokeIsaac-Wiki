@@ -14,6 +14,17 @@ stats:
   good: false
 - text: Dégâts +1
   good: true
+details:
+- label: Dégâts
+  value: '+1'
+- label: Cadence
+  value: -5 (plus lente)
+- label: Éclats
+  value: 8 par boule (+2 par tir supplémentaire dans la salve)
+- label: Dégâts des éclats
+  value: 11 % des dégâts de la boule chacun
+- label: Portée des éclats
+  value: 90 à 180 px
 icon: items-ps/partner-gift/polished-mud-ball.png
 sprite: true
 names:
@@ -51,3 +62,12 @@ names:
 Vos tirs volent en arc et, en retombant, éclatent en une pluie de fragments
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs sont lancés en cloche. Ils passent au-dessus des rochers et des obstacles et retombent en bout de portée.
+- Quand la boule retombe, ou dès qu'elle touche un ennemi, elle explose en 8 éclats qui partent dans toutes les directions. Chaque tir supplémentaire de votre salve ajoute 2 éclats à chaque explosion (jamais moins de 2 éclats).
+- La boule inflige ses dégâts normaux en touche directe. Chaque éclat inflige 11 % des dégâts de la boule, est plus petit qu'elle et vole de 90 à 180 px.
+- Les éclats sont des tirs secondaires : ils ne déclenchent pas les effets d'objets au contact.
+
+## Cumul
+- L'arc et l'explosion ne changent pas avec plus d'exemplaires, mais les stats si : +1 Dégâts et -5 Cadence par exemplaire.

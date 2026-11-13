@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Map
+  value: Whole floor, secret room included
+- label: Gain
+  value: 1 soul heart (cap 6)
 icon: items-ps/key-item/camping-gear.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 你能看到整層地圖（包括祕密房間），並獲得一顆靈魂之心
 ---
 You see the whole floor map, secret room included, and gain a soul heart
+
+## How it works
+- The whole floor map is revealed, secret room included, until you leave the floor.
+- You also gain one [soul heart](../mechanics/corazones_alma.html) (up to 6).
+- You can use it again on the same floor just for the soul heart. It is only refused when the map is already revealed and you have 6 soul hearts; then you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you gain 2 soul hearts.

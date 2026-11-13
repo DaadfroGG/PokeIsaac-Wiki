@@ -16,6 +16,8 @@ details:
   value: 20 %
 - label: Luck
   value: '-2'
+- label: After a block
+  value: 0.7 s of invulnerability
 icon: items-ps/hold-item/wide-lens.png
 sprite: true
 names:
@@ -51,3 +53,12 @@ names:
     desc: 20% of the hits you take do nothing, but luck abandons you (-2).
 ---
 20% of the hits you take do nothing, but luck abandons you (-2).
+
+## How it works
+- Each hit that would hurt you has a 20 % chance to do nothing at all. The check is separate for every hit; Luck does not change it.
+- When a hit is blocked this way, you get 0.7 seconds of invulnerability.
+- Blocked hits don't trigger your on-hit items, since nothing hit you.
+- The Luck penalty is permanent while you own the item.
+
+## Stacking
+- The 20 % does not stack with a second copy. The -2 Luck is added again.

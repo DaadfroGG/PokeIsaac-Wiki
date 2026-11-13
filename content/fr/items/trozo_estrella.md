@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Chance +1
   good: true
+details:
+- label: En le prenant
+  value: Chance +1
+- label: Chaque salle secrète
+  value: Chance +1 la première fois que vous y entrez
+- label: Pas comptées
+  value: Salles supersecrètes
 icon: items-ps/valuable-item/star-piece.png
 sprite: true
 names:
@@ -46,3 +53,12 @@ names:
     desc: 每找到一間祕密房間，幸運+1
 ---
 Chance +1 pour chaque salle secrète trouvée
+
+## Fonctionnement
+- Chance +1 en le prenant.
+- Ensuite, chaque fois que vous entrez pour la première fois dans une salle secrète, vous gagnez Chance +1 pour le reste de la partie. Retourner dans la même salle ne donne rien.
+- Les salles supersecrètes ne comptent pas.
+- La Chance suit les [rendements décroissants](../mechanics/rendimientos.html) : pleine jusqu'à 10, puis un quart.
+
+## Cumul
+- Un deuxième exemplaire ajoute son Chance +1, mais le bonus des salles secrètes reste à +1 par salle.

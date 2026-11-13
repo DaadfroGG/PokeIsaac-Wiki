@@ -6,6 +6,13 @@ category: shot
 family: module
 tier: 2
 pool_weight: 2
+details:
+- label: Bolts
+  value: 1 per hit
+- label: Reach
+  value: Enemies within 180 px of the one hit
+- label: Bolt damage
+  value: 60 % of the shot
 icon: items-ps/apricorn/yellow.png
 sprite: true
 names:
@@ -41,3 +48,11 @@ names:
     desc: 你的彈會放出跳向附近敵人的電弧
 ---
 Your shots release bolts that jump to nearby enemies
+
+## How it works
+- Every hit on an enemy sends a lightning bolt to another enemy within 180 px of it. The bolt deals 60 % of the shot's damage.
+- The bolt is instant. It does not trigger item effects and cannot chain again, and it does not hurt the enemy that was hit.
+- If there is no other enemy near, nothing happens. Bolts are electric damage and show up as a flash of lightning.
+
+## Stacking
+- Each extra copy adds one more bolt per hit (up to the number of enemies within reach), each still at 60 % damage.

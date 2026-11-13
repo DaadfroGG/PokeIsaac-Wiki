@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 5
+details:
+- label: Durée
+  value: 8 s
+- label: Bloque
+  value: Tous les dégâts
 icon: items-ps/other-item/max-repel.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 護盾保護你8秒，免疫一切傷害
 ---
 Un bouclier vous protège de tout pendant 8 secondes
+
+## Fonctionnement
+- Pendant 8 secondes un bouclier vous entoure et rien ne peut vous blesser : tirs, contact, explosions et pièges au sol.
+- Tant qu'il dure, vous ne pouvez pas utiliser les machines qui coûtent des PV.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : le minuteur repart simplement à 8 secondes.

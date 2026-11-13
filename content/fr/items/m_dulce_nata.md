@@ -10,7 +10,7 @@ pools:
 pool_weight: 2
 details:
 - label: Cadence
-  value: ×3,5
+  value: Délai ×0,28 (environ ×3,5 plus rapide, max 12 tirs/s)
 - label: Dégâts
   value: ×0,45
 icon: items-ps/evo-item/whipped-dream.png
@@ -48,3 +48,11 @@ names:
     desc: 射速大幅提升，但每發彈的傷害非常低
 ---
 Vous tirez bien, bien plus vite, mais chaque tir inflige très peu de dégâts
+
+## Fonctionnement
+- Le temps entre deux tirs tombe à 28 % de sa valeur, soit environ 3,5 fois plus de tirs, mais chaque tir n'inflige que 45 % de vos dégâts. Par seconde, cela fait environ 1,6 fois vos dégâts.
+- La limite de 12 tirs par seconde s'applique toujours : sur un build déjà rapide, le gain est plus faible.
+- Le 0,45 est un multiplicateur de dégâts comme les autres, il est donc compté avec eux (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

@@ -12,6 +12,15 @@ pool_weight: 1
 stats:
 - text: Damage -0.3
   good: false
+details:
+- label: Shots
+  value: +1 per volley
+- label: Spread
+  value: About 7° each side of where you aim
+- label: Damage
+  value: '-0.3'
+- label: Cap
+  value: 9 shots per volley
 icon: items/tm-normal.png
 sprite: true
 names:
@@ -49,3 +58,11 @@ names:
 Double shot
 
 {{< clip >}}
+
+## How it works
+- You fire one more shot per volley: with no other extra shots, that's 2 shots side by side, about 7° to each side of where you aim.
+- Each shot deals your full damage. The -0.3 is taken off your Damage stat (penalties count in full).
+- With more shots, the volley spreads out in a fan.
+
+## Stacking
+- It stacks: each copy adds one more shot per volley and another -0.3 Damage. A volley can't have more than 9 shots (see [extra shots](../mechanics/disparos_extra.html)).

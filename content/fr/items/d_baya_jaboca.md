@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Par coup
-  value: +10 %, jusqu'à +60 %
+  value: +10 % de dégâts, jusqu'à +60 %
+- label: Réinitialisation
+  value: En entrant dans une nouvelle salle
 icon: items-ps/berry/jaboca.png
 sprite: true
 names:
@@ -47,3 +49,12 @@ names:
     desc: 在房間內每受到一次攻擊，傷害提升10 %，直到離開房間（最多 +60 %）
 ---
 Chaque coup reçu dans une salle augmente vos dégâts de 10 % jusqu'à votre sortie (max. +60 %)
+
+## Fonctionnement
+- Chaque coup qui vous blesse ajoute +10 % à votre multiplicateur de Dégâts, jusqu'à 6 coups (+60 %, soit ×1,6).
+- Le bonus est perdu quand vous entrez dans la salle suivante.
+- C'est un multiplicateur de dégâts : il compte dans les limites des multiplicateurs (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Les coups bloqués ou esquivés ne comptent pas.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

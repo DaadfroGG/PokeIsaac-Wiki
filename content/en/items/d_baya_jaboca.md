@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Per hit
-  value: +10 %, up to +60 %
+  value: +10 % damage, up to +60 %
+- label: Reset
+  value: When you enter a new room
 icon: items-ps/berry/jaboca.png
 sprite: true
 names:
@@ -47,3 +49,12 @@ names:
     desc: 在房間內每受到一次攻擊，傷害提升10 %，直到離開房間（最多 +60 %）
 ---
 Each hit you take in a room raises your damage by 10 % until you leave (max. +60 %)
+
+## How it works
+- Each hit that hurts you adds +10 % to your Damage multiplier, up to 6 hits (+60 %, so ×1.6).
+- The bonus is lost when you enter the next room.
+- It is a damage multiplier, so it counts toward the multiplier limits (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Hits that are blocked or dodged don't count.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

@@ -11,9 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Immobile
-  value: 1 s pour vous changer en pierre
+  value: 1 s (sans bouger ni tirer) pour vous changer en pierre
 - label: Résiste
-  value: Un coup ; revient après 6 s
+  value: Un coup
+- label: Reformation
+  value: 6 s après la casse
+- label: Après le blocage
+  value: 0,7 s d'invulnérabilité
 icon: items-ps/fossil/root.png
 sprite: true
 names:
@@ -49,3 +53,12 @@ names:
     desc: 站著不動且一秒不射擊，就會被石頭包覆並擋下一次攻擊；需要6秒才會重新形成
 ---
 Si vous restez immobile sans tirer pendant une seconde, vous vous couvrez de pierre et bloquez un coup ; elle met 6 secondes à se reformer
+
+## Fonctionnement
+- Si vous restez immobile sans tirer pendant 1 seconde, vous vous couvrez de pierre.
+- La pierre bloque complètement le coup suivant (aucun dégât), puis se brise et vous donne 0,7 seconde d'invulnérabilité.
+- La pierre ne peut pas se reformer pendant 6 secondes après la casse. Ensuite, il faut de nouveau rester immobile 1 seconde sans tirer.
+- Bouger ou tirer fait s'effriter la pierre avant qu'elle ne prenne un coup.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

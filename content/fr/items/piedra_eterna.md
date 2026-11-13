@@ -16,6 +16,13 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Évolution
+  value: Bloquée
+- label: À la place, à chaque fois
+  value: Dégâts +0,7, +1 cœur max, soigne 1 cœur
+- label: Au ramassage
+  value: Dégâts +1, +1 cœur (soigné)
 icon: items-ps/hold-item/everstone.png
 sprite: true
 names:
@@ -51,3 +58,11 @@ names:
     desc: 不再進化，但傷害+1、愛心+1
 ---
 Vous n'évoluez plus, mais dégâts +1 et cœur +1
+
+## Fonctionnement
+- Au ramassage : Dégâts +1 et +1 cœur max (le cœur est rempli).
+- Votre Pokémon n'évolue jamais. Chaque fois qu'il aurait évolué (voir [Niveaux et évolution](../mechanics/niveles_pokemon.html)), il gagne Dégâts +0,7, +1 cœur max (jusqu'à la limite de PV max) et se soigne de 1 cœur à la place.
+- L'évolution par pierre est aussi bloquée.
+
+## Cumul
+- Le bonus de ramassage s'ajoute de nouveau avec chaque exemplaire.

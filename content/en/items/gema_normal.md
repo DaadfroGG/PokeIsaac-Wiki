@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Shot
+  value: 'First shot of each fight: damage ×4, size ×1.6, counts as a critical hit'
+- label: Refill
+  value: Every time you enter a room with enemies still alive
 icon: items-ps/gem/normal.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 每場戰鬥的第一發射擊造成×4傷害
 ---
 The first shot of each fight deals ×4 damage
+
+## How it works
+- Each time you enter a room that still has living enemies, the gem is charged. The next shot you fire deals ×4 damage, is 1.6 times bigger and counts as a critical hit.
+- Rooms with no enemies (or already cleared) do not charge it, but a charge you did not use stays ready.
+- If the shot was already a normal critical hit, the ×4 comes on top of the crit ×2 (×8 in total).
+- Since it counts as a critical hit, the shot also triggers crit effects such as the stun from [Black Glasses](gafas_sol.html).
+- It works with every kind of shot, including beams and other weapon shots. Only one shot is boosted per fight, even if you fire several at once.
+
+## Stacking
+- It does not stack: a second copy does not give a second boosted shot.

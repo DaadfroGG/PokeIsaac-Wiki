@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Full heal
   good: true
+details:
+- label: Max HP
+  value: +1 heart
+- label: Healing
+  value: Full heal
 icon: items/hp-up.png
 sprite: true
 names:
@@ -49,3 +54,14 @@ names:
     desc: 愛心 +1 並完全回復生命
 ---
 Heart +1 and fully heals you
+
+## How it works
+- One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
+- It heals you fully when you pick it up; this heal ignores the healing limit.
+
+## How to get it
+- Boss rewards and shops.
+- In Classic mode, the shop of the last floor of each chapter (every 10th floor) also sells two vitamins (more expensive than usual items): HP Up first if someone is below the heart limit, then two at random among Protein, Calcium, Zinc, Iron, PP Max and Carbos, preferring ones you don't have yet.
+
+## Stacking
+- Everything stacks: each copy adds its stats again and its heal.

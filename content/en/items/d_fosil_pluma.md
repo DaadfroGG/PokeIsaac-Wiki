@@ -8,6 +8,15 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Trigger
+  value: The first hit you take in each room
+- label: Birds
+  value: 2 Pidgey
+- label: Duration
+  value: Until you leave the room
+- label: Damage
+  value: Your Damage (at least 2)
 icon: items-ps/fossil/plume.png
 sprite: true
 names:
@@ -43,3 +52,11 @@ names:
     desc: 在每個房間第一次受到攻擊時，會叫來兩隻波波攻擊敵人
 ---
 The first hit you take in each room calls two Pidgey that attack enemies
+
+## How it works
+- The first hit that hurts you in each room calls two Pidgey next to you (one on each side).
+- They attack enemies with your Damage (at least 2) until you leave the room, then they disappear. They don't count toward your [companion](../mechanics/companeros.html) limit.
+- It works once per room. A new room, a new call.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

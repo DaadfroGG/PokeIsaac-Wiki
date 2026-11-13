@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Vitesse +0,3
   good: true
+details:
+- label: Dégâts
+  value: +0,6
+- label: Vitesse
+  value: +0,3
 icon: items-ps/av-candy/mighty.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+、速度+
 ---
 Dégâts + et vitesse +
+
+## Fonctionnement
+- Le +0,6 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- La Vitesse +0,3 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

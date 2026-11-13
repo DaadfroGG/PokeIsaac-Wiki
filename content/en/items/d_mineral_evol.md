@@ -12,6 +12,8 @@ pool_weight: 1
 details:
 - label: Shield
   value: 1 hit per room
+- label: After the block
+  value: 0.8 s of invulnerability
 icon: items-ps/hold-item/eviolite.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 護盾會保護你：在每個房間，受到的第一次攻擊不會造成傷害
 ---
 A shield protects you: in each room, the first hit you take deals no damage
+
+## How it works
+- A shield is ready each time you enter a room (and as soon as you pick up the item). The first hit you take is fully absorbed, and the shield is gone until the next room.
+- The block gives you 0.8 seconds of invulnerability.
+- The shield is ready again in every room you enter, cleared rooms included.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

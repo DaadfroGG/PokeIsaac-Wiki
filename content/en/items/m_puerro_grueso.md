@@ -13,6 +13,8 @@ stats:
 - text: Range -80
   good: false
 details:
+- label: Range
+  value: '-80'
 - label: Up close
   value: ×2.2
 - label: At max range
@@ -52,3 +54,11 @@ names:
     desc: 你的彈在近距離威力極強（最高×2.2），距離越遠越弱；射程-
 ---
 Your shots hit very hard up close (up to ×2.2) and less the farther they go; range -
+
+## How it works
+- The damage of each hit depends on how far the shot travelled: ×2.2 right next to you, falling steadily to ×0.4 at the end of its range (never below ×0.4).
+- Child shots (fragments, splits) and companion shots are not affected.
+- The multiplier is applied on hit, so it does not show in your Damage stat.
+
+## Stacking
+- The ×2.2 to ×0.4 effect does not stack, but -80 Range is added for each copy, so the damage drops faster.

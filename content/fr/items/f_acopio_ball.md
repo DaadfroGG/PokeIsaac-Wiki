@@ -12,6 +12,14 @@ pool_weight: 1
 details:
 - label: Dégâts
   value: 75 % de chaque tir
+- label: Copies
+  value: Chaque tir de vos salves, vers l'avant et vers l'arrière
+- label: Depuis
+  value: Métamorph, visé comme vos tirs
+- label: Non copiés
+  value: Les tirs en plus des autres objets
+- label: Compagnon
+  value: Prend 1 place de compagnon
 icon: items-ps/ball/repeat.png
 sprite: true
 names:
@@ -47,5 +55,15 @@ names:
     desc: 百變怪會複製你的所有射擊（含效果），造成75 %傷害
 ---
 Un Métamorph copie tous vos tirs, avec leurs effets, à 75 % des dégâts
+
+## Fonctionnement
+- Un Métamorph vous suit. À chaque attaque, il tire une copie de chaque tir de votre salve depuis sa position, dans la même direction et avec le même éventail. Avec le [Nœud Destin](lazo_destino.html), il copie aussi la salve arrière : jusqu'à **18 copies** par attaque.
+- Chaque copie inflige **75 %** des dégâts (elle tire d'abord au sort son propre coup critique) et reçoit les effets de vos objets au moment du tir, comme vos propres tirs.
+- Il ne copie pas les tirs en plus des autres objets ([Lunettes Sable](m_gafas_aislantes.html), [Crâne Dragon](m_craneo_dragon.html), [Bille](m_canica.html), [Nectar Rouge](m_nectar_rojo.html)…), et les Lunettes Sable ne divisent pas ses copies.
+- Si vous utilisez une arme au lieu des tirs normaux, Métamorph tire 1 + tir multiple tirs (5 au maximum) en éventail serré, à 8° d'écart, à 75 %.
+- Comment tous les tirs en plus s'additionnent : [Tirs supplémentaires](../mechanics/disparos_extra.html).
+
+## Cumul
+- Chaque exemplaire donne un Métamorph de plus, et chaque Métamorph copie vos tirs. Chacun prend une place de compagnon : 3 au maximum, 5 avec la [Boîte Noigrume](m_caja_bonguri.html) (voir [Compagnons](../mechanics/companeros.html)).
 
 {{< clip >}}

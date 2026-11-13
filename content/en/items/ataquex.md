@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Shot spd +2
   good: true
+details:
+- label: Damage
+  value: '+0.5'
+- label: Shot speed
+  value: '+2'
 icon: items/x-attack.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+0.5、彈速+
 ---
 Damage +0.5, shot speed +
+
+## How it works
+- The +0.5 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Shot speed +2: your shots fly faster (they reach their range sooner). It never goes below 4.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

@@ -10,7 +10,9 @@ pools:
 pool_weight: 1
 details:
 - label: When reaching a floor
-  value: Soul heart
+  value: ½ soul heart
+- label: Cap
+  value: 6 soul hearts in total
 icon: items-ps/hold-item/lustrous-orb.png
 sprite: true
 names:
@@ -45,4 +47,11 @@ names:
     name: Cosmic Orb
     desc: When you reach each new floor, you gain a soul heart (at most 6 in total).
 ---
-When you reach each new floor, you gain a soul heart (at most 6 in total).
+Each time you reach a new floor, you gain half a soul heart (at most 6 soul hearts in total).
+
+## How it works
+- On every new floor you gain half a [soul heart](../mechanics/corazones_alma.html).
+- It stops adding when you already carry 6 soul hearts.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

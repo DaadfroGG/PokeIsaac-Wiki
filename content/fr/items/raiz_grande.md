@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Soin
+  value: ½ cœur par 40 dégâts infligés
+- label: Limite
+  value: Les objets soignent au plus 30 % des PV max par 10 s
 icon: items-ps/hold-item/big-root.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每造成40點傷害，回復半顆愛心
 ---
 Tous les 40 dégâts infligés, vous récupérez un demi-cœur
+
+## Fonctionnement
+- Tous les dégâts que vos tirs infligent aux ennemis sont additionnés. Chaque fois que le total atteint 40, vous récupérez un demi-cœur et le compteur baisse de 40.
+- Le compteur continue de se remplir à PV pleins, mais le cœur n'est donné que s'il vous manque des PV.
+- Ce soin compte dans la limite de soin des objets : les objets ne soignent au plus que 30 % de vos PV max (minimum 2 cœurs) par tranche de 10 secondes.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

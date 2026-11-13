@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Pulls
+  value: Every free pickup on the floor
+- label: Not pulled
+  value: Shop items, pedestal items
 icon: items-ps/flute/white.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 將房間地上的所有東西吸向你
 ---
 Pulls everything on the room's floor toward you
+
+## How it works
+- Every free pickup lying on the floor of the room (coins, hearts, keys, bombs, chests...) is moved straight to your feet.
+- Shop items and anything with a price stay where they are. Items on pedestals are not pickups and don't move.
+- If there is nothing to affect, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more.

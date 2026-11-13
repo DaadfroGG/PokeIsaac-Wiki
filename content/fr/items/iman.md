@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,3
   good: true
+details:
+- label: Portée
+  value: 260 px
+- label: Attire
+  value: Pièces, pépites, clés, Voltorbs, cœurs, cœurs d'âme
+- label: Jamais
+  value: Articles de boutique, coffres, objets tenus
+- label: Stat
+  value: Dégâts +0,3
 icon: items/magnet.png
 sprite: true
 names:
@@ -47,3 +56,13 @@ names:
     desc: 將地上的金幣、鑰匙、霹靂電球和愛心吸向你；傷害+0.3
 ---
 Attire vers vous les pièces, clés, Voltorbes et cœurs au sol ; dégâts +0,3
+
+## Fonctionnement
+- Chaque objet au sol à moins de 260 px glisse vers vous, d'autant plus vite qu'il est proche.
+- Il ignore ce que vous ne pourriez pas prendre : les cœurs quand vos PV sont pleins, les cœurs d'âme quand vous en avez 12, les pièces quand votre porte-monnaie est plein, les Voltorbs ou les clés quand vous en avez 99.
+- Il ne déplace jamais les articles de boutique, les coffres ou coffres dorés, ni les objets tenus posés au sol.
+- En coop, chaque objet va vers le joueur le plus proche qui a un Aimant et peut le prendre.
+- Le Dégâts +0,3 est un bonus de stat normal qui suit les [rendements décroissants](../mechanics/rendimientos.html).
+
+## Cumul
+- Un deuxième exemplaire ajoute encore Dégâts +0,3 ; l'attraction reste la même.

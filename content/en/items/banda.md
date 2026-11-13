@@ -13,6 +13,11 @@ stats:
   good: true
 - text: Damage +0.5
   good: true
+details:
+- label: Range
+  value: +120 px
+- label: Damage
+  value: '+0.5'
 icon: items/focus-band.png
 sprite: true
 names:
@@ -48,3 +53,10 @@ names:
     desc: 射程+，傷害+0.5
 ---
 Range + and damage +0.5
+
+## How it works
+- Range +120: your shots travel 120 px farther, with no diminishing returns.
+- The +0.5 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

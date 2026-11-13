@@ -7,8 +7,12 @@ family: module
 tier: 2
 pool_weight: 2
 details:
-- label: Rune Sort
-  value: 12 % par coup, 5 s
+- label: Charme
+  value: 12 % par coup (+1 % par Chance), 5 s
+- label: Boss
+  value: Jamais charmés
+- label: Dégâts du charmé
+  value: 3× ses dégâts d'attaque (min. 2) toutes les 0,5 s
 icon: items-ps/apricorn/pink.png
 sprite: true
 names:
@@ -44,3 +48,11 @@ names:
     desc: 有時會迷惑一個敵人：幾秒內它會站在你這邊對抗其他敵人
 ---
 Parfois, vous charmez un ennemi : pendant quelques secondes, il combat à vos côtés contre les autres
+
+## Fonctionnement
+- Chaque coup sur un ennemi (hors boss) a 12 % de chance (+1 % par point de Chance) de le charmer 5 s (voir [effets de statut](../mechanics/estados.html)). Un ennemi charmé n'attaque plus et ne vous blesse plus au contact.
+- Il marche vers l'ennemi non charmé le plus proche à moins de 600 px et l'attaque : toutes les 0,5 s au contact, il lui inflige 3 fois ses propres dégâts d'attaque (au moins 2).
+- Un ennemi déjà charmé ne peut pas être recharmé avant la fin du charme. S'il n'a pas de cible, il reste simplement immobile.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente ni la chance ni la durée.

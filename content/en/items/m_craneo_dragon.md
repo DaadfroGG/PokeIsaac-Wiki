@@ -10,8 +10,14 @@ pools:
 - devil
 pool_weight: 2
 details:
-- label: Four directions
-  value: 15 % per volley
+- label: Chance
+  value: 15 % + 1 % per Luck, per attack (max 50 %)
+- label: Extra shots
+  value: '3: right, back and left of your first shot'
+- label: Damage
+  value: Full
+- label: Max chance
+  value: 50 % at 35 Luck after diminishing returns
 icon: items-ps/key-item/dragon-skull.png
 sprite: true
 names:
@@ -47,5 +53,17 @@ names:
     desc: 有時會同時朝四個方向射擊
 ---
 Sometimes you fire in all four directions at once
+
+## How it works
+- Each time you attack, there is a 15 % chance, +1 % per point of Luck (50 % at most), to also fire **3 shots** at 90°, 180° and 270° from your first shot: you fire in all four directions.
+- It is rolled **once per attack**, whatever the number of shots in your volley; the backward volley of [Destiny Knot](lazo_destino.html) doesn't roll again.
+- The 3 shots are normal shots: full damage, with your item effects, and each rolls its own critical hit and effects.
+- They are added on top of your volley and don't count towards the 9-shot limit. [Go-Goggles](m_gafas_aislantes.html) don't split them.
+- Most weapons also attack in the four directions when it triggers.
+- The 50 % cap needs 35 Luck after [diminishing returns](../mechanics/rendimientos.html) (110 on paper). Negative Luck lowers the chance.
+- How all the extra shots add up: [Extra shots](../mechanics/disparos_extra.html).
+
+## Stacking
+- A second copy does nothing more: still one roll per attack, same chance.
 
 {{< clip >}}

@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Soin complet
   good: true
+details:
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: Tous vos PV
 icon: items/hp-up.png
 sprite: true
 names:
@@ -49,3 +54,14 @@ names:
     desc: 愛心 +1 並完全回復生命
 ---
 Cœur +1 et soigne toute votre vie
+
+## Fonctionnement
+- Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
+- Il vous soigne entièrement en le ramassant ; ce soin ignore la limite de soins.
+
+## Obtention
+- Récompenses de boss et boutiques.
+- En mode Classique, la boutique du dernier étage de chaque chapitre (tous les 10 étages) vend aussi deux vitamines (plus chères que les objets habituels) : PV Plus d'abord si quelqu'un n'est pas à la limite de cœurs, puis deux au hasard parmi Protéine, Calcium, Zinc, Fer, PP Max et Carbone, de préférence celles que vous n'avez pas encore.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats et son soin.

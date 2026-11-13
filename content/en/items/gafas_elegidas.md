@@ -13,6 +13,11 @@ stats:
   good: true
 - text: Shot spd -2
   good: false
+details:
+- label: Damage
+  value: '+1'
+- label: Shot speed
+  value: '-2'
 icon: items/choice-specs.png
 sprite: true
 names:
@@ -48,3 +53,11 @@ names:
     desc: 傷害+1；彈變慢
 ---
 Damage +1; slower shots
+
+## How it works
+- The +1 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Shot speed -2: your shots fly slower (they reach their range later). It never goes below 4.
+- Its shots are not homing.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

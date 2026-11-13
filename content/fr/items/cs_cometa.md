@@ -22,6 +22,8 @@ details:
   value: '+2'
 - label: Portée
   value: '+60'
+- label: Cumul
+  value: S'additionne par exemplaire
 icon: items-ps/valuable-item/comet-shard.png
 sprite: true
 names:
@@ -57,3 +59,10 @@ names:
     desc: Speed +0.5, shot speed + and range +60.
 ---
 Vitesse +0,5, vitesse des tirs + et portée +60.
+
+## Fonctionnement
+- Simples bonus de statistiques, toujours actifs : Vitesse +0,5, Vitesse des tirs +2 et Portée +60. Aucune condition, aucun déclencheur.
+- Ne se trouve que dans l'[Observatoire](../rooms/observatory.html) (objet cosmique gratuit, un au choix parmi trois).
+
+## Cumul
+- Chaque exemplaire supplémentaire ajoute à nouveau les mêmes bonus (deux exemplaires : Vitesse +1, Vitesse des tirs +4, Portée +120). Les bonus de statistiques s'additionnent simplement (voir [Cumul des objets](../mechanics/acumulacion.html)).

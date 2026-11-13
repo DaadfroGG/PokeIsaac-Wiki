@@ -11,9 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Per hit
-  value: +4% damage (max +40% with 10 in a row)
+  value: +4 % damage (max +40 % with 10 in a row)
 - label: On a miss
-  value: A shot that hits a wall without having hit anyone resets the streak
+  value: A shot that hits a wall or a rock without having hit anyone resets the streak
+- label: Counts
+  value: First hit of each main shot only
 icon: items/razor-claw.png
 sprite: true
 names:
@@ -49,3 +51,13 @@ names:
     desc: ''
 ---
 Every shot that hits sharpens the claw: +4% damage, up to +40%. If a shot is wasted against a wall, the streak resets to zero
+
+## How it works
+- Each main shot that hits an enemy adds one level to the claw, up to 10. Each level is +4 % damage (+40 % at 10), applied to all your damage like a multiplier.
+- Only the first hit of a shot counts: a piercing shot that hits three enemies adds one level, not three.
+- Companion shots, split shots and other child shots do not add levels and do not break the streak.
+- A main shot that ends against a wall, a rock or another obstacle without having hit any enemy resets the claw to 0. A shot that simply runs out of range does not reset it.
+- The streak is kept between rooms.
+
+## Stacking
+- It does not stack: a second copy changes nothing (still +4 % per level, max +40 %).

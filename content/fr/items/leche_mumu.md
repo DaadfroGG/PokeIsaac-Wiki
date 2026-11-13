@@ -16,9 +16,9 @@ details:
 - label: Au ramassage
   value: Vous soigne complètement
 - label: Ensuite
-  value: Soin en trop avec la vie pleine > cœur d'âme
+  value: Soin au-delà des PV pleins > cœur d'âme
 - label: Plafond
-  value: Un cœur d'âme par soin
+  value: Un cœur d'âme par soin ; 6 au total
 icon: items-ps/medicine/moomoo-milk.png
 sprite: true
 names:
@@ -54,3 +54,11 @@ names:
     desc: 完全恢復你的生命；之後在生命全滿時的治療會變成靈魂之心（每次最多一顆）
 ---
 Vous soigne complètement ; désormais, les soins reçus avec toute votre vie deviennent un cœur d'âme (un au maximum à chaque fois)
+
+## Fonctionnement
+- Au ramassage, il vous soigne complètement.
+- Ensuite, chaque fois qu'un soin dépasserait vos PV max, l'excédent devient des cœurs d'âme : jusqu'à un cœur d'âme entier (2 demi-cœurs) par soin. Le total de cœurs d'âme reste plafonné à 6.
+- Les objets qui n'agissent normalement que lorsqu'il vous manque des PV (Grosse Racine, Plume Santé, Fossile Mâchoire) continuent à marcher à PV pleins, et leur soin se transforme en cœurs d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Cœurs
+  value: +1 cœur (et soigné)
+- label: Explosions
+  value: Ne vous blessent jamais
 icon: items-ps/evo-item/protector.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 愛心 +1 且爆炸不會傷到你
 ---
 Cœur +1 et les explosions ne vous blessent pas
+
+## Fonctionnement
+- Au ramassage : +1 cœur max, et ce cœur est rempli.
+- Les explosions ne vous blessent pas, y compris vos propres bombes.
+
+## Cumul
+- Le cœur max s'ajoute de nouveau avec chaque exemplaire. L'immunité aux explosions ne se cumule pas.

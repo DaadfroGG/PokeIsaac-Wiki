@@ -11,7 +11,11 @@ pool_weight: 2
 charge: 4
 details:
 - label: Hit
-  value: Your damage ×16 (min. 50)
+  value: Your Damage ×16 (min. 50)
+- label: Targets
+  value: Every enemy in the room, bosses included
+- label: Type
+  value: Dark
 icon: items-ps/key-item/adventure-rules.png
 sprite: true
 names:
@@ -47,3 +51,13 @@ names:
     desc: 房間內所有敵人受到一次巨大傷害
 ---
 All enemies in the room take a huge hit
+
+## How it works
+- Every enemy in the room takes one hit of 16 times your Damage, at least 50.
+- The hit counts as Dark-type damage. It can't be a critical hit and doesn't trigger your items or statuses.
+- It hits bosses for the full amount.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): every enemy is hit twice.

@@ -13,6 +13,13 @@ stats:
   good: true
 - text: Portée -80
   good: false
+details:
+- label: Cadence
+  value: −0,05 s entre deux tirs
+- label: Portée
+  value: −80 px
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items-ps/curry-ingredient/coconut-milk.png
 sprite: true
 names:
@@ -48,3 +55,10 @@ names:
     desc: 射速 ++，射程 -
 ---
 Cadence ++, portée -
+
+## Fonctionnement
+- Cadence : raccourcit le délai entre deux tirs de 0,05 s. Les bonus de cadence de tous vos objets sont additionnés : les 3 premiers points comptent en entier, les 4 suivants pour moitié et le reste pour un quart. Quoi que vous fassiez, vous ne pouvez jamais tirer plus de 12 fois par seconde.
+- Portée −80 px : retirée en entier de la distance que parcourent vos tirs. La portée ne peut jamais descendre sous 120 px.
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

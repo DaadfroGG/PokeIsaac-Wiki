@@ -10,7 +10,9 @@ pools:
 pool_weight: 1
 details:
 - label: Boss
-  value: -8 % de vie à leur apparition
+  value: -8 % de PV à leur apparition
+- label: Mini-boss
+  value: Aussi
 icon: items-ps/key-item/old-charm.png
 sprite: true
 names:
@@ -46,3 +48,10 @@ names:
     desc: 頭目和小頭目一開始生命減少8%。
 ---
 Les boss et mini-boss commencent avec 8 % de vie en moins.
+
+## Fonctionnement
+- Les boss et mini-boss commencent le combat avec 8 % de PV en moins (1 PV minimum). Cela s'applique une seule fois, dès leur apparition.
+- Les ennemis ordinaires ne sont pas affectés.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

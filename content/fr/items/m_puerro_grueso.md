@@ -13,9 +13,11 @@ stats:
 - text: Portée -80
   good: false
 details:
+- label: Portée
+  value: '-80'
 - label: De près
   value: ×2,2
-- label: En bout de portée
+- label: À portée max.
   value: ×0,4
 icon: items-ps/curry-ingredient/large-leek.png
 sprite: true
@@ -52,3 +54,11 @@ names:
     desc: 你的彈在近距離威力極強（最高×2.2），距離越遠越弱；射程-
 ---
 Vos tirs frappent très fort de près (jusqu'à ×2,2) et de moins en moins en s'éloignant ; portée -
+
+## Fonctionnement
+- Les dégâts de chaque coup dépendent de la distance parcourue par le tir : ×2,2 juste à côté de vous, puis une baisse régulière jusqu'à ×0,4 en bout de portée (jamais moins de ×0,4).
+- Les tirs secondaires (éclats, fragments) et les tirs de compagnons ne sont pas touchés.
+- Le multiplicateur s'applique au coup : il n'apparaît donc pas dans votre stat Dégâts.
+
+## Cumul
+- L'effet ×2,2 à ×0,4 ne se cumule pas, mais -80 de Portée s'ajoute à chaque exemplaire, donc les dégâts chutent plus vite.

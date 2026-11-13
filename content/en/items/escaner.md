@@ -9,6 +9,13 @@ pools:
 - boss
 pool_weight: 2
 charge: 3
+details:
+- label: Damage taken
+  value: +50 % from your hits
+- label: Lasts
+  value: Until the enemy dies
+- label: Bosses
+  value: Affected
 icon: items-ps/key-item/scanner.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 分析房間內的敵人：使其受到的傷害增加50 %
 ---
 Scans the enemies in the room: they take 50 % more damage
+
+## How it works
+- Every enemy in the room, bosses included, is scanned and takes 50 % more damage from your hits for the rest of its life.
+- The bonus is applied when you hit, so it isn't shown in your Damage stat and isn't limited by the ×3 cap on damage multipliers.
+- Only the enemies in the room when you use it are scanned; enemies that appear later are not.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: an enemy can only be scanned once.

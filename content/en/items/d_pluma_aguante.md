@@ -8,6 +8,13 @@ tier: 2
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Rift after a boss
+  value: Always opens (100 %)
+- label: Leads to
+  value: Celestial Room (Distortion Room once you have made a deal with Darkrai)
+- label: Never
+  value: On the first floor, nor in late-game floors
 icon: items-ps/medicine/resist-wing.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 每次打倒頭目後，一定會開啟一道裂縫：如果你從未和達克萊伊訂下契約，會是通往天界房間的金色裂縫；否則是通往扭曲房間的裂縫
 ---
 After every boss a rift always opens: the golden one to the Celestial Room if you've never made a deal with Darkrai; otherwise, the Distortion one
+
+## How it works
+- After each boss, a rift always opens. Normally it only opens by chance.
+- The rift leads to the [Celestial Room](../rooms/angel.html) (the golden rift) as long as nobody on the team has ever made a deal with Darkrai; otherwise it is the [Distortion Room](../rooms/devil.html).
+- No rift opens on the first floor, nor in the last stretch of a Classic run.
+- It wins over the [Black Mane Hair](d_crin_negra.html), which forces the Distortion Room, unless a deal with Darkrai has been made.
+
+## Stacking
+- It is an on/off effect: a second Resist Feather changes nothing. In co-op, one teammate carrying it is enough.

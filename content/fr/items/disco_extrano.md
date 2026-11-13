@@ -9,6 +9,11 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,4
   good: true
+details:
+- label: Dégâts
+  value: +0,4
+- label: Type des tirs
+  value: Aléatoire parmi les 18 types
 icon: items-ps/evo-item/dubious-disc.png
 sprite: true
 names:
@@ -46,3 +51,13 @@ names:
 Chaque tir est d'un type aléatoire
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Ajoute +0,4 Dégâts.
+- Chaque tir que vous lancez prend un type au hasard parmi les 18 (chances égales), avec sa couleur. Le tir utilise ce type dans la [table des types](../mechanics/tabla_tipos.html) et pour la chance de statut du type à l'impact.
+- Cet objet n'apparaît plus dans les réserves d'objets habituelles.
+
+## Cumul
+
+- Chaque exemplaire ajoute +0,4 Dégâts. Le type aléatoire est simplement activé.

@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Charge
+  value: +1 room of charge
 icon: items-ps/storage/medicine-pocket.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每次受到攻擊都會為主動道具充能
 ---
 Every hit you take charges your active item
+
+## How it works
+- Each hit that hurts you adds 1 charge to your active item, the same as clearing a room.
+- It does nothing if you have no active item, or if it is already fully charged.
+- Hits that are blocked or dodged don't count, but a hit absorbed by a soul heart does.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

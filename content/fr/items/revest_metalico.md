@@ -11,9 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Prix
-  value: 3 P$ par demi-cœur
+  value: 3 Pokédollars par demi-cœur
+- label: Condition
+  value: Aucun cœur d'âme
 - label: Pas assez d'argent
-  value: Le coup vous blesse comme d'habitude
+  value: Le coup vous blesse normalement
+- label: Ensuite
+  value: 1,2 s d'invulnérabilité
 icon: items-ps/hold-item/metal-coat.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
     desc: 如果你身上有寶可幣（且沒有靈魂之心），受到攻擊時每半顆愛心會改扣3 P$，而不是扣生命
 ---
 Si vous avez des Pokédollars (et plus de cœurs d'âme), les coups vous coûtent 3 P$ par demi-cœur au lieu de la vie
+
+## Fonctionnement
+- Si vous n'avez aucun cœur d'âme et assez de Pokédollars, un coup vous coûte 3 Pokédollars par demi-cœur de dégâts au lieu de PV (un coup d'un cœur coûte 6, toujours arrondi au supérieur).
+- Le coup est alors traité comme s'il n'avait jamais touché : aucun dégât, vous gagnez l'invulnérabilité habituelle de 1,2 seconde, et vos objets « quand vous êtes touché » ne se déclenchent pas.
+- Si vous ne pouvez pas payer le prix entier, ou si vous avez un cœur d'âme, le coup vous blesse normalement.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

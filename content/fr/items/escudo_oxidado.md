@@ -11,9 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Collision
-  value: Votre tir et celui de l'ennemi s'annulent
+  value: Votre tir et le tir ennemi sont détruits
 - label: Tirs spectraux
-  value: Ils poursuivent leur route
+  value: Continuent leur route
 icon: items-ps/hold-item/rusted-shield.png
 sprite: true
 names:
@@ -49,3 +49,13 @@ names:
     desc: 你的彈會撞上敵人的彈並將其抵消
 ---
 Vos tirs percutent les tirs ennemis et les détruisent
+
+## Fonctionnement
+
+- Quand un de vos tirs touche un tir ennemi, le tir ennemi est détruit.
+- Votre tir est détruit lui aussi, sauf s'il est spectral (il continue alors sa route).
+- Chacun de vos tirs ne peut annuler qu'un seul tir ennemi.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

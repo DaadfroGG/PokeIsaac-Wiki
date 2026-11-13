@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: +5 Voltorbe
   good: true
+details:
+- label: Voltorbes
+  value: '+5'
+- label: Portée de poursuite
+  value: 420 px
+- label: Vitesse
+  value: 108 px/s
+- label: Explose
+  value: Au contact d'un ennemi
 icon: items-ps/other-item/poke-toy.png
 sprite: true
 names:
@@ -46,4 +55,13 @@ names:
     name: 寶可尾草
     desc: +5顆霹靂電球；滾向最近的敵人，接觸即爆炸
 ---
-+5 Voltorbes ; ils roulent vers l'ennemi le plus proche et explosent à son contact
++5 Voltorbes ; ils roulent vers l'ennemi le plus proche et explosent à son contact
+
+## Fonctionnement
+- Un Voltorbe normal (posé avec la touche bombe) explose après 1,5 s dans un rayon de 95 px pour max(25, 7 × vos Dégâts), et il vous blesse aussi (1 cœur) si vous êtes dans la zone.
+- Avec cet objet, un Voltorbe posé roule vers l'ennemi le plus proche à moins de 420 px, à environ 108 px/s (il ne traverse pas les rochers), et explose dès qu'il le touche, sans attendre la mèche.
+- Sans ennemi à portée, il reste où il a été posé et explose à la fin de la mèche de 1,5 s. Cela marche aussi sur les petits Voltorbes de la [Bonbonnière](b_tarro.html).
+- Avec le [Nikodule](w_acromaquina.html), ses Voltorbes qui roulent se dirigent aussi vers les ennemis comme des tirs à tête chercheuse.
+
+## Cumul
+- L'effet est simplement activé : un second exemplaire n'ajoute rien. Chaque exemplaire donne quand même +5 Voltorbes.

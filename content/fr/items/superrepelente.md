@@ -8,6 +8,13 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: Ennemis étourdis quand vous entrez
+- label: Durée
+  value: 1,8 s
+- label: Boss
+  value: Pas affectés
 icon: items-ps/other-item/super-repel.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 進入房間時，敵人的反應會變慢
 ---
 En entrant dans une salle, les ennemis tardent à réagir
+
+## Fonctionnement
+- Quand vous entrez dans une salle qui a encore des ennemis, tous les ennemis présents sont étourdis pendant 1,8 seconde : ils ne bougent pas et n'attaquent pas.
+- Les boss ne sont pas affectés.
+- Les ennemis qui apparaissent plus tard dans la salle (vagues, invocations) ne sont pas étourdis.
+- En coop, ça marche pour toute l'équipe dès qu'un joueur le porte.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours 1,8 s.

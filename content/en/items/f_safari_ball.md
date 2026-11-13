@@ -10,8 +10,14 @@ pools:
 - secret
 pool_weight: 2
 details:
+- label: Companion
+  value: Sableye (Dark)
 - label: Reward
+  value: 1 pickup, chosen at random
+- label: Chance
   value: 30 % per cleared room
+- label: Possible
+  value: Coin, key, bomb, half heart, soul heart, chest
 icon: items-ps/ball/safari.png
 sprite: true
 names:
@@ -49,3 +55,13 @@ names:
 A Sableye follows you and sometimes brings you a pickup when you clear a room
 
 {{< clip >}}
+
+## How it works
+
+- Each room you clear, Sableye has a 30 % chance to bring you 1 pickup next to itself: a coin, key, bomb, half heart, soul heart or chest (all equally likely).
+- It never shoots or fights.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Each companion counts its own rooms.

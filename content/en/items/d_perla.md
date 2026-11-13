@@ -12,6 +12,11 @@ pool_weight: 1
 stats:
 - text: +99 PokéDollars
   good: true
+details:
+- label: PokéDollars
+  value: Fills up to your wallet cap
+- label: Wallet cap
+  value: 99 (150 from floor 10, 250 from floor 30)
 icon: items-ps/valuable-item/pearl.png
 sprite: true
 names:
@@ -47,3 +52,11 @@ names:
     desc: 補滿寶可幣（最多99）
 ---
 Fills you up with PokéDollars (up to 99)
+
+## How it works
+- The moment you pick it up you gain 99 PokéDollars, up to your wallet cap: 99, rising to 150 from floor 10 and 250 from floor 30.
+- So early on it fills your wallet; later in a run it is worth less than a full wallet.
+- It has no other effect.
+
+## Stacking
+- Another copy gives 99 PokéDollars again when picked up, within the wallet cap.

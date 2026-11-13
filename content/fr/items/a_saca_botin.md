@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Voltorbe
+  value: 6, à au moins 70 px de vous
+- label: Explosion
+  value: 95 px, vos Dégâts ×7 (min. 25)
+- label: Mèche
+  value: 0,57 s à 1,27 s, l'un après l'autre
+- label: Vos bombes
+  value: Pas utilisées
 icon: items-ps/key-item/loot-sack.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 六個即將爆炸的霹靂電球落到房間裡（不會傷到你）
 ---
 Six Voltorbes sur le point d'exploser tombent dans la salle (ils ne vous blessent pas)
+
+## Fonctionnement
+- Six Voltorbe tombent sur des endroits libres de la salle, à au moins 70 px de vous, et explosent l'un après l'autre entre 0,57 et 1,27 seconde plus tard.
+- Chaque explosion touche tous les ennemis à moins de 95 px pour 7 fois vos Dégâts (au moins 25), comme une de vos bombes. Les boss aussi.
+- Ils ne vous blessent jamais et n'utilisent pas vos propres bombes.
+- Comme les bombes, ils cassent les rochers et les caisses et ouvrent les portes de salle secrète cachées à côté d'eux.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : 12 Voltorbe tombent.

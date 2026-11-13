@@ -9,6 +9,15 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Flaque
+  value: 34 px de rayon, 2,7 s
+- label: Dégâts
+  value: 25 % de vos Dégâts toutes les 0,25 s (eau)
+- label: Ralentissement
+  value: 1,2 s
 icon: items-ps/incense/wave.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 受到攻擊時，會留下一灘使敵人減速並受傷的水窪
 ---
 Quand vous êtes touché, vous laissez une flaque qui ralentit et blesse les ennemis
+
+## Fonctionnement
+- Après un coup reçu, une flaque apparaît sous vous. Elle dure environ 2,7 secondes et a un rayon de 34 px.
+- Toutes les 0,25 seconde, chaque ennemi qui s'y trouve subit des dégâts de type Eau égaux à 25 % de vos Dégâts (au moins 0,5) et est ralenti 1,2 seconde (renouvelé tant qu'il reste dedans).
+- Les ennemis volants ne sont pas affectés. Les coups de la flaque ne déclenchent pas vos effets de tir.
+- Chaque coup que vous recevez crée une nouvelle flaque.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

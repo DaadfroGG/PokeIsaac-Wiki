@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Fire rate +
   good: true
+details:
+- label: Fire rate
+  value: -2 (faster, per copy)
+- label: Hold time
+  value: Up to 4 s
+- label: Release
+  value: When you stop firing
 icon: items-ps/partner-gift/stretchy-spring.png
 sprite: true
 names:
@@ -48,3 +55,11 @@ names:
 While you fire, your shots hang still in the air; on release, they all fly at once
 
 {{< clip >}}
+
+## How it works
+- While you keep firing, your shots slow down and stop in the air a short distance from you (after about 0.1 s). They stay there, still dangerous.
+- When you stop firing, or after 4 s of hanging, all of them fly off again at once with their original speed and direction.
+- A hanging shot has at least half of its range left. Shots that hang pile up into a wall of shots; companion shots are not affected.
+
+## Stacking
+- The hanging effect does not change; the fire rate bonus is added for each copy.

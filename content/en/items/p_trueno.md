@@ -13,8 +13,12 @@ stats:
 - text: Evolution stone
   good: true
 details:
+- label: Evolves
+  value: Eevee > Jolteon; Pikachu > Raichu
 - label: Discharge
-  value: 50 % of the shot at 120 px
+  value: 50 % of the shot's damage, within 120 px
+- label: Trigger
+  value: A shot hits a wall or rock
 icon: items/thunder-stone.png
 sprite: true
 names:
@@ -50,3 +54,23 @@ names:
     desc: 讓皮卡丘和伊布進化。此外，你的彈撞到牆壁時會對附近的敵人釋放電擊
 ---
 Evolves Pikachu and Eevee. Also, your shots that hit a wall release a shock at nearby enemies
+
+## How it works
+
+- Using it on Eevee (before it has evolved) turns it into Jolteon, and its type becomes Electric.
+- The first evolution gives +1 heart (and heals it), +1 Damage and makes you a little bigger. This bonus comes from evolving, not from the stone itself.
+- Once Eevee has evolved, further stones no longer evolve it, but their effect below stays active.
+- Pikachu also evolves into Raichu with this stone if it has not evolved yet. Other Pokémon do not evolve from it; they still get its effect.
+- The effect works for whatever Pokémon you play and does not depend on having evolved.
+- If you carry an [Everstone](piedra_eterna.html), evolution is blocked: you get +0.7 Damage and +1 heart instead, and the effect still works.
+
+## Effect
+
+- Whenever one of your shots hits a wall or a rock, a bolt of lightning strikes every enemy within 120 px of the impact for 50 % of that shot's damage.
+- Split shots and other child shots do not release a shock.
+- The shock is not a hit from your shot, so it does not trigger on-hit items.
+
+## Stacking
+
+- A second copy of the same stone adds nothing: the effect is just switched on.
+- Different stones add their effects together.

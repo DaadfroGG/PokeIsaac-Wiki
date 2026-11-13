@@ -9,8 +9,14 @@ pools:
 - treasure
 pool_weight: 2
 details:
-- label: Type of each shot
-  value: Random among the 18 types, each 1 in 18 (about 5.6 %)
+- label: Companion
+  value: Porygon (Normal (random shots))
+- label: Fire interval
+  value: 0.53 s
+- label: Damage per shot
+  value: 2 + 0.4 per floor
+- label: Shot type
+  value: Random among all 18 types
 icon: items-ps/ball/park.png
 sprite: true
 names:
@@ -48,3 +54,15 @@ names:
 A Porygon follows you; each of its shots is a random type
 
 {{< clip >}}
+
+## How it works
+
+- Porygon follows just behind you and shoots at the nearest enemy within 380 px, once every 0.53 seconds. Its shots travel up to 360 px and carry its type (Normal (random shots)).
+- Each shot is a random one of the 18 types (equal chances), so it uses that type's color and the [type chart](../mechanics/tabla_tipos.html) for that shot.
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Its shots are not boosted by your shot upgrades (no extra shots, no crits) and do not trigger your on-hit items.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

@@ -10,8 +10,12 @@ pools:
 - devil
 pool_weight: 2
 details:
+- label: Compagnon
+  value: Nosferapti (Poison)
+- label: Morsure
+  value: 0,45 × vos Dégâts (au moins 1,2), toutes les 1/3 s
 - label: Soin
-  value: Un demi-cœur tous les 8 ennemis vaincus
+  value: Un demi-cœur toutes les 8 victimes
 icon: items-ps/ball/dusk.png
 sprite: true
 names:
@@ -49,3 +53,14 @@ names:
 Un Nosferapti poursuit les ennemis ; tous les 8 vaincus, il vous soigne d'un demi-cœur
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Nosferapti fonce sur l'ennemi le plus proche (à moins de 700 px) et le mord toutes les 1/3 de seconde pour 0,45 fois vos Dégâts (au moins 1,2), en dégâts de type Poison.
+- Un ennemi sur huit qu'il achève d'une morsure vous soigne d'un demi-cœur. Seules les victimes de Nosferapti comptent.
+- Il ne tire pas.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément.

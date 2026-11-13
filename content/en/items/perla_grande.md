@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Effect
+  value: Golden chests open without a key
+- label: Key
+  value: Not spent
 icon: items-ps/valuable-item/big-pearl.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 金色寶箱不用鑰匙就能打開
 ---
 Golden chests open without a key
+
+## How it works
+- You open golden chests just by touching them, even with no key, and you keep your keys. A golden chest always gives an item.
+- It also works on golden chests sold in shops: you still pay the price, but you don't need a key.
+- Normal chests and locked doors are not affected (for treasure room doors, see the [Pass Orb](pase_orbe.html)).
+
+## Stacking
+- A second copy does nothing more.

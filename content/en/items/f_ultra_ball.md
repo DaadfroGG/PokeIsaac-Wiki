@@ -9,6 +9,15 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Companion
+  value: Bronzor (Steel)
+- label: Orbit
+  value: 54 px around you
+- label: Touch damage
+  value: 0.6 × companion damage, every 1/6 s
+- label: Prism
+  value: Your shots through it split in two more
 icon: items-ps/ball/ultra.png
 sprite: true
 names:
@@ -46,3 +55,15 @@ names:
 A Bronzor orbits you; shots passing through it split into three
 
 {{< clip >}}
+
+## How it works
+
+- It does not shoot: it orbits you in a circle of 54 px, making a full turn about every 2.1 seconds. Any enemy it touches takes 0.6 × the companion damage (at least 1), at most once every 1/6 second.
+- Prism: when one of your shots passes within 16 px of it, two extra shots (about 20° to each side) are created, so one shot becomes three. Each extra shot deals 60 % of the original's damage, is a bit smaller, and has the same type but no other effects.
+- It works once per shot, only on your main shots (not on split or other child shots).
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Several orbiters of the same kind space themselves evenly around you.

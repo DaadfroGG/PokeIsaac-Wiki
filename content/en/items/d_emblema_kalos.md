@@ -9,6 +9,11 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Condition
+  value: Entering a room with enemies at full health
+- label: Effect
+  value: Damage ×2 until you get hit
 icon: items-ps/key-item/honor-of-kalos.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 生命全滿時進入房間，傷害會加倍，直到你受傷為止
 ---
 If you enter a room at full health, you deal double damage until you get hit
+
+## How it works
+
+- If you enter a room that has enemies while your red health is full, your Damage is doubled until the next time you get hurt.
+- This is a damage multiplier on the HUD, so it follows the usual [diminishing returns and ×3 cap](../mechanics/rendimientos.html).
+- Entering a room without enemies, or with less than full health, gives no bonus. Soul hearts do not matter.
+
+## Stacking
+
+- A second copy changes nothing.

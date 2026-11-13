@@ -9,6 +9,13 @@ pools:
 - boss
 pool_weight: 2
 charge: 2
+details:
+- label: Target
+  value: The nearest enemy
+- label: Delay
+  value: 0.57 s
+- label: Explosion
+  value: 80 px, your Damage ×10 (min. 20)
 icon: items-ps/key-item/holo-caster.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 呼叫空襲：一顆隕石會落在最近的敵人身上
 ---
 You call in an air strike: a meteor falls on the nearest enemy
+
+## How it works
+- A target appears on the enemy nearest to you, and a meteor lands there 0.57 seconds later. It falls where the enemy stood, so a fast enemy can walk out of it.
+- The explosion hits every enemy within 80 px for 10 times your Damage (at least 20). It can be a [critical hit](../mechanics/criticos.html) and triggers your items' on-hit effects. Bosses take it too.
+- It doesn't hurt you. Like a bomb, it breaks rocks and crates nearby and opens hidden secret-room doors next to it.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two meteors fall on the same target.

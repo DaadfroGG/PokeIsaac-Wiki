@@ -9,6 +9,13 @@ pool_weight: 2
 stats:
 - text: Damage +0.3
   good: true
+details:
+- label: Chance
+  value: 25 % per hit, +2 % per Luck
+- label: Burn
+  value: 2 seconds
+- label: Spread
+  value: Dying burning enemies ignite others within 120 px
 icon: items/charcoal.png
 sprite: true
 names:
@@ -44,3 +51,14 @@ names:
     desc: 有時造成灼傷；帶著灼傷倒下的敵人會點燃身旁的敵人
 ---
 Sometimes burn; enemies that die burning set their neighbors on fire
+
+## How it works
+
+- Adds +0.3 Damage.
+- Each hit has a 25 % chance (+2 % per Luck) to set the enemy on fire for 2 seconds. Bosses can burn too. See [Status effects](../mechanics/estados.html).
+- An enemy hit by your shots that dies while burning sets every other enemy within 120 px on fire for 2 seconds. Enemies set alight this way can spread it further if they die burning.
+- This item no longer appears in the regular item pools.
+
+## Stacking
+
+- Each copy adds +0.3 Damage. The burn chance and the spread are not increased by extra copies.

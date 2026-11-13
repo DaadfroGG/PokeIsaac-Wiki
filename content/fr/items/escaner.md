@@ -9,6 +9,13 @@ pools:
 - boss
 pool_weight: 2
 charge: 3
+details:
+- label: Dégâts reçus
+  value: +50 % de vos coups
+- label: Durée
+  value: Jusqu'à la mort de l'ennemi
+- label: Boss
+  value: Touchés
 icon: items-ps/key-item/scanner.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 分析房間內的敵人：使其受到的傷害增加50 %
 ---
 Analyse les ennemis de la salle : ils subissent 50 % de dégâts en plus
+
+## Fonctionnement
+- Chaque ennemi de la salle, boss compris, est analysé et subit 50 % de dégâts en plus de vos coups pour le reste de sa vie.
+- Le bonus s'applique au moment du coup, donc il n'apparaît pas dans votre stat de Dégâts et n'est pas limité par le plafond de ×3 des multiplicateurs.
+- Seuls les ennemis présents au moment de l'utilisation sont analysés ; ceux qui apparaissent ensuite ne le sont pas.
+- S'il n'y a rien à affecter, rien ne se passe et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : un ennemi ne peut être analysé qu'une fois.

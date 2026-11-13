@@ -10,7 +10,7 @@ pools:
 pool_weight: 2
 details:
 - label: Dent
-  value: 10 % (+2 % par point de chance), ×3,2
+  value: 10 % par tir (+2 % par Chance, max. 50 %), ×3,2
 icon: items-ps/key-item/gold-teeth.png
 sprite: true
 names:
@@ -48,3 +48,11 @@ names:
 Parfois, vous tirez une dent en or qui inflige ×3,2 dégâts (plus souvent avec de la chance)
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque tir a 10 % de chance, +2 % par point de Chance (maximum 50 %, atteint à 20 de Chance), de devenir une dent en or : il inflige ×3,2 dégâts et est un peu plus gros.
+- Le tirage est fait séparément pour chaque tir d'une salve, donc les tirs supplémentaires peuvent aussi être des dents.
+- Cela multiplie les dégâts du tir avant les effets au contact ; cela marche sur les boss.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente ni la chance ni le multiplicateur.

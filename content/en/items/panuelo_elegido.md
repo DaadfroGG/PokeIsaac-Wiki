@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Damage -0.3
   good: false
+details:
+- label: Speed
+  value: '+0.9'
+- label: Damage
+  value: '-0.3'
 icon: items/choice-scarf.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 速度++，傷害-0.3
 ---
 Speed ++, damage -0.3
+
+## How it works
+- Speed +0.9 has no diminishing returns. Your speed never goes below 1.6.
+- The -0.3 Damage is taken off your flat bonuses; penalties count in full. Your Damage never goes below 0.5.
+
+## Stacking
+- Everything stacks: each copy adds its stats again.

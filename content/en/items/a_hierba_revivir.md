@@ -9,6 +9,11 @@ pools:
 - angel
 pool_weight: 2
 charge: 4
+details:
+- label: Gain
+  value: 1 soul heart
+- label: Cap
+  value: 6 soul hearts
 icon: items-ps/medicine/revival-herb.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 獲得一顆靈魂之心
 ---
 You gain a soul heart
+
+## How it works
+- You gain one full [soul heart](../mechanics/corazones_alma.html).
+- You can hold up to 6 soul hearts; at that cap it can't be used and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you gain 2 soul hearts.

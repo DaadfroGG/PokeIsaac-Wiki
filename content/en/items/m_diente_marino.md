@@ -11,15 +11,15 @@ pools:
 pool_weight: 2
 details:
 - label: Needle
-  value: 3 % (+0.5 % per luck, max. 10 %)
+  value: 3 % per shot (+0.5 % per Luck, max. 10 %)
 - label: Frequency
   value: At most one per second
 - label: Finishes off
-  value: At half health or less
-- label: If it doesn't finish off
-  value: ×3
-- label: Bosses
-  value: ×2
+  value: At half health or less (not bosses)
+- label: Otherwise
+  value: ×3 (bosses ×2)
+- label: Release
+  value: 6 shots at 35 % damage
 icon: items-ps/evo-item/deep-sea-tooth.png
 sprite: true
 names:
@@ -55,3 +55,12 @@ names:
     desc: 有時(每秒最多一次)會射出一根針:若敵人的體力在一半或以下,會將其一擊打倒,並向周圍放出六發子彈;否則造成×3傷害(對首領×2)
 ---
 Sometimes (at most once per second) you fire a needle: if the enemy is at half health or less, it defeats it instantly and releases six shots around it; otherwise it deals ×3 (×2 to bosses)
+
+## How it works
+- Each shot has a 3 % chance (+0.5 % per Luck, max 10 %) to be a needle, but never more than one needle per second.
+- When a needle hits a non-boss enemy at half health or less, it defeats it instantly and 6 shots at 35 % of the needle's damage burst out around it in a circle.
+- If the enemy is above half health the needle deals ×3 damage instead. Against a boss it deals ×2 whatever its health.
+- A needle works once: it is used up on its first hit.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance.

@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Clearing a room
+- label: Heal
+  value: ½ heart
 icon: items/leftovers.png
 sprite: true
 names:
@@ -44,3 +49,10 @@ names:
     desc: 清除房間時回復半顆愛心
 ---
 Recover half a heart when you clear a room
+
+## How it works
+- Every time a room is cleared, you recover half a heart (if you are not at full health).
+- It works in every room type. The healing ignores the limit on item healing.
+
+## Stacking
+- It does not stack, and it is the same effect as the one on [Shell Bell](cascabel.html): owning both still heals only half a heart per room.

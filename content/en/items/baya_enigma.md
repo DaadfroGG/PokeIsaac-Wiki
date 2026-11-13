@@ -14,6 +14,8 @@ details:
   value: 30 % each time you are hit
 - label: Heal
   value: ½ heart
+- label: Limit
+  value: Items heal at most 30 % of max health per 10 s
 icon: items-ps/berry/enigma.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 受到攻擊時，有時會恢復半顆愛心
 ---
 When you get hit, you sometimes recover half a heart
+
+## How it works
+- Each time you take a hit that hurts you (even if a soul heart absorbs it), there is a 30 % chance to heal half a heart. Luck does not change the chance.
+- It does nothing if the hit kills you.
+- This healing counts toward the limit on item healing: items can heal at most 30 % of your max health (minimum 2 hearts) per 10 seconds.
+- Hits that are blocked or dodged don't trigger it.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

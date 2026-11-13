@@ -14,8 +14,14 @@ stats:
 - text: Soigne 1 cœur
   good: true
 details:
+- label: Cœurs
+  value: +1 (et le soigne)
 - label: Nuage
-  value: Chaque demi-seconde immobile
+  value: Toutes les 0,5 s en restant immobile en combat
+- label: Durée du nuage
+  value: 2,5 s, rayon 30 px
+- label: Poison
+  value: 2 s, 25 % de vos dégâts toutes les 0,25 s (min. 0,5)
 icon: items-ps/curry-ingredient/moomoo-cheese.png
 sprite: true
 names:
@@ -51,3 +57,12 @@ names:
     desc: 戰鬥中站著不動時，會釋放臭氣雲讓敵人中毒；愛心+1
 ---
 Si vous restez immobile en combat, vous libérez des nuages puants qui empoisonnent les ennemis ; cœur +1
+
+## Fonctionnement
+- Vous gagnez un cœur de plus, rempli.
+- Tant que vous restez immobile dans une salle avec des ennemis, vous lâchez un nuage puant sous vous toutes les 0,5 s. Un nuage dure 2,5 s et a un rayon de 30 px.
+- Toutes les 0,25 s, chaque ennemi dans le nuage, volants compris, subit 25 % de vos dégâts (au moins 0,5) et est empoisonné 2 s (voir [effets de statut](../mechanics/estados.html)).
+- Il n'existe pas plus de 24 nuages et flaques à la fois. Bouger, ou une salle sans ennemis, arrête les nuages.
+
+## Cumul
+- Le nuage ne change pas ; +1 cœur s'ajoute à chaque exemplaire.

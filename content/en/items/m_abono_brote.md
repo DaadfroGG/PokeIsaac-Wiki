@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Range +60
   good: true
+details:
+- label: Range
+  value: '+60'
+- label: Bounces
+  value: +1 per copy
+- label: Bounces off
+  value: Walls, rocks and obstacles
 icon: items-ps/mulch/gooey.png
 sprite: true
 names:
@@ -48,3 +55,10 @@ names:
 Your shots bounce off walls and rocks
 
 {{< clip >}}
+
+## How it works
+- Each of your shots can bounce once off a wall, a rock or another obstacle instead of disappearing. It is reflected and keeps flying with the rest of its range.
+- A bounce does not damage or stop anything by itself; it just keeps the shot alive. With [AuroraTicket](m_ori_ticket.html), a shot bounces first and only wraps when it has no bounces left.
+
+## Stacking
+- Each copy adds one more bounce and +60 Range.

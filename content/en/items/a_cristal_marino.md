@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Shots
+  value: 12, all around you
+- label: Damage
+  value: Same as your shots
+- label: Effects
+  value: All of them
 icon: items-ps/partner-gift/beach-glass.png
 sprite: true
 names:
@@ -44,3 +51,14 @@ names:
     desc: 你會向周圍射出十二發彈，帶有它們的所有效果
 ---
 You fire twelve of your shots all around you, with all their effects
+
+## How it works
+- You fire 12 of your shots at once, evenly spaced all around you (one every 30°).
+- Each one is a full shot of yours: same damage, type, size, range, [critical hits](../mechanics/criticos.html), statuses and item effects on shots.
+- They count as extra shots, so effects that only work on your main shots don't trigger on them (see [extra shots](../mechanics/disparos_extra.html)).
+- It only needs 1 charge.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you fire 24 shots.

@@ -12,9 +12,11 @@ details:
 - label: Treat
   value: ½ soul heart
 - label: Trick
-  value: Enemies with 25% less health (not bosses)
+  value: Enemies start with 25 % less health (not bosses)
 - label: Chance
-  value: 50% each
+  value: 50 % each
+- label: Frequency
+  value: Once per room
 icon: items-ps/key-item/loot-sack.png
 sprite: true
 names:
@@ -50,3 +52,12 @@ names:
     desc: 進入有敵人的房間時：不給糖就搗蛋！給糖：半顆靈魂之心。搗蛋：敵人一開始生命減少25%。
 ---
 When you enter a room with enemies: trick or treat! Treat: half a soul heart. Trick: enemies start with 25% less health.
+
+## How it works
+- When you enter a room that still has enemies, it is trick or treat: a 50 % chance each.
+- Treat: you gain half a soul heart.
+- Trick: every non-boss enemy in the room starts with 25 % less health (at least 1 left).
+- It doesn't work in boss rooms, and only once per room.
+
+## Stacking
+- A second copy changes nothing: the roll still happens once per room.

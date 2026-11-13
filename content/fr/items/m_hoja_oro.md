@@ -23,6 +23,12 @@ stats:
 details:
 - label: Dégâts
   value: ×1,8 et +1
+- label: Cœurs
+  value: +1 (et le soigne)
+- label: Cadence
+  value: -4 (plus lente)
+- label: Vitesse des tirs
+  value: '-1'
 icon: items-ps/partner-gift/gold-leaf.png
 sprite: true
 names:
@@ -58,3 +64,10 @@ names:
     desc: 傷害×1.8 和 +1，並多一顆愛心；射擊稍微變慢
 ---
 Dégâts ×1,8 et +1 et un cœur de plus ; vous tirez un peu plus lentement
+
+## Fonctionnement
+- Vos dégâts sont multipliés par 1,8 (ce ×1,8 compte avec les autres multiplicateurs de dégâts) et augmentés de +1. Vous gagnez aussi un cœur de plus, rempli, mais vous tirez plus lentement et vos tirs sont un peu plus lents.
+- Le ×1,8 est un multiplicateur de dégâts comme les autres et est soumis à leur plafond.
+
+## Cumul
+- Le ×1,8 ne se cumule pas, mais +1 Dégâts, +1 cœur, la cadence plus lente et la vitesse des tirs s'ajoutent à chaque exemplaire.

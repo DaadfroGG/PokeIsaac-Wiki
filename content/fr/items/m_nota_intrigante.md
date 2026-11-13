@@ -9,6 +9,11 @@ pools:
 - treasure
 - secret
 pool_weight: 2
+details:
+- label: Marque
+  value: 1 ennemi au hasard par salle (pas un boss), au moins 2 requis
+- label: Récompense
+  value: 2 objets (cœur, cœur d'âme, clé, bombe, pépite ou pièce)
 icon: items-ps/key-item/enigmatic-card.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每個房間會有一個敵人被標上骷髏：如果牠第一個倒下，就會掉落獎勵
 ---
 Dans chaque salle, un ennemi est marqué d'un crâne : s'il tombe en premier, il lâche une récompense
+
+## Fonctionnement
+- Dans une salle avec au moins deux ennemis normaux, l'un d'eux est marqué d'un crâne.
+- Si l'ennemi marqué est le premier battu de la salle (par n'importe quoi), il lâche 2 objets au hasard : cœur, cœur d'âme, clé, bombe, pépite ou pièce.
+- Si un autre ennemi tombe en premier, la marque est perdue et rien ne tombe. Une seule marque par salle.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne donne pas une seconde marque.

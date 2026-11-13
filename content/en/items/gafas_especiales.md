@@ -49,3 +49,12 @@ names:
     desc: 被你打到生命低於15 %的敵人會立即倒下（頭目除外）
 ---
 Enemies you bring below 15 % health fall instantly (not bosses)
+
+## How it works
+
+- When a hit would leave a non-boss enemy with less than 15 % of its maximum health (but still alive), it is killed instead.
+- It works on hits from your shots, including those of your companions. [Bosses](../mechanics/jefes_adaptativos.html) are not affected.
+
+## Stacking
+
+- A second copy changes nothing.

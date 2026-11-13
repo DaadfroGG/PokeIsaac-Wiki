@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Rayon
+  value: 150 px autour de vous
+- label: Étourdissement
+  value: 0,67 s (pas les boss)
+- label: Dégâts
+  value: 1 à chaque ennemi touché
+- label: Tirs ennemis
+  value: Renvoyés loin de vous
 icon: items-ps/mulch/amaze.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 擊退附近的敵人和彈，並使敵人暈眩
 ---
 Vous repoussez au loin les ennemis et les tirs proches, et étourdissez les ennemis
+
+## Fonctionnement
+- Chaque ennemi à moins de 150 px subit 1 point de dégâts. Ce coup ne déclenche ni vos objets ni vos statuts.
+- Les ennemis à portée (sauf les boss) sont projetés loin et étourdis 0,67 seconde.
+- Les boss à portée ne subissent que ce point de dégâts : ils ne sont ni repoussés ni étourdis.
+- Les tirs ennemis à moins de 150 px sont retournés pour filer droit loin de vous, à la même vitesse. Ils restent des tirs ennemis.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : la vague part deux fois de suite (2 dégâts, nouvelle poussée).

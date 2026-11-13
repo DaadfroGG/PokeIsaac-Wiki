@@ -13,7 +13,7 @@ stats:
   good: false
 details:
 - label: Quand vous battez un ennemi
-  value: '30 % : un autre perd 25 % de sa vie'
+  value: '30 % : un autre ennemi perd 25 % de sa vie actuelle'
 - label: Vie max
   value: -1 cœur
 icon: items-ps/hold-item/spell-tag.png
@@ -51,3 +51,13 @@ names:
     desc: When you defeat an enemy, 30% of the time another enemy in the room loses 25% of its current health. Max health -1 heart.
 ---
 Quand vous battez un ennemi, 30 % du temps un autre ennemi de la salle perd 25 % de sa vie actuelle. Vie max. -1 cœur.
+
+## Fonctionnement
+
+- Coûte 1 réceptacle de cœur.
+- Chaque fois que vous battez un ennemi (pas un sbire invoqué), il y a 30 % de chances qu'un autre ennemi au hasard dans la salle, boss compris, perde 25 % de sa vie actuelle (il ne peut pas en mourir, il garde au moins 1).
+- Sans effet s'il ne reste aucun autre ennemi en vie.
+
+## Cumul
+
+- Chaque exemplaire coûte un cœur de plus ; l'effet de malédiction de 30 % n'augmente pas.

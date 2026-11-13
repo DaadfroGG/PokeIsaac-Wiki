@@ -9,8 +9,12 @@ pools:
 - treasure
 pool_weight: 2
 details:
+- label: Compagnon
+  value: Voltorbe (Électrik)
 - label: Explosion
-  value: Vos dégâts ×4, 70 px
+  value: Vos Dégâts × 4 (au moins 10), rayon 70 px
+- label: Fréquence
+  value: Une fois par salle
 icon: items-ps/ball/timer.png
 sprite: true
 names:
@@ -48,3 +52,16 @@ names:
 Un Voltorbe fonce sur les ennemis et explose ; il revient dans la salle suivante
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Dans une salle avec des ennemis, Voltorbe attend environ 0,8 seconde après avoir repéré une cible (à moins de 700 px), puis fonce dessus à environ 250 px par seconde.
+- En touchant l'ennemi, il explose : tout ennemi à moins de 70 px subit 4 fois vos Dégâts (au moins 10).
+- Après l'explosion, il disparaît pour le reste de la salle et revient dans la suivante.
+- Il ne tire pas et ne fait rien dans une salle déjà nettoyée.
+- Ses dégâts dépendent de votre stat de Dégâts.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément.

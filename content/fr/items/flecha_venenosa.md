@@ -9,6 +9,15 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,3
   good: true
+details:
+- label: Chance
+  value: 33 % par coup, +2 % par point de Chance
+- label: Poison
+  value: 2,5 secondes
+- label: Bonus
+  value: +50 % de dégâts contre les ennemis empoisonnés
+- label: Dégâts
+  value: +0,3
 icon: items/poison-barb.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 每3發有1發會使敵人中毒；中毒的敵人受到的傷害+50%
 ---
 1 tir sur 3 empoisonne ; les ennemis empoisonnés subissent +50% de dégâts
+
+## Fonctionnement
+
+- Ajoute +0,3 Dégâts.
+- Chaque coup a 33 % de chances (+2 % par point de Chance) d'empoisonner l'ennemi pendant 2,5 secondes. Voir [Effets de statut](../mechanics/estados.html).
+- Vos coups infligent +50 % de dégâts aux ennemis empoisonnés (quelle qu'en soit la source).
+- Cet objet n'apparaît plus dans les réserves d'objets habituelles.
+
+## Cumul
+
+- Chaque exemplaire ajoute +0,3 Dégâts. La chance de poison et le +50 % n'augmentent pas avec les exemplaires supplémentaires.

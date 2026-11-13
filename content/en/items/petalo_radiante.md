@@ -8,6 +8,13 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Damage
+  value: +0.2 per room cleared without getting hit
+- label: Cap
+  value: +3 (15 rooms)
+- label: Rooms
+  value: Combat rooms and boss rooms
 icon: items-ps/key-item/radiant-petal.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 每在不受傷的情況下清空一個房間：傷害 +0.2（最多 +3）
 ---
 Each room you clear without getting hurt: damage +0.2 (up to +3)
+
+## How it works
+- Each time you clear a combat room or a boss room without having been hit since you entered it, you gain Damage +0.2 for the rest of the run.
+- Up to 15 rooms: +3.
+- Getting hit only spoils the current room: the bonus already earned stays.
+- It is a normal flat Damage bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+
+## Stacking
+- A second copy does nothing more: same counter, same +3 cap.

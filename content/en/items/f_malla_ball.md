@@ -9,8 +9,14 @@ pools:
 - treasure
 pool_weight: 2
 details:
+- label: Companion
+  value: Combee (Bug)
 - label: Bees
   value: One every 4 s, up to 3
+- label: Bee damage
+  value: 2 × your Damage (at least 2), per hit
+- label: Bee life
+  value: 10 s, or 2 hits
 icon: items-ps/ball/net.png
 sprite: true
 names:
@@ -48,3 +54,14 @@ names:
 A Combee follows you and, in combat, releases little bees that attack enemies
 
 {{< clip >}}
+
+## How it works
+
+- Combee follows you and does not shoot itself. While enemies are alive, it releases a little bee every 4 seconds, up to 3 at once.
+- A bee flies at the nearest enemy (within 600 px) and hits it for 2 times your Damage (at least 2), as Bug-type damage. It backs off a little after its first hit and disappears after its second hit, or after 10 seconds.
+- Bee damage scales with your Damage stat.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

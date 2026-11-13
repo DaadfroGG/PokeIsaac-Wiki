@@ -12,6 +12,8 @@ stats:
 - text: Evolution stone
   good: true
 details:
+- label: Evolves
+  value: Eevee > Umbreon
 - label: Odd floors
   value: Damage ×1.2
 - label: Even floors
@@ -51,3 +53,23 @@ names:
     desc: 讓伊布進化（月亮伊布）。此外，在奇數樓層造成×1.2傷害，在偶數樓層跑得更快
 ---
 Evolves Eevee (Umbreon). Also, on odd floors you deal ×1.2 damage and on even floors you run faster
+
+## How it works
+
+- Using it on Eevee (before it has evolved) turns it into Umbreon, and its type becomes Dark.
+- The first evolution gives +1 heart (and heals it), +1 Damage and makes you a little bigger. This bonus comes from evolving, not from the stone itself.
+- Once Eevee has evolved, further stones no longer evolve it, but their effect below stays active.
+- Pokémon other than Eevee do not evolve from this stone; they still get its effect.
+- The effect works for whatever Pokémon you play and does not depend on having evolved.
+- If you carry an [Everstone](piedra_eterna.html), evolution is blocked: you get +0.7 Damage and +1 heart instead, and the effect still works.
+
+## Effect
+
+- On odd floors (1, 3, 5...) your damage is multiplied by 1.2. This shows on your Damage stat and counts toward the usual [damage multiplier cap](../mechanics/rendimientos.html).
+- On even floors (2, 4, 6...) you get +0.5 Speed instead.
+- The bonus swaps automatically when you take the stairs.
+
+## Stacking
+
+- A second copy of the same stone adds nothing: the effect is just switched on.
+- Different stones add their effects together.

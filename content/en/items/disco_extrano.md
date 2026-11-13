@@ -9,6 +9,11 @@ pool_weight: 2
 stats:
 - text: Damage +0.4
   good: true
+details:
+- label: Damage
+  value: '+0.4'
+- label: Shot type
+  value: Random among the 18 types
 icon: items-ps/evo-item/dubious-disc.png
 sprite: true
 names:
@@ -46,3 +51,13 @@ names:
 Each shot is of a random type
 
 {{< clip >}}
+
+## How it works
+
+- Adds +0.4 Damage.
+- Each shot you fire gets a random type out of the 18 (equal chances), with its color. The shot uses that type on the [type chart](../mechanics/tabla_tipos.html) and for the type's status chance on hit.
+- This item no longer appears in the regular item pools.
+
+## Stacking
+
+- Each copy adds +0.4 Damage. The random type is just switched on.

@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Fire rate -
   good: false
+details:
+- label: Damage
+  value: '+1.5'
+- label: Fire rate
+  value: +0.05 s between shots (worse)
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/curry-ingredient/precooked-burger.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 傷害+1.5、射速-
 ---
 Damage +1.5, fire rate -
+
+## How it works
+- Damage +1.5: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Fire rate penalty: lengthens the delay between two shots by 0.05 s. A slowdown is added to the total of your other fire-rate items, and a net slowdown always counts in full, never reduced.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

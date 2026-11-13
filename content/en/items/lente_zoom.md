@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Shot spd +2
   good: true
+details:
+- label: Range
+  value: +150 px
+- label: Shot speed
+  value: '+2'
 icon: items/zoom-lens.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 射程++，且彈速更快
 ---
 Range ++ and faster shots
+
+## How it works
+- Range +150: your shots travel 150 px farther, with no diminishing returns.
+- Shot speed +2: your shots fly faster (they reach their range sooner). It never goes below 4.
+
+## Stacking
+- Everything stacks: each copy adds its stats again.

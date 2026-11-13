@@ -9,6 +9,13 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Cœurs d'âme
+  value: +2 à la prise
+- label: Réanimation
+  value: Coéquipiers K.O. en coop, avec 2 cœurs
+- label: Invulnérabilité
+  value: 1,5 s après la réanimation
 icon: items-ps/medicine/sacred-ash.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 復活瀕死的隊友，並給你兩顆靈魂之心
 ---
 Ranime les coéquipiers K.O. et vous donne deux cœurs d'âme
+
+## Fonctionnement
+- Dès que vous le ramassez, vous gagnez 2 [cœurs d'âme](../mechanics/corazones_alma.html), dans la limite de 6 cœurs d'âme.
+- En coop, chaque coéquipier tombé (et qui n'a pas quitté la partie) est réanimé avec 2 cœurs et reste invulnérable pendant 1,5 seconde.
+- Il ne se passe plus rien ensuite : il ne réanime personne par la suite. Cela fonctionne une seule fois, au moment où vous le ramassez.
+- En solo, vous ne recevez que les cœurs d'âme.
+
+## Cumul
+- Chaque exemplaire donne 2 cœurs d'âme de plus et réanime tout coéquipier à terre à ce moment-là.

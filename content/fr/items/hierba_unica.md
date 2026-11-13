@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Cadence
+  value: ×1,67 tir par seconde (temps entre deux tirs ×0,6)
+- label: Durée
+  value: 4 s à partir de l'entrée dans un combat
+- label: Quand
+  value: Chaque salle qui a encore des ennemis
 icon: items-ps/hold-item/power-herb.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 每場戰鬥開始時，射速大幅提升，持續4秒
 ---
 Au début de chaque combat, cadence très élevée pendant 4 secondes
+
+## Fonctionnement
+- Chaque fois que vous entrez dans une salle qui a encore des ennemis, le temps entre vos tirs est multiplié par 0,6 pendant 4 secondes : environ 67 % de tirs en plus par seconde.
+- Le compte à rebours démarre à l'entrée, pas quand les ennemis apparaissent.
+- La limite de cadence s'applique toujours : jamais plus de 12 tirs par seconde.
+- Elle se multiplie avec [Vitesse +](velocidad_x.html) : avec les deux, le temps entre les tirs est ×0,48 pendant ces 4 s.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours ×0,6 pendant 4 s.

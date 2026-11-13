@@ -13,6 +13,11 @@ stats:
   good: true
 - text: Dégâts +0,5
   good: true
+details:
+- label: Portée
+  value: +120 px
+- label: Dégâts
+  value: +0,5
 icon: items/focus-band.png
 sprite: true
 names:
@@ -48,3 +53,10 @@ names:
     desc: 射程+，傷害+0.5
 ---
 Portée + et dégâts +0,5
+
+## Fonctionnement
+- Portée +120 : vos tirs vont 120 px plus loin, sans rendements décroissants.
+- Le +0,5 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

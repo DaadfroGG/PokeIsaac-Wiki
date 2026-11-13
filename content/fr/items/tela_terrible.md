@@ -10,12 +10,12 @@ pools:
 - boss
 pool_weight: 2
 details:
-- label: Chance
+- label: Probabilité
   value: 25 % par ennemi vaincu
 - label: Explosion
-  value: 80 px autour de l'ennemi
-- label: Dégâts
-  value: 1,5 × vos Dégâts (au moins 2), ignore la table des types
+  value: 1,5 × vos Dégâts (au moins 2), 80 px autour
+- label: Chance
+  value: Aucun effet
 icon: items-ps/evo-item/reaper-cloth.png
 sprite: true
 names:
@@ -51,3 +51,12 @@ names:
     desc: 有時被你打倒的敵人會爆炸，傷及周圍的敵人
 ---
 Parfois, l'ennemi vaincu explose et blesse ceux qui l'entourent
+
+## Fonctionnement
+- Chaque ennemi que vous battez a 25 % de chances d'exploser. La Chance ne change rien.
+- L'explosion touche tous les autres ennemis à moins de 80 px (mesurés jusqu'à leur bord) pour 1,5 fois vos Dégâts, au moins 2. Elle blesse aussi les boss.
+- Elle ne vous blesse jamais et ne casse pas les rochers.
+- Ce sont des dégâts simples : pas de type, pas de coup critique, pas d'effets d'objets.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours 25 %.

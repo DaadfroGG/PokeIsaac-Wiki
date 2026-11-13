@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Shield
-  value: 1 s out of every 8
+  value: 1 s out of every 8 s
+- label: Blocks
+  value: All damage
 icon: items-ps/fossil/armor.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 每8秒中有1秒，任何攻擊都傷不到你（身上會發光）
 ---
 Every 8 seconds, for one second, nothing can hurt you (you glow)
+
+## How it works
+- The game runs an 8-second cycle. During the last second of every cycle, you glow and nothing can hurt you.
+- The cycle runs all the time, in every room, from the moment you have the item. It is not tied to a hit or a room.
+- A hit that arrives during the glow does nothing and gives only a short flash of invulnerability.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

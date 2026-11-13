@@ -10,6 +10,8 @@ pools:
 pool_weight: 2
 charge: 3
 details:
+- label: Charge
+  value: 3 salles
 - label: Durée
   value: 5 secondes
 - label: Réveil
@@ -51,3 +53,14 @@ names:
     desc: 讓敵人睡著5秒；對睡著的敵人的第一次攻擊造成三倍傷害並把牠叫醒
 ---
 Endort les ennemis 5 secondes ; le premier coup sur un ennemi endormi inflige le triple et le réveille
+
+## Fonctionnement
+- Charge : 3 salles. Chaque salle terminée donne 1 charge, il est donc de nouveau prêt après 3 salles terminées.
+- Tous les ennemis vivants de la salle qui ne sont pas des boss s'endorment pendant 5 secondes. Un ennemi endormi ne bouge plus et n'attaque plus. Les boss ne sont jamais touchés, mais leurs sbires oui.
+- Le premier coup sur un ennemi endormi inflige le triple de dégâts (×3) et le réveille aussitôt. Cela s'ajoute à vos autres bonus de dégâts.
+- Si un ennemi endormi n'est pas touché, il se réveille seul au bout de 5 secondes.
+- Il est inutilisable quand il ne reste aucun ennemi non-boss dans la salle, et aucune charge n'est alors dépensée.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec une [Pile Cellulaire](d_pila.html), l'objet peut stocker le double de charge.

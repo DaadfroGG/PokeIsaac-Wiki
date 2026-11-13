@@ -9,6 +9,15 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: A non-boss enemy hurts you by touching you
+- label: Knockback
+  value: Pushed away from you
+- label: Stun
+  value: 0.5 s
+- label: Bosses
+  value: Not affected
 icon: items-ps/hold-item/red-card.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 近身攻擊你的敵人（頭目除外）會被擊退並暈眩
 ---
 Enemies (not bosses) that hit you in melee get knocked back and stunned
+
+## How it works
+
+- Every time an enemy hurts you by body contact, that enemy is thrown away from you and stunned for 0.5 seconds.
+- You still take the hit: the card does not prevent damage, it only gets the attacker off you.
+- It only reacts to melee contact. Enemy shots, explosions and ground hazards do nothing to trigger it.
+- [Bosses](../mechanics/jefes_adaptativos.html) are never pushed or stunned.
+
+## Stacking
+
+- A second copy changes nothing.

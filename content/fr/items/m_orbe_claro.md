@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Rayon de lumière
-  value: 10 % par coup, ×3
+  value: 10 % par coup (+1 % par Chance), ×3
+- label: Zone
+  value: Rayon 30 px, après 0,1 s
 icon: items-ps/key-item/light-stone.png
 sprite: true
 names:
@@ -49,3 +51,10 @@ names:
 Parfois, en touchant, un rayon de lumière frappe l'ennemi et inflige ×3 dégâts
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque coup a 10 % de chance (+1 % par Chance) de faire tomber un rayon de lumière sur l'ennemi touché. Après 0,1 s, il inflige ×3 les dégâts de ce coup à tous les ennemis à moins de 30 px de l'endroit.
+- Le rayon marche sur les boss. Ses dégâts ne déclenchent pas d'effets d'objets.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas la chance.

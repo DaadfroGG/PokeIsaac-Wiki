@@ -8,7 +8,11 @@ tier: 2
 pool_weight: 2
 details:
 - label: Poison
-  value: 6 s on entering
+  value: 6 s on entering a room with enemies
+- label: Damage
+  value: 1.5 every 0.5 s (about 18 in total)
+- label: Bosses
+  value: Poisoned too
 icon: items-ps/other-item/purple-nectar.png
 sprite: true
 names:
@@ -44,3 +48,11 @@ names:
     desc: 進入房間時，所有敵人會中毒一段時間
 ---
 When you enter a room, all enemies are poisoned for a good while
+
+## How it works
+- When you enter a room that has living enemies, every enemy in it is poisoned for 6 s, bosses included (see [status effects](../mechanics/estados.html)).
+- The poison deals 1.5 damage every 0.5 s (12 ticks, about 18 damage), a bit more if a poisoned enemy is later hit by your own poison.
+- Only enemies present on entry are poisoned: later waves and spawned enemies are not.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

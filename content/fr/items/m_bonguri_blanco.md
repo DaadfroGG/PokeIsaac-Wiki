@@ -6,6 +6,13 @@ category: shot
 family: module
 tier: 1
 pool_weight: 2
+details:
+- label: Ralentissement
+  value: 30 % par coup (+2 % par Chance), 1,5 s
+- label: Gel
+  value: 25 % (+2 % par Chance) sur un ennemi déjà ralenti, 1,8 s
+- label: Boss
+  value: Jamais touchés
 icon: items-ps/apricorn/white.png
 sprite: true
 names:
@@ -41,3 +48,12 @@ names:
     desc: 你的射擊有時會冰凍敵人
 ---
 Parfois, vos tirs gèlent les ennemis
+
+## Fonctionnement
+- Sur un ennemi non ralenti, un coup a 30 % de chance (+2 % par point de Chance) de le ralentir 1,5 s (voir [effets de statut](../mechanics/estados.html)).
+- Sur un ennemi déjà ralenti, un coup a 25 % de chance (+2 % par Chance) de le geler : il est étourdi et reste immobile environ 1,8 s. Le gel peut donc arriver dès le deuxième coup.
+- Les boss ne sont jamais ralentis ni gelés par cet effet.
+- Si vous avez des tirs de type Glace ou une Noigrume Bleu, ces ralentissements comptent comme la première étape.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas les chances.

@@ -6,6 +6,15 @@ category: defense
 family: core
 tier: 1
 pool_weight: 0
+details:
+- label: Cost
+  value: 3 PokéDollars per use
+- label: Heal
+  value: ½ heart
+- label: Charge
+  value: None needed
+- label: At full health
+  value: Can't be used
 icon: items-ps/medicine/fresh-water.png
 sprite: true
 names:
@@ -41,3 +50,12 @@ names:
     desc: 使用：支付3寶可幣，回復半顆愛心
 ---
 Use it: pay 3 Pokédollars to heal half a heart
+
+## How it works
+- Each use costs 3 PokéDollars and heals half a heart. It never needs charge, so you can use it as often as you can pay.
+- It can't be used at full health or with fewer than 3 PokéDollars, and then nothing is spent.
+- The healing limit on items does not apply to it.
+- It is not sold or found in the usual item rooms.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal.

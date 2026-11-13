@@ -10,9 +10,11 @@ pools:
 pool_weight: 1
 details:
 - label: When entering a room
-  value: One cursed enemy (+60% health, +½ heart of damage)
+  value: One cursed enemy (+60 % health, +½ heart of damage)
 - label: When defeated
   value: Soul heart
+- label: Never
+  value: Boss rooms, cleared rooms
 icon: items-ps/hold-item/flame-orb.png
 sprite: true
 names:
@@ -48,3 +50,11 @@ names:
     desc: When you enter a room with enemies, a random one is cursed (+60% health and +½ heart of damage). When it falls, it drops a soul heart.
 ---
 When you enter a room with enemies, a random one is cursed (+60% health and +½ heart of damage). When it falls, it drops a soul heart.
+
+## How it works
+- When you enter a room that still has enemies, one random non-boss enemy is cursed: its health is multiplied by 1.6 and its contact damage rises by half a heart. A message announces it.
+- It happens once per room, and never in boss rooms or in a room you already cleared.
+- When the cursed enemy is defeated, it drops a [soul heart](../world/soul.html), however it dies.
+
+## Stacking
+- It is an on/off effect: a second Funeral Candle does not curse a second enemy.

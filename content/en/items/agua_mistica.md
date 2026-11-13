@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: Range +40
   good: true
+details:
+- label: Range
+  value: '+40'
+- label: Droplets
+  value: 3 per wall or rock hit
+- label: Droplet damage
+  value: 50 % of the shot
+- label: Droplet range
+  value: 120 px
 icon: items/mystic-water.png
 sprite: true
 names:
@@ -47,3 +56,13 @@ names:
     desc: 彈撞上牆壁和岩石時，會濺出三滴水珠
 ---
 When hitting walls and rocks, shots splash three droplets
+
+## How it works
+
+- Adds +40 Range.
+- When one of your shots hits a wall or a rock, it bursts into three droplets that fly back toward you in a fan (about 30° to each side). Each droplet deals 50 % of the shot's damage, is smaller than the shot, keeps its type and travels up to 120 px.
+- Droplets carry no other effects and cannot splash again. Split shots and other child shots do not splash.
+
+## Stacking
+
+- Each copy adds another +40 Range. The splash itself is just switched on: more copies do not add droplets.

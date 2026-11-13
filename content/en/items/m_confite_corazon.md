@@ -6,6 +6,11 @@ category: shot
 family: module
 tier: 2
 pool_weight: 2
+details:
+- label: Pierce
+  value: +1 enemy per copy
+- label: Hits per shot
+  value: One hit per enemy
 icon: items-ps/evo-item/love-sweet.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
 Your shots pierce enemies
 
 {{< clip >}}
+
+## How it works
+- Your shots go through enemies: a shot is only stopped after it has hit one more enemy than its pierce value. With one copy each shot can hit two enemies in a line.
+- A shot hits a given enemy only once, and it keeps its full damage on every enemy it passes through.
+- It does not make shots pass through rocks or walls.
+
+## Stacking
+- Each copy adds +1 pierce, so a shot can hit one more enemy.

@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Vit. tir +2
   good: true
+details:
+- label: Portée
+  value: +150 px
+- label: Vitesse des tirs
+  value: '+2'
 icon: items/zoom-lens.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 射程++，且彈速更快
 ---
 Portée ++ et tirs plus rapides
+
+## Fonctionnement
+- Portée +150 : vos tirs vont 150 px plus loin, sans rendements décroissants.
+- Vitesse des tirs +2 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

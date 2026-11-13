@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Dégâts
+  value: ×2
+- label: Durée
+  value: 5 secondes (renouvelée à chaque coup)
 icon: items-ps/hold-item/weakness-policy.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，傷害×2，持續5秒
 ---
 Quand vous êtes touché, dégâts ×2 pendant 5 secondes
+
+## Fonctionnement
+- Après un coup reçu, vos Dégâts sont multipliés par 2 pendant 5 secondes.
+- Un autre coup pendant ce temps relance les 5 secondes ; le bonus ne dépasse jamais ×2.
+- C'est un multiplicateur de dégâts : il compte dans les limites des multiplicateurs (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Les coups bloqués ou esquivés ne le déclenchent pas.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

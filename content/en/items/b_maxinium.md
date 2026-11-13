@@ -13,8 +13,12 @@ stats:
 - text: +5 Voltorb
   good: true
 details:
+- label: Voltorbs
+  value: '+5'
 - label: Explosion
-  value: ×1.5 radius, ×2 damage
+  value: ×1.5 radius (95 → 140 px), ×2 damage
+- label: Hurts you
+  value: Yes, over the bigger radius
 icon: items-ps/other-item/dynite-ore.png
 sprite: true
 names:
@@ -50,3 +54,13 @@ names:
     desc: +5顆霹靂電球；爆炸大得多，傷害加倍
 ---
 +5 Voltorbs; much bigger explosions that deal double damage
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, each Voltorb you place gets a 140 px radius (instead of 95, about ×1.5) and deals ×2 damage, i.e. 2 × max(25, 7 × your Damage). The Voltorb also looks bigger.
+- You are hurt by the bigger blast too, so stay further away.
+- Small Voltorbs from the [Candy Jar](b_tarro.html) are not enlarged.
+- With the [Colress Machine](w_acromaquina.html), its Voltorbs are 1.5 times bigger, and their explosions get ×1.4 radius and ×1.35 damage (its 15 % bonus blast gets ×1.3 radius).
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

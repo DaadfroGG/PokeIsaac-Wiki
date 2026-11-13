@@ -14,6 +14,10 @@ details:
   value: '3 per kill: fire (burns), electric (lightning) and ice (freezes)'
 - label: Damage
   value: 60 % of your damage, homing
+- label: Minimum
+  value: 1.5 per shot
+- label: Range
+  value: 420 px
 icon: items-ps/tr/normal.png
 sprite: true
 names:
@@ -49,3 +53,14 @@ names:
     desc: 每擊倒一個敵人，就會朝其他敵人射出三發子彈（火、電、冰）
 ---
 Each enemy you defeat releases three shots (fire, electric and ice) at the others
+
+## How it works
+- Every enemy you defeat (bosses included) releases three homing shots from where it died, each aimed at one of the three closest enemies left. With fewer enemies, they share targets; with none, they fly off in three directions.
+- Each shot deals 60 % of your Damage (at least 1.5) and has its own type, so the [type chart](../mechanics/tabla_tipos.html) uses Fire, Electric or Ice, not your type.
+- **Fire**: always burns the enemy it hits (4 s with the [Heat Rock](roca_calor.html), 2 s otherwise).
+- **Electric**: always sends lightning to up to 2 other enemies within 180 px, for 60 % of the shot's damage.
+- **Ice**: slows the target (30 % chance, +2 % per Luck), or freezes it for 1.8 s if it was already slowed (25 %, +2 % per Luck). Bosses can't be frozen.
+- These shots don't carry your other shot effects and don't trigger items that need your own shots, but a kill they make releases three more shots: they can chain through a whole room.
+
+## Stacking
+- A second copy does nothing more: still three shots per kill.

@@ -9,10 +9,12 @@ pools:
 - treasure
 pool_weight: 2
 details:
-- label: Rotation
-  value: 0,07 radian par image vers votre visée
-- label: Sans effet
-  value: Aux tirs à tête chercheuse
+- label: Virage
+  value: Environ 240° par seconde vers votre visée
+- label: Par seconde
+  value: Environ 240°
+- label: Sans effet sur
+  value: Les tirs à tête chercheuse
 icon: items-ps/tr/psychic.png
 sprite: true
 names:
@@ -48,3 +50,11 @@ names:
     desc: 意念移物：你的彈會在空中轉向你瞄準的方向
 ---
 Lévikinésie : vos tirs virent en plein vol vers l'endroit visé
+
+## Fonctionnement
+- Vos tirs déjà en l'air continuent de tourner vers la direction où vous visez maintenant : jusqu'à environ 240° par seconde. Changez de visée et vos tirs s'incurvent pour la suivre.
+- Il ne fait que courber la trajectoire ; il ne change ni la vitesse ni la portée des tirs.
+- Sans effet sur les tirs à tête chercheuse, les tirs divisés et autres tirs nés d'un coup, les tirs des compagnons, les tirs en spirale ([Sachet Senteur](m_saquito.html)) ni les tirs qui tournent autour de vous.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus.

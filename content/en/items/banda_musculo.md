@@ -11,9 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Distance
-  value: Less than 2 tiles from the enemy
+  value: Within 120 px of the enemy (edge)
 - label: Damage
-  value: ×1.6
+  value: ×1.6 on that hit
 icon: items/muscle-band.png
 sprite: true
 names:
@@ -49,3 +49,13 @@ names:
     desc: 近距離射擊：在離你很近處命中的射擊傷害×1.6
 ---
 Point blank: shots that hit very close to you deal ×1.6
+
+## How it works
+
+- A hit deals ×1.6 damage when you are within 120 px (2 tiles) of the enemy, measured to its edge.
+- It is checked on every hit, at the moment it lands, so it does not show on the Damage stat and is not limited by the ×3 cap on damage multipliers.
+- It applies to hits from your companions' shots too, if you are standing close to the target.
+
+## Stacking
+
+- A second copy changes nothing.

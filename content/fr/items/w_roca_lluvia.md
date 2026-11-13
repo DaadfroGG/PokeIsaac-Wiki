@@ -11,13 +11,19 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 3,2 fois votre cadence (max. 1,8 s)
+  value: 3,2 × votre délai entre deux tirs, 0,6 à 1,8 s (min 30 % pour lâcher)
 - label: Éboulement
-  value: De 4 à 7 rochers par ligne, un toutes les 5 images, espacés de 52 px
+  value: 4 à 7 rochers par ligne, le premier à 50 px puis tous les 52 px ; un tombe toutes les 0,08 s
 - label: Roche
-  value: De ×0,97 à ×1,4 vos dégâts, 38 px, étourdit 0,4 s
+  value: ×0,97 à ×1,4 Dégâts, rayon de 38 px (+5 par Taille), étourdit 0,4 s
+- label: Lignes
+  value: Jusqu'à 3 avec tirs multiples (24° d'écart), 24 rochers max
+- label: Récupération
+  value: 0,3 s après le lâcher
+- label: Équilibrage
+  value: ×0,36
 - label: Si secondaire
-  value: Toutes les 5 attaques, deux rochers sur des ennemis proches (×0,8)
+  value: 'Toutes les 5 attaques : 2 rochers sur les ennemis les plus proches (×0,8, 30 px)'
 icon: items-ps/hold-item/damp-rock.png
 sprite: true
 names:
@@ -52,6 +58,20 @@ names:
     name: 潮濕岩石
     desc: 蓄力後放出雪崩：一排岩石朝你瞄準的方向接連落下，被砸中的會暈眩
 ---
-Chargez et relâchez une avalanche : une rangée de rochers tombe l'un après l'autre là où vous visez et étourdit ceux qu'elle touche
+Chargez et relâchez une avalanche : une rangée de rochers tombe l'un après l'autre là où vous visez et étourdit ceux qu'elle touche
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,36. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 0,3 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Maintenez la touche d'arme pour charger (3,2 × votre délai entre deux tirs, 0,6 à 1,8 s pour une charge complète), relâchez pour lancer l'avalanche (au moins 30 % de charge). La ligne part dans votre direction de visée et s'arrête au bord de la salle.
+- 4 à 7 rochers par ligne (selon la charge). Le premier tombe à 50 px, puis un tous les 52 px, chacun 0,08 s après le précédent.
+- Chaque rocher explose à l'impact : rayon de 38 px (+5 par Taille), ×0,97 à ×1,4 de vos Dégâts (selon la charge), étourdit les non-boss 0,4 s. Les ennemis volants sont touchés aussi.
+- Les tirs multiples ajoutent des lignes (jusqu'à 3, 24° d'écart) ; les objets de direction supplémentaire ajoutent des lignes de 3 rochers. 24 rochers au maximum par lâcher.
+- **Si secondaire :** toutes les 5 attaques, des rochers tombent sur les 2 ennemis les plus proches (rayon de 30 px +4 par Taille, ×0,8 Dégâts, étourdissement 0,4 s).
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

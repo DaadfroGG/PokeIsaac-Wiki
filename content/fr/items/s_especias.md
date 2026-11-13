@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Portée +80
   good: true
+details:
+- label: Dégâts
+  value: +0,8
+- label: Portée
+  value: +80 px
 icon: items-ps/curry-ingredient/spice-mix.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+、射程+
 ---
 Dégâts + et portée +
+
+## Fonctionnement
+- Le +0,8 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Portée +80 : vos tirs vont 80 px plus loin, sans rendements décroissants.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

@@ -9,6 +9,15 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Companion
+  value: Elekid (Electric)
+- label: Fire interval
+  value: 1.4 s
+- label: Damage per beam
+  value: 1.5 × companion damage (at least 2)
+- label: Range
+  value: Targets within 420 px
 icon: items-ps/ball/fast.png
 sprite: true
 names:
@@ -46,3 +55,15 @@ names:
 An Elekid follows you and fires electric lasers that pierce enemies
 
 {{< clip >}}
+
+## How it works
+
+- Elekid follows just behind you. Every 1.4 seconds, if an enemy is within 420 px, it fires an Electric laser in a straight line toward it.
+- The laser hits every enemy along its path (it pierces), once each, for 1.5 times the companion damage (at least 2).
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Its shots are not boosted by your shot upgrades (no extra shots, no crits) and do not trigger your on-hit items.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

@@ -13,8 +13,12 @@ stats:
 - text: Evolution stone
   good: true
 details:
+- label: Evolves
+  value: Eevee > Sylveon
 - label: Tether
-  value: 30 % of your damage every 1/3 second, up to 150 px
+  value: 30 % of your damage every 1/3 s, up to 150 px
+- label: Minimum
+  value: 0.5 per tick
 icon: items-ps/evo-item/dawn-stone.png
 sprite: true
 names:
@@ -50,3 +54,23 @@ names:
     desc: 讓伊布進化（仙子伊布）。另外，會有一條緞帶把你和最近的敵人連在一起，只要牠還在附近就會持續吸取牠的生命
 ---
 Evolves Eevee (Sylveon). Also, a ribbon links you to the nearest enemy and drains its health while it stays close
+
+## How it works
+
+- Using it on Eevee (before it has evolved) turns it into Sylveon, and its type becomes Fairy.
+- The first evolution gives +1 heart (and heals it), +1 Damage and makes you a little bigger. This bonus comes from evolving, not from the stone itself.
+- Once Eevee has evolved, further stones no longer evolve it, but their effect below stays active.
+- Pokémon other than Eevee do not evolve from this stone; they still get its effect.
+- The effect works for whatever Pokémon you play and does not depend on having evolved.
+- If you carry an [Everstone](piedra_eterna.html), evolution is blocked: you get +0.7 Damage and +1 heart instead, and the effect still works.
+
+## Effect
+
+- While enemies are alive, a ribbon links you to the nearest enemy within 150 px. Every third of a second it deals 30 % of your damage to it (at least 0.5).
+- The ribbon breaks if no enemy is within 150 px and reconnects to the nearest one when one comes close.
+- It works on bosses too. The tick is not a shot, so it does not trigger on-hit items.
+
+## Stacking
+
+- A second copy of the same stone adds nothing: the effect is just switched on.
+- Different stones add their effects together.

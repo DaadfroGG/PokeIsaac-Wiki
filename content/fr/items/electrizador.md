@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Intervalle
+  value: Toutes les 5 s de combat
+- label: Dégâts
+  value: 2× vos Dégâts (3 au minimum)
+- label: Cible
+  value: Un ennemi au hasard pouvant être blessé, boss compris
 icon: items-ps/evo-item/electirizer.png
 sprite: true
 names:
@@ -44,3 +51,11 @@ names:
     desc: 每5秒，一道閃電劈向一個敵人
 ---
 Toutes les 5 secondes, la foudre frappe un ennemi
+
+## Fonctionnement
+- Tant qu'une salle contient encore des ennemis, un minuteur tourne. Toutes les 5 secondes, un éclair frappe un ennemi au hasard pouvant être blessé à cet instant (boss compris) et inflige le double de vos Dégâts, avec un minimum de 3.
+- Si aucun ennemi ne peut être blessé à ce moment (par exemple un ennemi enterré), l'éclair attend et frappe dès qu'un ennemi le peut.
+- Le minuteur ne tourne que dans les salles non nettoyées.
+
+## Cumul
+- C'est un effet tout ou rien : un second Électriseur ne frappe pas plus souvent.

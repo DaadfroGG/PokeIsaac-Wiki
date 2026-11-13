@@ -8,6 +8,15 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Split
+  value: 2 shots on the first hit
+- label: Damage
+  value: 50 % of the shot that hit
+- label: Angle
+  value: About 34° to each side
+- label: Range
+  value: 160 px
 icon: items-ps/hold-item/silver-powder.png
 sprite: true
 names:
@@ -45,3 +54,12 @@ names:
 When they hit an enemy, your shots split in two
 
 {{< clip >}}
+
+## How it works
+- The first time one of your own shots hits an enemy, two smaller shots burst out of that enemy, about 34° to each side of the shot's path.
+- Each new shot deals 50 % of the damage of the shot that hit, is 30 % smaller and 10 % slower, flies 160 px at most and keeps the shot's type. They can't hit the enemy that made them.
+- The new shots keep your shot effects (statuses, knockback, piercing…), but they never split again and don't trigger items that need your own shots.
+- A piercing shot only splits on its first hit. Companion shots and other side shots never split. With a special weapon, at most one split per fire delay.
+
+## Stacking
+- A second copy does nothing more: still two shots.

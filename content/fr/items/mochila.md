@@ -14,6 +14,13 @@ stats:
   good: true
 - text: +2 clé
   good: true
+details:
+- label: Voltorbes
+  value: '+5'
+- label: Clés
+  value: '+2'
+- label: Plafond
+  value: 99 de chaque
 icon: items-ps/key-item/forage-bag.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: +5顆霹靂電球與+2把鑰匙
 ---
 +5 Voltorbes et +2 clés
+
+## Fonctionnement
+- Au ramassage, vous gagnez immédiatement 5 Voltorbes et 2 clés. Chaque réserve est plafonnée à 99 : l'excédent est perdu.
+- Il n'a aucun autre effet.
+
+## Cumul
+- Chaque exemplaire donne de nouveau +5 Voltorbes et +2 clés au ramassage.

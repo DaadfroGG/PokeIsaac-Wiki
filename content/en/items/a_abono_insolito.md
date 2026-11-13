@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Radius
+  value: 150 px around you
+- label: Stun
+  value: 0.67 s (not bosses)
+- label: Damage
+  value: 1 to every enemy in range
+- label: Enemy shots
+  value: Turned away from you
 icon: items-ps/mulch/amaze.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 擊退附近的敵人和彈，並使敵人暈眩
 ---
 You knock back nearby enemies and shots, and stun the enemies
+
+## How it works
+- Every enemy within 150 px is hit for 1 damage. This hit doesn't trigger your items or statuses.
+- Enemies in range (not bosses) are thrown back hard and stunned for 0.67 seconds.
+- Bosses in range only take the 1 damage: they are neither pushed nor stunned.
+- Enemy shots within 150 px are turned around to fly straight away from you, at the same speed. They stay enemy shots.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): the blast goes off twice in a row (2 damage, pushed again).

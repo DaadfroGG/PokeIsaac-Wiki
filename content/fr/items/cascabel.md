@@ -11,6 +11,11 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Cœurs
+  value: +1 cœur (et soigné)
+- label: Salle terminée
+  value: Soigne ½ cœur
 icon: items/shell-bell.png
 sprite: true
 names:
@@ -46,3 +51,12 @@ names:
     desc: 愛心 +1，清空房間時回復半顆愛心
 ---
 Cœur +1 et récupère un demi-cœur en nettoyant une salle
+
+## Fonctionnement
+- Au ramassage : +1 cœur max, et ce cœur est rempli.
+- Chaque fois qu'une salle est terminée, vous récupérez un demi-cœur (si vous n'êtes pas à PV pleins).
+- Ce soin de fin de salle ignore la limite de soin des objets.
+
+## Cumul
+- Le cœur max s'ajoute à chaque exemplaire.
+- Le soin de fin de salle est le même effet que les [Restes](restos.html) : en posséder les deux, ou deux Grelots Coque, ne soigne toujours qu'un demi-cœur par salle.

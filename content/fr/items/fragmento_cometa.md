@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Dégâts
+  value: '25 % des PV max de chaque ennemi (boss : 8 %), au moins 3'
+- label: Quand
+  value: Une fois par salle, en entrant dans un combat
+- label: Délai
+  value: Environ 0,4 s, une fois tous les ennemis apparus (5 s au plus)
 icon: items-ps/valuable-item/comet-shard.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 每場戰鬥開始時，會落下一顆彗星，傷害所有敵人
 ---
 À chaque combat, une comète tombe et blesse tous les ennemis
+
+## Fonctionnement
+- Quand vous entrez dans une salle qui a encore des ennemis, une comète est programmée. Elle tombe environ 0,4 s plus tard, mais elle attend que tous les ennemis aient fini d'apparaître et puissent être touchés (au plus tard après 5 s).
+- Elle frappe **tous les ennemis de la salle**, où qu'ils soient : chacun perd 25 % de ses PV maximum (au moins 3 dégâts). Les boss ne perdent que 8 % de leurs PV maximum.
+- C'est un pourcentage : ça ne dépend ni de vos Dégâts, ni de votre type, ni de vos objets, et ça ne fait jamais de coup critique.
+- Une seule comète par salle : sortir puis revenir dans une salle pas finie n'en amène pas une deuxième.
+- En coop, une comète tombe si quelqu'un dans l'équipe la porte.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours une comète par salle.

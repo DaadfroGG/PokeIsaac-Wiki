@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Shots
-  value: 7 for 15 s
+  value: 7 orbiting for 15 s
+- label: Damage
+  value: 80 % of your damage each, hits each enemy every 0.5 s
+- label: Triggers
+  value: Entering a room with living enemies
 icon: items-ps/fossil/dome.png
 sprite: true
 names:
@@ -49,3 +53,12 @@ names:
 When you enter a room with enemies, seven shots orbit you for 15 seconds
 
 {{< clip >}}
+
+## How it works
+- When you enter a room that still has living enemies, seven shots appear and orbit you (about 64 px away) for 15 s.
+- They pierce everything and hit the same enemy again every 0.5 s. Each deals 80 % of your damage. They do not trigger on-hit item effects.
+- They are removed if they touch a rock, unless you are [Ghost-type](../types/ghost.html).
+- Rooms with no enemies do not spawn them.
+
+## Stacking
+- It does not stack: a second copy does not add more orbiting shots.

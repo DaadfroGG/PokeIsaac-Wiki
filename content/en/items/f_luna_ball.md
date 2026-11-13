@@ -9,6 +9,15 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Companion
+  value: Cleffa (Fairy)
+- label: Orbit
+  value: 38 px around you
+- label: Touch damage
+  value: 0.8 × companion damage, every 1/6 s
+- label: Shield
+  value: Destroys enemy shots it touches
 icon: items-ps/ball/moon.png
 sprite: true
 names:
@@ -46,3 +55,14 @@ names:
 A Cleffa orbits you, blocks enemy shots and hurts whatever it touches
 
 {{< clip >}}
+
+## How it works
+
+- It does not shoot: it orbits you in a circle of 38 px, making a full turn about every 1.5 seconds. Any enemy it touches takes 0.8 × the companion damage (at least 1), at most once every 1/6 second.
+- It blocks enemy shots: any enemy projectile that comes within a few pixels of it is destroyed. It can only protect the side it happens to be on.
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Several orbiters of the same kind space themselves evenly around you.

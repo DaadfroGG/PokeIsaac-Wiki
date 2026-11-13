@@ -8,6 +8,11 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Size
+  value: Up to ×1.7 at the end of its range
+- label: Damage
+  value: Up to ×1.6 at the end of its range
 icon: items-ps/mulch/growth.png
 sprite: true
 names:
@@ -45,3 +50,11 @@ names:
 Your shots grow and hit harder the farther they travel
 
 {{< clip >}}
+
+## How it works
+- Your shots grow as they fly. Size and damage increase smoothly with the distance travelled: at the end of the range the shot is 1.7 times bigger and deals 1.6 times its starting damage. Halfway, it is ×1.35 and ×1.3.
+- A shot that hits an enemy right after leaving you has almost no bonus; shots that fly the whole range get all of it.
+- It does not change fire rate or range; a bigger shot is also easier to land.
+
+## Stacking
+- It does not stack: a second copy does not make shots grow more.

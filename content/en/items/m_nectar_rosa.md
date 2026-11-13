@@ -13,7 +13,7 @@ details:
 - label: Distance
   value: Enemies within 70 px of you (not bosses)
 - label: Chance
-  value: 1.2 % every frame, about 50 % per second spent that close
+  value: About 50 % per second spent that close
 - label: Charm
   value: '4 s: the enemy fights on your side'
 icon: items-ps/other-item/pink-nectar.png
@@ -51,3 +51,11 @@ names:
     desc: 靠得很近的敵人有時會著迷，並站在你這邊戰鬥
 ---
 Enemies that get very close sometimes become charmed and fight on your side
+
+## How it works
+- Any non-boss enemy that gets within 70 px of you has about a 50 % chance per second to become charmed for 4 s (see [status effects](../mechanics/estados.html)).
+- A charmed enemy stops attacking you and does not hurt you on contact. It walks to the nearest uncharmed enemy within 600 px and attacks it: every 0.5 s in contact it deals 3 times its own attack damage (at least 2).
+- It does not need you to hit anything: staying close is enough. Enemies already charmed are skipped.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance.

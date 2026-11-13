@@ -15,8 +15,12 @@ stats:
 - text: Cadence -
   good: false
 details:
+- label: Dégâts
+  value: +0,5
+- label: Cadence
+  value: -3 (plus lente)
 - label: Aura
-  value: 15 % de vos dégâts, 40 px
+  value: 15 % de vos dégâts, 12 fois par seconde, à moins de 40 px + taille du tir
 icon: items-ps/evo-item/galarica-wreath.png
 sprite: true
 names:
@@ -54,3 +58,11 @@ names:
 Chaque tir porte une aura de lumière qui blesse les ennemis proches
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque tir porte une aura de lumière. Toutes les 1/12 s, chaque ennemi à moins de 40 px du tir (plus sa taille) subit 15 % de vos dégâts. Ces touches d'aura ne déclenchent pas d'effets d'objets.
+- Un ennemi qui reste près d'un tir subit environ 1,8 fois vos dégâts par seconde de la part de ce tir ; plusieurs tirs qui se chevauchent s'additionnent.
+- L'aura fonctionne sur tous les tirs, y compris secondaires et supplémentaires, et sur les armes à rayon.
+
+## Cumul
+- L'aura ne change pas avec plus d'exemplaires ; Dégâts +0,5 et la cadence plus lente s'ajoutent à chaque exemplaire.

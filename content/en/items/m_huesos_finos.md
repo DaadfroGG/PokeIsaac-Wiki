@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Bones
+  value: 3 shots at 50 % damage
+- label: Trigger
+  value: Your shot defeats an enemy (main shots only)
+- label: Spread
+  value: About ±34°
 icon: items-ps/curry-ingredient/brittle-bones.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 彈擊敗敵人時，會分裂成三根繼續飛行的骨頭
 ---
 When a shot defeats an enemy, it splits into three bones that keep going
+
+## How it works
+- When a main shot defeats an enemy, three bones come out of it: one straight and two angled about 34° either side, each with 50 % of the shot's damage.
+- The bones cannot hit the enemy just defeated. They are child shots, so they do not trigger on-hit effects or make new bones.
+- It is guaranteed: no chance roll.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

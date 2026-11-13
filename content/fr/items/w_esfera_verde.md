@@ -10,13 +10,21 @@ pools:
 pool_weight: 1
 details:
 - label: Charge
-  value: 2,4 fois votre cadence (max. 1,2 s)
+  value: 2,4 × votre délai entre deux tirs, 0,43 à 1,2 s (min 25 % pour lâcher)
 - label: Séisme
-  value: De ×1 à ×3,4 vos dégâts, rayon de 82 à 200 px ; seulement aux ennemis qui ne volent pas
+  value: ×1 à ×3,4 Dégâts, rayon de 82 à 200 px (+10 par Taille)
+- label: Touche
+  value: Ennemis au sol seulement (les volants sont ignorés)
 - label: Étourdissement
-  value: 0,4 s et recul ; brise les objets et rochers proches
+  value: 0,4 s et recul ; les boss ne subissent que les dégâts
+- label: Anneaux
+  value: 'Jusqu''à 3 avec tirs multiples : +16 % de rayon, -12 % de dégâts chacun'
+- label: Récupération
+  value: 1,5 × 1,6 × votre délai (au moins 0,75 s)
+- label: Équilibrage
+  value: ×0,53
 - label: Si secondaire
-  value: Toutes les 4 s d'attaque, une petite secousse (×1,5, 80 px)
+  value: 'Après 4 s de tir avec des ennemis dans la salle : secousse ×1,5, 80 px'
 icon: items-ps/key-item/jade-orb.png
 sprite: true
 names:
@@ -51,6 +59,20 @@ names:
     name: 草綠色寶珠
     desc: 按住射擊鍵蓄力再放開：地震會撼動你周圍的地面，對不會飛行的敵人造成傷害、暈眩並將其推開
 ---
-Maintenez le tir pour charger, puis relâchez : un séisme secoue le sol autour de vous et blesse, étourdit et repousse les ennemis qui ne volent pas
+Maintenez le tir pour charger, puis relâchez : un séisme secoue le sol autour de vous et blesse, étourdit et repousse les ennemis qui ne volent pas
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,53. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 2,4 fois votre délai normal entre deux tirs, et jamais moins de 0,75 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Maintenez la touche d'arme pour charger (2,4 × votre délai entre deux tirs, 0,43 à 1,2 s pour une charge complète), relâchez pour secouer le sol (au moins 25 % de charge). Le séisme est centré sur vous.
+- Rayon de 82 à 200 px (+10 par Taille) et dégâts de ×1 à ×3,4 de vos Dégâts, selon la charge.
+- Seuls les ennemis qui ne volent pas sont touchés. Les ennemis non-boss sont aussi étourdis 0,4 s et repoussés ; les boss ne subissent que les dégâts. Il brise les caisses dans 80 % du rayon et les rochers dans 35 %.
+- Les tirs multiples ajoutent des anneaux (jusqu'à 3) : chacun 0,15 s après le précédent, avec +16 % de rayon et -12 % de dégâts.
+- **Si secondaire :** après 4 s de tir normal avec des ennemis dans la salle, une petite secousse (rayon de 80 px, ×1,5 Dégâts) frappe autour de vous.
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

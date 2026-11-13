@@ -10,7 +10,9 @@ pools:
 pool_weight: 1
 details:
 - label: En arrivant à un étage
-  value: Cœur d'âme
+  value: ½ cœur d'âme
+- label: Plafond
+  value: 6 cœurs d'âme au total
 icon: items-ps/hold-item/lustrous-orb.png
 sprite: true
 names:
@@ -45,4 +47,11 @@ names:
     name: Cosmic Orb
     desc: When you reach each new floor, you gain a soul heart (at most 6 in total).
 ---
-En arrivant à chaque nouvel étage, vous gagnez un cœur d'âme (6 au maximum en tout).
+À chaque nouvel étage atteint, vous gagnez un demi-cœur d'âme (6 cœurs d'âme au maximum au total).
+
+## Fonctionnement
+- À chaque nouvel étage, vous gagnez un demi-[cœur d'âme](../mechanics/corazones_alma.html).
+- Il n'ajoute plus rien quand vous portez déjà 6 cœurs d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

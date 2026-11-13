@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 cœur ou moins et aucun cœur d'âme
+- label: Vitesse
+  value: +1,2
 icon: items-ps/berry/salac.png
 sprite: true
 names:
@@ -44,3 +49,10 @@ names:
     desc: 剩一顆愛心以下且沒有靈魂之心時，速度大幅提升
 ---
 Avec un cœur ou moins et sans cœurs d'âme, beaucoup plus de vitesse
+
+## Fonctionnement
+- Tant qu'il vous reste 1 cœur rouge ou moins et aucun cœur d'âme, votre Vitesse est augmentée de 1,2.
+- Le bonus apparaît et disparaît instantanément selon vos PV (soigner au-dessus de 1 cœur ou gagner un cœur d'âme le retire).
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

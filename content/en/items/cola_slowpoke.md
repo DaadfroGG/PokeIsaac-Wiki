@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Radius
+  value: 150 px around you
+- label: Enemy speed
+  value: Halved (walking)
+- label: Bosses
+  value: Not affected
 icon: items-ps/valuable-item/slowpoke-tail.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 靠近你的敵人（頭目除外）會進入慢動作
 ---
 Enemies that get close to you (not bosses) move in slow motion
+
+## How it works
+- Every regular enemy within 150 px of you walks at half speed. As soon as it is farther away, it walks normally again.
+- It only slows how fast enemies walk: their attacks, projectiles and dashes are not slowed.
+- Bosses are not affected.
+- In co-op it works around any living player who carries it, and benefits the whole team near that player.
+- It multiplies with other slows: next to a [Lagging Tail](cola_plumbea.html) an enemy walks at 0.5 × 0.8 of its normal speed, and at a quarter of it if it is also slowed.
+
+## Stacking
+- It is an on/off effect: a second Slowpoke Tail does not slow enemies further.

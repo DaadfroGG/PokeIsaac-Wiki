@@ -13,7 +13,7 @@ details:
   value: ×6 hit on the nearest enemy
 - label: Range
   value: 420 px
-- label: Wait
+- label: Cooldown
   value: 1 s
 icon: items-ps/key-item/professors-mask.png
 sprite: true
@@ -50,3 +50,11 @@ names:
     desc: 當你受到攻擊時，幽靈會從面具中竄出，攻擊最近的敵人（你傷害的×6）。
 ---
 When you get hit, a ghost leaps out of the mask and strikes the nearest enemy (×6 your damage).
+
+## How it works
+- After you take a hit, a ghost leaps from the mask and strikes the nearest enemy within 420 px for 6 times your Damage (Ghost type).
+- It can trigger at most once per second.
+- It does nothing if the hit killed you or if no enemy is in range.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

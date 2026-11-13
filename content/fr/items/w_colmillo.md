@@ -10,12 +10,20 @@ pools:
 - boss
 pool_weight: 1
 details:
+- label: Utilisation
+  value: Touche d'arme (Maj/F, clic droit, LB)
 - label: Morsure
-  value: Vos dégâts ×1,1 en cône, 60 px
+  value: ×1,1 Dégâts à tous les ennemis d'un cône, 60 px (+7 par Taille)
+- label: Morsures
+  value: Jusqu'à 3 avec tirs multiples (40° d'écart)
 - label: Défense baissée
-  value: +12 % de dégâts subis par cumul, jusqu'à ×3, 4 s
+  value: +12 % de dégâts subis par cumul, 3 cumuls max (+36 %), 4 s, relancé à chaque morsure
+- label: Récupération
+  value: 1,5 × votre délai (au moins 0,35 s)
+- label: Équilibrage
+  value: ×0,37
 - label: Si secondaire
-  value: Un croc tourne autour de vous (×1,2)
+  value: 'Un croc tourne autour de vous : ×1,2 Dégâts, chaque ennemi au plus toutes les 0,2 s'
 icon: items-ps/evo-item/razor-fang.png
 sprite: true
 names:
@@ -50,6 +58,19 @@ names:
     name: 銳利之牙
     desc: 啃咬前方的目標；每次啃咬都會造成「防禦降低」：敵人受到你所有攻擊的傷害都會提高（最多+36 %）
 ---
-Vous mordez ce qui est devant vous ; chaque morsure inflige Défense baissée : l'ennemi subit plus de dégâts de tout ce que vous faites (jusqu'à +36 %)
+Vous mordez ce qui est devant vous ; chaque morsure inflige Défense baissée : l'ennemi subit plus de dégâts de tout ce que vous faites (jusqu'à +36 %)
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,37. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 1,5 fois votre délai normal entre deux tirs, et jamais moins de 0,35 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Chaque attaque est une morsure en cône devant vous : portée 60 px (+7 par Taille), environ 49° de chaque côté. Elle touche tous les ennemis du cône pour ×1,1 de vos Dégâts et brise les caisses devant vous.
+- Les tirs multiples ajoutent des morsures (jusqu'à 3, 40° d'écart) ; les objets de direction supplémentaire en ajoutent d'autres.
+- **Défense baissée :** chaque morsure sur un ennemi qui survit ajoute un cumul : +12 % de dégâts subis venant de vos coups, jusqu'à 3 cumuls (+36 %). Les cumuls durent 4 s et chaque nouvelle morsure relance les 4 s ; une fois expirés, on repart à un cumul.
+- **Si secondaire :** un croc tourne autour de vous environ une fois par seconde et frappe les ennemis qu'il touche (14 px +3 par Taille) pour ×1,2 Dégâts, chaque ennemi au plus toutes les 0,2 s. Il n'applique pas Défense baissée.
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

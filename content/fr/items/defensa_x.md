@@ -9,6 +9,15 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Entrer dans une salle de boss
+- label: Récompense
+  value: 1 cœur d'âme
+- label: Fréquence
+  value: Une fois par salle de boss
+- label: Plafond
+  value: 6 cœurs d'âme au total
 icon: items-ps/battle-item/x-defense.png
 sprite: true
 names:
@@ -44,3 +53,11 @@ names:
     desc: 每次進入頭目房間時獲得一顆靈魂之心
 ---
 Un cœur d'âme en entrant dans chaque salle de boss
+
+## Fonctionnement
+- En entrant dans une salle de boss, vous gagnez un [cœur d'âme](../mechanics/corazones_alma.html) entier.
+- Cela se produit une fois par salle de boss : sortir et rentrer dans la même ne donne rien de plus.
+- Il n'ajoute plus rien quand vous portez déjà 6 cœurs d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

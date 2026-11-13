@@ -11,9 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Still
-  value: 1 s to turn to stone
+  value: 1 s (not moving or shooting) to turn to stone
 - label: Holds
-  value: One hit; back after 6 s
+  value: One hit
+- label: Rebuild
+  value: 6 s after it breaks
+- label: After the block
+  value: 0.7 s of invulnerability
 icon: items-ps/fossil/root.png
 sprite: true
 names:
@@ -49,3 +53,12 @@ names:
     desc: 站著不動且一秒不射擊，就會被石頭包覆並擋下一次攻擊；需要6秒才會重新形成
 ---
 If you stand still without shooting for a second, you cover yourself in stone and block one hit; it takes 6 seconds to form again
+
+## How it works
+- If you stay still and don't shoot for 1 second, you cover yourself in stone.
+- The stone blocks the next hit completely (no damage), then breaks and gives 0.7 seconds of invulnerability.
+- The stone can't form again for 6 seconds after it breaks. After that, you must again stand still for 1 second without shooting.
+- Moving or shooting makes the stone crumble away before it takes a hit.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

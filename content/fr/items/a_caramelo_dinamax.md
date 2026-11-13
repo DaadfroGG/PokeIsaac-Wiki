@@ -11,7 +11,13 @@ pool_weight: 2
 charge: 2
 details:
 - label: Dégâts
-  value: ×10
+  value: ×10 votre tir
+- label: Taille
+  value: Au moins 22 px
+- label: Perforation
+  value: Tous les ennemis
+- label: Portée
+  value: ×1,3
 icon: items-ps/other-item/dynamax-candy.png
 sprite: true
 names:
@@ -47,3 +53,13 @@ names:
     desc: 你射出一發巨大的彈，造成×10傷害並貫穿所有敵人
 ---
 Vous lancez un tir géant qui inflige ×10 de dégâts et transperce tout le monde
+
+## Fonctionnement
+- Vous lancez un tir géant dans la direction où vous regardez. Il inflige 10 fois les dégâts d'un de vos tirs normaux, traverse tous les ennemis sur sa route et va 30 % plus loin que votre Portée.
+- C'est un de vos tirs : il utilise votre type, peut être un [coup critique](../mechanics/criticos.html) (×10 en plus du ×2) et porte les effets de vos objets qui modifient les tirs.
+- Il touche les boss normalement.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous lancez deux tirs géants.

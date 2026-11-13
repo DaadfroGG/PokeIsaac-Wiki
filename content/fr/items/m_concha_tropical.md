@@ -10,9 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2 s sans tirer
-- label: Rafale
-  value: Jusqu'à 10 tirs
+  value: 2 s sans tirer pour une charge complète
+- label: Salve
+  value: Jusqu'à 10 tirs supplémentaires (au moins 2)
+- label: Tirs supplémentaires
+  value: Pleins dégâts chacun, dispersés sur environ ±23°
 icon: items-ps/partner-gift/tropical-shell.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 不射擊時會充能；再次射擊時會一口氣射出一陣額外的彈
 ---
 Se charge quand vous ne tirez pas ; en tirant de nouveau, une rafale de tirs supplémentaires part d'un coup
+
+## Fonctionnement
+- Tant que vous ne tenez aucune touche de tir, la coquille se charge : elle est pleine en 2 s.
+- Quand vous recommencez à tirer, elle libère d'un coup une rafale de tirs supplémentaires, en plus de votre salve normale. Leur nombre est la charge ×10, arrondie : jusqu'à 10 tirs. Une charge inférieure à 15 % (moins de 0,3 s d'attente) ne libère rien, donc la plus petite rafale est de 2 tirs.
+- Les tirs de la rafale partent dans la direction visée, dispersés d'environ 23° de chaque côté, à 75 % à 120 % de la vitesse normale, et infligent chacun vos pleins dégâts. Ce sont des tirs supplémentaires (voir [Tirs supplémentaires](../mechanics/disparos_extra.html)).
+- La charge est perdue dès que vous continuez à tirer ; elle repart de zéro quand vous vous arrêtez.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne donne pas une rafale plus grosse.

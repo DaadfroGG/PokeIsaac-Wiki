@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Durée
+  value: 6 s
+- label: Ennemis
+  value: Marchent à moitié vitesse
+- label: Tirs ennemis
+  value: Les tirs déjà lancés vont deux fois moins vite
 icon: items-ps/mulch/damp.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 房間內的敵人進入慢動作6秒
 ---
 Les ennemis de la salle passent au ralenti pendant 6 secondes
+
+## Fonctionnement
+- Tous les ennemis de la salle, boss compris, sont ralentis 6 secondes : ils marchent à moitié vitesse. Leurs attaques elles-mêmes ne sont pas ralenties.
+- Chaque tir ennemi déjà en vol passe à la moitié de sa vitesse jusqu'à la fin de sa course. Les tirs lancés après l'utilisation volent normalement.
+- Seuls les ennemis déjà présents sont touchés.
+- S'il n'y a rien à affecter, rien ne se passe et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : le ralentissement dure les mêmes 6 secondes, mais les tirs déjà en vol sont ralentis deux fois (un quart de leur vitesse).

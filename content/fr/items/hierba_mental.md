@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Rayon
+  value: 140 px
+- label: Boss
+  value: Non repoussés
 icon: items-ps/hold-item/mental-herb.png
 sprite: true
 names:
@@ -44,3 +51,11 @@ names:
     desc: 受到攻擊時，將附近的敵人遠遠推開
 ---
 Quand vous êtes touché, vous repoussez loin les ennemis proches
+
+## Fonctionnement
+- Après un coup reçu, tous les ennemis à moins de 140 px sont repoussés loin de vous.
+- Les boss ne sont pas repoussés. Aucun dégât n'est infligé.
+- Elle se déclenche à chaque coup et n'a pas de délai de recharge. Elle ne se déclenche pas si le coup a été bloqué ou esquivé.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

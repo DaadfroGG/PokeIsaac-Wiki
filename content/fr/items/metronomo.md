@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Dégâts
+  value: +5 % par salve d'affilée
+- label: Plafond
+  value: +60 % (après 12 salves)
+- label: Remise à zéro
+  value: Une pause plus longue que votre délai de tir + 0,2 s
 icon: items/metronome.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 不停射擊會提升傷害，最多+60%
 ---
 Tirer sans arrêt augmente les dégâts, jusqu'à +60%
+
+## Fonctionnement
+- Chaque salve tirée juste après la précédente ajoute +5 % de dégâts, jusqu'à +60 % après 12 salves d'affilée.
+- « Juste après » veut dire dans votre délai normal entre deux tirs plus 0,2 s. Arrêtez de tirer plus longtemps et le bonus retombe d'un coup à 0.
+- Le bonus s'applique aux tirs au moment où ils partent : il n'apparaît donc pas dans la stat Dégâts du HUD et n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
+- Tous les tirs d'une salve ont le même bonus.
+- Avec une arme spéciale au lieu des tirs normaux, le bonus monte de la même façon tant que vous attaquez (+5 % par délai de tir d'attaque sans pause, jusqu'à +60 %) et redescend vite quand vous arrêtez.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus : le plafond reste à +60 %.

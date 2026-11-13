@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Detection
+  value: Enemies within 95 px of the shot
+- label: Turn
+  value: Only if it needs more than about 40°
+- label: Times
+  value: Once per shot
 icon: items-ps/hold-item/psychic-seed.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 彈從敵人身旁經過時，會突然轉向牠
 ---
 When a shot passes by an enemy, it snaps toward it
+
+## How it works
+- When a flying shot passes within 95 px of an enemy it hasn't hit yet, it instantly turns to fly straight at that enemy.
+- It only snaps if the enemy is clearly off course (more than about 40° away from where the shot is going). A shot already heading at the enemy keeps going.
+- Each shot snaps only once. After that it flies straight.
+- It works on bosses too.
+- It doesn't work on spiral shots ([Sachet](m_saquito.html)).
+
+## Stacking
+- A second copy does nothing more.

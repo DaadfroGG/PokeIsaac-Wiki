@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Heal
+  value: 1 heart
+- label: Healing limit
+  value: Ignores it
+- label: At full health
+  value: Can't be used
 icon: items-ps/medicine/old-gateau.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 恢復你一顆愛心
 ---
 Heals you one heart
+
+## How it works
+- Heals you 1 heart (two half-hearts) at once.
+- This heal ignores the limit on item healing over 10 seconds.
+- At full health it can't be used, and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you heal 2 hearts.

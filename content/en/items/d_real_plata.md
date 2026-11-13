@@ -14,6 +14,8 @@ details:
   value: 3 s
 - label: Coins
   value: 2 per golden enemy
+- label: Trigger
+  value: Touching a non-boss enemy
 icon: items-ps/valuable-item/relic-silver.png
 sprite: true
 names:
@@ -49,3 +51,14 @@ names:
     desc: 你碰到的敵人會變成黃金數秒（無法移動也無法傷人）；若在此狀態下倒下，會掉落金幣
 ---
 Enemies you touch turn to gold for a few seconds (they can't move or hurt you); if they die like that, they drop coins
+
+## How it works
+
+- Walking into a non-boss enemy turns it to gold for 3 seconds: it cannot move, cannot hurt you and is stunned.
+- If it dies while golden, it drops 2 coins.
+- When the 3 seconds end it returns to normal and can be turned to gold again by touching it.
+- [Bosses](../mechanics/jefes_adaptativos.html) are not affected.
+
+## Stacking
+
+- A second copy changes nothing.

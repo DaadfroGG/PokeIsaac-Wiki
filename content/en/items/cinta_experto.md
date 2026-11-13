@@ -9,6 +9,11 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Damage vs bosses
+  value: ×1.3
+- label: Applies to
+  value: Every hit on a boss
 icon: items-ps/hold-item/expert-belt.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 對頭目傷害×1.3
 ---
 Damage ×1.3 against bosses
+
+## How it works
+- Every hit you land on a boss deals 30 % more damage. Regular enemies are not affected.
+- The ×1.3 is applied when the shot lands, so it does not show in your Damage on the HUD and is not limited by the ×3 multiplier cap.
+- It multiplies with the other on-hit bonuses: for example with the [Binding Band](banda_atadura.html) on a slowed boss it gives ×1.3 × 1.3 = ×1.69.
+
+## Stacking
+- It is an on/off effect: a second Expert Belt does not raise the bonus.

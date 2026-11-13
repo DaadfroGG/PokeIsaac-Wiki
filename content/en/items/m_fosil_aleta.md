@@ -8,6 +8,11 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Size
+  value: +2.5 radius (per copy)
+- label: Knockback
+  value: Pushes the enemy back; bosses are not pushed
 icon: items-ps/fossil/sail.png
 sprite: true
 names:
@@ -45,3 +50,11 @@ names:
 Bigger shots that knock enemies back
 
 {{< clip >}}
+
+## How it works
+- Your shots get bigger (+2.5 to the radius, from 7 to 9.5), so they hit more easily, and each hit pushes the enemy back in the direction of the shot.
+- Bosses are never pushed. The push is stronger with more copies.
+- If you own [Grip Claw](garra_garfio.html), its pull replaces the knockback.
+
+## Stacking
+- Each copy adds +2.5 radius and makes the knockback stronger (6 for one copy, 9 for two, and so on).

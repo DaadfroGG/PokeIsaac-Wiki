@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Shot spd +2
   good: true
+details:
+- label: Fire rate
+  value: +2 (0.033 s less between shots)
+- label: Shot speed
+  value: '+2'
 icon: items-ps/av-candy/courage.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 射速 + 且彈速更快
 ---
 Fire rate + and faster shots
+
+## How it works
+- Fire rate +2: 0.033 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- Shot speed +2: your shots fly faster (they reach their range sooner). It never goes below 4.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Fire rate).

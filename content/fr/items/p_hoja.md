@@ -13,10 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
-- label: Rebond
-  value: 60 % des dégâts, jusqu'à 220 px
+- label: Évolue
+  value: Évoli > Phyllali
+- label: Ricochet
+  value: 60 % des dégâts, vers un ennemi à moins de 220 px
 - label: Fois
-  value: Une fois par tir
+  value: Une par tir
 icon: items/leaf-stone.png
 sprite: true
 names:
@@ -52,3 +54,23 @@ names:
     desc: 讓伊布進化。此外，你的彈會從擊中的敵人反彈到附近的另一個敵人
 ---
 Fait évoluer Évoli. De plus, vos tirs rebondissent de l'ennemi touché vers un autre ennemi proche
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Phyllali, et son type devient Plante.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Les Pokémon autres qu'Évoli n'évoluent pas avec cette pierre ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Quand un de vos tirs touche un ennemi, une feuille rebondit de cet ennemi vers l'ennemi le plus proche à moins de 220 px. Elle inflige 60 % des dégâts du tir, est de type Plante et vole jusqu'à 240 px.
+- Une seule fois par tir, et seulement pour vos tirs principaux : les tirs divisés, tirs de compagnons et autres tirs enfants ne rebondissent pas.
+- S'il n'y a pas d'autre ennemi à moins de 220 px, il ne se passe rien.
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

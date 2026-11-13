@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Duration
+  value: 5 s
+- label: Placed
+  value: 40 px in the direction you last shot
+- label: Bosses
+  value: Ignore it
 icon: items-ps/other-item/poke-doll.png
 sprite: true
 names:
@@ -44,3 +51,15 @@ names:
     desc: 放置誘餌：敵人會追著它跑幾秒
 ---
 Place a decoy: enemies go after it for a few seconds
+
+## How it works
+- A Poké Doll is placed 40 px in the direction you last shot. For 5 seconds, every enemy except bosses targets the doll instead of you: they walk toward it and aim their attacks at it.
+- The doll can't be destroyed; it just disappears after 5 seconds (it blinks at the end).
+- Bosses and enemies that copy you ignore it.
+- In co-op, the doll draws enemies away from all players.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two dolls are placed, but only one draws enemies at a time.

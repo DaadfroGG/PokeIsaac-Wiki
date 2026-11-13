@@ -9,6 +9,15 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Radius
+  value: 120 px
+- label: Damage
+  value: 1.5× your Damage (at least 2)
+- label: If you are Fire-type
+  value: Burns them for 3 s instead
 icon: items-ps/evo-item/magmarizer.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 受到攻擊時，熱浪會傷害附近的敵人（如果你是火屬性，還會灼傷他們）
 ---
 When you're hit, a heat wave hurts nearby enemies (if you are Fire-type, it burns them)
+
+## How it works
+- After you take a hit, a heat wave hits every enemy within 120 px of you.
+- Normally each takes 1.5 times your Damage (at least 2).
+- If your Pokémon has the Fire type (either type for a dual-type), it deals no damage but sets each enemy on fire for 3 seconds instead (see [Status effects](../mechanics/estados.html)).
+- It triggers on every hit, with no cooldown. It does not trigger if the hit was blocked or dodged.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

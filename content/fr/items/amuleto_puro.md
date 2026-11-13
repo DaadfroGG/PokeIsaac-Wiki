@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: 1 ennemi de moins par salle de combat
+- label: Jamais
+  value: Salles à un seul ennemi, salles de boss
 icon: items-ps/hold-item/cleanse-tag.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 每個戰鬥房間少一個敵人
 ---
 Un ennemi de moins dans chaque salle de combat
+
+## Fonctionnement
+- Quand une salle de combat normale se remplit, un ennemi en est retiré, tant que la salle en compte plus d'un. Une salle avec un seul ennemi n'est pas touchée : elle n'est donc jamais vidée.
+- Il n'affecte ni les salles de boss ni les autres types de salle.
+- Moins d'ennemis signifie aussi moins de butin à la mort, mais la récompense de fin de salle reste la même.
+
+## Cumul
+- C'est un effet tout ou rien : un second exemplaire ne retire pas un deuxième ennemi.
+- Il annule le [Max Leurre](cebo_max.html), qui ajoute un ennemi dans les mêmes salles.

@@ -10,7 +10,9 @@ pools:
 pool_weight: 1
 details:
 - label: Bosses
-  value: -8% health when they appear
+  value: -8 % health when they appear
+- label: Minibosses
+  value: Also
 icon: items-ps/key-item/old-charm.png
 sprite: true
 names:
@@ -46,3 +48,10 @@ names:
     desc: 頭目和小頭目一開始生命減少8%。
 ---
 Bosses and minibosses start with 8% less health.
+
+## How it works
+- Bosses and minibosses start the fight with 8 % less health (at least 1 left). It is applied once, as soon as they appear.
+- Regular enemies are not affected.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

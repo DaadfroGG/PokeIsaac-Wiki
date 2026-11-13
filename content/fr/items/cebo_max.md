@@ -8,6 +8,13 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Ennemis
+  value: +1 par salle de combat
+- label: Pièce en plus
+  value: 20 % par ennemi vaincu
+- label: Limite de pièces
+  value: 3 par salle, 6 + ½ étage par étage
 icon: items-ps/other-item/max-lure.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 每個房間的敵人更多，但會掉落更多金幣
 ---
 Plus d'ennemis dans chaque salle, mais ils lâchent plus de pièces
+
+## Fonctionnement
+- Quand une salle de combat normale se remplit, un ennemi supplémentaire apparaît : une copie d'un ennemi au hasard déjà présent, avec les mêmes PV, la même vitesse et les mêmes dégâts, placée à au moins 170 px de vous.
+- Chaque ennemi vaincu a 20 % de chances de lâcher une [pièce](../world/coin.html) de plus, en plus de son butin normal.
+- Ces pièces en plus sont limitées : 3 au maximum par salle et, par étage, 6 plus la moitié du numéro d'étage (arrondi).
+- Il n'affecte ni les salles de boss ni les autres types de salle.
+
+## Cumul
+- C'est un effet tout ou rien : un second exemplaire n'ajoute pas un deuxième ennemi et n'augmente pas la chance de pièce.
+- Il annule le [Talisman Sain](amuleto_puro.html), qui retire un ennemi des mêmes salles.

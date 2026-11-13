@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Range +80
   good: true
+details:
+- label: Speed
+  value: '+0.3'
+- label: Range
+  value: +80 px
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/curry-ingredient/fruit-bunch.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 速度+、射程+
 ---
 Speed + and range +
+
+## How it works
+- Speed +0.3: added straight to your movement speed, with no diminishing returns. Your speed can never drop below the minimum of 1.6.
+- Range +80 px: added straight to how far your shots travel, with no diminishing returns. Range can never drop below 120 px.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

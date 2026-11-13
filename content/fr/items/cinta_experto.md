@@ -9,6 +9,11 @@ pools:
 - boss
 - shop
 pool_weight: 2
+details:
+- label: Dégâts contre les boss
+  value: ×1,3
+- label: S'applique à
+  value: Chaque coup porté à un boss
 icon: items-ps/hold-item/expert-belt.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 對頭目傷害×1.3
 ---
 Dégâts ×1,3 contre les boss
+
+## Fonctionnement
+- Chaque coup porté à un boss inflige 30 % de dégâts en plus. Les ennemis ordinaires ne sont pas concernés.
+- Le ×1,3 est appliqué à l'impact du tir : il n'apparaît donc pas dans vos Dégâts affichés et n'est pas limité par le plafond de ×3 des multiplicateurs.
+- Il se multiplie avec les autres bonus à l'impact : par exemple, avec la [Bande Étreinte](banda_atadura.html) sur un boss ralenti, cela donne ×1,3 × 1,3 = ×1,69.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Ceinture Pro n'augmente pas le bonus.

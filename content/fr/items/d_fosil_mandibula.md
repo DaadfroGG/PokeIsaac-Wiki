@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Soin
-  value: Un demi-cœur tous les 13 ennemis vaincus
+  value: ½ cœur tous les 13 ennemis vaincus
+- label: Limite
+  value: Les objets soignent au plus 30 % des PV max par 10 s
 icon: items-ps/fossil/jaw.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 每打倒13個敵人，回復半顆愛心
 ---
 Tous les 13 ennemis vaincus, vous récupérez un demi-cœur
+
+## Fonctionnement
+- Tous les 13 ennemis que vous vainquez, vous récupérez un demi-cœur. Le compteur continue d'une salle et d'un étage à l'autre.
+- Le cœur n'est donné que s'il vous manque des PV ; à PV pleins, la victoire compte quand même dans les 13.
+- Ce soin compte dans la limite de soin des objets : les objets ne soignent au plus que 30 % de vos PV max (minimum 2 cœurs) par tranche de 10 secondes.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -8,6 +8,15 @@ pools:
 - treasure
 - shop
 charge: 4
+details:
+- label: Charge
+  value: 4 salles
+- label: Cible
+  value: Ennemi non-boss à 40 % de PV ou moins
+- label: Portée
+  value: 220 px
+- label: Compagnon
+  value: Permanent ; puissance 1,5 + 0,4 par étage
 icon: items/poke-ball.png
 sprite: true
 names:
@@ -43,3 +52,14 @@ names:
     desc: 捕捉一個虛弱的敵人：牠會跟著你
 ---
 Capture un ennemi affaibli : il vous accompagnera
+
+## Fonctionnement
+- Charge : 4 salles. Chaque salle terminée donne 1 charge.
+- Il capture l'ennemi le plus proche à moins de 220 px qui n'est pas un boss et qui a 40 % de ses PV max ou moins. S'il n'y en a pas, rien ne se passe et aucune charge n'est dépensée.
+- Il est inutilisable si vos [compagnons](../mechanics/companeros.html) sont déjà à leur maximum.
+- L'ennemi capturé disparaît et vous rejoint comme compagnon permanent de sa propre espèce. Il tire pour vous jusqu'à la fin de la partie, avec le style d'attaque de cette espèce.
+- Les dégâts du compagnon dépendent de l'étage où vous l'avez capturé : 1,5, plus 0,4 par étage déjà passé (1,5 au premier étage, 1,9 au deuxième...). Il ne devient jamais plus fort ensuite.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec une [Pile Cellulaire](d_pila.html), l'objet peut stocker le double de charge.

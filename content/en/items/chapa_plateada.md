@@ -14,6 +14,8 @@ details:
   value: 1 in 6 each (about 17 %)
 - label: Possible bonuses
   value: Damage +1.5 · Fire rate ++ · Speed +0.7 · Range +160 · Luck +3 · Shot speed +3
+- label: Fire rate bonus
+  value: −0.07 s between shots
 icon: items-ps/other-item/bottle-cap.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 隨機一項能力數值大幅提升
 ---
 One random stat improves a lot
+
+## How it works
+- At the moment you pick it up, the game draws one of six stat bonuses at random, each with the same chance (1 in 6), and applies it permanently. A message tells you which one you got.
+- The six possible bonuses: Damage +1.5, Fire rate ++ (shots about 0.07 s closer together), Speed +0.7, Range +160 px, Luck +3, Shot speed +3.
+- The bonus is a normal stat bonus: Damage follows the [diminishing returns](../mechanics/rendimientos.html) on flat Damage, fire rate and Luck follow theirs, while Speed, Range and Shot speed are added as they are.
+- The draw is made once, when you pick the item up, and the result does not change afterwards.
+
+## Stacking
+- Each copy draws its own bonus when you pick it up, so two copies can give two different bonuses or the same one twice.

@@ -11,11 +11,17 @@ pools:
 pool_weight: 2
 details:
 - label: Marks
-  value: Up to 4, 5 s, from your hits
+  value: Up to 4 enemies, 5 s each (refreshed by new hits), from your hits
 - label: Links
-  value: 'Every 0.2 s: ×0.17 of your damage from you and ×0.26 between marks, to anything that touches them'
-- label: With any weapon
-  value: 'It is a module: it does not replace your weapon'
+  value: 'Every 0.2 s: ×0.17 Damage from you to the 1st mark, ×0.26 between marks, to everything touching the line'
+- label: Link range
+  value: Chain breaks beyond 300 px
+- label: Balance
+  value: ×0.62 on links
+- label: Bonus bolt
+  value: ×0.4 Damage to another enemy within 170 px, at most every 0.13 s
+- label: Module
+  value: Works with any weapon
 icon: items-ps/key-item/fame-checker.png
 sprite: true
 names:
@@ -51,5 +57,14 @@ names:
     desc: 你的攻擊會標記敵人（最多4個，持續5秒），標記之間會以來自你寶可夢的連線相連，傷害碰到連線的所有東西
 ---
 Your hits mark enemies (up to 4, 5 s) and the marks are joined by links from your Pokémon that hurt anything that touches them
+
+## How it works
+- It is a **module**: it works with any weapon and does not replace it.
+- Each hit of your normal shots and weapons (at most once per delay between shots) marks the enemy hit for 5 s; hitting a marked enemy refreshes it. You can have 4 marks: a 5th removes the oldest. Marks vanish when the enemy dies or you leave the room.
+- Every 0.2 s a link runs from your Pokémon to the first mark, then from mark to mark in the order they were applied. The link from you deals ×0.17 of your Damage and the links between marks ×0.26, to every enemy touching the line (5 px wide). All is multiplied by a ×0.62 balance factor. If a mark is more than 300 px from the previous point the chain breaks there (no damage on that link).
+- On each of your hits, a bolt also jumps to another enemy within 170 px for ×0.4 of your Damage (at most once every 0.13 s).
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

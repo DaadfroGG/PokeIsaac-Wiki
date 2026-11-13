@@ -12,6 +12,9 @@ pool_weight: 2
 stats:
 - text: Vitesse +0,5
   good: true
+details:
+- label: Vitesse
+  value: +0,5
 icon: items-ps/av-candy/quick.png
 sprite: true
 names:
@@ -47,3 +50,9 @@ names:
     desc: 速度++
 ---
 Vitesse ++
+
+## Fonctionnement
+- La Vitesse +0,5 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

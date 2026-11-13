@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Dégâts -0,3
   good: false
+details:
+- label: Cadence
+  value: +3 (0,05 s de moins entre les tirs)
+- label: Vitesse
+  value: +0,3
+- label: Dégâts
+  value: -0,3
 icon: items-ps/exp-candy/s.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 射速和速度 +，傷害 -
 ---
 Cadence et vitesse +, dégâts -
+
+## Fonctionnement
+- Cadence +3 : 0,05 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- La Vitesse +0,3 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Le -0,3 en Dégâts est retiré de vos bonus fixes ; les pénalités comptent en entier. Vos Dégâts ne descendent jamais sous 0,5.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Cadence).

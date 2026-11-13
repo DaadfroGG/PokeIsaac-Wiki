@@ -10,8 +10,14 @@ pools:
 - devil
 pool_weight: 2
 details:
-- label: Quatre directions
-  value: 15 % par rafale
+- label: Chance
+  value: 15 % + 1 % par point de Chance, par attaque (50 % max)
+- label: Tirs en plus
+  value: '3 : à droite, derrière et à gauche de votre premier tir'
+- label: Dégâts
+  value: Pleins
+- label: Chance max
+  value: 50 % à 35 de Chance après rendements décroissants
 icon: items-ps/key-item/dragon-skull.png
 sprite: true
 names:
@@ -47,5 +53,17 @@ names:
     desc: 有時會同時朝四個方向射擊
 ---
 Parfois, vous tirez dans les quatre directions à la fois
+
+## Fonctionnement
+- À chaque attaque, il y a 15 % de chance, +1 % par point de Chance (50 % au maximum), de tirer aussi **3 tirs** à 90°, 180° et 270° de votre premier tir : vous tirez dans les quatre directions.
+- C'est tiré au sort **une fois par attaque**, quel que soit le nombre de tirs de votre salve ; la salve arrière du [Nœud Destin](lazo_destino.html) ne relance pas le tirage.
+- Les 3 tirs sont des tirs normaux : dégâts pleins, avec les effets de vos objets, et chacun tire au sort son propre coup critique et ses effets.
+- Ils s'ajoutent à votre salve et ne comptent pas dans la limite de 9 tirs. Les [Lunettes Sable](m_gafas_aislantes.html) ne les divisent pas.
+- La plupart des armes attaquent aussi dans les quatre directions quand il se déclenche.
+- Le plafond de 50 % demande 35 de Chance après les [rendements décroissants](../mechanics/rendimientos.html) (110 sur le papier). Une Chance négative baisse la chance.
+- Comment tous les tirs en plus s'additionnent : [Tirs supplémentaires](../mechanics/disparos_extra.html).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours un seul tirage par attaque, même chance.
 
 {{< clip >}}

@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Début de chaque étage
+- label: Récompense
+  value: 1 cœur d'âme
+- label: Plafond
+  value: 6 cœurs d'âme au total
 icon: items-ps/other-item/heart-scale.png
 sprite: true
 names:
@@ -44,3 +51,10 @@ names:
     desc: 每層開始時獲得一顆靈魂之心
 ---
 Un cœur d'âme au début de chaque étage
+
+## Fonctionnement
+- Au début de chaque étage, vous gagnez un [cœur d'âme](../mechanics/corazones_alma.html) entier.
+- Il n'ajoute plus rien quand vous portez déjà 6 cœurs d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

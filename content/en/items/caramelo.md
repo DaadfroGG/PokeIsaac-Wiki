@@ -15,6 +15,15 @@ stats:
   good: true
 - text: Evolves
   good: true
+details:
+- label: Evolution
+  value: Next form (random if there are several)
+- label: Stats
+  value: Damage +0.3, Speed +0.2
+- label: Evolution bonus
+  value: Hearts +1, Damage +1 (then +1.5)
+- label: No evolution left
+  value: Damage +0.7, Hearts +1
 icon: items/rare-candy.png
 sprite: true
 names:
@@ -50,3 +59,16 @@ names:
     desc: 進化！（若無法進化：傷害與生命提升）
 ---
 Evolve! (if it can't: damage and health +)
+
+## How it works
+
+- Evolves your current Pokémon one stage as soon as you pick it up. If it can evolve into several forms, one is chosen at random (Eevee turns into one of its eight evolutions).
+- The 1st evolution gives +1 heart (healed), +1 Damage and a little extra size. The 2nd gives +1 heart, +1.5 Damage and a bit more size, but -0.2 Speed.
+- The Rare Candy's own +0.3 Damage and +0.2 Speed are added on top, every time.
+- If your Pokémon is already fully evolved (or Eevee has already evolved), nothing evolves: you get +0.7 Damage and +1 heart (healed) instead.
+- With an [Everstone](piedra_eterna.html) you never evolve: you get the same +0.7 Damage and +1 heart.
+- Your type changes to match the new form when it differs. See [Levels and evolution](../mechanics/niveles_pokemon.html) for how Pokémon also evolve by leveling.
+
+## Stacking
+
+- Each Rare Candy acts when picked up: a second one evolves you again (or gives the +0.7 Damage and +1 heart bonus if there is nothing left).

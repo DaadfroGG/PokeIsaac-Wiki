@@ -10,8 +10,12 @@ pools:
 - shop
 pool_weight: 2
 details:
+- label: Companion
+  value: Murkrow (Dark)
+- label: Collects
+  value: Coins on the floor within 400 px (a nugget counts as 5)
 - label: Reward
-  value: One per 3 PokéDollars
+  value: 1 pickup per 3 coins collected
 icon: items-ps/ball/level.png
 sprite: true
 names:
@@ -49,3 +53,15 @@ names:
 A slow Murkrow keeps the PokéDollars on the floor that you don't pick up and, for every three, brings you something in return
 
 {{< clip >}}
+
+## How it works
+
+- Murkrow slowly flies to coins and nuggets lying on the floor (not shop items) within 400 px and picks them up before you can. A nugget counts as 5 coins.
+- For every 3 coins it has gathered, it flies back to you and drops 1 pickup, chosen at random among: half heart, heart, key, bomb, soul heart or coin.
+- The coins it takes are lost to you, so the trade is only worth it when you leave coins behind. Remaining coins (1 or 2) stay with it until the next trio.
+- It never shoots or fights.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Each Murkrow collects on its own.

@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: Recharge entièrement l'objet actif
+- label: Quand
+  value: Une fois, à la prise
 icon: items-ps/medicine/ether.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 讓你的主動道具完全充能
 ---
 Recharge entièrement votre objet actif
+
+## Fonctionnement
+- Dès que vous le ramassez, votre objet actif est rechargé jusqu'à sa limite de charge (la limite doublée si vous avez une [Pile](d_pila.html)).
+- Cela ne fonctionne qu'une fois, à ce moment : il ne fait plus rien ensuite.
+- Il ne fait rien si vous n'avez pas d'objet actif à ce moment.
+
+## Cumul
+- Chaque exemplaire recharge entièrement votre objet actif à la prise.

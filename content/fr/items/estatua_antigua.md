@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Condition
+  value: Rester immobile 0,5 s
+- label: Dégâts
+  value: ×2
 icon: items-ps/valuable-item/relic-statue.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 站著不動片刻後，你的彈傷害加倍
 ---
 Si vous restez immobile un instant, vos tirs infligent le double de dégâts
+
+## Fonctionnement
+
+- Après une demi-seconde d'immobilité, vos Dégâts sont doublés ; ils retombent dès que vous bougez.
+- C'est un multiplicateur de dégâts du HUD : il suit les [rendements décroissants et le plafond ×3](../mechanics/rendimientos.html) habituels.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

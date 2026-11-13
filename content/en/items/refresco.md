@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Speed
+  value: +0.1 per purchase after you pick it up
+- label: Cap
+  value: +1.5 (15 purchases)
 icon: items-ps/medicine/soda-pop.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 每在商店購買一次，速度 +0.1
 ---
 Each shop purchase gives you speed +0.1
+
+## How it works
+- Each purchase paid with PokéDollars after you pick it up (shop items, shop pickups, golden chests for sale) gives Speed +0.1 for the rest of the run.
+- Purchases made before you had it don't count.
+- It stops at +1.5, after 15 purchases.
+- Deals paid with hearts are not purchases.
+
+## Stacking
+- A second copy gives no extra speed. Worse, picking up another copy starts the count again from that moment, so the bonus already earned is lost.

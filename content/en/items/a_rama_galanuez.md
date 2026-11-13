@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Boomerang
+  value: Flies 260 px, then comes back to you
+- label: Damage
+  value: Your Damage ×2 per enemy
+- label: Stun
+  value: 1 s (not bosses)
+- label: Pickups
+  value: Carried back to you
 icon: items-ps/other-item/galarica-twig.png
 sprite: true
 names:
@@ -44,3 +53,15 @@ names:
     desc: 擲出迴力鏢，讓敵人暈眩，並把碰到的地上物品帶回給你
 ---
 You throw a boomerang that stuns enemies and brings back whatever it touches on the floor
+
+## How it works
+- You throw a boomerang the way you are facing. It flies 260 px, then comes back to you wherever you are.
+- It goes through enemies and rocks and bounces off walls. Each enemy it touches takes 2 times your Damage once per throw, and is stunned for 1 second. Bosses take the damage but aren't stunned.
+- It can be a [critical hit](../mechanics/criticos.html), but your items' shot effects are not added to it.
+- Free pickups it passes over are carried along and brought back to you. Shop items stay put.
+- It only needs 1 charge.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you throw two boomerangs.

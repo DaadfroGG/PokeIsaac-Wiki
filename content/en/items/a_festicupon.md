@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Cost
+  value: 1 PokéDollar per pull
+- label: Charge
+  value: None needed
+- label: Win
+  value: 68 % (fixed, Luck has no effect)
 icon: items-ps/key-item/festival-ticket.png
 sprite: true
 names:
@@ -56,3 +63,12 @@ Pocket slot machine: pay 1 PokéDollar and sometimes win a pickup (no charge)
 | Heart | 6 % |
 | Soul heart | 3 % |
 | Nugget | 1 % |
+
+## How it works
+- Each use costs 1 PokéDollar; it never needs charge, so you can pull as often as you like while you have money. With no PokéDollar it can't be used.
+- The prize drops on the floor just below you. The odds above are fixed: Luck doesn't change them.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): each use pulls twice, paying 1 PokéDollar for each pull.

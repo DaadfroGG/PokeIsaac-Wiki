@@ -8,6 +8,13 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Block
+  value: 1 hit
+- label: Recharge
+  value: 15 seconds
+- label: After a block
+  value: 0.3 s of invulnerability
 icon: items-ps/key-item/silver-wing.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 每15秒為你擋下一次攻擊
 ---
 Every 15 seconds, it protects you from one hit
+
+## How it works
+- The wing protects you from one hit completely (no damage).
+- After it blocks, it takes 15 seconds to recharge. The timer runs all the time, in every room.
+- A new wing is not ready when you pick up the item: you have to wait the first 15 seconds.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

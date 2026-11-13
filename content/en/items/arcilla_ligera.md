@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Invulnerability after a hit
+  value: About 1.9 s (instead of 1.2 s)
+- label: Cap
+  value: 2.5 seconds
 icon: items-ps/hold-item/light-clay.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 受到攻擊後，無敵時間更長
 ---
 After getting hit, you stay invulnerable longer
+
+## How it works
+- After you take a hit you are normally invulnerable for about 1.2 seconds. With this item that period is multiplied by 1.6, so about 1.9 seconds.
+- The invulnerability can never go above 2.5 seconds.
+- It only applies to hits that actually hurt you. Hits that are blocked or dodged don't change anything.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

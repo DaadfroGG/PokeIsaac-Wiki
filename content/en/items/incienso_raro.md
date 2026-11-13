@@ -13,9 +13,11 @@ details:
 - label: Possible effects
   value: Burn, freeze, lightning, pierce, bounce, homing, slow, knock back, poison, splash or grow
 - label: Duration
-  value: Until you clear the room
+  value: Until you clear the room (or leave it)
 - label: Chance
   value: 'Each effect has the same chance: 1 in 11 (about 9 %)'
+- label: Strength
+  value: As if you had picked one more copy of that effect's item
 icon: items-ps/incense/odd.png
 sprite: true
 names:
@@ -53,3 +55,11 @@ names:
 In each room with enemies, your shots gain a random effect until you clear it
 
 {{< clip >}}
+
+## How it works
+- Each time you enter a room that still has living enemies, one of 11 shot effects is picked at random and added to all your shots: burn, freeze, lightning, pierce, bounce, homing, slow, knock back, poison, splash or grow. A message tells you which one.
+- The effect is the same as holding one more copy of the matching item (for example +1 pierce or +1 bounce). It is removed when you clear the room or leave it, and a new roll happens in the next room with enemies.
+- Rooms with no enemies do not roll an effect.
+
+## Stacking
+- It does not stack: a second copy does not give a second random effect.

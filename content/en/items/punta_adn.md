@@ -10,10 +10,14 @@ pools:
 pool_weight: 2
 charge: 1
 details:
+- label: Charge
+  value: 1 room
 - label: Target
   value: The farthest enemy (not bosses)
 - label: Stunned
   value: 1.5 seconds
+- label: You
+  value: Invulnerable 0.5 seconds
 icon: items-ps/key-item/dna-splicers.png
 sprite: true
 names:
@@ -49,3 +53,13 @@ names:
     desc: 與最遠的敵人互換位置，並讓牠暈眩
 ---
 You swap places with the farthest enemy and leave it stunned
+
+## How it works
+- Charge: 1 room. Clear a single room and it is ready again.
+- You swap places with the enemy that is farthest from you (bosses are never chosen, nor enemies that can't be hurt at that moment). It stays stunned for 1.5 seconds.
+- You are invulnerable for 0.5 seconds after the swap.
+- If there is no valid enemy in the room, it does nothing and no charge is spent.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With a [Cell Battery](d_pila.html) the item can store twice its charge.

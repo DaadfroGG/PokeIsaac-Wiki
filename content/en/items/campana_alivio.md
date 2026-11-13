@@ -9,6 +9,15 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Condition
+  value: Clear a room without taking a hit
+- label: Reward
+  value: A heart or a coin
+- label: Heart
+  value: 50 % if you are missing health
+- label: Coin
+  value: Otherwise, if your wallet is under 60 % full
 icon: items-ps/other-item/soothe-bell.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 沒受傷就清除房間時，會出現一顆愛心或一枚金幣
 ---
 Clear a room without getting hurt and a heart or coin appears
+
+## How it works
+- It checks rooms that start with enemies in them (normal rooms and boss rooms). If you clear one without taking a single hit, a reward appears next to you.
+- If you are missing health, there is a 50 % chance that the reward is a heart. Otherwise, it is a coin.
+- The coin only appears if your wallet is less than 60 % full.
+- Hits that are fully blocked or dodged don't count as hits.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

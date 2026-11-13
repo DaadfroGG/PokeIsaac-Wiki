@@ -11,7 +11,11 @@ pool_weight: 2
 charge: 4
 details:
 - label: Coup
-  value: Vos dégâts ×16 (min. 50)
+  value: Vos Dégâts ×16 (min. 50)
+- label: Cibles
+  value: Tous les ennemis de la salle, boss compris
+- label: Type
+  value: Ténèbres
 icon: items-ps/key-item/adventure-rules.png
 sprite: true
 names:
@@ -47,3 +51,13 @@ names:
     desc: 房間內所有敵人受到一次巨大傷害
 ---
 Tous les ennemis de la salle subissent un coup énorme
+
+## Fonctionnement
+- Chaque ennemi de la salle subit un coup de 16 fois vos Dégâts, au moins 50.
+- Ce coup compte comme des dégâts Ténèbres. Il ne peut pas être critique et ne déclenche ni vos objets ni vos statuts.
+- Il touche les boss en entier.
+- S'il n'y a rien à affecter, rien ne se passe et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : chaque ennemi est frappé deux fois.

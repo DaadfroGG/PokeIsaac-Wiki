@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: After a hit leaves you at 1 heart or less
+- label: Heal
+  value: 1 heart
+- label: Frequency
+  value: Once per floor
 icon: items-ps/berry/oran.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 剩一顆愛心以下時，回復一顆愛心（每層一次）
 ---
 At one heart or less, heals you one heart (once per floor)
+
+## How it works
+- After a hit, if you are alive and have 1 red heart or less (soul hearts don't count), the berry heals you 1 heart.
+- It works once per floor: it is ready again on every new floor.
+- The healing limit on items does not apply to it.
+- It only reacts to hits that hurt you. It does not trigger by itself when you are simply low on health.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

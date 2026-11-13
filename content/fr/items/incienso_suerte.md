@@ -12,6 +12,13 @@ pool_weight: 2
 stats:
 - text: Chance +1
   good: true
+details:
+- label: En le prenant
+  value: Chance +1
+- label: Chaque étage
+  value: Chance +1 à chaque étage descendu
+- label: Plafond
+  value: Aucun (plein jusqu'à 10 de Chance, puis ¼)
 icon: items-ps/incense/luck.png
 sprite: true
 names:
@@ -47,3 +54,10 @@ names:
     desc: 每往下走一層，幸運+1
 ---
 Chance +1 à chaque étage descendu
+
+## Fonctionnement
+- Vous gagnez Chance +1 en le prenant, puis encore Chance +1 à chaque nouvel étage, pour le reste de la partie.
+- Pas de plafond, mais la Chance suit les [rendements décroissants](../mechanics/rendimientos.html) : chaque point compte plein jusqu'à 10 de Chance, puis seulement pour un quart.
+
+## Cumul
+- Chaque exemplaire donne son propre Chance +1 en le prenant et son propre Chance +1 par étage : deux exemplaires font +2 par étage.

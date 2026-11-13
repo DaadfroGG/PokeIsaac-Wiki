@@ -10,7 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Stuck
-  value: 20 % per hit, 2 s
+  value: 20 % per hit (+1 % per Luck), 2 s
+- label: Damage
+  value: 20 % of the hit (min. 0.5) every 0.33 s
+- label: Bosses
+  value: Never
 icon: items-ps/key-item/grubby-hanky.png
 sprite: true
 names:
@@ -46,3 +50,10 @@ names:
     desc: 有時射擊會黏在敵人身上，持續造成幾秒傷害
 ---
 Sometimes a shot sticks to the enemy and keeps damaging it for a few seconds
+
+## How it works
+- Each hit on a non-boss enemy has a 20 % chance (+1 % per Luck) to stick to it for 2 s.
+- While stuck, the enemy takes 20 % of that hit's damage (at least 0.5) every 0.33 s, 6 times: about 1.2 times the hit in total.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance.

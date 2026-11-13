@@ -12,6 +12,11 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,4
   good: true
+details:
+- label: Dégâts
+  value: +0,4
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items-ps/medicine/muscle-wing.png
 sprite: true
 names:
@@ -47,3 +52,9 @@ names:
     desc: 傷害+0.4
 ---
 Dégâts +0,4
+
+## Fonctionnement
+- Dégâts +0,4 : un bonus fixe ajouté aux Dégâts de base de votre Pokémon. Tous les bonus fixes de Dégâts des objets sont d'abord additionnés ; les 3 premiers points comptent en entier, de +3 à +8 pour moitié, de +8 à +40 pour un quart et au-delà pour 5 % (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

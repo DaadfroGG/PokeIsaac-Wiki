@@ -9,6 +9,13 @@ pools:
 - angel
 pool_weight: 2
 charge: 4
+details:
+- label: Copies
+  value: Une de chacun de vos compagnons
+- label: Dégâts
+  value: Les mêmes que l'original
+- label: Durée
+  value: Jusqu'à ce que vous quittiez la salle
 icon: items-ps/storage/catching-pocket.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 這個房間裡你的夥伴數量加倍
 ---
 Vos compagnons sont doublés dans cette salle
+
+## Fonctionnement
+- Chacun de vos [compagnons](../mechanics/companeros.html) reçoit une copie de lui-même, avec les mêmes dégâts, à côté de lui.
+- Seuls vos compagnons permanents sont copiés, pas les temporaires (de la [Boîte Pokémon](a_caja_pokemon.html), du [Parfum](a_colonia.html), de la [Carte Magnétique](a_llave_magnetica.html) ou d'une utilisation précédente de cet objet).
+- Les copies ne comptent pas dans votre limite de compagnons et disparaissent quand vous quittez la salle.
+- Sans compagnon permanent, rien ne se passe et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : chaque compagnon reçoit deux copies.

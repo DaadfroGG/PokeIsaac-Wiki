@@ -9,6 +9,13 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Compagnon
+  value: Ptiravi (Normal)
+- label: Récompense
+  value: 1 cœur
+- label: Tous les
+  value: 4 salles nettoyées
 icon: items-ps/ball/heal.png
 sprite: true
 names:
@@ -46,3 +53,13 @@ names:
 Un Ptiravi vous accompagne et vous donne un cœur toutes les 4 salles nettoyées
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Toutes les 4 salles nettoyées, Ptiravi laisse tomber un cœur à côté de lui.
+- Il ne tire ni ne combat jamais.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Chaque compagnon compte ses propres salles.

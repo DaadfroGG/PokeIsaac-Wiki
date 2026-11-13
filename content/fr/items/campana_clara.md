@@ -14,6 +14,8 @@ details:
   value: 6 secondes
 - label: Chaque coup
   value: Vous soigne d'un demi-cœur au lieu de vous blesser
+- label: Après chaque coup
+  value: 1,17 s d'invulnérabilité
 - label: Vous seul
   value: Ne soigne pas vos coéquipiers
 icon: items-ps/key-item/clear-bell.png
@@ -51,3 +53,15 @@ names:
     desc: 6秒內，你受到的攻擊會為你回復半顆愛心，而不是傷害你
 ---
 Pendant 6 secondes, les coups reçus vous rendent un demi-cœur au lieu de vous blesser
+
+## Fonctionnement
+- Pendant 6 secondes, chaque coup qui devrait vous blesser (tirs, contact, explosions, pièges) ne fait aucun dégât et vous soigne d'un demi-cœur à la place.
+- Après chacun de ces coups vous êtes invulnérable 1,17 seconde, donc environ 5 coups au plus peuvent vous soigner.
+- Ce soin compte dans la limite de soin des objets sur 10 secondes : une fois la limite atteinte, les coups ne font toujours rien mais ne soignent plus.
+- En coopération, il ne protège que le joueur qui l'a utilisé.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : le minuteur repart simplement à 6 secondes.

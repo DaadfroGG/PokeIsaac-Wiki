@@ -14,6 +14,10 @@ details:
   value: 1 in 5 shots that hit
 - label: Blast
   value: After 2 seconds, ×3 your damage in 60 px
+- label: Minimum
+  value: 4 damage
+- label: Counts
+  value: Only your own shots
 icon: items/sharp-beak.png
 sprite: true
 names:
@@ -51,3 +55,13 @@ names:
 One in five shots sticks into the enemy and explodes after 2 seconds (×3 damage around it)
 
 {{< clip >}}
+
+## How it works
+- Every 5th hit made by your own shots plants a nail in the enemy. Split shots, companion shots and other side effects don't count. With a special weapon, at most one hit counts per fire delay.
+- 2 seconds later the nail explodes where the enemy is (it follows it; if the enemy died, it explodes where it fell).
+- The blast deals 3 times your Damage stat (at least 4) to every enemy within 60 px, the nailed one included. It hurts bosses too.
+- The blast has no type, never crits and inflicts no statuses. It never hurts you.
+- Several nails can be ticking at once.
+
+## Stacking
+- A second copy does nothing more: still one nail every 5 hits.

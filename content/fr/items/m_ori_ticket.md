@@ -8,6 +8,11 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Passage
+  value: Une fois par tir
+- label: Sortie
+  value: Côté opposé de la salle
 icon: items-ps/key-item/auroraticket.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 你的彈碰到牆壁時會從房間另一側飛出
 ---
 Vos tirs qui atteignent un mur ressortent du côté opposé de la salle
+
+## Fonctionnement
+- Un tir qui atteint le bord de la salle ressort du côté opposé et continue au lieu de disparaître. Cela n'arrive qu'une fois par tir.
+- Si vous avez aussi du Rebond, le tir rebondit d'abord et ne traverse que lorsqu'il n'a plus de rebonds. Les tirs secondaires (éclats, fragments) ne traversent pas.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne permet pas un second passage.

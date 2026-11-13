@@ -8,7 +8,11 @@ tier: 2
 pool_weight: 2
 details:
 - label: Poison
-  value: 6 s à l'entrée
+  value: 6 s en entrant dans une salle avec des ennemis
+- label: Dégâts
+  value: 1,5 toutes les 0,5 s (environ 18 au total)
+- label: Boss
+  value: Empoisonnés aussi
 icon: items-ps/other-item/purple-nectar.png
 sprite: true
 names:
@@ -44,3 +48,11 @@ names:
     desc: 進入房間時，所有敵人會中毒一段時間
 ---
 En entrant dans une salle, tous les ennemis sont empoisonnés un bon moment
+
+## Fonctionnement
+- Quand vous entrez dans une salle qui contient des ennemis vivants, chaque ennemi présent est empoisonné 6 s, boss compris (voir [effets de statut](../mechanics/estados.html)).
+- Le poison inflige 1,5 dégât toutes les 0,5 s (12 ticks, environ 18 dégâts), un peu plus si un ennemi empoisonné est ensuite touché par votre propre poison.
+- Seuls les ennemis présents à l'entrée sont empoisonnés : les vagues suivantes et les ennemis invoqués ne le sont pas.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

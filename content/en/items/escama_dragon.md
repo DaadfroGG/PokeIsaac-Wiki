@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Every
+  value: 4th shot
+- label: Damage
+  value: ×2
+- label: Size
+  value: ×1.5
 icon: items-ps/evo-item/dragon-scale.png
 sprite: true
 names:
@@ -46,3 +53,12 @@ names:
 Every fourth shot is huge and deals double damage
 
 {{< clip >}}
+
+## How it works
+
+- Every fourth shot you fire deals double damage and is 50 % bigger.
+- The count is shared between all your shots, so with extra shots per volley the big one is simply the 4th, 8th, 12th... projectile.
+
+## Stacking
+
+- A second copy changes nothing.

@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 8
+details:
+- label: Item
+  value: 1 from the treasure room pool
+- label: Price
+  value: Free
+- label: Charge
+  value: 8 rooms
 icon: items-ps/other-item/wishing-piece.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 出現一件寶物房間的道具
 ---
 A treasure room item appears
+
+## How it works
+- A new pedestal appears just above you with a random item from the treasure room pool. It is free to take.
+- You can use it in any room, and again every time it is recharged.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two items appear.

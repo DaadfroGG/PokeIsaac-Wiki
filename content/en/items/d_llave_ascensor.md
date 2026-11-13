@@ -12,6 +12,9 @@ pool_weight: 1
 stats:
 - text: +99 key
   good: true
+details:
+- label: Keys
+  value: Fills up to 99
 icon: items-ps/key-item/elevator-key.png
 sprite: true
 names:
@@ -47,3 +50,11 @@ names:
     desc: 補滿鑰匙（最多99）
 ---
 Fills you up with keys (up to 99)
+
+## How it works
+- The moment you pick it up you gain 99 [keys](../world/key.html), up to the limit of 99 keys.
+- So it simply fills your key count to the maximum.
+- It has no other effect.
+
+## Stacking
+- Another copy fills your keys up again when picked up, but there is nothing more to gain once you are at 99.

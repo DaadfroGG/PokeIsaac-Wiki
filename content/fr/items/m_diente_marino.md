@@ -11,15 +11,15 @@ pools:
 pool_weight: 2
 details:
 - label: Aiguille
-  value: 3 % (+0,5 % par point de chance, max. 10 %)
+  value: 3 % par tir (+0,5 % par Chance, max. 10 %)
 - label: Fréquence
   value: Au plus une par seconde
 - label: Achève
-  value: À la moitié des PV ou moins
-- label: S'il ne l'achève pas
-  value: ×3
-- label: Boss
-  value: ×2
+  value: À la moitié de la vie ou moins (pas les boss)
+- label: Sinon
+  value: ×3 (boss ×2)
+- label: Libération
+  value: 6 tirs à 35 % de dégâts
 icon: items-ps/evo-item/deep-sea-tooth.png
 sprite: true
 names:
@@ -55,3 +55,12 @@ names:
     desc: 有時(每秒最多一次)會射出一根針:若敵人的體力在一半或以下,會將其一擊打倒,並向周圍放出六發子彈;否則造成×3傷害(對首領×2)
 ---
 Parfois (au plus une fois par seconde), vous tirez une aiguille : si l'ennemi a la moitié de ses PV ou moins, elle le vainc d'un coup et libère six tirs autour de lui ; sinon, elle inflige ×3 (×2 contre les boss)
+
+## Fonctionnement
+- Chaque tir a 3 % de chance (+0,5 % par Chance, max 10 %) d'être une aiguille, mais jamais plus d'une aiguille par seconde.
+- Quand une aiguille touche un ennemi (hors boss) à la moitié de sa vie ou moins, elle le bat instantanément et 6 tirs à 35 % des dégâts de l'aiguille jaillissent autour de lui en cercle.
+- Si l'ennemi a plus de la moitié de sa vie, l'aiguille inflige ×3 dégâts. Contre un boss, elle inflige ×2 quelle que soit sa vie.
+- Une aiguille ne sert qu'une fois : elle est consommée à son premier coup.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas la chance.

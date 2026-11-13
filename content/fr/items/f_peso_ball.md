@@ -9,6 +9,15 @@ pools:
 - treasure
 - devil
 pool_weight: 2
+details:
+- label: Compagnon
+  value: Magby (Feu)
+- label: Orbite
+  value: 80 px autour de vous
+- label: Dégâts au contact
+  value: 1,6 × dégâts du compagnon, toutes les 1/6 s
+- label: Brûlure
+  value: 1,5 s à chaque contact
 icon: items-ps/ball/heavy.png
 sprite: true
 names:
@@ -46,3 +55,14 @@ names:
 Un Magby gravite loin de vous et brûle les ennemis qu'il touche
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Il ne tire pas : il tourne autour de vous sur un cercle de 80 px, en faisant un tour complet environ toutes les 2,3 secondes. Tout ennemi qu'il touche subit 1,6 × les dégâts du compagnon (au moins 1), au plus une fois toutes les 1/6 de seconde.
+- Tout ennemi qu'il touche prend aussi feu pendant 1,5 seconde. Il orbite loin de vous : il faut bouger pour qu'il atteigne les ennemis.
+- Les dégâts d'un compagnon ne dépendent pas de votre stat de Dégâts : chaque tir ou coup part de 2 au premier étage, +0,4 par étage ensuite.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Plusieurs satellites du même type se répartissent régulièrement autour de vous.

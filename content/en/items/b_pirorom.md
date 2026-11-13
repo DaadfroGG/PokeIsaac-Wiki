@@ -9,6 +9,15 @@ pool_weight: 2
 stats:
 - text: +5 Voltorb
   good: true
+details:
+- label: Voltorbs
+  value: '+5'
+- label: Burn
+  value: Enemies within 120 px, 5 s
+- label: Fire spread
+  value: 'On killing a burning enemy: enemies within 90 px, 3 s'
+- label: Availability
+  value: 'Retired: in no item pool'
 icon: items-ps/hold-item/burn-drive.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: +5顆霹靂電球；爆炸時會點燃附近的敵人，敵人死亡時火焰會蔓延到下一個
 ---
 +5 Voltorbs; when they blow up they set nearby enemies on fire and the flames jump from one to the next when one dies
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, each Voltorb explosion also sets every enemy within 120 px on [fire](../mechanics/estados.html) for 5 s (7.5 s with the [Heat Rock](roca_calor.html)).
+- **Spread:** whenever you kill an enemy that is burning (with a Voltorb or anything else), the fire jumps to every enemy within 90 px of it for 3 s (4.5 s with the Heat Rock).
+- Small Voltorbs from the [Candy Jar](b_tarro.html) do not ignite.
+- With the [Colress Machine](w_acromaquina.html), every 3rd explosion of its Voltorbs ignites enemies within 70 px for 3 s.
+- This item is retired: it no longer appears in any item pool.
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

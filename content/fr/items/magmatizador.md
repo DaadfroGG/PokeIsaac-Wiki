@@ -9,6 +9,15 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Rayon
+  value: 120 px
+- label: Dégâts
+  value: 1,5× vos Dégâts (au moins 2)
+- label: Si vous êtes de type Feu
+  value: Les brûle 3 s à la place
 icon: items-ps/evo-item/magmarizer.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 受到攻擊時，熱浪會傷害附近的敵人（如果你是火屬性，還會灼傷他們）
 ---
 Quand vous êtes touché, une onde de chaleur blesse les ennemis proches (si vous êtes de type Feu, elle les brûle)
+
+## Fonctionnement
+- Après un coup reçu, une onde de chaleur touche tous les ennemis dans un rayon de 120 px autour de vous.
+- Normalement, chacun subit 1,5 fois vos Dégâts (au moins 2).
+- Si votre Pokémon est de type Feu (l'un de ses deux types s'il est double), elle n'inflige pas de dégâts mais enflamme chaque ennemi pendant 3 secondes à la place (voir [Effets de statut](../mechanics/estados.html)).
+- Elle se déclenche à chaque coup, sans délai de recharge. Elle ne se déclenche pas si le coup a été bloqué ou esquivé.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

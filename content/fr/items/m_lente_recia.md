@@ -17,6 +17,12 @@ stats:
 details:
 - label: Dégâts
   value: ×1,6 et +4
+- label: Cadence
+  value: -16 (beaucoup plus lente)
+- label: Taille
+  value: +2,5 de rayon
+- label: Type Plante
+  value: Un tir qui achève un ennemi perfore +1
 icon: items-ps/ev-item/power-lens.png
 sprite: true
 names:
@@ -54,3 +60,10 @@ names:
 Tirs géants : dégâts ×1,6 et +4, mais vous tirez beaucoup plus lentement ; si vous êtes de type Plante, les tirs qui achèvent continuent leur course
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs sont plus gros (+2,5 de rayon), vos dégâts sont multipliés par 1,6 et augmentés de +4, mais vous tirez beaucoup plus lentement.
+- Si votre Pokémon est de type Plante, un tir qui bat un ennemi (hors boss) gagne +1 perforation et continue.
+
+## Cumul
+- Le ×1,6 ne se cumule pas. +4 Dégâts, la cadence plus lente et +2,5 de rayon s'ajoutent à chaque exemplaire.

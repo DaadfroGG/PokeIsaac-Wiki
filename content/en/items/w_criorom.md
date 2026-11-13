@@ -11,15 +11,21 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2× your fire rate (max. 1.2 s)
+  value: 2 × your delay between shots, 0.37 to 1.2 s (min 25 % to release)
 - label: Blizzard
-  value: From ×0.38 to ×0.78 every 0.25 s, for 2.5 to 5 s
+  value: ×0.38 to ×0.78 Damage every 0.25 s, for 2.5 to 5.3 s
 - label: Zone
-  value: 90-240 px ahead; radius 46 to 98 px
-- label: Freezes
-  value: 'Ice-type only: slows and, every 3rd hit, can freeze; two blizzards don''t stack'
+  value: 90-240 px ahead; radius 46 to 98 px (+7 per Size)
+- label: Ice-type only
+  value: Slows 0.8 s on each hit; every 3rd tick can freeze
+- label: Zones
+  value: Up to 4 with multishot (31° apart), max 6 on screen
+- label: Cooldown
+  value: 1.5 × your delay (at least 0.5 s)
+- label: Balance
+  value: ×0.72
 - label: If not in charge
-  value: Every 4th attack, a small blizzard on the nearest enemy
+  value: 'Every 4th attack: small blizzard (×0.4, 44 px, 1.8 s) on the nearest enemy within 320 px'
 icon: items-ps/hold-item/chill-drive.png
 sprite: true
 names:
@@ -55,5 +61,19 @@ names:
     desc: 蓄力後在面前釋放暴風雪：一片冰凍區域，會傷害範圍內的所有人；如果你是冰屬性，還會使其減速並冰凍
 ---
 Charge and release a blizzard in front of you: an ice zone that damages whoever is inside; if you are Ice-type, it also slows and freezes
+
+## How it works
+- It is a **weapon**: it only works as your equipped weapon ([Equipped weapon](../mechanics/arma_principal.html)); with another main weapon it only adds the small effect listed under "If not in charge". Your normal shots are not replaced.
+- Balance: while this is your equipped weapon, the damage it deals is further multiplied by ×0.72. The multipliers below are applied before it.
+- After each attack the weapon is ready again after 1.5 times your normal delay between shots, and never less than 0.5 s.
+- Crits, burn, poison, slow and the other effects of your items apply to its hits, and its hits carry your Pokémon's type. See [Weapons and shot effects](../mechanics/armas.html).
+- Hold the weapon key to charge (2 × your delay between shots, from 0.37 s to 1.2 s for a full charge), release to drop the blizzard (at least 25 % charge needed). The zone appears 90 to 240 px in front of you depending on the charge, with a radius from 46 to 98 px (+7 px per Size), and lasts 2.5 s (small charge) to 5.3 s (full).
+- Every 0.25 s it deals ×0.38 to ×0.78 of your Damage (by charge) to each enemy inside; the same enemy is not hit twice within 0.2 s.
+- **Ice-type only:** each hit slows the enemy for about 0.8 s, and every 3rd tick adds a freeze chance. Other types only get the damage. Several blizzards do not add their freezes or slows.
+- Multishot drops up to 4 zones fanned 31° apart; at most 6 blizzards can exist at once.
+- **If not in charge:** every 4th attack, a small blizzard (×0.4 Damage, 44 px radius +5 per Size, 1.8 s) lands on the nearest enemy within 320 px.
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

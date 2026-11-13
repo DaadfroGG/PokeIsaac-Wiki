@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Dégâts
+  value: +0,2 pour chaque tranche de 10 Pokédollars portés
+- label: Plafond
+  value: +1,8 avec 99 P$ (+2 quand le porte-monnaie dépasse 100)
 icon: items-ps/valuable-item/stardust.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 每攜帶10寶可幣，傷害+0.2（最多+1.8）
 ---
 Dégâts +0,2 par tranche de 10 Pokédollars (jusqu'à +1,8)
+
+## Fonctionnement
+- Le bonus se calcule en direct d'après les pièces de votre porte-monnaie : +0,2 pour chaque tranche complète de 10 Pokédollars. 9 P$ ne donnent rien, 10 à 19 donnent +0,2, et ainsi de suite.
+- Le porte-monnaie contient 99 Pokédollars au début, donc le bonus est de +1,8 au maximum. Sur les étages profonds le porte-monnaie grandit (150, puis 250), et le bonus s'arrête alors à +2.
+- Dépenser des pièces baisse le bonus tout de suite.
+- C'est un bonus de Dégâts fixe normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus.

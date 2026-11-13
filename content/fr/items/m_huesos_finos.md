@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Os
+  value: 3 tirs à 50 % de dégâts
+- label: Déclencheur
+  value: Votre tir bat un ennemi (tirs principaux seulement)
+- label: Écart
+  value: Environ ±34°
 icon: items-ps/curry-ingredient/brittle-bones.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 彈擊敗敵人時，會分裂成三根繼續飛行的骨頭
 ---
 Quand un tir vainc un ennemi, il se brise en trois os qui poursuivent leur route
+
+## Fonctionnement
+- Quand un tir principal bat un ennemi, trois os en sortent : un tout droit et deux inclinés d'environ 34° de chaque côté, chacun à 50 % des dégâts du tir.
+- Les os ne peuvent pas toucher l'ennemi qui vient de tomber. Ce sont des tirs secondaires : ils ne déclenchent pas d'effets au contact et ne font pas de nouveaux os.
+- C'est garanti : aucun tirage.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

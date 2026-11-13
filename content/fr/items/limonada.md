@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque achat en boutique
+- label: Soin
+  value: ½ cœur
 icon: items-ps/medicine/lemonade.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 每在商店購買一次，回復半顆愛心
 ---
 Chaque achat en boutique vous soigne d'un demi-cœur
+
+## Fonctionnement
+- Chaque fois que vous achetez quelque chose en boutique, vous récupérez un demi-cœur.
+- Le soin ignore la limite de soin des objets.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

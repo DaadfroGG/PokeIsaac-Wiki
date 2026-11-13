@@ -12,6 +12,15 @@ pool_weight: 1
 stats:
 - text: Dégâts -0,3
   good: false
+details:
+- label: Tirs
+  value: +1 par salve
+- label: Écart
+  value: Environ 7° de chaque côté de la visée
+- label: Dégâts
+  value: -0,3
+- label: Plafond
+  value: 9 tirs par salve
 icon: items/tm-normal.png
 sprite: true
 names:
@@ -49,3 +58,11 @@ names:
 Tir double
 
 {{< clip >}}
+
+## Fonctionnement
+- Vous tirez un tir de plus par salve : sans autre tir en plus, ça fait 2 tirs côte à côte, à environ 7° de chaque côté de votre visée.
+- Chaque tir inflige vos dégâts complets. Le -0,3 est retiré de votre stat Dégâts (les pénalités comptent en entier).
+- Avec plus de tirs, la salve s'ouvre en éventail.
+
+## Cumul
+- Il se cumule : chaque exemplaire ajoute un tir par salve et encore -0,3 en Dégâts. Une salve ne peut pas dépasser 9 tirs (voir [tirs supplémentaires](../mechanics/disparos_extra.html)).

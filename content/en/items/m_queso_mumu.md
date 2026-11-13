@@ -14,8 +14,14 @@ stats:
 - text: Heals 1 heart
   good: true
 details:
+- label: Hearts
+  value: +1 (and heals it)
 - label: Cloud
-  value: Every half second standing still
+  value: Every 0.5 s while standing still in combat
+- label: Cloud duration
+  value: 2.5 s, radius 30 px
+- label: Poison
+  value: 2 s, 25 % of your damage every 0.25 s (min. 0.5)
 icon: items-ps/curry-ingredient/moomoo-cheese.png
 sprite: true
 names:
@@ -51,3 +57,12 @@ names:
     desc: 戰鬥中站著不動時，會釋放臭氣雲讓敵人中毒；愛心+1
 ---
 If you stand still in combat, you release stinky clouds that poison enemies; heart +1
+
+## How it works
+- You get one more heart, filled.
+- While you stand still in a room with enemies, you release a stinky cloud under you every 0.5 s. A cloud lasts 2.5 s and has a radius of 30 px.
+- Every 0.25 s each enemy in the cloud, flying ones included, takes 25 % of your damage (at least 0.5) and is poisoned for 2 s (see [status effects](../mechanics/estados.html)).
+- At most 24 clouds and puddles exist at once. Moving, or a room without enemies, stops the clouds.
+
+## Stacking
+- The cloud does not change; +1 heart is added for each copy.

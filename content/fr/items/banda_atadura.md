@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Dégâts
+  value: +30 % aux ennemis ralentis
+- label: Ralentissement
+  value: Chaque coup ralentit 1,5 s
+- label: Boss
+  value: Ralentis et touchés aussi
 icon: items-ps/hold-item/binding-band.png
 sprite: true
 names:
@@ -43,3 +50,14 @@ names:
     desc: 被減速的敵人會多受到30%傷害（減速屬於冰和水屬性）
 ---
 Les ennemis ralentis subissent 30 % de dégâts en plus (ralentir est propre aux types Glace et Eau)
+
+## Fonctionnement
+- Vos tirs ralentissent chaque ennemi touché pendant 1,5 seconde (le compte repart à chaque coup). Un ennemi ralenti marche à mi-vitesse.
+- Chaque coup porté à un ennemi ralenti inflige 30 % de dégâts en plus. En pratique, dès votre deuxième coup le bonus est presque toujours actif, car vos propres tirs maintiennent le ralentissement.
+- Le ralentissement vient aussi des [passifs Glace et Eau](../mechanics/estados.html) et de toute autre source : les 30 % s'appliquent à tout ennemi ralenti, quelle que soit la cause.
+- Les boss sont ralentis aussi (seulement leur marche, entre deux attaques) et subissent les 30 % en plus.
+- Les +30 % sont appliqués à l'impact du tir : ils n'apparaissent donc pas dans vos Dégâts affichés et ne sont pas limités par le plafond de ×3 des multiplicateurs.
+
+## Cumul
+- L'effet de ralentissement est tout ou rien et les +30 % ne se cumulent pas : une seconde Bande Étreinte ne change rien.
+- Il se multiplie avec les autres bonus à l'impact : contre un boss ralenti, la [Ceinture Pro](cinta_experto.html) donne ×1,3 × 1,3 = ×1,69.

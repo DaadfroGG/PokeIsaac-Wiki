@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Damage
-  value: ×0.5 to ×2
+  value: ×0.5 to ×2, random per shot
+- label: Rocks
+  value: Shots break rocks
 icon: items-ps/other-item/armorite-ore.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 岩石彈：能打碎岩石，每發威力不同（×0.5至×2）
 ---
 Rock shots: they break rocks and each one hits differently (×0.5 to ×2)
+
+## How it works
+- Every shot deals a random multiple of your damage between ×0.5 and ×2 (evenly random), so the average is ×1.25.
+- A shot that touches an ordinary rock breaks it and disappears. Rocks that break drop their usual loot.
+- It does not make shots pass through rocks, and it does not break indestructible obstacles.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

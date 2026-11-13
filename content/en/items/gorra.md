@@ -15,7 +15,9 @@ details:
 - label: Companions at once
   value: Up to 2
 - label: Damage
-  value: 50 % of yours
+  value: 50 % of yours (at least 2 + 0.4 per floor)
+- label: Shots
+  value: About 1 every 0.5 s, within 380 px
 - label: Duration
   value: Until you leave the room
 icon: icons/items/gorra.png
@@ -53,3 +55,13 @@ names:
     desc: 全部收服！有時你擊敗的敵人會加入你，直到你離開房間（最多2隻）
 ---
 Gotta catch 'em all! Sometimes an enemy you defeat joins you until you leave the room (max. 2)
+
+## How it works
+- Each normal enemy you defeat has a 10 % chance to join you (Luck does not change it). Bosses never join.
+- The new ally is the same Pokémon as the defeated enemy and has its type. It floats behind you like a [companion](../mechanics/companeros.html) and shoots the nearest enemy within 380 px, about once every 0.5 s.
+- Each shot deals half your Damage, but never less than 2 + 0.4 per floor. Items that boost companions also boost it.
+- At most 2 of these allies at once. They do not count toward your normal companion limit.
+- They all leave as soon as you walk into another room.
+
+## Stacking
+- A second copy does nothing more: still 10 % and 2 allies at most.

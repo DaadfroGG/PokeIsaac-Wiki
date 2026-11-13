@@ -16,9 +16,9 @@ details:
 - label: On pickup
   value: Fully heals you
 - label: Afterwards
-  value: Excess healing at full health > soul heart
+  value: Healing beyond full health > soul heart
 - label: Cap
-  value: One soul heart per heal
+  value: One soul heart per heal; 6 in total
 icon: items-ps/medicine/moomoo-milk.png
 sprite: true
 names:
@@ -54,3 +54,11 @@ names:
     desc: 完全恢復你的生命；之後在生命全滿時的治療會變成靈魂之心（每次最多一顆）
 ---
 Fully heals you; from now on, healing at full health turns into a soul heart (up to one each time)
+
+## How it works
+- On pickup, it fully heals you.
+- From then on, every time a heal would go beyond your max health, the excess becomes soul hearts: up to one full soul heart (2 half hearts) per heal. The total of soul hearts stays capped at 6.
+- Items that normally only act when you are missing health (Big Root, Health Feather, Jaw Fossil) keep working at full health, so their healing turns into soul hearts.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

@@ -12,6 +12,14 @@ pool_weight: 1
 details:
 - label: Damage
   value: 75 % of each shot
+- label: Copies
+  value: Every shot of your volleys, forward and backward
+- label: From
+  value: Ditto, aimed like your shots
+- label: Not copied
+  value: Extra shots from other items
+- label: Companion
+  value: Takes 1 companion slot
 icon: items-ps/ball/repeat.png
 sprite: true
 names:
@@ -47,5 +55,15 @@ names:
     desc: 百變怪會複製你的所有射擊（含效果），造成75 %傷害
 ---
 A Ditto copies all your shots, with their effects, at 75 % damage
+
+## How it works
+- A Ditto follows you. Every time you attack, it fires a copy of each shot of your volley from where it stands, in the same direction and with the same spread. With [Destiny Knot](lazo_destino.html) it also copies the backward volley: up to **18 copies** per attack.
+- Each copy deals **75 %** of the damage (it rolls its own critical hit first) and gets your item effects when fired, like your own shots.
+- It doesn't copy the extra shots of other items ([Go-Goggles](m_gafas_aislantes.html), [Dragon Skull](m_craneo_dragon.html), [Marble](m_canica.html), [Red Nectar](m_nectar_rojo.html)…), and Go-Goggles don't split its copies.
+- If you use a weapon instead of normal shots, Ditto fires 1 + multishot shots (5 at most) in a narrow fan, 8° apart, at 75 %.
+- How all the extra shots add up: [Extra shots](../mechanics/disparos_extra.html).
+
+## Stacking
+- Each copy gives one more Ditto, and every Ditto copies your shots. Each one takes a companion slot: 3 at most, 5 with the [Apricorn Box](m_caja_bonguri.html) (see [Companions](../mechanics/companeros.html)).
 
 {{< clip >}}

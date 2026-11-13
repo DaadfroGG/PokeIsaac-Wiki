@@ -9,10 +9,12 @@ pools:
 - cursed
 pool_weight: 1
 details:
-- label: When you defeat an enemy
-  value: '7%: drops a soul heart'
-- label: Enemies
-  value: +8% speed
+- label: Soul heart
+  value: 7 % per enemy defeated
+- label: Enemy speed
+  value: +8 % (walking)
+- label: Bosses
+  value: Not faster
 icon: items-ps/hold-item/grip-claw.png
 sprite: true
 names:
@@ -48,3 +50,11 @@ names:
     desc: When you defeat an enemy, 7% of the time it drops a soul heart. Enemies move 8% faster.
 ---
 When you defeat an enemy, 7% of the time it drops a soul heart. Enemies move 8% faster.
+
+## How it works
+- Each time you defeat an enemy there is a 7 % chance that it drops a [soul heart](../world/soul.html). Luck does not change the chance.
+- All regular enemies walk 8 % faster, in every room. It only affects how fast they walk, not their attacks or projectiles. Bosses are not made faster.
+- It multiplies with slows, so a slowed enemy is still slower than normal.
+
+## Stacking
+- It is an on/off effect: a second Ravenous Claw does not raise the chance or the speed bonus. In co-op, it still counts once for the whole team.

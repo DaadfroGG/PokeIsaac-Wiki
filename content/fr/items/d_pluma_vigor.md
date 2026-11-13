@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Soin
-  value: Un demi-cœur toutes les 25 s
+  value: ½ cœur toutes les 25 s de combat
+- label: Compteur
+  value: Ne compte que lorsque des ennemis sont en vie dans la salle
 icon: items-ps/medicine/health-wing.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 戰鬥中每25秒回復半顆愛心
 ---
 Toutes les 25 secondes de combat, vous récupérez un demi-cœur
+
+## Fonctionnement
+- Un minuteur ne tourne que tant qu'il reste des ennemis dans la salle. Au bout de 25 secondes, vous récupérez un demi-cœur.
+- Le minuteur repart ensuite, même si vous étiez déjà à PV pleins (aucun cœur n'est alors donné).
+- Il ignore la limite de soin des objets.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

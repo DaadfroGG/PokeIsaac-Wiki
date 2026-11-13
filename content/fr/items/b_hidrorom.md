@@ -9,6 +9,15 @@ pool_weight: 2
 stats:
 - text: +5 Voltorbe
   good: true
+details:
+- label: Voltorbes
+  value: '+5'
+- label: Vague
+  value: 'Rayon de 130 px : ralentit 2,5 s et repousse'
+- label: Flaques
+  value: 3, durent 3,3 s
+- label: Disponibilité
+  value: 'Retiré : dans aucun lot d''objets'
 icon: items-ps/hold-item/douse-drive.png
 sprite: true
 names:
@@ -43,4 +52,15 @@ names:
     name: 水流卡帶
     desc: +5顆霹靂電球；爆炸時水波會推開並浸濕敵人：使其減速並留下水窪
 ---
-+5 Voltorbes ; en explosant, une vague repousse et trempe les ennemis : ils sont ralentis et laissent des flaques
++5 Voltorbes ; en explosant, une vague repousse et trempe les ennemis : ils sont ralentis et laissent des flaques
+
+## Fonctionnement
+- Un Voltorbe normal (posé avec la touche bombe) explose après 1,5 s dans un rayon de 95 px pour max(25, 7 × vos Dégâts), et il vous blesse aussi (1 cœur) si vous êtes dans la zone.
+- Avec cet objet, chaque explosion envoie une vague sur 130 px : les ennemis à portée sont ralentis pendant 2,5 s et repoussés. Les boss sont ralentis mais pas repoussés.
+- Elle laisse aussi 3 flaques autour de l'explosion (rayon de 26 px, 3,3 s chacune, 14 au maximum en même temps). Toutes les 0,25 s, chaque ennemi au sol dans une flaque subit max(0,5, un quart de vos Dégâts) et est ralenti 1,2 s. Les ennemis volants ignorent les flaques.
+- Les petits Voltorbes de la [Bonbonnière](b_tarro.html) ne font pas de vague.
+- Avec le [Nikodule](w_acromaquina.html), une explosion sur trois de ses Voltorbes ralentit les ennemis à moins de 70 px pendant 2,5 s et les repousse légèrement (boss : ralentis seulement).
+- Cet objet est retiré : il n'apparaît plus dans aucun lot d'objets.
+
+## Cumul
+- L'effet est simplement activé : un second exemplaire n'ajoute rien. Chaque exemplaire donne quand même +5 Voltorbes.

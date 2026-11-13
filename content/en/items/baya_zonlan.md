@@ -6,6 +6,13 @@ category: shot
 family: core
 tier: 2
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 heart or less, no soul hearts
+- label: Effect
+  value: Every shot is a critical hit
+- label: Crit damage
+  value: ×2 (up to ×3 with crit-damage items)
 icon: items-ps/berry/lansat.png
 sprite: true
 names:
@@ -41,3 +48,14 @@ names:
     desc: 剩一顆愛心以下時，所有子彈都是會心一擊
 ---
 At one heart or less, all your shots are critical hits
+
+## How it works
+
+- While you have 1 heart or less of red health and no soul hearts, every shot you fire is a [critical hit](../mechanics/criticos.html), whatever its normal crit chance.
+- A shot that was already going to crit is not doubled again. Forced crits deal ×2, plus the bonus from crit-damage items (the bonus counts up to +1, so at most ×3).
+- Getting any soul heart, or healing above 1 heart, switches it off again.
+- This item no longer appears in the regular item pools.
+
+## Stacking
+
+- A second copy changes nothing.

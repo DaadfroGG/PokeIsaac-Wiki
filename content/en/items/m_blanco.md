@@ -11,6 +11,10 @@ pool_weight: 2
 details:
 - label: Streak
   value: +10 % per hit, up to ×2
+- label: Reset
+  value: A shot that ends without hitting, or 4 s without a hit
+- label: Counts
+  value: First hit of each main shot only
 icon: items-ps/hold-item/ring-target.png
 sprite: true
 names:
@@ -46,3 +50,12 @@ names:
     desc: 每連續命中一發，傷害就會提升，最高 ×2；落空一發就會重置
 ---
 Each consecutive hit raises your damage, up to ×2; missing one resets it
+
+## How it works
+- Each main shot that hits an enemy adds one level, up to 10. Each level is +10 % damage, so ten hits in a row means ×2.
+- Only the first hit of a shot counts, and companion, split and other child shots are ignored.
+- The streak resets to zero if a main shot ends (wall, rock, end of range) without having hit anything, or if 4 seconds pass without a hit.
+- The bonus is applied to your damage like any other multiplier.
+
+## Stacking
+- It does not stack: a second copy changes nothing (still +10 % per level, max ×2).

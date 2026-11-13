@@ -11,6 +11,15 @@ pool_weight: 2
 stats:
 - text: Range +40
   good: true
+details:
+- label: Range
+  value: '+40'
+- label: Pull
+  value: Enemies within 100 px of a shot
+- label: Strength
+  value: About 40 px per second
+- label: Bosses
+  value: Never pulled
 icon: items-ps/hold-item/electric-seed.png
 sprite: true
 names:
@@ -46,3 +55,12 @@ names:
     desc: 你的彈會把沿途附近的敵人吸過去
 ---
 Your shots pull nearby enemies in as they pass
+
+## How it works
+- While a shot flies, every enemy within 100 px of it is dragged toward it, at about 40 px per second.
+- It works on all your shots at once, so a volley of several shots pulls harder on enemies near more than one shot.
+- Bosses are never pulled. Enemies on the ground still stop against walls and rocks; flying enemies don't.
+- The pull deals no damage by itself.
+
+## Stacking
+- The pull doesn't get stronger with a second copy. The +40 Range is added again.

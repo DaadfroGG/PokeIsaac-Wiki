@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Companion
+  value: Pichu (Electric)
+- label: Fire interval
+  value: 0.5 s
+- label: Damage per shot
+  value: 2 + 0.4 per floor
 icon: items-ps/ball/friend.png
 sprite: true
 names:
@@ -46,3 +53,15 @@ names:
 A Pichu follows you and shoots enemies
 
 {{< clip >}}
+
+## How it works
+
+- Pichu follows just behind you and shoots at the nearest enemy within 380 px, once every 0.5 seconds. Its shots travel up to 360 px and carry its type (Electric).
+
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Its shots are not boosted by your shot upgrades (no extra shots, no crits) and do not trigger your on-hit items.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

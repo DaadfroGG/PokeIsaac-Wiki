@@ -8,6 +8,11 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Taille
+  value: +2,5 de rayon (par exemplaire)
+- label: Recul
+  value: Repousse l'ennemi ; les boss ne sont pas repoussés
 icon: items-ps/fossil/sail.png
 sprite: true
 names:
@@ -45,3 +50,11 @@ names:
 Tirs plus gros qui repoussent les ennemis
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs grossissent (+2,5 de rayon, de 7 à 9,5), ils touchent donc plus facilement, et chaque coup repousse l'ennemi dans la direction du tir.
+- Les boss ne sont jamais repoussés. La poussée est plus forte avec plusieurs exemplaires.
+- Si vous avez l'[Accro Griffe](garra_garfio.html), son attraction remplace le recul.
+
+## Cumul
+- Chaque exemplaire ajoute +2,5 de rayon et rend le recul plus fort (6 pour un exemplaire, 9 pour deux, etc.).

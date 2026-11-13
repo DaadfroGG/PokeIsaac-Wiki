@@ -13,7 +13,7 @@ details:
 - label: Distance
   value: Ennemis à moins de 70 px de vous (pas les boss)
 - label: Chance
-  value: 1,2 % à chaque image, environ 50 % par seconde passée aussi près
+  value: Environ 50 % par seconde passée si près
 - label: Charme
   value: '4 s : l''ennemi se bat de votre côté'
 icon: items-ps/other-item/pink-nectar.png
@@ -51,3 +51,11 @@ names:
     desc: 靠得很近的敵人有時會著迷，並站在你這邊戰鬥
 ---
 Les ennemis qui s'approchent très près sont parfois charmés et se battent de votre côté
+
+## Fonctionnement
+- Tout ennemi (hors boss) qui s'approche à moins de 70 px de vous a environ 50 % de chance par seconde d'être charmé 4 s (voir [effets de statut](../mechanics/estados.html)).
+- Un ennemi charmé n'attaque plus et ne vous blesse plus au contact. Il marche vers l'ennemi non charmé le plus proche à moins de 600 px et l'attaque : toutes les 0,5 s au contact, il lui inflige 3 fois ses propres dégâts d'attaque (au moins 2).
+- Pas besoin de toucher quoi que ce soit : rester près suffit. Les ennemis déjà charmés sont ignorés.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas la chance.

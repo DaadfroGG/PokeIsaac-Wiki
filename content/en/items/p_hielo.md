@@ -13,6 +13,8 @@ stats:
 - text: Evolution stone
   good: true
 details:
+- label: Evolves
+  value: Eevee > Glaceon
 - label: Block
   value: 4 seconds
 - label: At once
@@ -52,3 +54,24 @@ names:
     desc: 讓伊布進化。此外，被你擊倒的敵人會留下冰塊，能擋下敵人射出的彈
 ---
 Evolves Eevee. Also, enemies you defeat leave a block of ice that stops enemy shots
+
+## How it works
+
+- Using it on Eevee (before it has evolved) turns it into Glaceon, and its type becomes Ice.
+- The first evolution gives +1 heart (and heals it), +1 Damage and makes you a little bigger. This bonus comes from evolving, not from the stone itself.
+- Once Eevee has evolved, further stones no longer evolve it, but their effect below stays active.
+- Pokémon other than Eevee do not evolve from this stone; they still get its effect.
+- The effect works for whatever Pokémon you play and does not depend on having evolved.
+- If you carry an [Everstone](piedra_eterna.html), evolution is blocked: you get +0.7 Damage and +1 heart instead, and the effect still works.
+
+## Effect
+
+- Each non-boss enemy you defeat leaves a block of ice where it died. It lasts 4 seconds and destroys any enemy shot that touches it.
+- Up to 6 blocks can exist at once; while 6 are there, new kills leave none.
+- Blocks do not stop enemies or your own shots.
+- Bosses leave no block.
+
+## Stacking
+
+- A second copy of the same stone adds nothing: the effect is just switched on.
+- Different stones add their effects together.

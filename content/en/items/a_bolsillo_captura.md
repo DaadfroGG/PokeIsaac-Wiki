@@ -9,6 +9,13 @@ pools:
 - angel
 pool_weight: 2
 charge: 4
+details:
+- label: Copies
+  value: One of each of your companions
+- label: Damage
+  value: Same as the original
+- label: Lasts
+  value: Until you leave the room
 icon: items-ps/storage/catching-pocket.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 這個房間裡你的夥伴數量加倍
 ---
 Your companions are doubled in this room
+
+## How it works
+- Each of your [companions](../mechanics/companeros.html) gets a copy of itself, with the same damage, next to it.
+- Only your permanent companions are copied, not temporary ones (from the [Pokémon Box Link](a_caja_pokemon.html), the [Lure](a_colonia.html), the [Card Key](a_llave_magnetica.html) or an earlier use of this item).
+- The copies don't count toward your companion limit, and they disappear when you leave the room.
+- With no permanent companion, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): each companion gets two copies.

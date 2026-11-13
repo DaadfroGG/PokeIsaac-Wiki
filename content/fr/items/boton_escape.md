@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Destination
+  value: L'endroit le plus éloigné des ennemis
+- label: Condition
+  value: Au moins un ennemi en vie
 icon: items-ps/hold-item/eject-button.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，會瞬間移動到遠離敵人的地方
 ---
 Quand vous êtes touché, vous vous téléportez loin des ennemis
+
+## Fonctionnement
+- Après un coup reçu, vous vous téléportez à l'endroit libre de la salle le plus éloigné de tous les ennemis vivants. Les endroits sur un piège (flaque, acide, lave...) et les rochers sont ignorés.
+- Vous gardez l'invulnérabilité habituelle après le coup pendant la téléportation.
+- Il ne fait rien si le coup vous a tué ou s'il ne reste plus d'ennemi dans la salle.
+- Il n'a pas de délai de recharge : il se déclenche à chaque coup.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

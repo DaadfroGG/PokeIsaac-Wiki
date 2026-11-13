@@ -9,6 +9,13 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,3
   good: true
+details:
+- label: Dégâts
+  value: +0,3
+- label: Chance de critique
+  value: +8 % (par exemplaire)
+- label: Étourdissement
+  value: 0,75 s sur un coup critique, pas les boss
 icon: items/black-glasses.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 會心一擊令敵人目眩：敵人會定住不動
 ---
 Coups critiques éblouissants : l'ennemi reste immobile
+
+## Fonctionnement
+- Elles donnent les +8 % habituels de chance de coup critique, en plus des bonus Combat/Ténèbres et de la Chance (voir [coups critiques](../mechanics/criticos.html)).
+- Tout ennemi touché par un tir critique est étourdi 0,75 s : il ne bouge plus et n'attaque plus. L'étourdissement se déclenche au coup, donc avec toutes les sources de critiques (y compris le critique garanti du [Joyau Normal](gema_normal.html)).
+- Les boss ne sont jamais étourdis ; ils subissent quand même les dégâts critiques.
+- Seuls les critiques de vos tirs comptent ; brûlure, poison et éclairs en chaîne n'étourdissent pas.
+
+## Cumul
+- Dégâts +0,3 et +8 % de chance de critique s'ajoutent à chaque exemplaire.
+- L'étourdissement est actif ou non : plus d'exemplaires ne le prolongent pas.

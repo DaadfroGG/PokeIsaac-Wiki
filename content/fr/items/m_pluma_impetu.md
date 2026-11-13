@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Cadence
-  value: Jusqu'à ×2 après 4 s à tirer du même côté
+  value: Jusqu'à ×2 après 4 s de tir dans la même direction
+- label: Remise à zéro
+  value: Changer de direction, ou 0,5 s sans tirer
 icon: items-ps/medicine/swift-wing.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 持續朝同一方向射擊，射速會越來越快（最高兩倍）
 ---
 Si vous tirez sans arrêt dans la même direction, vous tirez de plus en plus vite (jusqu'au double)
+
+## Fonctionnement
+- Tant que vous tirez dans la même direction, le bonus augmente. Après 4 s, il atteint son maximum : le temps entre deux tirs est divisé par deux (cadence doublée).
+- Changer de direction de tir, ou vous arrêter plus de 0,5 s, le remet à zéro.
+- C'est un multiplicateur sur le délai : la limite de 12 tirs par seconde s'applique toujours.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

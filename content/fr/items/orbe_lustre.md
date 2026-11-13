@@ -8,6 +8,11 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Dégâts
+  value: ×1,25
+- label: Condition
+  value: Aucune, toujours actif
 icon: items-ps/hold-item/lustrous-orb.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 傷害×1.25
 ---
 Dégâts ×1,25
+
+## Fonctionnement
+- Vos Dégâts sont multipliés par 1,25 en permanence, quel que soit votre type.
+- C'est un multiplicateur de dégâts affiché dans le HUD : il se multiplie avec vos autres multiplicateurs, et le total suit les [rendements décroissants](../mechanics/rendimientos.html) (plein jusqu'à ×2,3, puis un quart, ×3 au maximum).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours ×1,25.

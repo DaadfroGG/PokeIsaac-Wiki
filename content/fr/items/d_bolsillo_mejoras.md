@@ -9,6 +9,13 @@ pools:
 - devil
 - secret
 pool_weight: 2
+details:
+- label: Chance de butin par ennemi
+  value: 'Doublée : 12 % à Chance 0 (6 % normalement)'
+- label: Chance de clé
+  value: 'Doublée : 3 % à Chance 0 (1,5 %)'
+- label: Type de butin
+  value: 75 % pièce, 25 % demi-cœur
 icon: items-ps/storage/power-up-pocket.png
 sprite: true
 names:
@@ -44,3 +51,11 @@ names:
     desc: 敵人掉落的物品加倍
 ---
 Les ennemis lâchent deux fois plus d'objets
+
+## Fonctionnement
+- Chaque ennemi vaincu a deux fois plus de chances que d'habitude de lâcher quelque chose. Normalement, c'est 6 % plus 0,5 % par point de Chance (Chance comptée de −5 à +8) : avec l'objet, 12 % à Chance 0 et jusqu'à 20 % à Chance 8. Le butin est une [pièce](../world/coin.html) 75 % du temps, un demi-cœur sinon.
+- La chance de lâcher une clé est doublée aussi : 1,5 % plus 0,3 % par point de Chance normalement, soit 3 % plus 0,6 % par point avec l'objet.
+- Il ne concerne que le butin des ennemis vaincus, pas la récompense de fin de salle.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Poche à Renforts ne double pas la chance une deuxième fois.

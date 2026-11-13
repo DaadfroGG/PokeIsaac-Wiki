@@ -9,6 +9,11 @@ pools:
 - shop
 - secret
 pool_weight: 2
+details:
+- label: Shop prices
+  value: Halved
+- label: Rounding
+  value: Rounded up, minimum 1
 icon: items-ps/key-item/blue-card.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 商店裡所有東西半價
 ---
 Everything in the shop costs half
+
+## How it works
+- Everything for sale in the [shop](../rooms/shop.html) costs half the price (rounded up, never below 1 PokéDollar).
+- When you pick it up, the items and pickups already on sale in shops of the run are halved straight away; the shops you visit later are priced at half too.
+- It only changes shop prices.
+
+## Stacking
+- It is an on/off effect: a second Blue Card does not make prices a quarter.

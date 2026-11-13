@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Ennemis
+  value: Changés en pierre 4 s
+- label: Boss
+  value: Seulement ralentis 4 s (moitié de la vitesse de marche)
 icon: items-ps/mulch/stable.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 房間內的敵人石化4秒（頭目僅減速）
 ---
 Les ennemis de la salle sont pétrifiés 4 secondes (les boss sont seulement ralentis)
+
+## Fonctionnement
+- Tous les ennemis de la salle sont pétrifiés pendant 4 secondes : ils ne peuvent ni bouger ni attaquer, et prennent une teinte gris-bleu.
+- Les boss ne sont pas pétrifiés : ils sont ralentis 4 secondes à la place, ce qui divise par deux leur vitesse de marche entre leurs attaques.
+- Seuls les ennemis déjà présents sont touchés ; ceux qui apparaissent ensuite bougent normalement.
+- S'il n'y a rien à affecter, rien ne se passe et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : le second effet relance juste les mêmes 4 secondes.

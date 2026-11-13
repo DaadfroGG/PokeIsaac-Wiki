@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Fire rate +
   good: true
+details:
+- label: Damage
+  value: '+0.5'
+- label: Fire rate
+  value: +1 (0.017 s less between shots)
 icon: items/silk-scarf.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+0.5、射速+
 ---
 Damage +0.5, fire rate +
+
+## How it works
+- The +0.5 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Fire rate +1: 0.017 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage and Fire rate).

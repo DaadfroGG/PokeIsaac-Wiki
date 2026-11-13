@@ -9,6 +9,15 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Condition
+  value: Terminer une salle sans être touché
+- label: Récompense
+  value: Un cœur ou une pièce
+- label: Cœur
+  value: 50 % si vous n'avez pas tous vos PV
+- label: Pièce
+  value: Sinon, si votre bourse est remplie à moins de 60 %
 icon: items-ps/other-item/soothe-bell.png
 sprite: true
 names:
@@ -44,3 +53,12 @@ names:
     desc: 沒受傷就清除房間時，會出現一顆愛心或一枚金幣
 ---
 Videz une salle sans être touché et un cœur ou une pièce apparaît
+
+## Fonctionnement
+- Elle vérifie les salles qui commencent avec des ennemis (salles normales et salles de boss). Si vous en terminez une sans recevoir un seul coup, une récompense apparaît à côté de vous.
+- Si vous n'avez pas tous vos PV, il y a 50 % de chances que la récompense soit un cœur. Sinon, c'est une pièce.
+- La pièce n'apparaît que si votre bourse est remplie à moins de 60 %.
+- Les coups entièrement bloqués ou esquivés ne comptent pas comme des coups.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

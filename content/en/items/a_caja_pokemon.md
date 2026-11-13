@@ -13,7 +13,7 @@ details:
 - label: Companion
   value: '1 in 9 each: Pichu, Igglybuff, Cleffa, Magby, Natu, Elekid, Zubat, Phanpy, Togepi'
 - label: Damage
-  value: 2 + 0.4 per floor
+  value: 2 on the first floor, +0.4 per floor
 - label: Lasts
   value: Until you leave the room
 icon: items-ps/storage/pokemon-box.png
@@ -51,3 +51,14 @@ names:
     desc: 隨機出現一個夥伴，在這個房間協助你
 ---
 A random companion appears to help you in this room
+
+## How it works
+- A random baby companion appears next to you and fights with its usual behavior (Pichu, Natu and Togepi shoot, Cleffa and Magby circle around you, Elekid fires a laser, Zubat bites, Phanpy charges, Igglybuff shoots harder but slower).
+- Its damage doesn't depend on yours: 2 on the first floor, +0.4 per floor after that. Items that boost companions also boost it.
+- It is temporary: it doesn't count toward your [companion](../mechanics/companeros.html) limit, and it leaves when you leave the room.
+- You can use it again in the same room to get more of them.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two companions appear (each one drawn separately).

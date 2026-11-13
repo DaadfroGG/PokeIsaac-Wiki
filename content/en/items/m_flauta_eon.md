@@ -8,6 +8,11 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Damage
+  value: ×1.15
+- label: Path
+  value: 'Zigzag: swings left and right about every 0.4 s'
 icon: items-ps/key-item/eon-flute.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 你的彈會呈Z字形飛行，傷害提升15 %
 ---
 Your shots fly in a zigzag and deal 15 % more damage
+
+## How it works
+- Your shots swerve left and right in a wave while they fly, which makes them harder to dodge and lets them cover a wider strip.
+- They deal 15 % more damage. Range and speed are unchanged.
+- Homing still works with it; Bounce works as usual.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

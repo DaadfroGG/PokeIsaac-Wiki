@@ -13,8 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
+- label: Évolue
+  value: Évoli > Nymphali
 - label: Lien
-  value: 30 % de vos dégâts tous les 1/3 de seconde, jusqu'à 150 px
+  value: 30 % de vos dégâts toutes les 1/3 s, jusqu'à 150 px
+- label: Minimum
+  value: 0,5 par tick
 icon: items-ps/evo-item/dawn-stone.png
 sprite: true
 names:
@@ -50,3 +54,23 @@ names:
     desc: 讓伊布進化（仙子伊布）。另外，會有一條緞帶把你和最近的敵人連在一起，只要牠還在附近就會持續吸取牠的生命
 ---
 Fait évoluer Évoli (Nymphali). De plus, un ruban vous lie à l'ennemi le plus proche et draine sa vie tant qu'il reste près
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Nymphali, et son type devient Fée.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Les Pokémon autres qu'Évoli n'évoluent pas avec cette pierre ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Tant qu'il y a des ennemis, un ruban vous relie à l'ennemi le plus proche à moins de 150 px. Toutes les 1/3 de seconde, il lui inflige 30 % de vos dégâts (au moins 0,5).
+- Le ruban se rompt si aucun ennemi n'est à moins de 150 px et se reconnecte au plus proche quand un ennemi approche.
+- Cela marche aussi sur les boss. Le tick n'est pas un tir : il ne déclenche pas les objets à effet sur coup.
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Pokédollar
-  value: 5 % par coup
+  value: 5 % par coup, +0,5 % par point de Chance
+- label: Plafond
+  value: 6 pièces par salle
+- label: Tirs
+  value: Vos tirs principaux seulement
 icon: items-ps/valuable-item/relic-copper.png
 sprite: true
 names:
@@ -47,3 +51,12 @@ names:
     desc: 擊中敵人時，有時會掉落一枚寶可幣
 ---
 En touchant un ennemi, il lâche parfois un Pokédollar
+
+## Fonctionnement
+- Chaque fois qu'un de vos tirs touche un ennemi, il y a 5 % de chances, plus 0,5 % par point de Chance, qu'une pièce tombe à ses pieds.
+- 6 pièces par salle au plus de cette façon.
+- Seuls vos tirs principaux comptent : les tirs en plus créés par d'autres objets (tirs divisés, éclairs en chaîne), les tirs des compagnons et les effets secondaires des armes ne comptent pas.
+- Les boss comptent comme n'importe quel ennemi.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : même chance, même plafond de 6.

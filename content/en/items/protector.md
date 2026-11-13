@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Hearts
+  value: +1 heart (and heals it)
+- label: Explosions
+  value: Never hurt you
 icon: items-ps/evo-item/protector.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 愛心 +1 且爆炸不會傷到你
 ---
 Heart +1 and explosions don't hurt you
+
+## How it works
+- On pickup: +1 max heart, and that heart is filled.
+- Explosions don't hurt you, including your own bombs.
+
+## Stacking
+- The max heart is added again with each copy. The explosion immunity does not stack.

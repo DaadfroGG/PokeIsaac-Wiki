@@ -9,6 +9,11 @@ pools:
 - angel
 pool_weight: 2
 charge: 4
+details:
+- label: Gain
+  value: 1 cœur d'âme
+- label: Plafond
+  value: 6 cœurs d'âme
 icon: items-ps/medicine/revival-herb.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 獲得一顆靈魂之心
 ---
 Vous gagnez un cœur d'âme
+
+## Fonctionnement
+- Vous gagnez un [cœur d'âme](../mechanics/corazones_alma.html) entier.
+- Vous pouvez avoir jusqu'à 6 cœurs d'âme ; à ce plafond il est inutilisable et vous gardez la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous gagnez 2 cœurs d'âme.

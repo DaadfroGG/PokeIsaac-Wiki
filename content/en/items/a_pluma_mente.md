@@ -9,6 +9,13 @@ pools:
 - angel
 pool_weight: 2
 charge: 3
+details:
+- label: Targets
+  value: Up to 5 random enemies
+- label: Damage
+  value: Your Damage ×3 (min. 6), within 30 px
+- label: Type
+  value: Your type
 icon: items-ps/medicine/clever-wing.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 光束落在最多五個敵人身上（×3傷害）
 ---
 Beams of light strike up to five enemies (×3 damage)
+
+## How it works
+- A beam of light falls on up to 5 enemies chosen at random (all of them if there are 5 or fewer), bosses included.
+- 0.1 seconds later, each beam hits every enemy within 30 px of that spot for 3 times your Damage (at least 6), with your type. Enemies close together can be hit by several beams.
+- The beams can't be critical hits and don't trigger your items or statuses.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two rounds of beams fall (up to 10).

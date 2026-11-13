@@ -8,6 +8,11 @@ tier: 2
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Recharge
+  value: +1 extra charge per cleared room
+- label: Rooms
+  value: Normal and boss rooms
 icon: items-ps/medicine/max-elixir.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 主動道具的充能速度加倍
 ---
 Your active item recharges twice as fast
+
+## How it works
+- Your active item normally gains 1 charge each time you clear a room. With the Max Elixir, clearing a normal room or a boss room gives 1 additional charge, so 2 in total.
+- It never goes above the charge limit of your active item.
+- It does nothing if you have no active item.
+
+## Stacking
+- It is an on/off effect: a second Max Elixir does not give a third charge per room.
+- With the [Cell Battery](d_pila.html) the extra charge also helps fill the second bar.

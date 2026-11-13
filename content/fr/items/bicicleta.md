@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Durée
+  value: 6 s
+- label: Vitesse
+  value: +2,2
 icon: items-ps/key-item/bicycle.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 6秒內速度極快
 ---
 Vitesse très élevée pendant 6 secondes
+
+## Fonctionnement
+- Pendant 6 secondes vous gagnez +2,2 en Vitesse, un très gros bonus.
+- Rien d'autre ne change : vous pouvez être touché comme d'habitude.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : le minuteur repart simplement à 6 secondes.

@@ -12,6 +12,11 @@ pool_weight: 1
 stats:
 - text: +99 Voltorb
   good: true
+details:
+- label: Voltorbs
+  value: Fills to 99
+- label: Cap
+  value: '99'
 icon: items-ps/curry-ingredient/tin-of-beans.png
 sprite: true
 names:
@@ -47,3 +52,10 @@ names:
     desc: 補滿霹靂電球（最多99）
 ---
 Fills you up with Voltorbs (up to 99)
+
+## How it works
+- On pickup it gives +99 Voltorbs, which with the cap of 99 means your stock is set to 99.
+- It has no other effect. Found in boss rooms and secret rooms.
+
+## Stacking
+- A second copy refills you to 99 again if you have used some in the meantime.

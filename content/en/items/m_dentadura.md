@@ -10,7 +10,7 @@ pools:
 pool_weight: 2
 details:
 - label: Tooth
-  value: 10 % (+2 % per luck), ×3.2
+  value: 10 % per shot (+2 % per Luck, max. 50 %), ×3.2
 icon: items-ps/key-item/gold-teeth.png
 sprite: true
 names:
@@ -48,3 +48,11 @@ names:
 Sometimes you fire a gold tooth that deals ×3.2 damage (more often with luck)
 
 {{< clip >}}
+
+## How it works
+- Each shot has a 10 % chance, +2 % per point of Luck (maximum 50 %, reached at Luck 20), to become a gold tooth: it deals ×3.2 damage and is a little bigger.
+- The roll is made for every shot of a volley separately, so extra shots can also be teeth.
+- It multiplies the shot's damage before hit effects; it works on bosses.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance or the multiplier.

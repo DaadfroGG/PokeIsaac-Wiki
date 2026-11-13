@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Luck +1
   good: true
+details:
+- label: Damage
+  value: '+0.6'
+- label: Luck
+  value: '+1'
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/medicine/shalour-sable.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 傷害+、幸運+1
 ---
 Damage + and luck +1
+
+## How it works
+- Damage +0.6: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Luck +1: added to your Luck. Luck counts in full up to 10; above 10 only a quarter counts. It raises the chance of drops from enemies and of a reward when you clear a room, the chance of critical hits (+1 % per point) and the chance of type-passive status effects (+2 % per point).
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

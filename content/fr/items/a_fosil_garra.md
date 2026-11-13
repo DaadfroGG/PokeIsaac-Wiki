@@ -10,8 +10,14 @@ pools:
 pool_weight: 2
 charge: 1
 details:
+- label: Coût
+  value: Un demi-cœur (d'abord un demi-cœur d'âme)
 - label: Dégâts
-  value: ×1,4 par utilisation (max. ×2)
+  value: ×1,4 par utilisation (×1,96 après deux)
+- label: Par salle
+  value: 2 utilisations
+- label: Charge
+  value: Aucune
 icon: items-ps/fossil/claw.png
 sprite: true
 names:
@@ -47,3 +53,14 @@ names:
     desc: 失去半顆愛心，並在這個房間造成多40 %的傷害（最多兩次；無需充能）
 ---
 Vous perdez un demi-cœur et infligez 40 % de dégâts en plus dans cette salle (deux fois max. ; sans charge)
+
+## Fonctionnement
+- Chaque utilisation coûte un demi-cœur et ne demande aucune charge. Si vous avez des [cœurs d'âme](../mechanics/corazones_alma.html), elle prend un demi-cœur d'âme à la place. Payer ainsi ne compte pas comme un coup reçu.
+- Dans la salle où vous l'utilisez, vos Dégâts sont multipliés par 1,4, puis encore par 1,4 après la deuxième utilisation (×1,96). Une troisième utilisation dans la même salle est refusée.
+- Il est refusé s'il devait vous tuer : sans cœur d'âme et avec un seul demi-cœur, il ne marche pas.
+- Le bonus appartient à la salle : il s'arrête quand vous partez et revient si vous y retournez, tant que vous ne l'avez pas utilisé ailleurs entre-temps.
+- C'est un multiplicateur de votre stat de Dégâts (affiché sur le HUD), donc il suit les [rendements décroissants](../mechanics/rendimientos.html) des multiplicateurs (plein jusqu'à ×2,3, total plafonné à ×3).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : une utilisation paie deux fois et donne les deux bonus d'un coup (×1,96).

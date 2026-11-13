@@ -8,6 +8,13 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Trigger
+  value: Every 3rd normal room cleared
+- label: Reward
+  value: 1 soul heart
+- label: Cap
+  value: 6 soul hearts in total
 icon: items-ps/key-item/gracidea.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 每清空三個房間獲得一顆靈魂之心
 ---
 A soul heart for every three rooms you clear
+
+## How it works
+- Every third normal room you clear (combat rooms only, not boss rooms) gives you a full [soul heart](../mechanics/corazones_alma.html).
+- The count carries over from one floor to the next.
+- It stops adding when you already carry 6 soul hearts.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

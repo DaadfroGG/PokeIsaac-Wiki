@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Vit. tir +2
   good: true
+details:
+- label: Dégâts
+  value: +0,5
+- label: Vitesse des tirs
+  value: '+2'
 icon: items/x-attack.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+0.5、彈速+
 ---
 Dégâts +0,5, vitesse des tirs +
+
+## Fonctionnement
+- Le +0,5 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Vitesse des tirs +2 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

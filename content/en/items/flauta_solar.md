@@ -13,7 +13,9 @@ details:
 - label: Shots
   value: Up to 40, now yours
 - label: Damage
-  value: Your damage (minimum 1 heart)
+  value: Your Damage (at least 2)
+- label: Aim
+  value: Each one at the nearest enemy
 icon: items-ps/key-item/sun-flute.png
 sprite: true
 names:
@@ -49,3 +51,15 @@ names:
     desc: 房間內的敵方彈會倒戈，轉而攻擊敵人
 ---
 Enemy shots in the room switch sides and go after enemies
+
+## How it works
+- Up to 40 enemy shots in the room become your shots. Each one turns toward the enemy nearest to it and flies there.
+- Each converted shot deals your Damage (at least 2) with your type, carries your shot bonuses and statuses, and flies up to 520 px. Its size depends on the original shot.
+- They count as extra shots, so effects that only work on your main shots don't trigger on them.
+- They hit bosses too, so a boss's bullet pattern can be sent back at it.
+- With no enemy shot in the room, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): a second wave converts up to 40 more enemy shots, if there are any left.

@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Portée +80
   good: true
+details:
+- label: Vitesse
+  value: +0,3
+- label: Portée
+  value: +80 px
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items-ps/curry-ingredient/fruit-bunch.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 速度+、射程+
 ---
 Vitesse + et portée +
+
+## Fonctionnement
+- Vitesse +0,3 : ajoutée telle quelle à votre vitesse de déplacement, sans rendement décroissant. Votre vitesse ne peut jamais descendre sous le minimum de 1,6.
+- Portée +80 px : ajoutée telle quelle à la distance que parcourent vos tirs, sans rendement décroissant. La portée ne peut jamais descendre sous 120 px.
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

@@ -12,6 +12,15 @@ pool_weight: 2
 stats:
 - text: +5 Voltorb
   good: true
+details:
+- label: Voltorbs
+  value: '+5'
+- label: Cross blasts
+  value: 3 per direction, every 70 px (56 px up/down)
+- label: Blast
+  value: 46 px radius, 18 damage each
+- label: Hurts you
+  value: No (only the central blast does)
 icon: items-ps/hold-item/terrain-extender.png
 sprite: true
 names:
@@ -47,3 +56,14 @@ names:
     desc: +5顆霹靂電球；呈十字爆炸，範圍遠得多
 ---
 +5 Voltorbs; they explode in a cross and reach much farther
+
+## How it works
+- A normal Voltorb (placed with the bomb key) explodes after 1.5 s in a 95 px radius for max(25, 7 × your Damage), and it also hurts you (1 heart) if you stand inside.
+- With this item, each Voltorb also sets off a cross of extra blasts: 3 to the right, 3 to the left, 3 up and 3 down, one every 70 px horizontally and every 56 px vertically. The line stops at the edge of the room.
+- Each extra blast has a 46 px radius and deals a flat 18 damage. They break rocks and crates and can open secret doors, but they never hurt you.
+- Small Voltorbs from the [Candy Jar](b_tarro.html) do not make crosses.
+- With the [Colress Machine](w_acromaquina.html), the effect also works on its rolling Voltorbs (see that page).
+- With the [Colress Machine](w_acromaquina.html), every explosion of its Voltorbs also sets off four small blasts (62 px sideways, 50 px up/down, 36 px radius, 12 % of the shot's damage each).
+
+## Stacking
+- The effect is only switched on: a second copy does nothing more. Each copy still gives +5 Voltorbs.

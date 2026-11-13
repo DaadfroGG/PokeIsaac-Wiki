@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Effet
+  value: Les coffres dorés s'ouvrent sans clé
+- label: Clé
+  value: Pas dépensée
 icon: items-ps/valuable-item/big-pearl.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 金色寶箱不用鑰匙就能打開
 ---
 Les coffres dorés s'ouvrent sans clé
+
+## Fonctionnement
+- Vous ouvrez les coffres dorés rien qu'en les touchant, même sans clé, et vous gardez vos clés. Un coffre doré donne toujours un objet.
+- Ça marche aussi sur les coffres dorés vendus en boutique : vous payez toujours le prix, mais il ne faut pas de clé.
+- Les coffres normaux et les portes verrouillées ne changent pas (pour les portes des salles au trésor, voir le [Passe Orbe](pase_orbe.html)).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus.

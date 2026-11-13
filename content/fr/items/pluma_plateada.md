@@ -8,6 +8,13 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Blocage
+  value: 1 coup
+- label: Recharge
+  value: 15 secondes
+- label: Après un blocage
+  value: 0,3 s d'invulnérabilité
 icon: items-ps/key-item/silver-wing.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 每15秒為你擋下一次攻擊
 ---
 Vous protège d'un coup toutes les 15 secondes
+
+## Fonctionnement
+- L'aile vous protège complètement d'un coup (aucun dégât).
+- Après un blocage, elle met 15 secondes à se recharger. Le minuteur tourne en permanence, dans toutes les salles.
+- Une aile n'est pas prête dès que vous ramassez l'objet : il faut attendre les 15 premières secondes.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

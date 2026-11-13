@@ -8,6 +8,11 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Taille
+  value: Jusqu'à ×1,7 en bout de portée
+- label: Dégâts
+  value: Jusqu'à ×1,6 en bout de portée
 icon: items-ps/mulch/growth.png
 sprite: true
 names:
@@ -45,3 +50,11 @@ names:
 Plus vos tirs vont loin, plus ils grossissent et frappent fort
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs grossissent en volant. La taille et les dégâts augmentent progressivement avec la distance parcourue : en bout de portée, le tir est 1,7 fois plus gros et inflige 1,6 fois ses dégâts de départ. À mi-chemin, c'est ×1,35 et ×1,3.
+- Un tir qui touche un ennemi juste après avoir quitté votre Pokémon n'a presque aucun bonus ; les tirs qui volent toute la portée en profitent pleinement.
+- Cela ne change ni la cadence ni la portée ; un tir plus gros est aussi plus facile à placer.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne fait pas grossir davantage les tirs.

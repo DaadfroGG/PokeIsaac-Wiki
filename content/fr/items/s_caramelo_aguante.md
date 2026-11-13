@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Dégâts
+  value: +0,8
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: 1 cœur au ramassage
 icon: items-ps/av-candy/tough.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 傷害+、愛心+1
 ---
 Dégâts + et cœur +1
+
+## Fonctionnement
+- Le +0,8 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
+- Il vous soigne de 1 cœur en le ramassant ; ce soin ignore la limite de soins.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts) et son soin.

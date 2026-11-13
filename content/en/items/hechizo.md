@@ -15,6 +15,8 @@ stats:
 details:
 - label: Soul heart
   value: 5 % per enemy defeated, +0.5 % per point of Luck
+- label: Stat
+  value: Damage +0.7
 icon: items/spell-tag.png
 sprite: true
 names:
@@ -50,3 +52,11 @@ names:
     desc: 傷害+0.7；敵人有時會掉落靈魂之心
 ---
 Damage +0.7; enemies sometimes drop soul hearts
+
+## How it works
+- Every enemy you defeat (bosses included) has a 5 % chance, plus 0.5 % per point of Luck, to drop a [soul heart](../mechanics/corazones_alma.html). With 10 Luck it is 10 %.
+- This roll comes on top of the normal drops of the enemy.
+- The Damage +0.7 is a normal stat bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+
+## Stacking
+- A second copy adds another Damage +0.7, but the soul heart chance stays the same.

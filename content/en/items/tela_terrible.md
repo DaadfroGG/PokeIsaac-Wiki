@@ -12,10 +12,10 @@ pool_weight: 2
 details:
 - label: Chance
   value: 25 % per enemy defeated
-- label: Explosion
-  value: 80 px around the enemy
-- label: Damage
-  value: 1.5 × your Damage (at least 2), ignores the type chart
+- label: Blast
+  value: 1.5 × your Damage (at least 2), 80 px around
+- label: Luck
+  value: No effect
 icon: items-ps/evo-item/reaper-cloth.png
 sprite: true
 names:
@@ -51,3 +51,12 @@ names:
     desc: 有時被你打倒的敵人會爆炸，傷及周圍的敵人
 ---
 Sometimes, enemies you defeat explode and hurt those around them
+
+## How it works
+- Each enemy you defeat has a 25 % chance to burst. Luck does not change it.
+- The burst hits every other enemy within 80 px of it (measured to their edge) for 1.5 times your Damage, at least 2. It hurts bosses too.
+- It never hurts you and does not break rocks.
+- The burst is plain damage: no type, no critical hit, no item effects.
+
+## Stacking
+- A second copy does nothing more: still 25 %.

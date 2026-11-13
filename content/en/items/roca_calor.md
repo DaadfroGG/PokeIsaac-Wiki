@@ -6,6 +6,15 @@ category: shot
 family: core
 tier: 2
 pool_weight: 2
+details:
+- label: Burn chance
+  value: 25 % per hit (+2 % per Luck)
+- label: Burn length
+  value: ×2 (4 s instead of 2 s on shots)
+- label: Spread
+  value: A burning enemy that dies sets enemies within 120 px on fire
+- label: Where
+  value: Not in any item pool right now
 icon: items-ps/hold-item/heat-rock.png
 sprite: true
 names:
@@ -41,3 +50,15 @@ names:
     desc: 灼傷持續時間加倍，你的彈有時會造成灼傷
 ---
 Burns last twice as long and your shots sometimes burn
+
+## How it works
+- Every hit of your shots has a 25 % chance (+2 % per point of Luck) to [burn](../mechanics/estados.html) the enemy, whatever your type. Bosses can be burned.
+- All burns from your shots last twice as long: 4 s instead of 2 s. That includes the [Fire passive](../mechanics/pasiva_fire.html) and other burning shots.
+- Other burns you cause also last longer: burning explosions 4 s instead of 2 s, flames on the ground 2 s instead of 1 s, burns from fire bursts ×1.5.
+- An enemy you have hit that dies while burning sets every enemy within 120 px on fire, for 4 s.
+
+## How to get it
+- It is not in any item pool at the moment: treasure rooms, shops and bosses don't offer it.
+
+## Stacking
+- A second copy does nothing more: same chance, burns still ×2.

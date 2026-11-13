@@ -9,6 +9,15 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Compagnon
+  value: Mélo (Fée)
+- label: Orbite
+  value: 38 px autour de vous
+- label: Dégâts au contact
+  value: 0,8 × dégâts du compagnon, toutes les 1/6 s
+- label: Bouclier
+  value: Détruit les tirs ennemis qu'il touche
 icon: items-ps/ball/moon.png
 sprite: true
 names:
@@ -46,3 +55,14 @@ names:
 Un Mélo gravite autour de vous, bloque les tirs ennemis et blesse ce qu'il touche
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Il ne tire pas : il tourne autour de vous sur un cercle de 38 px, en faisant un tour complet environ toutes les 1,5 secondes. Tout ennemi qu'il touche subit 0,8 × les dégâts du compagnon (au moins 1), au plus une fois toutes les 1/6 de seconde.
+- Il bloque les tirs ennemis : tout projectile ennemi qui arrive à quelques pixels de lui est détruit. Il ne protège que le côté où il se trouve.
+- Les dégâts d'un compagnon ne dépendent pas de votre stat de Dégâts : chaque tir ou coup part de 2 au premier étage, +0,4 par étage ensuite.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Plusieurs satellites du même type se répartissent régulièrement autour de vous.

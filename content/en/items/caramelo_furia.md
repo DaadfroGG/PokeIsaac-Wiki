@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Duration
+  value: 6 s
+- label: Fire rate
+  value: ×2
+- label: Limit
+  value: Still at most 12 shots per second
 icon: items-ps/medicine/rage-candy-bar.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 6秒內射速 ×2
 ---
 Fire rate ×2 for 6 seconds
+
+## How it works
+- For 6 seconds the time between your shots is halved, so you fire twice as fast.
+- The usual limit still applies: never more than 12 shots per second.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 6 seconds.

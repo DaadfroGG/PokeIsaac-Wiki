@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Fire rate
+  value: One shot every 0.43 s
+- label: Damage
+  value: Your Damage ×0.8 (min. 2), Electric
+- label: Reach
+  value: Enemies within 520 px
+- label: Lasts
+  value: Until you leave the room
 icon: items-ps/key-item/card-key.png
 sprite: true
 names:
@@ -44,3 +53,13 @@ names:
     desc: 你會放下一隻小磁怪，牠會射擊敵人，直到你離開房間
 ---
 You place a Magnemite that shoots enemies until you leave the room
+
+## How it works
+- A big Magnemite is placed 30 px in front of you. It never moves.
+- It shoots the nearest enemy within 520 px every 0.43 seconds. Each shot deals 0.8 times your Damage when you place it (at least 2), as Electric damage; items that boost companions boost it too. Its shots don't carry your items' effects.
+- It is temporary: it doesn't count toward your [companion](../mechanics/companeros.html) limit and goes away when you leave the room. Each use in the same room adds another Magnemite.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two Magnemite are placed.

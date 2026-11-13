@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Laser
-  value: Every 1 s on average, 75 % damage
+  value: Every 1 s on average while firing, 75 % damage
+- label: Bounces
+  value: Up to 4, from your Bounce
+- label: Spread
+  value: About ±20° around your aim
 icon: items-ps/key-item/gb-sounds.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
 While you fire, a laser comes out every now and then
 
 {{< clip >}}
+
+## How it works
+- While you are firing, a laser fires at random moments: on average one a second. The laser flies in a line (up to about ±20° off your aim) and hits every enemy along it for 75 % of your damage.
+- It bounces off walls as many times as your Bounce count, up to 4.
+- It does nothing when you are not firing.
+
+## Stacking
+- It does not stack: a second copy does not fire more lasers.

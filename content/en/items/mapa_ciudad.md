@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Shows
+  value: Every room of the floor and its type
+- label: Not shown
+  value: Secret and super secret rooms
+- label: Lost curse
+  value: Cancels the map
 icon: items/town-map.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 顯示每層的所有房間
 ---
 Shows every room on each floor
+
+## How it works
+- On every floor, the minimap shows all rooms from the start, with their type (shop, treasure room, boss, etc.), even the ones you have not visited.
+- Secret rooms and super secret rooms are not shown. To see the secret room, you need the [Devon Scope](d_detector_devon.html).
+- On a floor with the **Lost** [curse](../mechanics/maldiciones.html), the map does not work: you only see the rooms you walk into.
+- In co-op, the whole team sees the full map if one player carries it.
+
+## Stacking
+- A second copy does nothing more.

@@ -6,6 +6,17 @@ category: shot
 family: core
 tier: 2
 pool_weight: 2
+details:
+- label: Critical hits
+  value: +8 % chance
+- label: Flinch
+  value: 10 % per hit (+2 % per Luck)
+- label: Flinch length
+  value: 0.75 s without moving
+- label: Bosses
+  value: Never flinch
+- label: Where
+  value: Not in any item pool right now
 icon: items/kings-rock.png
 sprite: true
 names:
@@ -41,3 +52,14 @@ names:
     desc: 會心一擊；有時敵人會畏縮而無法移動
 ---
 Critical hits; sometimes the enemy flinches and can't move
+
+## How it works
+- +8 % chance of [critical hit](../mechanics/criticos.html) on each shot (a crit deals ×2). Luck adds +1 % per point, as for every crit.
+- Every hit of your shots has a 10 % chance (+2 % per point of Luck) to make the enemy flinch: it is stunned and can't move or attack for 0.75 s.
+- Bosses never flinch. Chain lightning doesn't make enemies flinch, but split shots do.
+
+## How to get it
+- It is not in any item pool at the moment: treasure rooms, shops and bosses don't offer it.
+
+## Stacking
+- The crit chance stacks: +8 % per copy. The flinch does not: still 10 % with two copies.

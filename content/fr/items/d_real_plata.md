@@ -14,6 +14,8 @@ details:
   value: 3 s
 - label: Pièces
   value: 2 par ennemi doré
+- label: Déclencheur
+  value: Toucher un ennemi non-boss
 icon: items-ps/valuable-item/relic-silver.png
 sprite: true
 names:
@@ -49,3 +51,14 @@ names:
     desc: 你碰到的敵人會變成黃金數秒（無法移動也無法傷人）；若在此狀態下倒下，會掉落金幣
 ---
 Les ennemis que vous touchez se changent en or quelques secondes (ils ne bougent ni ne blessent) ; s'ils tombent ainsi, ils lâchent des pièces
+
+## Fonctionnement
+
+- Toucher un ennemi non-boss le change en or pendant 3 secondes : il ne peut plus bouger, ne peut pas vous blesser et est étourdi.
+- S'il meurt pendant qu'il est doré, il laisse 2 pièces.
+- Au bout des 3 secondes il redevient normal et peut être changé en or à nouveau en le touchant.
+- Les [boss](../mechanics/jefes_adaptativos.html) ne sont pas affectés.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

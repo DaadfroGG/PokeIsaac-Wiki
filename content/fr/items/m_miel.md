@@ -11,7 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Flaque
-  value: 2 s, ralentit et blesse
+  value: 2 s, rayon 18 px
+- label: Dégâts
+  value: 25 % de vos dégâts toutes les 0,25 s (min. 0,5)
+- label: Ralentissement
+  value: 0,7 s, renouvelé tant qu'il reste dedans
+- label: Volants
+  value: Non affectés
 icon: items-ps/other-item/honey.png
 sprite: true
 names:
@@ -49,3 +55,11 @@ names:
 Vos tirs laissent des flaques de miel qui ralentissent et blessent les ennemis qui marchent dedans
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs laissent une flaque de miel environ toutes les 0,12 s pendant leur vol. Une flaque dure 2 s et a un rayon de 18 px.
+- Toutes les 0,25 s, chaque ennemi non volant dans une flaque subit 25 % de vos dégâts (au moins 0,5) et est ralenti 0,7 s.
+- Il n'existe pas plus de 24 flaques à la fois, la traînée s'éclaircit donc dans les longs combats.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

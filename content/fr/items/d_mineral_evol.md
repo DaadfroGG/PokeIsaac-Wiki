@@ -12,6 +12,8 @@ pool_weight: 1
 details:
 - label: Bouclier
   value: 1 coup par salle
+- label: Après le blocage
+  value: 0,8 s d'invulnérabilité
 icon: items-ps/hold-item/eviolite.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 護盾會保護你：在每個房間，受到的第一次攻擊不會造成傷害
 ---
 Un bouclier vous protège : dans chaque salle, le premier coup reçu ne vous inflige aucun dégât
+
+## Fonctionnement
+- Un bouclier est prêt à chaque entrée dans une salle (et dès que vous ramassez l'objet). Le premier coup reçu est entièrement absorbé, et le bouclier disparaît jusqu'à la salle suivante.
+- Le blocage vous donne 0,8 seconde d'invulnérabilité.
+- Le bouclier est de nouveau prêt dans chaque salle où vous entrez, salles déjà terminées comprises.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

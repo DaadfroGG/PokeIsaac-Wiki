@@ -14,6 +14,8 @@ details:
   value: 1 sur 6 chacun (environ 17 %)
 - label: Bonus possibles
   value: Dégâts +1,5 · Cadence ++ · Vitesse +0,7 · Portée +160 · Chance +3 · Vitesse des tirs +3
+- label: Bonus de cadence
+  value: −0,07 s entre deux tirs
 icon: items-ps/other-item/bottle-cap.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 隨機一項能力數值大幅提升
 ---
 Une statistique aléatoire s'améliore beaucoup
+
+## Fonctionnement
+- Au moment où vous le ramassez, le jeu tire au hasard l'un de six bonus de statistique, chacun avec la même chance (1 sur 6), et l'applique définitivement. Un message vous indique lequel vous avez obtenu.
+- Les six bonus possibles : Dégâts +1,5, Cadence ++ (tirs espacés d'environ 0,07 s de moins), Vitesse +0,7, Portée +160 px, Chance +3, Vitesse des tirs +3.
+- Le bonus est un bonus de statistique normal : les Dégâts suivent les [rendements décroissants](../mechanics/rendimientos.html) des Dégâts fixes, la cadence et la Chance suivent les leurs, tandis que la Vitesse, la Portée et la Vitesse des tirs s'ajoutent telles quelles.
+- Le tirage est fait une seule fois, quand vous ramassez l'objet, et le résultat ne change plus ensuite.
+
+## Cumul
+- Chaque exemplaire tire son propre bonus à la prise : deux exemplaires peuvent donner deux bonus différents ou deux fois le même.

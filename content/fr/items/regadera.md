@@ -14,6 +14,8 @@ details:
   value: Feu, lave, acide, gaz, spores, toiles, sommeil, eau, sable et énergie
 - label: Temps
   value: Ils disparaissent en un quart de seconde
+- label: Tirs
+  value: Tous les vôtres, compagnons compris
 icon: items-ps/key-item/squirt-bottle.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 你的彈會撲滅敵人留下的火焰、水窪、毒氣和蛛網
 ---
 Vos tirs éteignent le feu, les flaques, le gaz et les toiles laissés par les ennemis
+
+## Fonctionnement
+- Quand un de vos tirs passe sur un de ces [effets au sol](../mechanics/efectos_suelo.html), l'effet disparaît en un quart de seconde au lieu de durer.
+- Le tir n'est pas arrêté : un seul tir peut éteindre plusieurs zones sur son passage.
+- Les tirs de vos compagnons les éteignent aussi.
+- En coop, ça ne marche qu'avec les tirs du joueur qui le porte.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus.

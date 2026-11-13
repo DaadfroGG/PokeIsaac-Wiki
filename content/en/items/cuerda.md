@@ -8,6 +8,11 @@ pools:
 - treasure
 - shop
 charge: 3
+details:
+- label: Goes to
+  value: The floor's starting room
+- label: Not during
+  value: A boss fight or a gym battle
 icon: items/escape-rope.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 回到起始房間
 ---
 Returns to the starting room
+
+## How it works
+- You are taken back to the starting room of the current floor.
+- It does nothing if you are already in the starting room, while a boss is alive in the room, or during a gym battle; you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: you only travel once.

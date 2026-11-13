@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 cœur ou moins et aucun cœur d'âme
+- label: Dégâts
+  value: ×1,5
 icon: items-ps/berry/liechi.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 剩一顆愛心以下且沒有靈魂之心時，傷害 ×1.5
 ---
 Avec un cœur ou moins et sans cœurs d'âme, dégâts ×1,5
+
+## Fonctionnement
+- Tant qu'il vous reste 1 cœur rouge ou moins et aucun cœur d'âme, vos Dégâts sont multipliés par 1,5.
+- C'est un multiplicateur de dégâts : il compte dans les limites des multiplicateurs (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Il s'arrête dès que vous soignez au-delà de 1 cœur ou gagnez un cœur d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

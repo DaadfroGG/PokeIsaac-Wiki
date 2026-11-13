@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Speed +0.3
   good: true
+details:
+- label: Luck
+  value: '+2'
+- label: Speed
+  value: '+0.3'
 icon: items/bright-powder.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 幸運+2，速度+
 ---
 Luck +2, speed +
+
+## How it works
+- Luck +2: each point gives +1 % [critical hit](../mechanics/criticos.html) chance, +2 % to your type passive statuses and improves other luck-based chances. Your total Luck counts in full up to 10, then at a quarter.
+- Speed +0.3 has no diminishing returns. Your speed never goes below 1.6.
+
+## Stacking
+- Everything stacks: each copy adds its stats again.

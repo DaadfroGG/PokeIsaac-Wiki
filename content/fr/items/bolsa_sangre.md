@@ -13,6 +13,13 @@ stats:
   good: true
 - text: Soigne 3 cœurs
   good: true
+details:
+- label: PV max
+  value: +1 cœur
+- label: Dégâts
+  value: +0,3
+- label: Soin
+  value: 3 cœurs au ramassage
 icon: items-ps/medicine/berry-juice.png
 sprite: true
 names:
@@ -48,3 +55,14 @@ names:
     desc: 愛心 +1，回復生命並稍微提升傷害
 ---
 Cœur +1, vous soigne et augmente un peu les dégâts
+
+## Fonctionnement
+- Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
+- Le +0,3 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Il vous soigne de 3 cœurs en le ramassant ; ce soin ignore la limite de soins.
+
+## Obtention
+- Il n'est dans aucune réserve d'objets. Une [machine à dons](../world/blood.html) qui s'use après plusieurs dons peut le laisser : 30 % de chances d'avoir le Jus de Baie (15 % d'[Eau Fraîche](bolsa_suero.html) à la place).
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts) et son soin.

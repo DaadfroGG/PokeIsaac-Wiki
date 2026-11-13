@@ -13,6 +13,11 @@ stats:
   good: true
 - text: Vit. tir -2
   good: false
+details:
+- label: Dégâts
+  value: '+1'
+- label: Vitesse des tirs
+  value: '-2'
 icon: items/choice-specs.png
 sprite: true
 names:
@@ -48,3 +53,11 @@ names:
     desc: 傷害+1；彈變慢
 ---
 Dégâts +1 ; tirs plus lents
+
+## Fonctionnement
+- Le +1 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Vitesse des tirs -2 : vos tirs volent plus lentement (ils atteignent leur portée plus tard). Elle ne descend jamais sous 4.
+- Ses tirs ne sont pas à tête chercheuse.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

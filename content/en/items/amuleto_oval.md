@@ -14,6 +14,10 @@ details:
   value: Treasure and bosses (solo)
 - label: Choice
   value: When you take one, the others disappear
+- label: Extra option
+  value: +1 item to choose from
+- label: Co-op
+  value: No effect
 icon: items-ps/key-item/oval-charm.png
 sprite: true
 names:
@@ -49,3 +53,12 @@ names:
     desc: 在寶物房間和頭目戰中多一個道具可選：只能拿一個
 ---
 In the treasure room and against bosses you get one more item to choose from: you only take one
+
+## How it works
+- In the treasure room, a room that would offer a single item now shows two to choose from. Where the game already offers two (the [choose one of two](../mechanics/elegir_uno.html) rule, from floor 6 of a Classic run), you get three.
+- After a boss, the reward is likewise one more item than usual: two instead of one, or three instead of two from floor 6 of a Classic run.
+- You can take only one of the pedestals: as soon as you pick one up, the others disappear.
+- It only works when you play alone. In co-op the rooms are unchanged.
+
+## Stacking
+- It is an on/off effect: a second Oval Charm does not add a fourth item.

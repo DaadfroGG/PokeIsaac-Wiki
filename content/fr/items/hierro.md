@@ -15,6 +15,11 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Cœurs
+  value: +1 cœur (et soigné)
+- label: Coups forts
+  value: 1 demi-cœur de moins
 icon: items/iron.png
 sprite: true
 names:
@@ -50,3 +55,11 @@ names:
     desc: 愛心 +1；受到強力攻擊時少扣半顆愛心
 ---
 Cœur +1 ; les coups violents vous retirent un demi-cœur de moins
+
+## Fonctionnement
+- Au ramassage : +1 cœur max, et ce cœur est rempli.
+- Tout coup qui vous coûterait un cœur entier ou plus (2 demi-cœurs ou plus) coûte un demi-cœur de moins. Les coups d'un demi-cœur ne sont pas réduits.
+- La réduction s'applique avant que les cœurs d'âme n'absorbent les dégâts.
+
+## Cumul
+- Le cœur max s'ajoute de nouveau avec chaque exemplaire. La réduction de dégâts ne se cumule pas.

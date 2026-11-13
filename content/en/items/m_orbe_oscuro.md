@@ -10,8 +10,12 @@ stats:
 - text: Damage +1
   good: true
 details:
+- label: Damage
+  value: '+1'
 - label: Fear
-  value: 15 % per hit, 2.5 s
+  value: 15 % per hit (+1 % per Luck), 2.5 s
+- label: Bosses
+  value: Never frightened
 icon: items-ps/key-item/dark-stone.png
 sprite: true
 names:
@@ -47,3 +51,9 @@ names:
     desc: 傷害+1；你的彈有時會讓敵人害怕：敵人會逃離你幾秒
 ---
 Damage +1; sometimes your shots cause fear: the enemy flees from you for a few seconds
+
+## How it works
+- Each hit on a non-boss enemy has a 15 % chance (+1 % per Luck) to frighten it for 2.5 s: it flees from you and cannot attack.
+
+## Stacking
+- +1 Damage is added for each copy. The fear chance and duration do not change.

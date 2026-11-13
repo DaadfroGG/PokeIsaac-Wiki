@@ -10,7 +10,9 @@ pools:
 pool_weight: 2
 details:
 - label: Turn
-  value: 0.07 radians per frame toward where you aim
+  value: About 240° per second toward where you aim
+- label: Per second
+  value: About 240°
 - label: Doesn't affect
   value: Homing shots
 icon: items-ps/tr/psychic.png
@@ -48,3 +50,11 @@ names:
     desc: 意念移物：你的彈會在空中轉向你瞄準的方向
 ---
 Telekinesis: your shots turn mid-air toward where you aim
+
+## How it works
+- Your shots already in the air keep turning toward the direction you are aiming now: up to about 240° per second. Change your aim and your shots curve to follow it.
+- It only bends the shots' path; it doesn't change their speed or range.
+- It doesn't affect homing shots, split shots and other shots born from a hit, companion shots, spiral shots ([Sachet](m_saquito.html)) or shots orbiting around you.
+
+## Stacking
+- A second copy does nothing more.

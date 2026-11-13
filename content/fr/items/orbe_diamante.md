@@ -10,11 +10,15 @@ pools:
 pool_weight: 2
 details:
 - label: Orbite
-  value: À 46 px de vous
+  value: 46 px autour de vous
 - label: Tirs ennemis
   value: Les détruit au contact
 - label: Dégâts
-  value: 60 % du vôtre, tous les 1/3 de seconde
+  value: 60 % des vôtres, toutes les 1/3 s
+- label: Minimum
+  value: 1,5 par coup
+- label: Tour
+  value: Environ 1,4 s
 icon: items-ps/hold-item/adamant-orb.png
 sprite: true
 names:
@@ -50,3 +54,13 @@ names:
     desc: 一顆鑽石繞著你旋轉：會抵消敵方的彈並傷害碰到的對象
 ---
 Un diamant gravite autour de vous : il détruit les tirs ennemis et blesse ce qu'il touche
+
+## Fonctionnement
+- Le diamant tourne autour de vous sur un ovale (46 px sur les côtés, 32 px au-dessus et en dessous), un tour environ toutes les 1,4 s.
+- Tout tir ennemi qu'il touche est détruit.
+- Tout ennemi qu'il touche prend 60 % de vos Dégâts (au moins 1,5), au plus une fois toutes les 1/3 s par ennemi. Il blesse aussi les boss.
+- Ses coups n'ont pas de type, ne font jamais de coup critique et n'infligent aucun statut.
+- On ne le trouve que dans la salle de l'Ange.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus : toujours un seul diamant.

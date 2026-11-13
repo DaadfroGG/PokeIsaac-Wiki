@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Charge limit
+  value: Doubled
+- label: Effect
+  value: Two uses in a row
 icon: items-ps/hold-item/cell-battery.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 主動道具可儲存雙倍充能：可以連續使用兩次
 ---
 Your active item can hold double charge: use it twice in a row
+
+## How it works
+- Your active item can hold twice its usual charge, shown as a second bar next to the normal one.
+- When you use it, it spends one set of charges. If you were completely full (double charge), you keep the other full set and can use it again right away.
+- If you were between one full charge and a double charge, the use empties it completely.
+- Charges still come from clearing rooms (1 per room), so filling the second bar takes as many rooms as the first.
+
+## Stacking
+- It is an on/off effect: a second Cell Battery does not triple the limit.
+- It works with the [Max Elixir](elixir_max.html) and [Ether](eter.html), which can fill the second bar too.

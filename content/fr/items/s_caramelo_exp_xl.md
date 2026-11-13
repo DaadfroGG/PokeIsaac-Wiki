@@ -21,6 +21,19 @@ stats:
   good: true
 - text: Soigne 1 cœur
   good: true
+details:
+- label: Dégâts
+  value: +0,5
+- label: Cadence
+  value: +1 (0,017 s de moins entre les tirs)
+- label: Vitesse
+  value: +0,2
+- label: Portée
+  value: +40 px
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: 1 cœur au ramassage
 icon: items-ps/exp-candy/xl.png
 sprite: true
 names:
@@ -56,3 +69,14 @@ names:
     desc: 樣樣都有：傷害、射速、速度、射程和一顆愛心
 ---
 Un peu de tout : dégâts, cadence, vitesse, portée et un cœur
+
+## Fonctionnement
+- Le +0,5 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Cadence +1 : 0,017 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- La Vitesse +0,2 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Portée +40 : vos tirs vont 40 px plus loin, sans rendements décroissants.
+- Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
+- Il vous soigne de 1 cœur en le ramassant ; ce soin ignore la limite de soins.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts et Cadence) et son soin.

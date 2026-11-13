@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Un tir s'arrête contre un mur, un rocher ou un obstacle
+- label: Tir suivant
+  value: ×2 dégâts et 30 % plus gros
+- label: Charges
+  value: 1 à la fois
 icon: items-ps/hold-item/blunder-policy.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 彈撞到牆壁後，下一發傷害加倍
 ---
 Si un tir touche un mur, le suivant inflige le double de dégâts
+
+## Fonctionnement
+- Quand un de vos tirs est arrêté par un mur, un rocher ou un obstacle, le prochain tir que vous lancez inflige le double de dégâts et est 30 % plus gros.
+- Un tir qui arrive simplement au bout de sa portée ne compte pas, pas plus que les tirs divisés et autres tirs secondaires.
+- Un seul tir est renforcé, même si plusieurs tirs ont touché un mur avant : les ratés ne s'additionnent pas.
+- Le ×2 s'applique quand le tir part : il n'apparaît donc pas dans la stat Dégâts du HUD et n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus : toujours ×2 sur un tir.

@@ -10,8 +10,10 @@ pools:
 - treasure
 pool_weight: 2
 details:
+- label: Condition
+  value: 1 heart or less of red health
 - label: Fire rate
-  value: ×1.5 at 1 heart or less
+  value: ×1.5
 icon: items-ps/key-item/crown-pass.png
 sprite: true
 names:
@@ -47,3 +49,13 @@ names:
     desc: 剩一顆愛心以下時，射擊速度加快50 %
 ---
 With one heart or less, you fire 50 % faster
+
+## How it works
+
+- While you have 1 heart or less of red health, the time between your shots is reduced to 67 % (fire rate ×1.5). Soul hearts do not stop it.
+- It still obeys the fire-rate limit of 12 shots per second.
+- Sold in the Distortion Room for life (see [Distortion Room deals](../mechanics/pactos.html)) or found in treasure rooms.
+
+## Stacking
+
+- A second copy changes nothing.

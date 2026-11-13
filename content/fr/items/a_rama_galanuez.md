@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Boomerang
+  value: Va à 260 px, puis revient vers vous
+- label: Dégâts
+  value: Vos Dégâts ×2 par ennemi
+- label: Étourdissement
+  value: 1 s (pas les boss)
+- label: Bonus
+  value: Ramenés vers vous
 icon: items-ps/other-item/galarica-twig.png
 sprite: true
 names:
@@ -44,3 +53,15 @@ names:
     desc: 擲出迴力鏢，讓敵人暈眩，並把碰到的地上物品帶回給你
 ---
 Vous lancez un boomerang qui étourdit les ennemis et vous rapporte ce qu'il touche au sol
+
+## Fonctionnement
+- Vous lancez un boomerang dans la direction où vous regardez. Il va à 260 px puis revient vers vous, où que vous soyez.
+- Il traverse les ennemis et les rochers et rebondit sur les murs. Chaque ennemi touché subit 2 fois vos Dégâts une fois par lancer, et est étourdi 1 seconde. Les boss subissent les dégâts mais ne sont pas étourdis.
+- Il peut faire un [coup critique](../mechanics/criticos.html), mais les effets de tirs de vos objets ne s'y ajoutent pas.
+- Les bonus gratuits qu'il survole sont emportés et ramenés vers vous. Les articles de boutique restent en place.
+- Il ne demande qu'une charge.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous lancez deux boomerangs.

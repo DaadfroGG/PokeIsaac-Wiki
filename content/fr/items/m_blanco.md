@@ -10,7 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Série
-  value: +10 % par tir réussi, jusqu'à ×2
+  value: +10 % par coup, jusqu'à ×2
+- label: Remise à zéro
+  value: Un tir qui finit sans toucher, ou 4 s sans coup au but
+- label: Compte
+  value: Seulement le premier coup de chaque tir principal
 icon: items-ps/hold-item/ring-target.png
 sprite: true
 names:
@@ -46,3 +50,12 @@ names:
     desc: 每連續命中一發，傷害就會提升，最高 ×2；落空一發就會重置
 ---
 Chaque tir réussi d'affilée augmente vos dégâts, jusqu'à ×2 ; en rater un les réinitialise
+
+## Fonctionnement
+- Chaque tir principal qui touche un ennemi ajoute un niveau, jusqu'à 10. Chaque niveau vaut +10 % de dégâts : dix coups d'affilée donnent donc ×2.
+- Seul le premier coup d'un tir compte ; les tirs de compagnons, fragmentés et autres tirs secondaires sont ignorés.
+- La série retombe à zéro si un tir principal se termine (mur, rocher, bout de portée) sans avoir touché quoi que ce soit, ou si 4 secondes passent sans coup au but.
+- Le bonus s'applique à vos dégâts comme n'importe quel multiplicateur.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien (toujours +10 % par niveau, max ×2).

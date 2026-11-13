@@ -15,9 +15,11 @@ stats:
   good: false
 details:
 - label: Fire rate
-  value: + (3 frames fewer between shots)
+  value: + (0.05 s less between shots)
 - label: Speed
   value: '-0.4'
+- label: Extra shots
+  value: None
 icon: items-ps/hold-item/destiny-knot.png
 sprite: true
 names:
@@ -53,3 +55,11 @@ names:
     desc: You shoot much faster, but you move slower.
 ---
 You shoot much faster, but you move slower.
+
+## How it works
+- Fire rate +3 points: 0.05 s less between two shots. It follows the [diminishing returns](../mechanics/rendimientos.html) on fire rate: on its own it counts in full, on top of other fire-rate items it counts less. You still can't attack more than 12 times per second.
+- Speed −0.4.
+- Despite its name, it doesn't make you shoot backwards and adds no shots: that is the core [Destiny Knot](lazo_destino.html) (see [Extra shots](../mechanics/disparos_extra.html)).
+
+## Stacking
+- A second copy adds another +3 fire rate and −0.4 speed: stats add up for every copy, then diminishing returns apply (see [Item stacking](../mechanics/acumulacion.html)).

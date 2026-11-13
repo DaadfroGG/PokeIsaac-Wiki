@@ -9,6 +9,13 @@ pool_weight: 2
 stats:
 - text: Range -60
   good: false
+details:
+- label: Pierce
+  value: +1 enemy per shot
+- label: Range
+  value: '-60'
+- label: Where
+  value: Not in any item pool right now
 icon: items-ps/curry-ingredient/salad-mix.png
 sprite: true
 names:
@@ -46,3 +53,14 @@ names:
 Your shots pierce enemies, but travel less far
 
 {{< clip >}}
+
+## How it works
+- Each shot goes through one enemy and can hit a second one. It still hits each enemy only once.
+- Pushing a bomb with a shot also uses up a pierce.
+- The -60 Range makes shots travel 60 px less far (range never goes below 120 px).
+
+## How to get it
+- It is not in any item pool at the moment: treasure rooms, shops and bosses don't offer it.
+
+## Stacking
+- Both parts stack: each copy lets shots go through one more enemy, and removes another 60 px of range.

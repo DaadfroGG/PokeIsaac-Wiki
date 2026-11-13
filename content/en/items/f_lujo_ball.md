@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Companion
+  value: Meowth (Normal)
+- label: Reward
+  value: 3 coins
+- label: Every
+  value: 3 cleared rooms
 icon: items-ps/ball/luxury.png
 sprite: true
 names:
@@ -46,3 +53,13 @@ names:
 A Meowth follows you and gives you PokéDollars every 3 cleared rooms
 
 {{< clip >}}
+
+## How it works
+
+- Every 3rd room you clear, Meowth drops 3 coins (Pokédollars) next to itself.
+- It never shoots or fights.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own. Each companion counts its own rooms.

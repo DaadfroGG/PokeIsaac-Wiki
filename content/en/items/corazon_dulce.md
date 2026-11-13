@@ -11,6 +11,11 @@ pool_weight: 2
 stats:
 - text: Full heal
   good: true
+details:
+- label: Healing
+  value: Full heal
+- label: Soul hearts
+  value: +3 on pickup
 icon: items-ps/medicine/sweet-heart.png
 sprite: true
 names:
@@ -46,3 +51,11 @@ names:
     desc: 完全恢復你的生命，並給你三顆靈魂之心
 ---
 Fully heals you and gives you three soul hearts
+
+## How it works
+- The moment you pick it up you are healed completely and gain 3 [soul hearts](../mechanics/corazones_alma.html), up to the limit of 6 soul hearts.
+- The heal is not held back by the limit on item healing.
+- It does not raise your maximum health.
+
+## Stacking
+- Each copy heals you fully and gives 3 more soul hearts when you pick it up.

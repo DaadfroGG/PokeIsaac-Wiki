@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Block
-  value: 50 % from the front
+  value: 50 % of enemy shots from the front
+- label: Front
+  value: Within 60° of the direction you face
 icon: items-ps/battle-item/guard-spec.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 從正面射來的敵方彈有一半對你無效
 ---
 Half of the enemy shots that hit you from the front do nothing
+
+## How it works
+- Each enemy shot that is about to hit you has a 50 % chance to be destroyed, but only if it comes from the front: within 60° of the direction you are aiming (or, if you aren't shooting, the direction you are moving; or the last one you aimed).
+- The blocked shot disappears and you take no damage.
+- It only affects shots. Enemy bodies and hazards are not blocked.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

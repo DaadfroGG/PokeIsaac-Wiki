@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Charge
+  value: 4 salles
+- label: Cibles
+  value: Tous les ennemis non-boss de la salle
+- label: Récompense
+  value: 3 pièces par ennemi marqué vaincu
+- label: Boss
+  value: Non affectés
 icon: items-ps/key-item/poke-radar.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 房間內的敵人會變成異色並掉落金幣
 ---
 Les ennemis de la salle deviennent chromatiques et lâchent des pièces
+
+## Fonctionnement
+- Charge : 4 salles. Chaque salle terminée donne 1 charge.
+- Tous les ennemis vivants de la salle qui ne sont pas des boss deviennent chromatiques.
+- Chaque ennemi chromatique lâche 3 pièces à sa mort, quelle que soit la cause (vos tirs, bombes, autres ennemis, pièges).
+- L'effet n'a pas de limite de temps : il dure jusqu'à la mort de l'ennemi ou jusqu'à ce que vous quittiez la salle.
+- Les boss ne sont pas affectés. Il est inutilisable quand il ne reste aucun ennemi non-boss, et aucune charge n'est alors dépensée.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec une [Pile Cellulaire](d_pila.html), l'objet peut stocker le double de charge.

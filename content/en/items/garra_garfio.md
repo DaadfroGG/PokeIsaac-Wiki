@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Damage +0.3
   good: true
+details:
+- label: Damage
+  value: '+0.3'
+- label: Pull
+  value: Short pull toward you on every hit, not bosses
+- label: Side effect
+  value: Replaces all knockback from your shots
 icon: items-ps/hold-item/grip-claw.png
 sprite: true
 names:
@@ -46,3 +53,11 @@ names:
     desc: 你的彈會把敵人拉向你
 ---
 Your shots pull enemies toward you
+
+## How it works
+- Every hit pulls the enemy toward you with a short tug, instead of pushing it away.
+- Bosses are not pulled.
+- While you hold it, all the knockback your shots would normally cause (Knockback shots, Water-type pushes, Rock and Ground pushes, [Sail Fossil](m_fosil_aleta.html)) is replaced by this pull.
+
+## Stacking
+- Damage +0.3 is added for each copy. The pull does not get stronger.

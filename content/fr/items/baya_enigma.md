@@ -14,6 +14,8 @@ details:
   value: 30 % à chaque coup reçu
 - label: Soin
   value: ½ cœur
+- label: Limite
+  value: Les objets soignent au plus 30 % des PV max par 10 s
 icon: items-ps/berry/enigma.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 受到攻擊時，有時會恢復半顆愛心
 ---
 Quand vous êtes touché, vous récupérez parfois un demi-cœur
+
+## Fonctionnement
+- À chaque coup reçu qui vous blesse (même absorbé par un cœur d'âme), vous avez 30 % de chances de récupérer un demi-cœur. La Chance (Luck) ne change pas cette probabilité.
+- Rien ne se passe si le coup vous tue.
+- Ce soin compte dans la limite de soin des objets : les objets ne soignent au plus que 30 % de vos PV max (minimum 2 cœurs) par tranche de 10 secondes.
+- Les coups bloqués ou esquivés ne la déclenchent pas.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -10,8 +10,12 @@ stats:
 - text: Dégâts +1
   good: true
 details:
+- label: Dégâts
+  value: '+1'
 - label: Peur
-  value: 15 % par coup, 2,5 s
+  value: 15 % par coup (+1 % par Chance), 2,5 s
+- label: Boss
+  value: Jamais effrayés
 icon: items-ps/key-item/dark-stone.png
 sprite: true
 names:
@@ -47,3 +51,9 @@ names:
     desc: 傷害+1；你的彈有時會讓敵人害怕：敵人會逃離你幾秒
 ---
 Dégâts +1 ; vos tirs effraient parfois : l'ennemi vous fuit quelques secondes
+
+## Fonctionnement
+- Chaque coup sur un ennemi (hors boss) a 15 % de chance (+1 % par Chance) de l'effrayer 2,5 s : il vous fuit et ne peut pas attaquer.
+
+## Cumul
+- +1 Dégâts s'ajoute à chaque exemplaire. La chance et la durée de la peur ne changent pas.

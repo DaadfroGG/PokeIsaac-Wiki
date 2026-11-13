@@ -10,16 +10,24 @@ pools:
 - boss
 pool_weight: 2
 details:
-- label: Roulement
-  value: 80 images (105 avec la Canne à Pêche) ; le frôlement inflige ×0,45 toutes les 12 images
+- label: Utilisation
+  value: Touche d'arme (Maj/F, clic droit, LB)
+- label: Voltorbes
+  value: Une salve normale (jusqu'à 9 avec tirs multiples), vitesse ×0,6, mèche 1,3 s (1,75 s avec la Canne à Pêche)
+- label: Frôlement
+  value: ×0,45 des dégâts du tir toutes les 0,2 s par ennemi
 - label: Rebond
-  value: +20 % de dégâts et de vitesse ; au 3e choc, il explose
+  value: +20 % de dégâts, +12 % de vitesse ; explose au 3e choc contre un mur
 - label: Détonation
-  value: Vos dégâts ×0,6 (+25 % par rebond), 60 px
+  value: ×0,6 des dégâts du tir (+25 % par rebond), 60 px (+8 par Taille)
+- label: Récupération
+  value: 1,5 × 1,6 × votre délai (au moins 0,6 s)
+- label: Équilibrage
+  value: ×0,8
 - label: Avec objets de Voltorbes
-  value: Feu, gouttes, croix, petits Voltorbes, éclairs, plus gros ou à tête chercheuse
+  value: Feu, flaques, croix, petites explosions, rayons, butin, plus gros, tête chercheuse
 - label: Si secondaire
-  value: 15 % de chances qu'un coup fasse exploser un Voltorbe (×0,6)
+  value: '15 % (+1 % par Chance) par coup, une fois par 0,2 s : explosion ×0,6, 45 px'
 icon: items-ps/key-item/colress-machine.png
 sprite: true
 names:
@@ -54,6 +62,21 @@ names:
     name: 阿克羅瑪機器
     desc: 你射出會滾動的霹靂電球，擦過敵人，每次反彈都會變強；第三次撞牆或不久後就會爆炸（不會傷到你）
 ---
-Vous tirez des Voltorbes qui roulent, frôlent les ennemis et gagnent en puissance à chaque rebond ; au troisième choc contre un mur, ou peu après, ils explosent (sans vous blesser)
+Vous tirez des Voltorbes qui roulent, frôlent les ennemis et gagnent en puissance à chaque rebond ; au troisième choc contre un mur, ou peu après, ils explosent (sans vous blesser)
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,8. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 1,6 fois votre délai normal entre deux tirs, multiplié par 1,5, et jamais moins de 0,6 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Chaque attaque tire une salve normale (les tirs multiples s'appliquent, jusqu'à 9) de Voltorbes qui roulent à 0,6 fois la vitesse de tir, transpercent tout et rebondissent sur les murs. Ils explosent à la fin de la mèche (1,3 s, ou 1,75 s avec la [Canne à Pêche](d_cana.html)) ou au 3e choc contre un mur.
+- En roulant, ils frôlent chaque ennemi touché pour ×0,45 des dégâts du tir, toutes les 0,2 s par ennemi.
+- Chaque rebond sur un mur rend le Voltorbe 20 % plus fort et 12 % plus rapide (et +25 % pour l'explosion finale).
+- L'explosion a un rayon de 60 px (+8 par Taille) et inflige ×0,6 des dégâts du tir (+25 % par rebond). Elle ne vous blesse jamais et brise les rochers proches.
+- **Les objets de Voltorbes** marchent sur ces Voltorbes : le [Poké Plumet](b_pokesenuelo.html) les fait poursuivre les ennemis, la [Canne à Pêche](d_cana.html) les ralentit mais allonge la mèche, le [Dynamaxium](b_maxinium.html) les agrandit (taille ×1,5, rayon ×1,4, dégâts ×1,35), et chaque explosion compte aussi pour le [Module Pyro](b_pirorom.html) et le [Module Aqua](b_hidrorom.html) (une sur 3), le [Champ'Duit](b_cubresuelos.html), la [Bonbonnière](b_tarro.html), l'[Orbe Frousse](b_nerviosfera.html) (une sur 6) et la [Perle Triple](b_sarta.html).
+- **Si secondaire :** quand l'un de vos coups touche, 15 % de chances (+1 % par Chance) d'une petite explosion sur l'ennemi touché (rayon de 45 px, ×0,6 de vos Dégâts), au plus une fois toutes les 0,2 s.
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

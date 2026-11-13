@@ -11,13 +11,21 @@ pools:
 pool_weight: 2
 details:
 - label: Entaille
-  value: Vos dégâts ×0,5, 75 px, et une onde courte (×0,4)
+  value: ×0,5 Dégâts en arc, 75 px (+6 par Taille), environ 63° de chaque côté ; plus une onde ×0,4
 - label: Taillade
-  value: 'Chaque entaille qui touche : +15 % de dégâts, +6 px et 5 % plus rapide (jusqu''à 4)'
+  value: 'Chaque entaille qui touche : +15 % de dégâts, +6 px, 5 % plus rapide (jusqu''à 4)'
 - label: Rotation
-  value: 'Avec une série de 4 : ×1 tout autour et une onde'
+  value: 'À la série de 4 : 360°, ×1,6 Dégâts, plus des ondes ×2 Dégâts ; puis la série retombe'
+- label: Série
+  value: Retombe sur un raté ou après 0,9 s sans toucher
+- label: Récupération
+  value: 1,5 × votre délai (au moins 0,3 s)
+- label: Équilibrage
+  value: ×0,31
+- label: Aussi
+  value: Annule les tirs ennemis dans l'arc
 - label: Si secondaire
-  value: Coup de lame automatique sur l'ennemi qui s'approche, un par seconde
+  value: Entaille (×0,5 + onde) une fois par seconde sur un ennemi à moins de 72 px
 icon: items-ps/hold-item/stick.png
 sprite: true
 names:
@@ -52,6 +60,21 @@ names:
     name: 大蔥
     desc: 連續的大蔥斬擊：每次命中都會提升你的連斬（傷害、距離和速度提高，最多4層）；下一擊會是完整的迴旋斬。沒打中就會重置
 ---
-Coups de poireau enchaînés : chaque coup réussi augmente votre Taillade (plus de dégâts, de portée et de vitesse, jusqu'à 4) ; le suivant est une rotation complète. Rater la réinitialise
+Coups de poireau enchaînés : chaque coup réussi augmente votre Taillade (plus de dégâts, de portée et de vitesse, jusqu'à 4) ; le suivant est une rotation complète. Rater la réinitialise
+
+## Fonctionnement
+- C'est une **arme** : elle ne marche que comme arme équipée ([Arme équipée](../mechanics/arma_principal.html)) ; avec une autre arme principale, elle n'ajoute que le petit effet indiqué à « Si secondaire ». Vos tirs normaux ne sont pas remplacés.
+- Équilibrage : quand c'est votre arme équipée, les dégâts qu'elle inflige sont encore multipliés par ×0,31. Les multiplicateurs ci-dessous s'appliquent avant.
+- Après chaque attaque, l'arme est de nouveau prête après 1,5 fois votre délai normal entre deux tirs, et jamais moins de 0,3 s.
+- Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
+- Chaque attaque est une entaille en arc devant vous : portée 75 px (+6 par Taille), environ 63° de chaque côté. Elle touche tous les ennemis de l'arc pour ×0,5 de vos Dégâts, brise les caisses, détruit les tirs ennemis dans l'arc et envoie une courte onde (×0,4 Dégâts, portée 0,6 × votre Portée, perfore 1 + votre perforation).
+- **Taillade :** chaque entaille qui touche au moins un ennemi augmente la série (max 4). Chaque niveau ajoute +15 % de dégâts (entaille et onde), +6 px de portée et rend l'attaque suivante 5 % plus rapide.
+- **Rotation :** avec la série à 4, l'attaque suivante est une rotation complète à 360° (portée +24 px, ×1,6 Dégâts) qui envoie aussi des ondes de ×2 Dégâts (rayon de 16 px, portée 1,1 × Portée, transperce tout). La série retombe ensuite à 0.
+- Une entaille qui ne touche rien, ou 0,9 s sans toucher, remet la série à zéro.
+- Les tirs multiples élargissent l'arc et ajoutent des ondes (jusqu'à 3, 20° d'écart pour la rotation).
+- **Si secondaire :** quand un ennemi est à moins de 72 px (+6 par Taille), vous l'entaillez automatiquement (×0,5 Dégâts et une onde), au plus une fois par seconde.
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

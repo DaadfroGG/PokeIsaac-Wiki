@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Per kill
-  value: +6 %, up to +60 %
+  value: +6 % damage, up to +60 % (10 kills)
+- label: Resets
+  value: When you leave the room
 icon: items-ps/apricorn/red.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 在房間內每擊倒一個敵人，傷害提升6 %，直到離開房間（最多 +60 %）
 ---
 Each enemy you defeat in a room raises your damage by 6 % until you leave (max. +60 %)
+
+## How it works
+- Each enemy you defeat adds one level, up to 10. Each level is +6 % damage, so +60 % at 10 kills. It is applied to all your damage like a multiplier.
+- It counts the kills you make yourself (not those of companions or other players), and the bonus is reset when you enter another room.
+- Kills by burn, poison or other lingering damage you applied also count.
+
+## Stacking
+- It does not stack: a second copy changes nothing (still +6 % per kill, max +60 %).

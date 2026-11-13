@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: Survivre à un coup fatal
+- label: PV restants
+  value: ½ cœur
+- label: Utilisations
+  value: '1'
 icon: items/focus-sash.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 能撐過一次致命攻擊
 ---
 Vous survivez une fois à un coup fatal
+
+## Fonctionnement
+- La première fois qu'un coup réduirait vos cœurs rouges à zéro, vous survivez avec un demi-cœur.
+- Cela ne marche qu'une fois : l'objet est consommé (il reste dans l'inventaire mais ne fait plus rien).
+- Les cœurs d'âme partent d'abord, comme d'habitude. La ceinture n'agit que lorsque vos cœurs rouges seraient épuisés.
+- Vous gardez l'invulnérabilité habituelle après le coup.
+
+## Cumul
+- Un second exemplaire ramassé avant d'utiliser le premier ne fait rien de plus : un seul coup fatal est évité.

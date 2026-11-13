@@ -13,10 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
+- label: Évolue
+  value: Évoli > Mentali
 - label: Charge
   value: 1 seconde sans tirer
-- label: Lance-Soleil
-  value: Dégâts ×1,5 à ×2, taille ×1,8, traverse 9 ennemis
+- label: Rayon Solaire
+  value: Dégâts ×1,5 à ×2, taille ×1,8, perce 9 ennemis de plus
 icon: items-ps/evo-item/sun-stone.png
 sprite: true
 names:
@@ -52,3 +54,24 @@ names:
     desc: 讓伊布進化（太陽伊布）。另外，如果你1秒沒有射擊，下一發會變成貫穿一切的日光束
 ---
 Fait évoluer Évoli (Mentali). De plus, après 1 seconde sans tirer, votre prochain tir est un Lance-Soleil qui transperce tout
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Mentali, et son type devient Psy.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Les Pokémon autres qu'Évoli n'évoluent pas avec cette pierre ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Si vous n'avez pas tiré depuis au moins 1 seconde, votre prochain tir est un Rayon Solaire : plus gros (taille ×1,8), avec des dégâts ×1,5 après 1 seconde de repos, jusqu'à ×2 après 2 secondes, et il perce 9 ennemis de plus.
+- Le multiplicateur ne s'applique qu'à ce tir, pas à votre stat de Dégâts.
+- Seuls vos tirs principaux peuvent être des Rayons Solaires (pas les tirs divisés ni ceux des compagnons).
+- Votre premier tir après être entré dans un combat compte comme chargé si vous êtes resté inactif assez longtemps.
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

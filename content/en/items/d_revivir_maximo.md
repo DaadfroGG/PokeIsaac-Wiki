@@ -10,6 +10,15 @@ pools:
 - secret
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: Revive once after dying
+- label: Health on revive
+  value: 2 hearts
+- label: After reviving
+  value: 2.5 s invulnerable
+- label: Uses
+  value: '1'
 icon: items-ps/medicine/max-revive.png
 sprite: true
 names:
@@ -45,3 +54,11 @@ names:
     desc: 倒下時帶著兩顆愛心重生（使用後消失）
 ---
 If you fall, you come back to life with two hearts (used up)
+
+## How it works
+- The first time you would die, you come back to life instead with 2 hearts (or your max health if it is lower) and 2.5 seconds of invulnerability.
+- It is used up when it triggers (it stays in your inventory but does nothing more).
+- It acts before any other second chance, such as [Fluffy Tail](d_cola_skitty.html).
+
+## Stacking
+- A second copy picked up before the first is used does nothing more: only one revival is saved.

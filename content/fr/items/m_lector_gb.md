@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Laser
-  value: En moyenne chaque seconde, 75 % de dégâts
+  value: Toutes les 1 s en moyenne en tirant, 75 % de dégâts
+- label: Rebonds
+  value: Jusqu'à 4, selon votre Rebond
+- label: Écart
+  value: Environ ±20° autour de la visée
 icon: items-ps/key-item/gb-sounds.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
 Pendant que vous tirez, un laser sort aussi de temps en temps
 
 {{< clip >}}
+
+## Fonctionnement
+- Pendant que vous tirez, un laser part à des moments aléatoires : en moyenne un par seconde. Le laser part en ligne droite (jusqu'à environ ±20° de votre visée) et touche tous les ennemis sur son chemin pour 75 % de vos dégâts.
+- Il rebondit sur les murs autant de fois que votre Rebond, jusqu'à 4.
+- Il ne se passe rien quand vous ne tirez pas.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne tire pas plus de lasers.

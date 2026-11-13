@@ -10,8 +10,14 @@ pools:
 - secret
 pool_weight: 2
 details:
+- label: Compagnon
+  value: Ténéfix (Ténèbres)
 - label: Récompense
+  value: 1 ramassable au hasard
+- label: Chance
   value: 30 % par salle nettoyée
+- label: Possible
+  value: Pièce, clé, bombe, demi-cœur, cœur d'âme, coffre
 icon: items-ps/ball/safari.png
 sprite: true
 names:
@@ -49,3 +55,13 @@ names:
 Un Ténéfix vous accompagne et, parfois, vous rapporte un bonus quand vous nettoyez une salle
 
 {{< clip >}}
+
+## Fonctionnement
+
+- À chaque salle nettoyée, Ténéfix a 30 % de chances de vous apporter 1 ramassable à côté de lui : pièce, clé, bombe, demi-cœur, cœur d'âme ou coffre (tous aussi probables).
+- Il ne tire ni ne combat jamais.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Chaque compagnon compte ses propres salles.

@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Cadence +
   good: true
+details:
+- label: Vitesse
+  value: +0,4
+- label: Cadence
+  value: +2 (0,033 s de moins entre les tirs)
 icon: items/tm-flying.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 速度和射速+
 ---
 Vitesse et cadence +
+
+## Fonctionnement
+- La Vitesse +0,4 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Cadence +2 : 0,033 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Cadence).

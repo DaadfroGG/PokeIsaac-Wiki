@@ -12,6 +12,11 @@ pool_weight: 1
 stats:
 - text: +99 Voltorbe
   good: true
+details:
+- label: Voltorbes
+  value: Remplit à 99
+- label: Plafond
+  value: '99'
 icon: items-ps/curry-ingredient/tin-of-beans.png
 sprite: true
 names:
@@ -47,3 +52,10 @@ names:
     desc: 補滿霹靂電球（最多99）
 ---
 Vous remplit de Voltorbes (jusqu'à 99)
+
+## Fonctionnement
+- Au ramassage, il donne +99 Voltorbes ; avec le plafond de 99, votre réserve passe donc à 99.
+- Il n'a aucun autre effet. Se trouve dans les salles de boss et les salles secrètes.
+
+## Cumul
+- Un second exemplaire vous remet à 99 si vous en avez utilisé entre-temps.

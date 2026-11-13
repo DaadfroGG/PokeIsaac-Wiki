@@ -9,12 +9,20 @@ pools:
 - devil
 pool_weight: 2
 details:
-- label: Dégâts
+- label: Compagnon
+  value: Fantominus (Spectre)
+- label: Cadence de tir
+  value: 0,5 s
+- label: Dégâts par tir
+  value: (2 + 0,4 par étage) ×1,3
+- label: Bonus de dégâts
   value: ×1,3 par rapport aux autres compagnons
-- label: Effroi
+- label: Peur
   value: 25 % par coup, 2 s (pas les boss)
 - label: Tirs
   value: Traversent les rochers
+- label: Prix
+  value: Offre de la salle Distorsion
 icon: items-ps/hold-item/griseous-orb.png
 sprite: true
 names:
@@ -52,3 +60,16 @@ names:
 Un Fantominus vous accompagne : ses tirs traversent les rochers, frappent fort et effraient parfois
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Fantominus vous suit de près et tire sur l'ennemi le plus proche à moins de 380 px, une fois toutes les 0,5 secondes. Ses tirs portent jusqu'à 360 px et ont son type (Spectre).
+- Ses tirs frappent 1,3 fois plus fort qu'un compagnon normal (2,6 au premier étage), traversent les rochers et ont 25 % de chances par coup d'effrayer un ennemi non-boss pendant 2 secondes (voir [Effets de statut](../mechanics/estados.html)).
+- Le Pacte se vend dans la salle Distorsion contre de la vie (voir [Pactes de la salle Distorsion](../mechanics/pactos.html)).
+- Les dégâts d'un compagnon ne dépendent pas de votre stat de Dégâts : chaque tir ou coup part de 2 au premier étage, +0,4 par étage ensuite.
+- Ses tirs ne profitent pas de vos améliorations de tir (pas de tirs supplémentaires, pas de coups critiques) et ne déclenchent pas vos objets à effet sur coup.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément.

@@ -15,6 +15,13 @@ stats:
   good: true
 - text: Fire rate -
   good: false
+details:
+- label: Damage
+  value: '+2'
+- label: Fire rate
+  value: -4 (0.067 s more between shots)
+- label: Devil price
+  value: 2 heart containers
 icon: items/choice-band.png
 sprite: true
 names:
@@ -50,3 +57,11 @@ names:
     desc: 傷害+2、射速-
 ---
 Damage +2, fire rate -
+
+## How it works
+- The +2 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Fire rate -4: 0.067 s more between shots. Slowdowns always count in full.
+- In the Distortion Room ([Darkrai's deal](../rooms/devil.html)) it costs 2 heart containers.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

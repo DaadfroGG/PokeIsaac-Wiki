@@ -23,6 +23,12 @@ stats:
 details:
 - label: Damage
   value: ×1.8 and +1
+- label: Hearts
+  value: +1 (and heals it)
+- label: Fire rate
+  value: -4 (slower)
+- label: Shot speed
+  value: '-1'
 icon: items-ps/partner-gift/gold-leaf.png
 sprite: true
 names:
@@ -58,3 +64,10 @@ names:
     desc: 傷害×1.8 和 +1，並多一顆愛心；射擊稍微變慢
 ---
 Damage ×1.8 and +1 and one more heart; you shoot a bit slower
+
+## How it works
+- Your damage is multiplied by 1.8 (this ×1.8 counts with the other damage multipliers) and increased by +1. You also get one more heart, filled, but fire more slowly and your shots are a bit slower.
+- The ×1.8 is a damage multiplier like the others and is subject to their cap.
+
+## Stacking
+- The ×1.8 does not stack, but +1 Damage, +1 heart, the slower fire rate and the shot speed are added for each copy.

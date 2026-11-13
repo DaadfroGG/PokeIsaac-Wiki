@@ -9,6 +9,11 @@ pools:
 - treasure
 - angel
 pool_weight: 2
+details:
+- label: Condition
+  value: Entrer dans une salle avec des ennemis à pleine vie
+- label: Effet
+  value: Dégâts ×2 jusqu'à ce que vous soyez touché
 icon: items-ps/key-item/honor-of-kalos.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 生命全滿時進入房間，傷害會加倍，直到你受傷為止
 ---
 Si vous entrez dans une salle avec toute votre vie, vous infligez le double de dégâts jusqu'à être touché
+
+## Fonctionnement
+
+- Si vous entrez dans une salle qui contient des ennemis avec toute votre vie rouge, vos Dégâts sont doublés jusqu'à la prochaine fois que vous êtes blessé.
+- C'est un multiplicateur de dégâts du HUD : il suit les [rendements décroissants et le plafond ×3](../mechanics/rendimientos.html) habituels.
+- Entrer dans une salle sans ennemis, ou sans pleine vie, ne donne aucun bonus. Les cœurs d'âme n'ont pas d'importance.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

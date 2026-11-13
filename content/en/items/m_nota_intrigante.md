@@ -9,6 +9,11 @@ pools:
 - treasure
 - secret
 pool_weight: 2
+details:
+- label: Mark
+  value: 1 random enemy per room (not a boss), needs at least 2
+- label: Reward
+  value: 2 pickups (heart, soul heart, key, bomb, nugget or coin)
 icon: items-ps/key-item/enigmatic-card.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每個房間會有一個敵人被標上骷髏：如果牠第一個倒下，就會掉落獎勵
 ---
 In each room, one enemy is marked with a skull: if it's the first to fall, it drops a reward
+
+## How it works
+- In a room with at least two normal enemies, one of them is marked with a skull.
+- If the marked enemy is the first one to be defeated in the room (by anything), it drops 2 random pickups: heart, soul heart, key, bomb, nugget or coin.
+- If any other enemy falls first, the mark is lost and nothing drops. Only one mark per room.
+
+## Stacking
+- It does not stack: a second copy does not give a second mark.

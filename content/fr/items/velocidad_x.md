@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Vitesse
+  value: +1,4
+- label: Cadence
+  value: ×1,25 tir par seconde (temps entre deux tirs ×0,8)
+- label: Durée
+  value: 4 s à partir de l'entrée dans un combat
 icon: items-ps/battle-item/x-speed.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 每場戰鬥開始時，速度大幅提升，射速+25%，持續4秒
 ---
 Au début de chaque combat, bien plus de vitesse et 25 % de cadence en plus pendant 4 secondes
+
+## Fonctionnement
+- Chaque fois que vous entrez dans une salle qui a encore des ennemis, pendant 4 secondes vous avez Vitesse +1,4 et le temps entre vos tirs est multiplié par 0,8 (25 % de tirs en plus par seconde).
+- Le compte à rebours démarre à l'entrée, pas quand les ennemis apparaissent.
+- La limite de cadence s'applique toujours : jamais plus de 12 tirs par seconde.
+- Elle se multiplie avec l'[Herbe Pouvoir](hierba_unica.html) : avec les deux, le temps entre les tirs est ×0,48 pendant ces 4 s.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus.

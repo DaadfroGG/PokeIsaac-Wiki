@@ -10,7 +10,7 @@ pools:
 - boss
 pool_weight: 1
 details:
-- label: Latence
+- label: Délai
   value: 0,5 seconde
 - label: Dégâts de la copie
   value: 50 % du tir
@@ -18,6 +18,8 @@ details:
   value: 85 %
 - label: Copies simultanées
   value: Jusqu'à 24
+- label: Écho de coup
+  value: Chaque coup se répète après 0,5 s à 50 %
 icon: items-ps/key-item/vs-recorder.png
 sprite: true
 names:
@@ -55,3 +57,14 @@ names:
 Écho : une demi-seconde après chaque tir, une copie part du même endroit (avec moitié moins de dégâts)
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Une demi-seconde après votre tir, une copie du tir est retirée depuis son point de départ, dans la même direction. Elle inflige 50 % des dégâts d'origine, fait 85 % de sa taille et garde le type, la portée et la trajectoire spéciale (guidage, perforation...).
+- Jusqu'à 24 copies peuvent attendre en même temps ; les autres sont ignorées. Les copies sont perdues si vous quittez la salle avant.
+- Seuls les tirs principaux sont répétés : les copies, tirs divisés, tirs en miroir et tirs de compagnons ne le sont pas.
+- Écho de coup : chaque fois qu'un de vos tirs touche un ennemi, ce même ennemi subit un second coup 0,5 seconde plus tard pour 50 % de ces dégâts, s'il est encore en vie (jusqu'à 40 en attente). Ce second coup ne déclenche pas les objets à effet sur coup.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

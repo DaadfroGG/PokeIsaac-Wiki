@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Garde
+  value: 1 pièce par salle de combat terminée (max. 15)
+- label: Étage suivant
+  value: Lâche deux fois les pièces gardées, 20 pièces au plus
+- label: Pas comptées
+  value: Salles de boss
 icon: items-ps/valuable-item/relic-vase.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 每清空一個房間存下一枚金幣，前往下一層時加倍返還
 ---
 Met une pièce de côté par salle nettoyée et vous rend le double en changeant d'étage
+
+## Fonctionnement
+- Chaque salle de combat que vous terminez (les arènes comptent aussi) met une pièce dans le vase, jusqu'à 15. Il faut être en vie quand la salle est terminée.
+- Les salles de boss n'ajoutent rien.
+- Quand vous descendez d'un étage, le vase se vide : il lâche deux fois les pièces gardées autour de vous, puis recommence à 0.
+- Il ne lâche jamais plus de 20 pièces d'un coup : garder plus de 10 salles sur un même étage ne rapporte rien de plus.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : même vase.

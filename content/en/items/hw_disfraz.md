@@ -11,8 +11,12 @@ pool_weight: 1
 details:
 - label: Once per floor
   value: Saves you from a fatal hit
+- label: Condition
+  value: No soul hearts
 - label: Blast
   value: ×4 your damage within 140 px
+- label: After
+  value: 1.5 s of invulnerability
 icon: items-ps/key-item/contest-costume--jacket.png
 sprite: true
 names:
@@ -48,3 +52,12 @@ names:
     desc: 每層一次，會擋下本來會讓你倒下的那一擊，並爆發出幽靈，傷害附近的敵人（你傷害的×4）。
 ---
 Once per floor, it takes the hit that would knock you out and bursts into ghosts that hurt nearby enemies (×4 your damage).
+
+## How it works
+- Once per floor, a hit that would kill you is absorbed instead. It only works when you have no soul hearts.
+- The costume bursts into ghosts: every enemy within 140 px takes 4 times your Damage (Ghost type).
+- You get 1.5 seconds of invulnerability after it.
+- It is ready again on the next floor.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

@@ -14,6 +14,8 @@ details:
   value: Fire, lava, acid, gas, spores, webs, sleep, water, sand and energy
 - label: Time
   value: They fade in a quarter of a second
+- label: Shots
+  value: All yours, companions included
 icon: items-ps/key-item/squirt-bottle.png
 sprite: true
 names:
@@ -49,3 +51,12 @@ names:
     desc: 你的彈會撲滅敵人留下的火焰、水窪、毒氣和蛛網
 ---
 Your shots put out fire, puddles, gas and webs left by enemies
+
+## How it works
+- When one of your shots flies over one of these [ground effects](../mechanics/efectos_suelo.html), the effect fades away in a quarter of a second instead of lasting.
+- The shot isn't stopped: one shot can put out several patches on its way.
+- Your companions' shots put them out too.
+- In co-op it only works with the shots of the player who holds it.
+
+## Stacking
+- A second copy does nothing more.

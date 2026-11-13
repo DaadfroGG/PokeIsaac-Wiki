@@ -9,6 +9,15 @@ pool_weight: 2
 stats:
 - text: Damage +0.3
   good: true
+details:
+- label: Chance
+  value: 33 % per hit, +2 % per Luck
+- label: Poison
+  value: 2.5 seconds
+- label: Bonus
+  value: +50 % damage against poisoned enemies
+- label: Damage
+  value: '+0.3'
 icon: items/poison-barb.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 每3發有1發會使敵人中毒；中毒的敵人受到的傷害+50%
 ---
 1 in 3 shots poisons; poisoned enemies take +50% damage
+
+## How it works
+
+- Adds +0.3 Damage.
+- Each hit has a 33 % chance (+2 % per Luck) to poison the enemy for 2.5 seconds. See [Status effects](../mechanics/estados.html).
+- Your hits deal +50 % damage to enemies that are poisoned (from any source).
+- This item no longer appears in the regular item pools.
+
+## Stacking
+
+- Each copy adds +0.3 Damage. The poison chance and the +50 % are not increased by extra copies.

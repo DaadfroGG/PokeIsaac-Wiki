@@ -12,6 +12,11 @@ pool_weight: 1
 stats:
 - text: +99 Pokédollars
   good: true
+details:
+- label: Pokédollars
+  value: Remplit jusqu'au plafond du porte-monnaie
+- label: Plafond
+  value: 99 (150 dès l'étage 10, 250 dès l'étage 30)
 icon: items-ps/valuable-item/pearl.png
 sprite: true
 names:
@@ -47,3 +52,11 @@ names:
     desc: 補滿寶可幣（最多99）
 ---
 Vous remplit de Pokédollars (jusqu'à 99)
+
+## Fonctionnement
+- Dès que vous le ramassez, vous gagnez 99 Pokédollars, dans la limite de votre porte-monnaie : 99, puis 150 dès l'étage 10 et 250 dès l'étage 30.
+- Tôt dans la partie, il remplit donc votre porte-monnaie ; plus tard, il vaut moins qu'un porte-monnaie plein.
+- Il n'a aucun autre effet.
+
+## Cumul
+- Un autre exemplaire donne à nouveau 99 Pokédollars à la prise, dans la limite du porte-monnaie.

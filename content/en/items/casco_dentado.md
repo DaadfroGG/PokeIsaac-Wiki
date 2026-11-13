@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Radius
+  value: 120 px
+- label: Damage
+  value: Twice your Damage (at least 3)
 icon: items-ps/hold-item/rocky-helmet.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，對附近所有敵人造成傷害
 ---
 When you get hit, you damage all nearby enemies
+
+## How it works
+- After you take a hit, a burst hits every enemy within 120 px of you, bosses included.
+- Each one takes twice your Damage (at least 3).
+- It triggers on every hit and has no cooldown. It does not trigger if the hit was blocked or dodged.
+- These are plain damage hits: they don't apply your shot effects or type bonuses.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

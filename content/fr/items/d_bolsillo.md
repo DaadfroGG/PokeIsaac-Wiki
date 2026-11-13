@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Ramassable
-  value: 35 % par coup
+  value: 35 % par coup reçu
+- label: Possibles
+  value: Pièce 40 %, clé, bombe ou demi-cœur 20 % chacun
+- label: Jamais
+  value: Si le coup vous tue
 icon: items-ps/storage/battle-pocket.png
 sprite: true
 names:
@@ -47,3 +51,11 @@ names:
     desc: 受到攻擊時，有時會掉出一個可拾取物
 ---
 Quand vous êtes touché, vous perdez parfois un objet ramassable
+
+## Fonctionnement
+- Chaque fois qu'un ennemi ou un projectile vous blesse, il y a 35 % de chances qu'un ramassable tombe près de vous (à moins de 30 px). La Chance ne change pas cette probabilité.
+- Le ramassable est tiré au hasard parmi cinq cases égales : pièce, pièce, clé, bombe, demi-cœur. Par coup reçu, vous obtenez donc : une pièce environ 14 % du temps, et une clé, une bombe ou un demi-cœur environ 7 % chacun.
+- Il ne se déclenche pas si le coup est fatal.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Poche de Combat n'augmente ni la chance ni le nombre de ramassables.

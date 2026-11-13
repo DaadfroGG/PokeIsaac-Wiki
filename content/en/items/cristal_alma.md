@@ -8,6 +8,9 @@ tier: 1
 pools:
 - devil
 pool_weight: 2
+details:
+- label: Soul hearts
+  value: +3 on pickup
 icon: items-ps/hold-item/soul-dew.png
 sprite: true
 names:
@@ -43,3 +46,10 @@ names:
     desc: 三顆靈魂之心
 ---
 Three soul hearts
+
+## How it works
+- The moment you pick it up you gain 3 [soul hearts](../mechanics/corazones_alma.html), up to the limit of 6 soul hearts.
+- It has no other effect: it does not heal you or raise your maximum health.
+
+## Stacking
+- Each copy gives 3 more soul hearts when you pick it up, as long as you are below the limit of 6.

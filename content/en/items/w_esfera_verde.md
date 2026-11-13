@@ -10,13 +10,21 @@ pools:
 pool_weight: 1
 details:
 - label: Charge
-  value: 2.4 times your fire rate (max 1.2 s)
+  value: 2.4 × your delay between shots, 0.43 to 1.2 s (min 25 % to release)
 - label: Earthquake
-  value: From ×1 to ×3.4 your damage, radius 82 to 200 px; only to enemies that do not fly
+  value: ×1 to ×3.4 Damage, radius 82 to 200 px (+10 per Size)
+- label: Hits
+  value: Ground enemies only (flying ones are ignored)
 - label: Stun
-  value: 0.4 s and knockback; breaks nearby objects and rocks
+  value: 0.4 s and knockback; bosses only take damage
+- label: Rings
+  value: 'Up to 3 with multishot: +16 % radius, -12 % damage each'
+- label: Cooldown
+  value: 1.5 × 1.6 × your delay (at least 0.75 s)
+- label: Balance
+  value: ×0.53
 - label: If not in charge
-  value: Every 4 s of attacking, a small shake (×1.5, 80 px)
+  value: 'After 4 s of firing with enemies in the room: shake ×1.5, 80 px'
 icon: items-ps/key-item/jade-orb.png
 sprite: true
 names:
@@ -52,5 +60,19 @@ names:
     desc: 按住射擊鍵蓄力再放開：地震會撼動你周圍的地面，對不會飛行的敵人造成傷害、暈眩並將其推開
 ---
 Hold fire to charge and release it: an earthquake shakes the ground around you and damages, stuns and pushes enemies that do not fly
+
+## How it works
+- It is a **weapon**: it only works as your equipped weapon ([Equipped weapon](../mechanics/arma_principal.html)); with another main weapon it only adds the small effect listed under "If not in charge". Your normal shots are not replaced.
+- Balance: while this is your equipped weapon, the damage it deals is further multiplied by ×0.53. The multipliers below are applied before it.
+- After each attack the weapon is ready again after 2.4 times your normal delay between shots, and never less than 0.75 s.
+- Crits, burn, poison, slow and the other effects of your items apply to its hits, and its hits carry your Pokémon's type. See [Weapons and shot effects](../mechanics/armas.html).
+- Hold the weapon key to charge (2.4 × your delay between shots, 0.43 to 1.2 s for a full charge), release to shake the ground (at least 25 % charge). The quake is centred on you.
+- Radius 82 to 200 px (+10 per Size) and damage ×1 to ×3.4 of your Damage, depending on the charge.
+- Only enemies that do not fly are hit. Non-boss enemies are also stunned for 0.4 s and pushed back; bosses only take the damage. It breaks crates in 80 % of the radius and rocks in 35 % of it.
+- Multishot adds rings (up to 3): each one 0.15 s after the previous, with +16 % radius and -12 % damage.
+- **If not in charge:** after 4 s of firing your normal shots with enemies in the room, a small quake (80 px radius, ×1.5 Damage) hits around you.
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

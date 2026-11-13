@@ -15,6 +15,8 @@ stats:
 details:
 - label: Cœur d'âme
   value: 5 % par ennemi vaincu, +0,5 % par point de Chance
+- label: Stat
+  value: Dégâts +0,7
 icon: items/spell-tag.png
 sprite: true
 names:
@@ -50,3 +52,11 @@ names:
     desc: 傷害+0.7；敵人有時會掉落靈魂之心
 ---
 Dégâts +0,7 ; les ennemis lâchent parfois des cœurs d'âme
+
+## Fonctionnement
+- Chaque ennemi que vous battez (boss compris) a 5 % de chances, plus 0,5 % par point de Chance, de lâcher un [cœur d'âme](../mechanics/corazones_alma.html). Avec 10 de Chance, c'est 10 %.
+- Ce tirage s'ajoute aux butins normaux de l'ennemi.
+- Le Dégâts +0,7 est un bonus de stat normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
+
+## Cumul
+- Un deuxième exemplaire ajoute encore Dégâts +0,7, mais la chance de cœur d'âme reste la même.

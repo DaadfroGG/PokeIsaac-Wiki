@@ -12,7 +12,9 @@ details:
 - label: Candy
   value: Every 12 enemies defeated
 - label: Damage
-  value: +0.15 per candy (max. 10)
+  value: +0.15 per candy (max. 10, so +1.5)
+- label: Duration
+  value: Rest of the run
 icon: items-ps/evo-item/berry-sweet.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 每擊倒12個敵人就會得到一顆糖果：本局剩餘時間傷害+0.15（最多+1.5）。
 ---
 Every 12 enemies you defeat give you a candy: +0.15 damage for the rest of the run (up to +1.5).
+
+## How it works
+- It counts the enemies you defeat from the moment you have it. Every 12th one gives you a candy.
+- Each candy is Damage +0.15 for the rest of the run, up to 10 candies (120 enemies): +1.5.
+- Bosses count like any other enemy.
+- The bonus is a normal flat Damage bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+
+## Stacking
+- A second copy does nothing more: same count, same cap.

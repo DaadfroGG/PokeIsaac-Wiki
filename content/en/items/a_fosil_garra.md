@@ -10,8 +10,14 @@ pools:
 pool_weight: 2
 charge: 1
 details:
+- label: Cost
+  value: Half a heart (a soul half-heart first)
 - label: Damage
-  value: ×1.4 per use (max. ×2)
+  value: ×1.4 per use (×1.96 after two)
+- label: Per room
+  value: 2 uses
+- label: Charge
+  value: None needed
 icon: items-ps/fossil/claw.png
 sprite: true
 names:
@@ -47,3 +53,14 @@ names:
     desc: 失去半顆愛心，並在這個房間造成多40 %的傷害（最多兩次；無需充能）
 ---
 You lose half a heart and deal 40 % more damage in this room (up to twice; no charge)
+
+## How it works
+- Each use costs half a heart and needs no charge. If you have [soul hearts](../mechanics/corazones_alma.html), it takes half a soul heart instead. Paying this way doesn't count as being hit.
+- In the room where you use it, your Damage is multiplied by 1.4, then by 1.4 again after the second use (×1.96). A third use in the same room is refused.
+- It can't be used if it would kill you: with no soul heart and only half a heart left, it is refused.
+- The bonus belongs to the room: it stops when you leave and comes back if you return to that room, as long as you haven't used it somewhere else since.
+- It is a multiplier on your Damage stat (shown on the HUD), so it follows the [diminishing returns](../mechanics/rendimientos.html) on multipliers (full up to ×2.3, total capped at ×3).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): one press pays twice and gives both boosts at once (×1.96).

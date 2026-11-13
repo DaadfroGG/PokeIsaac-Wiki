@@ -8,6 +8,11 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Wrap
+  value: Once per shot
+- label: Exit
+  value: Opposite side of the room
 icon: items-ps/key-item/auroraticket.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 你的彈碰到牆壁時會從房間另一側飛出
 ---
 Your shots that reach a wall come out on the opposite side of the room
+
+## How it works
+- A shot that reaches the edge of the room comes out on the opposite side and keeps flying instead of disappearing. This happens once per shot.
+- If you also have Bounce, the shot bounces first and only wraps when it has no bounces left. Child shots (fragments, splits) do not wrap.
+
+## Stacking
+- It does not stack: a second copy does not allow a second wrap.

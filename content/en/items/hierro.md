@@ -15,6 +15,11 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Hearts
+  value: +1 heart (and heals it)
+- label: Strong hits
+  value: 1 half heart less
 icon: items/iron.png
 sprite: true
 names:
@@ -50,3 +55,11 @@ names:
     desc: 愛心 +1；受到強力攻擊時少扣半顆愛心
 ---
 Heart +1; strong hits take half a heart less
+
+## How it works
+- On pickup: +1 max heart, and that heart is filled.
+- Any hit that would cost you a full heart or more (2 half hearts or more) costs half a heart less. Hits of half a heart are not reduced.
+- The reduction applies before soul hearts absorb the damage.
+
+## Stacking
+- The max heart is added again with each copy. The damage reduction does not stack.

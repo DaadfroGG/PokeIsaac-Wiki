@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Speed +0.3
   good: true
+details:
+- label: Damage
+  value: '+0.6'
+- label: Speed
+  value: '+0.3'
 icon: items-ps/av-candy/mighty.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 傷害+、速度+
 ---
 Damage + and speed +
+
+## How it works
+- The +0.6 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
+- Speed +0.3 has no diminishing returns. Your speed never goes below 1.6.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

@@ -17,6 +17,14 @@ stats:
 details:
 - label: Explosion
   value: ×0.8 damage, 55 px; poisons only if you are Poison-type
+- label: Fire rate
+  value: -10 (0.167 s more between shots)
+- label: Damage
+  value: '+1'
+- label: Range
+  value: ×0.8
+- label: Devil price
+  value: 1 heart container (sometimes 3 soul hearts)
 icon: items-ps/hold-item/toxic-orb.png
 sprite: true
 names:
@@ -54,3 +62,19 @@ names:
 Your shots fly in an arc and explode on landing (they don't hurt you; they poison if your Pokémon is Poison-type); you shoot slower
 
 {{< clip >}}
+
+## How it works
+- Your shots fly in a high arc: they fly over rocks and travel 20 % less far.
+- A shot explodes when it lands at the end of its range, or as soon as it touches an enemy (that enemy takes the shot and the explosion).
+- The explosion hurts every enemy within 55 px (+6 px for each item that makes shots bigger) for 80 % of the shot's damage. It uses your type and can inflict your shot statuses. It hurts bosses too.
+- If your Pokémon is [Poison](../types/poison.html)-type, every enemy caught in the explosion is poisoned for 2.5 s.
+- The explosion never hurts you. It breaks rocks and props close to it and opens secret rooms whose wall it reaches.
+- The fire rate penalty counts in full (slowdowns skip the [diminishing returns](../mechanics/rendimientos.html)). The +1 Damage is a normal flat bonus.
+- The [Smooth Rock](m_roca_suave.html) bounces don't work on arcing shots.
+- With a special weapon instead of normal shots, each hit has a 25 % chance (+1 % per Luck) to cause the same explosion, for 80 % of your Damage.
+
+## Where to find it
+- Treasure rooms and the Distortion Room ([Darkrai's deal](../rooms/devil.html)): there it costs 1 heart container, or sometimes 3 soul hearts.
+
+## Stacking
+- The arc and the explosion don't change with a second copy. The stats are added again: another -10 fire rate and +1 Damage.

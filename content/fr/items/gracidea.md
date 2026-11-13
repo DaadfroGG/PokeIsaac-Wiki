@@ -8,6 +8,13 @@ tier: 1
 pools:
 - angel
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Une salle normale terminée sur trois
+- label: Récompense
+  value: 1 cœur d'âme
+- label: Plafond
+  value: 6 cœurs d'âme au total
 icon: items-ps/key-item/gracidea.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 每清空三個房間獲得一顆靈魂之心
 ---
 Un cœur d'âme toutes les trois salles nettoyées
+
+## Fonctionnement
+- Une salle normale terminée sur trois (salles de combat uniquement, pas les salles de boss) vous donne un [cœur d'âme](../mechanics/corazones_alma.html) entier.
+- Le compte se poursuit d'un étage à l'autre.
+- Il n'ajoute plus rien quand vous portez déjà 6 cœurs d'âme.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -8,6 +8,15 @@ tier: 1
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Le premier coup reçu dans chaque salle
+- label: Oiseaux
+  value: 2 Roucool
+- label: Durée
+  value: Jusqu'à ce que vous quittiez la salle
+- label: Dégâts
+  value: Vos Dégâts (au moins 2)
 icon: items-ps/fossil/plume.png
 sprite: true
 names:
@@ -43,3 +52,11 @@ names:
     desc: 在每個房間第一次受到攻擊時，會叫來兩隻波波攻擊敵人
 ---
 Le premier coup que vous recevez dans chaque salle appelle deux Roucool qui attaquent les ennemis
+
+## Fonctionnement
+- Le premier coup qui vous blesse dans chaque salle appelle deux Roucool à côté de vous (un de chaque côté).
+- Ils attaquent les ennemis avec vos Dégâts (au moins 2) jusqu'à ce que vous quittiez la salle, puis disparaissent. Ils ne comptent pas dans votre limite de [compagnons](../mechanics/companeros.html).
+- Cela marche une fois par salle. Nouvelle salle, nouvel appel.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

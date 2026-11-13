@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Visée auto
+  value: Verrouille l'ennemi le plus proche et tire sans arrêt
+- label: Changer de cible
+  value: Appuyer sur une touche de tir vers un autre ennemi
 icon: items-ps/battle-item/x-accuracy.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 準星會自動鎖定最近的敵人，只要還有敵人你就會不停朝它射擊；用射擊鍵可以換一個目標
 ---
 Une cible se verrouille seule sur l'ennemi le plus proche et vous tirez dessus sans arrêt tant qu'il reste des ennemis ; les touches de tir en choisissent un autre
+
+## Fonctionnement
+- Un marqueur se verrouille tout seul sur l'ennemi le plus proche, et vous tirez dessus tant qu'il reste des ennemis dans la salle, même sans appuyer sur une touche de tir.
+- Appuyer sur une touche de tir choisit un autre ennemi : celui qui est le mieux aligné avec cette direction (et proche). Le marqueur le suit ensuite jusqu'à sa mort, puis revient au plus proche.
+- Vos tirs sont visés tout droit sur l'ennemi marqué.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien.

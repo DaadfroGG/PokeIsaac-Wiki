@@ -11,7 +11,9 @@ pools:
 pool_weight: 1
 details:
 - label: Compagnons
-  value: Maximum 3 > 5
+  value: Limite 3 > 5
+- label: Compagnons en attente
+  value: Sortent du Sac
 icon: items-ps/key-item/apricorn-box.png
 sprite: true
 names:
@@ -49,3 +51,15 @@ names:
 Vous pouvez avoir 2 compagnons de plus à la fois (jusqu'à 5) ; ceux qui attendaient dans le Sac sortent
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Porte le nombre de compagnons simultanés de 3 à 5.
+- Les compagnons qui attendaient dans le Sac parce que votre équipe était pleine sortent aussitôt, jusqu'à la nouvelle limite.
+- Sans elle, aucune Ball de compagnon n'apparaît tant que vous êtes à la limite.
+- Si la Boîte est perdue, les compagnons en trop retournent dans le Sac.
+- Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Une deuxième Boîte n'apparaît normalement jamais, car les objets que vous avez déjà ne sont plus proposés. Si vous en obtenez une quand même (en copiant un objet, par exemple), la limite passe seulement de 5 à 6, le maximum absolu.

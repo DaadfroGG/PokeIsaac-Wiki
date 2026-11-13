@@ -12,6 +12,11 @@ pool_weight: 2
 stats:
 - text: Portée +150
   good: true
+details:
+- label: Portée
+  value: +150 px
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items-ps/medicine/genius-wing.png
 sprite: true
 names:
@@ -47,3 +52,9 @@ names:
     desc: 射程++
 ---
 Portée ++
+
+## Fonctionnement
+- Portée +150 px : ajoutée telle quelle à la distance que parcourent vos tirs, sans rendement décroissant. La portée ne peut jamais descendre sous 120 px.
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

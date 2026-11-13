@@ -13,7 +13,7 @@ details:
 - label: Per hit
   value: +8 % against that enemy
 - label: Cap
-  value: +72 % (10 hits)
+  value: +72 % (10th hit)
 icon: items/dragon-fang.png
 sprite: true
 names:
@@ -49,3 +49,13 @@ names:
     desc: 撕裂：對同一個敵人的每次攻擊都比上一次多8 %傷害（最多+72 %）
 ---
 Rend: each hit on the same enemy deals 8 % more than the last (up to +72 %)
+
+## How it works
+
+- Each enemy keeps its own counter of how many times you have hit it. Your 1st hit deals normal damage, the 2nd +8 %, the 3rd +16 % and so on, up to +72 % from the 10th hit.
+- The counter belongs to the enemy and does not reset when you stop firing; it ends when the enemy dies.
+- It is applied per hit, so it does not show on the Damage stat and is not limited by the ×3 cap on damage multipliers.
+
+## Stacking
+
+- A second copy changes nothing.

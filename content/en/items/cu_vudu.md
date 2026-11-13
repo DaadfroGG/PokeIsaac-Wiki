@@ -13,7 +13,7 @@ stats:
   good: false
 details:
 - label: When you defeat an enemy
-  value: '30%: another loses 25% of its health'
+  value: '30 %: another enemy loses 25 % of its current health'
 - label: Max health
   value: -1 heart
 icon: items-ps/hold-item/spell-tag.png
@@ -51,3 +51,13 @@ names:
     desc: When you defeat an enemy, 30% of the time another enemy in the room loses 25% of its current health. Max health -1 heart.
 ---
 When you defeat an enemy, 30% of the time another enemy in the room loses 25% of its current health. Max health -1 heart.
+
+## How it works
+
+- Costs 1 heart container.
+- Each time you defeat an enemy (not a summoned minion), there is a 30 % chance that one other random enemy in the room, a boss included, loses 25 % of its current health (it cannot be killed this way, it keeps at least 1).
+- It does nothing if no other enemy is alive.
+
+## Stacking
+
+- Each copy costs another heart; the 30 % curse effect is not increased.

@@ -9,8 +9,14 @@ pools:
 - treasure
 pool_weight: 2
 details:
+- label: Compagnon
+  value: Apitrini (Insecte)
 - label: Abeilles
   value: Une toutes les 4 s, jusqu'à 3
+- label: Dégâts d'une abeille
+  value: 2 × vos Dégâts (au moins 2), par coup
+- label: Vie d'une abeille
+  value: 10 s, ou 2 coups
 icon: items-ps/ball/net.png
 sprite: true
 names:
@@ -48,3 +54,14 @@ names:
 Un Apitrini vous accompagne et, en combat, libère des petites abeilles qui attaquent les ennemis
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Apitrini vous suit et ne tire pas lui-même. Tant qu'il y a des ennemis, il lâche une petite abeille toutes les 4 secondes, jusqu'à 3 à la fois.
+- Une abeille fonce sur l'ennemi le plus proche (à moins de 600 px) et lui inflige 2 fois vos Dégâts (au moins 2), en dégâts de type Insecte. Elle recule un peu après son premier coup et disparaît après le deuxième, ou au bout de 10 secondes.
+- Les dégâts des abeilles dépendent de votre stat de Dégâts.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément.

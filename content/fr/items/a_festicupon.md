@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Coût
+  value: 1 Pokédollar par essai
+- label: Charge
+  value: Aucune
+- label: Gain
+  value: 68 % (fixe, la Chance ne change rien)
 icon: items-ps/key-item/festival-ticket.png
 sprite: true
 names:
@@ -56,3 +63,12 @@ Machine à sous de poche : payez 1 Pokédollar et gagnez parfois un bonus (sans
 | Cœur | 6 % |
 | Cœur d'âme | 3 % |
 | Pépite | 1 % |
+
+## Fonctionnement
+- Chaque utilisation coûte 1 Pokédollar ; il n'a jamais besoin de charge, vous pouvez donc jouer autant que vous voulez tant que vous avez de l'argent. Sans Pokédollar, il est inutilisable.
+- Le lot tombe au sol juste sous vous. Les chances ci-dessus sont fixes : la Chance ne les change pas.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : chaque utilisation joue deux fois, en payant 1 Pokédollar par essai.

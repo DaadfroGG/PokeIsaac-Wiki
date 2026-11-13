@@ -10,8 +10,12 @@ pools:
 - secret
 pool_weight: 1
 details:
+- label: Max health
+  value: 1 heart (when picked up)
 - label: Lives
   value: '9'
+- label: On revive
+  value: 1 heart, 2.5 s invulnerable
 icon: items-ps/other-item/fluffy-tail.png
 sprite: true
 names:
@@ -47,3 +51,12 @@ names:
     desc: 你只會剩下一顆愛心，但倒下時會復活，最多9次
 ---
 You're left with a single heart, but when you fall you come back to life, up to 9 times
+
+## How it works
+- On pickup your max health drops to a single heart, and you get 9 lives.
+- Each time you would die, you come back to life with 1 heart and 2.5 seconds of invulnerability, and lose one life. A message tells you how many are left.
+- You can get hearts again later (pickups, items): max health only drops the moment you pick the item up.
+- If you also have [Max Revive](d_revivir_maximo.html), it is used first.
+
+## Stacking
+- A second copy does not give 9 more lives and does not lower your health again.

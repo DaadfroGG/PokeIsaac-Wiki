@@ -8,7 +8,9 @@ tier: 1
 pool_weight: 2
 details:
 - label: Confusion
-  value: 12 % per hit, 3 s
+  value: 12 % per hit (+1 % per Luck), 3 s
+- label: Bosses
+  value: Never confused
 icon: items-ps/incense/rose.png
 sprite: true
 names:
@@ -44,3 +46,11 @@ names:
     desc: 你的射擊有時會使敵人混亂：敵人會漫無目的地亂走，幾秒內不會攻擊
 ---
 Sometimes your shots confuse: the enemy wanders aimlessly and doesn't attack for a few seconds
+
+## How it works
+- Each hit on a non-boss enemy has a 12 % chance (+1 % per Luck) to confuse it for 3 s.
+- A confused enemy cannot attack: it wanders in random directions at 70 % of its speed, changing direction every 0.5 s.
+- Fear takes priority over confusion if both are on the same enemy.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance or duration.

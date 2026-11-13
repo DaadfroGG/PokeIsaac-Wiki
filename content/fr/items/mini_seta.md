@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Vitesse
+  value: +0,4
+- label: Taille
+  value: ×0,8 (zone touchable plus petite)
 icon: items-ps/valuable-item/tiny-mushroom.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 你會縮小：更難被擊中，速度+
 ---
 Vous rapetissez : plus difficile à toucher et vitesse +
+
+## Fonctionnement
+- Votre Pokémon rétrécit à 80 % de sa taille. La zone où les tirs et les ennemis peuvent vous toucher rétrécit avec lui : les attaques vous ratent plus souvent.
+- Cette zone a une taille minimale : les tout petits Pokémon ne descendent pas en dessous.
+- Vitesse +0,4, toujours active.
+- Avec le [Gros Champi](seta_grande.html) (×1,2), les deux tailles se multiplient : ×0,96, presque votre taille normale.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours ×0,8 et +0,4.

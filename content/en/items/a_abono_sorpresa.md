@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Coin
+  value: 25 %
+- label: Half heart, heart, key, bomb, soul heart, nugget
+  value: 12.5 % each
+- label: Not changed
+  value: Shop items, chests
 icon: items-ps/mulch/surprise.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 將房間地上的拾取物隨機換成其他東西
 ---
 Swaps the pickups on the room's floor for random ones
+
+## How it works
+- Every free pickup lying on the floor of the room is replaced, in the same spot, by a random one.
+- Each new pickup is drawn separately: coin 25 %, then half heart, heart, key, bomb, soul heart and nugget 12.5 % each. Luck doesn't change these odds.
+- Shop items, anything with a price and chests are left alone.
+- If there is nothing to affect, nothing happens and you keep the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): the pickups are rerolled twice; you keep the second result.

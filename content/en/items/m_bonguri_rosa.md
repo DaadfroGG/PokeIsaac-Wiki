@@ -7,8 +7,12 @@ family: module
 tier: 2
 pool_weight: 2
 details:
-- label: Spell Tag
-  value: 12 % per hit, 5 s
+- label: Charm
+  value: 12 % per hit (+1 % per Luck), 5 s
+- label: Bosses
+  value: Never charmed
+- label: Charm damage
+  value: 3× its attack damage (min. 2) every 0.5 s
 icon: items-ps/apricorn/pink.png
 sprite: true
 names:
@@ -44,3 +48,11 @@ names:
     desc: 有時會迷惑一個敵人：幾秒內它會站在你這邊對抗其他敵人
 ---
 Sometimes you charm an enemy: for a few seconds it fights on your side against the others
+
+## How it works
+- Every hit on a non-boss enemy has a 12 % chance (+1 % per point of Luck) to charm it for 5 s (see [status effects](../mechanics/estados.html)). A charmed enemy stops attacking you and no longer hurts you on contact.
+- It walks to the nearest uncharmed enemy within 600 px and attacks it: every 0.5 s while in contact it deals 3 times its own attack damage (at least 2) to it.
+- An enemy that is already charmed cannot be charmed again until the charm ends. If it has no target, it just stands still.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance or the duration.

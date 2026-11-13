@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Destination
+  value: The spot farthest from enemies
+- label: Condition
+  value: At least one enemy alive
 icon: items-ps/hold-item/eject-button.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，會瞬間移動到遠離敵人的地方
 ---
 When you get hit, you teleport away from enemies
+
+## How it works
+- After you take a hit, you teleport to the free spot of the room that is farthest from all living enemies. Spots on hazards (puddles, acid, lava...) and rocks are skipped.
+- You keep the usual invulnerability after the hit while you teleport.
+- It does nothing if the hit killed you or if no enemy is left in the room.
+- It has no cooldown: it triggers on every hit.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

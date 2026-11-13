@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Cadence +
   good: true
+details:
+- label: Cadence
+  value: -2 (plus rapide, par exemplaire)
+- label: Attente
+  value: Jusqu'à 4 s
+- label: Libération
+  value: Quand vous arrêtez de tirer
 icon: items-ps/partner-gift/stretchy-spring.png
 sprite: true
 names:
@@ -48,3 +55,11 @@ names:
 Pendant que vous tirez, vos tirs restent figés dans l'air ; en relâchant, ils partent tous à la fois
 
 {{< clip >}}
+
+## Fonctionnement
+- Tant que vous continuez à tirer, vos tirs ralentissent et s'immobilisent en l'air peu après leur départ (environ 0,1 s). Ils restent là, toujours dangereux.
+- Quand vous arrêtez de tirer, ou après 4 s en suspens, tous repartent d'un coup avec leur vitesse et leur direction d'origine.
+- Un tir en suspens garde au moins la moitié de sa portée. Les tirs suspendus forment un mur de tirs ; les tirs des compagnons ne sont pas touchés.
+
+## Cumul
+- L'effet de suspension ne change pas ; le bonus de cadence s'ajoute à chaque exemplaire.

@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Duration
+  value: 6 s
+- label: Speed
+  value: '+2.2'
 icon: items-ps/key-item/bicycle.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 6秒內速度極快
 ---
 Very high speed for 6 seconds
+
+## How it works
+- For 6 seconds you get +2.2 Speed, a very large boost.
+- Nothing else changes: you can still be hit as usual.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the timer just restarts at 6 seconds.

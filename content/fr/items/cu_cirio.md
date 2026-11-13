@@ -10,9 +10,11 @@ pools:
 pool_weight: 1
 details:
 - label: En entrant dans une salle
-  value: Un ennemi maudit (+60 % de vie, +½ cœur de dégâts)
-- label: Quand il tombe
+  value: Un ennemi maudit (+60 % de PV, +½ cœur de dégâts)
+- label: À sa mort
   value: Cœur d'âme
+- label: Jamais
+  value: Salles de boss, salles déjà nettoyées
 icon: items-ps/hold-item/flame-orb.png
 sprite: true
 names:
@@ -48,3 +50,11 @@ names:
     desc: When you enter a room with enemies, a random one is cursed (+60% health and +½ heart of damage). When it falls, it drops a soul heart.
 ---
 En entrant dans une salle avec des ennemis, l'un d'eux, au hasard, est maudit (+60 % de vie et +½ cœur de dégâts). En tombant, il laisse un cœur d'âme.
+
+## Fonctionnement
+- Quand vous entrez dans une salle qui contient encore des ennemis, un ennemi non-boss au hasard est maudit : ses PV sont multipliés par 1,6 et ses dégâts de contact augmentent d'un demi-cœur. Un message l'annonce.
+- Cela se produit une fois par salle, jamais dans une salle de boss ni dans une salle déjà nettoyée.
+- Quand l'ennemi maudit est vaincu, il lâche un [cœur d'âme](../world/soul.html), quelle que soit la façon dont il meurt.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Cierge Funèbre ne maudit pas un deuxième ennemi.

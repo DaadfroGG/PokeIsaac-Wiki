@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Copies
+  value: 1 random pickup from the floor
+- label: Not copied
+  value: Shop items, chests
 icon: items-ps/medicine/pp-up.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 複製地上一個隨機的掉落物
 ---
 Duplicates a random pickup on the floor
+
+## How it works
+- One free pickup lying on the floor of the room, chosen at random, is copied; the copy appears right next to it.
+- Shop items, anything with a price and chests can't be chosen.
+- If there is nothing to affect, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): two pickups are copied (each drawn separately, so it can be the same one or the first copy).

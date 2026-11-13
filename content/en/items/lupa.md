@@ -6,6 +6,11 @@ category: shot
 family: core
 tier: 3
 pool_weight: 2
+details:
+- label: Crit chance
+  value: +8 % (per copy)
+- label: Crit damage
+  value: ×3 instead of ×2
 icon: items/scope-lens.png
 sprite: true
 names:
@@ -41,3 +46,11 @@ names:
     desc: 會心一擊，且會心一擊造成x3傷害
 ---
 Critical hits, and crits deal x3
+
+## How it works
+- It adds +8 % chance of a critical hit (see [critical hits](../mechanics/criticos.html)) and raises the damage of every critical hit from ×2 to ×3.
+- The ×3 applies to all your crits, whatever their source (crit chance from Fighting/Dark types, Luck, other items).
+
+## Stacking
+- +8 % crit chance is added for each copy.
+- The bonus to crit damage is not cumulative: a second copy does not raise it beyond ×3.

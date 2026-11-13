@@ -18,6 +18,17 @@ stats:
   good: false
 - text: Heals 1 heart
   good: true
+details:
+- label: Damage
+  value: '+0.7'
+- label: Max health
+  value: +1 heart
+- label: Heal
+  value: 1 heart on pickup
+- label: Speed
+  value: −0.2
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/curry-ingredient/mixed-mushrooms.png
 sprite: true
 names:
@@ -53,3 +64,11 @@ names:
     desc: 傷害+0.7、愛心+1，速度下降
 ---
 Damage +0.7 and heart +1, speed -
+
+## How it works
+- Damage +0.7: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Max health +1 heart: raises your maximum health by 1 heart (up to the limit of 12 hearts; soul hearts are separate). It also heals 1 heart the moment you pick it up. At 12 hearts the maximum no longer grows, but you are still healed.
+- Speed −0.2: subtracted from your movement speed in full. Your speed can never drop below the minimum of 1.6.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

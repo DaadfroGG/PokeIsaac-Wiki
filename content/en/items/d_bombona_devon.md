@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: Active item effect triggers twice
+- label: Extra charge cost
+  value: None
+- label: Exception
+  value: DNA Splicers
 icon: items-ps/key-item/devon-scuba-gear.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 主動道具的效果會發動兩次
 ---
 Your active item triggers its effect twice
+
+## How it works
+- When you use your active item, its effect happens a second time right away, for free: no extra charge is spent.
+- The second activation only happens if the first one worked. Healing items heal twice, items that spawn things spawn them twice, and so on.
+- The [DNA Splicers](punta_adn.html) are the exception and only trigger once.
+
+## Stacking
+- It is an on/off effect: a second Devon Scuba Gear does not trigger a third time.
+- It works with the [Cell Battery](d_pila.html) and the [Devon Goods](d_piezas_devon.html): they affect charge, not the number of triggers.

@@ -11,6 +11,15 @@ pool_weight: 2
 stats:
 - text: Portée +40
   good: true
+details:
+- label: Portée
+  value: '+40'
+- label: Attraction
+  value: Ennemis à moins de 100 px d'un tir
+- label: Force
+  value: Environ 40 px par seconde
+- label: Boss
+  value: Jamais attirés
 icon: items-ps/hold-item/electric-seed.png
 sprite: true
 names:
@@ -46,3 +55,12 @@ names:
     desc: 你的彈會把沿途附近的敵人吸過去
 ---
 Vos tirs attirent les ennemis proches sur leur passage
+
+## Fonctionnement
+- Pendant qu'un tir vole, chaque ennemi à moins de 100 px est tiré vers lui, à environ 40 px par seconde.
+- Ça marche sur tous vos tirs à la fois : une salve de plusieurs tirs attire plus fort les ennemis proches de plusieurs tirs.
+- Les boss ne sont jamais attirés. Les ennemis au sol s'arrêtent quand même contre les murs et les rochers ; les ennemis volants non.
+- L'attraction n'inflige aucun dégât en elle-même.
+
+## Cumul
+- L'attraction n'est pas plus forte avec un deuxième exemplaire. Les +40 de Portée s'ajoutent à nouveau.

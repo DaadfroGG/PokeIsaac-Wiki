@@ -10,7 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Statitik
-  value: 10 % par coup, jusqu'à 4
+  value: 10 % par coup (+1 % par point de Chance), 4 max. à la fois
+- label: Morsure
+  value: 2× vos Dégâts (au moins 2), type Insecte
+- label: Durée
+  value: 2 morsures ou 10 s, disparaît quand vous quittez la salle
 icon: items-ps/valuable-item/balm-mushroom.png
 sprite: true
 names:
@@ -46,3 +50,13 @@ names:
     desc: 有時命中敵人時會孵出一隻電電蟲攻擊其他敵人（最多四隻）
 ---
 Parfois, en touchant un ennemi, un Statitik éclot et attaque les autres (jusqu'à quatre)
+
+## Fonctionnement
+- Chaque fois qu'un de vos tirs touche un ennemi, il y a 10 % de chances (+1 % par point de Chance) qu'un Statitik éclose sur lui.
+- Le Statitik court vers l'ennemi le plus proche (jusqu'à 600 px) et le mord pour deux fois vos Dégâts (au moins 2), en coup de type Insecte. Après sa deuxième morsure, ou au bout de 10 secondes, il disparaît.
+- Vous pouvez avoir au plus 4 Statitik en même temps. Ce sont des [compagnons](../mechanics/companeros.html) temporaires : ils ne comptent pas dans votre limite de compagnons et disparaissent quand vous quittez la salle.
+- N'importe quel coup peut en faire éclore un, y compris les tirs divisés, mais pas les coups de compagnon ni les coups qui ne déclenchent jamais d'objets (rebonds, lianes, éclairs en chaîne).
+- Le [Multi Exp](repartir_exp.html) ne double pas les morsures des Statitik.
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus : même chance, même limite de 4.

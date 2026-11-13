@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 4
+details:
+- label: Carte
+  value: Tout l'étage, salle secrète comprise
+- label: Gain
+  value: 1 cœur d'âme (plafond 6)
 icon: items-ps/key-item/camping-gear.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 你能看到整層地圖（包括祕密房間），並獲得一顆靈魂之心
 ---
 Vous voyez toute la carte de l'étage, salle secrète comprise, et gagnez un cœur d'âme
+
+## Fonctionnement
+- Toute la carte de l'étage est révélée, salle secrète comprise, jusqu'à ce que vous quittiez l'étage.
+- Vous gagnez aussi un [cœur d'âme](../mechanics/corazones_alma.html) (jusqu'à 6).
+- Vous pouvez le réutiliser au même étage rien que pour le cœur d'âme. Il n'est refusé que si la carte est déjà révélée et que vous avez 6 cœurs d'âme ; vous gardez alors la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous gagnez 2 cœurs d'âme.

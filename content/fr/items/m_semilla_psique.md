@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Détection
+  value: Ennemis à moins de 95 px du tir
+- label: Virage
+  value: Seulement s'il faut tourner de plus de 40° environ
+- label: Fois
+  value: Une fois par tir
 icon: items-ps/hold-item/psychic-seed.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 彈從敵人身旁經過時，會突然轉向牠
 ---
 Quand un tir passe près d'un ennemi, il vire brusquement vers lui
+
+## Fonctionnement
+- Quand un tir en vol passe à moins de 95 px d'un ennemi qu'il n'a pas encore touché, il tourne d'un coup pour foncer droit sur lui.
+- Il ne pivote que si l'ennemi est vraiment hors trajectoire (à plus de 40° environ de la direction du tir). Un tir qui va déjà vers l'ennemi continue tout droit.
+- Chaque tir ne pivote qu'une fois. Ensuite il vole tout droit.
+- Ça marche aussi sur les boss.
+- Sans effet sur les tirs en spirale ([Sachet Senteur](m_saquito.html)).
+
+## Cumul
+- Un deuxième exemplaire n'apporte rien de plus.

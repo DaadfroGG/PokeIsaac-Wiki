@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Breaks
+  value: Every rock, crate and barrel in the room
+- label: Needs
+  value: At least one rock
 icon: items-ps/key-item/explorer-kit.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 打破房間內所有岩石、箱子和木桶
 ---
 Breaks all rocks, crates and barrels in the room
+
+## How it works
+- Every rock in the room breaks at once, along with every crate and barrel, wherever they are. What they hide or drop comes out as if you had broken them yourself (see [breakable loot](../mechanics/botin_rompibles.html)).
+- It needs at least one rock in the room: with only crates or barrels, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more.

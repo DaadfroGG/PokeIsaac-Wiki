@@ -11,7 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Healing
-  value: Half a heart every 13 kills
+  value: ½ heart every 13 kills
+- label: Limit
+  value: Items heal at most 30 % of max health per 10 s
 icon: items-ps/fossil/jaw.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 每打倒13個敵人，回復半顆愛心
 ---
 Every 13 enemies you defeat, you recover half a heart
+
+## How it works
+- Every 13th enemy you defeat heals you half a heart. The counter keeps running across rooms and floors.
+- The heart is only given if you are missing health; the kill still counts toward the 13 when you are at full health.
+- This healing counts toward the limit on item healing: items can heal at most 30 % of your max health (minimum 2 hearts) per 10 seconds.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

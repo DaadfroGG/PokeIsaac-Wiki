@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: 1 enemy fewer per combat room
+- label: Never
+  value: Rooms with a single enemy, boss rooms
 icon: items-ps/hold-item/cleanse-tag.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 每個戰鬥房間少一個敵人
 ---
 One less enemy in each combat room
+
+## How it works
+- When a normal combat room is filled, one enemy is removed from it, as long as the room has more than one. A room with a single enemy is left alone, so the room is never emptied.
+- It does not affect boss rooms or any other kind of room.
+- Fewer enemies also means fewer kill drops, but the reward for clearing the room is the same.
+
+## Stacking
+- It is an on/off effect: a second copy does not remove a second enemy.
+- It cancels out the [Max Lure](cebo_max.html), which adds one enemy to the same rooms.

@@ -10,7 +10,7 @@ pools:
 pool_weight: 2
 details:
 - label: Graze
-  value: An enemy shot passes within a hand's width without hitting you
+  value: An enemy shot passes close to you without hitting
 - label: Response
   value: Golden shot with ×2 damage
 - label: Rhythm
@@ -50,3 +50,14 @@ names:
     desc: 反擊：敵人的子彈從你身邊擦過時，你會對最近的敵人還以雙倍傷害的一擊
 ---
 Counter: if an enemy shot grazes you, you strike back with a double hit on the nearest enemy
+
+## How it works
+
+- When an enemy shot comes within roughly 20-40 px of you and then flies past without hitting you, you strike back with a golden shot at the nearest enemy: 2 times your Damage, speed 11, range 520 px.
+- At most one counter every 0.2 seconds, and none while you are invulnerable after a hit.
+- The counter is a child shot: it does not trigger on-hit items and gets no multishot.
+- Shots that hit you do not count, only near misses.
+
+## Stacking
+
+- A second copy changes nothing.

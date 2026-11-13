@@ -10,10 +10,14 @@ pools:
 pool_weight: 2
 charge: 1
 details:
+- label: Charge
+  value: 1 salle
 - label: Cible
-  value: L'ennemi le plus éloigné (hors boss)
+  value: L'ennemi le plus éloigné (pas les boss)
 - label: Étourdi
   value: 1,5 seconde
+- label: Vous
+  value: Invulnérable 0,5 seconde
 icon: items-ps/key-item/dna-splicers.png
 sprite: true
 names:
@@ -49,3 +53,13 @@ names:
     desc: 與最遠的敵人互換位置，並讓牠暈眩
 ---
 Vous échangez votre place avec l'ennemi le plus éloigné et l'étourdissez
+
+## Fonctionnement
+- Charge : 1 salle. Terminez une seule salle et il est de nouveau prêt.
+- Vous échangez votre place avec l'ennemi le plus éloigné de vous (les boss ne sont jamais choisis, ni les ennemis qui ne peuvent pas être blessés à cet instant). Il reste étourdi 1,5 seconde.
+- Vous êtes invulnérable 0,5 seconde après l'échange.
+- S'il n'y a aucun ennemi valide dans la salle, il ne fait rien et aucune charge n'est dépensée.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec une [Pile Cellulaire](d_pila.html), l'objet peut stocker le double de charge.

@@ -9,6 +9,13 @@ pool_weight: 2
 stats:
 - text: Damage +0.3
   good: true
+details:
+- label: Damage
+  value: '+0.3'
+- label: Crit chance
+  value: +8 % (per copy)
+- label: Stun
+  value: 0.75 s on a critical hit, not bosses
 icon: items/black-glasses.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 會心一擊令敵人目眩：敵人會定住不動
 ---
 Dazzling critical hits: the enemy freezes in place
+
+## How it works
+- It gives the usual +8 % chance of a critical hit, on top of the Fighting/Dark and Luck bonuses (see [critical hits](../mechanics/criticos.html)).
+- Any enemy hit by a critical shot is stunned for 0.75 s: it stops moving and attacking. The stun is applied on the hit itself, so it works with every source of crits (including the guaranteed crit of the [Normal Gem](gema_normal.html)).
+- Bosses are never stunned; they still take the crit damage.
+- Only crits from your shots count; burn, poison and chain bolts do not stun.
+
+## Stacking
+- Damage +0.3 and +8 % crit chance are added for each copy.
+- The stun is on or off: more copies do not make it last longer.

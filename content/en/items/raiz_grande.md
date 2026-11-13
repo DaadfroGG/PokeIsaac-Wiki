@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Healing
+  value: ½ heart per 40 damage dealt
+- label: Limit
+  value: Items heal at most 30 % of max health per 10 s
 icon: items-ps/hold-item/big-root.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每造成40點傷害，回復半顆愛心
 ---
 For every 40 damage you deal, you recover half a heart
+
+## How it works
+- All the damage your shots deal to enemies is added up. Every time the total reaches 40, you recover half a heart and the counter goes down by 40.
+- The counter keeps filling at full health, but the heart is only given if you are missing health.
+- This healing counts toward the limit on item healing: items can heal at most 30 % of your max health (minimum 2 hearts) per 10 seconds.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

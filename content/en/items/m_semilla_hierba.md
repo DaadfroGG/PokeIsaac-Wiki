@@ -10,9 +10,13 @@ pools:
 pool_weight: 2
 details:
 - label: Vine
-  value: 15 % of your damage every 4 frames
+  value: 15 % of your damage, 15 times per second
 - label: Length
   value: Up to 160 px between shots
+- label: Per second
+  value: Up to 225 % of your damage to an enemy standing on it
+- label: Item effects
+  value: Never
 icon: items-ps/hold-item/grassy-seed.png
 sprite: true
 names:
@@ -48,3 +52,13 @@ names:
     desc: 你的彈之間有藤蔓相連，會傷害穿過的敵人
 ---
 Your shots are linked by a vine that hurts enemies crossing it
+
+## How it works
+- Each of your shots is tied by a vine to the shot you fired just before it, as long as the two are less than 160 px apart. A shot farther away has no vine.
+- 15 times per second, every enemy touching a vine takes 15 % of your Damage. An enemy that stays on a vine for a full second takes up to 225 % of your Damage.
+- The vine uses your type: the [type chart](../mechanics/tabla_tipos.html) applies, and its hits can trigger your [type passive](../mechanics/pasivas_escalan.html) status.
+- Vine hits never trigger item effects and never crit.
+- It hurts bosses too. The more shots you have in the air (fast fire rate, several shots per volley), the more vines there are.
+
+## Stacking
+- A second copy does nothing more.

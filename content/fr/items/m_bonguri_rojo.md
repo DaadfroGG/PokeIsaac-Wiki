@@ -10,8 +10,10 @@ pools:
 - devil
 pool_weight: 2
 details:
-- label: Par K.O.
-  value: +6 %, jusqu'à +60 %
+- label: Par victoire
+  value: +6 % de dégâts, jusqu'à +60 % (10 victoires)
+- label: Remise à zéro
+  value: Quand vous quittez la salle
 icon: items-ps/apricorn/red.png
 sprite: true
 names:
@@ -47,3 +49,11 @@ names:
     desc: 在房間內每擊倒一個敵人，傷害提升6 %，直到離開房間（最多 +60 %）
 ---
 Chaque ennemi vaincu dans une salle augmente vos dégâts de 6 % jusqu'à votre sortie (max. +60 %)
+
+## Fonctionnement
+- Chaque ennemi que vous battez ajoute un niveau, jusqu'à 10. Chaque niveau vaut +6 % de dégâts, soit +60 % à 10 victoires. Cela s'applique à tous vos dégâts comme un multiplicateur.
+- Il compte les ennemis que vous battez vous-même (pas ceux des compagnons ni des autres joueurs), et le bonus est remis à zéro quand vous entrez dans une autre salle.
+- Les victoires dues à la brûlure, au poison ou à d'autres dégâts persistants que vous avez infligés comptent aussi.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne change rien (toujours +6 % par victoire, max +60 %).

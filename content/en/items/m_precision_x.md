@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Auto-aim
+  value: Locks onto the nearest enemy and keeps firing
+- label: Change target
+  value: Press a fire key toward another enemy
 icon: items-ps/battle-item/x-accuracy.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 準星會自動鎖定最近的敵人，只要還有敵人你就會不停朝它射擊；用射擊鍵可以換一個目標
 ---
 A target locks onto the nearest enemy by itself and you keep firing at it while there are enemies; the fire keys pick another one
+
+## How it works
+- A target marker locks onto the nearest enemy by itself, and you keep firing at it as long as there are enemies in the room, even without pressing any fire key.
+- Pressing a fire key picks another enemy: the one best lined up with that direction (and close). The marker then follows it until it dies, and then goes back to the nearest one.
+- Your shots are aimed straight at the marked enemy.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

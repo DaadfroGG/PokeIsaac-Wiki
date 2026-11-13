@@ -11,9 +11,9 @@ pools:
 pool_weight: 2
 details:
 - label: Seuil
-  value: Moins de 15 % de la vie max
+  value: Sous 15 % de la vie max
 - label: Boss
-  value: Sans effet sur eux
+  value: Non affectés
 icon: items-ps/hold-item/wise-glasses.png
 sprite: true
 names:
@@ -49,3 +49,12 @@ names:
     desc: 被你打到生命低於15 %的敵人會立即倒下（頭目除外）
 ---
 Les ennemis que vous faites passer sous 15 % de vie tombent aussitôt (pas les boss)
+
+## Fonctionnement
+
+- Quand un coup laisserait un ennemi non-boss avec moins de 15 % de sa vie maximale (mais encore en vie), il est tué à la place.
+- Cela marche avec les coups de vos tirs, y compris ceux de vos compagnons. Les [boss](../mechanics/jefes_adaptativos.html) ne sont pas affectés.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: Les portes verrouillées des salles au trésor s'ouvrent sans clé
+- label: Quand
+  value: Dès que vous entrez dans une salle voisine
 icon: items-ps/other-item/pass-orb.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 寶物房間不用鑰匙就能打開
 ---
 Les salles au trésor s'ouvrent sans clé
+
+## Fonctionnement
+- Quand vous entrez dans une salle, chaque porte verrouillée de cette salle qui mène à une salle au trésor s'ouvre toute seule, et vous gardez votre clé.
+- Il n'ouvre que les portes des salles au trésor. Les autres portes verrouillées et les coffres dorés demandent toujours une clé (pour les coffres dorés, voir la [Grande Perle](perla_grande.html)).
+- En coop, ça marche pour toute l'équipe dès qu'un joueur le porte.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus.

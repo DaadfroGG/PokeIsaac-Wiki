@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Ennemis
+  value: Deviennent des ennemis au hasard de cet étage
+- label: PV
+  value: Le nouvel ennemi commence avec tous ses PV
+- label: Boss
+  value: Pas touchés
 icon: items-ps/other-item/yellow-nectar.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 房間內的敵人會變成本層的其他敵人
 ---
 Les ennemis de la salle se transforment en d'autres de l'étage
+
+## Fonctionnement
+- Chaque ennemi de la salle (sauf les boss) se transforme en un ennemi au hasard de la liste de cet étage, au même endroit.
+- Le nouvel ennemi commence avec tous ses PV, avec le même renfort que l'ancien, donc un ennemi blessé revient soigné.
+- S'il n'y a rien à affecter, rien ne se passe et vous gardez la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : les ennemis se transforment deux fois.

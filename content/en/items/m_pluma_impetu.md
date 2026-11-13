@@ -11,6 +11,8 @@ pool_weight: 2
 details:
 - label: Fire rate
   value: Up to ×2 after 4 s firing the same way
+- label: Reset
+  value: Changing direction, or 0.5 s without firing
 icon: items-ps/medicine/swift-wing.png
 sprite: true
 names:
@@ -46,3 +48,11 @@ names:
     desc: 持續朝同一方向射擊，射速會越來越快（最高兩倍）
 ---
 If you keep firing in the same direction, you fire faster and faster (up to double)
+
+## How it works
+- As long as you keep firing in the same direction, the bonus rises. After 4 s it reaches its maximum: the time between shots is halved (twice the fire rate).
+- Changing the direction you fire in, or stopping for more than 0.5 s, resets it to zero.
+- It is a multiplier on the delay, so the 12 shots per second limit still applies.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

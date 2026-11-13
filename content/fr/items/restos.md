@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Terminer une salle
+- label: Soin
+  value: ½ cœur
 icon: items/leftovers.png
 sprite: true
 names:
@@ -44,3 +49,10 @@ names:
     desc: 清除房間時回復半顆愛心
 ---
 Récupère un demi-cœur à chaque salle nettoyée
+
+## Fonctionnement
+- Chaque fois qu'une salle est terminée, vous récupérez un demi-cœur (si vous n'êtes pas à PV pleins).
+- Cela marche dans tous les types de salle. Le soin ignore la limite de soin des objets.
+
+## Cumul
+- Il ne se cumule pas, et c'est le même effet que celui du [Grelot Coque](cascabel.html) : posséder les deux ne soigne toujours qu'un demi-cœur par salle.

@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Condition
+  value: Standing still for 0.5 s
+- label: Damage
+  value: ×2
 icon: items-ps/valuable-item/relic-statue.png
 sprite: true
 names:
@@ -43,3 +48,12 @@ names:
     desc: 站著不動片刻後，你的彈傷害加倍
 ---
 If you stand still for a moment, your shots deal double damage
+
+## How it works
+
+- After you have stood still for half a second, your Damage is doubled; it drops back as soon as you move.
+- It is a damage multiplier on the HUD, so it follows the usual [diminishing returns and ×3 cap](../mechanics/rendimientos.html).
+
+## Stacking
+
+- A second copy changes nothing.

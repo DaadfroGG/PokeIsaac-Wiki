@@ -9,10 +9,12 @@ pools:
 - secret
 pool_weight: 2
 details:
-- label: Chance
-  value: 30 % par achat
 - label: Remboursement
-  value: Le prix entier
+  value: 30 % par achat
+- label: Montant
+  value: Le prix entier (jusqu'à la limite du porte-monnaie)
+- label: Chance
+  value: Aucun effet
 icon: items-ps/valuable-item/relic-gold.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 購買東西時，有時會退還金錢
 ---
 Quand vous achetez quelque chose, vous êtes parfois remboursé
+
+## Fonctionnement
+- Chaque fois que vous payez quelque chose en Pokédollars (articles de boutique, petits objets à vendre, coffres dorés en vente), il y a 30 % de chances que le prix entier vous soit rendu.
+- Le remboursement ne peut pas dépasser la limite de votre porte-monnaie (99 Pokédollars au début) : le surplus est perdu.
+- Les pactes payés en cœurs ne sont pas des achats et ne remboursent jamais.
+- La Chance ne change pas ce pourcentage.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours 30 %.

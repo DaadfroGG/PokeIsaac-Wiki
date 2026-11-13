@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Tirs
+  value: 12, tout autour de vous
+- label: Dégâts
+  value: Les mêmes que vos tirs
+- label: Effets
+  value: Tous
 icon: items-ps/partner-gift/beach-glass.png
 sprite: true
 names:
@@ -44,3 +51,14 @@ names:
     desc: 你會向周圍射出十二發彈，帶有它們的所有效果
 ---
 Vous tirez douze de vos tirs tout autour de vous, avec tous leurs effets
+
+## Fonctionnement
+- Vous lancez 12 de vos tirs d'un coup, répartis tout autour de vous (un tous les 30°).
+- Chacun est un vrai tir : mêmes dégâts, type, taille, portée, [coups critiques](../mechanics/criticos.html), statuts et effets d'objets sur les tirs.
+- Ils comptent comme des tirs supplémentaires, donc les effets réservés à vos tirs principaux ne se déclenchent pas avec eux (voir [tirs supplémentaires](../mechanics/disparos_extra.html)).
+- Il ne demande qu'une charge.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous lancez 24 tirs.

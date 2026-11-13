@@ -12,7 +12,7 @@ details:
 - label: When you defeat an enemy
   value: Its soul strikes the nearest one
 - label: Damage
-  value: 10% of its max health (bosses 2%), at least your damage
+  value: 10 % of its max health (bosses 2 %), at least your damage
 - label: Range
   value: 300 px
 icon: items-ps/key-item/dark-stone.png
@@ -50,3 +50,10 @@ names:
     desc: 敵人倒下時，牠的靈魂會跳到最近的敵人身上，奪走其最大生命的10%（頭目為2%）。
 ---
 When an enemy falls, its soul leaps to the nearest enemy and takes 10% of its max health (2% from bosses).
+
+## How it works
+- Each time you defeat an enemy, its soul leaps to the nearest enemy within 300 px of where it fell.
+- The soul deals 10 % of that enemy's max health (2 % for a boss), or your Damage if that is higher.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

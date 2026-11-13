@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Tous les
+  value: 4e tir
+- label: Dégâts
+  value: ×2
+- label: Taille
+  value: ×1,5
 icon: items-ps/evo-item/dragon-scale.png
 sprite: true
 names:
@@ -46,3 +53,12 @@ names:
 Un tir sur quatre est énorme et frappe deux fois plus fort
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Un tir sur quatre que vous lancez inflige le double de dégâts et est 50 % plus gros.
+- Le compte est commun à tous vos tirs : avec des tirs supplémentaires par salve, le gros tir est simplement le 4e, 8e, 12e... projectile.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

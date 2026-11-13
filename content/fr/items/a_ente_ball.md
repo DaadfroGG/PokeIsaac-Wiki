@@ -13,7 +13,11 @@ details:
 - label: Durée
   value: 3,3 s
 - label: Attraction
-  value: 200 px
+  value: 200 px (pas les boss)
+- label: Dégâts
+  value: Vos Dégâts ×1,2, 6 fois par seconde
+- label: Tirs ennemis
+  value: Avalés à moins de 90 px
 icon: items-ps/ball/beast.png
 sprite: true
 names:
@@ -49,3 +53,15 @@ names:
     desc: 發射一個蟲洞，吸引並傷害敵人，還會吞噬它們的彈
 ---
 Vous lancez un trou de ver qui attire et blesse les ennemis et avale leurs tirs
+
+## Fonctionnement
+- Vous lancez un trou de ver dans la direction où vous regardez. Il avance, ralentit puis s'arrête en grossissant un peu ; il dure 3,3 secondes.
+- Les ennemis à moins de 200 px (sauf les boss) sont attirés vers lui.
+- Chaque ennemi qui le touche, boss compris, subit 1,2 fois vos Dégâts toutes les 1/6 seconde.
+- Les tirs ennemis à moins de 90 px sont avalés.
+- Il traverse les rochers et rebondit sur les murs. Il peut faire un [coup critique](../mechanics/criticos.html), mais les effets de tirs de vos objets ne s'y ajoutent pas.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : vous lancez deux trous de ver.

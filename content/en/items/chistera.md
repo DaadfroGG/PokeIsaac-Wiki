@@ -11,6 +11,17 @@ stats:
   good: true
 - text: +15 PokéDollars
   good: true
+details:
+- label: Luck
+  value: '+1'
+- label: On pickup
+  value: +15 PokéDollars
+- label: Coin pickups
+  value: 2 instead of 1
+- label: Nugget pickups
+  value: 7 instead of 5
+- label: Obtained
+  value: Not found in any item pool
 icon: items/_shape_cosmetic_3a3a4c.svg
 names:
   es:
@@ -45,3 +56,12 @@ names:
     desc: 更多金錢與15寶可幣；幸運+1
 ---
 More money and 15 $; luck +1
+
+## How it works
+- Luck +1 and 15 PokéDollars the moment you pick it up. Luck counts in full up to 10 and only a quarter above (see [Diminishing returns](../mechanics/rendimientos.html)).
+- It carries the same effect as the [Amulet Coin](amuleto.html): every [coin](../world/coin.html) you pick up is worth 2 instead of 1 and every nugget 7 instead of 5.
+- Your wallet is capped (99, rising to 150 from floor 10 and 250 from floor 30).
+- It is not offered by the treasure room, the shop or any other item pool in the current game.
+
+## Stacking
+- The Luck and the 15 PokéDollars are added again by each copy, but the double coin value is on/off: a second Top Hat, or an Amulet Coin on top of it, does not make coins worth more.

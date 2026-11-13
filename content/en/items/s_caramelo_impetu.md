@@ -12,6 +12,9 @@ pool_weight: 2
 stats:
 - text: Speed +0.5
   good: true
+details:
+- label: Speed
+  value: '+0.5'
 icon: items-ps/av-candy/quick.png
 sprite: true
 names:
@@ -47,3 +50,9 @@ names:
     desc: 速度++
 ---
 Speed ++
+
+## How it works
+- Speed +0.5 has no diminishing returns. Your speed never goes below 1.6.
+
+## Stacking
+- Everything stacks: each copy adds its stats again.

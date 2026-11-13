@@ -9,6 +9,15 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Un ennemi non-boss vous blesse au contact
+- label: Recul
+  value: Repoussé loin de vous
+- label: Étourdissement
+  value: 0,5 s
+- label: Boss
+  value: Non affectés
 icon: items-ps/hold-item/red-card.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 近身攻擊你的敵人（頭目除外）會被擊退並暈眩
 ---
 Ceux qui vous frappent au corps à corps (sauf les boss) sont repoussés et étourdis
+
+## Fonctionnement
+
+- Chaque fois qu'un ennemi vous blesse au contact, il est projeté loin de vous et étourdi pendant 0,5 seconde.
+- Vous subissez quand même le coup : la carte n'empêche pas les dégâts, elle éloigne seulement l'agresseur.
+- Elle ne réagit qu'au corps à corps. Les tirs ennemis, explosions et dangers au sol ne la déclenchent pas.
+- Les [boss](../mechanics/jefes_adaptativos.html) ne sont jamais repoussés ni étourdis.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

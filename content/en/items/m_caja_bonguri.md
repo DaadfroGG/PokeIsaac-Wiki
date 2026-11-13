@@ -12,6 +12,8 @@ pool_weight: 1
 details:
 - label: Companions
   value: Limit 3 > 5
+- label: Waiting companions
+  value: Come out of the Bag
 icon: items-ps/key-item/apricorn-box.png
 sprite: true
 names:
@@ -49,3 +51,15 @@ names:
 You can have 2 more companions at a time (up to 5); the ones waiting in the Bag come out
 
 {{< clip >}}
+
+## How it works
+
+- Raises the number of companions you can have at once from 3 to 5.
+- Companions that were waiting in the Bag because your team was full come out right away, up to the new limit.
+- Without it, no more companion Balls appear while you are at the limit.
+- If the Box is ever lost, the surplus companions go back to the Bag.
+- See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- A second Box normally never appears, because items you already hold are not offered again. If you get one anyway (for example by copying an item), the limit only goes from 5 to 6, the absolute maximum.

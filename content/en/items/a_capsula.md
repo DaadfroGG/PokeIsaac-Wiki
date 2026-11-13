@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 6
+details:
+- label: Pedestals
+  value: All the items not yet taken
+- label: New items
+  value: From the pool of the room you are in
+- label: Shop prices
+  value: Kept
 icon: items-ps/medicine/ability-capsule.png
 sprite: true
 names:
@@ -44,3 +51,14 @@ names:
     desc: 將房間台座上的道具換成其他道具
 ---
 Rerolls the items on the room's pedestals
+
+## How it works
+- Every item still on a pedestal in the room is replaced by another one.
+- Passive items are drawn from the pool of the room you are in (treasure, boss, shop, devil, angel, secret or super secret room; any other room uses the treasure pool). Active items are replaced by another random active item.
+- A shop item keeps its price. A devil deal gets a new health price that matches the new item.
+- With no item on a pedestal, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): the items are rerolled twice; you keep the second result.

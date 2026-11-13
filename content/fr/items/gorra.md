@@ -15,7 +15,9 @@ details:
 - label: Compagnons simultanés
   value: Jusqu'à 2
 - label: Dégâts
-  value: 50 % du vôtre
+  value: 50 % des vôtres (au moins 2 + 0,4 par étage)
+- label: Tirs
+  value: Environ 1 toutes les 0,5 s, à 380 px
 - label: Durée
   value: Jusqu'à ce que vous quittiez la salle
 icon: icons/items/gorra.png
@@ -53,3 +55,13 @@ names:
     desc: 全部收服！有時你擊敗的敵人會加入你，直到你離開房間（最多2隻）
 ---
 Attrapez-les tous ! Parfois, un ennemi vaincu vous rejoint jusqu'à ce que vous quittiez la salle (max. 2)
+
+## Fonctionnement
+- Chaque ennemi normal que vous battez a 10 % de chances de vous rejoindre (la Chance ne change rien). Les boss ne vous rejoignent jamais.
+- Le nouvel allié est le même Pokémon que l'ennemi vaincu et garde son type. Il flotte derrière vous comme un [compagnon](../mechanics/companeros.html) et tire sur l'ennemi le plus proche à 380 px, environ une fois toutes les 0,5 s.
+- Chaque tir inflige la moitié de vos Dégâts, mais jamais moins de 2 + 0,4 par étage. Les objets qui renforcent les compagnons le renforcent aussi.
+- 2 de ces alliés au plus en même temps. Ils ne comptent pas dans votre limite normale de compagnons.
+- Ils partent tous dès que vous entrez dans une autre salle.
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours 10 % et 2 alliés au plus.

@@ -12,6 +12,11 @@ pool_weight: 2
 stats:
 - text: Damage +0.4
   good: true
+details:
+- label: Damage
+  value: '+0.4'
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/medicine/muscle-wing.png
 sprite: true
 names:
@@ -47,3 +52,9 @@ names:
     desc: 傷害+0.4
 ---
 Damage +0.4
+
+## How it works
+- Damage +0.4: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

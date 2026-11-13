@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Portée +60
   good: true
+details:
+- label: Portée
+  value: '+60'
+- label: Rebonds
+  value: +1 par exemplaire
+- label: Rebondit sur
+  value: Murs, rochers et obstacles
 icon: items-ps/mulch/gooey.png
 sprite: true
 names:
@@ -48,3 +55,10 @@ names:
 Vos tirs rebondissent sur les murs et les rochers
 
 {{< clip >}}
+
+## Fonctionnement
+- Chacun de vos tirs peut rebondir une fois sur un mur, un rocher ou un autre obstacle au lieu de disparaître. Il est réfléchi et continue avec le reste de sa portée.
+- Un rebond n'inflige rien et n'arrête rien en lui-même ; il garde simplement le tir en vie. Avec le [Ticketaurora](m_ori_ticket.html), un tir rebondit d'abord et ne traverse que lorsqu'il n'a plus de rebonds.
+
+## Cumul
+- Chaque exemplaire ajoute un rebond de plus et +60 de Portée.

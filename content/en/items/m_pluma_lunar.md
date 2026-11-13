@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Range +80
   good: true
+details:
+- label: Range
+  value: '+80'
+- label: Orbit
+  value: About 0.5 s around you
+- label: Launch
+  value: Toward your aim, up to 260 px ahead
 icon: items-ps/key-item/lunar-wing.png
 sprite: true
 names:
@@ -48,3 +55,11 @@ names:
 Your shots circle around you like moons and then fly where you aim
 
 {{< clip >}}
+
+## How it works
+- Each shot first circles around you like a moon, spiralling outward from 26 to 60 px, then after about 0.5 s flies off toward where you are aiming.
+- Consecutive shots circle in opposite directions. Once launched, a shot curves toward an enemy within 95 px if it is far off its path.
+- Orbiting shots disappear if they touch a rock, unless you are [Ghost-type](../types/ghost.html).
+
+## Stacking
+- The orbit does not change; +80 Range is added for each copy.

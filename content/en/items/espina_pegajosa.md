@@ -8,6 +8,13 @@ tier: 1
 pools:
 - devil
 pool_weight: 2
+details:
+- label: Damage to the enemy
+  value: 1.5× your Damage (at least 2)
+- label: Interval
+  value: Once every 0.5 s per enemy
+- label: Bosses
+  value: Not affected
 icon: items-ps/hold-item/sticky-barb.png
 sprite: true
 names:
@@ -43,3 +50,11 @@ names:
     desc: 碰到你的敵人會受到傷害（頭目除外）
 ---
 Whoever touches you takes damage (not bosses)
+
+## How it works
+- Whenever a regular enemy touches you, it takes damage equal to 1.5 times your Damage (at least 2). You still take the hit as usual.
+- Each enemy can be hurt this way at most once every 0.5 seconds.
+- Bosses are not affected.
+
+## Stacking
+- It is an on/off effect: a second Sticky Barb does not hurt more.

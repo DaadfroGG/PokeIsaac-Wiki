@@ -16,6 +16,15 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Max health
+  value: +1 heart
+- label: Heal
+  value: 1 heart on pickup
+- label: Luck
+  value: '+1'
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/curry-ingredient/fancy-apple.png
 sprite: true
 names:
@@ -51,3 +60,10 @@ names:
     desc: 愛心 +1，幸運 +1
 ---
 Heart +1 and luck +1
+
+## How it works
+- Max health +1 heart: raises your maximum health by 1 heart (up to the limit of 12 hearts; soul hearts are separate). It also heals 1 heart the moment you pick it up. At 12 hearts the maximum no longer grows, but you are still healed.
+- Luck +1: added to your Luck. Luck counts in full up to 10; above 10 only a quarter counts. It raises the chance of drops from enemies and of a reward when you clear a room, the chance of critical hits (+1 % per point) and the chance of type-passive status effects (+2 % per point).
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

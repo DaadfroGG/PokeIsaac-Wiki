@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Tirs
-  value: 7 pendant 15 s
+  value: 7 en orbite pendant 15 s
+- label: Dégâts
+  value: 80 % de vos dégâts chacun, touche chaque ennemi toutes les 0,5 s
+- label: Se déclenche
+  value: En entrant dans une salle avec des ennemis vivants
 icon: items-ps/fossil/dome.png
 sprite: true
 names:
@@ -49,3 +53,12 @@ names:
 En entrant dans une salle avec des ennemis, sept tirs tournent autour de vous pendant 15 secondes
 
 {{< clip >}}
+
+## Fonctionnement
+- Quand vous entrez dans une salle qui a encore des ennemis vivants, sept tirs apparaissent et tournent autour de vous (à environ 64 px) pendant 15 s.
+- Ils traversent tout et retouchent le même ennemi toutes les 0,5 s. Chacun inflige 80 % de vos dégâts. Ils ne déclenchent pas d'effets d'objets au contact.
+- Ils disparaissent s'ils touchent un rocher, sauf si vous êtes de type [Spectre](../types/ghost.html).
+- Les salles sans ennemis ne les font pas apparaître.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'ajoute pas de tirs en orbite.

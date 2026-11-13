@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 10
+details:
+- label: Charge
+  value: 10 salles
+- label: Soin
+  value: Tous vos PV
+- label: PV pleins
+  value: Inutilisable
 icon: items-ps/medicine/full-restore.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 完全恢復你的生命
 ---
 Restaure toute votre vie
+
+## Fonctionnement
+- Charge : 10 salles. Chaque salle terminée donne 1 charge, une charge complète demande donc 10 salles terminées.
+- Rend d'un coup tous vos cœurs rouges. La limite de soin des objets ne s'y applique pas.
+- Il est inutilisable quand vos PV sont déjà pleins, et aucune charge n'est alors dépensée. Les cœurs d'âme ne comptent pas comme des PV ici.
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec une [Pile Cellulaire](d_pila.html), l'objet peut stocker le double de charge.

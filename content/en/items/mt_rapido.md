@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Fire rate +
   good: true
+details:
+- label: Speed
+  value: '+0.4'
+- label: Fire rate
+  value: +2 (0.033 s less between shots)
 icon: items/tm-flying.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 速度和射速+
 ---
 Speed and fire rate +
+
+## How it works
+- Speed +0.4 has no diminishing returns. Your speed never goes below 1.6.
+- Fire rate +2: 0.033 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Fire rate).

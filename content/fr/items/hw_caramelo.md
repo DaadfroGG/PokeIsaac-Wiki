@@ -12,7 +12,9 @@ details:
 - label: Bonbon
   value: Tous les 12 ennemis vaincus
 - label: Dégâts
-  value: +0,15 par bonbon (max. 10)
+  value: +0,15 par bonbon (max. 10, donc +1,5)
+- label: Durée
+  value: Reste de la partie
 icon: items-ps/evo-item/berry-sweet.png
 sprite: true
 names:
@@ -48,3 +50,12 @@ names:
     desc: 每擊倒12個敵人就會得到一顆糖果：本局剩餘時間傷害+0.15（最多+1.5）。
 ---
 Tous les 12 ennemis vaincus, vous gagnez un bonbon : dégâts +0,15 pour le reste de la partie (jusqu'à +1,5).
+
+## Fonctionnement
+- Il compte les ennemis que vous battez à partir du moment où vous l'avez. Le 12e, le 24e, etc. vous donnent un bonbon.
+- Chaque bonbon donne Dégâts +0,15 pour le reste de la partie, jusqu'à 10 bonbons (120 ennemis) : +1,5.
+- Les boss comptent comme n'importe quel ennemi.
+- Le bonus est un bonus de Dégâts fixe normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : même compte, même plafond.

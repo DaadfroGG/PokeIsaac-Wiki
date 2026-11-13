@@ -10,8 +10,10 @@ pools:
 - treasure
 pool_weight: 2
 details:
+- label: Condition
+  value: 1 cœur ou moins de vie rouge
 - label: Cadence
-  value: ×1,5 avec 1 cœur ou moins
+  value: ×1,5
 icon: items-ps/key-item/crown-pass.png
 sprite: true
 names:
@@ -47,3 +49,13 @@ names:
     desc: 剩一顆愛心以下時，射擊速度加快50 %
 ---
 Avec un cœur ou moins, vous tirez 50 % plus vite
+
+## Fonctionnement
+
+- Tant que vous avez 1 cœur ou moins de vie rouge, le temps entre vos tirs tombe à 67 % (cadence ×1,5). Les cœurs d'âme ne l'empêchent pas.
+- La limite de cadence de 12 tirs par seconde s'applique toujours.
+- Vendu dans la salle Distorsion contre de la vie (voir [Pactes de la salle Distorsion](../mechanics/pactos.html)) ou trouvé dans les salles au trésor.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

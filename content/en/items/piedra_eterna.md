@@ -16,6 +16,13 @@ stats:
   good: true
 - text: Heals 1 heart
   good: true
+details:
+- label: Evolution
+  value: Blocked
+- label: Instead, each time
+  value: Damage +0.7, +1 max heart, heals 1 heart
+- label: On pickup
+  value: Damage +1, +1 heart (healed)
 icon: items-ps/hold-item/everstone.png
 sprite: true
 names:
@@ -51,3 +58,11 @@ names:
     desc: 不再進化，但傷害+1、愛心+1
 ---
 You no longer evolve, but damage +1 and heart +1
+
+## How it works
+- On pickup: Damage +1 and +1 max heart (the heart is filled).
+- Your Pokémon never evolves. Each time it would have evolved (see [Levels and evolution](../mechanics/niveles_pokemon.html)), it gets Damage +0.7, +1 max heart (up to the maximum health limit) and heals 1 heart instead.
+- Evolution by stone is blocked too.
+
+## Stacking
+- The pickup bonus is added again with each copy.

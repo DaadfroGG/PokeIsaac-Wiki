@@ -8,6 +8,13 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Rayon
+  value: 150 px autour de vous
+- label: Vitesse des ennemis
+  value: Divisée par 2 (marche)
+- label: Boss
+  value: Non affectés
 icon: items-ps/valuable-item/slowpoke-tail.png
 sprite: true
 names:
@@ -43,3 +50,13 @@ names:
     desc: 靠近你的敵人（頭目除外）會進入慢動作
 ---
 Les ennemis qui s'approchent de vous (pas les boss) passent au ralenti
+
+## Fonctionnement
+- Tout ennemi ordinaire à moins de 150 px de vous marche à mi-vitesse. Dès qu'il s'éloigne, il remarche normalement.
+- Il ne ralentit que leur vitesse de marche : leurs attaques, projectiles et charges ne sont pas ralentis.
+- Les boss ne sont pas affectés.
+- En coop, il agit autour de tout joueur en vie qui le porte, au profit de toute l'équipe proche de ce joueur.
+- Il se multiplie avec les autres ralentissements : avec un [Ralentiqueue](cola_plumbea.html), un ennemi marche à 0,5 × 0,8 de sa vitesse normale, et à un quart s'il est aussi ralenti.
+
+## Cumul
+- C'est un effet tout ou rien : une seconde Queue Ramoloss ne ralentit pas davantage les ennemis.

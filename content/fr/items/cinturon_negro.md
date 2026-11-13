@@ -10,11 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Frôlement
-  value: Un tir ennemi passe à un cheveu de vous sans vous toucher
-- label: Réponse
-  value: Tir doré à ×2 de dégâts
+  value: Un tir ennemi passe tout près sans vous toucher
+- label: Riposte
+  value: Tir doré à ×2 dégâts
 - label: Rythme
-  value: Un toutes les 0,2 secondes au maximum
+  value: Un toutes les 0,2 secondes au plus
 icon: items/black-belt.png
 sprite: true
 names:
@@ -50,3 +50,14 @@ names:
     desc: 反擊：敵人的子彈從你身邊擦過時，你會對最近的敵人還以雙倍傷害的一擊
 ---
 Riposte : si un tir ennemi vous frôle, vous répliquez par un coup double sur l'ennemi le plus proche
+
+## Fonctionnement
+
+- Quand un tir ennemi passe à environ 20-40 px de vous puis continue sans vous toucher, vous ripostez avec un tir doré sur l'ennemi le plus proche : 2 fois vos Dégâts, vitesse 11, portée 520 px.
+- Une riposte au plus toutes les 0,2 seconde, et aucune pendant votre invulnérabilité après un coup.
+- La riposte est un tir enfant : elle ne déclenche pas les objets à effet sur coup et n'a pas de tirs multiples.
+- Les tirs qui vous touchent ne comptent pas, seulement les frôlements.
+
+## Cumul
+
+- Un deuxième exemplaire ne change rien.

@@ -13,7 +13,11 @@ details:
 - label: Duration
   value: 3.3 s
 - label: Pull
-  value: 200 px
+  value: 200 px (not bosses)
+- label: Damage
+  value: Your Damage ×1.2, 6 times per second
+- label: Enemy shots
+  value: Swallowed within 90 px
 icon: items-ps/ball/beast.png
 sprite: true
 names:
@@ -49,3 +53,15 @@ names:
     desc: 發射一個蟲洞，吸引並傷害敵人，還會吞噬它們的彈
 ---
 You launch a wormhole that pulls in and hurts enemies and swallows their shots
+
+## How it works
+- You launch a wormhole the way you are facing. It moves forward, slows down and stops, growing a little; it lasts 3.3 seconds.
+- Enemies within 200 px (not bosses) are dragged toward it.
+- Every enemy touching it, bosses included, takes 1.2 times your Damage every 1/6 second.
+- Enemy shots within 90 px of it are swallowed.
+- It goes through rocks and bounces off walls. It can be a [critical hit](../mechanics/criticos.html), but your items' shot effects are not added to it.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you launch two wormholes.

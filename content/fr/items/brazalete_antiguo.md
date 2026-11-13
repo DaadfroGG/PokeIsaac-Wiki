@@ -8,6 +8,11 @@ tier: 1
 pools:
 - secret
 pool_weight: 2
+details:
+- label: Dégâts
+  value: +0,15 par objet porté
+- label: Plafond
+  value: +3 (à 20 objets)
 icon: items-ps/valuable-item/relic-band.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 每攜帶一個道具，傷害+0.15（最多+3）
 ---
 Dégâts +0,15 par objet porté (jusqu'à +3)
+
+## Fonctionnement
+- Vous gagnez Dégâts +0,15 pour chaque objet passif porté, Vieux Bijou compris, jusqu'à un maximum de +3 (atteint avec 20 objets).
+- Le bonus grandit tout seul à mesure que vous ramassez des objets et diminue si vous en perdez.
+- C'est un bonus fixe de Dégâts : il s'ajoute aux Dégâts fixes de vos autres objets, et le total suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3, pour moitié jusqu'à +8, un quart jusqu'à +40, puis 5 %).
+
+## Cumul
+- L'effet est tout ou rien : un second Vieux Bijou ne donne pas un second +3. Il compte en revanche comme un objet de plus (+0,15) dans le calcul.

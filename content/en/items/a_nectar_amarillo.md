@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Enemies
+  value: Become random enemies of this floor
+- label: Health
+  value: The new enemy starts full
+- label: Bosses
+  value: Not affected
 icon: items-ps/other-item/yellow-nectar.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 房間內的敵人會變成本層的其他敵人
 ---
 The room's enemies transform into others from the floor
+
+## How it works
+- Every enemy in the room (not bosses) turns into a random enemy from this floor's list, in the same spot.
+- The new enemy starts with full health, scaled like the old one, so a wounded enemy comes back healed.
+- If there is nothing to affect, nothing happens and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): the enemies transform twice.

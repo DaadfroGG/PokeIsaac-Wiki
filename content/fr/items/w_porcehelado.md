@@ -11,13 +11,17 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2,5 fois votre cadence (max. 1,4 s)
+  value: 2,5 × votre délai entre deux tirs, 0,33 à 1,4 s, avec les touches de tir (min 8 % pour lâcher)
 - label: Ball'Ombre
-  value: De ×0,4 à ×1,25 vos dégâts
+  value: ×0,4 à ×1,25 Dégâts, plus grosse avec la charge
 - label: Fragments
-  value: De 4 à 12, chacun 15 % des dégâts ; la moitié cherchent les ennemis
+  value: 4 à 12, chacun 15 % des dégâts de la balle ; la moitié vise les ennemis à moins de 260 px
+- label: Récupération
+  value: La moitié de votre délai (au moins 0,1 s)
+- label: Module
+  value: Marche avec toute arme
 - label: Avec une autre arme
-  value: Toutes les 3 attaques, une petite Ball'Ombre
+  value: 'Toutes les 3 attaques d''arme : petite Ball''Ombre (×0,9, 5 fragments)'
 icon: items-ps/medicine/casteliacone.png
 sprite: true
 names:
@@ -53,5 +57,15 @@ names:
     desc: 按住射擊鍵蓄力暗影球，命中後會碎成追蹤敵人的碎片。搭配其他武器時，每第3次攻擊會發射一顆小型暗影球
 ---
 Maintenez le tir pour charger une Ball'Ombre qui, à l'impact, se brise en fragments qui traquent les ennemis. Avec une autre arme, une petite part toutes les 3 attaques
+
+## Fonctionnement
+- C'est un **module** : il marche avec toute arme et ne la remplace pas. Votre tir normal est remplacé : maintenez les touches de tir pour charger, relâchez pour tirer. Il faut au moins 8 % de charge, et une charge complète prend 2,5 × votre délai entre deux tirs (0,33 s à 1,4 s).
+- Le tir est une salve normale (les tirs multiples s'appliquent, jusqu'à 9 balles), mais chaque balle inflige ×0,4 à ×1,25 de ses dégâts normaux et grossit avec la charge. Après un tir, vous pouvez recharger après la moitié de votre délai entre deux tirs (au moins 0,1 s).
+- Quand une balle touche un ennemi ou s'arrête (portée, mur), elle éclate en 4 à 12 fragments (selon la charge). Chaque fragment inflige 15 % des dégâts de la balle (au moins 0,4), vole de 110 à 160 px, et un fragment sur deux vise un ennemi à moins de 260 px ; les autres partent au hasard. Les fragments sont des tirs secondaires : les effets réservés aux tirs principaux ne s'y déclenchent pas.
+- Les effets de vos objets (critique, brûlure, poison, ralentissement...) s'appliquent aux balles.
+- **Avec une autre arme :** toutes les 3 attaques faites avec la touche d'arme, une petite Ball'Ombre est aussi lancée (×0,9 Dégâts, 5 fragments).
+
+## Cumul
+- Un second exemplaire n'ajoute rien.
 
 {{< clip >}}

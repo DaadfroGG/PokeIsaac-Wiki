@@ -11,7 +11,11 @@ pools:
 pool_weight: 2
 details:
 - label: Blast
-  value: 10 % per hit (+ luck)
+  value: 10 % per hit (+1 % per Luck)
+- label: Blast damage
+  value: 80 % of the hit, radius 46 px
+- label: Burn
+  value: 2 s, only if Fire-type
 icon: items-ps/medicine/lava-cookie.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
 Sometimes your shots burst into flames on hit (they don't hurt you); if your Pokémon is Fire-type, they also burn
 
 {{< clip >}}
+
+## How it works
+- Each hit has a 10 % chance (+1 % per Luck) to burst into flames: a blast of radius 46 px that deals 80 % of the hit's damage to every enemy inside it, the target included.
+- If your Pokémon is Fire-type the blast also burns those enemies for 2 s (see [status effects](../mechanics/estados.html)).
+- The blast never hurts you and does not break rocks or open secret doors.
+
+## Stacking
+- It does not stack: a second copy does not raise the chance.

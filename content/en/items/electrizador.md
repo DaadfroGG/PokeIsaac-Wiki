@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Interval
+  value: Every 5 s of combat
+- label: Damage
+  value: 2× your Damage (at least 3)
+- label: Target
+  value: A random enemy that can be hurt, bosses included
 icon: items-ps/evo-item/electirizer.png
 sprite: true
 names:
@@ -44,3 +51,11 @@ names:
     desc: 每5秒，一道閃電劈向一個敵人
 ---
 Every 5 seconds, lightning strikes an enemy
+
+## How it works
+- While a room still has enemies, a timer runs. Every 5 seconds a lightning bolt strikes a random enemy that can currently be hurt (bosses included) and deals twice your Damage, with a minimum of 3.
+- If no enemy can be hurt at that moment (for example one that is burrowed), the bolt waits and strikes as soon as one can.
+- The timer only runs in rooms that are not cleared.
+
+## Stacking
+- It is an on/off effect: a second Electirizer does not strike more often.

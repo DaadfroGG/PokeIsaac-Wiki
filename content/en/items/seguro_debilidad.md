@@ -9,6 +9,13 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Damage
+  value: ×2
+- label: Duration
+  value: 5 seconds (renewed by each hit)
 icon: items-ps/hold-item/weakness-policy.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 受到攻擊時，傷害×2，持續5秒
 ---
 When you get hit, damage ×2 for 5 seconds
+
+## How it works
+- After you take a hit, your Damage is multiplied by 2 for 5 seconds.
+- Another hit during this time restarts the 5 seconds; the bonus never goes above ×2.
+- It is a damage multiplier, so it counts toward the multiplier limits (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Hits that are blocked or dodged don't trigger it.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

@@ -12,6 +12,9 @@ pool_weight: 1
 stats:
 - text: +99 clé
   good: true
+details:
+- label: Clés
+  value: Remplit jusqu'à 99
 icon: items-ps/key-item/elevator-key.png
 sprite: true
 names:
@@ -47,3 +50,11 @@ names:
     desc: 補滿鑰匙（最多99）
 ---
 Vous remplit de clés (jusqu'à 99)
+
+## Fonctionnement
+- Dès que vous le ramassez, vous gagnez 99 [clés](../world/key.html), dans la limite de 99 clés.
+- Il remplit donc simplement votre nombre de clés au maximum.
+- Il n'a aucun autre effet.
+
+## Cumul
+- Un autre exemplaire remplit à nouveau vos clés à la prise, mais il n'y a rien de plus à gagner une fois à 99.

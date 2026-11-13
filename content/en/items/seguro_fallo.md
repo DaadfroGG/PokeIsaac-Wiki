@@ -8,6 +8,13 @@ tier: 2
 pools:
 - treasure
 pool_weight: 2
+details:
+- label: Trigger
+  value: A shot dies against a wall, rock or obstacle
+- label: Next shot
+  value: ×2 damage and 30 % bigger
+- label: Charges
+  value: 1 at a time
 icon: items-ps/hold-item/blunder-policy.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 彈撞到牆壁後，下一發傷害加倍
 ---
 If a shot hits a wall, the next one deals double damage
+
+## How it works
+- When one of your shots is stopped by a wall, a rock or an obstacle, the next shot you fire deals double damage and is 30 % bigger.
+- A shot that simply reaches the end of its range doesn't count, and neither do split shots and other side shots.
+- Only one shot is boosted, even if several shots hit a wall before it: misses don't add up.
+- The ×2 is applied when the shot is fired, so it doesn't show in the Damage stat on the HUD and is not limited by the ×3 cap on damage multipliers.
+
+## Stacking
+- A second copy does nothing more: still ×2 on one shot.

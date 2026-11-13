@@ -11,6 +11,13 @@ pool_weight: 2
 stats:
 - text: Dégâts +0,4
   good: true
+details:
+- label: Dégâts
+  value: +0,4
+- label: Retour
+  value: En bout de portée, le tir revient vers vous et parcourt à nouveau 85 % de sa portée
+- label: Second passage
+  value: Il peut retoucher les mêmes ennemis
 icon: items-ps/valuable-item/rare-bone.png
 sprite: true
 names:
@@ -46,3 +53,11 @@ names:
     desc: 你的彈會像回力鏢一樣飛回你身邊
 ---
 Vos tirs reviennent vers vous comme un boomerang
+
+## Fonctionnement
+- Quand un tir atteint le bout de sa portée, il fait demi-tour et revient vers vous à la même vitesse, en parcourant à nouveau 85 % de sa portée avant de disparaître.
+- Les touches sont oubliées au demi-tour : les ennemis déjà touchés peuvent donc l'être une seconde fois au retour.
+- Cela n'arrive qu'une fois par tir. Les tirs secondaires (tirs fragmentés, éclats) ne reviennent pas.
+
+## Cumul
+- Dégâts +0,4 s'ajoute à chaque exemplaire. L'effet boomerang ne change pas.

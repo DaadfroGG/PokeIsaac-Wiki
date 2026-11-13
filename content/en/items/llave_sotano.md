@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 3
+details:
+- label: Gain
+  value: 1 key
+- label: Cap
+  value: 99 keys
 icon: items-ps/key-item/basement-key.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 給你一把鑰匙
 ---
 Gives you a key
+
+## How it works
+- You get one key.
+- At 99 keys it can't be used and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you get 2 keys.

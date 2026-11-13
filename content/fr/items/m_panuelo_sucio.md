@@ -10,7 +10,11 @@ pools:
 pool_weight: 2
 details:
 - label: Collé
-  value: 20 % par coup, 2 s
+  value: 20 % par coup (+1 % par Chance), 2 s
+- label: Dégâts
+  value: 20 % du coup (min. 0,5) toutes les 0,33 s
+- label: Boss
+  value: Jamais
 icon: items-ps/key-item/grubby-hanky.png
 sprite: true
 names:
@@ -46,3 +50,10 @@ names:
     desc: 有時射擊會黏在敵人身上，持續造成幾秒傷害
 ---
 Parfois, un tir reste collé à l'ennemi et continue de le blesser quelques secondes
+
+## Fonctionnement
+- Chaque coup sur un ennemi (hors boss) a 20 % de chance (+1 % par Chance) de coller à lui 2 s.
+- Tant qu'il est collé, l'ennemi subit 20 % des dégâts de ce coup (au moins 0,5) toutes les 0,33 s, 6 fois : environ 1,2 fois le coup au total.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas la chance.

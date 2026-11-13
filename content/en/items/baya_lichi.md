@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 heart or less and no soul hearts
+- label: Damage
+  value: ×1.5
 icon: items-ps/berry/liechi.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 剩一顆愛心以下且沒有靈魂之心時，傷害 ×1.5
 ---
 At one heart or less and no soul hearts, damage ×1.5
+
+## How it works
+- While you have 1 red heart or less and no soul hearts at all, your Damage is multiplied by 1.5.
+- It is a damage multiplier, so it counts toward the multiplier limits (see [Diminishing returns](../mechanics/rendimientos.html)).
+- It turns off as soon as you heal above 1 heart or gain a soul heart.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

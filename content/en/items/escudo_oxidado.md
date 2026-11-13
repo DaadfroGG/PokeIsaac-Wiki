@@ -11,7 +11,7 @@ pools:
 pool_weight: 2
 details:
 - label: Collision
-  value: Your shot and the enemy's are destroyed
+  value: Your shot and the enemy shot are both destroyed
 - label: Spectral shots
   value: Keep going
 icon: items-ps/hold-item/rusted-shield.png
@@ -49,3 +49,13 @@ names:
     desc: 你的彈會撞上敵人的彈並將其抵消
 ---
 Your shots collide with enemy shots and destroy them
+
+## How it works
+
+- When one of your shots touches an enemy shot, the enemy shot is destroyed.
+- Your shot is destroyed too, unless it is a spectral shot (it then keeps flying).
+- Each of your shots can only cancel one enemy shot.
+
+## Stacking
+
+- A second copy changes nothing.

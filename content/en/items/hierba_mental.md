@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each hit that hurts you
+- label: Radius
+  value: 140 px
+- label: Bosses
+  value: Not pushed
 icon: items-ps/hold-item/mental-herb.png
 sprite: true
 names:
@@ -44,3 +51,11 @@ names:
     desc: 受到攻擊時，將附近的敵人遠遠推開
 ---
 When you're hit, you push nearby enemies far away
+
+## How it works
+- After you take a hit, every enemy within 140 px is pushed far away from you.
+- Bosses are not pushed. No damage is dealt.
+- It triggers on every hit and has no cooldown. It does not trigger if the hit was blocked or dodged.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

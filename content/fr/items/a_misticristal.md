@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Destination
+  value: Une salle au hasard de l'étage
+- label: Jamais
+  value: Salles secrètes ou super secrètes
+- label: Pas pendant
+  value: Un combat de boss ou d'arène
 icon: items-ps/key-item/enigma-stone.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 帶你前往本層的隨機房間
 ---
 Vous emmène dans une salle au hasard de l'étage
+
+## Fonctionnement
+- Vous êtes envoyé dans une salle au hasard de l'étage, autre que celle où vous êtes. Ce peut être n'importe quelle salle, explorée ou non, y compris la salle du boss, la boutique ou la salle au trésor, mais jamais une salle secrète ou super secrète.
+- Il ne marche pas tant qu'un boss est en vie dans la salle ni pendant un combat d'arène ; vous gardez la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : rien de plus : vous ne voyagez qu'une fois.

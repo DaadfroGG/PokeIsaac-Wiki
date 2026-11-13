@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Luck -2
   good: false
+details:
+- label: Damage
+  value: '+1.8'
+- label: Luck
+  value: −2
+- label: Stacking
+  value: Every copy adds again
 icon: items/life-orb.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 傷害+1.8、幸運-2
 ---
 Damage +1.8, luck -2
+
+## How it works
+- Damage +1.8: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Luck −2: lowers your Luck, so enemy drops, room-clear rewards, critical hits and type-passive status effects all become less likely. A Luck penalty counts in full. The same −1 % crit / −2 % status per point applies, and enemy drop chances stop getting worse at −5.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

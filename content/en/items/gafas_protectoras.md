@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Blocks
+  value: Puddles, gas, spikes, pits, fires, falling rocks, lobbed shots
+- label: Does not block
+  value: Normal enemy shots, contact, explosions
 icon: items-ps/hold-item/safety-goggles.png
 sprite: true
 names:
@@ -44,3 +49,16 @@ names:
     desc: 水窪、毒氣和落石都不會傷害你
 ---
 Puddles, gas and falling rocks don't hurt you
+
+## How it works
+- Any damage that comes from the ground or from the room itself is cancelled completely:
+  - puddles and gas clouds that enemies leave (also the gas some enemies release when they die), and the ground zones of boss attacks;
+  - spike tiles and the spikes of the spike trial room;
+  - fires on the floor;
+  - falling into a pit: you still fall and come back at the edge, but you lose no health;
+  - boss attacks marked on the ground that drop rocks, ice or bones;
+  - enemy shots that fly in an arc and fall from above (falling rocks, lobbed shots).
+- It does **not** protect from normal enemy shots, from touching enemies, or from explosions (for those, see [Magma Stone](d_piedra_magma.html)).
+
+## Stacking
+- A second copy does nothing more.

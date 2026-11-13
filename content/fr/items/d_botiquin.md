@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Déclencheur
+  value: Chaque coup qui vous blesse
+- label: Charge
+  value: +1 salle de charge
 icon: items-ps/storage/medicine-pocket.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 每次受到攻擊都會為主動道具充能
 ---
 Chaque coup reçu charge votre objet actif
+
+## Fonctionnement
+- Chaque coup qui vous blesse ajoute 1 charge à votre objet actif, comme terminer une salle.
+- Il ne fait rien si vous n'avez pas d'objet actif ou s'il est déjà complètement chargé.
+- Les coups bloqués ou esquivés ne comptent pas, mais un coup absorbé par un cœur d'âme compte.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

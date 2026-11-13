@@ -13,7 +13,7 @@ details:
   value: Coup ×6 sur l'ennemi le plus proche
 - label: Portée
   value: 420 px
-- label: Attente
+- label: Délai
   value: 1 s
 icon: items-ps/key-item/professors-mask.png
 sprite: true
@@ -50,3 +50,11 @@ names:
     desc: 當你受到攻擊時，幽靈會從面具中竄出，攻擊最近的敵人（你傷害的×6）。
 ---
 Quand vous êtes touché, un fantôme sort du masque et frappe l'ennemi le plus proche (×6 vos dégâts).
+
+## Fonctionnement
+- Après un coup reçu, un fantôme jaillit du masque et frappe l'ennemi le plus proche dans un rayon de 420 px pour 6 fois vos Dégâts (type Spectre).
+- Il ne peut se déclencher qu'une fois par seconde au maximum.
+- Il ne fait rien si le coup vous a tué ou si aucun ennemi n'est à portée.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

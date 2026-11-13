@@ -22,6 +22,19 @@ stats:
   good: true
 - text: Chance +1
   good: true
+details:
+- label: Dégâts
+  value: +0,5
+- label: Cadence
+  value: +1 (0,017 s de moins entre les tirs)
+- label: Vitesse
+  value: +0,2
+- label: Vitesse des tirs
+  value: '+1'
+- label: Portée
+  value: +40 px
+- label: Chance
+  value: '+1'
 icon: items-ps/other-item/gold-bottle-cap.png
 sprite: true
 names:
@@ -57,3 +70,14 @@ names:
     desc: 所有能力數值都稍微提升
 ---
 Toutes les statistiques augmentent un peu
+
+## Fonctionnement
+- Le +0,5 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- Cadence +1 : 0,017 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- La Vitesse +0,2 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Vitesse des tirs +1 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
+- Portée +40 : vos tirs vont 40 px plus loin, sans rendements décroissants.
+- Chance +1 : chaque point donne +1 % de [coup critique](../mechanics/criticos.html), +2 % aux statuts de votre passif de type et améliore les autres chances liées à la Chance. Votre Chance totale compte en entier jusqu'à 10, puis au quart.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts et Cadence).

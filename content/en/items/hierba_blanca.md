@@ -14,6 +14,8 @@ details:
   value: Cancels the stat drops of your items
 - label: Range
   value: The ones you carry and the ones you pick up later
+- label: Stats
+  value: Damage, Fire rate, Speed, Range, Shot speed, Luck, max health
 - label: Max health
   value: Also restores it (up to the 12-heart cap)
 icon: items-ps/hold-item/white-herb.png
@@ -51,3 +53,13 @@ names:
     desc: 道具造成的能力下降不再生效（已攜帶的道具也包括在內）
 ---
 Stats lowered by your items stop being lowered (also for the ones you already carry)
+
+## How it works
+- When you pick it up, it goes through every item you already carry and removes each **negative stat line**: lower Damage, lower Speed, lower Range, lower Shot speed, lower Luck, fewer hearts, and slower Fire rate. The good lines of those items stay.
+- From then on, every item you pick up arrives without its negative stat lines.
+- Lost hearts of max health come back (never above the 12-heart cap), but they come back empty.
+- It only touches the stat lines shown on the item sheet. Damage multipliers below ×1 and other drawbacks that are part of an item's effect stay.
+- If you later lose an item, the herb is taken into account: you don't lose a drop that was never applied.
+
+## Stacking
+- A second copy does nothing more.

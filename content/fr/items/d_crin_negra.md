@@ -9,6 +9,13 @@ pools:
 - devil
 - treasure
 pool_weight: 2
+details:
+- label: Faille après un boss
+  value: S'ouvre toujours (100 %)
+- label: Mène à
+  value: Salle Distorsion
+- label: Jamais
+  value: Au premier étage, ni aux étages de fin de partie
 icon: items-ps/key-item/black-mane-hair.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 每次打倒頭目後，一定會開啟通往扭曲房間的裂縫
 ---
 Après chaque boss, la faille de la Salle Distorsion s'ouvre toujours
+
+## Fonctionnement
+- Après chaque boss, la faille vers la [Salle Distorsion](../rooms/devil.html) s'ouvre à tous les coups. Normalement, elle ne s'ouvre que par hasard.
+- C'est toujours la Salle Distorsion : même si la Salle Céleste avait été tirée, vous obtenez la Salle Distorsion.
+- Aucune faille ne s'ouvre au premier étage, ni dans la dernière partie d'une partie Classique.
+- Si vous portez aussi la [Plume Armure](d_pluma_aguante.html), la Salle Céleste l'emporte, sauf si quelqu'un a déjà conclu un pacte avec Darkrai.
+
+## Cumul
+- C'est un effet tout ou rien : de secondes Crins Sombres ne changent rien. En coop, un seul coéquipier qui l'a suffit.

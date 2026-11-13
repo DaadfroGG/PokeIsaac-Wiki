@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: Fully recharges the active item
+- label: When
+  value: Once, on pickup
 icon: items-ps/medicine/ether.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
     desc: 讓你的主動道具完全充能
 ---
 Fully recharges your active item
+
+## How it works
+- The moment you pick it up, your active item is recharged to its full charge limit (the doubled limit if you have a [Cell Battery](d_pila.html)).
+- It only works once, at that moment: it does nothing afterwards.
+- It does nothing if you have no active item at that time.
+
+## Stacking
+- Each copy fully recharges your active item when you pick it up.

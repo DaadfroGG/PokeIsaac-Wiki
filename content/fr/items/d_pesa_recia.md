@@ -16,6 +16,17 @@ stats:
   good: false
 - text: Soigne 1 cœur
   good: true
+details:
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: 1 cœur à la prise
+- label: Vitesse
+  value: −0,2
+- label: Marche
+  value: Brise caisses, tonneaux, buissons et vases
+- label: Attractions
+  value: Ne peuvent plus vous entraîner
 icon: items-ps/ev-item/power-weight.png
 sprite: true
 names:
@@ -51,3 +62,12 @@ names:
     desc: 腳步沉重：走路時會踩碎箱子和花瓶，龍捲風也無法移動你；愛心+1，速度-
 ---
 Pas lourds : vous cassez caisses et vases en marchant et les tornades ne vous déplacent pas ; cœur +1, vitesse -
+
+## Fonctionnement
+- PV max +1 cœur (dans la limite de 12 cœurs), et il soigne 1 cœur à la prise.
+- Vitesse −0,2, retirée en entier. Votre vitesse ne peut jamais descendre sous 1,6.
+- Tant que vous vous déplacez, vous brisez les [caisses](../world/crate.html), [tonneaux](../world/barrel.html), [buissons](../world/bush.html) et [vases](../world/vase.html) contre lesquels vous marchez, sans avoir à leur tirer dessus.
+- Les attaques qui vous attirent (tornades, tourbillons) ne peuvent plus vous déplacer.
+
+## Cumul
+- Chaque exemplaire ajoute encore +1 cœur et −0,2 de Vitesse. Le bris d'objets et l'immunité aux attractions sont tout ou rien.

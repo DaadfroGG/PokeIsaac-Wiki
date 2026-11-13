@@ -12,6 +12,10 @@ pool_weight: 2
 details:
 - label: Bounce
   value: Every 70 px, half damage in 32 px
+- label: Item effects
+  value: Never on bounces
+- label: Not with
+  value: Toxic Orb, Sachet
 icon: items-ps/hold-item/smooth-rock.png
 sprite: true
 names:
@@ -49,3 +53,14 @@ names:
 Your shots skip along the floor like a flat stone and hurt nearby enemies on every bounce
 
 {{< clip >}}
+
+## How it works
+- Your shots hop along the floor. Every 70 px they travel (at 70, 140, 210 px…), they touch down and hurt every enemy within 32 px for 50 % of that shot's damage.
+- The bounce hit uses your shot's type, so the [type chart](../mechanics/tabla_tipos.html) applies, and it can still inflict statuses (your [type passive](../mechanics/pasivas_escalan.html) and shot effects like burn or poison).
+- Bounce hits never trigger item effects that need a real hit (exploding nails, splitting, Joltiks…).
+- The shot itself still flies and hits normally: an enemy right under a bounce takes the bounce and then the normal hit.
+- Bounces also hit bosses.
+- It does nothing on shots that already fly in an arc ([Toxic Orb](m_toxisfera.html)) or in a spiral ([Sachet](m_saquito.html)).
+
+## Stacking
+- A second copy does nothing more.

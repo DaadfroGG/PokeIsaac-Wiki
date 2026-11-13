@@ -13,8 +13,10 @@ stats:
 - text: Evolution stone
   good: true
 details:
+- label: Evolves
+  value: Eevee > Leafeon
 - label: Bounce
-  value: 60 % of damage, up to 220 px
+  value: 60 % of damage, to an enemy within 220 px
 - label: Times
   value: Once per shot
 icon: items/leaf-stone.png
@@ -52,3 +54,23 @@ names:
     desc: 讓伊布進化。此外，你的彈會從擊中的敵人反彈到附近的另一個敵人
 ---
 Evolves Eevee. Also, your shots bounce from the enemy they hit to another nearby
+
+## How it works
+
+- Using it on Eevee (before it has evolved) turns it into Leafeon, and its type becomes Grass.
+- The first evolution gives +1 heart (and heals it), +1 Damage and makes you a little bigger. This bonus comes from evolving, not from the stone itself.
+- Once Eevee has evolved, further stones no longer evolve it, but their effect below stays active.
+- Pokémon other than Eevee do not evolve from this stone; they still get its effect.
+- The effect works for whatever Pokémon you play and does not depend on having evolved.
+- If you carry an [Everstone](piedra_eterna.html), evolution is blocked: you get +0.7 Damage and +1 heart instead, and the effect still works.
+
+## Effect
+
+- When one of your shots hits an enemy, a leaf bounces from that enemy to the nearest other enemy within 220 px. It deals 60 % of the shot's damage, is Grass-type and flies up to 240 px.
+- Only once per shot, and only from your main shots: split shots, companion shots and other child shots do not bounce.
+- If there is no other enemy within 220 px, nothing happens.
+
+## Stacking
+
+- A second copy of the same stone adds nothing: the effect is just switched on.
+- Different stones add their effects together.

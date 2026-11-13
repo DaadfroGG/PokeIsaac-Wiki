@@ -11,9 +11,9 @@ pools:
 pool_weight: 1
 details:
 - label: Charge
-  value: 40 hits (one per shot)
+  value: 40 hits (first hit of each main shot)
 - label: Mega energy
-  value: '8 s: damage ×2 and shots 50% bigger'
+  value: '8 s: damage ×2 and shots 50 % bigger'
 - label: While it lasts
   value: It does not charge
 icon: items-ps/key-item/key-stone.png
@@ -51,3 +51,12 @@ names:
     desc: ''
 ---
 Your hits charge mega energy: every 40 shots that hit an enemy, for 8 seconds your damage is doubled and your shots are huge
+
+## How it works
+- Each main shot that hits an enemy charges the stone by one (only the first hit of a shot; companion and child shots do not count).
+- At 40 hits, mega energy starts for 8 s: your damage is doubled and every main shot you fire is 50 % bigger. The counter does not run during mega energy and starts again from 0 afterwards.
+- The ×2 is a damage multiplier like the others and counts with them.
+- The charge is kept between rooms.
+
+## Stacking
+- It does not stack: a second copy does not charge faster or make mega energy stronger.

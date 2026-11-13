@@ -11,6 +11,11 @@ pool_weight: 2
 stats:
 - text: Fire rate -
   good: false
+details:
+- label: Shots per volley
+  value: 3 (+2 per extra copy, max 9)
+- label: Fire rate
+  value: -8 (slower)
 icon: items-ps/key-item/lens-case.png
 sprite: true
 names:
@@ -48,3 +53,10 @@ names:
 Triple shot, but you fire slower
 
 {{< clip >}}
+
+## How it works
+- Each volley fires 3 shots instead of 1, spread out in a fan. You fire more slowly.
+- The total number of shots in a volley is capped at 9 (see [Extra shots](../mechanics/disparos_extra.html)).
+
+## Stacking
+- Each copy adds 2 more shots per volley (5 with two copies, up to 9) and -8 Fire rate.

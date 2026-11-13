@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Enemy shots
+  value: 25 % slower
+- label: Applies to
+  value: Every enemy shot in the room, bosses included
 icon: items-ps/incense/lax.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 敵方彈的速度降低25 %
 ---
 Enemy shots are 25 % slower
+
+## How it works
+- Every enemy projectile in the room has its speed cut by 25 % as soon as it appears (once: it does not keep slowing down).
+- It affects bosses' projectiles too. It does not slow the enemies themselves, only their shots.
+- It works in any room, and for the whole team if one player has it.
+
+## Stacking
+- It does not stack: a second copy does not slow shots further.

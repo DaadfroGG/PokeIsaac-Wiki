@@ -15,8 +15,12 @@ stats:
 - text: Fire rate -
   good: false
 details:
+- label: Damage
+  value: '+0.5'
+- label: Fire rate
+  value: -3 (slower)
 - label: Aura
-  value: 15 % of your damage, 40 px
+  value: 15 % of your damage, 12 times per second, within 40 px + shot size
 icon: items-ps/evo-item/galarica-wreath.png
 sprite: true
 names:
@@ -54,3 +58,11 @@ names:
 Each shot carries an aura of light that hurts nearby enemies
 
 {{< clip >}}
+
+## How it works
+- Each shot carries an aura of light. Every 1/12 s, every enemy within 40 px of the shot (plus its size) takes 15 % of your damage. These aura hits do not trigger item effects.
+- An enemy that stays near a shot takes about 1.8 times your damage per second from that shot; several shots overlapping add up.
+- The aura works on every shot, including child and extra shots, and on beam weapons.
+
+## Stacking
+- The aura does not change with more copies; Damage +0.5 and the slower fire rate are added for each copy.

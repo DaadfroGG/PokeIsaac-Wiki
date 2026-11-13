@@ -10,10 +10,10 @@ pools:
 - shop
 pool_weight: 2
 details:
-- label: Chance
+- label: Coin
   value: 35 % per rock broken
-- label: Reward
-  value: 1 coin
+- label: Luck
+  value: No effect
 icon: items-ps/incense/rock.png
 sprite: true
 names:
@@ -49,3 +49,11 @@ names:
     desc: 你打碎的岩石有時會掉落金幣
 ---
 Rocks you break sometimes drop coins
+
+## How it works
+- Every rock that breaks, however it breaks (your Voltorbs, items that let your shots break rocks, weapons), has a 35 % chance to drop a coin where it stood.
+- Luck does not change the chance.
+- In co-op it works for the whole team as long as one player carries it.
+
+## Stacking
+- A second copy does nothing more: still 35 %.

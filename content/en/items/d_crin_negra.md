@@ -9,6 +9,13 @@ pools:
 - devil
 - treasure
 pool_weight: 2
+details:
+- label: Rift after a boss
+  value: Always opens (100 %)
+- label: Leads to
+  value: Distortion Room
+- label: Never
+  value: On the first floor, nor in late-game floors
 icon: items-ps/key-item/black-mane-hair.png
 sprite: true
 names:
@@ -44,3 +51,12 @@ names:
     desc: 每次打倒頭目後，一定會開啟通往扭曲房間的裂縫
 ---
 After every boss, the rift to the Distortion Room always opens
+
+## How it works
+- After each boss, the rift to the [Distortion Room](../rooms/devil.html) opens every time. Normally it only opens by chance.
+- It is always the Distortion Room: even if the Celestial Room would have been drawn, you get the Distortion Room instead.
+- No rift opens on the first floor, nor in the last stretch of a Classic run.
+- If you also carry the [Resist Feather](d_pluma_aguante.html), the Celestial Room wins, unless anyone has already made a deal with Darkrai.
+
+## Stacking
+- It is an on/off effect: a second Black Mane Hair changes nothing. In co-op, one teammate carrying it is enough.

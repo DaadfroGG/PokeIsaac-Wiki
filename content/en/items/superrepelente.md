@@ -8,6 +8,13 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: Enemies stunned when you enter
+- label: Duration
+  value: 1.8 s
+- label: Bosses
+  value: Not affected
 icon: items-ps/other-item/super-repel.png
 sprite: true
 names:
@@ -43,3 +50,12 @@ names:
     desc: 進入房間時，敵人的反應會變慢
 ---
 When you enter a room, enemies are slow to react
+
+## How it works
+- When you walk into a room that still has enemies, every enemy present is stunned for 1.8 seconds: they don't move or attack.
+- Bosses are not affected.
+- Enemies that appear later in the room (waves, summons) are not stunned.
+- In co-op it works for the whole team as long as one player carries it.
+
+## Stacking
+- A second copy does nothing more: still 1.8 s.

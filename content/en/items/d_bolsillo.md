@@ -12,6 +12,10 @@ pool_weight: 2
 details:
 - label: Pickup
   value: 35 % per hit
+- label: Possible drops
+  value: Coin 40 %, key, bomb or half heart 20 % each
+- label: Never
+  value: If the hit kills you
 icon: items-ps/storage/battle-pocket.png
 sprite: true
 names:
@@ -47,3 +51,11 @@ names:
     desc: 受到攻擊時，有時會掉出一個可拾取物
 ---
 When you get hit, you sometimes drop a pickup
+
+## How it works
+- Each time an enemy or a projectile hurts you, there is a 35 % chance that a pickup falls near you (within 30 px). Luck does not change the chance.
+- The pickup is chosen at random among five equal slots: coin, coin, key, bomb, half heart. So per hit you get: a coin about 14 % of the time, and a key, a bomb or a half heart about 7 % each.
+- It does not trigger if the hit is fatal.
+
+## Stacking
+- It is an on/off effect: a second Battle Pocket does not raise the chance or give a second pickup.

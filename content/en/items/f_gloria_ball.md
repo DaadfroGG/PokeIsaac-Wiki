@@ -74,3 +74,7 @@ A Misdreavus floats around the room with an aura that hurts enemies; while insid
 - That damage uses your current damage, so it also gets the ×1.5 while you are inside.
 - It is [Ghost](../types/ghost.html)-type damage for the type chart, whatever your Pokémon's type.
 - It causes no knockback and does not trigger your on-hit items.
+
+## Stacking
+
+- Each copy brings another Misdreavus; each has its own aura and the ×1.5 is not applied twice (you are either inside an aura or not). See [Companions](../mechanics/companeros.html) for the limit.

@@ -9,6 +9,11 @@ pools:
 - shop
 pool_weight: 2
 charge: 6
+details:
+- label: Gain
+  value: As many PokéDollars as you have, up to +25
+- label: Wallet cap
+  value: 99 (150 from floor 10, 250 from floor 30)
 icon: items-ps/key-item/coin-case.png
 sprite: true
 names:
@@ -44,3 +49,13 @@ names:
     desc: 讓你的寶可幣加倍（最多+25）
 ---
 Doubles your PokéDollars (up to +25)
+
+## How it works
+- You gain as many PokéDollars as you already have, but never more than 25 at once: 10 becomes 20, 40 becomes 65.
+- You can't go above your wallet's cap: 99, then 150 from floor 10 and 250 from floor 30.
+- With 0 PokéDollars, or with a full wallet, it can't be used and you keep the charge.
+- It doesn't work in the final arena of a [Trainer Battle](../mechanics/batalla.html).
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): your money is doubled twice (+25 at most each time).

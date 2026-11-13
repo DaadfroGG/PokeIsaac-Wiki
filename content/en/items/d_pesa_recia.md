@@ -16,6 +16,17 @@ stats:
   good: false
 - text: Heals 1 heart
   good: true
+details:
+- label: Max health
+  value: +1 heart
+- label: Heal
+  value: 1 heart on pickup
+- label: Speed
+  value: −0.2
+- label: Walking
+  value: Breaks crates, barrels, bushes and vases
+- label: Pulls
+  value: Cannot drag you
 icon: items-ps/ev-item/power-weight.png
 sprite: true
 names:
@@ -51,3 +62,12 @@ names:
     desc: 腳步沉重：走路時會踩碎箱子和花瓶，龍捲風也無法移動你；愛心+1，速度-
 ---
 Heavy steps: you break crates and vases as you walk and tornadoes can't move you; heart +1, speed -
+
+## How it works
+- Max health +1 heart (up to the limit of 12 hearts), and it heals 1 heart when picked up.
+- Speed −0.2, subtracted in full. Your speed can never drop below 1.6.
+- While you are moving, you break the [crates](../world/crate.html), [barrels](../world/barrel.html), [bushes](../world/bush.html) and [vases](../world/vase.html) you walk into, without having to shoot them.
+- Attacks that pull you in (tornadoes, vortexes) can no longer move you.
+
+## Stacking
+- Each copy adds another +1 heart and −0.2 Speed. The breaking and the immunity to pulls are on/off effects.

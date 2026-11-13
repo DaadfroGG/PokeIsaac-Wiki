@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Fire rate +
   good: true
+details:
+- label: Speed
+  value: '+0.4'
+- label: Fire rate
+  value: +1.5 (0.025 s less between shots)
 icon: items/carbos.png
 sprite: true
 names:
@@ -49,3 +54,14 @@ names:
     desc: 速度+、射速+
 ---
 Speed + and fire rate +
+
+## How it works
+- Speed +0.4 has no diminishing returns. Your speed never goes below 1.6.
+- Fire rate +1.5: 0.025 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+
+## How to get it
+- Treasure rooms and shops.
+- In Classic mode, the shop of the last floor of each chapter (every 10th floor) also sells two vitamins (more expensive than usual items): HP Up first if someone is below the heart limit, then two at random among Protein, Calcium, Zinc, Iron, PP Max and Carbos, preferring ones you don't have yet.
+
+## Stacking
+- Everything stacks: each copy adds its stats again (with the diminishing returns on Fire rate).

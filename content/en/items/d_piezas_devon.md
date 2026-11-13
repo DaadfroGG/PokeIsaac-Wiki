@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Effect
+  value: Regain 1 charge right after using the active
+- label: Requires
+  value: An active item of 2+ charges
 icon: items-ps/key-item/devon-parts.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 使用主動道具時，會立即回復一點充能
 ---
 When you use your active item, it instantly regains one charge
+
+## How it works
+- Each time you use your active item, you immediately get 1 charge back (never beyond your charge limit).
+- It only works if the active item needs at least 2 charges. An active item that charges in a single room gets nothing.
+- Active items that need no charge are not affected.
+
+## Stacking
+- It is an on/off effect: a second Devon Goods does not give back a second charge.
+- It works with the [Cell Battery](d_pila.html), which raises the charge limit.

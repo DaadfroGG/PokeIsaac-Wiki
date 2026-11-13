@@ -10,8 +10,12 @@ pools:
 - shop
 pool_weight: 2
 details:
+- label: Compagnon
+  value: Cornèbre (Ténèbres)
+- label: Collecte
+  value: Pièces au sol à moins de 400 px (une pépite compte 5)
 - label: Récompense
-  value: Un pour 3 Pokédollars
+  value: 1 ramassable par 3 pièces collectées
 icon: items-ps/ball/level.png
 sprite: true
 names:
@@ -49,3 +53,15 @@ names:
 Un Cornèbre lent garde les Pokédollars au sol que vous ne ramassez pas et, tous les trois, vous rapporte quelque chose en échange
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Cornèbre vole lentement vers les pièces et pépites au sol (pas celles des boutiques) à moins de 400 px et les ramasse avant vous. Une pépite compte pour 5 pièces.
+- Pour chaque lot de 3 pièces récupérées, il revient vers vous et laisse tomber 1 ramassable tiré au hasard parmi : demi-cœur, cœur, clé, bombe, cœur d'âme ou pièce.
+- Les pièces qu'il prend sont perdues pour vous : l'échange ne vaut le coup que si vous laissez des pièces derrière vous. Les pièces restantes (1 ou 2) restent chez lui jusqu'au prochain lot.
+- Il ne tire ni ne combat jamais.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Chaque Cornèbre collecte de son côté.

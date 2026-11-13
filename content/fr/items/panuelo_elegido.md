@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Dégâts -0,3
   good: false
+details:
+- label: Vitesse
+  value: +0,9
+- label: Dégâts
+  value: -0,3
 icon: items/choice-scarf.png
 sprite: true
 names:
@@ -49,3 +54,10 @@ names:
     desc: 速度++，傷害-0.3
 ---
 Vitesse ++, dégâts -0,3
+
+## Fonctionnement
+- La Vitesse +0,9 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Le -0,3 en Dégâts est retiré de vos bonus fixes ; les pénalités comptent en entier. Vos Dégâts ne descendent jamais sous 0,5.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

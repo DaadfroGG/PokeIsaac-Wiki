@@ -13,8 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
+- label: Évolue
+  value: Évoli > Pyroli
 - label: Chaleur
-  value: À moins de 90 px, toutes les demi-secondes
+  value: Brûle les ennemis à moins de 90 px
+- label: Rythme
+  value: Toutes les 0,5 s, seulement s'il reste des ennemis
 icon: items/fire-stone.png
 sprite: true
 names:
@@ -50,3 +54,23 @@ names:
     desc: 讓伊布進化。此外，靠近你的敵人會開始燃燒
 ---
 Fait évoluer Évoli. De plus, les ennemis qui s'approchent de vous commencent à brûler
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Pyroli, et son type devient Feu.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Les Pokémon autres qu'Évoli n'évoluent pas avec cette pierre ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Tant qu'il reste des ennemis dans la salle, toutes les 0,5 seconde, chaque ennemi à moins de 90 px de vous (mesuré à son bord) prend feu pendant au moins 0,7 seconde. Rester près d'eux les maintient en feu.
+- Cela marche aussi sur les boss.
+- La brûlure suit les règles habituelles ; voir [Effets de statut](../mechanics/estados.html).
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

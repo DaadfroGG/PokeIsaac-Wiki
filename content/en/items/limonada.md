@@ -8,6 +8,11 @@ tier: 1
 pools:
 - shop
 pool_weight: 2
+details:
+- label: Trigger
+  value: Each shop purchase
+- label: Heal
+  value: ½ heart
 icon: items-ps/medicine/lemonade.png
 sprite: true
 names:
@@ -43,3 +48,10 @@ names:
     desc: 每在商店購買一次，回復半顆愛心
 ---
 Each shop purchase heals you half a heart
+
+## How it works
+- Every time you buy something in a shop, you recover half a heart.
+- The healing ignores the limit on item healing.
+
+## Stacking
+- It does not stack: a second copy adds nothing.

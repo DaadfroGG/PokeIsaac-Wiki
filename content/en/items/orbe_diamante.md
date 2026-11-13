@@ -15,6 +15,10 @@ details:
   value: Destroys them on contact
 - label: Damage
   value: 60 % of yours, every 1/3 second
+- label: Minimum
+  value: 1.5 per hit
+- label: Lap
+  value: About 1.4 s
 icon: items-ps/hold-item/adamant-orb.png
 sprite: true
 names:
@@ -50,3 +54,13 @@ names:
     desc: 一顆鑽石繞著你旋轉：會抵消敵方的彈並傷害碰到的對象
 ---
 A diamond orbits you: it destroys enemy shots and hurts whatever it touches
+
+## How it works
+- The diamond circles around you on an oval (46 px to the sides, 32 px above and below), one lap about every 1.4 s.
+- Any enemy shot it touches is destroyed.
+- Any enemy it touches takes 60 % of your Damage (at least 1.5), at most once every 1/3 second per enemy. It also hurts bosses.
+- Its hits have no type, never crit and inflict no statuses.
+- It only appears in the Angel room.
+
+## Stacking
+- A second copy does nothing more: still one diamond.

@@ -14,15 +14,21 @@ stats:
   good: false
 details:
 - label: Meter
-  value: +6 % per hit and per KO
+  value: +6.25 % per hit (once per delay between shots) and +6 % per KO
 - label: Hyper Beam
-  value: 0.6 s, 12 hits of ×2.8 your damage, with your extra shots
+  value: 0.6 s, 12 ticks (every 0.05 s) of ×2.3 Damage
+- label: Beams
+  value: Up to 5 with multishot, 15° apart; width 22 px (+5 per Size)
 - label: Rest
-  value: 0.55 s without attacking
+  value: 0.57 s without attacking after the beam
 - label: Effects
-  value: Bounce, homing, crits and your items' effects
-- label: With any weapon
-  value: 'It is a module: it does not replace your weapon'
+  value: Bounce (max 4), homing, crits, growth and your items' effects
+- label: Balance
+  value: ×0.33 (≈ ×0.76 per tick)
+- label: Stat
+  value: Fire rate -
+- label: Module
+  value: Works with any weapon
 icon: items-ps/hold-item/red-orb.png
 sprite: true
 names:
@@ -58,5 +64,15 @@ names:
     desc: 你的攻擊會累積量表；量表滿時，下一次攻擊會放出貫穿一切的巨大破壞光線（之後需要稍作休息）。任何武器都適用
 ---
 Your hits fill a meter; when it is full, your next attack unleashes a huge Hyper Beam that pierces everything (then you rest for a moment). Works with any weapon
+
+## How it works
+- It is a **module**: it works with any weapon and does not replace it. It makes your fire rate slightly worse (+2 points between shots, about 0.03 s).
+- **Meter:** each hit of your normal shots and weapons fills 6.25 % (at most once per delay between shots), and each KO adds 6 %. It does not fill during the beam or the rest, and the beam's own hits do not count.
+- **Release:** when the meter is full, your next shot (a press of the shoot keys) fires the Hyper Beam instead. The beam follows your aim, turning up to 5° per tick, pierces every enemy and breaks crates. It lasts 0.6 s and hits 12 times (every 0.05 s) for ×2.3 of your Damage, times a ×0.33 balance factor (about ×0.76 per tick, ×9 over the whole beam on one enemy).
+- Multishot adds beams (up to 5, 15° apart); each beam is 22 px wide (+5 per Size). Bounce (up to 4 bounces off walls), homing (the beam bends toward enemies), Growth, crits (rolled on every tick) and your other items' effects apply.
+- After the beam you cannot attack for 0.57 s.
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

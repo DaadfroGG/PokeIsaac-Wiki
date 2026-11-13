@@ -10,8 +10,12 @@ pools:
 - boss
 pool_weight: 2
 details:
-- label: Détonation
-  value: 10 % par coup (+ chance)
+- label: Explosion
+  value: 10 % par coup (+1 % par Chance)
+- label: Dégâts
+  value: 80 % du coup, rayon 46 px
+- label: Brûlure
+  value: 2 s, seulement si type Feu
 icon: items-ps/medicine/lava-cookie.png
 sprite: true
 names:
@@ -49,3 +53,11 @@ names:
 Parfois vos tirs s'embrasent à l'impact (sans vous blesser) ; si votre Pokémon est de type Feu, ils brûlent aussi
 
 {{< clip >}}
+
+## Fonctionnement
+- Chaque coup a 10 % de chance (+1 % par Chance) de s'embraser : une explosion de rayon 46 px qui inflige 80 % des dégâts du coup à tous les ennemis dans la zone, cible comprise.
+- Si votre Pokémon est de type Feu, l'explosion brûle aussi ces ennemis 2 s (voir [effets de statut](../mechanics/estados.html)).
+- L'explosion ne vous blesse jamais et ne brise pas les rochers ni n'ouvre les portes secrètes.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire n'augmente pas la chance.

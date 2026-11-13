@@ -6,6 +6,9 @@ category: shot
 family: module
 tier: 1
 pool_weight: 2
+details:
+- label: Pass through rocks
+  value: Only if your Pokémon is Ghost-type
 icon: items-ps/other-item/odd-keystone.png
 sprite: true
 names:
@@ -41,3 +44,10 @@ names:
     desc: 你的彈會穿過岩石
 ---
 Your shots pass through rocks
+
+## How it works
+- Your shots pass through rocks instead of stopping against them. This only works for [Ghost-type](../types/ghost.html) Pokémon (either type) or shots of the Ghost type; for any other Pokémon the effect is lost the moment the shot flies.
+- Walls still stop shots.
+
+## Stacking
+- It does not stack: a second copy changes nothing.

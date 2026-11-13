@@ -6,6 +6,11 @@ category: shot
 family: module
 tier: 2
 pool_weight: 2
+details:
+- label: Perforation
+  value: +1 ennemi par exemplaire
+- label: Coups par tir
+  value: Un coup par ennemi
 icon: items-ps/evo-item/love-sweet.png
 sprite: true
 names:
@@ -43,3 +48,11 @@ names:
 Vos tirs transpercent les ennemis
 
 {{< clip >}}
+
+## Fonctionnement
+- Vos tirs traversent les ennemis : un tir ne s'arrête qu'après avoir touché un ennemi de plus que sa valeur de perforation. Avec un exemplaire, chaque tir peut toucher deux ennemis alignés.
+- Un tir ne touche un ennemi donné qu'une seule fois, et garde ses pleins dégâts sur chaque ennemi traversé.
+- Cela ne fait pas traverser les rochers ni les murs.
+
+## Cumul
+- Chaque exemplaire ajoute +1 perforation : un tir peut toucher un ennemi de plus.

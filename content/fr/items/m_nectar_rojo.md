@@ -7,8 +7,16 @@ family: module
 tier: 1
 pool_weight: 2
 details:
-- label: Déflagration
-  value: 12 % par rafale, ×1,2 et brûle
+- label: Chance
+  value: 12 % + 1 % par point de Chance, par attaque (50 % max)
+- label: Flamme
+  value: 1 tir de type Feu en plus, dégâts ×1,2
+- label: Perçage
+  value: Traverse tous les ennemis
+- label: Brûlure
+  value: Chaque ennemi touché (2 s)
+- label: Vitesse et portée
+  value: 65 % de votre vitesse des tirs, 70 % de votre portée
 icon: items-ps/other-item/red-nectar.png
 sprite: true
 names:
@@ -44,5 +52,18 @@ names:
     desc: 有時除了射擊，還會噴出一道貫穿敵人並使其灼傷的火焰
 ---
 Parfois, en plus de votre tir, vous crachez une flamme qui transperce les ennemis et les brûle
+
+## Fonctionnement
+- À chaque attaque, il y a 12 % de chance, +1 % par point de Chance (50 % au maximum), de cracher aussi **une flamme** dans la direction de votre premier tir.
+- La flamme est un projectile de **type Feu**, quel que soit le type de votre Pokémon (la [table des types](../mechanics/tabla_tipos.html) utilise Feu), inflige **×1,2** les dégâts de ce tir (coup critique compris) et est grosse (au moins 12 px de rayon).
+- Elle traverse tous les ennemis sur son chemin et **brûle chaque ennemi touché** : 10 % de ses dégâts toutes les ⅓ s pendant 2 s, 4 s avec la [Roche Chaude](roca_calor.html) (voir [Effets de statut](../mechanics/estados.html)).
+- Elle est plus lente (65 % de votre vitesse des tirs) et va moins loin (70 % de votre portée).
+- Elle garde les modificateurs de vos tirs (autoguidage, rebond…) mais ne déclenche pas les effets d'objets qui ont lieu au moment du tir.
+- Tirée au sort une fois par attaque ; elle s'ajoute à votre salve, ne compte pas dans la limite de 9 tirs, et les [Lunettes Sable](m_gafas_aislantes.html) ne la divisent pas.
+- Le plafond de 50 % demande 38 de Chance après les [rendements décroissants](../mechanics/rendimientos.html) (122 sur le papier).
+- Comment tous les tirs en plus s'additionnent : [Tirs supplémentaires](../mechanics/disparos_extra.html).
+
+## Cumul
+- Un deuxième exemplaire ne fait rien de plus : toujours un seul tirage par attaque, même chance.
 
 {{< clip >}}

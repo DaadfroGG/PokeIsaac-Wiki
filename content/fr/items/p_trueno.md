@@ -13,8 +13,12 @@ stats:
 - text: Pierre d'évolution
   good: true
 details:
-- label: Coup d'Jus
-  value: 50 % du tir à 120 px
+- label: Évolue
+  value: Évoli > Voltali ; Pikachu > Raichu
+- label: Décharge
+  value: 50 % des dégâts du tir, à moins de 120 px
+- label: Déclencheur
+  value: Un tir touche un mur ou un rocher
 icon: items/thunder-stone.png
 sprite: true
 names:
@@ -50,3 +54,23 @@ names:
     desc: 讓皮卡丘和伊布進化。此外，你的彈撞到牆壁時會對附近的敵人釋放電擊
 ---
 Fait évoluer Pikachu et Évoli. De plus, vos tirs qui heurtent un mur libèrent une décharge sur les ennemis proches
+
+## Fonctionnement
+
+- Utilisée sur Évoli (avant son évolution), elle le transforme en Voltali, et son type devient Électrik.
+- La première évolution donne +1 cœur (et le soigne), +1 Dégâts et vous grossit un peu. Ce bonus vient de l'évolution, pas de la pierre elle-même.
+- Une fois Évoli évolué, les pierres suivantes ne le font plus évoluer, mais leur effet ci-dessous reste actif.
+- Pikachu évolue aussi en Raichu avec cette pierre s'il n'a pas encore évolué. Les autres Pokémon n'évoluent pas avec elle ; ils profitent quand même de son effet.
+- L'effet fonctionne quel que soit le Pokémon joué et ne dépend pas d'une évolution.
+- Si vous avez une [Pierre Éternelle](piedra_eterna.html), l'évolution est bloquée : vous gagnez +0,7 Dégâts et +1 cœur à la place, et l'effet reste actif.
+
+## Effet
+
+- Chaque fois qu'un de vos tirs touche un mur ou un rocher, un éclair frappe tous les ennemis à moins de 120 px de l'impact pour 50 % des dégâts de ce tir.
+- Les tirs divisés et autres tirs enfants ne déclenchent pas de décharge.
+- La décharge n'est pas un coup de votre tir : elle ne déclenche pas les objets à effet sur coup.
+
+## Cumul
+
+- Un deuxième exemplaire de la même pierre n'ajoute rien : l'effet est simplement activé.
+- Des pierres différentes cumulent leurs effets.

@@ -14,6 +14,11 @@ stats:
   good: true
 - text: Dégâts -0,3
   good: false
+details:
+- label: Cadence
+  value: +4 (0,067 s de moins entre les tirs)
+- label: Dégâts
+  value: -0,3
 icon: items/quick-claw.png
 sprite: true
 names:
@@ -49,3 +54,11 @@ names:
     desc: 射速 ++，傷害 -0.3
 ---
 Cadence ++, dégâts -0,3
+
+## Fonctionnement
+- Cadence +4 : 0,067 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- Le -0,3 en Dégâts est retiré de vos bonus fixes ; les pénalités comptent en entier. Vos Dégâts ne descendent jamais sous 0,5.
+- Seule, la Cadence +4 compte pour +3,5 (le 4e point est déjà à moitié) ; avec d'autres objets de cadence, elle compte pour moins.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Cadence).

@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 8
+details:
+- label: Objet
+  value: 1 de la réserve du trésor
+- label: Prix
+  value: Gratuit
+- label: Charge
+  value: 8 salles
 icon: items-ps/other-item/wishing-piece.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 出現一件寶物房間的道具
 ---
 Un objet de salle au trésor apparaît
+
+## Fonctionnement
+- Un nouveau piédestal apparaît juste au-dessus de vous avec un objet au hasard de la réserve du trésor. Il est gratuit.
+- Vous pouvez l'utiliser dans n'importe quelle salle, et à nouveau à chaque recharge.
+- Il se déclenche toujours quand vous l'utilisez, même dans une salle vide, et consomme la charge.
+- Il ne fonctionne pas dans l'arène finale d'un [Combat de Dresseurs](../mechanics/batalla.html).
+
+## Cumul
+- Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
+- Avec le [Plongeur Devon](d_bombona_devon.html) : deux objets apparaissent.

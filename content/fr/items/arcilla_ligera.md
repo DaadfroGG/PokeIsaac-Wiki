@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Invulnérabilité après un coup
+  value: Environ 1,9 s (au lieu de 1,2 s)
+- label: Plafond
+  value: 2,5 secondes
 icon: items-ps/hold-item/light-clay.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 受到攻擊後，無敵時間更長
 ---
 Après un coup reçu, vous restez invulnérable plus longtemps
+
+## Fonctionnement
+- Après un coup reçu, vous êtes normalement invulnérable environ 1,2 seconde. Avec cet objet, cette durée est multipliée par 1,6, soit environ 1,9 seconde.
+- L'invulnérabilité ne peut jamais dépasser 2,5 secondes.
+- Cela ne concerne que les coups qui vous blessent réellement. Les coups bloqués ou esquivés ne changent rien.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

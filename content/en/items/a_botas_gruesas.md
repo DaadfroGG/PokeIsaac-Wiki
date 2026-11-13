@@ -9,6 +9,13 @@ pools:
 - shop
 pool_weight: 2
 charge: 2
+details:
+- label: Dash
+  value: About 150 px in 0.27 s
+- label: Damage
+  value: Your Damage ×2.5 to each enemy you go through
+- label: During the dash
+  value: Nothing hurts you
 icon: items-ps/hold-item/heavy-duty-boots.png
 sprite: true
 names:
@@ -44,3 +51,13 @@ names:
     desc: 朝移動方向衝撞且不會受傷，撞擊沿途的一切
 ---
 You dash where you're moving without getting hurt, hitting everything you pass through
+
+## How it works
+- You dash in the direction you are moving (if you aren't moving, the way you last shot), about 150 px in 0.27 seconds. Walls and rocks stop you.
+- Nothing can hurt you during the dash.
+- Each enemy you touch on the way takes 2.5 times your Damage, once per dash, and is knocked back. Bosses take the damage but are not knocked back.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): nothing more: the second dash replaces the first.

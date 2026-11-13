@@ -18,6 +18,8 @@ details:
   value: 85 %
 - label: Copies at once
   value: Up to 24
+- label: Hit echo
+  value: Each hit repeats after 0.5 s at 50 %
 icon: items-ps/key-item/vs-recorder.png
 sprite: true
 names:
@@ -55,3 +57,14 @@ names:
 Echo: half a second after each shot, a copy fires from the same spot (at half damage)
 
 {{< clip >}}
+
+## How it works
+
+- Half a second after you fire, a copy of the shot is fired again from the spot where it started, in the same direction. It deals 50 % of the original damage and is 85 % of its size, keeps the type, range and special flight (homing, piercing...).
+- Up to 24 copies can be waiting at once; extra ones are skipped. Copies are dropped if you leave the room first.
+- Only main shots are echoed: copies, split shots, mirrored shots and companion shots are not.
+- Hit echo: every time one of your shots hits an enemy, the same enemy takes a second hit 0.5 seconds later for 50 % of that damage, if it is still alive (up to 40 waiting). This second hit does not trigger on-hit items.
+
+## Stacking
+
+- A second copy changes nothing.

@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Tirs ennemis
+  value: 25 % plus lents
+- label: S'applique à
+  value: Tous les tirs ennemis de la salle, boss compris
 icon: items-ps/incense/lax.png
 sprite: true
 names:
@@ -44,3 +49,11 @@ names:
     desc: 敵方彈的速度降低25 %
 ---
 Les tirs ennemis sont 25 % plus lents
+
+## Fonctionnement
+- Chaque projectile ennemi de la salle voit sa vitesse réduite de 25 % dès son apparition (une seule fois : il ne ralentit pas davantage).
+- Cela touche aussi les projectiles des boss. Les ennemis eux-mêmes ne sont pas ralentis, seulement leurs tirs.
+- Cela marche dans toutes les salles, et pour toute l'équipe si un joueur l'a.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne ralentit pas davantage les tirs.

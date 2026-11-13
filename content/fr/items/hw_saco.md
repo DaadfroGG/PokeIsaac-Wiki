@@ -9,12 +9,14 @@ pools:
 - supersecret
 pool_weight: 1
 details:
-- label: Bonbon
+- label: Friandise
   value: ½ cœur d'âme
-- label: Sort
-  value: Ennemis avec 25 % de vie en moins (pas les boss)
-- label: Probabilité
+- label: Farce
+  value: Les ennemis commencent avec 25 % de PV en moins (pas les boss)
+- label: Chance
   value: 50 % chacun
+- label: Fréquence
+  value: Une fois par salle
 icon: items-ps/key-item/loot-sack.png
 sprite: true
 names:
@@ -50,3 +52,12 @@ names:
     desc: 進入有敵人的房間時：不給糖就搗蛋！給糖：半顆靈魂之心。搗蛋：敵人一開始生命減少25%。
 ---
 En entrant dans une salle avec des ennemis : des bonbons ou un sort ! Bonbon : un demi-cœur d'âme. Sort : les ennemis commencent avec 25 % de vie en moins.
+
+## Fonctionnement
+- En entrant dans une salle qui contient encore des ennemis, c'est farce ou friandise : 50 % de chances chacun.
+- Friandise : vous gagnez un demi-cœur d'âme.
+- Farce : tous les ennemis non-boss de la salle commencent avec 25 % de PV en moins (1 PV minimum).
+- Cela ne marche pas dans les salles de boss, et une seule fois par salle.
+
+## Cumul
+- Un second exemplaire ne change rien : le tirage a toujours lieu une fois par salle.

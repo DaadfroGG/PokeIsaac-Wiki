@@ -51,3 +51,13 @@ names:
     desc: 使用主動道具時：5秒內射速×1.5，且彈變大
 ---
 When you use your active item: 5 seconds of fire rate ×1.5 and bigger shots
+
+## How it works
+
+- Every time you use your active item, you get 5 seconds of faster fire (the time between shots drops to 67 %, so ×1.5 fire rate) and shots 25 % bigger.
+- Using the active again while it is running restarts the 5 seconds.
+- It still obeys the fire-rate limit of 12 shots per second.
+
+## Stacking
+
+- A second copy changes nothing.

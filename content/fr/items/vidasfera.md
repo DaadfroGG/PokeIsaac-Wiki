@@ -14,6 +14,13 @@ stats:
   good: true
 - text: Chance -2
   good: false
+details:
+- label: Dégâts
+  value: +1,8
+- label: Chance
+  value: −2
+- label: Cumul
+  value: Chaque exemplaire s'ajoute
 icon: items/life-orb.png
 sprite: true
 names:
@@ -49,3 +56,10 @@ names:
     desc: 傷害+1.8、幸運-2
 ---
 Dégâts +1,8, chance -2
+
+## Fonctionnement
+- Dégâts +1,8 : un bonus fixe ajouté aux Dégâts de base de votre Pokémon. Tous les bonus fixes de Dégâts des objets sont d'abord additionnés ; les 3 premiers points comptent en entier, de +3 à +8 pour moitié, de +8 à +40 pour un quart et au-delà pour 5 % (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Chance −2 : réduit votre Chance : le butin des ennemis, les récompenses de fin de salle, les coups critiques et les statuts du passif de type deviennent moins probables. Un malus de Chance compte en entier. Les mêmes −1 % de critique et −2 % de statut par point s'appliquent, et les chances de butin des ennemis ne baissent plus au-delà de −5.
+
+## Cumul
+- Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

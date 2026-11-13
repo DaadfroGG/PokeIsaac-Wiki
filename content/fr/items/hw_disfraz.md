@@ -11,8 +11,12 @@ pool_weight: 1
 details:
 - label: Une fois par étage
   value: Vous sauve d'un coup fatal
-- label: Détonation
-  value: ×4 vos dégâts à 140 px
+- label: Condition
+  value: Aucun cœur d'âme
+- label: Explosion
+  value: ×4 vos dégâts dans 140 px
+- label: Ensuite
+  value: 1,5 s d'invulnérabilité
 icon: items-ps/key-item/contest-costume--jacket.png
 sprite: true
 names:
@@ -48,3 +52,12 @@ names:
     desc: 每層一次，會擋下本來會讓你倒下的那一擊，並爆發出幽靈，傷害附近的敵人（你傷害的×4）。
 ---
 Une fois par étage, il encaisse le coup qui vous mettrait K.O. et éclate en fantômes qui blessent les ennemis proches (×4 vos dégâts).
+
+## Fonctionnement
+- Une fois par étage, un coup qui vous tuerait est absorbé. Cela ne marche que si vous n'avez aucun cœur d'âme.
+- Le déguisement éclate en fantômes : tous les ennemis à moins de 140 px subissent 4 fois vos Dégâts (type Spectre).
+- Vous gagnez 1,5 seconde d'invulnérabilité ensuite.
+- Il est de nouveau prêt à l'étage suivant.
+
+## Cumul
+- Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -9,6 +9,13 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Compagnon
+  value: Miaouss (Normal)
+- label: Récompense
+  value: 3 pièces
+- label: Tous les
+  value: 3 salles nettoyées
 icon: items-ps/ball/luxury.png
 sprite: true
 names:
@@ -46,3 +53,13 @@ names:
 Un Miaouss vous accompagne et vous donne des Pokédollars toutes les 3 salles nettoyées
 
 {{< clip >}}
+
+## Fonctionnement
+
+- Toutes les 3 salles nettoyées, Miaouss laisse tomber 3 pièces (Pokédollars) à côté de lui.
+- Il ne tire ni ne combat jamais.
+- Les compagnons sont limités à 3 à la fois (5 avec la [Boîte Noigrume](m_caja_bonguri.html)) ; un compagnon en trop attend dans le Sac. Voir [Compagnons](../mechanics/companeros.html).
+
+## Cumul
+
+- Chaque exemplaire amène un autre compagnon du même type (tant que vous êtes sous la limite), et chacun agit séparément. Chaque compagnon compte ses propres salles.

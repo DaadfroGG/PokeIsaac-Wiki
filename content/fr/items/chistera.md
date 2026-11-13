@@ -11,6 +11,17 @@ stats:
   good: true
 - text: +15 Pokédollars
   good: true
+details:
+- label: Chance
+  value: '+1'
+- label: À la prise
+  value: +15 Pokédollars
+- label: Pièces ramassées
+  value: 2 au lieu de 1
+- label: Pépites ramassées
+  value: 7 au lieu de 5
+- label: Obtention
+  value: Absent de tous les pools d'objets
 icon: items/_shape_cosmetic_3a3a4c.svg
 names:
   en:
@@ -45,3 +56,12 @@ names:
     desc: 更多金錢與15寶可幣；幸運+1
 ---
 Plus d'argent et 15 P$ ; chance +1
+
+## Fonctionnement
+- Chance +1 et 15 Pokédollars dès que vous le ramassez. La Chance compte en entier jusqu'à 10 et pour un quart seulement au-delà (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Il porte le même effet que la [Pièce Rune](amuleto.html) : chaque [pièce](../world/coin.html) ramassée vaut 2 au lieu de 1 et chaque pépite 7 au lieu de 5.
+- Votre porte-monnaie est plafonné (99, puis 150 dès l'étage 10 et 250 dès l'étage 30).
+- Il n'est proposé ni par la salle au trésor, ni par la boutique, ni par aucun autre pool d'objets dans le jeu actuel.
+
+## Cumul
+- La Chance et les 15 Pokédollars sont ajoutés à nouveau par chaque exemplaire, mais la valeur double des pièces est un effet tout ou rien : un second Haut-de-forme, ou une Pièce Rune en plus, ne fait pas valoir les pièces davantage.

@@ -12,6 +12,13 @@ pool_weight: 2
 stats:
 - text: Luck +1
   good: true
+details:
+- label: On pickup
+  value: Luck +1
+- label: Each floor
+  value: Luck +1 every time you go down a floor
+- label: Cap
+  value: None (full up to 10 Luck, then ¼)
 icon: items-ps/incense/luck.png
 sprite: true
 names:
@@ -47,3 +54,10 @@ names:
     desc: 每往下走一層，幸運+1
 ---
 Luck +1 each time you go down a floor
+
+## How it works
+- You get Luck +1 when you pick it up, then another Luck +1 each time you go down to a new floor, for the rest of the run.
+- There is no cap, but Luck follows the [diminishing returns](../mechanics/rendimientos.html): each point counts fully up to 10 Luck, then only for a quarter.
+
+## Stacking
+- Each copy gives its own Luck +1 on pickup and its own Luck +1 per floor: two copies are +2 per floor.

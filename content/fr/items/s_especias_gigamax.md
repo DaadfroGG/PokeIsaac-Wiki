@@ -19,6 +19,19 @@ stats:
   good: true
 - text: Soin complet
   good: true
+details:
+- label: Dégâts
+  value: '+1'
+- label: Vitesse
+  value: +0,3
+- label: Portée
+  value: +60 px
+- label: PV max
+  value: +1 cœur
+- label: Soin
+  value: Tous vos PV
+- label: Taille des tirs
+  value: +2,5 de rayon
 icon: items-ps/curry-ingredient/gigantamix.png
 sprite: true
 names:
@@ -54,3 +67,14 @@ names:
     desc: 超極巨化！傷害+1，速度+，射程+，彈更大，愛心+1並完全治癒
 ---
 Gigamax ! Dégâts +1, vitesse +, portée +, tirs plus gros, cœur +1 et soin complet
+
+## Fonctionnement
+- Le +1 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
+- La Vitesse +0,3 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- Portée +60 : vos tirs vont 60 px plus loin, sans rendements décroissants.
+- Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
+- Il vous soigne entièrement en le ramassant ; ce soin ignore la limite de soins.
+- Tirs plus gros : +2,5 de rayon (un tir normal en a 7), ils touchent donc plus facilement. Les explosions comme celle de l'[Orbe Toxique](m_toxisfera.html) grossissent un peu aussi.
+
+## Cumul
+- Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur les Dégâts), les tirs grossissent encore, et il vous soigne à nouveau entièrement.

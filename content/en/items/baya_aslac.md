@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Condition
+  value: 1 heart or less and no soul hearts
+- label: Speed
+  value: '+1.2'
 icon: items-ps/berry/salac.png
 sprite: true
 names:
@@ -44,3 +49,10 @@ names:
     desc: 剩一顆愛心以下且沒有靈魂之心時，速度大幅提升
 ---
 At one heart or less and no soul hearts, much more speed
+
+## How it works
+- While you have 1 red heart or less and no soul hearts at all, your Speed is raised by 1.2.
+- The bonus appears and disappears instantly as your health changes (healing above 1 heart or gaining a soul heart removes it).
+
+## Stacking
+- It does not stack: a second copy adds nothing.

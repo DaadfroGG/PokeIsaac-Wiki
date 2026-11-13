@@ -9,12 +9,20 @@ pools:
 - devil
 pool_weight: 2
 details:
-- label: Damage
+- label: Companion
+  value: Gastly (Ghost)
+- label: Fire interval
+  value: 0.5 s
+- label: Damage per shot
+  value: (2 + 0.4 per floor) ×1.3
+- label: Damage bonus
   value: ×1.3 compared to other companions
 - label: Scare
   value: 25 % per hit, 2 s (not bosses)
 - label: Shots
   value: Go through rocks
+- label: Cost
+  value: Distortion Room deal
 icon: items-ps/hold-item/griseous-orb.png
 sprite: true
 names:
@@ -52,3 +60,16 @@ names:
 A Gastly follows you: its shots pass through rocks, hit hard and sometimes scare
 
 {{< clip >}}
+
+## How it works
+
+- Gastly follows just behind you and shoots at the nearest enemy within 380 px, once every 0.5 seconds. Its shots travel up to 360 px and carry its type (Ghost).
+- Its shots hit 1.3 times as hard as a normal companion's (2.6 on the first floor), pass through rocks and have a 25 % chance per hit to scare a non-boss enemy for 2 seconds (see [Status effects](../mechanics/estados.html)).
+- The Pact is sold in the Distortion Room for life (see [Distortion Room deals](../mechanics/pactos.html)).
+- Companion damage does not depend on your own Damage stat: each shot or hit is based on 2 on the first floor, +0.4 for every floor after that.
+- Its shots are not boosted by your shot upgrades (no extra shots, no crits) and do not trigger your on-hit items.
+- Companions are limited to 3 at a time (5 with the [Apricorn Box](m_caja_bonguri.html)); an extra one waits in the Bag. See [Companions](../mechanics/companeros.html).
+
+## Stacking
+
+- Each copy brings another companion of the same kind (while you are under the limit), and each acts on its own.

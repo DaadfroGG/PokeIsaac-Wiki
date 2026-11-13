@@ -12,6 +12,11 @@ pool_weight: 2
 stats:
 - text: Range +150
   good: true
+details:
+- label: Range
+  value: +150 px
+- label: Stacking
+  value: Every copy adds again
 icon: items-ps/medicine/genius-wing.png
 sprite: true
 names:
@@ -47,3 +52,9 @@ names:
     desc: 射程++
 ---
 Range ++
+
+## How it works
+- Range +150 px: added straight to how far your shots travel, with no diminishing returns. Range can never drop below 120 px.
+
+## Stacking
+- Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

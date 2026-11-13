@@ -10,6 +10,15 @@ pools:
 - secret
 - shop
 pool_weight: 2
+details:
+- label: Effet
+  value: Ressuscite une fois après la mort
+- label: PV à la résurrection
+  value: 2 cœurs
+- label: Après la résurrection
+  value: 2,5 s d'invulnérabilité
+- label: Utilisations
+  value: '1'
 icon: items-ps/medicine/max-revive.png
 sprite: true
 names:
@@ -45,3 +54,11 @@ names:
     desc: 倒下時帶著兩顆愛心重生（使用後消失）
 ---
 Si vous tombez K.O., vous revenez à la vie avec deux cœurs (usage unique)
+
+## Fonctionnement
+- La première fois que vous devriez mourir, vous revenez à la vie avec 2 cœurs (ou vos PV max s'ils sont plus bas) et 2,5 secondes d'invulnérabilité.
+- Il est consommé quand il se déclenche (il reste dans l'inventaire mais ne fait plus rien).
+- Il agit avant toute autre seconde chance, comme la [Queue Skitty](d_cola_skitty.html).
+
+## Cumul
+- Un second exemplaire ramassé avant d'utiliser le premier ne fait rien de plus : une seule résurrection est sauvée.

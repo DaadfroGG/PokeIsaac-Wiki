@@ -6,6 +6,11 @@ category: shot
 family: core
 tier: 3
 pool_weight: 2
+details:
+- label: Chance de critique
+  value: +8 % (par exemplaire)
+- label: Dégâts critiques
+  value: ×3 au lieu de ×2
 icon: items/scope-lens.png
 sprite: true
 names:
@@ -41,3 +46,11 @@ names:
     desc: 會心一擊，且會心一擊造成x3傷害
 ---
 Coups critiques, et les critiques infligent x3
+
+## Fonctionnement
+- Elle ajoute +8 % de chance de coup critique (voir [coups critiques](../mechanics/criticos.html)) et fait passer les dégâts de chaque coup critique de ×2 à ×3.
+- Le ×3 s'applique à tous vos critiques, quelle qu'en soit la source (chance des types Combat/Ténèbres, Chance, autres objets).
+
+## Cumul
+- +8 % de chance de critique s'ajoute à chaque exemplaire.
+- Le bonus de dégâts critiques ne se cumule pas : un second exemplaire ne dépasse pas ×3.

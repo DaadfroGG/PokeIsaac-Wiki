@@ -9,6 +9,11 @@ pools:
 - treasure
 - shop
 pool_weight: 2
+details:
+- label: Révèle
+  value: La salle secrète de chaque étage, sur la carte
+- label: Jamais
+  value: Salles ultra-secrètes ; étages sous la malédiction de l'Égarement
 icon: items-ps/key-item/devon-scope.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 你能在地圖上看到每層祕密房間的位置
 ---
 Vous voyez sur la carte où se trouve la salle secrète de chaque étage
+
+## Fonctionnement
+- À chaque étage, la [salle secrète](../rooms/secret.html) est affichée sur la carte dès le départ, sans que vous ayez à la trouver.
+- Il ne révèle pas la [salle ultra-secrète](../rooms/supersecret.html).
+- Il ne fait rien sur un étage sous la [malédiction](../mechanics/maldiciones.html) de l'Égarement, où la carte est cachée.
+- Vous devez toujours ouvrir le passage (par exemple avec une bombe) pour entrer dans la salle.
+
+## Cumul
+- C'est un effet tout ou rien : un second Devon Scope ne change rien. En coop, un seul coéquipier qui l'a suffit pour la carte partagée.

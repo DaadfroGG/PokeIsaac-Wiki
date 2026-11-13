@@ -11,13 +11,17 @@ pools:
 pool_weight: 2
 details:
 - label: Charge
-  value: 2.5× your fire rate (max. 1.4 s)
+  value: 2.5 × your delay between shots, 0.33 to 1.4 s, fired with the shoot keys (min 8 % to release)
 - label: Shadow Ball
-  value: From ×0.4 to ×1.25 your damage
+  value: ×0.4 to ×1.25 Damage, bigger with charge
 - label: Fragments
-  value: 4 to 12, each 15 % of the damage; half of them seek enemies
+  value: 4 to 12, each 15 % of the ball's damage; half seek enemies within 260 px
+- label: Cooldown
+  value: Half your delay (at least 0.1 s)
+- label: Module
+  value: Works with any weapon
 - label: With another weapon
-  value: Every 3rd attack, a small shadow ball
+  value: 'Every 3rd weapon attack: small Shadow Ball (×0.9, 5 fragments)'
 icon: items-ps/medicine/casteliacone.png
 sprite: true
 names:
@@ -53,5 +57,15 @@ names:
     desc: 按住射擊鍵蓄力暗影球，命中後會碎成追蹤敵人的碎片。搭配其他武器時，每第3次攻擊會發射一顆小型暗影球
 ---
 Hold fire to charge a Shadow Ball that breaks into fragments seeking enemies when it hits. With another weapon, every 3rd attack throws a small one
+
+## How it works
+- It is a **module**: it works with any weapon and does not replace it. Your normal shooting is replaced: hold the shoot keys to charge, release to fire. It needs at least 8 % charge, and a full charge takes 2.5 × your delay between shots (0.33 s to 1.4 s).
+- The release is a normal volley (multishot applies, up to 9 balls), but each ball deals ×0.4 to ×1.25 of its normal damage and gets bigger the more you charged. After a release you can charge again after half your delay between shots (at least 0.1 s).
+- When a ball hits an enemy or ends (range, wall) it bursts into 4 to 12 fragments (by charge). Each fragment deals 15 % of the ball's damage (at least 0.4), flies 110 to 160 px, and every second fragment aims at an enemy within 260 px; the rest fly in random directions. Fragments are child shots: effects that only trigger on primary shots do not trigger on them.
+- Your items' effects (crit, burn, poison, slow...) apply to the balls.
+- **With another weapon:** every 3rd attack made with the weapon key also throws a small Shadow Ball (×0.9 Damage, 5 fragments).
+
+## Stacking
+- A second copy does nothing more.
 
 {{< clip >}}

@@ -9,6 +9,15 @@ pools:
 - shop
 pool_weight: 2
 charge: 1
+details:
+- label: Throw
+  value: Lobbed, up to 320 px (your Range if lower)
+- label: Burst
+  value: 55 px (+6 per Size bonus)
+- label: Damage
+  value: Your Damage ×3.2 (min. 8)
+- label: Poison
+  value: 2.5 s, only if you are Poison type
 icon: items-ps/curry-ingredient/boiled-egg.png
 sprite: true
 names:
@@ -44,3 +53,14 @@ names:
     desc: 扔出一顆臭蛋，落地時爆出毒霧（不會傷到你）
 ---
 You throw a rotten egg that bursts with poison on landing (doesn't hurt you)
+
+## How it works
+- You lob an egg the way you are facing. It flies over rocks and bursts when it lands, at the end of its flight (320 px, or your Range if it is shorter), or as soon as it touches an enemy.
+- The burst hits every enemy within 55 px (+6 px per Size bonus) for about 3.2 times your Damage (at least 8). Bosses take it too.
+- It only poisons (2.5 seconds) if your Pokémon is Poison type.
+- It doesn't hurt you. The burst breaks rocks and crates and can open hidden secret-room doors.
+- It always goes off when you press it, even in an empty room, and uses the charge.
+
+## Stacking
+- Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
+- With [Devon Scuba Gear](d_bombona_devon.html): you throw two eggs.

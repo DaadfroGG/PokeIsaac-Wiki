@@ -6,6 +6,11 @@ category: shot
 family: module
 tier: 1
 pool_weight: 2
+details:
+- label: Ralentissement
+  value: À chaque coup, 1,5 s
+- label: Boss
+  value: Ralentis aussi
 icon: items-ps/apricorn/blue.png
 sprite: true
 names:
@@ -41,3 +46,11 @@ names:
     desc: 你的彈會讓敵人減速
 ---
 Vos tirs ralentissent les ennemis
+
+## Fonctionnement
+- Chaque coup ralentit l'ennemi pendant 1,5 s (voir [effets de statut](../mechanics/estados.html)). Le compteur est relancé à chaque coup.
+- Les boss sont aussi ralentis, ce qui ne réduit de moitié que leur vitesse de marche entre deux attaques.
+- Le ralentissement est garanti : il n'y a aucun tirage. Il s'ajoute à la chance de ralentir des tirs de type Glace.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne ralentit ni plus longtemps ni plus fort.

@@ -11,11 +11,13 @@ pools:
 pool_weight: 2
 details:
 - label: Effets possibles
-  value: Brûler, geler, éclairs, traverser, rebondir, téléguidé, ralentir, repousser, poison, éclabousser ou grandir
+  value: Brûlure, gel, éclairs, perforation, rebond, tir guidé, ralentissement, recul, poison, éclaboussure ou croissance
 - label: Durée
-  value: Jusqu'à ce que la salle soit nettoyée
+  value: Jusqu'à la fin de la salle (ou jusqu'à ce que vous la quittiez)
 - label: Chance
   value: 'Chaque effet a la même chance : 1 sur 11 (environ 9 %)'
+- label: Puissance
+  value: Comme si vous aviez un exemplaire de plus d'un objet de cet effet
 icon: items-ps/incense/odd.png
 sprite: true
 names:
@@ -53,3 +55,11 @@ names:
 Dans chaque salle avec des ennemis, vos tirs gagnent un effet aléatoire jusqu'à ce que vous la nettoyiez
 
 {{< clip >}}
+
+## Fonctionnement
+- À chaque entrée dans une salle qui contient encore des ennemis vivants, un des 11 effets de tir est tiré au hasard et ajouté à tous vos tirs : brûlure, gel, éclairs, perforation, rebond, tir guidé, ralentissement, recul, poison, éclaboussure ou croissance. Un message indique lequel.
+- L'effet équivaut à posséder un exemplaire de plus de l'objet correspondant (par exemple +1 perforation ou +1 rebond). Il disparaît à la fin de la salle ou quand vous la quittez, et un nouveau tirage a lieu dans la salle suivante avec des ennemis.
+- Les salles sans ennemis ne tirent pas d'effet.
+
+## Cumul
+- Il ne se cumule pas : un second exemplaire ne donne pas un second effet aléatoire.

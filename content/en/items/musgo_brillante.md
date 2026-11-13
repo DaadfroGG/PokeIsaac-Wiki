@@ -9,6 +9,11 @@ pools:
 - treasure
 - boss
 pool_weight: 2
+details:
+- label: Per hit taken
+  value: Damage +0.3
+- label: Cap
+  value: +3 (10 hits)
 icon: items-ps/hold-item/luminous-moss.png
 sprite: true
 names:
@@ -44,3 +49,12 @@ names:
     desc: 每受到一次攻擊，傷害 +0.3（最多 +3）
 ---
 Each hit you take gives you damage +0.3 (up to +3)
+
+## How it works
+- Each hit that hurts you adds +0.3 to your Damage, up to 10 hits (+3.0).
+- The bonus is permanent for the rest of the run: it is not lost when you change room or floor.
+- Hits that are blocked or dodged don't count, but a hit absorbed by a soul heart does.
+- It is flat Damage, so it is fully counted up to +3 (see [Diminishing returns](../mechanics/rendimientos.html)).
+
+## Stacking
+- It does not stack: a second copy adds nothing.
