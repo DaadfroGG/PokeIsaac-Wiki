@@ -76,6 +76,8 @@ Every projectile you fire gets its own chance to trigger effects (burn, charm, c
 | **Chain lightning** | 60 % and more | <span class="mx-no">No</span> | <span class="mx-no">No</span> | <span class="mx-yes">Yes</span> (Electric) |
 | **Burn / poison tick** | a % of the shot | <span class="mx-no">No</span> | — | <span class="mx-no">No</span> |
 
+A **split shot** is a small projectile born from another one when it hits something: the 2 shots of [Silver Powder](../items/polvo_plata.html) when a shot hits an enemy, the 3 of [Mystic Water](../items/agua_mistica.html) when a shot hits a wall, and the other fragments listed in [Extra shots](disparos_extra.html). The extra projectiles fired with your volley ([TM Double Team](../items/mt_doble.html), [Lens Case](../items/m_portalentillas.html), [Destiny Knot](../items/lazo_destino.html)…) are normal projectiles, not split shots.
+
 Companion and some weapon projectiles also skip most item effects.
 
 - A projectile also disappears when it leaves the room, or hits a rock, an obstacle or a pit, unless it can bounce.

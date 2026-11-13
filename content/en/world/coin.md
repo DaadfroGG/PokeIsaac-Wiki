@@ -12,7 +12,7 @@ details:
 - label: Wallet
   value: Up to 99; 150 from floor 10; 250 from floor 30
 - label: Drop on kill
-  value: 6 % chance, +0.5 % per point of luck
+  value: 6 % chance, +0.5 % per point of Luck (10 % at most); 3 in 4 are coins
 names:
   es:
     name: Pokédólar
@@ -46,3 +46,10 @@ names:
     desc: 遊戲中的貨幣：可在商店使用。
 ---
 The game's currency: spend it in the shop.
+
+## Drops from enemies
+- Each defeated enemy has a 6 % chance, +0.5 % per point of Luck, to drop something: a coin 3 times out of 4, otherwise a half heart. Luck counts from −5 to 8 here, so the chance goes from 3.5 % to 10 %.
+- If it drops nothing, it still has a 1.5 % chance, +0.3 % per point of Luck, to drop a [key](key.html).
+- [Power-Up Pocket](../items/d_bolsillo_mejoras.html) doubles both chances.
+- [Max Lure](../items/cebo_max.html) adds a separate 20 % chance of one more coin.
+- The chances use the Luck of the player who gets the kill.

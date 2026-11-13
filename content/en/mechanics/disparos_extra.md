@@ -71,7 +71,7 @@ Each attack fires a volley of up to 9 shots. Some items add shots on top of that
 5. Each Ditto ([Repeat Ball](../items/f_acopio_ball.html)) adds a copy of your two volleys: **+18** per Ditto at 75 % damage.
 6. Vs. Recorder then repeats most of these half a second later at 50 %, up to 24 copies waiting at once.
 
-- All of these are capped by the **450** projectiles of yours that can be in the room at once. Past that, the projectiles created by other projectiles (splits, fragments, bones…) are removed first, oldest first.
+- All of these are capped by the **450** projectiles of yours that can be in the room at once. Past that, the projectiles created by other projectiles (splits, fragments, bones…) are removed first, oldest first; then the oldest of your other projectiles. The 9 is only the size of one volley: it does not limit how many of your projectiles are on screen. In co-op the 450 are shared by all players, and companion shots count too.
 - At most 12 attacks per second (see [Diminishing returns](rendimientos.html)).
 
 ## Other items that create projectiles

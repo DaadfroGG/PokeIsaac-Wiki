@@ -42,3 +42,13 @@ names:
     desc: 會心一擊造成雙倍傷害（某些道具可達三倍）。格鬥和惡屬性的寶可夢更容易打出會心一擊。
 ---
 A critical hit deals double (triple with some items). Fighting and Dark-type Pokémon land more crits.
+
+## How it works
+- Each projectile rolls for a crit once, when it is fired. A crit deals ×2 damage (more with items that raise crit damage).
+- Crit chance: 8 % per crit bonus from items (they add up), +10 % for Fighting and Dark-type shots (a bit more for single-type Pokémon), plus your type passive, plus 1 % per point of Luck.
+- [Companions](companeros.html) never land critical hits.
+
+## On screen
+- Damage numbers float above the enemy you hit. Normal hits show a small **white** number; critical hits show a bigger **yellow** number.
+- Hits that land on the same spot in a short moment are added together into one number, so a fast stream of shots shows one growing number instead of many.
+- Damage numbers can be turned off in the settings.

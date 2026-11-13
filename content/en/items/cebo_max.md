@@ -53,7 +53,7 @@ More enemies in each room, but they drop more coins
 
 ## How it works
 - When a normal combat room is filled, one extra enemy appears: a copy of a random enemy already in the room, with the same health, speed and damage, placed at least 170 px away from you.
-- Each enemy you defeat has a 20 % chance to drop one extra [coin](../world/coin.html), on top of its normal drop.
+- Each enemy you defeat has a 20 % chance to drop one extra [coin](../world/coin.html), on top of its normal drop (6 % + 0.5 % per Luck, see [Pokédollar](../world/coin.html)). The two are rolled separately, so an enemy can drop both. It works for every player as soon as one player in the team has it.
 - These extra coins have limits: at most 3 per room and, per floor, 6 plus half the floor number (rounded).
 - It does not affect boss rooms or other kinds of room.
 

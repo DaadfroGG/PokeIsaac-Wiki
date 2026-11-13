@@ -42,3 +42,13 @@ names:
     desc: 會心一擊造成雙倍傷害（某些道具可達三倍）。格鬥和惡屬性的寶可夢更容易打出會心一擊。
 ---
 Un coup critique inflige le double (le triple avec certains objets). Les Pokémon de type Combat et Ténèbres font plus de critiques.
+
+## Fonctionnement
+- Chaque projectile tire son coup critique une seule fois, quand il est lancé. Un critique inflige ×2 dégâts (plus avec les objets qui augmentent les dégâts critiques).
+- Chance de critique : 8 % par bonus de critique venant des objets (ils s'additionnent), +10 % pour les tirs de type Combat et Ténèbres (un peu plus pour les Pokémon d'un seul type), plus votre passif de type, plus 1 % par point de Chance.
+- Les [compagnons](companeros.html) ne font jamais de coup critique.
+
+## À l'écran
+- Les dégâts s'affichent en chiffres au-dessus de l'ennemi touché. Un coup normal donne un petit chiffre **blanc** ; un coup critique, un chiffre plus gros et **jaune**.
+- Les coups qui tombent au même endroit en un court instant s'additionnent en un seul chiffre : une rafale rapide montre un chiffre qui grossit au lieu de plusieurs.
+- Les chiffres de dégâts peuvent être désactivés dans les options.

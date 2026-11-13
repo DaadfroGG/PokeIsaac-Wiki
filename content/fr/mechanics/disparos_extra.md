@@ -71,7 +71,7 @@ Chaque attaque tire une salve de 9 tirs au maximum. Certains objets ajoutent des
 5. Chaque Métamorph ([Bis Ball](../items/f_acopio_ball.html)) ajoute une copie de vos deux salves : **+18** par Métamorph, à 75 % des dégâts.
 6. Le Magnéto VS répète ensuite la plupart de ces tirs une demi-seconde plus tard à 50 %, avec 24 copies en attente au maximum.
 
-- Tout cela est limité par les **450** projectiles à vous qui peuvent être dans la salle en même temps. Au-delà, ce sont les projectiles créés par d'autres projectiles (divisions, fragments, os…) qui disparaissent en premier, les plus anciens d'abord.
+- Tout cela est limité par les **450** projectiles à vous qui peuvent être dans la salle en même temps. Au-delà, ce sont les projectiles créés par d'autres projectiles (divisions, fragments, os…) qui disparaissent en premier, les plus anciens d'abord ; ensuite les plus anciens de vos autres projectiles. Le 9 n'est que la taille d'une salve : il ne limite pas le nombre de vos projectiles à l'écran. En coopération, les 450 sont partagés entre tous les joueurs, et les tirs des compagnons comptent aussi.
 - 12 attaques par seconde au maximum (voir [Rendements décroissants](rendimientos.html)).
 
 ## Autres objets qui créent des projectiles

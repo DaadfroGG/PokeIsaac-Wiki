@@ -76,6 +76,8 @@ Chaque projectile que vous tirez a sa propre chance de déclencher un effet (br�
 | **Éclair en chaîne** | 60 % et plus | <span class="mx-no">Non</span> | <span class="mx-no">Non</span> | <span class="mx-yes">Oui</span> (Électrik) |
 | **Tick de brûlure / poison** | un % du tir | <span class="mx-no">Non</span> | — | <span class="mx-no">Non</span> |
 
+Un **tir divisé** est un petit projectile né d'un autre quand celui-ci touche quelque chose : les 2 tirs de la [Poudre Argentée](../items/polvo_plata.html) quand un tir touche un ennemi, les 3 de l'[Eau Mystique](../items/agua_mistica.html) quand un tir touche un mur, et les autres fragments listés dans [Tirs supplémentaires](disparos_extra.html). Les projectiles en plus lancés avec votre salve ([CT Reflet](../items/mt_doble.html), [Boîte Lentilles](../items/m_portalentillas.html), [Nœud Destin](../items/lazo_destino.html)…) sont des projectiles normaux, pas des tirs divisés.
+
 Les projectiles des compagnons et de certaines armes ignorent aussi la plupart des effets d'objets.
 
 - Un projectile disparaît aussi quand il sort de la salle, ou touche un rocher, un obstacle ou un trou, sauf s'il peut rebondir.

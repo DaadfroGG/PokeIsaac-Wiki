@@ -12,7 +12,7 @@ details:
 - label: Bourse
   value: Jusqu'à 99 ; 150 dès l'étage 10 ; 250 dès l'étage 30
 - label: Butin sur un ennemi
-  value: 6 % de chance, +0,5 % par point de chance
+  value: 6 % de chance, +0,5 % par point de Chance (10 % au plus) ; 3 fois sur 4 une pièce
 names:
   en:
     name: PokéDollar
@@ -46,3 +46,10 @@ names:
     desc: 遊戲中的貨幣：可在商店使用。
 ---
 La monnaie du jeu : à dépenser à la boutique.
+
+## Butin des ennemis
+- Chaque ennemi vaincu a 6 % de chance, +0,5 % par point de Chance, de lâcher quelque chose : une pièce 3 fois sur 4, sinon un demi-cœur. Ici la Chance compte de −5 à 8, donc la chance va de 3,5 % à 10 %.
+- S'il ne lâche rien, il a encore 1,5 % de chance, +0,3 % par point de Chance, de lâcher une [clé](key.html).
+- La [Poche à Renforts](../items/d_bolsillo_mejoras.html) double ces deux chances.
+- Le [Max Leurre](../items/cebo_max.html) ajoute une chance séparée de 20 % d'avoir une pièce de plus.
+- Les chances utilisent la Chance du joueur à qui revient l'ennemi vaincu.

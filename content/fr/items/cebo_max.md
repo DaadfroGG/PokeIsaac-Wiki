@@ -53,7 +53,7 @@ Plus d'ennemis dans chaque salle, mais ils lâchent plus de pièces
 
 ## Fonctionnement
 - Quand une salle de combat normale se remplit, un ennemi supplémentaire apparaît : une copie d'un ennemi au hasard déjà présent, avec les mêmes PV, la même vitesse et les mêmes dégâts, placée à au moins 170 px de vous.
-- Chaque ennemi vaincu a 20 % de chances de lâcher une [pièce](../world/coin.html) de plus, en plus de son butin normal.
+- Chaque ennemi vaincu a 20 % de chances de lâcher une [pièce](../world/coin.html) de plus, en plus de son butin normal (6 % + 0,5 % par point de Chance, voir [Pokédollar](../world/coin.html)). Les deux sont tirés séparément : un ennemi peut lâcher les deux. Il marche pour tous les joueurs dès qu'un joueur de l'équipe l'a.
 - Ces pièces en plus sont limitées : 3 au maximum par salle et, par étage, 6 plus la moitié du numéro d'étage (arrondi).
 - Il n'affecte ni les salles de boss ni les autres types de salle.
 
