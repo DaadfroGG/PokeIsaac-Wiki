@@ -67,6 +67,7 @@ Les Balls vous donnent des compagnons qui vous suivent et combattent avec vous. 
 - Tant que tous les joueurs sont à la limite, **plus aucune Ball n'apparaît** dans les salles d'objets et les boutiques.
 - Les compagnons qui ne durent qu'une salle ou quelques secondes ne prennent pas de place : la capture de la [Poké Ball](../items/pokeball.html) en prend une, mais pas les Statitik du [Parfum](../items/a_colonia.html) et du [Champi Suave](../items/m_seta_aroma.html), les Roucool du [Fossile Plume](../items/d_fosil_pluma.html), le Magnéti de la [Carte Magnétique](../items/a_llave_magnetica.html), les renforts de la [Casquette de Dresseur](../items/gorra.html), le compagnon de la [Boîte Pokémon](../items/a_caja_pokemon.html) ni les copies de la [Poche de Capture](../items/a_bolsillo_captura.html). Ils partent tous quand vous entrez dans une autre salle.
 - En coopération, chaque joueur a ses propres compagnons et sa propre limite. Les compagnons suivent et aident le joueur à qui ils appartiennent.
+- Les ennemis que vos compagnons battent comptent comme les vôtres, pour tous les objets qui comptent les ennemis vaincus.
 - Les compagnons n'ont pas de vie : les ennemis ne peuvent ni les blesser ni les tuer. Seuls ceux qui durent peu (Statitik, Roucool, abeilles) disparaissent au bout d'un moment ou de quelques morsures.
 
 ## Comment ils bougent et tirent

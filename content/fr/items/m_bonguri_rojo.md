@@ -52,7 +52,7 @@ Chaque ennemi vaincu dans une salle augmente vos dégâts de 6 % jusqu'à votre 
 
 ## Fonctionnement
 - Chaque ennemi que vous battez ajoute un niveau, jusqu'à 10. Chaque niveau vaut +6 % de dégâts, soit +60 % à 10 victoires. Cela s'applique à tous vos dégâts comme un multiplicateur.
-- Il compte les ennemis que vous battez vous-même (pas ceux des compagnons ni des autres joueurs), et le bonus est remis à zéro quand vous entrez dans une autre salle.
+- Il compte chaque ennemi vaincu qui vous est attribué, y compris par vos compagnons, les bombes et la brûlure. En coopération, l'ennemi revient au joueur qui l'a touché en dernier avec un tir ou une attaque. Le bonus est remis à zéro quand vous entrez dans une autre salle.
 - Les victoires dues à la brûlure, au poison ou à d'autres dégâts persistants que vous avez infligés comptent aussi.
 
 ## Cumul
