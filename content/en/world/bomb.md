@@ -9,6 +9,14 @@ icon: icons/world/bomb.png
 details:
 - label: Where
   value: Loot and shop.
+- label: Fuse
+  value: 1.5 s (it flashes red for the last 0.5 s)
+- label: Radius
+  value: 95 px
+- label: Damage
+  value: 7 × your Damage, at least 25
+- label: Hurts you
+  value: 1 heart if you are inside the blast
 names:
   es:
     name: Voltorb (bomba)
@@ -42,3 +50,10 @@ names:
     desc: 按Q放置：幾秒後爆炸，可炸碎岩石和物件，並打開祕密房間。
 ---
 Place it with Q: it explodes after a few seconds, breaks rocks and objects and opens secret rooms.
+
+## How it works
+- After **1.5 seconds** it explodes in a **95 px** radius. It flashes red for the last half second.
+- It deals **7 × your Damage, at least 25**, to every enemy in the blast, bosses included, and breaks rocks and objects in range.
+- If you are inside the blast you lose **1 heart**. [Magma Stone](../items/d_piedra_magma.html) cancels that damage.
+- Your shots push it: you can shoot a Voltorb toward enemies before it goes off. It bounces off walls.
+- [Red Scarf](../held/red_scarf.html) makes the blast deal 50 % more damage. Many items change it: see the Voltorb items on the [item list](../items/index.html?cat=voltorb).

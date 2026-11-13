@@ -126,3 +126,8 @@ Pikachu, 3.5 base damage, with +10 damage from items and two ×2 items:
 2. 3.5 + 6 = **9.5** (instead of 13.5).
 3. ×2 × ×2 = ×4 on paper, which becomes 2.3 + 0.25 × 1.7 = **×2.725**.
 4. 9.5 × 2.725 ≈ **25.9** damage, instead of 54 without diminishing returns.
+
+## See also
+- [Extra shots](disparos_extra.html)
+- [Status effects](estados.html)
+- [Item stacking](acumulacion.html)

@@ -17,6 +17,10 @@ details:
   value: 'From the Bag (HELD card, DROP): it stays on the floor of the room'
 - label: Fuse
   value: 'From the Bag (FUSE, with Poké Dollars): its effect always works, with any Pokémon on the team, and the slot is freed. Up to 5 and never two alike. Fused items have their own pocket in the Bag'
+- label: Drop chances
+  value: Room clear 3.5 % · chest 12 % · broken object 1.2 % · secret room 30 % · shop 40 %
+- label: Fuse cost
+  value: 15 Poké Dollars on floor 1, +3.5 % per floor after that
 names:
   es:
     name: Objetos equipados
@@ -52,3 +56,37 @@ names:
 Each Pokémon on your team can hold an item, and it only works while that Pokémon is on the field: switching Pokémon also switches what you carry. They are small, situational effects. Pick them up by touching them; if you already had one, it stays on the floor in its place. They do not count towards the 100-item limit.
 
 All 49 of them, one page each: [Held items](../held/index.html).
+
+## Where they come from
+| Source | Chance | What happens |
+|---|---|---|
+| Clearing a [combat room](../rooms/normal.html) (or a League gym) | 3.5 % | One appears on the floor of the room |
+| Opening a [chest](../world/chest.html) or [golden chest](../world/goldchest.html) | 12 % | One appears just below the chest |
+| Breaking an object (vase, crate, barrel...) | 1.2 % | One appears where the object was |
+| [Secret room](../rooms/secret.html), first visit | 30 % | One is lying in the room |
+| [Shop](../rooms/shop.html), first visit | 40 % | One of the items for sale is replaced by a held item, sold for 9 Poké Dollars on floor 1 (the price rises with shop prices, 5 at least). Never in free shops |
+
+- Luck does not change these chances.
+- Which one: picked at random among all 49 held items that nobody has yet. Items held by any Pokémon of the team (or of another co-op player), fused items and items already lying in the room are left out. Only if all 49 are taken can a copy appear.
+
+## Holding, swapping and dropping
+- The item belongs to the Pokémon: when you switch, the Pokémon coming in brings its own item, and the items of the Pokémon on the bench do nothing.
+- Touching a held item on the floor takes it. If that Pokémon already held one, the old one is left on the floor where the new one was.
+- An item you just dropped or swapped can't be picked back up straight away: step a little away from it first.
+- To drop it, open the Bag, select the HELD card and press drop a second time within 3 s to confirm. It is placed just below you, on the floor of the room.
+- Effects that work "once per room" (such as the [Cheri Berry](../held/cheri_berry.html), [Blue Orb](../held/blue_orb.html) or [Lum Berry](../held/lum_berry.html)) are re-armed each time you enter a room. Counters such as the [Razz Berry](../held/razz_berry.html) shots or the [Pecha Berry](../held/pecha_berry.html) kills carry over from room to room.
+- Switch-in effects ([Shed Shell](../held/shed_shell.html), [RSVP Mail](../held/rsvp_mail.html), [Bubble Mail](../held/bubble_mail.html)) come from the item of the Pokémon coming in. The [Eject Pack](../held/eject_pack.html) works from the Pokémon going out.
+
+## Fusing
+- From the Bag, on the HELD card, choose FUSE and confirm with a second press within 3 s.
+- Cost: 15 Poké Dollars on floor 1, then +3.5 % per floor, like shop prices (about 20 on floor 10, 5 at least). Challenges that raise prices raise it too.
+- You need: an item in the held slot, fewer than 5 items fused, no fused item of the same kind, and enough money.
+- The item leaves the held slot, which is free for another one, and its effect then works for good, whichever Pokémon is on the field. A fused item can't be dropped.
+- The HUD box shows how many items are fused (+1 to +5); hover over it to read their names.
+- Quirk: the Range, Shot speed and Luck parts of a fused item ([Modest Mint](../held/modest_mint.html), [Calm Mint](../held/calm_mint.html), [Green Scarf](../held/green_scarf.html), [Lucky Punch](../held/lucky_punch.html)) only count while the Pokémon on the field is also holding an item. Their other effects always work.
+
+## Stacking
+- Each held effect is either on or off. Having the same item held and fused, or held by two Pokémon, is the same as having it once.
+- Different held items all work together: damage bonuses multiply, fire-rate bonuses multiply, and the damage reductions ([Protective Pads](../held/protective_pads.html), [Metal Powder](../held/metal_powder.html), [Bold Mint](../held/bold_mint.html)) add up, but a hit never goes below half a heart.
+- Held damage bonuses that are always on or depend on you ([Figy](../held/figy_berry.html), [Nanab](../held/nanab_berry.html), [Rabuta](../held/rabuta_berry.html) berries, [Mighty Candy L](../held/mighty_candy_l.html), [Adamant](../held/adamant_mint.html), [Timid](../held/timid_mint.html) and [Serious](../held/serious_mint.html) mints) are Damage multipliers: they show on the HUD and follow the [diminishing returns](rendimientos.html). Those that depend on the enemy hit ([Cheri](../held/cheri_berry.html), [Wiki](../held/wiki_berry.html), [Pinap](../held/pinap_berry.html), [Micle](../held/micle_berry.html) berries, [Silver Leaf](../held/silver_leaf.html), [Lone Earring](../held/lone_earring.html)) are applied on hit and are not capped.
+- Healing from held items ([Chesto](../held/chesto_berry.html), [Sitrus](../held/sitrus_berry.html), [Small Bouquet](../held/small_bouquet.html)) ignores the limit on item healing.

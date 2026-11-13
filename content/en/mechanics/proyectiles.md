@@ -26,7 +26,7 @@ Every projectile you fire gets its own chance to trigger effects (burn, charm, c
 
 ## Limits
 
-<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attacks at most</div></div><div class="mx-tile"><div class="v">9</div><div class="k">projectiles per attack at most</div></div><div class="mx-tile"><div class="v">450</div><div class="k">of your projectiles at once in a room</div></div><div class="mx-tile"><div class="v">300</div><div class="k">default range of a projectile</div></div></div>
+<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attacks at most</div></div><div class="mx-tile"><div class="v">9</div><div class="k">projectiles per multishot volley (<a href="disparos_extra.html">some items add more</a>)</div></div><div class="mx-tile"><div class="v">450</div><div class="k">of your projectiles at once in a room</div></div><div class="mx-tile"><div class="v">300</div><div class="k">default range of a projectile</div></div></div>
 
 <details class="mx-more"><summary>For the curious: the full detail</summary>
 
@@ -85,3 +85,8 @@ Companion and some weapon projectiles also skip most item effects.
 </details>
 
 Related pages: [Diminishing returns](rendimientos.html) · [Critical hits](criticos.html) · [Type chart](tabla_tipos.html) · [Scaling type passives](pasivas_escalan.html)
+
+## See also
+- [Extra shots](disparos_extra.html)
+- [Status effects](estados.html)
+- [Item stacking](acumulacion.html)

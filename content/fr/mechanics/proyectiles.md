@@ -26,7 +26,7 @@ Chaque projectile que vous tirez a sa propre chance de déclencher un effet (br�
 
 ## Limites
 
-<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attaques au maximum</div></div><div class="mx-tile"><div class="v">9</div><div class="k">projectiles par attaque au maximum</div></div><div class="mx-tile"><div class="v">450</div><div class="k">de vos projectiles en même temps dans une salle</div></div><div class="mx-tile"><div class="v">300</div><div class="k">portée par défaut d'un projectile</div></div></div>
+<div class="mx-tiles"><div class="mx-tile"><div class="v">12 / s</div><div class="k">attaques au maximum</div></div><div class="mx-tile"><div class="v">9</div><div class="k">projectiles par salve de tir multiple (<a href="disparos_extra.html">des objets en ajoutent</a>)</div></div><div class="mx-tile"><div class="v">450</div><div class="k">de vos projectiles en même temps dans une salle</div></div><div class="mx-tile"><div class="v">300</div><div class="k">portée par défaut d'un projectile</div></div></div>
 
 <details class="mx-more"><summary>Pour les curieux : le détail complet</summary>
 
@@ -85,3 +85,8 @@ Les projectiles des compagnons et de certaines armes ignorent aussi la plupart d
 </details>
 
 Pages liées : [Rendements décroissants](rendimientos.html) · [Coups critiques](criticos.html) · [Table des types](tabla_tipos.html) · [Passifs de type évolutifs](pasivas_escalan.html)
+
+## Voir aussi
+- [Tirs supplémentaires](disparos_extra.html)
+- [Effets de statut](estados.html)
+- [Cumul des objets](acumulacion.html)

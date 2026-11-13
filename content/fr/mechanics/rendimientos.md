@@ -126,3 +126,8 @@ Pikachu, 3,5 de dégâts de base, avec +10 de dégâts d'objets et deux objets �
 2. 3,5 + 6 = **9,5** (au lieu de 13,5).
 3. ×2 × ×2 = ×4 sur le papier, qui devient 2,3 + 0,25 × 1,7 = **×2,725**.
 4. 9,5 × 2,725 ≈ **25,9** dégâts, au lieu de 54 sans rendements décroissants.
+
+## Voir aussi
+- [Tirs supplémentaires](disparos_extra.html)
+- [Effets de statut](estados.html)
+- [Cumul des objets](acumulacion.html)

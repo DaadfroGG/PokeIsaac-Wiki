@@ -17,6 +17,10 @@ details:
   value: 'Depuis le Sac (carte TENU, LÂCHER) : il reste au sol de la salle'
 - label: Fusionner
   value: 'Depuis le Sac (FUSIONNER, avec des Poké Dollars) : son effet fonctionne toujours, avec n''importe quel Pokémon de l''équipe, et l''emplacement est libéré. Jusqu''à 5 et jamais deux identiques. Les objets fusionnés ont leur propre poche dans le Sac'
+- label: Chances d'en trouver
+  value: Salle nettoyée 3,5 % · coffre 12 % · objet cassé 1,2 % · salle secrète 30 % · boutique 40 %
+- label: Coût de fusion
+  value: 15 Pokédollars à l'étage 1, puis +3,5 % par étage
 names:
   en:
     name: Held items
@@ -52,3 +56,37 @@ names:
 Chaque Pokémon de votre équipe peut tenir un objet, qui ne fonctionne que lorsque ce Pokémon est sur le terrain : changer de Pokémon change aussi ce que vous portez. Ce sont de petits effets de situation. On les ramasse en les touchant ; si vous en teniez déjà un, il reste au sol à sa place. Ils ne comptent pas dans la limite de 100 objets.
 
 Les 49, une page chacun : [Objets tenus](../held/index.html).
+
+## Où les trouver
+| Source | Chance | Ce qui se passe |
+|---|---|---|
+| Nettoyer une [salle de combat](../rooms/normal.html) (ou une arène de la Ligue) | 3,5 % | Un objet apparaît au sol de la salle |
+| Ouvrir un [coffre](../world/chest.html) ou un [coffre doré](../world/goldchest.html) | 12 % | Un objet apparaît juste sous le coffre |
+| Casser un objet (vase, caisse, tonneau...) | 1,2 % | Un objet apparaît à sa place |
+| [Salle secrète](../rooms/secret.html), première visite | 30 % | Un objet est posé dans la salle |
+| [Boutique](../rooms/shop.html), première visite | 40 % | Un des articles en vente est remplacé par un objet tenu, vendu 9 Pokédollars à l'étage 1 (le prix monte avec les prix de la boutique, 5 au minimum). Jamais dans les boutiques gratuites |
+
+- La Chance ne change pas ces chances.
+- Lequel : tiré au hasard parmi les 49 objets tenus que personne n'a encore. Les objets tenus par un Pokémon de l'équipe (ou d'un autre joueur en coopération), les objets fusionnés et ceux déjà au sol dans la salle sont exclus. Ce n'est que si les 49 sont pris qu'un doublon peut apparaître.
+
+## Tenir, échanger et lâcher
+- L'objet appartient au Pokémon : quand vous changez, le Pokémon qui entre apporte son propre objet, et les objets des Pokémon sur le banc ne font rien.
+- Toucher un objet tenu au sol le prend. Si ce Pokémon en tenait déjà un, l'ancien reste au sol à la place du nouveau.
+- Un objet que vous venez de lâcher ou d'échanger ne peut pas être repris tout de suite : éloignez-vous un peu d'abord.
+- Pour le lâcher, ouvrez le Sac, sélectionnez la carte TENU et appuyez une seconde fois sur lâcher dans les 3 s pour confirmer. Il est posé juste sous vous, au sol de la salle.
+- Les effets « une fois par salle » (comme la [Baie Ceriz](../held/cheri_berry.html), la [Gemme Bleue](../held/blue_orb.html) ou la [Baie Prine](../held/lum_berry.html)) se rechargent à chaque entrée dans une salle. Les compteurs comme les tirs de la [Baie Framby](../held/razz_berry.html) ou les ennemis vaincus de la [Baie Pêcha](../held/pecha_berry.html) continuent d'une salle à l'autre.
+- Les effets d'entrée sur le terrain ([Carapace Mue](../held/shed_shell.html), [Lettre Invit](../held/rsvp_mail.html), [Lettre Mer](../held/bubble_mail.html)) viennent de l'objet du Pokémon qui entre. Le [Sac Fuite](../held/eject_pack.html) fonctionne depuis le Pokémon qui sort.
+
+## Fusionner
+- Depuis le Sac, sur la carte TENU, choisissez FUSIONNER et confirmez par un second appui dans les 3 s.
+- Coût : 15 Pokédollars à l'étage 1, puis +3,5 % par étage, comme les prix de la boutique (environ 20 à l'étage 10, 5 au minimum). Les défis qui augmentent les prix l'augmentent aussi.
+- Il faut : un objet dans l'emplacement tenu, moins de 5 objets fusionnés, aucun objet fusionné du même type, et assez d'argent.
+- L'objet quitte l'emplacement tenu, qui se libère pour un autre, et son effet fonctionne alors pour toujours, quel que soit le Pokémon sur le terrain. Un objet fusionné ne peut pas être lâché.
+- La case du HUD indique combien d'objets sont fusionnés (+1 à +5) ; survolez-la pour lire leurs noms.
+- Particularité : les parties Portée, Vitesse des tirs et Chance d'un objet fusionné ([Aromate Modeste](../held/modest_mint.html), [Aromate Calme](../held/calm_mint.html), [Foulard Vert](../held/green_scarf.html), [Poing Chance](../held/lucky_punch.html)) ne comptent que si le Pokémon sur le terrain tient aussi un objet. Leurs autres effets fonctionnent toujours.
+
+## Cumul
+- Chaque effet d'objet tenu est actif ou non. Avoir le même objet tenu et fusionné, ou tenu par deux Pokémon, revient à l'avoir une seule fois.
+- Les différents objets tenus fonctionnent tous ensemble : les bonus de dégâts se multiplient, les bonus de cadence se multiplient, et les réductions de dégâts ([Pare-Effet](../held/protective_pads.html), [Poudre Métal](../held/metal_powder.html), [Aromate Assuré](../held/bold_mint.html)) s'additionnent, mais un coup ne descend jamais sous un demi-cœur.
+- Les bonus de dégâts toujours actifs ou qui dépendent de vous (baies [Figuy](../held/figy_berry.html), [Nanab](../held/nanab_berry.html), [Rabuta](../held/rabuta_berry.html), [Bonbon Force M](../held/mighty_candy_l.html), aromates [Rigide](../held/adamant_mint.html), [Timide](../held/timid_mint.html) et [Sérieux](../held/serious_mint.html)) sont des multiplicateurs de Dégâts : ils apparaissent dans le HUD et suivent les [rendements décroissants](rendimientos.html). Ceux qui dépendent de l'ennemi touché (baies [Ceriz](../held/cheri_berry.html), [Wiki](../held/wiki_berry.html), [Nanana](../held/pinap_berry.html), [Micle](../held/micle_berry.html), [Feuille Argentée](../held/silver_leaf.html), [Boucle d’Oreille](../held/lone_earring.html)) s'appliquent à l'impact et ne sont pas plafonnés.
+- Les soins des objets tenus ([Baie Maron](../held/chesto_berry.html), [Baie Sitrus](../held/sitrus_berry.html), [Petit Bouquet](../held/small_bouquet.html)) ignorent la limite de soins des objets.
