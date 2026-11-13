@@ -16,7 +16,7 @@ details:
 - label: Portée
   value: 220 px
 - label: Compagnon
-  value: Permanent ; puissance 1,5 + 0,4 par étage
+  value: Permanent ; dégâts 2 + 0,4 par étage passé, comme tout compagnon
 icon: items/poke-ball.png
 sprite: true
 names:
@@ -58,7 +58,7 @@ Capture un ennemi affaibli : il vous accompagnera
 - Il capture l'ennemi le plus proche à moins de 220 px qui n'est pas un boss et qui a 40 % de ses PV max ou moins. S'il n'y en a pas, rien ne se passe et aucune charge n'est dépensée.
 - Il est inutilisable si vos [compagnons](../mechanics/companeros.html) sont déjà à leur maximum.
 - L'ennemi capturé disparaît et vous rejoint comme compagnon permanent de sa propre espèce. Il tire pour vous jusqu'à la fin de la partie, avec le style d'attaque de cette espèce.
-- Les dégâts du compagnon dépendent de l'étage où vous l'avez capturé : 1,5, plus 0,4 par étage déjà passé (1,5 au premier étage, 1,9 au deuxième...). Il ne devient jamais plus fort ensuite.
+- Le compagnon inflige les mêmes dégâts que tous les autres compagnons : 2, plus 0,4 par étage déjà passé (2 au premier étage, 5,6 à l'étage 10). Ils continuent de grandir quand vous descendez, quel que soit l'étage de la capture (voir [Compagnons](../mechanics/companeros.html)).
 
 ## Cumul
 - Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
