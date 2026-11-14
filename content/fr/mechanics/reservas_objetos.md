@@ -141,7 +141,13 @@ Un objet échoue au tirage (et reste dans le sac) si :
 | **Remplissage** | Voir plus haut : ramène des objets déjà montrés mais non possédés |
 
 ## Objets actifs
-Les actifs sont tirés d'un sac à part, utilisé par la [boutique](../rooms/shop.html) et le [Laboratoire](../rooms/lab.html). Un actif que vous portez ou que vous avez échangé ne peut plus sortir, et la limite de niveau s'applique aussi. Échanger un actif contre celui d'un piédestal laisse le vôtre sur place ; il sort des tirages à partir de là.
+Les actifs (58 peuvent tomber) ont leur propre sac, utilisé par la [boutique](../rooms/shop.html) (un emplacement) et le [Laboratoire du Professeur](../rooms/lab.html) (Alakazam vend 3 actifs, 3 tirages à la suite). Il fonctionne comme les autres sacs, avec des différences :
+- Chaque actif y entre **une seule fois** (pas de poids) et il n'y a pas de répartition par type.
+- Filtres : pas un actif que vous portez (n'importe quel joueur), pas un actif que vous avez échangé ou lâché, et dans la limite de niveau (29 de niveau 1, 23 de niveau 2, 5 de niveau 3, 1 de niveau 4).
+- Un actif tiré quitte le sac.
+- **Quand aucun actif du sac ne passe les filtres, le sac est refait** : tous les actifs non portés et non lâchés sont mélangés et placés devant. Après une longue partie, des actifs déjà vus (et laissés) reviennent donc.
+- Si même le sac refait n'a rien dans votre limite de niveau, le jeu prend n'importe quel actif que vous ne portez pas, **sans tenir compte de la limite de niveau** ; si vous les portez tous, n'importe quel actif.
+- Échanger votre actif contre celui d'un piédestal laisse le vôtre sur place ; il sort des tirages à partir de là.
 
 ## Objets qui changent les tirages
 - [Charme Ovale](../items/amuleto_oval.html) : un objet de plus au choix dans les salles au trésor et après les boss.

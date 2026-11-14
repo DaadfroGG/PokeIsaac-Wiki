@@ -141,7 +141,13 @@ An item fails a draw (and stays in the bag) if:
 | **Refill** | See above: brings back items already shown but not owned |
 
 ## Active items
-Actives are drawn from their own bag, used by the [shop](../rooms/shop.html) and the [Professor's Lab](../rooms/lab.html). An active you carry or have swapped away can't come up again, and the tier limit applies to them too. Swapping an active for one on a pedestal leaves yours there; it is out of the draws from then on.
+Actives (58 of them can drop) have their own bag, used by the [shop](../rooms/shop.html) (one slot) and the [Professor's Lab](../rooms/lab.html) (Alakazam sells 3 actives, 3 draws in a row). It works like the other bags, with differences:
+- Every active goes in **once** (no weights) and there is no kind mix.
+- Filters: not one you carry (any player), not one you swapped away or dropped, and within the tier limit (29 are tier 1, 23 tier 2, 5 tier 3, 1 tier 4).
+- A drawn active leaves the bag.
+- **When no active in the bag passes the filters, the bag is rebuilt**: every active not carried and not dropped is shuffled and put in front. So after a long run, actives you saw earlier (and left behind) come back.
+- If even the rebuilt bag has nothing within your tier limit, the game picks any active you don't carry, **ignoring the tier limit**; if you carry them all, any active at all.
+- Swapping your active for one on a pedestal leaves yours there; it is out of the draws from then on.
 
 ## Items that change drops
 - [Oval Charm](../items/amuleto_oval.html): one more item to choose from in treasure rooms and after bosses.
