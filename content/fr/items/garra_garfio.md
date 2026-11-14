@@ -58,6 +58,7 @@ Vos tirs attirent les ennemis vers vous
 - Chaque coup tire l'ennemi vers vous d'une courte secousse, au lieu de le repousser.
 - Les boss ne sont pas attirés.
 - Tant que vous l'avez, tout le recul que vos tirs causeraient normalement (tirs repoussants, poussées du type Eau, Roche et Sol, [Fossile Nageoire](m_fosil_aleta.html)) est remplacé par cette attraction.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Dégâts +0,3 s'ajoute à chaque exemplaire. L'attraction ne devient pas plus forte.

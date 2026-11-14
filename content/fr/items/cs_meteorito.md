@@ -57,6 +57,7 @@ Dégâts +0,5. En entrant dans une salle avec des ennemis, une météorite tombe
 - Ajoute +0,5 Dégâts.
 - Chaque fois que vous entrez dans une salle qui contient encore des ennemis, une météorite tombe sur l'ennemi qui a le plus de vie actuelle pour 3 fois vos Dégâts. Cela marche aussi dans les salles de boss.
 - Elle tombe une fois par salle, dès le début, et pas dans une salle déjà nettoyée.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

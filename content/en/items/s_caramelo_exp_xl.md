@@ -77,6 +77,7 @@ A bit of everything: damage, fire rate, speed, range and a heart
 - Range +40: your shots travel 40 px farther, with no diminishing returns.
 - One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
 - It heals 1 heart when you pick it up; this heal ignores the healing limit.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %) · Fire rate +1: 4.3 → 4.6 shots/s (+8 %) · Speed +0.2: 4 → 4.2 (+5 %) · Range +40 px: 350 → 390 px (+11 %) · Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage and Fire rate) and its heal.

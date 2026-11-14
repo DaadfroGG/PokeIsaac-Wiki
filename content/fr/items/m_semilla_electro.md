@@ -61,6 +61,7 @@ Vos tirs attirent les ennemis proches sur leur passage
 - Ça marche sur tous vos tirs à la fois : une salve de plusieurs tirs attire plus fort les ennemis proches de plusieurs tirs.
 - Les boss ne sont jamais attirés. Les ennemis au sol s'arrêtent quand même contre les murs et les rochers ; les ennemis volants non.
 - L'attraction n'inflige aucun dégât en elle-même.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +40 px: 350 → 390 px (+11 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'attraction n'est pas plus forte avec un deuxième exemplaire. Les +40 de Portée s'ajoutent à nouveau.

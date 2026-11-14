@@ -58,6 +58,7 @@ Your shots pierce enemies, but travel less far
 - Each shot goes through one enemy and can hit a second one. It still hits each enemy only once.
 - Pushing a bomb with a shot also uses up a pierce.
 - The -60 Range makes shots travel 60 px less far (range never goes below 120 px).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range −60 px: 350 → 290 px (−17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - It is not in any item pool at the moment: treasure rooms, shops and bosses don't offer it.

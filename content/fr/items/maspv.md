@@ -58,6 +58,7 @@ Cœur +1 et soigne toute votre vie
 ## Fonctionnement
 - Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
 - Il vous soigne entièrement en le ramassant ; ce soin ignore la limite de soins.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Obtention
 - Récompenses de boss et boutiques.

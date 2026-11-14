@@ -58,6 +58,7 @@ Vitesse et cadence +
 ## Fonctionnement
 - La Vitesse +0,4 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
 - Cadence +2 : 0,033 s de moins entre deux tirs. Les bonus de cadence suivent les [rendements décroissants](../mechanics/rendimientos.html) : les 3 premiers points au total comptent en entier, les 4 suivants à moitié, le reste au quart. Vous ne tirez jamais plus de 12 fois par seconde.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Vitesse +0,4: 4 → 4,4 (+10 %) · Cadence +2: 4,3 → 5 tirs/s (+17 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Cadence).

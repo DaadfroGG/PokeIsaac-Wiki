@@ -57,6 +57,7 @@ Dégâts +0,7 ; les ennemis lâchent parfois des cœurs d'âme
 - Chaque ennemi que vous battez (sauf les boss) a 5 % de chances, plus 0,5 % par point de Chance, de lâcher un [cœur d'âme](../mechanics/corazones_alma.html). Avec 10 de Chance, c'est 10 %.
 - Ce tirage s'ajoute aux butins normaux de l'ennemi.
 - Le Dégâts +0,7 est un bonus de stat normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,7: 4 → 4,7 (+18 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Un deuxième exemplaire ajoute encore Dégâts +0,7, mais la chance de cœur d'âme reste la même.

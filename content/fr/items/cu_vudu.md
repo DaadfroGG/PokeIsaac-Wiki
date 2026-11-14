@@ -57,6 +57,7 @@ Quand vous battez un ennemi, 30 % du temps un autre ennemi de la salle perd 25�
 - Coûte 1 réceptacle de cœur.
 - Chaque fois que vous battez un ennemi (pas un sbire invoqué), il y a 30 % de chances qu'un autre ennemi au hasard dans la salle, boss compris, perde 25 % de sa vie actuelle (il ne peut pas en mourir, il garde au moins 1).
 - Sans effet s'il ne reste aucun autre ennemi en vie.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max −1 cœur: 4 → 3 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

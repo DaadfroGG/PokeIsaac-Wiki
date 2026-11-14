@@ -57,6 +57,7 @@ Dégâts +0,5 ; si votre Pokémon est de type Électrik, dégâts ×2 en plus
 - Dégâts +0,5 : un bonus fixe soumis aux [rendements décroissants](../mechanics/rendimientos.html) des Dégâts fixes (en entier jusqu'à +3, pour moitié jusqu'à +8, un quart jusqu'à +40, puis 5 %).
 - Si le Pokémon que vous jouez est de type Électrik, vos Dégâts sont aussi multipliés par 2. C'est un multiplicateur de Dégâts : il se combine aux autres multiplicateurs, qui comptent en entier jusqu'à ×2,3 au total, puis pour un quart seulement, sans jamais dépasser ×3 (voir [Rendements décroissants](../mechanics/rendimientos.html)).
 - Un Pokémon d'un autre type ne reçoit que les +0,5.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le +0,5 fixe s'ajoute à nouveau avec chaque exemplaire. Le ×2 est tout ou rien : une seconde Balle Lumière ne le porte pas à ×4.

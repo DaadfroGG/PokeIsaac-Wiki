@@ -56,6 +56,7 @@ Luck +2. Every 3 rooms you clear, it heals half a heart.
 - Luck +2 as soon as you pick it up. Luck counts in full up to 10, and only a quarter above (see [Diminishing returns](../mechanics/rendimientos.html)).
 - Every third combat room or boss room you clear, it heals half a heart. This heal is limited by the cap on item healing (at most 30 % of your maximum health every 10 seconds).
 - With the [Solar Shard](cs_sol.html) it triggers an eclipse: your Damage gets a further ×1.15.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +2. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The Luck +2 is added again by each copy. The healing and the eclipse are on/off effects: a second Lunar Shard does not heal more often or give a second ×1.15.

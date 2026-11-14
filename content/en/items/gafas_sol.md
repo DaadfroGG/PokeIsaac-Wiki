@@ -57,6 +57,7 @@ Dazzling critical hits: the enemy freezes in place
 - Any enemy hit by a critical shot is stunned for 0.75 s: it stops moving and attacking. The stun is applied on the hit itself, so it works with every source of crits (including the guaranteed crit of the [Normal Gem](gema_normal.html)).
 - Bosses are never stunned; they still take the crit damage.
 - Only crits from your shots count; burn, poison and chain bolts do not stun.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Damage +0.3 and +8 % crit chance are added for each copy.

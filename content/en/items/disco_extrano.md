@@ -57,6 +57,7 @@ Each shot is of a random type
 - Adds +0.4 Damage.
 - Each shot you fire gets a random type out of the 18 (equal chances), with its color. The shot uses that type on the [type chart](../mechanics/tabla_tipos.html) and for the type's status chance on hit.
 - This item no longer appears in the regular item pools.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.4: 4 → 4.4 (+10 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

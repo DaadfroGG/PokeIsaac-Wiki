@@ -58,6 +58,7 @@ Damage +1.2, speed -
 ## How it works
 - The +1.2 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - Speed -0.3 has no diminishing returns. Your speed never goes below 1.6.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1.2: 4 → 5.2 (+30 %) · Speed −0.3: 4 → 3.7 (−8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

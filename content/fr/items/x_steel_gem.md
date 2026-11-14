@@ -52,6 +52,7 @@ Vos tirs de type Acier infligent 30 % de dégâts en plus ; Dégâts +0,3
 - Les ticks de brûlure et de poison n'ont pas les +30 %.
 - Il se multiplie avec la [Plaque Fer](x_iron_plate.html) : ×1,3 × 1,15 ≈ ×1,5 sur les tirs Acier.
 - Le Dégâts +0,3 est un bonus de stat normal : il apparaît dans le HUD et suit les [rendements décroissants](../mechanics/rendimientos.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Il ne se cumule pas avec le [Métallozélite](x_steelium_z_bag.html) : les deux donnent les mêmes +30 %, les avoir tous les deux reste ×1,3. Le Cristal Z n'ajoute alors que ses coups critiques.

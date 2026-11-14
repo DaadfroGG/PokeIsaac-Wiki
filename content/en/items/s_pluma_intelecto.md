@@ -55,6 +55,7 @@ Range ++
 
 ## How it works
 - Range +150 px: added straight to how far your shots travel, with no diminishing returns. Range can never drop below 120 px.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +150 px: 350 → 500 px (+43 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

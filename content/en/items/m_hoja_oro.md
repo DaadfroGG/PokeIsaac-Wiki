@@ -68,6 +68,7 @@ Damage ×1.8 and +1 and one more heart; you shoot a bit slower
 ## How it works
 - Your damage is multiplied by 1.8 (this ×1.8 counts with the other damage multipliers) and increased by +1. You also get one more heart, filled, but fire more slowly and your shots are a bit slower.
 - The ×1.8 is a damage multiplier like the others and is subject to their cap.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1: 4 → 5 (+25 %) · Max health +1 heart: 4 → 5 hearts · Fire rate −4: 4.3 → 3.3 shots/s (−22 %) · Shot speed −1: 9 → 8 (−11 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The ×1.8 does not stack, but +1 Damage, +1 heart, the slower fire rate and the shot speed are added for each copy.

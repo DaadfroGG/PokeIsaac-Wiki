@@ -54,6 +54,7 @@ Damage +1; sometimes your shots cause fear: the enemy flees from you for a few s
 
 ## How it works
 - Each hit on a non-boss enemy has a 15 % chance (+1 % per Luck) to frighten it for 2.5 s: it flees from you and cannot attack.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1: 4 → 5 (+25 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - +1 Damage is added for each copy. The fear chance and duration do not change.

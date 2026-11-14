@@ -60,6 +60,7 @@ Cœur +1, vous soigne et augmente un peu les dégâts
 - Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
 - Le +0,3 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
 - Il vous soigne de 3 cœurs en le ramassant ; ce soin ignore la limite de soins.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs · Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Obtention
 - Il n'est dans aucune réserve d'objets. Une [machine à dons](../world/blood.html) qui s'use après plusieurs dons peut le laisser : 30 % de chances d'avoir le Jus de Baie (15 % d'[Eau Fraîche](bolsa_suero.html) à la place). Faire exploser la machine avec une bombe ne donne du Jus de Baie que 9 % du temps.

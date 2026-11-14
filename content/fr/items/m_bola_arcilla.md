@@ -68,6 +68,7 @@ Vos tirs volent en arc et, en retombant, éclatent en une pluie de fragments
 - Quand la boule retombe, ou dès qu'elle touche un ennemi, elle explose en 8 éclats qui partent dans toutes les directions. Chaque tir supplémentaire de votre salve ajoute 2 éclats à chaque explosion (jamais moins de 2 éclats).
 - La boule inflige ses dégâts normaux en touche directe. Chaque éclat inflige 11 % des dégâts de la boule, est plus petit qu'elle et vole de 90 à 180 px.
 - Les éclats sont des tirs secondaires : ils ne déclenchent pas les effets d'objets au contact.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence −5: 4,3 → 3,2 tirs/s (−26 %) · Dégâts +1: 4 → 5 (+25 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'arc et l'explosion ne changent pas avec plus d'exemplaires, mais les stats si : +1 Dégâts et -5 Cadence par exemplaire.

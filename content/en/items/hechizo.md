@@ -57,6 +57,7 @@ Damage +0.7; enemies sometimes drop soul hearts
 - Every enemy you defeat (not bosses) has a 5 % chance, plus 0.5 % per point of Luck, to drop a [soul heart](../mechanics/corazones_alma.html). With 10 Luck it is 10 %.
 - This roll comes on top of the normal drops of the enemy.
 - The Damage +0.7 is a normal stat bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.7: 4 → 4.7 (+18 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - A second copy adds another Damage +0.7, but the soul heart chance stays the same.

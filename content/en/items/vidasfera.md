@@ -60,6 +60,7 @@ Damage +1.8, luck -2
 ## How it works
 - Damage +1.8: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
 - Luck −2: lowers your Luck, so enemy drops, room-clear rewards, critical hits and type-passive status effects all become less likely. A Luck penalty counts in full. The same −1 % crit / −2 % status per point applies, and enemy drop chances stop getting worse at −5.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1.8: 4 → 5.8 (+45 %) · Luck −2. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

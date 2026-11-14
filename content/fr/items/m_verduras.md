@@ -58,6 +58,7 @@ Vos tirs transpercent les ennemis, mais portent moins loin
 - Chaque tir traverse un ennemi et peut en toucher un deuxième. Il ne touche toujours chaque ennemi qu'une fois.
 - Pousser une bombe avec un tir compte aussi comme une perforation.
 - Les -60 de Portée font aller les tirs 60 px moins loin (la portée ne descend jamais sous 120 px).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée −60 px: 350 → 290 px (−17 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Obtention
 - Il n'est dans aucune réserve d'objets en ce moment : salles au trésor, boutiques et boss ne le proposent pas.

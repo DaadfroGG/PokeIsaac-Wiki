@@ -55,6 +55,7 @@ Luck +2
 
 ## How it works
 - Luck +2: added to your Luck. Luck counts in full up to 10; above 10 only a quarter counts. It raises the chance of drops from enemies and of a reward when you clear a room, the chance of critical hits (+1 % per point) and the chance of type-passive status effects (+2 % per point).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +2. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

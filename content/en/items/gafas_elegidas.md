@@ -58,6 +58,7 @@ Damage +1; slower shots
 - The +1 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - Shot speed -2: your shots fly slower (they reach their range later). It never goes below 4.
 - Its shots are not homing.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1: 4 → 5 (+25 %) · Shot speed −2: 9 → 7 (−22 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

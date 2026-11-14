@@ -68,6 +68,7 @@ Your shots fly in an arc and, on landing, burst into a shower of fragments
 - When the ball lands, or as soon as it touches an enemy, it bursts into 8 fragments flying in all directions. Each extra shot in your volley adds 2 fragments to every burst (never fewer than 2 fragments).
 - The ball deals its normal damage on a direct hit. Each fragment deals 11 % of the ball's damage, is smaller than the ball and flies 90 to 180 px.
 - Fragments are child shots: they do not trigger on-hit item effects.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate −5: 4.3 → 3.2 shots/s (−26 %) · Damage +1: 4 → 5 (+25 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The arc and burst do not change with more copies, but the stats do: +1 Damage and -5 Fire rate per copy.

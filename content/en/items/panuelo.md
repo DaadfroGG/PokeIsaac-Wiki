@@ -58,6 +58,7 @@ Damage +0.5, fire rate +
 ## How it works
 - The +0.5 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - Fire rate +1: 0.017 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %) · Fire rate +1: 4.3 → 4.6 shots/s (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage and Fire rate).

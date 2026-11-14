@@ -60,6 +60,7 @@ While you fire, your shots hang still in the air; on release, they all fly at on
 - While you keep firing, your shots slow down and stop in the air a short distance from you (after about 0.1 s). They stay there, still dangerous.
 - When you stop firing, or after 4 s of hanging, all of them fly off again at once with their original speed and direction.
 - A hanging shot has at least half of its range left. Shots that hang pile up into a wall of shots; companion shots are not affected.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate +2: 4.3 → 5 shots/s (+17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The hanging effect does not change; the fire rate bonus is added for each copy.

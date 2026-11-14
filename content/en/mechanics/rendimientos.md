@@ -131,3 +131,4 @@ Pikachu, 3.5 base damage, with +10 damage from items and two ×2 items:
 - [Extra shots](disparos_extra.html)
 - [Status effects](estados.html)
 - [Item stacking](acumulacion.html)
+- [Stats in practice](estadisticas_reales.html)

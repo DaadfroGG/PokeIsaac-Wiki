@@ -71,6 +71,7 @@ Your hits fill a meter; when it is full, your next attack unleashes a huge Hyper
 - **Release:** when the meter is full, your next shot (a press of the shoot keys) fires the Hyper Beam instead. The beam follows your aim, turning up to 5° per tick, pierces every enemy and breaks crates. It lasts 0.6 s and hits 12 times (every 0.05 s) for ×2.3 of your Damage, times a ×0.33 balance factor (about ×0.76 per tick, ×9 over the whole beam on one enemy).
 - Multishot adds beams (up to 5, 15° apart); each beam is 22 px wide (+5 per Size). Bounce (up to 4 bounces off walls), homing (the beam bends toward enemies), Growth, crits (rolled on every tick) and your other items' effects apply.
 - After the beam you cannot attack for 0.57 s.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate −2: 4.3 → 3.8 shots/s (−12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - A second copy does nothing more.

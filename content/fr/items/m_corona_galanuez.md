@@ -63,6 +63,7 @@ Chaque tir porte une aura de lumière qui blesse les ennemis proches
 - Chaque tir porte une aura de lumière. Toutes les 1/12 s, chaque ennemi à moins de 40 px du tir (plus sa taille) subit 15 % de vos dégâts. Ces touches d'aura ne déclenchent pas d'effets d'objets.
 - Un ennemi qui reste près d'un tir subit environ 1,8 fois vos dégâts par seconde de la part de ce tir ; plusieurs tirs qui se chevauchent s'additionnent.
 - L'aura fonctionne sur tous les tirs, y compris secondaires et supplémentaires, et sur les armes à rayon.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %) · Cadence −3: 4,3 → 3,5 tirs/s (−18 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'aura ne change pas avec plus d'exemplaires ; Dégâts +0,5 et la cadence plus lente s'ajoutent à chaque exemplaire.

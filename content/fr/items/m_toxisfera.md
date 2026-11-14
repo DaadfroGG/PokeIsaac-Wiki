@@ -72,6 +72,7 @@ Vos tirs volent en arc et explosent à l'atterrissage (sans vous blesser ; ils 
 - La perte de cadence compte en entier (les ralentissements échappent aux [rendements décroissants](../mechanics/rendimientos.html)). Le +1 en Dégâts est un bonus fixe normal.
 - Les rebonds de la [Roche Lisse](m_roca_suave.html) ne marchent pas sur les tirs en cloche.
 - Avec une arme spéciale au lieu des tirs normaux, chaque coup a 25 % de chances (+1 % par point de Chance) de provoquer la même explosion, pour 80 % de vos Dégâts.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence −10: 4,3 → 2,5 tirs/s (−42 %) · Dégâts +1: 4 → 5 (+25 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Où le trouver
 - Salles au trésor et Salle Distorsion ([pacte de Darkrai](../rooms/devil.html)) : là, il coûte 1 réceptacle de cœur, ou parfois 3 cœurs d'âme.

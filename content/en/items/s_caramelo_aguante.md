@@ -62,6 +62,7 @@ Damage + and heart +1
 - The +0.8 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
 - It heals 1 heart when you pick it up; this heal ignores the healing limit.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.8: 4 → 4.8 (+20 %) · Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage) and its heal.

@@ -56,6 +56,7 @@ Vitesse +, et bien plus dans les salles déjà nettoyées
 ## Fonctionnement
 - Vitesse +0,3, ajoutée telle quelle à votre vitesse de déplacement (sans rendement décroissant).
 - De plus, dans une salle où tous les ennemis ont été vaincus, votre vitesse de déplacement est multipliée par 1,3. L'effet revient dès que la salle suivante est nettoyée, et ne fonctionne pas dans une salle que vous n'avez pas encore nettoyée.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Vitesse +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute encore +0,3 de Vitesse. Le ×1,3 dans les salles nettoyées est tout ou rien : plus d'exemplaires ne le rendent pas plus grand.

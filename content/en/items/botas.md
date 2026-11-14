@@ -56,6 +56,7 @@ Speed +, and much more in cleared rooms
 ## How it works
 - Speed +0.3, added straight to your movement speed (no diminishing returns).
 - On top of that, in a room where every enemy has been defeated, your movement speed is multiplied by 1.3. It applies again as soon as the next room is cleared, and it does not work in a room you have not cleared yet.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Speed +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each copy adds another +0.3 Speed. The ×1.3 in cleared rooms is an on/off effect: more copies do not make it larger.

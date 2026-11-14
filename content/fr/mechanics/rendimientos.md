@@ -131,3 +131,4 @@ Pikachu, 3,5 de dégâts de base, avec +10 de dégâts d'objets et deux objets �
 - [Tirs supplémentaires](disparos_extra.html)
 - [Effets de statut](estados.html)
 - [Cumul des objets](acumulacion.html)
+- [Statistiques en pratique](estadisticas_reales.html)

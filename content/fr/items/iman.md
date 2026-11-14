@@ -63,6 +63,7 @@ Attire vers vous les pièces, clés, Voltorbes et cœurs au sol ; dégâts +0,3
 - Il ne déplace jamais les articles de boutique, les coffres ou coffres dorés, ni les objets tenus posés au sol.
 - En coop, chaque objet va vers le joueur le plus proche qui a un Aimant et peut le prendre.
 - Le Dégâts +0,3 est un bonus de stat normal qui suit les [rendements décroissants](../mechanics/rendimientos.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Un deuxième exemplaire ajoute encore Dégâts +0,3 ; l'attraction reste la même.

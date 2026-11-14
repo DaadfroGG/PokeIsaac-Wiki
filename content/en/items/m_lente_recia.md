@@ -64,6 +64,7 @@ Giant shots: damage ×1.6 and +4, but you shoot much slower; if you are Grass-ty
 ## How it works
 - Your shots are bigger (+2.5 radius), your damage is multiplied by 1.6 and increased by +4, but you fire much more slowly.
 - If your Pokémon is Grass-type, a shot that would defeat a non-boss enemy gains +1 pierce and keeps going.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +4: 4 → 8 (+100 %) · Fire rate −16: 4.3 → 2 shots/s (−53 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The ×1.6 does not stack. +4 Damage, the slower fire rate and +2.5 radius are added for each copy.

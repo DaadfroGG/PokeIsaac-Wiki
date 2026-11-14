@@ -57,6 +57,7 @@ Chaque tir est d'un type aléatoire
 - Ajoute +0,4 Dégâts.
 - Chaque tir que vous lancez prend un type au hasard parmi les 18 (chances égales), avec sa couleur. Le tir utilise ce type dans la [table des types](../mechanics/tabla_tipos.html) et pour la chance de statut du type à l'impact.
 - Cet objet n'apparaît plus dans les réserves d'objets habituelles.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,4: 4 → 4,4 (+10 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

@@ -58,6 +58,7 @@ Damage + and range +
 ## How it works
 - The +0.8 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - Range +80: your shots travel 80 px farther, with no diminishing returns.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.8: 4 → 4.8 (+20 %) · Range +80 px: 350 → 430 px (+23 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

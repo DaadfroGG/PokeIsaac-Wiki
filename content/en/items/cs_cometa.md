@@ -63,6 +63,7 @@ Speed +0.5, shot speed + and range +60.
 ## How it works
 - Plain stat bonuses, always on: Speed +0.5, Shot speed +2 and Range +60. There is no condition and no trigger.
 - Found only in the [Observatory](../rooms/observatory.html) (free cosmic item, you pick one of three).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Speed +0.5: 4 → 4.5 (+12 %) · Shot speed +2: 9 → 11 (+22 %) · Range +60 px: 350 → 410 px (+17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each extra copy adds the same bonuses again (two copies: Speed +1, Shot speed +4, Range +120). Stat bonuses are simply added up (see [Item stacking](../mechanics/acumulacion.html)).

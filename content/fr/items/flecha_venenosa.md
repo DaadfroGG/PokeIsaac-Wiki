@@ -60,6 +60,7 @@ names:
 - Chaque coup a 33 % de chances (+2 % par point de Chance) d'empoisonner l'ennemi pendant 2,5 secondes. Voir [Effets de statut](../mechanics/estados.html).
 - Vos coups infligent +50 % de dégâts aux ennemis empoisonnés (quelle qu'en soit la source).
 - Cet objet n'apparaît plus dans les réserves d'objets habituelles.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

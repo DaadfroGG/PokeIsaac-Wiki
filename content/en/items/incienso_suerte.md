@@ -58,6 +58,7 @@ Luck +1 each time you go down a floor
 ## How it works
 - You get Luck +1 when you pick it up, then another Luck +1 each time you go down to a new floor, for the rest of the run.
 - There is no cap, but Luck follows the [diminishing returns](../mechanics/rendimientos.html): each point counts fully up to 10 Luck, then only for a quarter.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +1. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each copy gives its own Luck +1 on pickup and its own Luck +1 per floor: two copies are +2 per floor.

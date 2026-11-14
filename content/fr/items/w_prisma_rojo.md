@@ -71,6 +71,7 @@ Vos coups remplissent une jauge ; pleine, votre prochaine attaque libère un én
 - **Déclenchement :** quand la jauge est pleine, votre prochain tir (appui sur les touches de tir) lance l'Ultralaser à la place. Le rayon suit votre visée, en tournant d'au plus 5° par tick, transperce tous les ennemis et brise les caisses. Il dure 0,6 s et touche 12 fois (toutes les 0,05 s) pour ×2,3 de vos Dégâts, multipliés par un facteur d'équilibrage ×0,33 (environ ×0,76 par touche, ×9 sur tout le rayon pour un ennemi).
 - Les tirs multiples ajoutent des rayons (jusqu'à 5, 15° d'écart) ; chaque rayon fait 22 px de large (+5 par Taille). Le rebond (jusqu'à 4 sur les murs), la tête chercheuse (le rayon se courbe vers les ennemis), la Croissance, les critiques (tirés à chaque touche) et les effets de vos autres objets s'appliquent.
 - Après le rayon, vous ne pouvez pas attaquer pendant 0,57 s.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence −2: 4,3 → 3,8 tirs/s (−12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Un second exemplaire n'ajoute rien.

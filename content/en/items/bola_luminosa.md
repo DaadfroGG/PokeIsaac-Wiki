@@ -57,6 +57,7 @@ Damage +0.5; if your Pokémon is Electric, also damage ×2
 - Damage +0.5: a flat bonus that follows the [diminishing returns](../mechanics/rendimientos.html) on flat Damage (full up to +3, half to +8, a quarter to +40, then 5 %).
 - If the Pokémon you play is Electric-type, your Damage is also multiplied by 2. This is a Damage multiplier, so it is combined with the other multipliers: they count in full up to ×2.3 in total, then only a quarter of the rest, and never more than ×3 (see [Diminishing returns](../mechanics/rendimientos.html)).
 - A Pokémon of any other type only gets the +0.5.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The flat +0.5 is added again by each copy. The ×2 is an on/off effect: a second Light Ball does not make it ×4.

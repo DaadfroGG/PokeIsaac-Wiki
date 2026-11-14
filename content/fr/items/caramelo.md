@@ -68,6 +68,7 @@ names:
 - Si votre Pokémon est déjà totalement évolué (ou si Évoli a déjà évolué), rien n'évolue : vous gagnez +0,7 Dégâts et +1 cœur (soigné) à la place.
 - Avec une [Pierre Éternelle](piedra_eterna.html), vous n'évoluez jamais : vous obtenez le même +0,7 Dégâts et +1 cœur.
 - Votre type change pour correspondre à la nouvelle forme s'il diffère. Voir [Niveaux et évolution](../mechanics/niveles_pokemon.html) pour l'évolution par niveau.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %) · Vitesse +0,2: 4 → 4,2 (+5 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

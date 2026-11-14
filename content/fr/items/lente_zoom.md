@@ -58,6 +58,7 @@ Portée ++ et tirs plus rapides
 ## Fonctionnement
 - Portée +150 : vos tirs vont 150 px plus loin, sans rendements décroissants.
 - Vitesse des tirs +2 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +150 px: 350 → 500 px (+43 %) · Vitesse des tirs +2: 9 → 11 (+22 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

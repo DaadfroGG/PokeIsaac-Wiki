@@ -62,6 +62,7 @@ Damage +2, fire rate -
 - The +2 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - Fire rate -4: 0.067 s more between shots. Slowdowns always count in full.
 - In the Distortion Room ([Darkrai's deal](../rooms/devil.html)) it costs 2 heart containers.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +2: 4 → 6 (+50 %) · Fire rate −4: 4.3 → 3.3 shots/s (−22 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage).

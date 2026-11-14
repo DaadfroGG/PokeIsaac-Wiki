@@ -63,6 +63,7 @@ Pulls coins, keys, Voltorbs and hearts on the floor toward you; damage +0.3
 - It never moves shop items, chests or golden chests, or held items lying on the floor.
 - In co-op each pickup goes to the nearest player who has a Magnet and can take it.
 - The Damage +0.3 is a normal stat bonus that follows the [diminishing returns](../mechanics/rendimientos.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - A second copy adds Damage +0.3 again; the pull stays the same.

@@ -54,6 +54,7 @@ Dégâts +1 ; vos tirs effraient parfois : l'ennemi vous fuit quelques seconde
 
 ## Fonctionnement
 - Chaque coup sur un ennemi (hors boss) a 15 % de chance (+1 % par Chance) de l'effrayer 2,5 s : il vous fuit et ne peut pas attaquer.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +1: 4 → 5 (+25 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - +1 Dégâts s'ajoute à chaque exemplaire. La chance et la durée de la peur ne changent pas.

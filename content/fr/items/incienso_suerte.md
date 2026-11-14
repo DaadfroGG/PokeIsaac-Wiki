@@ -58,6 +58,7 @@ Chance +1 à chaque étage descendu
 ## Fonctionnement
 - Vous gagnez Chance +1 en le prenant, puis encore Chance +1 à chaque nouvel étage, pour le reste de la partie.
 - Pas de plafond, mais la Chance suit les [rendements décroissants](../mechanics/rendimientos.html) : chaque point compte plein jusqu'à 10 de Chance, puis seulement pour un quart.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +1. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire donne son propre Chance +1 en le prenant et son propre Chance +1 par étage : deux exemplaires font +2 par étage.

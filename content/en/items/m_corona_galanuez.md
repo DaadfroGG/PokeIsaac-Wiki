@@ -63,6 +63,7 @@ Each shot carries an aura of light that hurts nearby enemies
 - Each shot carries an aura of light. Every 1/12 s, every enemy within 40 px of the shot (plus its size) takes 15 % of your damage. These aura hits do not trigger item effects.
 - An enemy that stays near a shot takes about 1.8 times your damage per second from that shot; several shots overlapping add up.
 - The aura works on every shot, including child and extra shots, and on beam weapons.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %) · Fire rate −3: 4.3 → 3.5 shots/s (−18 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The aura does not change with more copies; Damage +0.5 and the slower fire rate are added for each copy.

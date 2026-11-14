@@ -55,6 +55,7 @@ Cadence +
 
 ## Fonctionnement
 - Cadence : raccourcit le délai entre deux tirs de 0,025 s. Les bonus de cadence de tous vos objets sont additionnés : les 3 premiers points comptent en entier, les 4 suivants pour moitié et le reste pour un quart. Quoi que vous fassiez, vous ne pouvez jamais tirer plus de 12 fois par seconde.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence +1,5: 4,3 → 4,8 tirs/s (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

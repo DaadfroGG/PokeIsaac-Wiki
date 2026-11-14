@@ -60,6 +60,7 @@ Pendant que vous tirez, vos tirs restent figés dans l'air ; en relâchant, ils
 - Tant que vous continuez à tirer, vos tirs ralentissent et s'immobilisent en l'air peu après leur départ (environ 0,1 s). Ils restent là, toujours dangereux.
 - Quand vous arrêtez de tirer, ou après 4 s en suspens, tous repartent d'un coup avec leur vitesse et leur direction d'origine.
 - Un tir en suspens garde au moins la moitié de sa portée. Les tirs suspendus forment un mur de tirs ; les tirs des compagnons ne sont pas touchés.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence +2: 4,3 → 5 tirs/s (+17 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'effet de suspension ne change pas ; le bonus de cadence s'ajoute à chaque exemplaire.

@@ -60,6 +60,7 @@ Speed + and range +
 ## How it works
 - Speed +0.3: added straight to your movement speed, with no diminishing returns. Your speed can never drop below the minimum of 1.6.
 - Range +80 px: added straight to how far your shots travel, with no diminishing returns. Range can never drop below 120 px.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Speed +0.3: 4 → 4.3 (+8 %) · Range +80 px: 350 → 430 px (+23 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

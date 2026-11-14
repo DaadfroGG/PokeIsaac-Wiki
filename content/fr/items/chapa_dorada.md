@@ -78,6 +78,7 @@ Toutes les statistiques augmentent un peu
 - Vitesse des tirs +1 : vos tirs volent plus vite (ils atteignent leur portée plus tôt). Elle ne descend jamais sous 4.
 - Portée +40 : vos tirs vont 40 px plus loin, sans rendements décroissants.
 - Chance +1 : chaque point donne +1 % de [coup critique](../mechanics/criticos.html), +2 % aux statuts de votre passif de type et améliore les autres chances liées à la Chance. Votre Chance totale compte en entier jusqu'à 10, puis au quart.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %) · Cadence +1: 4,3 → 4,6 tirs/s (+8 %) · Vitesse +0,2: 4 → 4,2 (+5 %) · Vitesse des tirs +1: 9 → 10 (+11 %) · Portée +40 px: 350 → 390 px (+11 %) · Chance +1. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts et Cadence).

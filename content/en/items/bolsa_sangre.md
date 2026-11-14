@@ -60,6 +60,7 @@ Heart +1, heals you and raises damage a little
 - One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
 - The +0.3 Damage is a flat bonus: it adds up with your other flat bonuses and follows the [diminishing returns](../mechanics/rendimientos.html) (in full up to +3 in total, then less and less).
 - It heals 3 hearts when you pick it up; this heal ignores the healing limit.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts · Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - It is not in any item pool. It can be left by a [donation machine](../world/blood.html) that wears out after several donations: 30 % chance of Berry Juice (15 % of [Fresh Water](bolsa_suero.html) instead). Blowing the machine up with a bomb gives Berry Juice only 9 % of the time.

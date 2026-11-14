@@ -58,6 +58,7 @@ Vos tirs reviennent vers vous comme un boomerang
 - Quand un tir atteint le bout de sa portée, il fait demi-tour et revient vers vous à la même vitesse, en parcourant à nouveau 85 % de sa portée avant de disparaître.
 - Les touches sont oubliées au demi-tour : les ennemis déjà touchés peuvent donc l'être une seconde fois au retour.
 - Cela n'arrive qu'une fois par tir. Les tirs secondaires (tirs fragmentés, éclats) ne reviennent pas.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,4: 4 → 4,4 (+10 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Dégâts +0,4 s'ajoute à chaque exemplaire. L'effet boomerang ne change pas.

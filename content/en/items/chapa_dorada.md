@@ -78,6 +78,7 @@ All stats improve a little
 - Shot speed +1: your shots fly faster (they reach their range sooner). It never goes below 4.
 - Range +40: your shots travel 40 px farther, with no diminishing returns.
 - Luck +1: each point gives +1 % [critical hit](../mechanics/criticos.html) chance, +2 % to your type passive statuses and improves other luck-based chances. Your total Luck counts in full up to 10, then at a quarter.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %) · Fire rate +1: 4.3 → 4.6 shots/s (+8 %) · Speed +0.2: 4 → 4.2 (+5 %) · Shot speed +1: 9 → 10 (+11 %) · Range +40 px: 350 → 390 px (+11 %) · Luck +1. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage and Fire rate).

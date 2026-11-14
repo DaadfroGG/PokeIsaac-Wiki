@@ -75,6 +75,7 @@ Gigamax ! Dégâts +1, vitesse +, portée +, tirs plus gros, cœur +1 et soin c
 - Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
 - Il vous soigne entièrement en le ramassant ; ce soin ignore la limite de soins.
 - Tirs plus gros : +2,5 de rayon (un tir normal en a 7), ils touchent donc plus facilement. Les explosions comme celle de l'[Orbe Toxique](m_toxisfera.html) grossissent un peu aussi.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +1: 4 → 5 (+25 %) · Vitesse +0,3: 4 → 4,3 (+8 %) · Portée +60 px: 350 → 410 px (+17 %) · PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur les Dégâts), les tirs grossissent encore, et il vous soigne à nouveau entièrement.

@@ -53,6 +53,7 @@ Les ennemis de type Roche vous font moins de dégâts ; un demi-cœur de plus
 - Un coup de 1 cœur ou plus vous coûte ½ cœur de moins.
 - Un coup de seulement ½ cœur a 50 % de chance de ne rien faire du tout.
 - Le +½ cœur de PV max marche dès que vous la prenez, quel que soit l'ennemi.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +0,5 cœurs: 4 → 4,5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Vous ne pouvez en avoir qu'un exemplaire : le gardien ne la propose plus une fois que vous l'avez.

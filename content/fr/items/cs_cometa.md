@@ -63,6 +63,7 @@ Vitesse +0,5, vitesse des tirs + et portée +60.
 ## Fonctionnement
 - Simples bonus de statistiques, toujours actifs : Vitesse +0,5, Vitesse des tirs +2 et Portée +60. Aucune condition, aucun déclencheur.
 - Ne se trouve que dans l'[Observatoire](../rooms/observatory.html) (objet cosmique gratuit, un au choix parmi trois).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Vitesse +0,5: 4 → 4,5 (+12 %) · Vitesse des tirs +2: 9 → 11 (+22 %) · Portée +60 px: 350 → 410 px (+17 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire supplémentaire ajoute à nouveau les mêmes bonus (deux exemplaires : Vitesse +1, Vitesse des tirs +4, Portée +120). Les bonus de statistiques s'additionnent simplement (voir [Cumul des objets](../mechanics/acumulacion.html)).

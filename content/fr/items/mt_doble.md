@@ -63,6 +63,7 @@ Tir double
 - Vous tirez un tir de plus par salve : sans autre tir en plus, ça fait 2 tirs côte à côte, à environ 7° de chaque côté de votre visée.
 - Chaque tir inflige vos dégâts complets. Le -0,3 est retiré de votre stat Dégâts (les pénalités comptent en entier).
 - Avec plus de tirs, la salve s'ouvre en éventail.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts −0,3: 4 → 3,7 (−8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Il se cumule : chaque exemplaire ajoute un tir par salve et encore -0,3 en Dégâts. Une salve ne peut pas dépasser 9 tirs (voir [tirs supplémentaires](../mechanics/disparos_extra.html)).

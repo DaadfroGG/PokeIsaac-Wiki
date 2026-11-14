@@ -62,6 +62,7 @@ More money and 15 $; luck +1
 - It carries the same effect as the [Amulet Coin](amuleto.html): every [coin](../world/coin.html) you pick up is worth 2 instead of 1 and every nugget 7 instead of 5.
 - Your wallet is capped (99, rising to 150 from floor 10 and 250 from floor 30).
 - It is not offered by the treasure room, the shop or any other item pool in the current game.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +1. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The Luck and the 15 PokéDollars are added again by each copy, but the double coin value is on/off: a second Top Hat, or an Amulet Coin on top of it, does not make coins worth more.

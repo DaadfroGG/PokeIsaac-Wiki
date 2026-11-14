@@ -56,6 +56,7 @@ Cœur +1 et récupère un demi-cœur en nettoyant une salle
 - Au ramassage : +1 cœur max, et ce cœur est rempli.
 - Chaque fois qu'une salle est terminée, vous récupérez un demi-cœur (si vous n'êtes pas à PV pleins).
 - Ce soin de fin de salle ignore la limite de soin des objets.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le cœur max s'ajoute à chaque exemplaire.

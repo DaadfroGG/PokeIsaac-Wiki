@@ -58,6 +58,7 @@ Chance +2, vitesse +
 ## Fonctionnement
 - Chance +2 : chaque point donne +1 % de [coup critique](../mechanics/criticos.html), +2 % aux statuts de votre passif de type et améliore les autres chances liées à la Chance. Votre Chance totale compte en entier jusqu'à 10, puis au quart.
 - La Vitesse +0,3 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +2 · Vitesse +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

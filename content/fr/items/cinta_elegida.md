@@ -62,6 +62,7 @@ Dégâts +2, cadence -
 - Le +2 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
 - Cadence -4 : 0,067 s de plus entre deux tirs. Les ralentissements comptent toujours en entier.
 - Dans la Salle Distorsion ([pacte de Darkrai](../rooms/devil.html)), il coûte 2 réceptacles de cœur.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +2: 4 → 6 (+50 %) · Cadence −4: 4,3 → 3,3 tirs/s (−22 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

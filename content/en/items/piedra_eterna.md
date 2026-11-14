@@ -63,6 +63,7 @@ You no longer evolve, but damage +1 and heart +1
 - On pickup: Damage +1 and +1 max heart (the heart is filled).
 - Your Pokémon never evolves. Each time it would have evolved (see [Levels and evolution](../mechanics/niveles_pokemon.html)), it gets Damage +0.7, +1 max heart (up to the maximum health limit) and heals 1 heart instead.
 - Evolution by stone is blocked too.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1: 4 → 5 (+25 %) · Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The pickup bonus is added again with each copy.

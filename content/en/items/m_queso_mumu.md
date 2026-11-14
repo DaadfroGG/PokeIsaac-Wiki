@@ -63,6 +63,7 @@ If you stand still in combat, you release stinky clouds that poison enemies; hea
 - While you stand still in a room with enemies, you release a stinky cloud under you every 0.5 s. A cloud lasts 2.5 s and has a radius of 30 px.
 - Every 0.25 s each enemy in the cloud, flying ones included, takes 25 % of your damage (at least 0.5) and is poisoned for 2 s (see [status effects](../mechanics/estados.html)).
 - At most 24 clouds and puddles exist at once. Moving, or a room without enemies, stops the clouds.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The cloud does not change; +1 heart is added for each copy.

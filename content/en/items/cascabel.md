@@ -56,6 +56,7 @@ Heart +1 and recover half a heart when you clear a room
 - On pickup: +1 max heart, and that heart is filled.
 - Every time a room is cleared, you recover half a heart (if you are not at full health).
 - The room-clear healing ignores the limit on item healing.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The max heart is added again with each copy.

@@ -58,6 +58,7 @@ Cœur +1 et les explosions ne vous blessent pas
 ## Fonctionnement
 - Au ramassage : +1 cœur max, et ce cœur est rempli.
 - Les explosions ne vous blessent pas, y compris vos propres bombes.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le cœur max s'ajoute de nouveau avec chaque exemplaire. L'immunité aux explosions ne se cumule pas.

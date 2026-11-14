@@ -62,6 +62,7 @@ En heurtant murs et rochers, les tirs éclaboussent trois gouttes
 - Ajoute +40 de Portée.
 - Quand un de vos tirs touche un mur ou un rocher, il éclate en trois gouttelettes qui repartent vers vous en éventail (environ 30° de chaque côté). Chaque gouttelette inflige 50 % des dégâts du tir, est plus petite que le tir, garde son type et parcourt jusqu'à 120 px.
 - Les gouttelettes n'ont aucun autre effet et ne peuvent pas éclabousser à nouveau. Les tirs divisés et autres tirs enfants n'éclaboussent pas.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +40 px: 350 → 390 px (+11 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

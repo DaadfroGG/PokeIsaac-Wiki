@@ -59,6 +59,7 @@ Vos tirs frappent très fort de près (jusqu'à ×2,2) et de moins en moins en s
 - Les dégâts de chaque coup dépendent de la distance parcourue par le tir : ×2,2 juste à côté de vous, puis une baisse régulière jusqu'à ×0,4 en bout de portée (jamais moins de ×0,4).
 - Les tirs secondaires (éclats, fragments) et les tirs de compagnons ne sont pas touchés.
 - Le multiplicateur s'applique au coup : il n'apparaît donc pas dans votre stat Dégâts.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée −80 px: 350 → 270 px (−23 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'effet ×2,2 à ×0,4 ne se cumule pas, mais -80 de Portée s'ajoute à chaque exemplaire, donc les dégâts chutent plus vite.

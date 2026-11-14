@@ -62,6 +62,7 @@ Your shots move in a spiral
 - Homing shots steer their spiral toward the nearest enemy.
 - The spiral shots only go through rocks if your Pokémon is Ghost-type (like all shots); otherwise a rock stops them.
 - Spiral shots are not turned by [TM Psychic](mt_psiquico.html), don't snap with the [Psychic Seed](m_semilla_psique.html) and don't bounce with the [Smooth Rock](m_roca_suave.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +60 px: 350 → 410 px (+17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The spiral doesn't change with a second copy. The +60 Range is added again.

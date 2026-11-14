@@ -63,6 +63,7 @@ Vous n'évoluez plus, mais dégâts +1 et cœur +1
 - Au ramassage : Dégâts +1 et +1 cœur max (le cœur est rempli).
 - Votre Pokémon n'évolue jamais. Chaque fois qu'il aurait évolué (voir [Niveaux et évolution](../mechanics/niveles_pokemon.html)), il gagne Dégâts +0,7, +1 cœur max (jusqu'à la limite de PV max) et se soigne de 1 cœur à la place.
 - L'évolution par pierre est aussi bloquée.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +1: 4 → 5 (+25 %) · PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le bonus de ramassage s'ajoute de nouveau avec chaque exemplaire.

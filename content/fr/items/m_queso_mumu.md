@@ -63,6 +63,7 @@ Si vous restez immobile en combat, vous libérez des nuages puants qui empoisonn
 - Tant que vous restez immobile dans une salle avec des ennemis, vous lâchez un nuage puant sous vous toutes les 0,5 s. Un nuage dure 2,5 s et a un rayon de 30 px.
 - Toutes les 0,25 s, chaque ennemi dans le nuage, volants compris, subit 25 % de vos dégâts (au moins 0,5) et est empoisonné 2 s (voir [effets de statut](../mechanics/estados.html)).
 - Il n'existe pas plus de 24 nuages et flaques à la fois. Bouger, ou une salle sans ennemis, arrête les nuages.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le nuage ne change pas ; +1 cœur s'ajoute à chaque exemplaire.

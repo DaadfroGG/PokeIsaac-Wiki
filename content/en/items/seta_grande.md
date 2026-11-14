@@ -66,6 +66,7 @@ You grow: heart +1 and damage +0.5
 - Adds one heart container, +0.5 Damage and heals 1 heart as soon as you pick it up.
 - The +0.5 is flat Damage, so it falls under [diminishing returns](../mechanics/rendimientos.html) once your flat bonuses pass +3.
 - You are drawn 20 % bigger for the rest of the run. [Mini Mushroom](mini_seta.html) does the opposite (20 % smaller); with both you end up at ×0.96.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts · Damage +0.5: 4 → 4.5 (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

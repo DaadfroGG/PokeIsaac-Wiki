@@ -53,6 +53,7 @@ Vitesse ++
 
 ## Fonctionnement
 - La Vitesse +0,5 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Vitesse +0,5: 4 → 4,5 (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

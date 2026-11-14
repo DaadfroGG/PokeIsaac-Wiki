@@ -59,6 +59,7 @@ Luck +1 for each secret room you find
 - Then, each time you walk into a secret room for the first time, you gain Luck +1 for the rest of the run. Going back into the same room gives nothing.
 - Super secret rooms don't count.
 - Luck follows the [diminishing returns](../mechanics/rendimientos.html): full up to 10, then a quarter.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +1. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - A second copy adds its Luck +1, but the secret room bonus stays at +1 per room.

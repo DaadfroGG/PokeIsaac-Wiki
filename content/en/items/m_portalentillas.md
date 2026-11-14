@@ -57,6 +57,7 @@ Triple shot, but you fire slower
 ## How it works
 - Each volley fires 3 shots instead of 1, spread out in a fan. You fire more slowly.
 - The total number of shots in a volley is capped at 9 (see [Extra shots](../mechanics/disparos_extra.html)).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate −8: 4.3 → 2.7 shots/s (−36 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each copy adds 2 more shots per volley (5 with two copies, up to 9) and -8 Fire rate.

@@ -58,6 +58,7 @@ Heart +1 and fully heals you
 ## How it works
 - One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
 - It heals you fully when you pick it up; this heal ignores the healing limit.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - Boss rewards and shops.

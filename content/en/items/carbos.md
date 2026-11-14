@@ -58,6 +58,7 @@ Speed + and fire rate +
 ## How it works
 - Speed +0.4 has no diminishing returns. Your speed never goes below 1.6.
 - Fire rate +1.5: 0.025 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Speed +0.4: 4 → 4.4 (+10 %) · Fire rate +1.5: 4.3 → 4.8 shots/s (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - Treasure rooms and shops.

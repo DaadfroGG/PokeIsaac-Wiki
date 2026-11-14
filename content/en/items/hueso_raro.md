@@ -58,6 +58,7 @@ Your shots come back to you like a boomerang
 - When a shot reaches the end of its range, it turns around and flies back toward you at the same speed, covering 85 % of its range again before disappearing.
 - Hits are forgotten at the turn, so enemies the shot already hit can be hit a second time on the way back.
 - It happens once per shot. Child shots (split shots, fragments) do not come back.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.4: 4 → 4.4 (+10 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Damage +0.4 is added for each copy. The boomerang effect does not change.

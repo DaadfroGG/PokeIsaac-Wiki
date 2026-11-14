@@ -52,6 +52,7 @@ Your Steel-type shots deal 30 % more damage; Damage +0.3
 - Burn and poison ticks don't get the +30 %.
 - It multiplies with the [Iron Plate](x_iron_plate.html): ×1.3 × 1.15 ≈ ×1.5 on Steel shots.
 - The Damage +0.3 is a normal stat bonus: it shows on the HUD and follows the [diminishing returns](../mechanics/rendimientos.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - It does not stack with the [Steelium Z](x_steelium_z_bag.html): both give the same +30 %, so holding the two is still ×1.3. The Z-Crystal then only adds its critical hits.

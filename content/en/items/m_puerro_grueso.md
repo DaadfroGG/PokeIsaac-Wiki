@@ -59,6 +59,7 @@ Your shots hit very hard up close (up to ×2.2) and less the farther they go; ra
 - The damage of each hit depends on how far the shot travelled: ×2.2 right next to you, falling steadily to ×0.4 at the end of its range (never below ×0.4).
 - Child shots (fragments, splits) and companion shots are not affected.
 - The multiplier is applied on hit, so it does not show in your Damage stat.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range −80 px: 350 → 270 px (−23 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The ×2.2 to ×0.4 effect does not stack, but -80 Range is added for each copy, so the damage drops faster.

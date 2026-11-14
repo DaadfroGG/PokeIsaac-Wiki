@@ -57,6 +57,7 @@ Damage +0.5. When you enter a room with enemies, a meteorite falls on the one wi
 - Adds +0.5 Damage.
 - Each time you enter a room that still has live enemies, a meteorite falls on the enemy with the most current health for 3 times your Damage. This works in boss rooms too.
 - It falls once per room, as soon as the room starts, and not in rooms already cleared.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

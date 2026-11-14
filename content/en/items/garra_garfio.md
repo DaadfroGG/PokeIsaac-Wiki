@@ -58,6 +58,7 @@ Your shots pull enemies toward you
 - Every hit pulls the enemy toward you with a short tug, instead of pushing it away.
 - Bosses are not pulled.
 - While you hold it, all the knockback your shots would normally cause (Knockback shots, Water-type pushes, Rock and Ground pushes, [Sail Fossil](m_fosil_aleta.html)) is replaced by this pull.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Damage +0.3 is added for each copy. The pull does not get stronger.

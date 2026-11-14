@@ -59,6 +59,7 @@ Chance +1 pour chaque salle secrète trouvée
 - Ensuite, chaque fois que vous entrez pour la première fois dans une salle secrète, vous gagnez Chance +1 pour le reste de la partie. Retourner dans la même salle ne donne rien.
 - Les salles supersecrètes ne comptent pas.
 - La Chance suit les [rendements décroissants](../mechanics/rendimientos.html) : pleine jusqu'à 10, puis un quart.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +1. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Un deuxième exemplaire ajoute son Chance +1, mais le bonus des salles secrètes reste à +1 par salle.

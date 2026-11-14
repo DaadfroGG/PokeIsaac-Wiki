@@ -55,6 +55,7 @@ Portée ++
 
 ## Fonctionnement
 - Portée +150 px : ajoutée telle quelle à la distance que parcourent vos tirs, sans rendement décroissant. La portée ne peut jamais descendre sous 120 px.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +150 px: 350 → 500 px (+43 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

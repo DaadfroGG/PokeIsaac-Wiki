@@ -60,6 +60,7 @@ Your shots circle around you like moons and then fly where you aim
 - Each shot first circles around you like a moon, spiralling outward from 26 to 60 px, then after about 0.5 s flies off toward where you are aiming.
 - Consecutive shots circle in opposite directions. Once launched, a shot curves toward an enemy within 95 px if it is far off its path.
 - Orbiting shots disappear if they touch a rock, unless you are [Ghost-type](../types/ghost.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +80 px: 350 → 430 px (+23 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The orbit does not change; +80 Range is added for each copy.

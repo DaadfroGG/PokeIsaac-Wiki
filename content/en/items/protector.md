@@ -58,6 +58,7 @@ Heart +1 and explosions don't hurt you
 ## How it works
 - On pickup: +1 max heart, and that heart is filled.
 - Explosions don't hurt you, including your own bombs.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The max heart is added again with each copy. The explosion immunity does not stack.

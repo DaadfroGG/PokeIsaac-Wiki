@@ -56,6 +56,7 @@ Les tirs traversent les rochers
 - Les tirs qui traversent les rochers ne gardent ce pouvoir que si votre Pokémon est de type [Spectre](../types/ghost.html) (l'un de ses deux types). Pour tout autre Pokémon, cette partie ne fait rien.
 - Les tirs d'un Pokémon purement Spectre traversent déjà les rochers : en pratique, il n'aide qu'un Pokémon à double type avec Spectre, dont les tirs de l'autre type traversent aussi les rochers.
 - Le +0,5 en Dégâts marche toujours et suit les [rendements décroissants](../mechanics/rendimientos.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Obtention
 - Il n'est dans aucune réserve d'objets en ce moment : salles au trésor, boutiques et boss ne le proposent pas.

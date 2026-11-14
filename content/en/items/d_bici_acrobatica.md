@@ -62,6 +62,7 @@ You ride over ground hazards: puddles (poison, acid, lava, water, sand, webs...)
 - Ground hazard patches do nothing to you: puddles, acid, lava, water, sand, webs, spore clouds, sleep powder and brush patches. They neither hurt you nor slow you down.
 - Ice patches and wind still affect you; only Flying-type Pokémon float over those.
 - Enemy shots and attacks hit you as usual.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The heart and Speed are added again with each copy. The hazard immunity does not stack.

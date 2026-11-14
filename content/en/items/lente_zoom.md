@@ -58,6 +58,7 @@ Range ++ and faster shots
 ## How it works
 - Range +150: your shots travel 150 px farther, with no diminishing returns.
 - Shot speed +2: your shots fly faster (they reach their range sooner). It never goes below 4.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +150 px: 350 → 500 px (+43 %) · Shot speed +2: 9 → 11 (+22 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again.

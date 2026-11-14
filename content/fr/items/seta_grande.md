@@ -66,6 +66,7 @@ Vous grandissez : cœur +1 et dégâts +0,5
 - Ajoute un réceptacle de cœur, +0,5 Dégâts et soigne 1 cœur dès le ramassage.
 - Le +0,5 est un bonus de Dégâts fixe : il subit les [rendements décroissants](../mechanics/rendimientos.html) une fois vos bonus fixes au-delà de +3.
 - Votre sprite est dessiné 20 % plus grand jusqu'à la fin de la partie. Le [Mini Champi](mini_seta.html) fait l'inverse (20 % plus petit) ; avec les deux, vous êtes à ×0,96.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs · Dégâts +0,5: 4 → 4,5 (+12 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 

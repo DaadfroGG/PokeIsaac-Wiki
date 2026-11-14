@@ -53,6 +53,7 @@ Ghost-type enemies deal you less damage; half a heart more
 - A hit of 1 heart or more costs you ½ heart less.
 - A hit of only ½ heart has a 50 % chance to do nothing at all.
 - The +½ heart of max HP works as soon as you pick it up, whatever the enemy.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +0.5 hearts: 4 → 4.5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - You can only hold one copy: the guardian does not offer it again once you have it.

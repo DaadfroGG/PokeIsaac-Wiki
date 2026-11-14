@@ -58,6 +58,7 @@ Dégâts +1 ; tirs plus lents
 - Le +1 en Dégâts est un bonus fixe : il s'ajoute à vos autres bonus fixes et suit les [rendements décroissants](../mechanics/rendimientos.html) (en entier jusqu'à +3 au total, puis de moins en moins).
 - Vitesse des tirs -2 : vos tirs volent plus lentement (ils atteignent leur portée plus tard). Elle ne descend jamais sous 4.
 - Ses tirs ne sont pas à tête chercheuse.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +1: 4 → 5 (+25 %) · Vitesse des tirs −2: 9 → 7 (−22 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts).

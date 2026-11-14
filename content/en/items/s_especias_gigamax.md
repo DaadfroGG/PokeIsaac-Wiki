@@ -75,6 +75,7 @@ Gigantamax! Damage +1, speed +, range +, bigger shots, heart +1 and fully healed
 - One more heart container, up to the limit of 12 hearts. At 12 hearts you get no container, but the heal still applies.
 - It heals you fully when you pick it up; this heal ignores the healing limit.
 - Bigger shots: +2.5 to their radius (a normal shot has 7), so they hit enemies more easily. It also makes blasts like the [Toxic Orb](m_toxisfera.html)'s a bit larger.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1: 4 → 5 (+25 %) · Speed +0.3: 4 → 4.3 (+8 %) · Range +60 px: 350 → 410 px (+17 %) · Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again (with the diminishing returns on Damage), shots get bigger again, and it heals you fully again.

@@ -55,6 +55,7 @@ Chance +2
 
 ## Fonctionnement
 - Chance +2 : ajoutée à votre Chance. La Chance compte en entier jusqu'à 10 ; au-delà de 10, seul un quart compte. Elle augmente les chances de butin sur les ennemis et de récompense à la fin d'une salle, les chances de coup critique (+1 % par point) et celles des statuts du passif de type (+2 % par point).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +2. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

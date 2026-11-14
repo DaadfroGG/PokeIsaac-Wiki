@@ -68,6 +68,7 @@ Pas lourds : vous cassez caisses et vases en marchant et les tornades ne vous d
 - Vitesse −0,2, retirée en entier. Votre vitesse ne peut jamais descendre sous 1,6.
 - Tant que vous vous déplacez, vous brisez les [caisses](../world/crate.html), [tonneaux](../world/barrel.html), [buissons](../world/bush.html) et [vases](../world/vase.html) contre lesquels vous marchez, sans avoir à leur tirer dessus.
 - Les attaques qui vous attirent (tornades, tourbillons) ne peuvent plus vous déplacer.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs · Vitesse −0,2: 4 → 3,8 (−5 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute encore +1 cœur et −0,2 de Vitesse. Le bris d'objets et l'immunité aux attractions sont tout ou rien.

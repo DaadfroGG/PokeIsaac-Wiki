@@ -57,6 +57,7 @@ Coups critiques éblouissants : l'ennemi reste immobile
 - Tout ennemi touché par un tir critique est étourdi 0,75 s : il ne bouge plus et n'attaque plus. L'étourdissement se déclenche au coup, donc avec toutes les sources de critiques (y compris le critique garanti du [Joyau Normal](gema_normal.html)).
 - Les boss ne sont jamais étourdis ; ils subissent quand même les dégâts critiques.
 - Seuls les critiques de vos tirs comptent ; brûlure, poison et éclairs en chaîne n'étourdissent pas.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Dégâts +0,3 et +8 % de chance de critique s'ajoutent à chaque exemplaire.

@@ -62,6 +62,7 @@ Heart +1 and shots that knock back
 - You get one more heart container (up to the limit of 12 hearts) and heal 1 heart when you pick it up. This heal ignores the healing limit. At 12 hearts you get no container, but still the heal.
 - Every hit of your shots pushes the enemy away in the direction the shot was flying, much harder than the small push every shot gives.
 - It works on every hit, split shots included. Bosses are never pushed.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Both parts stack: each copy gives one more heart (and its heal), and the push gets stronger (strength 6, then 9, then 12…).

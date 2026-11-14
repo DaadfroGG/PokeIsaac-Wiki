@@ -60,6 +60,7 @@ Cœur +1 ; les coups violents vous retirent un demi-cœur de moins
 - Au ramassage : +1 cœur max, et ce cœur est rempli.
 - Tout coup qui vous coûterait un cœur entier ou plus (2 demi-cœurs ou plus) coûte un demi-cœur de moins. Les coups d'un demi-cœur ne sont pas réduits.
 - La réduction s'applique avant que les cœurs d'âme n'absorbent les dégâts.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le cœur max s'ajoute de nouveau avec chaque exemplaire. La réduction de dégâts ne se cumule pas.

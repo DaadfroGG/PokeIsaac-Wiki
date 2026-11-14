@@ -72,6 +72,7 @@ Your shots fly in an arc and explode on landing (they don't hurt you; they poiso
 - The fire rate penalty counts in full (slowdowns skip the [diminishing returns](../mechanics/rendimientos.html)). The +1 Damage is a normal flat bonus.
 - The [Smooth Rock](m_roca_suave.html) bounces don't work on arcing shots.
 - With a special weapon instead of normal shots, each hit has a 25 % chance (+1 % per Luck) to cause the same explosion, for 80 % of your Damage.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate −10: 4.3 → 2.5 shots/s (−42 %) · Damage +1: 4 → 5 (+25 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Where to find it
 - Treasure rooms and the Distortion Room ([Darkrai's deal](../rooms/devil.html)): there it costs 1 heart container, or sometimes 3 soul hearts.

@@ -58,6 +58,7 @@ Vitesse ++, dégâts -0,3
 ## Fonctionnement
 - La Vitesse +0,9 n'a pas de rendements décroissants. Votre vitesse ne descend jamais sous 1,6.
 - Le -0,3 en Dégâts est retiré de vos bonus fixes ; les pénalités comptent en entier. Vos Dégâts ne descendent jamais sous 0,5.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Vitesse +0,9: 4 → 4,9 (+22 %) · Dégâts −0,3: 4 → 3,7 (−8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats.

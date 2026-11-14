@@ -58,6 +58,7 @@ Luck +2, speed +
 ## How it works
 - Luck +2: each point gives +1 % [critical hit](../mechanics/criticos.html) chance, +2 % to your type passive statuses and improves other luck-based chances. Your total Luck counts in full up to 10, then at a quarter.
 - Speed +0.3 has no diminishing returns. Your speed never goes below 1.6.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +2 · Speed +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Everything stacks: each copy adds its stats again.

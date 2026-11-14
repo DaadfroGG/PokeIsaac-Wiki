@@ -61,6 +61,7 @@ Your shots pull nearby enemies in as they pass
 - It works on all your shots at once, so a volley of several shots pulls harder on enemies near more than one shot.
 - Bosses are never pulled. Enemies on the ground still stop against walls and rocks; flying enemies don't.
 - The pull deals no damage by itself.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +40 px: 350 → 390 px (+11 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - The pull doesn't get stronger with a second copy. The +40 Range is added again.

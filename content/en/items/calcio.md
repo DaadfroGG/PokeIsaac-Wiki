@@ -54,6 +54,7 @@ Fire rate +
 
 ## How it works
 - Fire rate +2: 0.033 s less between shots. Fire-rate bonuses follow the [diminishing returns](../mechanics/rendimientos.html): the first 3 points in total count in full, the next 4 at half, the rest at a quarter. You never shoot more than 12 times per second.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate +2: 4.3 → 5 shots/s (+17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - Treasure rooms, boss rewards and shops.

@@ -55,6 +55,7 @@ Fire rate +
 
 ## How it works
 - Fire rate: shortens the delay between two shots by 0.025 s. The fire-rate bonuses of all your items are added up: the first 3 points count in full, the next 4 at half and the rest at a quarter. Whatever you do, you can never shoot more than 12 times per second.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Fire rate +1.5: 4.3 → 4.8 shots/s (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

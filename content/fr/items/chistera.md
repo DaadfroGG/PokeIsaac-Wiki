@@ -62,6 +62,7 @@ Plus d'argent et 15 P$ ; chance +1
 - Il porte le même effet que la [Pièce Rune](amuleto.html) : chaque [pièce](../world/coin.html) ramassée vaut 2 au lieu de 1 et chaque pépite 7 au lieu de 5.
 - Votre porte-monnaie est plafonné (99, puis 150 dès l'étage 10 et 250 dès l'étage 30).
 - Il n'est proposé ni par la salle au trésor, ni par la boutique, ni par aucun autre pool d'objets dans le jeu actuel.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +1. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - La Chance et les 15 Pokédollars sont ajoutés à nouveau par chaque exemplaire, mais la valeur double des pièces est un effet tout ou rien : un second Haut-de-forme, ou une Pièce Rune en plus, ne fait pas valoir les pièces davantage.

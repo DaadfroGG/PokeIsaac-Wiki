@@ -77,6 +77,7 @@ Un peu de tout : dégâts, cadence, vitesse, portée et un cœur
 - Portée +40 : vos tirs vont 40 px plus loin, sans rendements décroissants.
 - Un réceptacle de cœur de plus, jusqu'à la limite de 12 cœurs. À 12 cœurs, vous n'en gagnez pas, mais le soin s'applique quand même.
 - Il vous soigne de 1 cœur en le ramassant ; ce soin ignore la limite de soins.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,5: 4 → 4,5 (+12 %) · Cadence +1: 4,3 → 4,6 tirs/s (+8 %) · Vitesse +0,2: 4 → 4,2 (+5 %) · Portée +40 px: 350 → 390 px (+11 %) · PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Tout se cumule : chaque exemplaire ajoute à nouveau ses stats (avec les rendements décroissants sur Dégâts et Cadence) et son soin.

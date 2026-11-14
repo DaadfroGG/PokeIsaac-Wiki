@@ -68,6 +68,7 @@ Heavy steps: you break crates and vases as you walk and tornadoes can't move you
 - Speed −0.2, subtracted in full. Your speed can never drop below 1.6.
 - While you are moving, you break the [crates](../world/crate.html), [barrels](../world/barrel.html), [bushes](../world/bush.html) and [vases](../world/vase.html) you walk into, without having to shoot them.
 - Attacks that pull you in (tornadoes, vortexes) can no longer move you.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts · Speed −0.2: 4 → 3.8 (−5 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each copy adds another +1 heart and −0.2 Speed. The breaking and the immunity to pulls are on/off effects.

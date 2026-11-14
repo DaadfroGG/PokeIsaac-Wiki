@@ -62,6 +62,7 @@ Vous roulez au-dessus des pièges au sol : les flaques (poison, acide, lave, eau
 - Les zones de pièges au sol ne vous font rien : flaques, acide, lave, eau, sable, toiles, nuages de spores, poudre sommeil et broussailles. Elles ne vous blessent ni ne vous ralentissent.
 - Les plaques de glace et le vent vous affectent toujours ; seuls les Pokémon de type Vol flottent au-dessus.
 - Les tirs et attaques ennemis vous touchent normalement.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le cœur et la Vitesse s'ajoutent de nouveau avec chaque exemplaire. L'immunité aux pièges ne se cumule pas.

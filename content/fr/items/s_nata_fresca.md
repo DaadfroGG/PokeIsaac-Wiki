@@ -64,6 +64,7 @@ Cœur +1 et vitesse +
 ## Fonctionnement
 - PV max +1 cœur : augmente vos PV maximum de 1 cœur (jusqu'à la limite de 12 cœurs ; les cœurs d'âme sont à part). Il soigne aussi 1 cœur dès que vous le ramassez. À 12 cœurs, le maximum n'augmente plus, mais vous êtes quand même soigné.
 - Vitesse +0,3 : ajoutée telle quelle à votre vitesse de déplacement, sans rendement décroissant. Votre vitesse ne peut jamais descendre sous le minimum de 1,6.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs · Vitesse +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute à nouveau ses bonus, sans limite de copies. Les rendements décroissants décrits plus haut s'appliquent au total, pas à chaque copie séparément.

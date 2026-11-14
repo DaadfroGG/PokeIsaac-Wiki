@@ -62,6 +62,7 @@ Vos tirs avancent en spirale
 - Les tirs à tête chercheuse orientent leur spirale vers l'ennemi le plus proche.
 - Les tirs en spirale ne traversent les rochers que si votre Pokémon est de type Spectre (comme tous les tirs) ; sinon un rocher les arrête.
 - Les tirs en spirale ne sont pas déviés par la [CT Psyko](mt_psiquico.html), ne pivotent pas avec la [Graine Psychique](m_semilla_psique.html) et ne rebondissent pas avec la [Roche Lisse](m_roca_suave.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +60 px: 350 → 410 px (+17 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - La spirale ne change pas avec un deuxième exemplaire. Les +60 de Portée s'ajoutent à nouveau.

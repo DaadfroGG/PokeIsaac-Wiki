@@ -56,6 +56,7 @@ Shots pass through rocks
 - Shots that pass through rocks only keep that power if your Pokémon is [Ghost](../types/ghost.html)-type (either of its types). For any other Pokémon, this part does nothing.
 - A pure Ghost-type Pokémon's shots already go through rocks, so in practice it only helps a dual-type Pokémon with Ghost: its shots of the other type go through rocks too.
 - The +0.5 Damage always works and follows the [diminishing returns](../mechanics/rendimientos.html).
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.5: 4 → 4.5 (+12 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## How to get it
 - It is not in any item pool at the moment: treasure rooms, shops and bosses don't offer it.

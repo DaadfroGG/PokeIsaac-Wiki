@@ -59,6 +59,7 @@ Your shots bounce off walls and rocks
 ## How it works
 - Each of your shots can bounce once off a wall, a rock or another obstacle instead of disappearing. It is reflected and keeps flying with the rest of its range.
 - A bounce does not damage or stop anything by itself; it just keeps the shot alive. With [AuroraTicket](m_ori_ticket.html), a shot bounces first and only wraps when it has no bounces left.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +60 px: 350 → 410 px (+17 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Each copy adds one more bounce and +60 Range.

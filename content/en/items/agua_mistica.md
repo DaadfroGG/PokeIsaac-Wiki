@@ -62,6 +62,7 @@ When hitting walls and rocks, shots splash three droplets
 - Adds +40 Range.
 - When one of your shots hits a wall or a rock, it bursts into three droplets that fly back toward you in a fan (about 30° to each side). Each droplet deals 50 % of the shot's damage, is smaller than the shot, keeps its type and travels up to 120 px.
 - Droplets carry no other effects and cannot splash again. Split shots and other child shots do not splash.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Range +40 px: 350 → 390 px (+11 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

@@ -57,6 +57,7 @@ Tir triple, mais vous tirez plus lentement
 ## Fonctionnement
 - Chaque salve tire 3 tirs au lieu d'un seul, en éventail. Vous tirez plus lentement.
 - Le nombre total de tirs d'une salve est plafonné à 9 (voir [Tirs supplémentaires](../mechanics/disparos_extra.html)).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Cadence −8: 4,3 → 2,7 tirs/s (−36 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Chaque exemplaire ajoute 2 tirs de plus par salve (5 avec deux exemplaires, jusqu'à 9) et -8 de Cadence.

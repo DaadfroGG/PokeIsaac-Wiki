@@ -64,6 +64,7 @@ Tirs géants : dégâts ×1,6 et +4, mais vous tirez beaucoup plus lentement ;
 ## Fonctionnement
 - Vos tirs sont plus gros (+2,5 de rayon), vos dégâts sont multipliés par 1,6 et augmentés de +4, mais vous tirez beaucoup plus lentement.
 - Si votre Pokémon est de type Plante, un tir qui bat un ennemi (hors boss) gagne +1 perforation et continue.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +4: 4 → 8 (+100 %) · Cadence −16: 4,3 → 2 tirs/s (−53 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le ×1,6 ne se cumule pas. +4 Dégâts, la cadence plus lente et +2,5 de rayon s'ajoutent à chaque exemplaire.

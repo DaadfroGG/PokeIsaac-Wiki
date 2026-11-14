@@ -63,6 +63,7 @@ Double shot
 - You fire one more shot per volley: with no other extra shots, that's 2 shots side by side, about 7° to each side of where you aim.
 - Each shot deals your full damage. The -0.3 is taken off your Damage stat (penalties count in full).
 - With more shots, the volley spreads out in a fan.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage −0.3: 4 → 3.7 (−8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - It stacks: each copy adds one more shot per volley and another -0.3 Damage. A volley can't have more than 9 shots (see [extra shots](../mechanics/disparos_extra.html)).

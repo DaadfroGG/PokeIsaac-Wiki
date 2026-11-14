@@ -68,6 +68,7 @@ Evolve! (if it can't: damage and health +)
 - If your Pokémon is already fully evolved (or Eevee has already evolved), nothing evolves: you get +0.7 Damage and +1 heart (healed) instead.
 - With an [Everstone](piedra_eterna.html) you never evolve: you get the same +0.7 Damage and +1 heart.
 - Your type changes to match the new form when it differs. See [Levels and evolution](../mechanics/niveles_pokemon.html) for how Pokémon also evolve by leveling.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %) · Speed +0.2: 4 → 4.2 (+5 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

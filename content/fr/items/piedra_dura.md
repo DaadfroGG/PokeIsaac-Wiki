@@ -62,6 +62,7 @@ Cœur +1 et tirs qui repoussent
 - Vous gagnez un réceptacle de cœur (jusqu'à la limite de 12 cœurs) et récupérez 1 cœur en le ramassant. Ce soin ignore la limite de soins. À 12 cœurs, pas de réceptacle, mais le soin quand même.
 - Chaque coup de vos tirs repousse l'ennemi dans la direction du tir, bien plus fort que la petite poussée que donne chaque tir.
 - Ça marche sur chaque coup, tirs divisés compris. Les boss ne sont jamais repoussés.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Les deux parties se cumulent : chaque exemplaire donne un cœur de plus (et son soin), et la poussée devient plus forte (force 6, puis 9, puis 12…).

@@ -60,6 +60,7 @@ Damage +1.5, fire rate -
 ## How it works
 - Damage +1.5: a flat bonus added to your Pokémon's base Damage. All the flat Damage from your items is added up first; the first +3 counts in full, +3 to +8 at half, +8 to +40 at a quarter and anything beyond at 5 % (see [Diminishing returns](../mechanics/rendimientos.html)).
 - Fire rate penalty: lengthens the delay between two shots by 0.05 s. A slowdown is added to the total of your other fire-rate items, and a net slowdown always counts in full, never reduced.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +1.5: 4 → 5.5 (+38 %) · Fire rate −3: 4.3 → 3.5 shots/s (−18 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 - Every copy adds its bonuses again, with no limit on copies. The diminishing returns described above apply to the total, not to each copy separately.

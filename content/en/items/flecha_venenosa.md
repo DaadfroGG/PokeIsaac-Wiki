@@ -60,6 +60,7 @@ names:
 - Each hit has a 33 % chance (+2 % per Luck) to poison the enemy for 2.5 seconds. See [Status effects](../mechanics/estados.html).
 - Your hits deal +50 % damage to enemies that are poisoned (from any source).
 - This item no longer appears in the regular item pools.
+- **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
 

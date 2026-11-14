@@ -60,6 +60,7 @@ Vos tirs tournent autour de vous comme des lunes puis partent là où vous visez
 - Chaque tir fait d'abord le tour de votre Pokémon comme une lune, en s'écartant en spirale de 26 à 60 px, puis après environ 0,5 s part vers l'endroit que vous visez.
 - Les tirs consécutifs tournent en sens opposés. Une fois lancé, un tir s'incurve vers un ennemi à moins de 95 px s'il est loin de sa trajectoire.
 - Les tirs en orbite disparaissent s'ils touchent un rocher, sauf si vous êtes de type [Spectre](../types/ghost.html).
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Portée +80 px: 350 → 430 px (+23 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - L'orbite ne change pas ; +80 de Portée s'ajoute à chaque exemplaire.

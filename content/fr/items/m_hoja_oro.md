@@ -68,6 +68,7 @@ Dégâts ×1,8 et +1 et un cœur de plus ; vous tirez un peu plus lentement
 ## Fonctionnement
 - Vos dégâts sont multipliés par 1,8 (ce ×1,8 compte avec les autres multiplicateurs de dégâts) et augmentés de +1. Vous gagnez aussi un cœur de plus, rempli, mais vous tirez plus lentement et vos tirs sont un peu plus lents.
 - Le ×1,8 est un multiplicateur de dégâts comme les autres et est soumis à leur plafond.
+- **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +1: 4 → 5 (+25 %) · PV max +1 cœur: 4 → 5 cœurs · Cadence −4: 4,3 → 3,3 tirs/s (−22 %) · Vitesse des tirs −1: 9 → 8 (−11 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
 - Le ×1,8 ne se cumule pas, mais +1 Dégâts, +1 cœur, la cadence plus lente et la vitesse des tirs s'ajoutent à chaque exemplaire.
