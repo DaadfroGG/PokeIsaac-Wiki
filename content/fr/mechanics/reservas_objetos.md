@@ -10,7 +10,7 @@ details:
 - label: Pools
   value: Trésor, Boss, Boutique, Distorsion, Céleste, Secret, Super secret, Maudit, Cosmique
 - label: Pas de doublons
-  value: Un objet montré une fois n'est plus proposé par ce pool de la partie
+  value: Un objet montré n'est plus proposé par ce pool tant que son sac n'est pas rempli à nouveau
 - label: Niveaux
   value: Étage 1 / 4 / 9 / 15, plus tôt avec la Chance
 - label: Verrous
@@ -74,7 +74,7 @@ Chaque objet que vous trouvez sur un piédestal vient d'un **pool** : une liste 
 |---|---|---|
 | Salle au trésor | Trésor | 1 objet gratuit ; **2 au choix** dès l'étage 6 en Classique ([choisir un objet sur deux](elegir_uno.html)) ; +1 choix avec le [Charme Ovale](../items/amuleto_oval.html). 1 par joueur en coop |
 | Boss | Boss | 1 objet gratuit, 2 au choix dès l'étage 6 ; +1 choix avec le Charme Ovale. Les méga-boss ajoutent un second objet gratuit. 1 par joueur en coop |
-| Boutique | Boutique | 2 emplacements d'objet garantis (1 dès l'étage 31, 3 en Ligue) ; les autres emplacements sont un actif, des cœurs, bombes, clés, âmes ou coffres, au hasard. 6 emplacements, de 4 à 8 avec certains objets. La première boutique d'une partie est gratuite |
+| Boutique | Boutique | 2 emplacements d'objet garantis (1 dès l'étage 31, 3 en Ligue) ; les autres emplacements sont un actif, des cœurs, bombes, clés, âmes ou coffres, au hasard. 6 emplacements, de 4 à 8 avec certains objets. La première boutique d'une partie est gratuite. Tous les 10 étages elle vend aussi des vitamines (voir [exceptions](#exceptions--ce-qui-ignore-les-règles)) |
 | [Coffre](../world/chest.html) | Trésor | 12 % des coffres normaux contiennent un objet au lieu de butin |
 | [Coffre doré](../world/goldchest.html) | Trésor | Toujours un objet |
 | [Vœu Étoile](../items/pieza_deseo.html) (actif) | Trésor | Un piédestal gratuit apparaît juste au-dessus de vous |
@@ -94,10 +94,14 @@ Chaque objet que vous trouvez sur un piédestal vient d'un **pool** : une liste 
 | [Salle MissingNo.](../rooms/glitch.html) | Trésor, Boss | Deux objets corrompus, ou un objet de boss gratuit |
 | [Terrier de Taupiqueur](../rooms/burrow.html) | Trésor | Meilleur palier de récompense |
 
-## Comment un objet est choisi
-Chaque pool fonctionne comme un sac où l'on pioche pendant toute la partie :
-1. **Le sac.** À la première utilisation d'un pool, le jeu y met tous les objets autorisés. Un objet de poids 2 y entre deux fois, un objet de poids 1 une fois (la plupart pèsent 2 ; quelques-uns, plus rares, pèsent 1, très peu 3 ou 5). Le sac est mélangé : les objets lourds sortent en moyenne plus tôt.
-2. **Répartition par catégorie.** Dans les pools trésor, boss et boutique, le jeu décide d'abord quel *type* d'objet donner, selon des parts cibles, puis prend le premier objet autorisé de ce type dans le sac.
+## Comment fonctionne un tirage
+Chaque fois qu'une salle montre un objet, le jeu fait un **tirage** dans le pool de cette salle. Deux choses sont distinctes :
+- **Le sac** : la liste des objets que le pool contient encore pendant la partie. Une fois créé, il ne fait que se vider (voir plus bas).
+- **Les filtres** : les règles qui disent quels objets sont autorisés *à cet instant*. Un objet qui échoue à un filtre est seulement ignoré : il reste dans le sac pour un tirage ultérieur.
+
+Un tirage se déroule ainsi :
+1. **Création du sac (à la première utilisation).** Le jeu y met tous les objets du pool autorisés à ce moment-là. Un objet de poids 2 y entre deux fois, un objet de poids 1 une fois (la plupart pèsent 2 ; quelques-uns, plus rares, pèsent 1, très peu 3 ou 5). Le sac est mélangé : les objets lourds sortent en moyenne plus tôt.
+2. **Choix d'un type** (pools trésor, boss et boutique seulement). Le jeu décide d'abord quel *type* d'objet donner, selon des parts cibles :
 
 | Pool | Stats | Tir | Compagnon | Défense | Utilitaire | Arme | Voltorbe | Évolution |
 |---|---|---|---|---|---|---|---|---|
@@ -106,25 +110,35 @@ Chaque pool fonctionne comme un sac où l'on pioche pendant toute la partie :
 | Boutique | 28 % | 15 % | 8 % | 17 % | 19 % | 4 % | 6 % | 3 % |
 
    - Un type sous-représenté jusque-là est favorisé (jusqu'à ×4) et un type sorti trop souvent est réduit : sur une longue partie, la répartition suit le tableau.
-   - Après un objet Voltorbe, arme, compagnon ou évolution, le même type devient environ 8 fois moins probable au tirage suivant.
-3. **Pas de doublons.** Un objet sort du sac dès qu'une salle le montre : ce pool ne le propose plus de la partie, même si vous le laissez sur son piédestal. Les sacs des autres pools le gardent.
-4. **Remplissage.** Quand il ne reste plus rien d'autorisé dans un sac, le jeu en refait un lot d'objets autorisés et le place devant.
+   - Après un objet Voltorbe, arme, compagnon ou évolution, ce type devient environ 8 fois moins probable au tirage suivant.
+3. **Prendre le premier objet autorisé** de ce type dans le sac (autres pools : le premier objet autorisé du sac).
+4. **Le retirer du sac.** Toutes ses copies quittent le sac de ce pool dès que la salle le montre, même si vous ne le prenez jamais. Les sacs des autres pools le gardent.
 
-## Ce qui est ignoré
-Un objet est passé (il reste dans le sac pour plus tard) si :
-- **Son niveau est trop haut.** Le niveau 2 demande l'étage 4, le niveau 3 l'étage 9, le niveau 4 l'étage 15. La Chance avance les niveaux : chaque point compte pour 2 étages, avec la plus haute Chance positive de l'équipe, ou la pire Chance négative si personne n'en a de positive. Voir [Niveaux des objets](niveles_objetos.html). Distorsion, Céleste, Secret, Super secret, Maudit et Cosmique ignorent les niveaux.
-- **Un joueur l'a déjà**, ou il attend déjà sur un piédestal quelque part dans l'étage (deux piédestaux ne montrent donc jamais le même objet), ou il a été **lâché** : un objet que vous jetez ou un actif que vous échangez est retiré du jeu pour le reste de la partie.
+## Les filtres
+Un objet échoue au tirage (et reste dans le sac) si :
+- **Son niveau est trop haut.** Le niveau 2 demande l'étage 4, le niveau 3 l'étage 9, le niveau 4 l'étage 15. La Chance avance les niveaux : chaque point compte pour 2 étages, avec la plus haute Chance positive de l'équipe, ou la pire Chance négative si personne n'en a de positive. Voir [Niveaux des objets](niveles_objetos.html). Distorsion, Céleste, Secret, Super secret, Maudit et Cosmique n'ont pas de limite de niveau.
+- **Un joueur le possède déjà**, ou il attend déjà sur un piédestal quelque part dans l'étage (deux piédestaux ne montrent donc jamais le même objet).
+- **Il a été lâché.** Un objet que vous jetez, ou un actif que vous échangez contre un autre, sort des tirages pour le reste de la partie.
 - **Il est verrouillé.** Beaucoup d'objets sont verrouillés derrière des [succès](logros.html). En plus, 3 objets sur 10 parmi ceux des pools trésor, boss et boutique démarrent chaque partie verrouillés ; chaque boss vaincu en débloque 4 (8 pour un méga-boss), choisis parmi ceux jusqu'à un niveau au-dessus de votre limite actuelle, et ils rejoignent les sacs à des endroits au hasard. Les objets qui sont aussi dans les pools Distorsion, Céleste ou secret ne sont jamais verrouillés ainsi, pas plus que les objets d'évolution.
-- **Un objet compagnon alors que les compagnons de tous les joueurs en vie sont au complet**, ou un objet qui augmente la limite de compagnons alors que vous n'avez aucun compagnon permanent.
-- **Un objet de type que votre équipe ne peut pas utiliser** (réservé à un type que personne dans l'équipe n'a).
-- **Un objet d'évolution quand tout le monde est complètement évolué** (sauf les objets qui font évoluer par pierre).
-- **Un objet rare qui a raté son tirage.** Les Méga-Gemmes n'entrent dans un sac qu'avec 20 % de chances chacune, à la création du sac.
+- **Objet compagnon alors que les compagnons de tous les joueurs en vie sont au complet**, ou objet qui augmente la limite de compagnons alors que vous n'avez aucun compagnon permanent.
+- **Objet de type que votre équipe ne peut pas utiliser** (réservé à un type que personne dans l'équipe n'a).
+- **Objet d'évolution quand tout le monde est complètement évolué** (sauf les objets qui font évoluer par pierre).
+- **Objet rare qui a raté son tirage.** Les Méga-Gemmes n'entrent dans un sac qu'avec 20 % de chances chacune, à la création ou au remplissage du sac.
 
-## Quand un pool est à sec
-S'il ne reste plus rien d'autorisé dans un pool :
-1. Boutique de la Ligue : le pool des boss. Tout autre pool : le pool trésor.
-2. Toujours rien : un objet passif au hasard de n'importe quel pool, dans votre limite de niveau, en préférant ceux qui ne sont pas de simples bonus de stats et qui ne sont pas déjà sur un piédestal.
-3. En dernier recours : une Protéine.
+## Quand le sac est épuisé
+« Épuisé » veut dire qu'aucun objet du sac ne passe les filtres (le sac peut encore contenir des objets de niveau trop haut, par exemple). Alors, dans l'ordre :
+1. **Remplissage.** Le jeu place un nouveau lot devant le sac : tous les objets de ce pool qui passent les filtres maintenant. Cela inclut des objets déjà montrés mais que vous ne possédez pas, comme celui que vous avez laissé lors d'un choix sur deux. Donc **« pas de doublons » ne dure que jusqu'au prochain remplissage**. Les objets que vous possédez, avez lâchés, ou qui sont sur un piédestal ne reviennent pas ainsi.
+2. **Rien dans le pool ne passe** : le jeu tire dans un autre pool : le pool des boss pour la boutique de la Ligue, le pool trésor pour tous les autres.
+3. **Toujours rien : dernier recours.** Un objet passif au hasard de n'importe quel pool, dans votre limite de niveau, en préférant ceux qui ne sont pas de simples bonus de stats et qui ne sont pas sur un piédestal. **Cette étape ignore ce que vous possédez et ce que vous avez lâché** : on peut vous proposer un objet que vous avez déjà ou que vous avez jeté. Si même cela échoue, une Protéine.
+
+## Exceptions : ce qui ignore les règles
+| Quoi | Ce que ça fait |
+|---|---|
+| **Vitamines de la boutique** | En Classique, tous les 10 étages (10, 20, 30…) ou au dernier étage de chaque chapitre, la boutique remplace jusqu'à 2 de ses emplacements par des **vitamines** (Protéine, Calcium, Zinc, Fer, PP Max, Carbone), à 1,5 × le prix d'un objet. Elles ne viennent pas du pool boutique : pas de sac, pas de règle « pas de doublons », pas de filtre « lâché ». La boutique préfère les vitamines que personne n'a, mais si vous les avez toutes, elle les revend. C'est pourquoi une Protéine que vous avez lâchée peut réapparaître en boutique. Si un joueur en vie a une santé max sous la limite du jeu, PV Plus passe en premier (1,8 × le prix). Elles remplacent d'abord des emplacements de ramassables (cœurs, bombes…) avant des emplacements d'objets en plus, et jamais les deux premiers emplacements d'objet |
+| **Relance de la boutique** | Placez-vous près du vendeur et appuyez sur la touche d'interaction : le stock est retiré au sort de nouveau, pour un prix qui augmente à chaque relance (3 × 1,45 par relance, selon l'étage, 2 au minimum). Impossible en Ligue ou dans une boutique gratuite. Les anciens objets sont consommés, les nouveaux viennent des sacs comme d'habitude, et l'échange par des vitamines se refait |
+| **Objets fixes** | Certaines récompenses sont un objet précis, pas un tirage : par exemple le Charbon après avoir vaincu le faux Darkrai (un objet de boss à la place si vous l'avez déjà) |
+| **Dernier recours** | Voir plus haut : ignore ce que vous possédez et lâchez |
+| **Remplissage** | Voir plus haut : ramène des objets déjà montrés mais non possédés |
 
 ## Objets actifs
 Les actifs sont tirés d'un sac à part, utilisé par la [boutique](../rooms/shop.html) et le [Laboratoire](../rooms/lab.html). Un actif que vous portez ou que vous avez échangé ne peut plus sortir, et la limite de niveau s'applique aussi. Échanger un actif contre celui d'un piédestal laisse le vôtre sur place ; il sort des tirages à partir de là.
