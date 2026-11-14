@@ -249,3 +249,47 @@ pb_when_fight_start: first 4 s of a fight
 pb_when_electric: if Electric-type
 pb_when_odd_floor: on odd floors
 pb_when_even_floor: on even floors
+pb_var_rend: Earlier hits on the same enemy
+pb_flag_boss: Target is a boss
+pb_flag_close: Target very close to you
+pb_flag_slowed: Target is slowed
+pb_flag_firing: Firing nonstop
+pb_when_boss: against bosses
+pb_when_close: at point blank
+pb_when_slowed: on slowed enemies
+pb_when_firing: while firing nonstop
+pb_volley: Shots per attack
+pb_hit_mul: Per-hit multipliers
+pb_volley_fwd: forward volley
+pb_volley_rear: also backwards
+pb_volley_double: each shot doubled
+pb_volley_extra: chance shots
+pb_volley_echo: echo copies
+pb_fx_multishot: "Multishot +{v}"
+pb_fx_crit: "Crit chance +{v} %"
+pb_fx_critX: "Crit damage +{v} (×3 in total)"
+pb_fx_boost: "×{v} damage to {e} shots"
+pb_fx_plate: "×{v} damage to {e} shots, type passive +2 ranks"
+pb_fx_rear: Also fires a second volley backwards
+pb_fx_double: Every shot comes out doubled
+pb_fx_echo: "Copy of each shot at ×{v} damage"
+pb_fx_extra: "Chance of {v} extra shots per attack"
+pb_fx_alwayscrit: Every shot is a critical hit
+pb_el_normal: Normal
+pb_el_fire: Fire
+pb_el_water: Water
+pb_el_electric: Electric
+pb_el_grass: Grass
+pb_el_ice: Ice
+pb_el_fighting: Fighting
+pb_el_poison: Poison
+pb_el_ground: Ground
+pb_el_flying: Flying
+pb_el_psychic: Psychic
+pb_el_bug: Bug
+pb_el_rock: Rock
+pb_el_ghost: Ghost
+pb_el_dragon: Dragon
+pb_el_dark: Dark
+pb_el_steel: Steel
+pb_el_fairy: Fairy

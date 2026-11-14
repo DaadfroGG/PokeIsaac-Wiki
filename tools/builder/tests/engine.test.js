@@ -64,4 +64,21 @@ near(rc({ char: "pikachu", floor: 2, items: { p_lunar: 1 } }).stats.speed, 4.7);
 // Pretty Feather: +1 speed after 15 s without a hit; Soda Pop +0.1 per purchase up to 1.5
 near(rc({ char: "pikachu", items: { pluma_bella: 1 }, sit: { calm: 15 } }).stats.speed, 5.2);
 near(rc({ char: "pikachu", items: { refresco: 1 }, sit: { buys: 40 } }).stats.speed, 5.7);
+
+// --- phase 3: crit, volley, type boosts, per-hit multipliers ---
+const r3 = (b) => rc(Object.assign({ char: "pikachu" }, b));
+// Scope-style crit: Magnifying Lens +8 % crit and crit x3 (Luck 1 adds 1 %)
+let c = r3({ items: { lupa: 1 } });
+near(c.stats.critChance, 0.08 + 0.01 * c.stats.luck); near(c.stats.critMult, 3);
+// Double Team + Lens Case: 1 + 1 + 2 = 4 shots a volley
+near(r3({ items: { mt_doble: 1, m_portalentillas: 1 } }).stats.shotsPerVolley, 4);
+// volley max 9, Destiny Knot doubles it, Go-Goggles doubles again
+near(r3({ items: { mt_doble: 9, lazo_destino: 1 } }).stats.shotsPerVolley, 18);
+near(r3({ items: { mt_doble: 9, lazo_destino: 1, m_gafas_aislantes: 1 } }).stats.shotsPerVolley, 36);
+// Experto Belt x1.3 only against bosses
+near(r3({ items: { cinta_experto: 1 } }).stats.avgShot, r3({ items: {} }).stats.avgShot);
+near(r3({ items: { cinta_experto: 1 }, sit: { boss: true } }).stats.avgShot / r3({ items: {} }).stats.avgShot, 1.3);
+// Fire gem: +30 % damage to Fire shots only
+near(r3({ char: "charmander", items: { x_fire_gem: 1 } }).stats.avgShot / r3({ char: "charmander", items: {} }).stats.avgShot > 1.3, true);
+near(r3({ items: { x_fire_gem: 1 } }).stats.typeDamage, 1);
 console.log("engine tests passed");

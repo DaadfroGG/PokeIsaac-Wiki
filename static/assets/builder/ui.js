@@ -133,7 +133,7 @@
     return rows;
   }
 
-  const STATK = { dmg: "pb_damage", rate: "pb_fire_rate", speed: "pb_speed" };
+  const STATK = { dmg: "pb_damage", rate: "pb_fire_rate", speed: "pb_speed", hit: "pb_hit_mul" };
   // Which controls to show: only the ones the chosen items react to.
   function sitControls(r) {
     const vars = new Set(), flags = new Set();
@@ -147,10 +147,19 @@
     for (const f of E.SIT_FLAGS) if (flags.has(f)) rows.push($("label", {}, $("input", { type: "checkbox", checked: !!S.t[f], onchange: (ev) => { S.t[f] = ev.target.checked ? 1 : 0; render(); } }), T["pb_flag_" + f]));
     return rows.length ? $("div", { class: "row" }, rows) : $("p", { class: "note", text: T.pb_sit_none });
   }
+  function volleyNote(r) {
+    const v = r.steps.volley, bits = [];
+    bits.push(`${T.pb_volley_fwd} ${v.forward}`);
+    if (v.rear) bits.push(T.pb_volley_rear);
+    if (v.double) bits.push(T.pb_volley_double);
+    if (v.extra) bits.push(`${T.pb_volley_extra} +${fmt(v.extra, 2)}`);
+    if (v.echo) bits.push(`${T.pb_volley_echo} +${fmt(v.echo, 2)}`);
+    return bits.join(" · ");
+  }
   function effectList(r) {
     if (!r.effects.length) return null;
     const items = r.effects.map((e) => {
-      const what = e.kind === "add" ? `${T[STATK[e.stat]]} ${sgn(e.kind === "add" && e.when || !e.var ? e.v : e.v)}` : `${T[STATK[e.stat]]} ${e.kind === "mulvar" ? "×" + fmt(e.v, 2) : "×" + fmt(e.v, 2)}`;
+      const what = e.label ? T["pb_fx_" + e.label].replace("{v}", e.v == null ? "" : fmt(e.v, 2)).replace("{e}", e.elem ? (T["pb_el_" + e.elem] || e.elem) : "") : e.kind === "add" ? `${T[STATK[e.stat]]} ${sgn(e.kind === "add" && e.when || !e.var ? e.v : e.v)}` : `${T[STATK[e.stat]]} ${e.kind === "mulvar" ? "×" + fmt(e.v, 2) : "×" + fmt(e.v, 2)}`;
       const cond = e.when ? ` (${T["pb_when_" + e.when]})` : "";
       return $("li", { class: e.active ? "on" : "off" }, $("b", { text: nameOf(e.slug) }), ": " + what + cond, " ", $("span", { class: "tag " + (e.active ? "" : "none"), text: e.active ? T.pb_active : T.pb_inactive }));
     });
@@ -200,6 +209,8 @@
         $("div", {}, $("div", { class: "note", text: T.pb_shots_s }), $("b", { text: fmt(r.stats.fireRate) }))),
       $("table", { class: "stats" }, $("tbody", {}, summary(r),
         row(T.pb_crit, fmt(r.stats.critChance * 100, 1) + " %", r.stats.critChance ? `${T.pb_crit_mult} ×${fmt(r.stats.critMult, 2)}` : null),
+        row(T.pb_volley, fmt(r.stats.shotsPerVolley, 2), volleyNote(r)),
+        r.stats.hitMul !== 1 ? row(T.pb_hit_mul, "×" + fmt(r.stats.hitMul, 3), null) : null,
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
       effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume }));

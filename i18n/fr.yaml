@@ -249,3 +249,47 @@ pb_when_fight_start: 4 premières s d'un combat
 pb_when_electric: si type Électrik
 pb_when_odd_floor: aux étages impairs
 pb_when_even_floor: aux étages pairs
+pb_var_rend: Coups précédents sur le même ennemi
+pb_flag_boss: La cible est un boss
+pb_flag_close: Cible tout près de vous
+pb_flag_slowed: Cible ralentie
+pb_flag_firing: Tir sans interruption
+pb_when_boss: contre les boss
+pb_when_close: à bout portant
+pb_when_slowed: sur les ennemis ralentis
+pb_when_firing: en tirant sans arrêt
+pb_volley: Tirs par attaque
+pb_hit_mul: Multiplicateurs par coup
+pb_volley_fwd: salve avant
+pb_volley_rear: aussi vers l'arrière
+pb_volley_double: chaque tir doublé
+pb_volley_extra: tirs au hasard
+pb_volley_echo: copies d'écho
+pb_fx_multishot: "Tir multiple +{v}"
+pb_fx_crit: "Chance de critique +{v} %"
+pb_fx_critX: "Dégâts critiques +{v} (×3 au total)"
+pb_fx_boost: "×{v} de dégâts aux tirs {e}"
+pb_fx_plate: "×{v} de dégâts aux tirs {e}, passif de type +2 rangs"
+pb_fx_rear: Tire aussi une seconde salve vers l'arrière
+pb_fx_double: Chaque tir sort en double
+pb_fx_echo: "Copie de chaque tir à ×{v} de dégâts"
+pb_fx_extra: "Chance de {v} tirs en plus par attaque"
+pb_fx_alwayscrit: Chaque tir est un coup critique
+pb_el_normal: Normal
+pb_el_fire: Feu
+pb_el_water: Eau
+pb_el_electric: Électrik
+pb_el_grass: Plante
+pb_el_ice: Glace
+pb_el_fighting: Combat
+pb_el_poison: Poison
+pb_el_ground: Sol
+pb_el_flying: Vol
+pb_el_psychic: Psy
+pb_el_bug: Insecte
+pb_el_rock: Roche
+pb_el_ghost: Spectre
+pb_el_dragon: Dragon
+pb_el_dark: Ténèbres
+pb_el_steel: Acier
+pb_el_fairy: Fée

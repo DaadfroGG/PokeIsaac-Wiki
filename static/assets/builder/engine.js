@@ -52,9 +52,9 @@
   }
 
   // Situation: numbers and switches the player sets (coins, hits taken, standing still...). Missing = 0 / off.
-  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys"];
-  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start"];
-  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15 };
+  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend"];
+  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing"];
+  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9 };
 
   // One effect record of an item. Returns { stat, add, mul, active } (add for flat bonuses, mul for multipliers).
   function evalFx(fx, ctx) {
@@ -67,6 +67,7 @@
       when === "even_floor" ? (ctx.floor - 1) % 2 === 1 :
       !!sit[when];
     const out = { stat: fx.stat, add: 0, mul: 1, active: on, when: when || null, kind: fx.k, v: fx.value };
+    if (!(fx.k in { add: 1, mul: 1, mulvar: 1 })) { out.active = on; return out; }
     if (fx.k === "add") {
       if (fx.var) {
         const v = fx.var === "items" ? ctx.nItems : Math.min(LIMITS[fx.var] || 1e9, +sit[fx.var] || 0);
@@ -113,13 +114,23 @@
     }
     // Conditional effects: each item counts once, however many copies you hold.
     const ctx = { sit: b.sit || {}, elem: ch.elem, floor: b.floor || 1, nItems };
-    const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [] };
+    const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
+    const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
+    let rear = false, double = false, echo = 0, alwaysCrit = false;
     for (const slug of present) {
+      const copies = b.items[slug];
       for (const fx of data.items[slug].e || []) {
         const r = evalFx(fx, ctx);
         r.slug = slug; effects.push(r);
         if (r.add) adds[r.stat] += r.add;
         if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
+        if (fx.k === "mod") { mods[fx.mod] += fx.value * copies; r.label = fx.mod; r.v = fx.value * copies * (fx.mod === "crit" ? 8 : 1); }
+        else if (fx.k === "typeboost") { boosts.push({ elem: fx.elem, mul: fx.mul, tier: fx.tier || 0 }); r.label = fx.tier ? "plate" : "boost"; r.v = fx.mul; r.elem = fx.elem; }
+        else if (fx.k === "rear") { rear = true; r.label = "rear"; }
+        else if (fx.k === "double") { double = true; r.label = "double"; }
+        else if (fx.k === "echo") { echo = fx.value; r.label = "echo"; r.v = fx.value; }
+        else if (fx.k === "extra") { extras.push(fx); r.label = "extra"; r.v = fx.n; }
+        else if (fx.k === "alwayscrit") { r.active = !!ctx.sit[fx.when]; if (r.active) alwaysCrit = true; r.label = "alwayscrit"; }
       }
     }
     const evo = { hp: 0, dmg: 0, speed: 0 };
@@ -130,6 +141,7 @@
     // Damage
     const dmgBonus = sum.dmg + evo.dmg + adds.dmg;
     const dmgCounted = dmgBonus > 0 ? dr(dmgBonus, 3, 8, 40) : dmgBonus;
+    const hitMul = muls.hit.reduce((a, m) => a * m.v, 1);
     const dmgMulRaw = muls.dmg.reduce((a, m) => a * m.v, 1);
     const dmgMul = mulDr(dmgMulRaw);
     const dmgBase = ch.dmg + dmgCounted;
@@ -139,7 +151,8 @@
 
     // Fire rate (ticks between shots: lower is faster)
     const rateBonus = sum.rate < 0 ? -dr(-sum.rate, 3, 7) : sum.rate;
-    const bugMul = has("bug") ? 1 - 0.012 * tier : 1;
+    const tierFor = (e) => clamp(tier + (has(e) && boosts.some((x) => x.elem === e && x.tier) ? boosts.find((x) => x.elem === e && x.tier).tier : 0), 0, 10);
+    const bugMul = has("bug") ? 1 - 0.012 * tierFor("bug") : 1;
     const rateMulItems = muls.rate.reduce((a, m) => a * m.v, 1);
     const ticks = Math.max(5, (ch.rate + rateBonus) * rateMulItems * bugMul * sk.rate * lk.rate);
     out.stats.ticks = ticks;
@@ -147,7 +160,7 @@
     out.steps.fireRate = { baseTicks: ch.rate, items: sum.rate, counted: rateBonus, itemMul: rateMulItems, bug: bugMul, shiny: sk.rate, level: lk.rate, capped: ticks === 5 };
 
     // Speed
-    const speedAdd = evo.speed + adds.speed + (has("flying") ? 0.04 * tier : has("bug") ? 0.02 * tier : 0);
+    const speedAdd = evo.speed + adds.speed + (has("flying") ? 0.04 * tierFor("flying") : has("bug") ? 0.02 * tierFor("bug") : 0);
     out.stats.speed = Math.max(1.6, ch.speed + sum.speed + speedAdd) * sk.speed * lk.speed;
     out.steps.speed = { base: ch.speed, items: sum.speed, evo: evo.speed, cond: adds.speed, type: speedAdd - evo.speed - adds.speed, shiny: sk.speed, level: lk.speed };
 
@@ -158,9 +171,9 @@
     out.steps.shotSpeed = { base: ch.shot, items: sum.shot };
 
     // Luck (full up to 10, a quarter above)
-    const luckRaw = ch.luck + sum.luck + sk.luck + (has("normal") ? 0.35 * tier : 0);
+    const luckRaw = ch.luck + sum.luck + sk.luck + (has("normal") ? 0.35 * tierFor("normal") : 0);
     out.stats.luck = luckRaw <= 10 ? luckRaw : 10 + 0.25 * (luckRaw - 10);
-    out.steps.luck = { base: ch.luck, items: sum.luck, shiny: sk.luck, type: has("normal") ? 0.35 * tier : 0, raw: luckRaw };
+    out.steps.luck = { base: ch.luck, items: sum.luck, shiny: sk.luck, type: has("normal") ? 0.35 * tierFor("normal") : 0, raw: luckRaw };
 
     // Health in half hearts, 1 to 12 hearts
     out.stats.hp = clamp(ch.hp + sum.hp + evo.hp, 2, 24);
@@ -170,12 +183,15 @@
     // Damage per shot, averaged over the shot types of a dual-type Pokémon (they alternate).
     const elems = ch.elem2 ? [ch.elem, ch.elem2] : [ch.elem];
     const pure = ch.elem2 ? 1 : PURE_K;
+    const critX = Math.min(1, mods.critX);
     let avg = 0, critC = 0, critM = 0, kAvg = 0;
     for (const e of elems) {
-      const c = clamp((isFightDark(e) ? 0.1 * pure : 0) + critAdd(e, tier) + 0.01 * out.stats.luck, 0, 1);
-      const m = 2 + critDmg(e, tier);
-      const k = dmgK(e, tier);
-      avg += (dmg * k * (1 + c * (m - 1))) / elems.length;
+      const te = tierFor(e);
+      const boost = boosts.filter((x) => x.elem === e).reduce((a, x) => a * x.mul, 1);
+      const c = alwaysCrit ? 1 : clamp(0.08 * mods.crit + (isFightDark(e) ? 0.1 * pure : 0) + critAdd(e, te) + 0.01 * out.stats.luck, 0, 1);
+      const m = 2 + critX + critDmg(e, te);
+      const k = dmgK(e, te) * boost;
+      avg += (dmg * k * hitMul * (1 + c * (m - 1))) / elems.length;
       critC += c / elems.length; critM += m / elems.length; kAvg += k / elems.length;
     }
     out.stats.critChance = critC;
@@ -183,7 +199,20 @@
     out.stats.typeDamage = kAvg;
     out.stats.shotDamage = dmg * kAvg;
     out.stats.avgShot = avg;
-    out.stats.shotsPerVolley = 1; // extra shots join here in later versions
+    // Volley: 1 + multishot (max 9), doubled backwards by Destiny Knot and by Go-Goggles; random extra shots by chance.
+    const fwd = clamp(1 + mods.multishot, 1, 9);
+    const volley = fwd * (rear ? 2 : 1) * (double ? 2 : 1);
+    let extraShots = 0;
+    for (const x of extras) extraShots += x.n * clamp(x.base + 0.01 * out.stats.luck, 0, x.max);
+    let perAttack = volley + extraShots;
+    let echoShots = 0;
+    if (echo) {
+      // a copy of each shot half a second later, at most 24 waiting at once
+      echoShots = perAttack * Math.min(1, 24 / Math.max(1e-9, perAttack * out.stats.fireRate * 0.5)) * echo;
+    }
+    out.stats.shotsPerVolley = perAttack + echoShots;
+    out.steps.volley = { forward: fwd, rear, double, volley, extra: extraShots, echo: echoShots, hitMul, crit: mods.crit, critX };
+    out.stats.hitMul = hitMul;
     out.stats.dps = avg * out.stats.shotsPerVolley * out.stats.fireRate;
     return out;
   }
