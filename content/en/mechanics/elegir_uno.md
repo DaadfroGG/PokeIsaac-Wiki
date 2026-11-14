@@ -46,3 +46,5 @@ names:
     desc: 從經典模式第6層起，寶物房間和頭目會讓你看兩個道具，你只能拿一個：另一個會消失（有圓形護符時，寶物房間會出三個）。在無盡模式中，商店還會少賣一個固定道具。這樣你就要規劃自己的道具組合，而不是看到什麼拿什麼。
 ---
 From floor 6 of Classic, the treasure room and the boss show you two items and you take one: the other disappears (with the Oval Charm, three in the treasure room). In the Infinite mode, the shop also sells one fixed item less. This way you decide your build instead of grabbing everything that shows up.
+
+See also: [Item pools and spawning](reservas_objetos.html).

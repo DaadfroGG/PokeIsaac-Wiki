@@ -46,3 +46,5 @@ names:
     desc: 從經典模式第6層起，寶物房間和頭目會讓你看兩個道具，你只能拿一個：另一個會消失（有圓形護符時，寶物房間會出三個）。在無盡模式中，商店還會少賣一個固定道具。這樣你就要規劃自己的道具組合，而不是看到什麼拿什麼。
 ---
 À partir de l'étage 6 du Classique, la salle au trésor et le boss vous montrent deux objets et vous en prenez un : l'autre disparaît (avec le Charme Ovale, trois dans la salle au trésor). Dans l'Infini, la boutique vend en plus un objet fixe de moins. Vous décidez ainsi de votre build au lieu de ramasser tout ce qui sort.
+
+Voir aussi : [Pools et apparition des objets](reservas_objetos.html).

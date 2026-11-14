@@ -48,3 +48,5 @@ names:
     desc: 最強的道具要到一定樓層才會出現，以免本局一開始就失衡。幸運會讓它們提前出現：每1點幸運提前兩層（負的幸運則會延後）。扭曲房間、天界房間和祕密房間不受此限制。
 ---
 Les objets les plus puissants n'apparaissent qu'à partir d'un certain étage, pour que la partie ne soit pas déséquilibrée d'emblée. La chance les avance : chaque point de chance, deux étages plus tôt (et la chance négative les retarde). Les salles Distorsion, Céleste et secrètes n'ont pas de limite.
+
+Voir aussi : [Pools et apparition des objets](reservas_objetos.html).

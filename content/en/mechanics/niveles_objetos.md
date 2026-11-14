@@ -48,3 +48,5 @@ names:
     desc: 最強的道具要到一定樓層才會出現，以免本局一開始就失衡。幸運會讓它們提前出現：每1點幸運提前兩層（負的幸運則會延後）。扭曲房間、天界房間和祕密房間不受此限制。
 ---
 The strongest items don't appear until a certain floor, so the run doesn't break right away. Luck brings them sooner: each luck point, two floors earlier (and negative luck delays them). Distortion, Celestial and secret rooms have no limit.
+
+See also: [Item pools and spawning](reservas_objetos.html).
