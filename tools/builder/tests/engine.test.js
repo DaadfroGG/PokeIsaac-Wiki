@@ -34,4 +34,34 @@ const l = E.compute(data, { char: "test", levels: true, level: 60, floor: 1, ite
 near(l.stats.damage, 4 * 1.472, 1e-3); near(l.steps.fireRate.level, 0.764, 1e-3); near(l.steps.speed.level, 1.118, 1e-3);
 // evolution: stage 2 gives +2.5 damage (counted through the returns) and -0.2 speed
 const ev = run({ stage: 2 }); near(ev.stats.damage, 6.5); near(ev.stats.speed, 3.8); assert.strictEqual(ev.stats.hp, 12);
+
+// --- conditional effects (phase 2), real item data ---
+const real = JSON.parse(require("fs").readFileSync(__dirname + "/../../../static/assets/builder/data.json", "utf8"));
+const rc = (b) => E.compute(real, Object.assign({ levels: false, floor: 1, shiny: false, stage: 0, level: 1, items: {}, sit: {} }, b));
+// Liechi Berry x1.5 only at one heart or less
+near(rc({ char: "pikachu", items: { baya_lichi: 1 }, sit: { low_health: true } }).stats.damage, 3.5 * 1.5);
+near(rc({ char: "pikachu", items: { baya_lichi: 1 } }).stats.damage, 3.5);
+// Light Ball: +0.5 and x2 for an Electric Pokémon (Pikachu), only +0.5 for others
+near(rc({ char: "pikachu", items: { bola_luminosa: 1 } }).stats.damage, (3.5 + 0.5) * 2);
+near(rc({ char: "charmander", items: { bola_luminosa: 1 } }).stats.damage, 4.2 + 0.5);
+// two x2 multipliers become x2.725 (Light Ball on Pikachu + Relic Statue standing still)
+near(rc({ char: "pikachu", items: { bola_luminosa: 1, estatua_antigua: 1 }, sit: { standing_still: true } }).stats.damage, (3.5 + 0.5) * 2.725);
+// a second copy of a conditional item does nothing more
+near(rc({ char: "pikachu", items: { orbe_lustre: 2 } }).stats.damage, 3.5 * 1.25);
+// Stardust: +0.2 per full 10 coins, up to +2; goes through the flat-damage returns
+near(rc({ char: "pikachu", items: { polvo_estelar: 1 }, sit: { coins: 59 } }).stats.damage, 3.5 + 1.0);
+near(rc({ char: "pikachu", items: { polvo_estelar: 1 }, sit: { coins: 250 } }).stats.damage, 3.5 + 2);
+// Relic Band: +0.15 per item including itself, up to +3 (20 items)
+near(rc({ char: "pikachu", items: { brazalete_antiguo: 1, proteina: 3 } }).stats.damage, 3.5 + 0.15 * 4 + 1.5);
+// Razor Claw: +4 % per level, x1.4 at 10
+near(rc({ char: "pikachu", items: { garra: 1 }, sit: { claw: 10 } }).stats.damage, 3.5 * 1.4);
+// X Speed + Power Herb at the start of a fight: delay x0.48, speed +1.4
+const ff = rc({ char: "pikachu", items: { velocidad_x: 1, hierba_unica: 1 }, sit: { fight_start: true } });
+near(ff.steps.fireRate.itemMul, 0.48); near(ff.stats.speed, 4.2 + 1.4);
+// Moon Stone: x1.2 damage on odd floors, +0.5 speed on even floors
+near(rc({ char: "pikachu", floor: 1, items: { p_lunar: 1 } }).stats.damage, 3.5 * 1.2);
+near(rc({ char: "pikachu", floor: 2, items: { p_lunar: 1 } }).stats.speed, 4.7);
+// Pretty Feather: +1 speed after 15 s without a hit; Soda Pop +0.1 per purchase up to 1.5
+near(rc({ char: "pikachu", items: { pluma_bella: 1 }, sit: { calm: 15 } }).stats.speed, 5.2);
+near(rc({ char: "pikachu", items: { refresco: 1 }, sit: { buys: 40 } }).stats.speed, 5.7);
 console.log("engine tests passed");

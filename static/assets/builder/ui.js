@@ -21,17 +21,18 @@
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const icon = (p) => $("img", { src: ROOT + "assets/" + (p || "unknown.svg"), alt: "", loading: "lazy" });
 
-  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {} };
-  let data, E, S = Object.assign({}, DEF, { i: {} });
+  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {}, t: {} };
+  let data, E, S = Object.assign({}, DEF, { i: {}, t: {} });
 
   // ---------- state <-> link ----------
   function toHash() {
     const i = Object.entries(S.i).filter(([, n]) => n > 0).map(([k, n]) => k + ":" + n).join(",");
-    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "");
+    const t = Object.entries(S.t).filter(([, v]) => +v > 0).map(([k, v]) => k + ":" + (+v)).join(",");
+    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "") + (t ? "&t=" + t : "");
   }
   function fromHash(h) {
     const p = new URLSearchParams(h.replace(/^#/, ""));
-    const n = Object.assign({}, DEF, { i: {} });
+    const n = Object.assign({}, DEF, { i: {}, t: {} });
     if (p.get("c") && data.chars[p.get("c")]) n.c = p.get("c");
     for (const k of ["s", "l", "m", "f", "sh"]) if (p.has(k) && !isNaN(+p.get(k))) n[k] = +p.get(k);
     n.s = Math.min(2, Math.max(0, n.s)); n.l = Math.min(60, Math.max(1, n.l)); n.f = Math.max(1, Math.min(300, n.f));
@@ -39,9 +40,14 @@
       const [k, c] = part.split(":");
       if (k && data.items[k] && +c > 0) n.i[k] = Math.min(99, +c | 0);
     }
+    for (const part of (p.get("t") || "").split(",")) {
+      const [k, v] = part.split(":");
+      if (E.SIT_VARS.includes(k)) n.t[k] = Math.min(E.LIMITS[k], Math.max(0, +v || 0));
+      else if (E.SIT_FLAGS.includes(k) && +v) n.t[k] = 1;
+    }
     return n;
   }
-  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i });
+  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i, sit: S.t });
   const linkOf = () => location.href.split("#")[0] + "#" + toHash();
 
   // ---------- inputs ----------
@@ -57,6 +63,7 @@
   const itemRes = $("ul", { class: "results", hidden: true });
   const list = $("ul", { class: "list" });
   const out = $("div");
+  const sitBox = $("div");
   const pasteBox = $("input", { type: "text", placeholder: T.pb_paste, onchange: () => { try { S = fromHash(new URL(pasteBox.value, location.href).hash); pasteBox.value = ""; render(); } catch (_) {} } });
   const copied = $("span", { class: "note" });
 
@@ -70,7 +77,8 @@
     $("div", { class: "row" }, $("label", {}, T.pb_stage, stage), $("label", {}, shiny, T.pb_shiny)),
     $("div", { class: "row" }, mode, $("label", {}, T.pb_level, level), $("label", {}, T.pb_floor, floor)),
     $("h2", { text: T.pb_items }), itemBox, itemRes, list,
-    $("div", { class: "row" }, $("button", { type: "button", text: T.pb_reset, onclick: () => { S = Object.assign({}, DEF, { c: S.c, i: {} }); render(); } })));
+    $("h2", { text: T.pb_situation }), sitBox,
+    $("div", { class: "row" }, $("button", { type: "button", text: T.pb_reset, onclick: () => { S = Object.assign({}, DEF, { c: S.c, i: {}, t: {} }); render(); } })));
   const right = $("div", { class: "card" }, out,
     $("div", { class: "row" }, $("button", { type: "button", text: T.pb_copy_link, onclick: () => copy(linkOf()) }), $("button", { type: "button", text: T.pb_copy_text, onclick: () => copy(asText()) }), copied),
     $("div", { class: "row" }, pasteBox));
@@ -108,15 +116,16 @@
       `${T.pb_base} ${fmt(st.damage.base)}`,
       st.damage.items ? `${T.pb_items} ${sgn(st.damage.items)} → ${T.pb_counted.toLowerCase()} ${sgn(st.damage.counted - st.damage.evo)}` : null,
       st.damage.evo ? `${T.pb_stage_bonus} ${sgn(st.damage.evo)}` : null,
+      st.damage.multRaw !== 1 ? `${T.pb_mults} ${st.damage.mults.map((m) => "×" + fmt(m.v, 3)).join(" ")}${Math.abs(st.damage.mult - st.damage.multRaw) > 1e-9 ? " → ×" + fmt(st.damage.mult, 3) + " (" + T.pb_counted.toLowerCase() + ")" : ""}` : null,
       st.damage.level !== 1 ? `${T.pb_level_k} ${mult(st.damage.level)}` : null,
       st.damage.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.damage.shiny)}` : null])));
     rows.push(row(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, parts([
       `${T.pb_base} ${fmt(st.fireRate.baseTicks, 0)} ${T.pb_ticks}`,
       st.fireRate.items ? `${T.pb_items} ${st.fireRate.items < 0 ? "+" : "−"}${fmt(Math.abs(st.fireRate.items))} → ${T.pb_counted.toLowerCase()} ${st.fireRate.counted < 0 ? "+" : "−"}${fmt(Math.abs(st.fireRate.counted))}` : null,
-      st.fireRate.bug !== 1 ? mult(st.fireRate.bug) : null, st.fireRate.level !== 1 ? `${T.pb_level_k} ${mult(st.fireRate.level)}` : null,
+      st.fireRate.itemMul !== 1 ? `${T.pb_items} ${mult(st.fireRate.itemMul)}` : null, st.fireRate.bug !== 1 ? mult(st.fireRate.bug) : null, st.fireRate.level !== 1 ? `${T.pb_level_k} ${mult(st.fireRate.level)}` : null,
       st.fireRate.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.fireRate.shiny)}` : null,
       `= ${fmt(s.ticks)} ${T.pb_ticks}`, st.fireRate.capped ? T.pb_cap + " 12" : null])));
-    rows.push(row(T.pb_speed, fmt(s.speed), parts([`${T.pb_base} ${fmt(st.speed.base)}`, st.speed.items ? `${T.pb_items} ${sgn(st.speed.items)}` : null, st.speed.evo ? `${T.pb_stage_bonus} ${sgn(st.speed.evo)}` : null, st.speed.type ? `${T.pb_type_k} ${sgn(st.speed.type)}` : null, st.speed.level !== 1 ? `${T.pb_level_k} ${mult(st.speed.level)}` : null, st.speed.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.speed.shiny)}` : null])));
+    rows.push(row(T.pb_speed, fmt(s.speed), parts([`${T.pb_base} ${fmt(st.speed.base)}`, st.speed.items ? `${T.pb_items} ${sgn(st.speed.items)}` : null, st.speed.evo ? `${T.pb_stage_bonus} ${sgn(st.speed.evo)}` : null, st.speed.cond ? `${T.pb_cond_short} ${sgn(st.speed.cond)}` : null, st.speed.type ? `${T.pb_type_k} ${sgn(st.speed.type)}` : null, st.speed.level !== 1 ? `${T.pb_level_k} ${mult(st.speed.level)}` : null, st.speed.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.speed.shiny)}` : null])));
     rows.push(row(T.pb_range, fmt(s.range, 0) + " px", parts([`${T.pb_base} ${fmt(st.range.base, 0)}`, `${T.pb_global} +50`, st.range.items ? `${T.pb_items} ${sgn(st.range.items, 0)}` : null])));
     rows.push(row(T.pb_shot_speed, fmt(s.shotSpeed), parts([`${T.pb_base} ${fmt(st.shotSpeed.base)}`, st.shotSpeed.items ? `${T.pb_items} ${sgn(st.shotSpeed.items)}` : null])));
     rows.push(row(T.pb_luck, fmt(s.luck), parts([`${T.pb_base} ${fmt(st.luck.base)}`, st.luck.items ? `${T.pb_items} ${sgn(st.luck.items)}` : null, st.luck.shiny ? `${T.pb_shiny_k} ${sgn(st.luck.shiny)}` : null, st.luck.type ? `${T.pb_type_k} ${sgn(st.luck.type)}` : null, st.luck.raw > 10 ? `${fmt(st.luck.raw)} → ${T.pb_cap} 10 + ¼` : null])));
@@ -124,6 +133,29 @@
     return rows;
   }
 
+  const STATK = { dmg: "pb_damage", rate: "pb_fire_rate", speed: "pb_speed" };
+  // Which controls to show: only the ones the chosen items react to.
+  function sitControls(r) {
+    const vars = new Set(), flags = new Set();
+    for (const e of r.effects) {
+      if (e.when && E.SIT_FLAGS.includes(e.when)) flags.add(e.when);
+      if (e.var) vars.add(e.var);
+    }
+    for (const slug of Object.keys(S.i)) for (const f of (data.items[slug] && data.items[slug].e) || []) { if (f.var && f.var !== "items") vars.add(f.var); if (f.when && E.SIT_FLAGS.includes(f.when)) flags.add(f.when); }
+    const rows = [];
+    for (const v of E.SIT_VARS) if (vars.has(v)) rows.push($("label", {}, T["pb_var_" + v], $("input", { type: "number", min: 0, max: E.LIMITS[v], value: S.t[v] || 0, onchange: (ev) => { S.t[v] = Math.min(E.LIMITS[v], Math.max(0, +ev.target.value || 0)); render(); } })));
+    for (const f of E.SIT_FLAGS) if (flags.has(f)) rows.push($("label", {}, $("input", { type: "checkbox", checked: !!S.t[f], onchange: (ev) => { S.t[f] = ev.target.checked ? 1 : 0; render(); } }), T["pb_flag_" + f]));
+    return rows.length ? $("div", { class: "row" }, rows) : $("p", { class: "note", text: T.pb_sit_none });
+  }
+  function effectList(r) {
+    if (!r.effects.length) return null;
+    const items = r.effects.map((e) => {
+      const what = e.kind === "add" ? `${T[STATK[e.stat]]} ${sgn(e.kind === "add" && e.when || !e.var ? e.v : e.v)}` : `${T[STATK[e.stat]]} ${e.kind === "mulvar" ? "×" + fmt(e.v, 2) : "×" + fmt(e.v, 2)}`;
+      const cond = e.when ? ` (${T["pb_when_" + e.when]})` : "";
+      return $("li", { class: e.active ? "on" : "off" }, $("b", { text: nameOf(e.slug) }), ": " + what + cond, " ", $("span", { class: "tag " + (e.active ? "" : "none"), text: e.active ? T.pb_active : T.pb_inactive }));
+    });
+    return $("div", { class: "warn" }, $("b", { text: T.pb_cond }), $("ul", {}, items));
+  }
   function lists(r) {
     const box = $("div");
     const names = (a) => a.map(nameOf).join(", ");
@@ -170,7 +202,8 @@
         row(T.pb_crit, fmt(r.stats.critChance * 100, 1) + " %", r.stats.critChance ? `${T.pb_crit_mult} ×${fmt(r.stats.critMult, 2)}` : null),
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
-      lists(r), $("p", { class: "note", text: T.pb_assume }));
+      effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume }));
+    sitBox.replaceChildren(sitControls(r));
     history.replaceState(null, "", "#" + toHash());
   }
 

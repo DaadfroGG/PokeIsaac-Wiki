@@ -51,6 +51,36 @@
     };
   }
 
+  // Situation: numbers and switches the player sets (coins, hits taken, standing still...). Missing = 0 / off.
+  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys"];
+  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start"];
+  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15 };
+
+  // One effect record of an item. Returns { stat, add, mul, active } (add for flat bonuses, mul for multipliers).
+  function evalFx(fx, ctx) {
+    const sit = ctx.sit;
+    const when = fx.when;
+    const on =
+      !when ? true :
+      when === "electric" ? ctx.elem === "electric" :
+      when === "odd_floor" ? (ctx.floor - 1) % 2 === 0 :
+      when === "even_floor" ? (ctx.floor - 1) % 2 === 1 :
+      !!sit[when];
+    const out = { stat: fx.stat, add: 0, mul: 1, active: on, when: when || null, kind: fx.k, v: fx.value };
+    if (fx.k === "add") {
+      if (fx.var) {
+        const v = fx.var === "items" ? ctx.nItems : Math.min(LIMITS[fx.var] || 1e9, +sit[fx.var] || 0);
+        out.add = Math.min(fx.max == null ? Infinity : fx.max, fx.per * (fx.step ? Math.floor(v / fx.step) : v));
+        out.v = out.add; out.active = out.add !== 0;
+      } else if (on) out.add = fx.value;
+    } else if (fx.k === "mul" && on) out.mul = fx.value;
+    else if (fx.k === "mulvar") {
+      const v = Math.min(fx.max == null ? Infinity : fx.max, +sit[fx.var] || 0);
+      out.mul = 1 + fx.per * v; out.v = out.mul; out.active = v > 0;
+    }
+    return out;
+  }
+
   function character(data, slug) {
     const a = data.chars[slug];
     if (!a) return null;
@@ -71,40 +101,55 @@
     const sum = { dmg: 0, rate: 0, speed: 0, hp: 0, range: 0, shot: 0, luck: 0 };
     const unsimulated = [], partial = [];
     let nItems = 0;
+    const present = [];
     for (const [slug, n] of Object.entries(b.items || {})) {
       const it = data.items[slug];
       if (!it || n <= 0) continue;
       nItems += n;
+      present.push(slug);
       for (const [k, v] of Object.entries(it.s || {})) sum[k] += v * n;
       if (it.t === "none") unsimulated.push(slug);
       else if (it.t === "partial") partial.push(slug);
     }
+    // Conditional effects: each item counts once, however many copies you hold.
+    const ctx = { sit: b.sit || {}, elem: ch.elem, floor: b.floor || 1, nItems };
+    const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [] };
+    for (const slug of present) {
+      for (const fx of data.items[slug].e || []) {
+        const r = evalFx(fx, ctx);
+        r.slug = slug; effects.push(r);
+        if (r.add) adds[r.stat] += r.add;
+        if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
+      }
+    }
     const evo = { hp: 0, dmg: 0, speed: 0 };
     for (let s = 1; s <= (b.stage || 0); s++) for (const k of ["hp", "dmg", "speed"]) evo[k] += EVO[Math.min(s, 2)][k] || 0;
 
-    const out = { tier, level: lv, nItems, unsimulated, partial, shinyFocus: sk.focus, stats: {}, steps: {} };
+    const out = { tier, level: lv, nItems, unsimulated, partial, effects, shinyFocus: sk.focus, stats: {}, steps: {} };
 
     // Damage
-    const dmgBonus = sum.dmg + evo.dmg;
+    const dmgBonus = sum.dmg + evo.dmg + adds.dmg;
     const dmgCounted = dmgBonus > 0 ? dr(dmgBonus, 3, 8, 40) : dmgBonus;
-    const dmgMul = mulDr(1); // conditional multipliers join here in later versions
+    const dmgMulRaw = muls.dmg.reduce((a, m) => a * m.v, 1);
+    const dmgMul = mulDr(dmgMulRaw);
     const dmgBase = ch.dmg + dmgCounted;
     const dmg = Math.max(0.5, dmgBase * dmgMul * sk.dmg * lk.dmg);
     out.stats.damage = dmg;
-    out.steps.damage = { base: ch.dmg, items: sum.dmg, evo: evo.dmg, counted: dmgCounted, mult: dmgMul, shiny: sk.dmg, level: lk.dmg };
+    out.steps.damage = { base: ch.dmg, items: sum.dmg + adds.dmg, evo: evo.dmg, counted: dmgCounted, mult: dmgMul, multRaw: dmgMulRaw, mults: muls.dmg, shiny: sk.dmg, level: lk.dmg };
 
     // Fire rate (ticks between shots: lower is faster)
     const rateBonus = sum.rate < 0 ? -dr(-sum.rate, 3, 7) : sum.rate;
     const bugMul = has("bug") ? 1 - 0.012 * tier : 1;
-    const ticks = Math.max(5, (ch.rate + rateBonus) * bugMul * sk.rate * lk.rate);
+    const rateMulItems = muls.rate.reduce((a, m) => a * m.v, 1);
+    const ticks = Math.max(5, (ch.rate + rateBonus) * rateMulItems * bugMul * sk.rate * lk.rate);
     out.stats.ticks = ticks;
     out.stats.fireRate = 60 / ticks;
-    out.steps.fireRate = { baseTicks: ch.rate, items: sum.rate, counted: rateBonus, bug: bugMul, shiny: sk.rate, level: lk.rate, capped: ticks === 5 };
+    out.steps.fireRate = { baseTicks: ch.rate, items: sum.rate, counted: rateBonus, itemMul: rateMulItems, bug: bugMul, shiny: sk.rate, level: lk.rate, capped: ticks === 5 };
 
     // Speed
-    const speedAdd = evo.speed + (has("flying") ? 0.04 * tier : has("bug") ? 0.02 * tier : 0);
+    const speedAdd = evo.speed + adds.speed + (has("flying") ? 0.04 * tier : has("bug") ? 0.02 * tier : 0);
     out.stats.speed = Math.max(1.6, ch.speed + sum.speed + speedAdd) * sk.speed * lk.speed;
-    out.steps.speed = { base: ch.speed, items: sum.speed, evo: evo.speed, type: speedAdd - evo.speed, shiny: sk.speed, level: lk.speed };
+    out.steps.speed = { base: ch.speed, items: sum.speed, evo: evo.speed, cond: adds.speed, type: speedAdd - evo.speed - adds.speed, shiny: sk.speed, level: lk.speed };
 
     // Range and shot speed
     out.stats.range = Math.max(120, ch.range + 50 + sum.range);
@@ -143,7 +188,7 @@
     return out;
   }
 
-  const api = { compute, dr, mulDr, levelK, typeTier, character, EVO };
+  const api = { compute, dr, mulDr, levelK, typeTier, character, EVO, SIT_VARS, SIT_FLAGS, LIMITS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.PIBuilder = api;
 })(typeof self !== "undefined" ? self : this);

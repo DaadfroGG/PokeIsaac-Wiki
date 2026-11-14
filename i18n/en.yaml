@@ -221,3 +221,31 @@ pb_no_results: No result
 pb_n_items: '{{ .n }} items'
 pb_type_tier: Type bonus tier
 pb_shiny_focus: Shiny focus
+pb_situation: Situation
+pb_sit_none: None of your items reacts to the situation yet.
+pb_cond: Conditional effects
+pb_cond_short: Conditions
+pb_mults: Multipliers
+pb_active: active
+pb_inactive: inactive
+pb_var_coins: PokéDollars carried
+pb_var_hits: Hits taken
+pb_var_floors: Floors gone down since pickup
+pb_var_rooms: Rooms cleared without a hit
+pb_var_candies: Candies (1 per 12 enemies)
+pb_var_claw: Razor Claw streak (hits)
+pb_var_calm: Seconds without being hit
+pb_var_buys: Shop purchases since pickup
+pb_flag_low_health: One heart or less, no soul hearts
+pb_flag_just_hit: Hit in the last 5 seconds
+pb_flag_standing_still: Standing still for half a second
+pb_flag_mega_energy: Mega energy on
+pb_flag_fight_start: First 4 seconds of a fight
+pb_when_low_health: at one heart or less
+pb_when_just_hit: for 5 s after a hit
+pb_when_standing_still: when standing still
+pb_when_mega_energy: during mega energy
+pb_when_fight_start: first 4 s of a fight
+pb_when_electric: if Electric-type
+pb_when_odd_floor: on odd floors
+pb_when_even_floor: on even floors

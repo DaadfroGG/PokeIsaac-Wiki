@@ -43,10 +43,11 @@ for i in rt:
     if re.search(r"[a-z]{2,}", rest): fx = True
     rec = {}
     if st: rec["s"] = st
-    if i["id"] in effects: rec["e"] = effects[i["id"]]
-    # status: full = everything modelled, partial = stats only but the item does more, none = nothing modelled
-    modelled_all = i["id"] in effects and effects[i["id"]].get("done")
-    rec["t"] = "full" if (modelled_all or (st and not fx and i["id"] not in effects)) else ("partial" if (st or i["id"] in effects) else "none")
+    reg = effects.get(i["id"])
+    if reg: rec["e"] = reg["fx"]
+    # status: full = every effect on stats and damage is modelled, partial = some are, none = nothing is
+    if reg: rec["t"] = "full" if reg.get("done") else "partial"
+    else: rec["t"] = "full" if (st and not fx) else ("partial" if st else "none")
     items[i["id"]] = rec
 json.dump({"v": 1, "avg": avg, "chars": chars, "items": items}, open(OUT, "w"), separators=(",", ":"), ensure_ascii=False)
 from collections import Counter

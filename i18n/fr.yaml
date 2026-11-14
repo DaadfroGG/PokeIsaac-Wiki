@@ -221,3 +221,31 @@ pb_no_results: Aucun résultat
 pb_n_items: '{{ .n }} objets'
 pb_type_tier: Palier du bonus de type
 pb_shiny_focus: Point fort chromatique
+pb_situation: Situation
+pb_sit_none: Aucun de vos objets ne réagit à la situation pour l'instant.
+pb_cond: Effets conditionnels
+pb_cond_short: Conditions
+pb_mults: Multiplicateurs
+pb_active: actif
+pb_inactive: inactif
+pb_var_coins: PokéDollars portés
+pb_var_hits: Coups reçus
+pb_var_floors: Étages descendus depuis le ramassage
+pb_var_rooms: Salles terminées sans coup reçu
+pb_var_candies: Bonbons (1 par 12 ennemis)
+pb_var_claw: Série de Griffe Rasoir (coups)
+pb_var_calm: Secondes sans être touché
+pb_var_buys: Achats en boutique depuis le ramassage
+pb_flag_low_health: Un cœur ou moins, sans cœur d'âme
+pb_flag_just_hit: Touché dans les 5 dernières secondes
+pb_flag_standing_still: Immobile depuis une demi-seconde
+pb_flag_mega_energy: Énergie méga active
+pb_flag_fight_start: 4 premières secondes d'un combat
+pb_when_low_health: à un cœur ou moins
+pb_when_just_hit: 5 s après un coup reçu
+pb_when_standing_still: à l'arrêt
+pb_when_mega_energy: pendant l'énergie méga
+pb_when_fight_start: 4 premières s d'un combat
+pb_when_electric: si type Électrik
+pb_when_odd_floor: aux étages impairs
+pb_when_even_floor: aux étages pairs

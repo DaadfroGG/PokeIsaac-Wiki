@@ -123,7 +123,6 @@ Un objet échoue au tirage (et reste dans le sac) si :
 - **Objet compagnon alors que les compagnons de tous les joueurs en vie sont au complet**, ou objet qui augmente la limite de compagnons alors que vous n'avez aucun compagnon permanent.
 - **Objet de type que votre équipe ne peut pas utiliser** (réservé à un type que personne dans l'équipe n'a).
 - **Objet d'évolution quand tout le monde est complètement évolué** (sauf les objets qui font évoluer par pierre).
-- **Objet rare qui a raté son tirage.** Les Méga-Gemmes n'entrent dans un sac qu'avec 20 % de chances chacune, à la création ou au remplissage du sac.
 
 ## Quand le sac est épuisé
 « Épuisé » veut dire qu'aucun objet du sac ne passe les filtres (le sac peut encore contenir des objets de niveau trop haut, par exemple). Alors, dans l'ordre :

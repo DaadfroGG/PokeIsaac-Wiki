@@ -1,0 +1,252 @@
+{
+ "polvo_estelar": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "coins",
+    "step": 10,
+    "per": 0.2,
+    "max": 2
+   }
+  ]
+ },
+ "musgo_brillante": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "hits",
+    "per": 0.3,
+    "max": 3
+   }
+  ]
+ },
+ "mejora": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "floors",
+    "per": 0.3,
+    "max": 4
+   }
+  ]
+ },
+ "brazalete_antiguo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "items",
+    "per": 0.15,
+    "max": 3
+   }
+  ]
+ },
+ "petalo_radiante": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "rooms",
+    "per": 0.2,
+    "max": 3
+   }
+  ]
+ },
+ "hw_caramelo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "dmg",
+    "var": "candies",
+    "per": 0.15,
+    "max": 1.5
+   }
+  ]
+ },
+ "baya_lichi": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.5,
+    "when": "low_health"
+   }
+  ]
+ },
+ "seguro_debilidad": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 2,
+    "when": "just_hit"
+   }
+  ]
+ },
+ "bola_luminosa": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 2,
+    "when": "electric"
+   }
+  ]
+ },
+ "estatua_antigua": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 2,
+    "when": "standing_still"
+   }
+  ]
+ },
+ "orbe_lustre": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.25
+   }
+  ]
+ },
+ "garra": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "claw",
+    "per": 0.04,
+    "max": 10
+   }
+  ]
+ },
+ "m_piedra_activadora": {
+  "done": false,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 2,
+    "when": "mega_energy"
+   }
+  ]
+ },
+ "velocidad_x": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 1.4,
+    "when": "fight_start"
+   },
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.8,
+    "when": "fight_start"
+   }
+  ]
+ },
+ "hierba_unica": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.6,
+    "when": "fight_start"
+   }
+  ]
+ },
+ "baya_aslac": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 1.2,
+    "when": "low_health"
+   }
+  ]
+ },
+ "d_bici_acrobatica": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.3
+   }
+  ]
+ },
+ "mini_seta": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.4
+   }
+  ]
+ },
+ "pluma_bella": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "var": "calm",
+    "per": 0.06667,
+    "max": 1
+   }
+  ]
+ },
+ "refresco": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "var": "buys",
+    "per": 0.1,
+    "max": 1.5
+   }
+  ]
+ },
+ "p_lunar": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.2,
+    "when": "odd_floor"
+   },
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.5,
+    "when": "even_floor"
+   }
+  ]
+ }
+}

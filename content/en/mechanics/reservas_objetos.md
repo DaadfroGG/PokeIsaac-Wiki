@@ -123,7 +123,6 @@ An item fails a draw (and stays in the bag) if:
 - **Companion item while every living player's companions are full**, or an item that raises the companion limit while you have no permanent companion.
 - **Type item your team can't use** (reserved for a type nobody on your team has).
 - **Evolution item once everyone is fully evolved** (items that evolve by stone excepted).
-- **Rare item that missed its roll.** Mega Stones only enter a bag with a 20 % chance each, when the bag is built or refilled.
 
 ## When the bag runs out
 "Runs out" means no item in the bag passes the filters (the bag itself may still hold items that are too high a tier, for example). Then, in order:
