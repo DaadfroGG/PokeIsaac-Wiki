@@ -167,3 +167,57 @@ footer_ai: 'Made with AI: information may be inaccurate.'
 official_wiki: 'Official wiki: <a href="https://wiki.pokeisaac.com/">wiki.pokeisaac.com</a>'
 ai_band: This article was written with AI and hasn't been checked by a person yet, so it may contain mistakes. Know the game? Check it, fix what's wrong, and mark it verified.
 ai_band_btn: Edit and verify
+pb_noscript: The build planner needs JavaScript.
+pb_search_poke: Search a Pokémon…
+pb_search_item: Search an item to add…
+pb_stage: Evolution stage
+pb_stage0: Base form
+pb_stage1: 1st evolution
+pb_stage2: 2nd evolution
+pb_level: Level
+pb_floor: Floor
+pb_shiny: Shiny
+pb_mode_levels: Classic / Liga (levels)
+pb_mode_nolevels: Other modes (no levels)
+pb_add: Add
+pb_remove: Remove
+pb_copy_link: Copy link
+pb_copy_text: Copy as text
+pb_copied: Copied!
+pb_paste: Paste a build link
+pb_reset: Reset
+pb_damage: Damage
+pb_fire_rate: Fire rate
+pb_speed: Speed
+pb_range: Range
+pb_shot_speed: Shot speed
+pb_luck: Luck
+pb_health: Health
+pb_crit: Critical chance
+pb_crit_mult: Critical damage
+pb_dps: Damage per second
+pb_per_shot: Damage per shot
+pb_shots_s: shots/s
+pb_base: Base
+pb_items: Items
+pb_counted: Counted after diminishing returns
+pb_stage_bonus: Evolution
+pb_level_k: Level
+pb_shiny_k: Shiny
+pb_type_k: Type bonus
+pb_typed_dmg: Type damage bonus
+pb_cap: capped
+pb_unsim: Effects not simulated yet
+pb_partial: Only their stats are simulated
+pb_coverage: Items fully simulated
+pb_empty: No items yet. Search above to add some.
+pb_assume: 'Assumes: every shot hits a single target that does not move, no temporary effects. Extra shots, statuses, weapons, companions and conditional effects are added as items get modelled.'
+pb_hearts: hearts
+pb_ticks: ticks between shots
+pb_global: Every Pokémon
+pb_none: none
+pb_all_cats: All kinds
+pb_no_results: No result
+pb_n_items: '{{ .n }} items'
+pb_type_tier: Type bonus tier
+pb_shiny_focus: Shiny focus

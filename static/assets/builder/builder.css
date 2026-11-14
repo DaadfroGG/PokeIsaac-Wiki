@@ -1,0 +1,37 @@
+/* Build planner layout. Uses the wiki's colour variables. */
+#pb { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; margin: 14px 0 24px; align-items: start; }
+@media (max-width: 860px) { #pb { grid-template-columns: minmax(0, 1fr); } }
+#pb .card { background: var(--pn); border: 1.5px solid var(--line); border-radius: 10px; padding: 12px 14px; }
+#pb h2 { margin: 0 0 8px; font-size: 15px; border: 0; }
+#pb .row { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin: 8px 0; }
+#pb label { display: inline-flex; gap: 6px; align-items: center; font-size: 13px; color: var(--muted); }
+#pb input[type=search], #pb input[type=number], #pb select, #pb input[type=text] { background: var(--bg); color: var(--ink); border: 1.5px solid var(--line2); border-radius: 8px; padding: 6px 9px; font: inherit; min-width: 0; }
+#pb input[type=number] { width: 5.5em; }
+#pb button { background: var(--bg); color: var(--ink); border: 1.5px solid var(--line2); border-radius: 8px; padding: 5px 10px; font: inherit; cursor: pointer; }
+#pb button:hover { border-color: var(--gold); }
+#pb .poke { display: flex; align-items: center; gap: 10px; }
+#pb .poke img { width: 56px; height: 56px; image-rendering: pixelated; object-fit: contain; }
+#pb .poke b { font-size: 17px; }
+#pb .results { list-style: none; margin: 4px 0 0; padding: 0; max-height: 260px; overflow: auto; border: 1.5px solid var(--line); border-radius: 8px; background: var(--bg); }
+#pb .results li { display: flex; gap: 8px; align-items: center; padding: 4px 8px; cursor: pointer; font-size: 14px; }
+#pb .results li:hover, #pb .results li.on { background: rgba(255, 210, 60, .12); }
+#pb .results img, #pb .list img { width: 28px; height: 28px; image-rendering: pixelated; object-fit: contain; }
+#pb .list { list-style: none; margin: 8px 0 0; padding: 0; max-height: 420px; overflow: auto; }
+#pb .list li { display: flex; align-items: center; gap: 8px; padding: 4px 0; border-bottom: 1px solid rgba(58, 52, 80, .55); font-size: 14px; }
+#pb .list .nm { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#pb .cnt { display: inline-flex; gap: 4px; align-items: center; }
+#pb .cnt button { padding: 1px 8px; }
+#pb .tag { font-size: 11px; border-radius: 6px; padding: 0 5px; border: 1px solid var(--line2); color: var(--muted); }
+#pb .tag.none { color: #ff9a7a; border-color: #ff9a7a; }
+#pb .tag.part { color: #ffd23c; border-color: #ffd23c; }
+#pb table.stats { width: 100%; border-collapse: collapse; font-size: 14px; }
+#pb table.stats td { padding: 5px 4px; border-bottom: 1px solid rgba(58, 52, 80, .55); vertical-align: top; }
+#pb table.stats td.v { text-align: right; font-weight: 700; white-space: nowrap; font-size: 16px; }
+#pb table.stats .why { display: block; color: var(--muted); font-size: 12px; font-weight: 400; }
+#pb .big { font-size: 26px; font-weight: 800; color: var(--gold); }
+#pb .dps { display: flex; gap: 18px; flex-wrap: wrap; align-items: baseline; }
+#pb .note { margin: 8px 0 0; }
+#pb .warn { margin: 8px 0 0; font-size: 13px; }
+#pb .warn ul { margin: 4px 0 0 18px; padding: 0; }
+#pb .bar { height: 8px; border-radius: 6px; background: var(--line); overflow: hidden; margin: 4px 0; }
+#pb .bar i { display: block; height: 100%; background: var(--gold); }

@@ -167,3 +167,57 @@ footer_ai: 'Créé avec une IA : les informations peuvent être inexactes.'
 official_wiki: 'Wiki officiel : <a href="https://wiki.pokeisaac.com/">wiki.pokeisaac.com</a>'
 ai_band: 'Cet article a été écrit avec une IA et n''a pas encore été vérifié par une personne : il peut contenir des erreurs. Vous connaissez le jeu ? Vérifiez-le, corrigez ce qui est faux et marquez-le comme vérifié.'
 ai_band_btn: Modifier et vérifier
+pb_noscript: Le planificateur de build a besoin de JavaScript.
+pb_search_poke: Chercher un Pokémon…
+pb_search_item: Chercher un objet à ajouter…
+pb_stage: Stade d'évolution
+pb_stage0: Forme de base
+pb_stage1: 1re évolution
+pb_stage2: 2e évolution
+pb_level: Niveau
+pb_floor: Étage
+pb_shiny: Chromatique
+pb_mode_levels: Classique / Ligue (niveaux)
+pb_mode_nolevels: Autres modes (sans niveaux)
+pb_add: Ajouter
+pb_remove: Retirer
+pb_copy_link: Copier le lien
+pb_copy_text: Copier en texte
+pb_copied: Copié !
+pb_paste: Coller un lien de build
+pb_reset: Réinitialiser
+pb_damage: Dégâts
+pb_fire_rate: Cadence
+pb_speed: Vitesse
+pb_range: Portée
+pb_shot_speed: Vitesse des tirs
+pb_luck: Chance
+pb_health: Santé
+pb_crit: Chance de coup critique
+pb_crit_mult: Dégâts critiques
+pb_dps: Dégâts par seconde
+pb_per_shot: Dégâts par tir
+pb_shots_s: tirs/s
+pb_base: Base
+pb_items: Objets
+pb_counted: Compté après rendements décroissants
+pb_stage_bonus: Évolution
+pb_level_k: Niveau
+pb_shiny_k: Chromatique
+pb_type_k: Bonus de type
+pb_typed_dmg: Bonus de dégâts de type
+pb_cap: plafonné
+pb_unsim: Effets pas encore simulés
+pb_partial: Seules leurs stats sont simulées
+pb_coverage: Objets entièrement simulés
+pb_empty: Aucun objet pour l'instant. Cherchez ci-dessus pour en ajouter.
+pb_assume: 'Hypothèses : chaque tir touche une cible unique qui ne bouge pas, aucun effet temporaire. Les tirs en plus, statuts, armes, compagnons et effets conditionnels s''ajoutent à mesure que les objets sont modélisés.'
+pb_hearts: cœurs
+pb_ticks: ticks entre deux tirs
+pb_global: Tout Pokémon
+pb_none: aucun
+pb_all_cats: Tous les types
+pb_no_results: Aucun résultat
+pb_n_items: '{{ .n }} objets'
+pb_type_tier: Palier du bonus de type
+pb_shiny_focus: Point fort chromatique
