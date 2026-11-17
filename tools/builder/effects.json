@@ -1738,5 +1738,486 @@
    }
   ],
   "held": true
+ },
+ "m_duralium": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.25
+   }
+  ]
+ },
+ "m_flauta_eon": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.15
+   }
+  ]
+ },
+ "m_dentadura": {
+  "done": true,
+  "fx": [
+   {
+    "k": "chancemul",
+    "base": 0.1,
+    "perLuck": 0.02,
+    "mult": 3.2,
+    "max": 0.5
+   }
+  ]
+ },
+ "m_galleta_lava": {
+  "done": false,
+  "fx": [
+   {
+    "k": "chancemul",
+    "base": 0.1,
+    "perLuck": 0.01,
+    "mult": 1.8
+   }
+  ]
+ },
+ "m_orbe_claro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "chancemul",
+    "base": 0.1,
+    "perLuck": 0.01,
+    "mult": 4
+   }
+  ]
+ },
+ "m_diente_marino": {
+  "done": false,
+  "fx": [
+   {
+    "k": "chancemul",
+    "base": 0.03,
+    "perLuck": 0.005,
+    "mult": 3,
+    "max": 0.1,
+    "bossMult": 2,
+    "onePerSecond": true
+   }
+  ]
+ },
+ "m_abono_rapido": {
+  "done": true,
+  "fx": [
+   {
+    "k": "grow",
+    "gain": 0.6
+   }
+  ]
+ },
+ "m_panuelo_sucio": {
+  "done": true,
+  "fx": [
+   {
+    "k": "dot",
+    "p": {
+     "base": 0.2,
+     "perLuck": 0.01
+    },
+    "dur": 2,
+    "tick": 0.3333333333333333,
+    "frac": 0.2,
+    "min": 0.5,
+    "unless": "boss"
+   }
+  ]
+ },
+ "m_bonguri_verde": {
+  "done": true,
+  "fx": [
+   {
+    "k": "dot",
+    "dur": 2.5,
+    "tick": 0.5,
+    "frac": 0.12,
+    "min": 1.5
+   }
+  ]
+ },
+ "roca_calor": {
+  "done": false,
+  "fx": [
+   {
+    "k": "dot",
+    "p": {
+     "base": 0.25,
+     "perLuck": 0.02
+    },
+    "dur": 4,
+    "tick": 0.3333333333333333,
+    "frac": 0.1,
+    "min": 1
+   }
+  ]
+ },
+ "pico_afilado": {
+  "done": true,
+  "fx": [
+   {
+    "k": "nail",
+    "every": 5,
+    "mult": 3,
+    "min": 4
+   }
+  ]
+ },
+ "m_lector_gb": {
+  "done": true,
+  "fx": [
+   {
+    "k": "periodic",
+    "per": 1,
+    "frac": 0.75
+   }
+  ]
+ },
+ "m_seta_aroma": {
+  "done": true,
+  "fx": [
+   {
+    "k": "hatch",
+    "base": 0.1,
+    "perLuck": 0.01,
+    "bites": 2,
+    "mult": 2
+   }
+  ]
+ },
+ "espray_bucal": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.6667,
+    "when": "active_used"
+   }
+  ]
+ },
+ "m_bonguri_azul": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_bonguri_blanco": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_bonguri_rosa": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_incienso_floral": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_nectar_rosa": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_fosil_aleta": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_amuleto_captura": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_semilla_psique": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "mt_psiquico": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_precision_x": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_ori_ticket": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_piedra_espiritu": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "escudo_oxidado": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "defense"
+   }
+  ]
+ },
+ "incienso_lento": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "defense"
+   }
+  ]
+ },
+ "regadera": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "defense"
+   }
+  ]
+ },
+ "d_real_plata": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "defense"
+   }
+  ]
+ },
+ "orbe_diamante": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "defense"
+   }
+  ]
+ },
+ "m_bonguri_amarillo": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "polvo_plata": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "m_confite_corazon": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "m_fosil_helix": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "mt_triataque": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "m_huesos_finos": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "gafas_especiales": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "m_miel": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "area"
+   }
+  ]
+ },
+ "m_semilla_hierba": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "area"
+   }
+  ]
+ },
+ "m_roca_suave": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "area"
+   }
+  ]
+ },
+ "m_fosil_domo": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "area"
+   }
+  ]
+ },
+ "gema_normal": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "seguro_fallo": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "m_nectar_violeta": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "m_concha_tropical": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "incienso_raro": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "cinturon_negro": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "m_nota_intrigante": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "loot"
+   }
+  ]
  }
 }

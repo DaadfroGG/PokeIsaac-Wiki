@@ -371,3 +371,22 @@ pb_var_soul: Cœurs d'âme
 pb_held: Objet tenu
 pb_s_whole: Arrondi au tick supérieur
 pb_volley_extra_hit: environ {n} touche une cible unique
+pb_fx_chancemul: "Bonus de chance sur vos coups : ×{v} en moyenne"
+pb_fx_grow: "Les tirs grossissent en volant : ×{v} à la distance supposée (150 px)"
+pb_fx_dot: "Dégâts sur la durée : +{v} par seconde"
+pb_fx_nail: "Clou tous les 5 coups : +{v} par seconde"
+pb_fx_periodic: "Laser en plus pendant que vous tirez : +{v} par seconde"
+pb_fx_hatch: "Joltiks qui éclosent : +{v} par seconde"
+pb_fx_note_ctrl: "Effet de contrôle (ralentissement, gel, charme, confusion, recul) : ne change pas les nombres de dégâts"
+pb_fx_note_aim: "Change la trajectoire de vos tirs : ne change pas les nombres de dégâts"
+pb_fx_note_defense: "Effet défensif ou de situation : ne change pas les nombres de dégâts"
+pb_fx_note_multi: "Demande plusieurs ennemis ou des victoires : non compté sur une cible unique"
+pb_fx_note_area: "Effet au sol ou en orbite : mesuré à presque rien sur une cible, non compté"
+pb_fx_note_once: "Effet ponctuel ou de situation : non compté"
+pb_fx_note_loot: "Donne des objets à ramasser, pas de dégâts"
+pb_k_dot: "dégâts sur la durée, comptés tant que vos coups la renouvellent"
+pb_k_nail: "un clou tous les 5 coups explose pour 3 × vos Dégâts (4 au minimum)"
+pb_k_periodic: "environ un laser par seconde à 75 % de votre coup"
+pb_k_hatch: "un Joltik sur certains coups, deux morsures de 2 × vos Dégâts chacune"
+pb_flag_active_used: Objet actif utilisé il y a moins de 5 s
+pb_when_active_used: 5 s après avoir utilisé votre objet actif

@@ -53,7 +53,7 @@
 
   // Situation: numbers and switches the player sets (coins, hits taken, standing still...). Missing = 0 / off.
   const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend", "eye", "kills", "roomhits", "missing", "soul"];
-  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing", "crown", "cleared", "moving", "levelup", "switchin", "hurt", "fresh", "far", "last_enemy", "enemy_full", "enemy_flying", "first_hit"];
+  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing", "crown", "cleared", "moving", "levelup", "switchin", "hurt", "fresh", "far", "last_enemy", "enemy_full", "enemy_flying", "first_hit", "active_used"];
   const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9, eye: 10, kills: 10, roomhits: 6, missing: 4, soul: 6 };
 
   // One effect record of an item. Returns { stat, add, mul, active } (add for flat bonuses, mul for multipliers).
@@ -61,6 +61,7 @@
     const sit = ctx.sit;
     const when = fx.when;
     const on =
+      fx.unless ? !sit[fx.unless] :
       !when ? true :
       when === "electric" ? ctx.elem === "electric" :
       when === "odd_floor" ? (ctx.floor - 1) % 2 === 0 :
@@ -159,7 +160,7 @@
     const effects = [], adds = { dmg: 0, rate: 0, speed: 0, range: 0, shot: 0, luck: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
     let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
-    const comps = [], weapons = [];
+    const comps = [], weapons = [], hitFx = [], tickFx = [];
     const MODULES = ["beam", "laser2", "charge"];
     for (const slug of present) {
       const copies = data.items[slug].h ? 1 : b.items[slug];
@@ -171,6 +172,9 @@
         if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
         if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
         else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model, module: MODULES.includes(fx.model) }); r.label = "weapon"; }
+        else if (fx.k === "chancemul" || fx.k === "grow") { if (r.active) hitFx.push({ slug, fx, r }); r.label = fx.k; }
+        else if (fx.k === "dot" || fx.k === "nail" || fx.k === "periodic" || fx.k === "hatch") { if (r.active) tickFx.push({ slug, fx, r }); r.label = fx.k; }
+        else if (fx.k === "note") { r.label = "note_" + fx.note; }
         else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
         else if (fx.k === "famcap") { famCapAdd += fx.value * copies; r.label = "famcap"; r.v = fx.value * copies; }
@@ -191,7 +195,7 @@
     // Damage
     const dmgBonus = sum.dmg + evo.dmg + adds.dmg;
     const dmgCounted = dmgBonus > 0 ? dr(dmgBonus, 3, 8, 40) : dmgBonus;
-    const hitMul = muls.hit.reduce((a, m) => a * m.v, 1);
+    let hitMul = muls.hit.reduce((a, m) => a * m.v, 1);
     const dmgMulRaw = muls.dmg.reduce((a, m) => a * m.v, 1);
     const dmgMul = mulDr(dmgMulRaw);
     const dmgBase = ch.dmg + dmgCounted;
@@ -233,6 +237,22 @@
     out.steps.hp = { base: ch.hp, items: sum.hp, evo: evo.hp, capped: ch.hp + sum.hp + evo.hp > 24 };
     out.stats.hearts = out.stats.hp / 2;
 
+    // Multipliers that depend on Luck or on how far the shot flew (expected value per hit).
+    const HIT_DIST = 150; // assumed distance of the target in px
+    for (const h of hitFx) {
+      const f = h.fx;
+      let m = 1;
+      if (f.k === "chancemul") {
+        let p = clamp(f.base + (f.perLuck || 0) * out.stats.luck, 0, f.max == null ? 1 : f.max);
+        if (f.onePerSecond) p = Math.min(p, 1 / out.stats.fireRate);
+        const mult = ctx.sit.boss && f.bossMult ? f.bossMult : f.mult;
+        m = 1 + p * (mult - 1); h.r.v = m;
+      } else {
+        const g = Math.min(1, HIT_DIST / Math.max(60, 0.85 * out.stats.range));
+        m = 1 + f.gain * g; h.r.v = m;
+      }
+      hitMul *= m;
+    }
     // Damage per shot, averaged over the shot types of a dual-type Pokémon (they alternate).
     const elems = ch.elem2 ? [ch.elem, ch.elem2] : [ch.elem];
     const pure = ch.elem2 ? 1 : PURE_K;
@@ -275,6 +295,24 @@
     out.steps.volley = { forward: fwd, rear, double, volley, extra: extraShots, extraHit: EXTRA_HIT, echo: echoShots, hitMul, crit: mods.crit, critX };
     out.stats.hitMul = hitMul;
     out.stats.playerDps = avg * out.stats.hitShots * out.stats.fireRate;
+    // Damage over time and extra blasts that follow your hits. hps = your hits per second on the target.
+    const hps = out.stats.hitShots * out.stats.fireRate;
+    out.steps.itemDps = [];
+    out.stats.itemDps = 0;
+    for (const t of tickFx) {
+      const f = t.fx;
+      let d = 0;
+      if (f.k === "dot") {
+        const p = f.p ? clamp(f.p.base + (f.p.perLuck || 0) * out.stats.luck, 0, f.p.max == null ? 1 : f.p.max) : 1;
+        const up = 1 - Math.pow(1 - p, hps * f.dur);
+        d = up * Math.max(f.min, f.frac * avg) / f.tick;
+      } else if (f.k === "nail") d = hps * Math.max(f.min, f.mult * dmg) / f.every;
+      else if (f.k === "periodic") d = f.frac * avg / f.per;
+      else if (f.k === "hatch") d = hps * clamp(f.base + f.perLuck * out.stats.luck, 0, 1) * f.bites * f.mult * dmg;
+      t.r.v = d;
+      out.steps.itemDps.push({ slug: t.slug, kind: f.k, dps: d });
+      out.stats.itemDps += d;
+    }
 
     // Companions: up to 3 (+2 per Apricorn Box, never more than 6) take the Balls in the order they were added.
     const cap = Math.min(6, 3 + famCapAdd);
@@ -322,7 +360,7 @@
       if (W.defenseDown) defenseDown = W.defenseDown;
     }
     out.steps.weapon = out.steps.weapons.find((x) => !x.module) || null;
-    out.stats.dps = (out.stats.playerDps + out.stats.companionDps + out.stats.weaponDps) * defenseDown;
+    out.stats.dps = (out.stats.playerDps + out.stats.itemDps + out.stats.companionDps + out.stats.weaponDps) * defenseDown;
     out.steps.defenseDown = defenseDown;
     return out;
   }

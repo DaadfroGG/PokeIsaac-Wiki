@@ -371,3 +371,22 @@ pb_var_soul: Soul hearts
 pb_held: Held item
 pb_s_whole: Rounded up to whole ticks
 pb_volley_extra_hit: about {n} lands on one target
+pb_fx_chancemul: "Chance bonus on your hits: ×{v} on average"
+pb_fx_grow: "Shots grow as they fly: ×{v} at the assumed distance (150 px)"
+pb_fx_dot: "Damage over time: +{v} per second"
+pb_fx_nail: "Nail every 5th hit: +{v} per second"
+pb_fx_periodic: "Extra laser while firing: +{v} per second"
+pb_fx_hatch: "Joltik hatchlings: +{v} per second"
+pb_fx_note_ctrl: "Control effect (slow, freeze, charm, confusion, knock back): does not change the damage numbers"
+pb_fx_note_aim: "Changes where your shots go: does not change the damage numbers"
+pb_fx_note_defense: "Defensive or special-situation effect: does not change the damage numbers"
+pb_fx_note_multi: "Needs several enemies or kills: not counted on a single target"
+pb_fx_note_area: "Ground or orbit effect: measured as almost nothing on one target, not counted"
+pb_fx_note_once: "One-off or situational burst: not counted"
+pb_fx_note_loot: "Gives pickups, no damage"
+pb_k_dot: "damage over time, counted while your hits keep refreshing it"
+pb_k_nail: "a nail every 5th hit explodes for 3 × your Damage (at least 4)"
+pb_k_periodic: "about one laser a second at 75 % of your hit"
+pb_k_hatch: "a Joltik on some hits, two bites of 2 × your Damage each"
+pb_flag_active_used: Active item used in the last 5 seconds
+pb_when_active_used: for 5 s after using your active item

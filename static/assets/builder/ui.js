@@ -193,6 +193,7 @@
       stepRow(T.pb_shots_s, "× " + fmt(s.fireRate), "item"),
       stepRow(T.pb_comp_player, fmt(s.playerDps, 1), "sub"),
       s.companionDps ? stepRow(T.pb_companions, "+ " + fmt(s.companionDps, 1), "item") : null,
+      ...st.itemDps.map((d) => stepRow(nameOf(d.slug), "+ " + fmt(d.dps, 1), "item", T["pb_k_" + d.kind])),
       ...st.weapons.map((w) => stepRow(nameOf(w.slug), (w.replaces && w.dps < 0 ? "− " : "+ ") + fmt(Math.abs(w.dps), 1), "item", T.pb_weapons)),
       st.defenseDown !== 1 ? stepRow(T.pb_w_defdown, "× " + fmt(st.defenseDown, 2), "item") : null,
       stepRow(T.pb_dps, fmt(s.dps, 1), "final")];
@@ -208,7 +209,7 @@
       if (e.when && E.SIT_FLAGS.includes(e.when)) flags.add(e.when);
       if (e.var) vars.add(e.var);
     }
-    for (const slug of Object.keys(S.i)) for (const f of (data.items[slug] && data.items[slug].e) || []) { if (f.var && f.var !== "items") vars.add(f.var); if (f.when && E.SIT_FLAGS.includes(f.when)) flags.add(f.when); }
+    for (const slug of Object.keys(S.i)) for (const f of (data.items[slug] && data.items[slug].e) || []) { if (f.var && f.var !== "items") vars.add(f.var); if (f.when && E.SIT_FLAGS.includes(f.when)) flags.add(f.when); if (f.unless && E.SIT_FLAGS.includes(f.unless)) flags.add(f.unless); }
     const rows = [];
     for (const v of E.SIT_VARS) if (vars.has(v)) rows.push($("label", {}, T["pb_var_" + v], $("input", { type: "number", min: 0, max: E.LIMITS[v], value: S.t[v] || 0, onchange: (ev) => { S.t[v] = Math.min(E.LIMITS[v], Math.max(0, +ev.target.value || 0)); render(); } })));
     for (const f of E.SIT_FLAGS) if (flags.has(f)) rows.push($("label", {}, $("input", { type: "checkbox", checked: !!S.t[f], onchange: (ev) => { S.t[f] = ev.target.checked ? 1 : 0; render(); } }), T["pb_flag_" + f]));

@@ -153,4 +153,14 @@ const calm = r3({ items: { calm_mint: 1 } });
 near(calm.stats.range, Math.max(120, base.stats.range - 60));
 const wiki = r3({ items: { wiki_berry: 1 }, sit: { enemy_full: 1 } });
 near(wiki.stats.dps / base.stats.dps, 1.3, 1e-6);
+
+// shot items, checked against the game's own simulator (pikachu lv 30 alone, neutral boss)
+const sp = (b) => E.compute(data, Object.assign({ char: "pikachu", stage: 0, level: 30, levels: true, floor: 1 }, b));
+const b0 = sp({ items: {} });
+const rel = (slug) => sp({ items: { [slug]: 1 } }).stats.dps / b0.stats.dps;
+near(rel("m_dentadura"), 1.264, 0.02); near(rel("m_duralium"), 1.25, 0.01); near(rel("m_flauta_eon"), 1.15, 0.01);
+near(rel("m_galleta_lava"), 1.088, 0.02); near(rel("m_orbe_claro"), 1.33, 0.03);
+near(rel("pico_afilado"), 1.61, 0.05); near(rel("m_lector_gb"), 1.17, 0.03); near(rel("m_seta_aroma"), 1.41, 0.12);
+near(rel("m_bonguri_verde"), 1.15, 0.03); near(rel("roca_calor"), 1.15, 0.03);
+near(sp({ items: { m_panuelo_sucio: 1 }, sit: { boss: 1 } }).stats.dps, b0.stats.dps, 1e-9); // does not work on bosses
 console.log("engine tests passed");
