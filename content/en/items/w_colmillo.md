@@ -66,7 +66,7 @@ You bite whatever is in front of you; each bite leaves Defense Down: the enemy t
 - After each attack the weapon is ready again after 1.5 times your normal delay between shots, and never less than 0.35 s.
 - Crits, burn, poison, slow and the other effects of your items apply to its hits, and its hits carry your Pokémon's type. See [Weapons and shot effects](../mechanics/armas.html).
 - Each attack is a bite in a cone in front of you: reach 60 px (+7 per Size), about 49° each side. It hits every enemy in the cone for ×1.1 of your Damage and breaks crates in front of you.
-- Multishot adds bites (up to 3, 40° apart); extra-direction items add more.
+- Multishot adds bites (up to 3, 40° apart); extra-direction items add more. They cover more ground, but an enemy is bitten only once per attack, so on a single target they add nothing.
 - **Defense Down:** each bite on an enemy that survives adds a stack: +12 % damage taken from your hits, up to 3 stacks (+36 %). Stacks last 4 s and each new bite restarts the 4 s; after they expire it starts again at one stack.
 - **If not in charge:** a fang circles you about once a second and hits enemies it touches (14 px +3 per Size) for ×1.2 Damage, each enemy at most every 0.2 s. It does not apply Defense Down.
 

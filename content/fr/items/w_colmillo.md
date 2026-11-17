@@ -66,7 +66,7 @@ Vous mordez ce qui est devant vous ; chaque morsure inflige Défense baissée : 
 - Après chaque attaque, l'arme est de nouveau prête après 1,5 fois votre délai normal entre deux tirs, et jamais moins de 0,35 s.
 - Les critiques, la brûlure, le poison, le ralentissement et les autres effets de vos objets s'appliquent à ses coups, qui portent le type de votre Pokémon. Voir [Armes et effets de tir](../mechanics/armas.html).
 - Chaque attaque est une morsure en cône devant vous : portée 60 px (+7 par Taille), environ 49° de chaque côté. Elle touche tous les ennemis du cône pour ×1,1 de vos Dégâts et brise les caisses devant vous.
-- Les tirs multiples ajoutent des morsures (jusqu'à 3, 40° d'écart) ; les objets de direction supplémentaire en ajoutent d'autres.
+- Les tirs multiples ajoutent des morsures (jusqu'à 3, 40° d'écart) ; les objets de direction supplémentaire en ajoutent d'autres. Elles couvrent plus de terrain, mais un ennemi n'est mordu qu'une fois par attaque : sur une cible unique, elles n'ajoutent rien.
 - **Défense baissée :** chaque morsure sur un ennemi qui survit ajoute un cumul : +12 % de dégâts subis venant de vos coups, jusqu'à 3 cumuls (+36 %). Les cumuls durent 4 s et chaque nouvelle morsure relance les 4 s ; une fois expirés, on repart à un cumul.
 - **Si secondaire :** un croc tourne autour de vous environ une fois par seconde et frappe les ennemis qu'il touche (14 px +3 par Taille) pour ×1,2 Dégâts, chaque ennemi au plus toutes les 0,2 s. Il n'applique pas Défense baissée.
 
