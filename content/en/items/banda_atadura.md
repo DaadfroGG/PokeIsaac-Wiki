@@ -12,9 +12,9 @@ details:
 - label: Damage
   value: +30 % to slowed enemies
 - label: Slow
-  value: Every hit slows 1.5 s
+  value: None of its own: needs another source of slow
 - label: Bosses
-  value: Slowed and damaged too
+  value: Slowed (walking only) and damaged too
 icon: items-ps/hold-item/binding-band.png
 sprite: true
 names:
@@ -52,9 +52,10 @@ names:
 Slowed enemies take 30% more damage (slowing belongs to the Ice and Water types)
 
 ## How it works
-- Your shots slow every enemy they hit for 1.5 seconds (the timer restarts on each hit). A slowed enemy walks at half speed.
-- Every hit you land on a slowed enemy deals 30 % more damage. In practice, from your second hit onward the bonus is almost always active, because your own shots keep the enemy slowed.
-- The slow also comes from [Ice and Water passives](../mechanics/estados.html) and any other source of slow: the 30 % applies to any slowed enemy, whatever slowed it.
+- **It does not slow enemies by itself.** It only adds damage to enemies that are already slowed, so it does nothing on its own.
+- Every hit you land on a slowed enemy deals 30 % more damage. A slowed enemy walks at half speed.
+- You need a source of slow, from you or from anywhere: the [Ice](../mechanics/pasiva_ice.html) and [Water](../mechanics/pasiva_water.html) passives, [Blue Apricorn](m_bonguri_azul.html), [White Apricorn](m_bonguri_blanco.html), Fairy charm, [Honey](m_miel.html) puddles and more (full list on [Status effects](../mechanics/estados.html)). The 30 % applies whatever slowed the enemy.
+- It is only offered when someone on the team is Ice or Water type, which are the types that slow. Ice with 25 % per hit keeps most enemies slowed; Water is much weaker (10 % + 5 % per rank).
 - Bosses are slowed too (their walking only, between attacks) and take the extra 30 %.
 - The +30 % is applied when the shot lands, so it does not show in your Damage on the HUD and is not limited by the ×3 multiplier cap.
 

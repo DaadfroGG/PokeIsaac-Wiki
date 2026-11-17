@@ -61,4 +61,5 @@ Luck +1 each time you go down a floor
 - **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck +1. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
 
 ## Stacking
-- Each copy gives its own Luck +1 on pickup and its own Luck +1 per floor: two copies are +2 per floor.
+- Each copy gives its own Luck +1 on pickup, but the per-floor Luck +1 is a single effect: it applies **once per floor however many copies you own**. Two copies are +2 when picked up, then +1 per floor, not +2.
+- Past 10 Luck each point counts for only a quarter on screen, so with a lot of Luck already the floor bonus shows as about +0.25.

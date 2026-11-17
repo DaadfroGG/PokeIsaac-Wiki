@@ -147,6 +147,7 @@ Les actifs (58 peuvent tomber) ont leur propre sac, utilisé par la [boutique](.
 - **Quand aucun actif du sac ne passe les filtres, le sac est refait** : tous les actifs non portés et non lâchés sont mélangés et placés devant. Après une longue partie, des actifs déjà vus (et laissés) reviennent donc.
 - Si même le sac refait n'a rien dans votre limite de niveau, le jeu prend n'importe quel actif que vous ne portez pas, **sans tenir compte de la limite de niveau** ; si vous les portez tous, n'importe quel actif.
 - Échanger votre actif contre celui d'un piédestal laisse le vôtre sur place ; il sort des tirages à partir de là.
+- Un actif qui se consomme à l'usage, comme le [Passe Éon](../items/a_ticket_eon.html), n'est pas marqué comme lâché : une fois qu'il a quitté vos mains, il compte de nouveau comme disponible et peut revenir au prochain remplissage du sac.
 
 ## Objets qui changent les tirages
 - [Charme Ovale](../items/amuleto_oval.html) : un objet de plus au choix dans les salles au trésor et après les boss.

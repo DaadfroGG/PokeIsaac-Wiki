@@ -147,6 +147,7 @@ Actives (58 of them can drop) have their own bag, used by the [shop](../rooms/sh
 - **When no active in the bag passes the filters, the bag is rebuilt**: every active not carried and not dropped is shuffled and put in front. So after a long run, actives you saw earlier (and left behind) come back.
 - If even the rebuilt bag has nothing within your tier limit, the game picks any active you don't carry, **ignoring the tier limit**; if you carry them all, any active at all.
 - Swapping your active for one on a pedestal leaves yours there; it is out of the draws from then on.
+- An active that is used up when you use it, like the [Eon Ticket](../items/a_ticket_eon.html), is not marked as dropped: once it is gone from your hands it counts as available again, and it can come back at the next rebuild of the bag.
 
 ## Items that change drops
 - [Oval Charm](../items/amuleto_oval.html): one more item to choose from in treasure rooms and after bosses.

@@ -55,7 +55,7 @@ Brûlent parfois ; un ennemi qui meurt en brûlant enflamme ses voisins
 ## Fonctionnement
 
 - Ajoute +0,3 Dégâts.
-- Chaque coup a 25 % de chances (+2 % par point de Chance) d'enflammer l'ennemi pendant 2 secondes. Les boss peuvent brûler aussi. Voir [Effets de statut](../mechanics/estados.html).
+- Chaque coup a 25 % de chances (+2 % par point de Chance) d'enflammer l'ennemi pendant 2 secondes au rang 0. Les boss peuvent brûler aussi. Il fonctionne pour tout Pokémon, de type Feu ou non : la brûlure dure plus longtemps et brûle plus fort avec votre rang de passif (qui vient de votre niveau), mais sans le type Feu pas de bonus de Plaque Flamme ni de propagation des flammes. Voir [Effets de statut](../mechanics/estados.html).
 - Un ennemi touché par vos tirs qui meurt en feu enflamme tous les autres ennemis à moins de 120 px pendant 2 secondes. Les ennemis enflammés ainsi peuvent propager le feu à leur tour s'ils meurent en feu.
 - Cet objet n'apparaît plus dans les réserves d'objets habituelles.
 - **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Dégâts +0,3: 4 → 4,3 (+8 %). Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.

@@ -43,6 +43,7 @@ Picking up the same item twice doesn't always give you twice the effect: it depe
 - If you lose one copy, the effect stays as long as you still hold another item that gives it.
 - **Damage multipliers** (×1.5, ×1.8…) are special effects too: two copies of the same item count once. Multipliers from **different** items do multiply together, then the total is capped (full up to ×2.3, a quarter beyond, never more than ×3). Example: [Gold Leaf](../items/m_hoja_oro.html) ×1.8 and [Power Lens](../items/m_lente_recia.html) ×1.6 = ×2.88 on paper, ×2.45 in practice.
 - Type bonuses applied on hit (Gems, Plates, Z-Crystals) are not part of that cap; whether they stack is on each item's page.
+- **Knockback** is one effect, not several: a hit pushes once, with strength 3 + 3 per knockback item ([Hard Stone](../items/piedra_dura.html), [Sail Fossil](../items/m_fosil_aleta.html)), multiplied by the Water, Rock or Ground passive rank bonus when it applies. A Water Pokémon with both items pushes with strength 9, not 3 + 6 + 3. Bosses are never pushed.
 - **Companions**: each Ball gives its companion, so two copies give two companions (for example two Dittos that both copy your shots). You can have **3** at once, **5** with the [Apricorn Box](../items/m_caja_bonguri.html), never more than 6. More companions wait in your bag (see [Companions](companeros.html)).
 - **One-time gains** (hearts healed, coins, bombs, keys, soul hearts) are given again with every copy.
 

@@ -61,4 +61,5 @@ Chance +1 à chaque étage descendu
 - **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: Chance +1. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 
 ## Cumul
-- Chaque exemplaire donne son propre Chance +1 en le prenant et son propre Chance +1 par étage : deux exemplaires font +2 par étage.
+- Chaque exemplaire donne son propre Chance +1 en le prenant, mais le Chance +1 par étage est un effet unique : il s'applique **une seule fois par étage, quel que soit le nombre d'exemplaires**. Deux exemplaires font +2 au ramassage, puis +1 par étage, pas +2.
+- Au-delà de 10 de Chance, chaque point ne compte que pour un quart à l'écran : avec déjà beaucoup de Chance, le bonus d'étage s'affiche donc comme environ +0,25.

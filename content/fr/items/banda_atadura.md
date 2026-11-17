@@ -12,9 +12,9 @@ details:
 - label: Dégâts
   value: +30 % aux ennemis ralentis
 - label: Ralentissement
-  value: Chaque coup ralentit 1,5 s
+  value: Aucun en propre : il faut une autre source
 - label: Boss
-  value: Ralentis et touchés aussi
+  value: Ralentis (marche seulement) et touchés aussi
 icon: items-ps/hold-item/binding-band.png
 sprite: true
 names:
@@ -52,9 +52,10 @@ names:
 Les ennemis ralentis subissent 30 % de dégâts en plus (ralentir est propre aux types Glace et Eau)
 
 ## Fonctionnement
-- Vos tirs ralentissent chaque ennemi touché pendant 1,5 seconde (le compte repart à chaque coup). Un ennemi ralenti marche à mi-vitesse.
-- Chaque coup porté à un ennemi ralenti inflige 30 % de dégâts en plus. En pratique, dès votre deuxième coup le bonus est presque toujours actif, car vos propres tirs maintiennent le ralentissement.
-- Le ralentissement vient aussi des [passifs Glace et Eau](../mechanics/estados.html) et de toute autre source : les 30 % s'appliquent à tout ennemi ralenti, quelle que soit la cause.
+- **Il ne ralentit pas les ennemis lui-même.** Il ajoute seulement des dégâts aux ennemis déjà ralentis : seul, il ne fait rien.
+- Chaque coup porté à un ennemi ralenti inflige 30 % de dégâts en plus. Un ennemi ralenti marche à mi-vitesse.
+- Il faut une source de ralentissement, la vôtre ou une autre : passifs [Glace](../mechanics/pasiva_ice.html) et [Eau](../mechanics/pasiva_water.html), [Noigrume Bleu](m_bonguri_azul.html), [Noigrume Blanc](m_bonguri_blanco.html), charme Fée, flaques de [Miel](m_miel.html) et d'autres (liste complète sur [Statuts](../mechanics/estados.html)). Les 30 % s'appliquent quelle que soit la cause.
+- Il n'est proposé que si quelqu'un de l'équipe est de type Glace ou Eau, les types qui ralentissent. Glace (25 % par coup) garde la plupart des ennemis ralentis ; Eau est bien plus faible (10 % + 5 % par rang).
 - Les boss sont ralentis aussi (seulement leur marche, entre deux attaques) et subissent les 30 % en plus.
 - Les +30 % sont appliqués à l'impact du tir : ils n'apparaissent donc pas dans vos Dégâts affichés et ne sont pas limités par le plafond de ×3 des multiplicateurs.
 

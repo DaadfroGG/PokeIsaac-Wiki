@@ -55,7 +55,7 @@ Sometimes burn; enemies that die burning set their neighbors on fire
 ## How it works
 
 - Adds +0.3 Damage.
-- Each hit has a 25 % chance (+2 % per Luck) to set the enemy on fire for 2 seconds. Bosses can burn too. See [Status effects](../mechanics/estados.html).
+- Each hit has a 25 % chance (+2 % per Luck) to set the enemy on fire for 2 seconds at rank 0. Bosses can burn too. It works for any Pokémon, Fire-type or not: the burn gets longer and stronger with your passive rank (which comes from your level), but without the Fire type you get no Flame Plate bonus and no flame spread. See [Status effects](../mechanics/estados.html).
 - An enemy hit by your shots that dies while burning sets every other enemy within 120 px on fire for 2 seconds. Enemies set alight this way can spread it further if they die burning.
 - This item no longer appears in the regular item pools.
 - **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Damage +0.3: 4 → 4.3 (+8 %). See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
