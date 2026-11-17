@@ -37,7 +37,7 @@ Your shots and items can burn, poison, slow, stun, charm, confuse, scare or put 
 - **Every ⅓ second** for **2 seconds**: 10 % of the damage of the shot that burned the enemy (at least 1 per tick). That is 30 % per second, 60 % in total.
 - If a stronger shot burns the enemy again, the ticks use the stronger shot; a weaker shot only resets the timer.
 - [Heat Rock](../items/roca_calor.html) doubles the length: **4 seconds**. Higher Fire and Dragon passive ranks make burns last longer and hurt more.
-- **Burn length and strength use your passive rank, whatever the burn comes from.** The rank comes from your level (see [Scaling type passives](pasivas_escalan.html)), so a Pokémon without the Fire type that burns with [Charcoal](../items/carbon.html) still gets longer, stronger burns as it levels up: length ×(1 + 0.1 per rank), tick 10 % + 1.5 % per rank. What it does not get is the Fire passive's own chance, spread and the Flame Plate's +2 ranks.
+- **Burn tick strength uses your passive rank, whatever the burn comes from.** The rank comes from your level (see [Scaling type passives](pasivas_escalan.html)): tick 10 % + 1.5 % per rank. A Pokémon without the Fire type that burns with [Charcoal](../items/carbon.html) gets that stronger tick, but not the longer burn (the +10 % length per rank only applies to Fire and Dragon passive burns), nor the Fire passive's chance and spread, nor the Flame Plate's +2 ranks.
 - Works on bosses.
 - Sources: [Fire](pasiva_fire.html) and [Dragon](pasiva_dragon.html) passives (15 % per hit + 2 % per Luck), [Charcoal](../items/carbon.html) and [Heat Rock](../items/roca_calor.html) (25 % + 2 % per Luck), the flame of [Red Nectar](../items/m_nectar_rojo.html) (always), [Lava Cookie](../items/m_galleta_lava.html) and [Magmarizer](../items/magmatizador.html) (Fire-type Pokémon only), [Heavy Ball](../items/f_peso_ball.html), [Fire Stone](../items/p_fuego.html), [Odd Incense](../items/incienso_raro.html).
 - With [Charcoal](../items/carbon.html) or [Heat Rock](../items/roca_calor.html), an enemy that dies while burning sets every enemy within 120 px on fire for 2 seconds (4 with Heat Rock).
@@ -57,7 +57,7 @@ Your shots and items can burn, poison, slow, stun, charm, confuse, scare or put 
 ### Slow
 - The enemy walks at **half speed** for **1.5 seconds**. It still attacks normally.
 - Bosses: only their walking between attacks is halved.
-- Sources: [Ice](pasiva_ice.html) passive (25 % + 2 % per Luck), [Water](pasiva_water.html) passive (10 % + 5 % per rank, 1 s, not on bosses), [Blue Apricorn](../items/m_bonguri_azul.html) (every hit), [White Apricorn](../items/m_bonguri_blanco.html) (30 % + 2 % per Luck), [Fairy](pasiva_fairy.html) charm (1 s), [Honey](../items/m_miel.html) puddles, [Damp Mulch](../items/a_abono_lento.html) (6 s).
+- Sources: [Ice](pasiva_ice.html) passive (25 % + 2 % per Luck), [Water](pasiva_water.html) passive (from rank 1: 10 % + 5 % per rank, 1 s, not on bosses), [Blue Apricorn](../items/m_bonguri_azul.html) (every hit), [White Apricorn](../items/m_bonguri_blanco.html) (30 % + 2 % per Luck), [Fairy](pasiva_fairy.html) charm (1 s), [Honey](../items/m_miel.html) puddles, [Damp Mulch](../items/a_abono_lento.html) (6 s).
 - [Binding Band](../items/banda_atadura.html): slowed enemies take 30 % more damage. It does not slow anything itself.
 - Always on, no hit needed: [Lagging Tail](../items/cola_plumbea.html) (all enemies 20 % slower) and [Slowpoke Tail](../items/cola_slowpoke.html) (half speed within 150 px of you). Neither works on bosses; both stack with a slow.
 
