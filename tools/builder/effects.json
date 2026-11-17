@@ -1420,5 +1420,323 @@
     "model": "laser2"
    }
   ]
+ },
+ "adamant_mint": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.15
+   },
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": -0.25
+   }
+  ],
+  "held": true
+ },
+ "blue_scarf": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.6,
+    "when": "cleared"
+   }
+  ],
+  "held": true
+ },
+ "bold_mint": {
+  "done": false,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 1.08
+   }
+  ],
+  "held": true
+ },
+ "calm_mint": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.9091
+   },
+   {
+    "k": "add",
+    "stat": "range",
+    "value": -60
+   }
+  ],
+  "held": true
+ },
+ "cheri_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 3,
+    "when": "first_hit"
+   }
+  ],
+  "held": true
+ },
+ "figy_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "missing",
+    "per": 0.1,
+    "max": 4
+   }
+  ],
+  "held": true
+ },
+ "green_scarf": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "range",
+    "value": 90,
+    "when": "boss"
+   },
+   {
+    "k": "add",
+    "stat": "shot",
+    "value": 2.5,
+    "when": "boss"
+   }
+  ],
+  "held": true
+ },
+ "lone_earring": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.25,
+    "when": "fresh"
+   }
+  ],
+  "held": true
+ },
+ "lucky_punch": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "luck",
+    "value": 2
+   }
+  ],
+  "held": true
+ },
+ "macho_brace": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": -0.2
+   }
+  ],
+  "held": true
+ },
+ "mago_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "divvar",
+    "stat": "rate",
+    "var": "soul",
+    "per": 0.05,
+    "max": 6
+   }
+  ],
+  "held": true
+ },
+ "micle_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 2,
+    "when": "last_enemy"
+   }
+  ],
+  "held": true
+ },
+ "mighty_candy_l": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.3,
+    "when": "levelup"
+   }
+  ],
+  "held": true
+ },
+ "modest_mint": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 1.06
+   },
+   {
+    "k": "add",
+    "stat": "range",
+    "value": 80
+   }
+  ],
+  "held": true
+ },
+ "nanab_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.12,
+    "when": "moving"
+   }
+  ],
+  "held": true
+ },
+ "pinap_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.25,
+    "when": "far"
+   }
+  ],
+  "held": true
+ },
+ "rabuta_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "kills",
+    "per": 0.04,
+    "max": 10
+   }
+  ],
+  "held": true
+ },
+ "rawst_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.7143,
+    "when": "hurt"
+   }
+  ],
+  "held": true
+ },
+ "razz_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.3
+   }
+  ],
+  "held": true
+ },
+ "rsvp_mail": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.6667,
+    "when": "switchin"
+   }
+  ],
+  "held": true
+ },
+ "serious_mint": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.04
+   },
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.9615
+   },
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.12
+   }
+  ],
+  "held": true
+ },
+ "silver_leaf": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.2,
+    "when": "enemy_flying"
+   }
+  ],
+  "held": true
+ },
+ "timid_mint": {
+  "done": true,
+  "fx": [
+   {
+    "k": "add",
+    "stat": "speed",
+    "value": 0.4
+   },
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 0.92
+   }
+  ],
+  "held": true
+ },
+ "wiki_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.3,
+    "when": "enemy_full"
+   }
+  ],
+  "held": true
  }
 }

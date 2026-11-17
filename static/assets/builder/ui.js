@@ -100,9 +100,10 @@
     pokeIdx = Object.keys(data.chars).filter((k) => NAMES.c[k]).map((k) => [k, norm(NAMES.c[k][0] + " " + k)]).sort((a, b) => a[1].localeCompare(b[1]));
     itemIdx = Object.keys(data.items).filter((k) => NAMES.i[k]).map((k) => [k, norm(NAMES.i[k][0] + " " + k)]).sort((a, b) => a[1].localeCompare(b[1]));
   };
+  const heldTag = (slug) => data.items[slug].h ? $("span", { class: "tag", text: T.pb_held }) : null;
   const itemMark = (slug) => { const t = data.items[slug].t; return t === "full" ? null : $("span", { class: "tag " + (t === "none" ? "none" : "part"), text: t === "none" ? "?" : "~", title: t === "none" ? T.pb_unsim : T.pb_partial }); };
   pokeBox.addEventListener("input", () => fillResults(pokeRes, pokeBox.value, pokeIdx, (s) => { S.c = s; pokeBox.value = ""; render(); }, (s) => [icon(NAMES.c[s][1]), NAMES.c[s][0]]));
-  itemBox.addEventListener("input", () => fillResults(itemRes, itemBox.value, itemIdx, (s) => { S.i[s] = Math.min(99, (S.i[s] || 0) + 1); render(); }, (s) => [icon(NAMES.i[s][1]), $("span", { text: NAMES.i[s][0] }), itemMark(s)]));
+  itemBox.addEventListener("input", () => fillResults(itemRes, itemBox.value, itemIdx, (s) => { S.i[s] = Math.min(data.items[s].h ? 1 : 99, (S.i[s] || 0) + 1); render(); }, (s) => [icon(NAMES.i[s][1]), $("span", { text: NAMES.i[s][0] }), heldTag(s), itemMark(s)]));
 
   // ---------- output ----------
   const nameOf = (s) => (NAMES.i[s] || [s])[0];
@@ -281,7 +282,7 @@
         $("span", { class: "cnt" },
           $("button", { type: "button", text: "−", "aria-label": T.pb_remove, onclick: () => { S.i[slug] = n - 1; if (S.i[slug] <= 0) delete S.i[slug]; render(); } }),
           $("b", { text: n }),
-          $("button", { type: "button", text: "+", "aria-label": T.pb_add, onclick: () => { S.i[slug] = Math.min(99, n + 1); render(); } }))));
+          $("button", { type: "button", text: "+", "aria-label": T.pb_add, onclick: () => { S.i[slug] = Math.min(data.items[slug] && data.items[slug].h ? 1 : 99, n + 1); render(); } }))));
     }
     // output
     const r = E.compute(data, bld());

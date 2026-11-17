@@ -344,3 +344,28 @@ pb_w_ludo: "one ball growing as it travels (×0.68 to ×1.43, taken at mid-range
 pb_w_lung: "full charge = a line of 7 rocks ×1.41, about 2 on the target, balance ×0.36; the next charge starts during the short rest"
 pb_w_laser2: "link to the marked enemy every 0.2 s for ×0.17 of your damage (balance ×0.62); works with any weapon"
 pb_w_charge: "replaces your normal shots by fully charged volleys (balls ×1.25 plus 6 fragments at 15 % on target), one per 2.5 × your delay; shown as the difference with your normal shots"
+pb_flag_cleared: Room with no fight going on
+pb_when_cleared: in a room with no fight
+pb_flag_moving: Moving
+pb_when_moving: while moving
+pb_flag_levelup: Level-up in the last 4 seconds
+pb_when_levelup: for 4 s after a level-up
+pb_flag_switchin: Pokémon just switched in (3 s)
+pb_when_switchin: for 3 s after switching in
+pb_flag_hurt: Lost health in the last 2 seconds
+pb_when_hurt: for 2 s after losing health
+pb_flag_fresh: Target appeared less than 2 s ago
+pb_when_fresh: in the first 2 s of an enemy's life
+pb_flag_far: Target more than 300 px away
+pb_when_far: on enemies more than 300 px away
+pb_flag_last_enemy: Target is the last enemy (not a boss)
+pb_when_last_enemy: on the last enemy
+pb_flag_enemy_full: Target at full health
+pb_when_enemy_full: on enemies at full health
+pb_flag_enemy_flying: Target is a flying enemy
+pb_when_enemy_flying: on flying enemies
+pb_flag_first_hit: First hit of the room
+pb_when_first_hit: on the first hit of a room
+pb_var_missing: Red hearts missing
+pb_var_soul: Soul hearts
+pb_held: Held item

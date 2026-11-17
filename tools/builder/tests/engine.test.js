@@ -141,4 +141,16 @@ for (const [slug, model] of [["w_puerro", "sword"], ["w_bola_nieve", "ludo"], ["
 }
 const mod = r3({ items: { w_memorin: 1, w_fulgorom: 1 } });
 near(mod.steps.weapons.length, 2);
+
+// held items: one copy counts, multiplicative bucket, flat range/speed
+const hb = r3({ items: { adamant_mint: 3 } });
+near(hb.steps.damage.multRaw, 1.15);
+const fig = r3({ items: { figy_berry: 1 }, sit: { missing: 4 } });
+near(fig.steps.damage.multRaw, 1.4);
+const mago = r3({ items: { mago_berry: 1 }, sit: { soul: 6 } });
+near(mago.steps.fireRate.itemMul, 1 / 1.3);
+const calm = r3({ items: { calm_mint: 1 } });
+near(calm.stats.range, Math.max(120, base.stats.range - 60));
+const wiki = r3({ items: { wiki_berry: 1 }, sit: { enemy_full: 1 } });
+near(wiki.stats.dps / base.stats.dps, 1.3, 1e-6);
 console.log("engine tests passed");

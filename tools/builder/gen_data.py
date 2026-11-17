@@ -49,6 +49,12 @@ for i in rt:
     if reg: rec["t"] = "full" if reg.get("done") else "partial"
     else: rec["t"] = "full" if (st and not fx) else ("partial" if st else "none")
     items[i["id"]] = rec
+# Held items: one worn plus fused ones, never two alike (a single copy counts). The ones not in the registry are listed as not simulated.
+for fn in sorted(os.listdir(os.path.join(ROOT, "content/en/held"))):
+    slug = fn[:-3]
+    if fn.startswith("_") or not fn.endswith(".md"): continue
+    reg = effects.get(slug)
+    items[slug] = {"e": reg["fx"], "t": "full" if reg.get("done") else "partial", "h": 1} if reg else {"t": "none", "h": 1}
 json.dump({"v": 1, "avg": avg, "chars": chars, "items": items}, open(OUT, "w"), separators=(",", ":"), ensure_ascii=False)
 from collections import Counter
 print(len(chars), "characters,", len(items), "items", dict(Counter(v["t"] for v in items.values())), os.path.getsize(OUT), "bytes")

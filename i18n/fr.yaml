@@ -344,3 +344,28 @@ pb_w_ludo: "une boule qui grossit en avançant (×0,68 à ×1,43, prise à mi-pa
 pb_w_lung: "pleine charge = une ligne de 7 rochers ×1,41, environ 2 sur la cible, équilibrage ×0,36 ; la charge suivante commence pendant le court repos"
 pb_w_laser2: "lien vers l'ennemi marqué toutes les 0,2 s pour ×0,17 de vos dégâts (équilibrage ×0,62) ; fonctionne avec toute arme"
 pb_w_charge: "remplace vos tirs normaux par des salves à pleine charge (balles ×1,25 plus 6 fragments à 15 % sur la cible), une par 2,5 × votre délai ; affiché comme la différence avec vos tirs normaux"
+pb_flag_cleared: Salle sans combat en cours
+pb_when_cleared: dans une salle sans combat
+pb_flag_moving: En mouvement
+pb_when_moving: en mouvement
+pb_flag_levelup: Niveau gagné il y a moins de 4 s
+pb_when_levelup: 4 s après un niveau
+pb_flag_switchin: Pokémon qui vient d'entrer (3 s)
+pb_when_switchin: 3 s après être entré
+pb_flag_hurt: Santé perdue il y a moins de 2 s
+pb_when_hurt: 2 s après avoir perdu de la santé
+pb_flag_fresh: Cible apparue il y a moins de 2 s
+pb_when_fresh: pendant les 2 premières s d'un ennemi
+pb_flag_far: Cible à plus de 300 px
+pb_when_far: sur les ennemis à plus de 300 px
+pb_flag_last_enemy: La cible est le dernier ennemi (pas un boss)
+pb_when_last_enemy: sur le dernier ennemi
+pb_flag_enemy_full: Cible en pleine santé
+pb_when_enemy_full: sur les ennemis en pleine santé
+pb_flag_enemy_flying: La cible est un ennemi volant
+pb_when_enemy_flying: sur les ennemis volants
+pb_flag_first_hit: Premier coup de la salle
+pb_when_first_hit: sur le premier coup d'une salle
+pb_var_missing: Cœurs rouges manquants
+pb_var_soul: Cœurs d'âme
+pb_held: Objet tenu

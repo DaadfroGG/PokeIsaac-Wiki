@@ -52,9 +52,9 @@
   }
 
   // Situation: numbers and switches the player sets (coins, hits taken, standing still...). Missing = 0 / off.
-  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend", "eye", "kills", "roomhits"];
-  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing", "crown"];
-  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9, eye: 10, kills: 10, roomhits: 6 };
+  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend", "eye", "kills", "roomhits", "missing", "soul"];
+  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing", "crown", "cleared", "moving", "levelup", "switchin", "hurt", "fresh", "far", "last_enemy", "enemy_full", "enemy_flying", "first_hit"];
+  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9, eye: 10, kills: 10, roomhits: 6, missing: 4, soul: 6 };
 
   // One effect record of an item. Returns { stat, add, mul, active } (add for flat bonuses, mul for multipliers).
   function evalFx(fx, ctx) {
@@ -67,7 +67,7 @@
       when === "even_floor" ? (ctx.floor - 1) % 2 === 1 :
       !!sit[when];
     const out = { stat: fx.stat, add: 0, mul: 1, active: on, when: when || null, kind: fx.k, v: fx.value, fam: !!fx.fam };
-    if (!(fx.k in { add: 1, mul: 1, mulvar: 1 })) { out.active = on; return out; }
+    if (!(fx.k in { add: 1, mul: 1, mulvar: 1, divvar: 1 })) { out.active = on; return out; }
     if (fx.k === "add") {
       if (fx.var) {
         const v = fx.var === "items" ? ctx.nItems : Math.min(LIMITS[fx.var] || 1e9, +sit[fx.var] || 0);
@@ -75,9 +75,9 @@
         out.v = out.add; out.active = out.add !== 0;
       } else if (on) out.add = fx.value;
     } else if (fx.k === "mul" && on) out.mul = fx.value;
-    else if (fx.k === "mulvar") {
-      const v = Math.min(fx.max == null ? Infinity : fx.max, +sit[fx.var] || 0);
-      out.mul = 1 + fx.per * v; out.v = out.mul; out.active = v > 0;
+    else if (fx.k === "mulvar" || fx.k === "divvar") {
+      const v = Math.min(fx.max == null ? Infinity : fx.max, Math.min(LIMITS[fx.var] || 1e9, +sit[fx.var] || 0));
+      out.mul = fx.k === "divvar" ? 1 / (1 + fx.per * v) : 1 + fx.per * v; out.v = out.mul; out.active = v > 0; out.kind = "mulvar";
     }
     return out;
   }
@@ -147,9 +147,10 @@
     let nItems = 0;
     const present = [];
     const whiteHerb = !!((b.items || {}).hierba_blanca > 0);
-    for (const [slug, n] of Object.entries(b.items || {})) {
+    for (const [slug, n0] of Object.entries(b.items || {})) {
       const it = data.items[slug];
-      if (!it || n <= 0) continue;
+      if (!it || n0 <= 0) continue;
+      const n = it.h ? 1 : n0;
       nItems += n;
       present.push(slug);
       for (const [k, v] of Object.entries(it.s || {})) { if (whiteHerb && slug !== "hierba_blanca" && (k === "rate" ? v > 0 : v < 0)) { contribSkipped.push({ slug, k, v: v * n }); continue; } sum[k] += v * n; if (contrib[k]) contrib[k].push({ slug, n, v: v * n }); }
@@ -158,14 +159,14 @@
     }
     // Conditional effects: each item counts once, however many copies you hold.
     const ctx = { sit: b.sit || {}, elem: ch.elem, floor: b.floor || 1, nItems };
-    const addList = { dmg: [], rate: [], speed: [] };
-    const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
+    const addList = { dmg: [], rate: [], speed: [], range: [], shot: [], luck: [] };
+    const effects = [], adds = { dmg: 0, rate: 0, speed: 0, range: 0, shot: 0, luck: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
     let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
     const comps = [], weapons = [];
     const MODULES = ["beam", "laser2", "charge"];
     for (const slug of present) {
-      const copies = b.items[slug];
+      const copies = data.items[slug].h ? 1 : b.items[slug];
       for (const fx of data.items[slug].e || []) {
         const r = evalFx(fx, ctx);
         r.slug = slug; effects.push(r);
@@ -218,15 +219,15 @@
     out.steps.speed = { base: ch.speed, items: sum.speed, evo: evo.speed, cond: adds.speed, type: speedAdd - evo.speed - adds.speed, shiny: sk.speed, level: lk.speed };
 
     // Range and shot speed
-    out.stats.range = Math.max(120, ch.range + 50 + sum.range);
-    out.steps.range = { base: ch.range, global: 50, items: sum.range };
-    out.stats.shotSpeed = Math.max(4, ch.shot + sum.shot);
-    out.steps.shotSpeed = { base: ch.shot, items: sum.shot };
+    out.stats.range = Math.max(120, ch.range + 50 + sum.range + adds.range);
+    out.steps.range = { base: ch.range, global: 50, items: sum.range, cond: adds.range };
+    out.stats.shotSpeed = Math.max(4, ch.shot + sum.shot + adds.shot);
+    out.steps.shotSpeed = { base: ch.shot, items: sum.shot, cond: adds.shot };
 
     // Luck (full up to 10, a quarter above)
-    const luckRaw = ch.luck + sum.luck + sk.luck + (has("normal") ? 0.35 * tierFor("normal") : 0);
+    const luckRaw = ch.luck + sum.luck + adds.luck + sk.luck + (has("normal") ? 0.35 * tierFor("normal") : 0);
     out.stats.luck = luckRaw <= 10 ? luckRaw : 10 + 0.25 * (luckRaw - 10);
-    out.steps.luck = { base: ch.luck, items: sum.luck, shiny: sk.luck, type: has("normal") ? 0.35 * tierFor("normal") : 0, raw: luckRaw };
+    out.steps.luck = { base: ch.luck, items: sum.luck + adds.luck, shiny: sk.luck, type: has("normal") ? 0.35 * tierFor("normal") : 0, raw: luckRaw };
 
     // Health in half hearts, 1 to 12 hearts
     out.stats.hp = clamp(ch.hp + sum.hp + evo.hp, 2, 24);
