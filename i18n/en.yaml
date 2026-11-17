@@ -390,3 +390,10 @@ pb_k_periodic: "about one laser a second at 75 % of your hit"
 pb_k_hatch: "a Joltik on some hits, two bites of 2 × your Damage each"
 pb_flag_active_used: Active item used in the last 5 seconds
 pb_when_active_used: for 5 s after using your active item
+pb_fx_note_other: "Special effect (return path, droplets, random types…): not counted in the numbers"
+pb_fx_falloff: "Damage depends on distance: ×{v} at the assumed distance (150 px)"
+pb_fx_fragments: "Burst into fragments: ×{v} if they all land on the target"
+pb_fx_aura: "Aura around each shot: +{v} per second"
+pb_fx_vsstatus: "Hits poisoned enemies harder: +{v} per second"
+pb_k_aura: "enemies near a shot take 15 % of your Damage every 1/12 s"
+pb_k_vsstatus: "+50 % damage to poisoned enemies, counted for the time they are poisoned"

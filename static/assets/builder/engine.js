@@ -172,8 +172,8 @@
         if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
         if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
         else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model, module: MODULES.includes(fx.model) }); r.label = "weapon"; }
-        else if (fx.k === "chancemul" || fx.k === "grow") { if (r.active) hitFx.push({ slug, fx, r }); r.label = fx.k; }
-        else if (fx.k === "dot" || fx.k === "nail" || fx.k === "periodic" || fx.k === "hatch") { if (r.active) tickFx.push({ slug, fx, r }); r.label = fx.k; }
+        else if (fx.k === "chancemul" || fx.k === "grow" || fx.k === "falloff" || fx.k === "fragments") { if (r.active) hitFx.push({ slug, fx, r }); r.label = fx.k; }
+        else if (fx.k === "dot" || fx.k === "nail" || fx.k === "periodic" || fx.k === "hatch" || fx.k === "aura" || fx.k === "vsstatus") { if (r.active) tickFx.push({ slug, fx, r }); r.label = fx.k; }
         else if (fx.k === "note") { r.label = "note_" + fx.note; }
         else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
@@ -247,6 +247,12 @@
         if (f.onePerSecond) p = Math.min(p, 1 / out.stats.fireRate);
         const mult = ctx.sit.boss && f.bossMult ? f.bossMult : f.mult;
         m = 1 + p * (mult - 1); h.r.v = m;
+      } else if (f.k === "falloff") {
+        // damage falls from "near" next to you to "far" at the end of the range, taken at the assumed distance
+        m = f.near - (f.near - f.far) * Math.min(1, HIT_DIST / out.stats.range); h.r.v = m;
+      } else if (f.k === "fragments") {
+        // a ball that bursts on the target: every fragment (more with multishot) is a share of the ball's damage
+        m = 1 + f.each * (f.base + f.per * (clamp(1 + mods.multishot, 1, 9) - 1)); h.r.v = m;
       } else {
         const g = Math.min(1, HIT_DIST / Math.max(60, 0.85 * out.stats.range));
         m = 1 + f.gain * g; h.r.v = m;
@@ -299,11 +305,17 @@
     const hps = out.stats.hitShots * out.stats.fireRate;
     out.steps.itemDps = [];
     out.stats.itemDps = 0;
+    // how much of the time the target is poisoned (any source) feeds the items that hit poisoned enemies harder
+    const uptimeOf = (f) => (f.p ? clamp(f.p.base + (f.p.perLuck || 0) * out.stats.luck, 0, f.p.max == null ? 1 : f.p.max) : 1);
+    let notPoisoned = 1;
+    for (const t of tickFx) if (t.fx.k === "dot" && t.fx.st === "poison" && !(t.fx.unless && ctx.sit[t.fx.unless])) notPoisoned *= Math.pow(1 - uptimeOf(t.fx), hps * t.fx.dur);
     for (const t of tickFx) {
       const f = t.fx;
       let d = 0;
-      if (f.k === "dot") {
-        const p = f.p ? clamp(f.p.base + (f.p.perLuck || 0) * out.stats.luck, 0, f.p.max == null ? 1 : f.p.max) : 1;
+      if (f.k === "aura") d = hps * f.per * dmg;
+      else if (f.k === "vsstatus") d = out.stats.playerDps * (f.mult - 1) * (1 - notPoisoned);
+      else if (f.k === "dot") {
+        const p = uptimeOf(f);
         const up = 1 - Math.pow(1 - p, hps * f.dur);
         d = up * Math.max(f.min, f.frac * avg) / f.tick;
       } else if (f.k === "nail") d = hps * Math.max(f.min, f.mult * dmg) / f.every;

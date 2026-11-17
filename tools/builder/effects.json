@@ -139,7 +139,7 @@
   ]
  },
  "m_piedra_activadora": {
-  "done": false,
+  "done": true,
   "fx": [
    {
     "k": "mul",
@@ -275,22 +275,30 @@
   ]
  },
  "gafas_sol": {
-  "done": false,
+  "done": true,
   "fx": [
    {
     "k": "mod",
     "mod": "crit",
     "value": 1
+   },
+   {
+    "k": "note",
+    "note": "ctrl"
    }
   ]
  },
  "roca_rey": {
-  "done": false,
+  "done": true,
   "fx": [
    {
     "k": "mod",
     "mod": "crit",
     "value": 1
+   },
+   {
+    "k": "note",
+    "note": "ctrl"
    }
   ]
  },
@@ -1049,13 +1057,26 @@
   ]
  },
  "m_nectar_rojo": {
-  "done": false,
+  "done": true,
   "fx": [
    {
-    "k": "extra",
-    "n": 1.2,
+    "k": "chancemul",
     "base": 0.12,
-    "max": 0.5
+    "perLuck": 0.01,
+    "max": 0.5,
+    "mult": 2.2
+   },
+   {
+    "k": "dot",
+    "p": {
+     "base": 0.12,
+     "perLuck": 0.01,
+     "max": 0.5
+    },
+    "dur": 2,
+    "tick": 0.3333333333333333,
+    "frac": 0.1,
+    "min": 1
    }
   ]
  },
@@ -1841,7 +1862,8 @@
     "dur": 2.5,
     "tick": 0.5,
     "frac": 0.12,
-    "min": 1.5
+    "min": 1.5,
+    "st": "poison"
    }
   ]
  },
@@ -2217,6 +2239,227 @@
    {
     "k": "note",
     "note": "loot"
+   }
+  ]
+ },
+ "carbon": {
+  "done": false,
+  "fx": [
+   {
+    "k": "dot",
+    "p": {
+     "base": 0.25,
+     "perLuck": 0.02
+    },
+    "dur": 2,
+    "tick": 0.3333333333333333,
+    "frac": 0.1,
+    "min": 1
+   }
+  ]
+ },
+ "flecha_venenosa": {
+  "done": true,
+  "fx": [
+   {
+    "k": "dot",
+    "st": "poison",
+    "p": {
+     "base": 0.33,
+     "perLuck": 0.02
+    },
+    "dur": 2.5,
+    "tick": 0.5,
+    "frac": 0.12,
+    "min": 1.5
+   },
+   {
+    "k": "vsstatus",
+    "mult": 1.5
+   }
+  ]
+ },
+ "m_toxisfera": {
+  "done": false,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "hit",
+    "value": 1.8
+   }
+  ]
+ },
+ "m_bola_arcilla": {
+  "done": true,
+  "fx": [
+   {
+    "k": "fragments",
+    "each": 0.11,
+    "base": 8,
+    "per": 2
+   }
+  ]
+ },
+ "m_puerro_grueso": {
+  "done": true,
+  "fx": [
+   {
+    "k": "falloff",
+    "near": 2.2,
+    "far": 0.4
+   }
+  ]
+ },
+ "m_corona_galanuez": {
+  "done": true,
+  "fx": [
+   {
+    "k": "aura",
+    "per": 0.135
+   }
+  ]
+ },
+ "garra_garfio": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_semilla_electro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "piedra_dura": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_orbe_oscuro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "ctrl"
+   }
+  ]
+ },
+ "m_abono_brote": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_muelle": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_saquito": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "m_pluma_lunar": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "mt_sombra": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "aim"
+   }
+  ]
+ },
+ "hueso_raro": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "other"
+   }
+  ]
+ },
+ "disco_extrano": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "other"
+   }
+  ]
+ },
+ "agua_mistica": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "other"
+   }
+  ]
+ },
+ "m_verduras": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "cu_vudu": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "multi"
+   }
+  ]
+ },
+ "cs_meteorito": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "once"
+   }
+  ]
+ },
+ "m_queso_mumu": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "area"
    }
   ]
  }

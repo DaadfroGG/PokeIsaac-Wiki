@@ -163,4 +163,10 @@ near(rel("m_galleta_lava"), 1.088, 0.02); near(rel("m_orbe_claro"), 1.33, 0.03);
 near(rel("pico_afilado"), 1.61, 0.05); near(rel("m_lector_gb"), 1.17, 0.03); near(rel("m_seta_aroma"), 1.41, 0.12);
 near(rel("m_bonguri_verde"), 1.15, 0.03); near(rel("roca_calor"), 1.15, 0.03);
 near(sp({ items: { m_panuelo_sucio: 1 }, sit: { boss: 1 } }).stats.dps, b0.stats.dps, 1e-9); // does not work on bosses
+
+// more shot items vs the simulator (pikachu lv 30 alone, ratio to the same build without the item)
+const ratio = (slug) => sp({ items: { [slug]: 1 } }).stats.dps / b0.stats.dps;
+near(ratio("flecha_venenosa"), 1.76, 0.06); near(ratio("carbon"), 1.23, 0.06); near(ratio("m_bola_arcilla"), 1.86, 0.06);
+near(ratio("m_nectar_rojo"), 1.31, 0.08); near(ratio("m_toxisfera"), 1.37, 0.1); near(ratio("m_corona_galanuez"), 1.07, 0.06);
+near(sp({ items: { m_puerro_grueso: 1 } }).steps.shot.hit, 2.2 - 1.8 * 150 / 270, 0.01);
 console.log("engine tests passed");
