@@ -334,3 +334,4 @@ pb_w_ring: "zones de blizzard ×0,78 toutes les 0,25 s pendant 5,3 s à pleine c
 pb_w_epic: "séisme ×3,4 à pleine charge (équilibrage ×0,53), ennemis au sol seulement ; les anneaux du tir multiple font 12 % de moins chacun"
 pb_w_beam: "Ultralaser après 16 coups (un par délai), 0,6 s de ×2,3 toutes les 0,05 s (équilibrage ×0,33), puis 0,57 s de repos"
 pb_fx_weapon: Arme, utilisée avec sa propre touche
+pb_w_fetus: "Voltorbes roulants : une salve, chacun effleure une fois (×0,45) puis explose sur la cible (×0,6), équilibrage ×0,8 ; prêt après 1,5 × 1,6 × votre délai"

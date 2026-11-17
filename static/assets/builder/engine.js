@@ -101,6 +101,8 @@
       let rings = 0; for (let i = 0; i < Math.min(3, ms); i++) rings += 1 - 0.12 * i;
       return { hits: Math.min(3, ms), mult: 3.4 * 0.53, cycle, dps: (3.4 * 0.53 * avg * rings) / cycle };
     },
+    // Rolling Voltorbs: a normal volley (max 9) at balance x0.8; each grazes once (x0.45) and its blast (x0.6) hits the target; ready after 1.5 x max(24, 1.6 delays)
+    fetus: (avg, R, ms) => { const n = Math.min(9, ms), cycle = (1.5 * Math.max(24, 1.6 * R)) / 60, per = (0.45 + 0.6) * 0.8; return { hits: n, mult: per, cycle, dps: (n * per * avg) / cycle }; },
     // Hyper Beam: meter fills 6.25 % per hit (one per delay): 16 delays, then 12 ticks of x2.3 with balance x0.33, rest 0.57 s
     beam: (avg, R) => { const cycle = (16 * R + 36 + 34) / 60; return { hits: 12, mult: 2.3 * 0.33, cycle, dps: (12 * 2.3 * 0.33 * avg) / cycle }; },
   };

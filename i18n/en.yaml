@@ -334,3 +334,4 @@ pb_w_ring: "blizzard zones ×0.78 every 0.25 s for 5.3 s at full charge (balance
 pb_w_epic: "earthquake ×3.4 at full charge (balance ×0.53), ground enemies only; rings from multishot hit for 12 % less each"
 pb_w_beam: "Hyper Beam after 16 hits (one per delay), 0.6 s of ×2.3 per 0.05 s (balance ×0.33), then a 0.57 s rest"
 pb_fx_weapon: Weapon, used with its own key
+pb_w_fetus: "rolling Voltorbs: a volley, each grazing once (×0.45) and exploding on the target (×0.6), balance ×0.8; ready after 1.5 × 1.6 × your delay"

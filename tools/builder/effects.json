@@ -1366,5 +1366,14 @@
     "model": "beam"
    }
   ]
+ },
+ "w_acromaquina": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "fetus"
+   }
+  ]
  }
 }

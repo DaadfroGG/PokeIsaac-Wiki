@@ -129,4 +129,8 @@ near(rf.stats.dps, (rf.stats.playerDps + rf.stats.weaponDps) * 1.36);
 const two = r3({ items: { w_fulgorom: 1, w_colmillo: 1 } });
 near(two.steps.weapon.model === "knife", true);
 near(r3({ items: { w_fulgorom: 1, w_colmillo: 1 }, weapon: "w_fulgorom" }).steps.weapon.model === "laser", true);
+
+// Colress Machine: volley of Voltorbs, (0.45 + 0.6) x 0.8 each, ready after 1.5 x max(24, 1.6 delays)
+const cm = r3({ items: { w_acromaquina: 1, mt_doble: 1 } });
+near(cm.stats.weaponDps, (2 * 1.05 * 0.8 * cm.stats.avgShot) / ((1.5 * Math.max(24, 1.6 * cm.stats.ticks)) / 60));
 console.log("engine tests passed");
