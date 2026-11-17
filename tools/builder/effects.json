@@ -1321,5 +1321,50 @@
     "k": "nonegatives"
    }
   ]
+ },
+ "w_fulgorom": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "laser"
+   }
+  ]
+ },
+ "w_colmillo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "knife"
+   }
+  ]
+ },
+ "w_criorom": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "ring"
+   }
+  ]
+ },
+ "w_esfera_verde": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "epic"
+   }
+  ]
+ },
+ "w_prisma_rojo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "beam"
+   }
+  ]
  }
 }

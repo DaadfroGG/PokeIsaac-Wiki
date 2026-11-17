@@ -21,19 +21,20 @@
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const icon = (p) => $("img", { src: ROOT + "assets/" + (p || "unknown.svg"), alt: "", loading: "lazy" });
 
-  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {}, t: {} };
+  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {}, t: {}, w: "" };
   let data, E, S = Object.assign({}, DEF, { i: {}, t: {} });
 
   // ---------- state <-> link ----------
   function toHash() {
     const i = Object.entries(S.i).filter(([, n]) => n > 0).map(([k, n]) => k + ":" + n).join(",");
     const t = Object.entries(S.t).filter(([, v]) => +v > 0).map(([k, v]) => k + ":" + (+v)).join(",");
-    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "") + (t ? "&t=" + t : "");
+    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "") + (t ? "&t=" + t : "") + (S.w ? "&w=" + S.w : "");
   }
   function fromHash(h) {
     const p = new URLSearchParams(h.replace(/^#/, ""));
     const n = Object.assign({}, DEF, { i: {}, t: {} });
     if (p.get("c") && data.chars[p.get("c")]) n.c = p.get("c");
+    if (p.get("w") && data.items[p.get("w")]) n.w = p.get("w");
     for (const k of ["s", "l", "m", "f", "sh"]) if (p.has(k) && !isNaN(+p.get(k))) n[k] = +p.get(k);
     n.s = Math.min(2, Math.max(0, n.s)); n.l = Math.min(60, Math.max(1, n.l)); n.f = Math.max(1, Math.min(300, n.f));
     for (const part of (p.get("i") || "").split(",")) {
@@ -47,7 +48,7 @@
     }
     return n;
   }
-  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i, sit: S.t });
+  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i, sit: S.t, weapon: S.w });
   const linkOf = () => location.href.split("#")[0] + "#" + toHash();
 
   // ---------- inputs ----------
@@ -190,6 +191,8 @@
       stepRow(T.pb_shots_s, "× " + fmt(s.fireRate), "item"),
       stepRow(T.pb_comp_player, fmt(s.playerDps, 1), "sub"),
       s.companionDps ? stepRow(T.pb_companions, "+ " + fmt(s.companionDps, 1), "item") : null,
+      s.weaponDps ? stepRow(nameOf(st.weapon.slug), "+ " + fmt(s.weaponDps, 1), "item", T.pb_weapons) : null,
+      st.defenseDown !== 1 ? stepRow(T.pb_w_defdown, "× " + fmt(st.defenseDown, 2), "item") : null,
       stepRow(T.pb_dps, fmt(s.dps, 1), "final")];
     return $("details", Object.assign({ class: "calc" }, keepOpen("__dps")), $("summary", {}, $("span", { class: "l", text: T.pb_how }), $("span", { class: "v", text: fmt(s.dps, 1) })),
       $("div", { class: "calc-body" }, $("table", { class: "steps" }, $("tbody", {}, steps.filter(Boolean))), $("p", { class: "note", text: T.pb_x_dps })));
@@ -217,6 +220,15 @@
       c.active ? null : $("span", { class: "tag none", text: T.pb_comp_waiting })));
     return $("div", { class: "warn" }, $("b", { text: `${T.pb_companions} (${Math.min(st.cap, st.count)} / ${st.cap})` }), $("ul", {}, items),
       $("p", { class: "note", text: `${T.pb_comp_base} ${fmt(st.base, 1)}` }));
+  }
+  function weaponList(r) {
+    if (!r.weapons.length) return null;
+    const w = r.steps.weapon;
+    const rows = r.weapons.map((x) => $("li", { class: x.equipped ? "on" : "off" }, $("b", { text: nameOf(x.slug) }), " ",
+      x.equipped ? $("span", { class: "tag", text: T.pb_w_equipped }) : $("button", { type: "button", class: "mini", text: T.pb_w_equip, onclick: () => { S.w = x.slug; render(); } })));
+    return $("div", { class: "warn" }, $("b", { text: T.pb_weapons }), $("ul", {}, rows),
+      w ? $("p", { class: "note", text: `${fmt(w.dps, 1)} ${T.pb_dps_unit} · ${T["pb_w_" + w.model]}` }) : null,
+      $("p", { class: "note", text: T.pb_w_assume }));
   }
   function volleyNote(r) {
     const v = r.steps.volley, bits = [];
@@ -285,7 +297,7 @@
         r.stats.hitMul !== 1 ? row(T.pb_hit_mul, "×" + fmt(r.stats.hitMul, 3), null) : null,
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
-      dpsCalc(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume })].filter(Boolean));
+      dpsCalc(r), weaponList(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume })].filter(Boolean));
     sitBox.replaceChildren(sitControls(r));
     history.replaceState(null, "", "#" + toHash());
   }

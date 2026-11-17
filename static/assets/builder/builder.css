@@ -58,3 +58,4 @@
 #pb table.stats table.steps td.v { font-size: 13px; font-weight: 400; }
 #pb table.stats table.steps tr.sub td.v, #pb table.stats table.steps tr.final td.v { font-weight: 700; }
 #pb table.stats table.steps tr.final td.v { font-size: 14px; }
+#pb button.mini { font-size: 12px; padding: 1px 8px; border-radius: 6px; border: 1px solid var(--line2); background: transparent; color: inherit; cursor: pointer; }

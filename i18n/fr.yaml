@@ -323,3 +323,14 @@ pb_var_roomhits: Coups reçus dans cette salle
 pb_flag_crown: Entré dans la salle à pleine santé, sans être touché depuis
 pb_when_crown: jusqu'à un coup reçu
 pb_fx_nonegatives: Tous les malus de vos stats sont annulés
+pb_weapons: Armes
+pb_w_equipped: équipée
+pb_w_equip: Équiper
+pb_w_defdown: Défense réduite sur la cible (3 cumuls)
+pb_w_assume: "Seule l'arme équipée est comptée. Estimation sur un seul ennemi qui reste à portée, chaque coup touche et vous gardez le bouton d'arme enfoncé. Les coups qui demandent plusieurs ennemis (rebonds, éclaboussures, liens) et les petits effets annexes des autres armes ne sont pas comptés."
+pb_w_laser: "éclair ×0,7 sur la première cible, prêt après 1,5 × votre délai entre deux tirs"
+pb_w_knife: "morsures ×1,1 (équilibrage ×0,37), prêt après 1,5 × votre délai ; Défense réduite augmente tous vos dégâts sur la cible"
+pb_w_ring: "zones de blizzard ×0,78 toutes les 0,25 s pendant 5,3 s à pleine charge (équilibrage ×0,72) ; les zones des utilisations successives se superposent"
+pb_w_epic: "séisme ×3,4 à pleine charge (équilibrage ×0,53), ennemis au sol seulement ; les anneaux du tir multiple font 12 % de moins chacun"
+pb_w_beam: "Ultralaser après 16 coups (un par délai), 0,6 s de ×2,3 toutes les 0,05 s (équilibrage ×0,33), puis 0,57 s de repos"
+pb_fx_weapon: Arme, utilisée avec sa propre touche

@@ -82,6 +82,29 @@
     return out;
   }
 
+  // Weapons. avg = your average damage of one hit, R = your delay between shots in ticks, ms = 1 + multishot.
+  // Each returns { dps, hits (per attack), cycle (seconds between attacks), mult (damage of a hit as a share of your hit) }.
+  const WEAPON_MODELS = {
+    // bolt that jumps: first target takes x0.7 (more targets add more), ready again after 1.5 x delay
+    laser: (avg, R, ms) => { const n = Math.min(5, ms), cycle = (1.5 * R) / 60; return { hits: n, mult: 0.7, cycle, dps: (n * 0.7 * avg) / cycle }; },
+    // bites in a cone x1.1 with balance x0.37, and Defense Down: +12 % damage taken per stack, 3 stacks
+    knife: (avg, R, ms) => { const n = Math.min(3, ms), cycle = (1.5 * Math.max(14, R)) / 60; return { hits: n, mult: 1.1 * 0.37, cycle, dps: (n * 1.1 * 0.37 * avg) / cycle, defenseDown: 1.36 }; },
+    // blizzard zone: x0.78 every 0.25 s for 5.3 s once fully charged, balance x0.72; zones of successive uses overlap (max 6)
+    ring: (avg, R) => {
+      const charge = Math.min(70, Math.max(22, 2 * R)), cd = 1.5 * Math.max(20, R), cycleT = Math.max(charge, cd), cycle = cycleT / 60;
+      const active = Math.min(6, 320 / cycleT);
+      return { hits: active, mult: 0.78 * 0.72, cycle: 0.25, zones: active, dps: active * 0.78 * 0.72 * avg * 4 };
+    },
+    // earthquake at full charge x3.4, balance x0.53; multishot adds rings of -12 % damage each; charging goes on during the cooldown
+    epic: (avg, R, ms) => {
+      const charge = Math.min(70, Math.max(26, 2.4 * R)), cd = 1.5 * Math.max(30, 1.6 * R), cycle = Math.max(charge, cd) / 60;
+      let rings = 0; for (let i = 0; i < Math.min(3, ms); i++) rings += 1 - 0.12 * i;
+      return { hits: Math.min(3, ms), mult: 3.4 * 0.53, cycle, dps: (3.4 * 0.53 * avg * rings) / cycle };
+    },
+    // Hyper Beam: meter fills 6.25 % per hit (one per delay): 16 delays, then 12 ticks of x2.3 with balance x0.33, rest 0.57 s
+    beam: (avg, R) => { const cycle = (16 * R + 36 + 34) / 60; return { hits: 12, mult: 2.3 * 0.33, cycle, dps: (12 * 2.3 * 0.33 * avg) / cycle }; },
+  };
+
   function character(data, slug) {
     const a = data.chars[slug];
     if (!a) return null;
@@ -121,7 +144,7 @@
     const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
     let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
-    const comps = [];
+    const comps = [], weapons = [];
     for (const slug of present) {
       const copies = b.items[slug];
       for (const fx of data.items[slug].e || []) {
@@ -131,6 +154,7 @@
         if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
         if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
         if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
+        else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model }); r.label = "weapon"; }
         else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
         else if (fx.k === "famcap") { famCapAdd += fx.value * copies; r.label = "famcap"; r.v = fx.value * copies; }
@@ -251,7 +275,20 @@
     out.companions = companions;
     out.steps.companions = { cap, count: comps.length, base: famBase, famK, famHit };
     out.stats.companionDps = companions.filter((c) => c.active).reduce((a, c) => a + c.dps, 0);
-    out.stats.dps = out.stats.playerDps + out.stats.companionDps;
+
+    // Equipped weapon (one at a time): a separate attack that works beside your normal shots. Single target, every hit lands.
+    const heldWeapon = weapons.find((w) => w.slug === b.weapon) || weapons[weapons.length - 1] || null;
+    out.weapons = weapons.map((w) => ({ slug: w.slug, equipped: w === heldWeapon }));
+    out.stats.weaponDps = 0; out.steps.weapon = null;
+    let defenseDown = 1;
+    if (heldWeapon) {
+      const R = out.stats.ticks, ms = 1 + mods.multishot;
+      const W = WEAPON_MODELS[heldWeapon.model](avg, R, ms);
+      out.stats.weaponDps = W.dps; out.steps.weapon = Object.assign({ slug: heldWeapon.slug, model: heldWeapon.model }, W);
+      if (W.defenseDown) defenseDown = W.defenseDown;
+    }
+    out.stats.dps = (out.stats.playerDps + out.stats.companionDps + out.stats.weaponDps) * defenseDown;
+    out.steps.defenseDown = defenseDown;
     return out;
   }
 

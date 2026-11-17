@@ -323,3 +323,14 @@ pb_var_roomhits: Hits taken in this room
 pb_flag_crown: Entered the room at full health, not hit since
 pb_when_crown: until you are hit
 pb_fx_nonegatives: Every penalty to your stats is cancelled
+pb_weapons: Weapons
+pb_w_equipped: equipped
+pb_w_equip: Equip
+pb_w_defdown: Defense Down on the target (3 stacks)
+pb_w_assume: "Only the equipped weapon is counted. Estimate on a single enemy that stays in range, every hit lands, and you keep the weapon button held. Hits that need several enemies (jumps, splash, links) and the other weapons' small side effects are not counted."
+pb_w_laser: "bolt ×0.7 to the first target, ready again after 1.5 × your delay between shots"
+pb_w_knife: "bites ×1.1 (balance ×0.37), ready after 1.5 × your delay; Defense Down raises all your damage on the target"
+pb_w_ring: "blizzard zones ×0.78 every 0.25 s for 5.3 s at full charge (balance ×0.72); zones from successive uses overlap"
+pb_w_epic: "earthquake ×3.4 at full charge (balance ×0.53), ground enemies only; rings from multishot hit for 12 % less each"
+pb_w_beam: "Hyper Beam after 16 hits (one per delay), 0.6 s of ×2.3 per 0.05 s (balance ×0.33), then a 0.57 s rest"
+pb_fx_weapon: Weapon, used with its own key

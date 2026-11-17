@@ -115,4 +115,18 @@ near(herb.stats.fireRate > noHerb.stats.fireRate, true);
 near(r3({ items: { m_dulce_nata: 1 } }).steps.damage.mult, 0.45);
 // Red Apricorn-style counters
 near(r3({ items: { m_bonguri_rojo: 1 }, sit: { kills: 10 } }).steps.damage.mult, 1.6);
+
+// --- weapons (equipped one only, single target) ---
+const base = r3({ items: {} });
+// Shock Drive: x0.7 per bolt, ready after 1.5 delays
+const sd = r3({ items: { w_fulgorom: 1 } });
+near(sd.stats.weaponDps, (0.7 * sd.stats.avgShot) / ((1.5 * sd.stats.ticks) / 60));
+// Razor Fang: x1.1 x0.37, and Defense Down x1.36 on everything
+const rf = r3({ items: { w_colmillo: 1 } });
+near(rf.steps.defenseDown, 1.36);
+near(rf.stats.dps, (rf.stats.playerDps + rf.stats.weaponDps) * 1.36);
+// Only the equipped weapon counts; the last added one by default, w picks another
+const two = r3({ items: { w_fulgorom: 1, w_colmillo: 1 } });
+near(two.steps.weapon.model === "knife", true);
+near(r3({ items: { w_fulgorom: 1, w_colmillo: 1 }, weapon: "w_fulgorom" }).steps.weapon.model === "laser", true);
 console.log("engine tests passed");
