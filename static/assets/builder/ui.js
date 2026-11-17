@@ -275,7 +275,7 @@
     const r = E.compute(data, bld());
     const full = Object.entries(S.i).filter(([k, n]) => n > 0 && data.items[k] && data.items[k].t === "full").length;
     const total = entries.length;
-    out.replaceChildren(
+    out.replaceChildren(...[
       $("div", { class: "dps" }, $("div", {}, $("div", { class: "note", text: T.pb_dps }), $("div", { class: "big", text: fmt(r.stats.dps, 1) }), r.stats.companionDps ? $("div", { class: "note", text: `${T.pb_comp_player} ${fmt(r.stats.playerDps, 1)} + ${T.pb_companions.toLowerCase()} ${fmt(r.stats.companionDps, 1)}` }) : null),
         $("div", {}, $("div", { class: "note", text: T.pb_per_shot }), $("b", { text: fmt(r.stats.avgShot) })),
         $("div", {}, $("div", { class: "note", text: T.pb_shots_s }), $("b", { text: fmt(r.stats.fireRate) }))),
@@ -285,7 +285,7 @@
         r.stats.hitMul !== 1 ? row(T.pb_hit_mul, "×" + fmt(r.stats.hitMul, 3), null) : null,
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
-      dpsCalc(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume }));
+      dpsCalc(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume })].filter(Boolean));
     sitBox.replaceChildren(sitControls(r));
     history.replaceState(null, "", "#" + toHash());
   }
