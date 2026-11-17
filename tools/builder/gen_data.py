@@ -55,6 +55,7 @@ for fn in sorted(os.listdir(os.path.join(ROOT, "content/en/held"))):
     if fn.startswith("_") or not fn.endswith(".md"): continue
     reg = effects.get(slug)
     items[slug] = {"e": reg["fx"], "t": "full" if reg.get("done") else "partial", "h": 1} if reg else {"t": "none", "h": 1}
-json.dump({"v": 1, "avg": avg, "chars": chars, "items": items}, open(OUT, "w"), separators=(",", ":"), ensure_ascii=False)
+chart = json.load(open(os.path.join(ROOT, "tools/builder/chart.json")))   # type effectiveness numbers
+json.dump({"v": 1, "avg": avg, "chars": chars, "items": items, "chart": chart}, open(OUT, "w"), separators=(",", ":"), ensure_ascii=False)
 from collections import Counter
 print(len(chars), "characters,", len(items), "items", dict(Counter(v["t"] for v in items.values())), os.path.getsize(OUT), "bytes")

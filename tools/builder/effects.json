@@ -2462,5 +2462,586 @@
     "note": "area"
    }
   ]
+ },
+ "hierro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "reduce",
+    "flat": 1,
+    "min": 2
+   }
+  ]
+ },
+ "x_babiri_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "steel"
+   }
+  ]
+ },
+ "x_charti_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "rock"
+   }
+  ]
+ },
+ "x_chilan_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "normal"
+   }
+  ]
+ },
+ "x_chople_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "fighting"
+   }
+  ]
+ },
+ "x_coba_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "flying"
+   }
+  ]
+ },
+ "x_colbur_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "dark"
+   }
+  ]
+ },
+ "x_haban_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "dragon"
+   }
+  ]
+ },
+ "x_kasib_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "ghost"
+   }
+  ]
+ },
+ "x_kebia_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "poison"
+   }
+  ]
+ },
+ "x_occa_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "fire"
+   }
+  ]
+ },
+ "x_passho_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "water"
+   }
+  ]
+ },
+ "x_payapa_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "psychic"
+   }
+  ]
+ },
+ "x_rindo_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "grass"
+   }
+  ]
+ },
+ "x_shuca_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "ground"
+   }
+  ]
+ },
+ "x_tanga_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "bug"
+   }
+  ]
+ },
+ "x_wacan_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "electric"
+   }
+  ]
+ },
+ "x_yache_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "resist",
+    "type": "ice"
+   }
+  ]
+ },
+ "cu_espejo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "avoid",
+    "p": 0.2
+   }
+  ]
+ },
+ "d_mineral_evol": {
+  "done": true,
+  "fx": [
+   {
+    "k": "block",
+    "per": "room"
+   }
+  ]
+ },
+ "pluma_plateada": {
+  "done": true,
+  "fx": [
+   {
+    "k": "block",
+    "per": "seconds",
+    "n": 15
+   }
+  ]
+ },
+ "d_fosil_coraza": {
+  "done": true,
+  "fx": [
+   {
+    "k": "cycle",
+    "on": 1,
+    "of": 8
+   }
+  ]
+ },
+ "arcilla_ligera": {
+  "done": true,
+  "fx": [
+   {
+    "k": "invuln",
+    "mult": 1.6
+   }
+  ]
+ },
+ "cinta": {
+  "done": true,
+  "fx": [
+   {
+    "k": "sash"
+   }
+  ]
+ },
+ "d_revivir_maximo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "revive",
+    "half": 4
+   }
+  ]
+ },
+ "d_cola_skitty": {
+  "done": true,
+  "fx": [
+   {
+    "k": "lives",
+    "n": 9,
+    "half": 2,
+    "maxhp": 2
+   }
+  ]
+ },
+ "hw_disfraz": {
+  "done": false,
+  "fx": [
+   {
+    "k": "floorlife"
+   }
+  ]
+ },
+ "restos": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "room",
+    "half": 1,
+    "free": true
+   }
+  ]
+ },
+ "cascabel": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "room",
+    "half": 1,
+    "free": true
+   }
+  ]
+ },
+ "polvo_energia": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "boss",
+    "half": 2,
+    "free": true
+   }
+  ]
+ },
+ "d_pluma_vigor": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "seconds",
+    "n": 25,
+    "half": 1,
+    "free": true
+   }
+  ]
+ },
+ "d_fosil_mandibula": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "kills",
+    "n": 13,
+    "half": 1
+   }
+  ]
+ },
+ "raiz_grande": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "damage",
+    "n": 40,
+    "half": 1
+   }
+  ]
+ },
+ "limonada": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "buy",
+    "half": 1,
+    "free": true
+   }
+  ]
+ },
+ "baya_aranja": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "floor",
+    "half": 2,
+    "free": true
+   }
+  ]
+ },
+ "baya_enigma": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "hit",
+    "p": 0.3,
+    "half": 1
+   }
+  ]
+ },
+ "sitrus_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "floor",
+    "half": 2,
+    "free": true
+   }
+  ],
+  "held": true
+ },
+ "chesto_berry": {
+  "done": true,
+  "fx": [
+   {
+    "k": "heal",
+    "per": "room",
+    "half": 1,
+    "free": true
+   }
+  ],
+  "held": true
+ },
+ "cs_cosmos": {
+  "done": true,
+  "fx": [
+   {
+    "k": "soul",
+    "per": "floor",
+    "half": 1
+   }
+  ]
+ },
+ "escama_corazon": {
+  "done": true,
+  "fx": [
+   {
+    "k": "soul",
+    "per": "floor",
+    "half": 2
+   }
+  ]
+ },
+ "gracidea": {
+  "done": true,
+  "fx": [
+   {
+    "k": "soul",
+    "per": "3 rooms",
+    "half": 2
+   }
+  ]
+ },
+ "defensa_x": {
+  "done": true,
+  "fx": [
+   {
+    "k": "soul",
+    "per": "boss",
+    "half": 2
+   }
+  ]
+ },
+ "casco_dentado": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "hw_mascara": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "magmatizador": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "d_incienso_acua": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "boton_escape": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "hierba_mental": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "tarjeta_roja": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "d_fosil_pluma": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "react"
+   }
+  ]
+ },
+ "hw_anima": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "enemy"
+   }
+  ]
+ },
+ "hw_talisman": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "enemy"
+   }
+  ]
+ },
+ "hw_saco": {
+  "done": true,
+  "fx": [
+   {
+    "k": "note",
+    "note": "enemy"
+   }
+  ]
+ },
+ "d_botiquin": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "campana_alivio": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "revest_metalico": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "d_fosil_raiz": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "d_proteccion_x": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "leche_mumu": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "bolsa_suero": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
+ },
+ "protector": {
+  "done": false,
+  "fx": [
+   {
+    "k": "note",
+    "note": "guard"
+   }
+  ]
  }
 }

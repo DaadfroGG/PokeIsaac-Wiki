@@ -59,3 +59,9 @@
 #pb table.stats table.steps tr.sub td.v, #pb table.stats table.steps tr.final td.v { font-weight: 700; }
 #pb table.stats table.steps tr.final td.v { font-size: 14px; }
 #pb button.mini { font-size: 12px; padding: 1px 8px; border-radius: 6px; border: 1px solid var(--line2); background: transparent; color: inherit; cursor: pointer; }
+.survival { margin-top: 16px; }
+.survival .sv-in { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+.survival .sv-in label { display: flex; gap: 6px; align-items: center; font-size: 13px; }
+.survival .sv-in input { width: 64px; }
+#pb .survival table.steps td.v { white-space: normal; width: 55%; }
+#pb .survival table.steps td:first-child { width: 45%; }

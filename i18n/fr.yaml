@@ -397,3 +397,57 @@ pb_fx_aura: "Aura autour de chaque tir : +{v} par seconde"
 pb_fx_vsstatus: "Frappe plus fort les ennemis empoisonnés : +{v} par seconde"
 pb_k_aura: "les ennemis près d'un tir subissent 15 % de vos Dégâts toutes les 1/12 s"
 pb_k_vsstatus: "+50 % de dégâts aux ennemis empoisonnés, comptés pendant le temps où ils le sont"
+pb_survival: Survie
+pb_sv_hit: Coup d'ennemi (demi-cœurs)
+pb_sv_foe: Type de l'attaque
+pb_sv_nofoe: Sans type
+pb_sv_pool: Santé à perdre
+pb_sv_soul: d'âme
+pb_sv_extra: de secondes chances
+pb_sv_type: Après le duel de types
+pb_sv_per: Dégâts subis par coup
+pb_sv_ignored: des coups ignorés
+pb_sv_hits: Coups que vous pouvez encaisser
+pb_sv_invuln: Invulnérable après un coup
+pb_sv_free_room: premier coup de chaque salle bloqué
+pb_sv_free_sec: un coup bloqué toutes les {n} s
+pb_sv_free_cycle: "{n} % du temps, rien ne peut vous blesser"
+pb_sv_free_floor: un coup mortel absorbé par étage (sans cœurs d'âme)
+pb_sv_per_floor: étage
+pb_sv_per_room: salle terminée
+pb_sv_per_3rooms: 3 salles terminées
+pb_sv_per_boss: boss
+pb_sv_per_kills: "{n} victoires"
+pb_sv_per_damage: "{n} dégâts infligés"
+pb_sv_per_buy: achat
+pb_sv_per_hit: coup reçu
+pb_sv_per_seconds: "{n} s de combat"
+pb_sv_nocap: ignore la limite de soin
+pb_sv_cap: compte dans la limite de soin
+pb_sv_healcap: Limite de soin des objets
+pb_sv_assume: "Un seul type de coup d'ennemi, en moyenne sur le combat : sans contact, dangers ni changement de type entre les coups. Les blocages par salle ou par durée, les soins et les cœurs d'âme sont listés, pas mélangés au nombre de coups. Les cœurs d'âme viennent de la case Cœurs d'âme."
+pb_sv_resist: résistance de type
+pb_sv_reduce: réduction fixe
+pb_sv_avoid: évite des coups
+pb_sv_dodge: esquive
+pb_sv_armor: armure
+pb_svk_resist: "coups {v} : −½ cœur (un coup d'un demi-cœur a 50 % de chances de ne rien faire)"
+pb_svk_reduce: "chaque coup d'un cœur ou plus coûte {v} de moins"
+pb_svk_avoid: "{v} des coups ne font rien"
+pb_svk_dodge: "{v} des coups esquivés (type Vol)"
+pb_svk_armor: "les coups d'un cœur ou plus coûtent ½ cœur de moins (armure du type Acier)"
+pb_fx_def_reduce: "Réduit les gros coups (−½ cœur)"
+pb_fx_def_resist: "Résiste à un type d'attaque"
+pb_fx_def_avoid: "Chance d'ignorer un coup"
+pb_fx_def_block: "Bloque un coup de temps en temps"
+pb_fx_def_cycle: "Brève invulnérabilité qui se répète"
+pb_fx_def_invuln: "Invulnérabilité plus longue après un coup"
+pb_fx_def_sash: "Survit à un coup mortel"
+pb_fx_def_revive: "Vous ranime une fois"
+pb_fx_def_lives: "Donne des vies, mais un seul cœur de santé"
+pb_fx_def_floorlife: "Absorbe un coup mortel une fois par étage"
+pb_fx_def_heal: "Vous soigne"
+pb_fx_def_soul: "Donne des cœurs d'âme"
+pb_fx_note_react: "Se déclenche quand vous êtes touché (dégâts, recul, téléportation) : non compté"
+pb_fx_note_enemy: "Affaiblit ou change les ennemis : non compté"
+pb_fx_note_guard: "Protection ou récompense particulière : non compté dans les nombres"

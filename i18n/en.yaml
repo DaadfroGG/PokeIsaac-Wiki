@@ -397,3 +397,57 @@ pb_fx_aura: "Aura around each shot: +{v} per second"
 pb_fx_vsstatus: "Hits poisoned enemies harder: +{v} per second"
 pb_k_aura: "enemies near a shot take 15 % of your Damage every 1/12 s"
 pb_k_vsstatus: "+50 % damage to poisoned enemies, counted for the time they are poisoned"
+pb_survival: Survival
+pb_sv_hit: Enemy hit (half hearts)
+pb_sv_foe: Attack type
+pb_sv_nofoe: No type
+pb_sv_pool: Health to lose
+pb_sv_soul: soul
+pb_sv_extra: from second chances
+pb_sv_type: After your type matchup
+pb_sv_per: Damage taken per hit
+pb_sv_ignored: of hits ignored
+pb_sv_hits: Hits you can take
+pb_sv_invuln: Invulnerable after a hit
+pb_sv_free_room: first hit of each room blocked
+pb_sv_free_sec: one hit blocked every {n} s
+pb_sv_free_cycle: "{n} % of the time nothing can hurt you"
+pb_sv_free_floor: one lethal hit absorbed per floor (no soul hearts)
+pb_sv_per_floor: floor
+pb_sv_per_room: room cleared
+pb_sv_per_3rooms: 3 rooms cleared
+pb_sv_per_boss: boss
+pb_sv_per_kills: "{n} kills"
+pb_sv_per_damage: "{n} damage dealt"
+pb_sv_per_buy: purchase
+pb_sv_per_hit: hit taken
+pb_sv_per_seconds: "{n} s in a fight"
+pb_sv_nocap: ignores the healing limit
+pb_sv_cap: counts toward the healing limit
+pb_sv_healcap: Item healing limit
+pb_sv_assume: "One kind of enemy hit, an average over the fight: no enemy contact, hazards or type changes between hits. Blocks per room or per time, healing and soul hearts are listed, not mixed into the hit count. Soul hearts come from the Soul hearts box."
+pb_sv_resist: type resistance
+pb_sv_reduce: flat reduction
+pb_sv_avoid: avoids hits
+pb_sv_dodge: dodge
+pb_sv_armor: armor
+pb_svk_resist: "{v} hits: −½ heart (a ½-heart hit has a 50 % chance to do nothing)"
+pb_svk_reduce: "every hit of 1 heart or more costs {v} less"
+pb_svk_avoid: "{v} of hits do nothing"
+pb_svk_dodge: "{v} of hits dodged (Flying type)"
+pb_svk_armor: "hits of 1 heart or more cost ½ heart less (Steel type armor)"
+pb_fx_def_reduce: "Reduces the damage of big hits (−½ heart)"
+pb_fx_def_resist: "Resists one type of attack"
+pb_fx_def_avoid: "Chance to ignore a hit"
+pb_fx_def_block: "Blocks a hit now and then"
+pb_fx_def_cycle: "Brief invulnerability that repeats"
+pb_fx_def_invuln: "Longer invulnerability after a hit"
+pb_fx_def_sash: "Survives one lethal hit"
+pb_fx_def_revive: "Revives you once"
+pb_fx_def_lives: "Gives lives, but only one heart of health"
+pb_fx_def_floorlife: "Absorbs a lethal hit once per floor"
+pb_fx_def_heal: "Heals you"
+pb_fx_def_soul: "Gives soul hearts"
+pb_fx_note_react: "Triggers when you are hit (damage, knock back, teleport): not counted"
+pb_fx_note_enemy: "Weakens or changes enemies: not counted"
+pb_fx_note_guard: "Special protection or reward: not counted in the numbers"

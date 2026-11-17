@@ -169,4 +169,17 @@ const ratio = (slug) => sp({ items: { [slug]: 1 } }).stats.dps / b0.stats.dps;
 near(ratio("flecha_venenosa"), 1.76, 0.06); near(ratio("carbon"), 1.23, 0.06); near(ratio("m_bola_arcilla"), 1.86, 0.06);
 near(ratio("m_nectar_rojo"), 1.31, 0.08); near(ratio("m_toxisfera"), 1.37, 0.1); near(ratio("m_corona_galanuez"), 1.07, 0.06);
 near(sp({ items: { m_puerro_grueso: 1 } }).steps.shot.hit, 2.2 - 1.8 * 150 / 270, 0.01);
+
+// survival, checked against the game: damage taken per hit (pikachu is Electric)
+const sv = (items, hit, foe, sit) => sp({ items, hit, foe, sit }).survival;
+near(sv({}, 3, "electric").perHit, 2.01, 0.01);          // Electric resists Electric: x0.67
+near(sv({}, 4).perHit, 4);                               // no type given
+near(sv({ hierro: 1 }, 2).perHit, 1); near(sv({ hierro: 1 }, 1).perHit, 1); near(sv({ hierro: 1 }, 6).perHit, 5);
+near(sv({ x_occa_berry: 1 }, 1, "fire").perHit, 0.5); near(sv({ x_occa_berry: 1 }, 3, "fire").perHit, 2); near(sv({ x_occa_berry: 1 }, 3, "water").perHit, 3);
+near(sv({ x_wacan_berry: 1 }, 1, "electric").perHit, 0.335, 0.01);   // 0.67 x 0.5
+near(sv({ cu_espejo: 1 }, 2).avoid, 0.2);
+near(sv({ d_revivir_maximo: 1 }, 2).extra, 4); near(sv({ cinta: 1 }, 2).extra, 1);
+near(sv({ arcilla_ligera: 1 }, 2).invuln, 70 * 1.6 / 60);
+near(sv({ d_cola_skitty: 1 }, 2).red, 2);
+near(sv({ raiz_grande: 1 }, 2).heals[0].perMin <= sv({ raiz_grande: 1 }, 2).healCap * 6, true);
 console.log("engine tests passed");

@@ -21,20 +21,22 @@
   const norm = (s) => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
   const icon = (p) => $("img", { src: ROOT + "assets/" + (p || "unknown.svg"), alt: "", loading: "lazy" });
 
-  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {}, t: {}, w: "" };
+  const DEF = { c: "pikachu", s: 0, l: 1, m: 1, f: 1, sh: 0, i: {}, t: {}, w: "", hit: 2, foe: "" };
   let data, E, S = Object.assign({}, DEF, { i: {}, t: {} });
 
   // ---------- state <-> link ----------
   function toHash() {
     const i = Object.entries(S.i).filter(([, n]) => n > 0).map(([k, n]) => k + ":" + n).join(",");
     const t = Object.entries(S.t).filter(([, v]) => +v > 0).map(([k, v]) => k + ":" + (+v)).join(",");
-    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "") + (t ? "&t=" + t : "") + (S.w ? "&w=" + S.w : "");
+    return `c=${S.c}&s=${S.s}&l=${S.l}&m=${S.m}&f=${S.f}&sh=${S.sh}` + (i ? "&i=" + i : "") + (t ? "&t=" + t : "") + (S.w ? "&w=" + S.w : "") + (S.hit !== 2 ? "&hit=" + S.hit : "") + (S.foe ? "&foe=" + S.foe : "");
   }
   function fromHash(h) {
     const p = new URLSearchParams(h.replace(/^#/, ""));
     const n = Object.assign({}, DEF, { i: {}, t: {} });
     if (p.get("c") && data.chars[p.get("c")]) n.c = p.get("c");
     if (p.get("w") && data.items[p.get("w")]) n.w = p.get("w");
+    if (p.get("hit") && +p.get("hit") >= 1 && +p.get("hit") <= 24) n.hit = Math.round(+p.get("hit"));
+    if (p.get("foe") && data.chart && data.chart[p.get("foe")]) n.foe = p.get("foe");
     for (const k of ["s", "l", "m", "f", "sh"]) if (p.has(k) && !isNaN(+p.get(k))) n[k] = +p.get(k);
     n.s = Math.min(2, Math.max(0, n.s)); n.l = Math.min(60, Math.max(1, n.l)); n.f = Math.max(1, Math.min(300, n.f));
     for (const part of (p.get("i") || "").split(",")) {
@@ -48,7 +50,7 @@
     }
     return n;
   }
-  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i, sit: S.t, weapon: S.w });
+  const bld = () => ({ char: S.c, stage: S.s, level: S.l, levels: !!S.m, floor: S.f, shiny: !!S.sh, items: S.i, sit: S.t, weapon: S.w, hit: S.hit, foe: S.foe });
   const linkOf = () => location.href.split("#")[0] + "#" + toHash();
 
   // ---------- inputs ----------
@@ -233,6 +235,31 @@
       ...ws.map((w) => $("p", { class: "note", text: `${nameOf(w.slug)}: ${fmt(w.dps, 1)} ${T.pb_dps_unit} · ${T["pb_w_" + w.model]}` })),
       $("p", { class: "note", text: T.pb_w_assume }));
   }
+  const ELEMS = ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"];
+  const half = (n) => fmt(n / 2, 1);
+  function survivalPanel(r) {
+    const v = r.survival;
+    if (!v) return null;
+    const hitIn = $("input", { type: "number", min: 1, max: 24, value: S.hit, "aria-label": T.pb_sv_hit, onchange: (ev) => { S.hit = Math.min(24, Math.max(1, Math.round(+ev.target.value || 2))); render(); } });
+    const foeSel = $("select", { "aria-label": T.pb_sv_foe, onchange: (ev) => { S.foe = ev.target.value; render(); } },
+      $("option", { value: "", text: T.pb_sv_nofoe }), ...ELEMS.map((e) => $("option", { value: e, text: T["pb_el_" + e] || e, selected: S.foe === e })));
+    const rows = [
+      stepRow(T.pb_sv_pool, `${half(v.red)} ${T.pb_hearts}` + (v.soulHalf ? ` + ${half(v.soulHalf)} ${T.pb_sv_soul}` : "") + (v.extra ? ` + ${half(v.extra)} ${T.pb_sv_extra}` : ""), "base"),
+      v.foe ? stepRow(T.pb_sv_type, `${half(v.hit)} × ${fmt(v.typeMult, 2)} = ${half(v.afterType)}`, "item") : null,
+      ...v.items.map((x) => stepRow(x.slug ? nameOf(x.slug) : T["pb_sv_" + x.what], T["pb_svk_" + x.what].replace("{v}", x.what === "avoid" || x.what === "dodge" ? fmt(x.v * 100, 0) + " %" : x.what === "resist" ? (T["pb_el_" + x.v] || x.v) : half(x.v)), "item")),
+      stepRow(T.pb_sv_per, `${half(v.perHit)} ${T.pb_hearts}` + (v.avoid ? ` · ${fmt(v.avoid * 100, 0)} % ${T.pb_sv_ignored}` : ""), "sub"),
+      stepRow(T.pb_sv_hits, isFinite(v.hitsToDie) ? fmt(v.hitsToDie, 1) : "∞", "final"),
+      stepRow(T.pb_sv_invuln, fmt(v.invuln, 1) + " s", "item"),
+      ...v.free.map((f) => stepRow(nameOf(f.slug), f.kind === "room" ? T.pb_sv_free_room : f.kind === "seconds" ? T.pb_sv_free_sec.replace("{n}", f.n) : f.kind === "cycle" ? T.pb_sv_free_cycle.replace("{n}", fmt(f.n * 100, 1)) : T.pb_sv_free_floor, "item")),
+      ...v.souls.map((x) => stepRow(nameOf(x.slug), `${half(x.half)} ${T.pb_sv_soul} / ${T["pb_sv_per_" + x.per.replace(" ", "")]}`, "item")),
+      ...v.heals.map((h) => stepRow(nameOf(h.slug), h.perMin != null ? `${half(h.perMin)} ${T.pb_hearts} / min` : h.perHit != null ? `${half(h.perHit)} ${T.pb_hearts} / ${T.pb_sv_per_hit}` : `${half(h.half)} ${T.pb_hearts} / ${T["pb_sv_per_" + h.per]}`.replace("{n}", h.n), "item", h.free ? T.pb_sv_nocap : T.pb_sv_cap)),
+      v.heals.length ? stepRow(T.pb_sv_healcap, `${half(v.healCap)} ${T.pb_hearts} / 10 s`, "sub") : null,
+    ];
+    return $("div", { class: "survival" }, $("h3", { text: T.pb_survival }),
+      $("div", { class: "sv-in" }, $("label", {}, T.pb_sv_hit, hitIn), $("label", {}, T.pb_sv_foe, foeSel), $("label", {}, T.pb_var_soul, $("input", { type: "number", min: 0, max: 6, value: S.t.soul || 0, onchange: (ev) => { S.t.soul = Math.min(6, Math.max(0, +ev.target.value || 0)); render(); } }))),
+      $("table", { class: "steps" }, $("tbody", {}, rows.filter(Boolean))),
+      $("p", { class: "note", text: T.pb_sv_assume }));
+  }
   function volleyNote(r) {
     const v = r.steps.volley, bits = [];
     bits.push(`${T.pb_volley_fwd} ${v.forward}`);
@@ -300,7 +327,7 @@
         r.stats.hitMul !== 1 ? row(T.pb_hit_mul, "×" + fmt(r.stats.hitMul, 3), null) : null,
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
-      dpsCalc(r), weaponList(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume })].filter(Boolean));
+      dpsCalc(r), weaponList(r), companionList(r), survivalPanel(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume })].filter(Boolean));
     sitBox.replaceChildren(sitControls(r));
     history.replaceState(null, "", "#" + toHash());
   }

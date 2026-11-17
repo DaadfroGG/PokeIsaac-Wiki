@@ -83,6 +83,13 @@
     return out;
   }
 
+  const DEF_KINDS = ["reduce", "resist", "avoid", "block", "cycle", "invuln", "sash", "revive", "lives", "floorlife", "heal", "soul"];
+  // How much damage one hit of the given size does to a Pokémon of the given types (the game rounds down to whole half hearts).
+  function typeMult(chart, att, e1, e2) {
+    if (!att || !chart[att]) return 1;
+    const a = chart[att][e1] == null ? 1 : chart[att][e1], c = e2 ? (chart[att][e2] == null ? 1 : chart[att][e2]) : 1;
+    return a !== 1 && c !== 1 && (a > 1) !== (c > 1) ? 1 : clamp(a * c, 0.45, 2.25);
+  }
   // Weapons. avg = your average damage of one hit, R = your delay between shots in ticks, ms = 1 + multishot.
   // Each returns { dps, hits (per attack), cycle (seconds between attacks), mult (damage of a hit as a share of your hit) }.
   const WEAPON_MODELS = {
@@ -160,7 +167,7 @@
     const effects = [], adds = { dmg: 0, rate: 0, speed: 0, range: 0, shot: 0, luck: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
     let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
-    const comps = [], weapons = [], hitFx = [], tickFx = [];
+    const comps = [], weapons = [], hitFx = [], tickFx = [], defFx = [];
     const MODULES = ["beam", "laser2", "charge"];
     for (const slug of present) {
       const copies = data.items[slug].h ? 1 : b.items[slug];
@@ -174,6 +181,7 @@
         else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model, module: MODULES.includes(fx.model) }); r.label = "weapon"; }
         else if (fx.k === "chancemul" || fx.k === "grow" || fx.k === "falloff" || fx.k === "fragments") { if (r.active) hitFx.push({ slug, fx, r }); r.label = fx.k; }
         else if (fx.k === "dot" || fx.k === "nail" || fx.k === "periodic" || fx.k === "hatch" || fx.k === "aura" || fx.k === "vsstatus") { if (r.active) tickFx.push({ slug, fx, r }); r.label = fx.k; }
+        else if (DEF_KINDS.includes(fx.k)) { defFx.push({ slug, fx, r }); r.label = "def_" + fx.k; }
         else if (fx.k === "note") { r.label = "note_" + fx.note; }
         else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
@@ -374,7 +382,67 @@
     out.steps.weapon = out.steps.weapons.find((x) => !x.module) || null;
     out.stats.dps = (out.stats.playerDps + out.stats.itemDps + out.stats.companionDps + out.stats.weaponDps) * defenseDown;
     out.steps.defenseDown = defenseDown;
+    out.survival = survival(data, b, out, ch, tierFor, has, defFx);
     return out;
+  }
+
+  // Defence: what one incoming hit costs, how many you can take, free blocks, invulnerability and healing.
+  function survival(data, b, out, ch, tierFor, has, defFx) {
+    const hit = clamp(+b.hit || 2, 1, 24), foe = b.foe || "";
+    const sit = b.sit || {};
+    const S = { hit, foe, items: [], free: [], heals: [], souls: [] };
+    S.typeMult = typeMult(data.chart || {}, foe, ch.elem, ch.elem2);
+    let d = hit * S.typeMult;
+    S.afterType = d;
+    const used = (f, slug, what) => S.items.push({ slug, what, v: f });
+    let avoidKeep = 1;
+    // flying types dodge a share of the hits (up to 10 %)
+    if (has("flying")) { const p = Math.min(0.1, 0.015 * tierFor("flying")); if (p > 0) { avoidKeep *= 1 - p; S.items.push({ slug: null, what: "dodge", v: p }); } }
+    for (const x of defFx) {
+      const f = x.fx;
+      if (f.k === "resist" && f.type === foe) { d = d > 1 ? d - 1 : d * 0.5; used(foe, x.slug, "resist"); }
+    }
+    for (const x of defFx) {
+      const f = x.fx;
+      if (f.k === "reduce" && d >= f.min) { d -= f.flat; used(f.flat, x.slug, "reduce"); }
+    }
+    if (has("steel") && tierFor("steel") >= 4 && d >= 2) { d -= 1; S.items.push({ slug: null, what: "armor", v: 1 }); }
+    let lifeHalf = 0, invuln = 70, sash = false, maxhpCap = null, lives = 0;
+    const heals = [], souls = [], free = [];
+    for (const x of defFx) {
+      const f = x.fx;
+      if (f.k === "avoid") { avoidKeep *= 1 - f.p; used(f.p, x.slug, "avoid"); }
+      else if (f.k === "block") free.push({ slug: x.slug, kind: f.per === "room" ? "room" : "seconds", n: f.n || 0 });
+      else if (f.k === "cycle") free.push({ slug: x.slug, kind: "cycle", n: f.on / f.of });
+      else if (f.k === "invuln") invuln = Math.min(150, invuln * f.mult);
+      else if (f.k === "sash") sash = true;
+      else if (f.k === "revive") lifeHalf += f.half;
+      else if (f.k === "lives") { lives += f.n * f.half; maxhpCap = f.maxhp; }
+      else if (f.k === "floorlife") free.push({ slug: x.slug, kind: "floor", n: 1 });
+      else if (f.k === "heal") heals.push(Object.assign({ slug: x.slug }, f));
+      else if (f.k === "soul") souls.push({ slug: x.slug, per: f.per, half: f.half });
+    }
+    S.avoid = 1 - avoidKeep;
+    S.perHit = Math.max(0, d);
+    S.invuln = invuln / 60;
+    const red = maxhpCap != null ? Math.min(out.stats.hp, maxhpCap) : out.stats.hp;
+    const soulHalf = Math.min(6, +sit.soul || 0) * 2;
+    S.red = red; S.soulHalf = soulHalf; S.extra = lifeHalf + lives + (sash ? 1 : 0);
+    S.pool = red + soulHalf + S.extra;
+    const cost = S.perHit * avoidKeep;
+    S.hitsToDie = cost > 0 ? S.pool / cost : Infinity;
+    S.free = free; S.souls = souls;
+    // healing: item healing is limited to 30 % of your health (at least 2 hearts) per 10 seconds
+    S.healCap = Math.max(4, Math.round(out.stats.hp * 0.3));
+    S.heals = heals.map((h) => {
+      const r = { slug: h.slug, per: h.per, n: h.n || 0, half: h.half, free: !!h.free };
+      if (h.per === "seconds") r.perMin = (60 / h.n) * h.half;
+      else if (h.per === "damage") r.perMin = (out.stats.dps * 60 / h.n) * h.half;
+      if (r.perMin != null && !r.free) r.perMin = Math.min(r.perMin, S.healCap * 6);
+      else if (h.per === "hit") r.perHit = h.p * h.half;
+      return r;
+    });
+    return S;
   }
 
   const api = { compute, dr, mulDr, levelK, typeTier, character, EVO, SIT_VARS, SIT_FLAGS, LIMITS };
