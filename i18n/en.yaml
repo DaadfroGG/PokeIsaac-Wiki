@@ -312,7 +312,7 @@ pb_s_ticks: Delay between shots
 pb_s_final: Result
 pb_s_raw_luck: Luck before the cap
 pb_x_dmg: "Bonuses from all your items add up first, then diminishing returns shrink the total (full up to +3, half up to +8, a quarter up to +40). Multipliers from different items multiply each other, and the product is capped at ×3. Level and shiny come last."
-pb_x_rate: "The delay between two shots goes down with each Fire rate bonus (diminishing returns after 3 points). Multipliers, level and shiny then change it. The game never goes faster than 12 shots per second."
+pb_x_rate: "The delay between two shots goes down with each Fire rate bonus (diminishing returns after 3 points). Multipliers, level and shiny then change it. The game waits whole ticks between two shots, so the delay is rounded up, and it never goes faster than 12 shots per second."
 pb_x_speed: "Item bonuses and conditional bonuses add to the base speed, then level and shiny multiply it. Speed never drops under 1.6."
 pb_x_luck: "Luck counts in full up to 10. Above that, each point only counts for a quarter."
 pb_x_dps: "Damage per shot = Damage × type bonuses × per-hit multipliers × the average critical hit factor. Then × shots per attack × attacks per second. Companions are added on top."
@@ -330,7 +330,7 @@ pb_w_defdown: Defense Down on the target (3 stacks)
 pb_w_assume: "Only the equipped weapon is counted. Estimate on a single enemy that stays in range, every hit lands, and you keep the weapon button held. Hits that need several enemies (jumps, splash, links) and the other weapons' small side effects are not counted."
 pb_w_laser: "bolt ×0.7 to the first target, ready again after 1.5 × your delay between shots"
 pb_w_knife: "bites ×1.1 (balance ×0.37), ready after 1.5 × your delay; Defense Down raises all your damage on the target"
-pb_w_ring: "blizzard zones ×0.78 every 0.25 s for 5.3 s at full charge (balance ×0.72); zones from successive uses overlap"
+pb_w_ring: "blizzard zones ×0.78 every 0.25 s for 5.3 s at full charge (balance ×0.72); zones from successive uses do not add up on one target"
 pb_w_epic: "earthquake ×3.4 at full charge (balance ×0.53), ground enemies only; rings from multishot hit for 12 % less each"
 pb_w_beam: "Hyper Beam after 16 hits (one per delay), 0.6 s of ×2.3 per 0.05 s (balance ×0.33), then a 0.57 s rest"
 pb_fx_weapon: Weapon, used with its own key
@@ -369,3 +369,5 @@ pb_when_first_hit: on the first hit of a room
 pb_var_missing: Red hearts missing
 pb_var_soul: Soul hearts
 pb_held: Held item
+pb_s_whole: Rounded up to whole ticks
+pb_volley_extra_hit: about {n} lands on one target

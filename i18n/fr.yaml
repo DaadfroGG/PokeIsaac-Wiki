@@ -312,7 +312,7 @@ pb_s_ticks: Délai entre deux tirs
 pb_s_final: Résultat
 pb_s_raw_luck: Chance avant le plafond
 pb_x_dmg: "Les bonus de tous vos objets s'additionnent d'abord, puis les rendements décroissants réduisent le total (plein jusqu'à +3, moitié jusqu'à +8, un quart jusqu'à +40). Les multiplicateurs d'objets différents se multiplient entre eux, et le produit est plafonné à ×3. Le niveau et la chromatique viennent en dernier."
-pb_x_rate: "Le délai entre deux tirs diminue à chaque bonus de Cadence (rendements décroissants après 3 points). Les multiplicateurs, le niveau et la chromatique le modifient ensuite. Le jeu ne dépasse jamais 12 tirs par seconde."
+pb_x_rate: "Le délai entre deux tirs diminue à chaque bonus de Cadence (rendements décroissants après 3 points). Les multiplicateurs, le niveau et la chromatique le modifient ensuite. Le jeu attend un nombre entier de ticks entre deux tirs, donc le délai est arrondi au tick supérieur, et il ne dépasse jamais 12 tirs par seconde."
 pb_x_speed: "Les bonus d'objets et les bonus conditionnels s'ajoutent à la vitesse de base, puis le niveau et la chromatique la multiplient. La vitesse ne descend jamais sous 1,6."
 pb_x_luck: "La Chance compte en entier jusqu'à 10. Au-delà, chaque point ne compte que pour un quart."
 pb_x_dps: "Dégâts par tir = Dégâts × bonus de type × multiplicateurs par coup × facteur moyen de coup critique. Puis × tirs par attaque × attaques par seconde. Les compagnons s'ajoutent par-dessus."
@@ -330,7 +330,7 @@ pb_w_defdown: Défense réduite sur la cible (3 cumuls)
 pb_w_assume: "Seule l'arme équipée est comptée. Estimation sur un seul ennemi qui reste à portée, chaque coup touche et vous gardez le bouton d'arme enfoncé. Les coups qui demandent plusieurs ennemis (rebonds, éclaboussures, liens) et les petits effets annexes des autres armes ne sont pas comptés."
 pb_w_laser: "éclair ×0,7 sur la première cible, prêt après 1,5 × votre délai entre deux tirs"
 pb_w_knife: "morsures ×1,1 (équilibrage ×0,37), prêt après 1,5 × votre délai ; Défense réduite augmente tous vos dégâts sur la cible"
-pb_w_ring: "zones de blizzard ×0,78 toutes les 0,25 s pendant 5,3 s à pleine charge (équilibrage ×0,72) ; les zones des utilisations successives se superposent"
+pb_w_ring: "zones de blizzard ×0,78 toutes les 0,25 s pendant 5,3 s à pleine charge (équilibrage ×0,72) ; les zones des utilisations successives ne s'additionnent pas sur une même cible"
 pb_w_epic: "séisme ×3,4 à pleine charge (équilibrage ×0,53), ennemis au sol seulement ; les anneaux du tir multiple font 12 % de moins chacun"
 pb_w_beam: "Ultralaser après 16 coups (un par délai), 0,6 s de ×2,3 toutes les 0,05 s (équilibrage ×0,33), puis 0,57 s de repos"
 pb_fx_weapon: Arme, utilisée avec sa propre touche
@@ -369,3 +369,5 @@ pb_when_first_hit: sur le premier coup d'une salle
 pb_var_missing: Cœurs rouges manquants
 pb_var_soul: Cœurs d'âme
 pb_held: Objet tenu
+pb_s_whole: Arrondi au tick supérieur
+pb_volley_extra_hit: environ {n} touche une cible unique

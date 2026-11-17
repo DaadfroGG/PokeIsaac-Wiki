@@ -17,9 +17,9 @@ near(E.mulDr(4), 2.725);
 near(E.compute(data, { char: "pikachu", levels: false, items: { x10: 1 } }).stats.damage, 9.5);
 // Stats in practice page: Protein + Calcium + Zinc on 4 damage / 4.3 shots/s
 const r = run({ items: { protein: 1, calcium: 1, zinc: 1 } });
-near(r.stats.damage, 4.9); near(r.stats.ticks, 10.9); near(r.stats.fireRate, 5.505, 0.01);
+near(r.stats.damage, 4.9); near(r.stats.ticks, 10.9); near(r.stats.fireRate, 60 / 11, 0.01);
 // fire rate table: 14 ticks with +10 -> 5.75 counted -> 7.3 shots/s; +15 on 10 ticks hits the 12/s cap
-data.items.f10 = { s: { rate: -10 }, t: "full" }; near(run({ items: { f10: 1 } }).stats.fireRate, 7.27, 0.01);
+data.items.f10 = { s: { rate: -10 }, t: "full" }; near(run({ items: { f10: 1 } }).stats.fireRate, 60 / 9, 0.01);
 data.chars.fast = [8, 4, 10, 4, 300, 9, 0, "normal", ""]; data.items.f15 = { s: { rate: -15 }, t: "full" };
 near(E.compute(data, { char: "fast", levels: false, items: { f15: 1 } }).stats.fireRate, 12);
 // slowdown counts in full: +4 delay on 14 ticks = 3.33 shots/s

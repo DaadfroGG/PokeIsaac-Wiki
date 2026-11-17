@@ -89,12 +89,8 @@
     laser: (avg, R, ms) => { const n = Math.min(5, ms), cycle = (1.5 * R) / 60; return { hits: n, mult: 0.7, cycle, dps: (n * 0.7 * avg) / cycle }; },
     // bites in a cone x1.1 with balance x0.37, and Defense Down: +12 % damage taken per stack, 3 stacks
     knife: (avg, R, ms) => { const n = Math.min(3, ms), cycle = (1.5 * Math.max(14, R)) / 60; return { hits: n, mult: 1.1 * 0.37, cycle, dps: (n * 1.1 * 0.37 * avg) / cycle, defenseDown: 1.36 }; },
-    // blizzard zone: x0.78 every 0.25 s for 5.3 s once fully charged, balance x0.72; zones of successive uses overlap (max 6)
-    ring: (avg, R) => {
-      const charge = Math.min(70, Math.max(22, 2 * R)), cd = 1.5 * Math.max(20, R), cycleT = Math.max(charge, cd), cycle = cycleT / 60;
-      const active = Math.min(6, 320 / cycleT);
-      return { hits: active, mult: 0.78 * 0.72, cycle: 0.25, zones: active, dps: active * 0.78 * 0.72 * avg * 4 };
-    },
+    // blizzard zone: x0.78 every 0.25 s for 5.3 s once fully charged, balance x0.72. Zones of successive uses do not add up on one target (measured against the game), so one zone counts.
+    ring: (avg) => ({ hits: 1, mult: 0.78 * 0.72, cycle: 0.25, zones: 1, dps: 0.78 * 0.72 * avg * 4 }),
     // earthquake at full charge x3.4, balance x0.53; multishot adds rings of -12 % damage each; charging goes on during the cooldown
     epic: (avg, R, ms) => {
       const charge = Math.min(70, Math.max(26, 2.4 * R)), cd = 1.5 * Math.max(30, 1.6 * R), cycle = Math.max(charge, cd) / 60;
@@ -209,9 +205,12 @@
     const bugMul = has("bug") ? 1 - 0.012 * tierFor("bug") : 1;
     const rateMulItems = muls.rate.reduce((a, m) => a * m.v, 1);
     const ticks = Math.max(5, (ch.rate + rateBonus) * rateMulItems * bugMul * sk.rate * lk.rate);
+    // The game waits whole ticks between two shots, so a delay of 12.38 ticks is really 13.
+    const shotTicks = Math.ceil(ticks - 1e-9);
     out.stats.ticks = ticks;
-    out.stats.fireRate = 60 / ticks;
-    out.steps.fireRate = { baseTicks: ch.rate, items: sum.rate, counted: rateBonus, itemMul: rateMulItems, bug: bugMul, shiny: sk.rate, level: lk.rate, capped: ticks === 5 };
+    out.stats.shotTicks = shotTicks;
+    out.stats.fireRate = 60 / shotTicks;
+    out.steps.fireRate = { baseTicks: ch.rate, items: sum.rate, counted: rateBonus, itemMul: rateMulItems, bug: bugMul, shiny: sk.rate, level: lk.rate, capped: ticks === 5, shotTicks };
 
     // Speed
     const speedAdd = evo.speed + adds.speed + (has("flying") ? 0.04 * tierFor("flying") : has("bug") ? 0.02 * tierFor("bug") : 0);
@@ -268,9 +267,14 @@
       echoShots = perAttack * Math.min(1, 24 / Math.max(1e-9, perAttack * out.stats.fireRate * 0.5)) * echo;
     }
     out.stats.shotsPerVolley = perAttack + echoShots;
-    out.steps.volley = { forward: fwd, rear, double, volley, extra: extraShots, echo: echoShots, hitMul, crit: mods.crit, critX };
+    // Chance shots fly in random directions: against one target about 1 in 10 lands (measured against the game), the rest are left out of the damage.
+    const EXTRA_HIT = 0.1;
+    const hitAttack = volley + extraShots * EXTRA_HIT;
+    const hitEcho = echo ? hitAttack * Math.min(1, 24 / Math.max(1e-9, hitAttack * out.stats.fireRate * 0.5)) * echo : 0;
+    out.stats.hitShots = hitAttack + hitEcho;
+    out.steps.volley = { forward: fwd, rear, double, volley, extra: extraShots, extraHit: EXTRA_HIT, echo: echoShots, hitMul, crit: mods.crit, critX };
     out.stats.hitMul = hitMul;
-    out.stats.playerDps = avg * out.stats.shotsPerVolley * out.stats.fireRate;
+    out.stats.playerDps = avg * out.stats.hitShots * out.stats.fireRate;
 
     // Companions: up to 3 (+2 per Apricorn Box, never more than 6) take the Balls in the order they were added.
     const cap = Math.min(6, 3 + famCapAdd);

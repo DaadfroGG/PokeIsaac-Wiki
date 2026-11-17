@@ -145,7 +145,7 @@
         stepRow(T.pb_s_final, fmt(s.damage), "final")], T.pb_x_dmg));
     // Fire rate
     const f = st.fireRate;
-    rows.push(calcRow(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, `60 ÷ ${fmt(s.ticks)} ${T.pb_ticks}`,
+    rows.push(calcRow(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, `60 ÷ ${s.shotTicks} ${T.pb_ticks}`,
       [stepRow(T.pb_s_base, `${fmt(f.baseTicks, 0)} ${T.pb_ticks}`, "base"),
         ...itemRows(c.rate, (v) => (v <= 0 ? "−" : "+") + fmt(Math.abs(v))), ...skippedRows(r, "rate"),
         f.items && f.items !== f.counted ? stepRow(T.pb_s_dr, (f.counted <= 0 ? "−" : "+") + fmt(Math.abs(f.counted)), "sub") : null,
@@ -154,6 +154,7 @@
         f.level !== 1 ? stepRow(T.pb_level_k, "× " + fmt(f.level, 3)) : null,
         f.shiny !== 1 ? stepRow(T.pb_shiny_k, "× " + fmt(f.shiny, 3)) : null,
         stepRow(T.pb_s_ticks, fmt(s.ticks) + (f.capped ? " (" + T.pb_cap + " 5)" : ""), "sub"),
+        s.shotTicks !== s.ticks ? stepRow(T.pb_s_whole, String(s.shotTicks), "sub") : null,
         stepRow(T.pb_s_final, fmt(s.fireRate) + " " + T.pb_shots_s, "final")], T.pb_x_rate));
     // Speed
     const sp = st.speed;
@@ -188,7 +189,7 @@
       stepRow(T.pb_crit, `${fmt(s.critChance * 100, 1)} % × ${fmt(s.critMult, 2)}  →  × ${fmt(sh.critF, 3)}`, "item",
         parts([cr.items ? `${T.pb_items} ${fmt(cr.items * 100, 0)} %` : null, cr.type ? `${T.pb_type_k} ${fmt(cr.type * 100, 1)} %` : null, `${T.pb_luck} ${fmt(cr.luck * 100, 1)} %`, cr.always ? T.pb_fx_alwayscrit : null])),
       stepRow(T.pb_per_shot, fmt(s.avgShot), "sub"),
-      stepRow(T.pb_volley, "× " + fmt(s.shotsPerVolley, 2), "item", volleyNote(r)),
+      stepRow(T.pb_volley, "× " + fmt(s.hitShots, 2), "item", volleyNote(r)),
       stepRow(T.pb_shots_s, "× " + fmt(s.fireRate), "item"),
       stepRow(T.pb_comp_player, fmt(s.playerDps, 1), "sub"),
       s.companionDps ? stepRow(T.pb_companions, "+ " + fmt(s.companionDps, 1), "item") : null,
@@ -236,7 +237,7 @@
     bits.push(`${T.pb_volley_fwd} ${v.forward}`);
     if (v.rear) bits.push(T.pb_volley_rear);
     if (v.double) bits.push(T.pb_volley_double);
-    if (v.extra) bits.push(`${T.pb_volley_extra} +${fmt(v.extra, 2)}`);
+    if (v.extra) bits.push(`${T.pb_volley_extra} +${fmt(v.extra, 2)} (${T.pb_volley_extra_hit.replace("{n}", fmt(v.extra * v.extraHit, 2))})`);
     if (v.echo) bits.push(`${T.pb_volley_echo} +${fmt(v.echo, 2)}`);
     return bits.join(" · ");
   }
