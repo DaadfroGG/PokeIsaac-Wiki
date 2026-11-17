@@ -52,9 +52,9 @@
   }
 
   // Situation: numbers and switches the player sets (coins, hits taken, standing still...). Missing = 0 / off.
-  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend"];
-  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing"];
-  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9 };
+  const SIT_VARS = ["coins", "hits", "floors", "rooms", "candies", "claw", "calm", "buys", "rend", "eye", "kills", "roomhits"];
+  const SIT_FLAGS = ["low_health", "just_hit", "standing_still", "mega_energy", "fight_start", "boss", "close", "slowed", "firing", "crown"];
+  const LIMITS = { coins: 250, hits: 10, floors: 14, rooms: 15, candies: 10, claw: 10, calm: 15, buys: 15, rend: 9, eye: 10, kills: 10, roomhits: 6 };
 
   // One effect record of an item. Returns { stat, add, mul, active } (add for flat bonuses, mul for multipliers).
   function evalFx(fx, ctx) {
@@ -101,15 +101,17 @@
     // Sum of every stat bonus given by the items (each copy counts), plus the evolution bonuses.
     const sum = { dmg: 0, rate: 0, speed: 0, hp: 0, range: 0, shot: 0, luck: 0 };
     const unsimulated = [], partial = [];
+    const contribSkipped = [];
     const contrib = { dmg: [], rate: [], speed: [], hp: [], range: [], shot: [], luck: [] };
     let nItems = 0;
     const present = [];
+    const whiteHerb = !!((b.items || {}).hierba_blanca > 0);
     for (const [slug, n] of Object.entries(b.items || {})) {
       const it = data.items[slug];
       if (!it || n <= 0) continue;
       nItems += n;
       present.push(slug);
-      for (const [k, v] of Object.entries(it.s || {})) { sum[k] += v * n; if (contrib[k]) contrib[k].push({ slug, n, v: v * n }); }
+      for (const [k, v] of Object.entries(it.s || {})) { if (whiteHerb && slug !== "hierba_blanca" && (k === "rate" ? v > 0 : v < 0)) { contribSkipped.push({ slug, k, v: v * n }); continue; } sum[k] += v * n; if (contrib[k]) contrib[k].push({ slug, n, v: v * n }); }
       if (it.t === "none") unsimulated.push(slug);
       else if (it.t === "partial") partial.push(slug);
     }
@@ -129,6 +131,7 @@
         if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
         if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
         if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
+        else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
         else if (fx.k === "famcap") { famCapAdd += fx.value * copies; r.label = "famcap"; r.v = fx.value * copies; }
         else if (fx.k === "mod") { mods[fx.mod] += fx.value * copies; r.label = fx.mod; r.v = fx.value * copies * (fx.mod === "crit" ? 8 : 1); }
@@ -143,7 +146,7 @@
     const evo = { hp: 0, dmg: 0, speed: 0 };
     for (let s = 1; s <= (b.stage || 0); s++) for (const k of ["hp", "dmg", "speed"]) evo[k] += EVO[Math.min(s, 2)][k] || 0;
 
-    const out = { tier, level: lv, nItems, unsimulated, partial, effects, shinyFocus: sk.focus, stats: {}, steps: {}, contrib, addList };
+    const out = { tier, level: lv, nItems, unsimulated, partial, effects, shinyFocus: sk.focus, stats: {}, steps: {}, contrib, addList, contribSkipped };
 
     // Damage
     const dmgBonus = sum.dmg + evo.dmg + adds.dmg;

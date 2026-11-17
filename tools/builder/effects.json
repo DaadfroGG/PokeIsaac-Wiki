@@ -1199,5 +1199,127 @@
     "value": 2
    }
   ]
+ },
+ "m_hoja_oro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.8
+   }
+  ]
+ },
+ "m_lente_recia": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.6
+   }
+  ]
+ },
+ "s_ataque_especial_x": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 1.5
+   }
+  ]
+ },
+ "m_dulce_nata": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 0.45
+   },
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.28
+   }
+  ]
+ },
+ "m_blanco": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "eye",
+    "per": 0.1,
+    "max": 10
+   }
+  ]
+ },
+ "d_emblema_kalos": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "dmg",
+    "value": 2,
+    "when": "crown"
+   }
+  ]
+ },
+ "m_bonguri_rojo": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "kills",
+    "per": 0.06,
+    "max": 10
+   }
+  ]
+ },
+ "d_baya_jaboca": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mulvar",
+    "stat": "dmg",
+    "var": "roomhits",
+    "per": 0.1,
+    "max": 6
+   }
+  ]
+ },
+ "m_pluma_impetu": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.5,
+    "when": "firing"
+   }
+  ]
+ },
+ "d_pase_corona": {
+  "done": true,
+  "fx": [
+   {
+    "k": "mul",
+    "stat": "rate",
+    "value": 0.67,
+    "when": "low_health"
+   }
+  ]
+ },
+ "hierba_blanca": {
+  "done": true,
+  "fx": [
+   {
+    "k": "nonegatives"
+   }
+  ]
  }
 }

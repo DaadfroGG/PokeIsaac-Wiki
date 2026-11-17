@@ -316,3 +316,10 @@ pb_x_rate: "The delay between two shots goes down with each Fire rate bonus (dim
 pb_x_speed: "Item bonuses and conditional bonuses add to the base speed, then level and shiny multiply it. Speed never drops under 1.6."
 pb_x_luck: "Luck counts in full up to 10. Above that, each point only counts for a quarter."
 pb_x_dps: "Damage per shot = Damage × type bonuses × per-hit multipliers × the average critical hit factor. Then × shots per attack × attacks per second. Companions are added on top."
+pb_s_herb: cancelled by White Herb
+pb_var_eye: Consecutive hits without a miss
+pb_var_kills: Enemies defeated in this room
+pb_var_roomhits: Hits taken in this room
+pb_flag_crown: Entered the room at full health, not hit since
+pb_when_crown: until you are hit
+pb_fx_nonegatives: Every penalty to your stats is cancelled

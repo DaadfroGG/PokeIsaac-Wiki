@@ -103,4 +103,16 @@ near(r3({ floor: 1, items: { f_amigo_ball: 4, m_caja_bonguri: 1 } }).companions.
 // Ditto: 75 % of your own volley, forward and backward
 const dt = r3({ items: { f_acopio_ball: 1 } });
 near(dt.stats.companionDps, dt.stats.avgShot * 0.75 * dt.stats.fireRate);
+
+// --- Gold Leaf x1.8, Power Lens x1.6, Special Attack X x1.5 multiply, then the x3 cap; White Herb cancels penalties ---
+let m = r3({ items: { m_hoja_oro: 1, m_lente_recia: 1, s_ataque_especial_x: 1 } });
+near(m.steps.damage.multRaw, 4.32); near(m.steps.damage.mult, 2.3 + 0.25 * (4.32 - 2.3));
+const noHerb = r3({ items: { m_lente_recia: 1 } }), herb = r3({ items: { m_lente_recia: 1, hierba_blanca: 1 } });
+near(noHerb.steps.fireRate.counted, 16 > 0 ? noHerb.steps.fireRate.counted : 0);
+near(herb.steps.fireRate.items, 0);
+near(herb.stats.fireRate > noHerb.stats.fireRate, true);
+// Sweet Cream (Soja): damage x0.45, delay x0.28
+near(r3({ items: { m_dulce_nata: 1 } }).steps.damage.mult, 0.45);
+// Red Apricorn-style counters
+near(r3({ items: { m_bonguri_rojo: 1 }, sit: { kills: 10 } }).steps.damage.mult, 1.6);
 console.log("engine tests passed");

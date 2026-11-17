@@ -119,6 +119,7 @@
     return $("tr", {}, $("td", { colspan: 2 }, $("details", Object.assign({ class: "calc" }, keepOpen(label)),
       $("summary", {}, $("span", { class: "l" }, label, $("span", { class: "why", text: formula })), $("span", { class: "v", text: value })), body)));
   }
+  const skippedRows = (r, key) => (r.contribSkipped || []).filter((x) => x.k === key).map((x) => stepRow($("span", {}, $("b", { text: nameOf(x.slug) }), " (" + T.pb_s_herb + ")"), "0", "item"));
   const dash = (v, d) => (v >= 0 ? "+" : "−") + fmt(Math.abs(v), d);
 
   function summary(r) {
@@ -129,7 +130,7 @@
     rows.push(calcRow(T.pb_damage, fmt(s.damage),
       parts([`(${fmt(d.base)}${d.counted ? " " + (d.counted >= 0 ? "+ " : "− ") + fmt(Math.abs(d.counted)) : ""})`, d.mult !== 1 ? "× " + fmt(d.mult, 3) : null, d.level !== 1 ? "× " + fmt(d.level, 3) : null, d.shiny !== 1 ? "× " + fmt(d.shiny, 3) : null]).replace(/ · /g, " "),
       [stepRow(T.pb_s_base, fmt(d.base), "base"),
-        ...itemRows(c.dmg, (v) => dash(v)),
+        ...itemRows(c.dmg, (v) => dash(v)), ...skippedRows(r, "dmg"),
         d.evo ? stepRow(T.pb_stage_bonus, dash(d.evo), "item") : null,
         ...al.dmg.map((x) => stepRow($("span", {}, $("b", { text: nameOf(x.slug) }), " (" + T.pb_s_cond.toLowerCase() + ")"), dash(x.v), "item")),
         d.items + d.evo !== d.counted ? stepRow(T.pb_s_total, dash(d.items + d.evo), "sub") : null,
@@ -144,7 +145,7 @@
     const f = st.fireRate;
     rows.push(calcRow(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, `60 ÷ ${fmt(s.ticks)} ${T.pb_ticks}`,
       [stepRow(T.pb_s_base, `${fmt(f.baseTicks, 0)} ${T.pb_ticks}`, "base"),
-        ...itemRows(c.rate, (v) => (v <= 0 ? "−" : "+") + fmt(Math.abs(v))),
+        ...itemRows(c.rate, (v) => (v <= 0 ? "−" : "+") + fmt(Math.abs(v))), ...skippedRows(r, "rate"),
         f.items && f.items !== f.counted ? stepRow(T.pb_s_dr, (f.counted <= 0 ? "−" : "+") + fmt(Math.abs(f.counted)), "sub") : null,
         ...(r.effects.filter((e) => e.stat === "rate" && e.mul !== 1 && e.active).map((e) => stepRow($("b", { text: nameOf(e.slug) }), "× " + fmt(e.mul, 3), "item"))),
         f.bug !== 1 ? stepRow(T.pb_type_k, "× " + fmt(f.bug, 3)) : null,
@@ -154,7 +155,7 @@
         stepRow(T.pb_s_final, fmt(s.fireRate) + " " + T.pb_shots_s, "final")], T.pb_x_rate));
     // Speed
     const sp = st.speed;
-    rows.push(calcRow(T.pb_speed, fmt(s.speed), "", [stepRow(T.pb_s_base, fmt(sp.base), "base"), ...itemRows(c.speed, (v) => dash(v)),
+    rows.push(calcRow(T.pb_speed, fmt(s.speed), "", [stepRow(T.pb_s_base, fmt(sp.base), "base"), ...itemRows(c.speed, (v) => dash(v)), ...skippedRows(r, "speed"),
       sp.evo ? stepRow(T.pb_stage_bonus, dash(sp.evo), "item") : null,
       ...al.speed.map((x) => stepRow($("span", {}, $("b", { text: nameOf(x.slug) }), " (" + T.pb_s_cond.toLowerCase() + ")"), dash(x.v), "item")),
       sp.type ? stepRow(T.pb_type_k, dash(sp.type), "item") : null,
@@ -162,7 +163,7 @@
       stepRow(T.pb_s_final, fmt(s.speed), "final")], T.pb_x_speed));
     // Range, shot speed
     rows.push(calcRow(T.pb_range, fmt(s.range, 0) + " px", "", [stepRow(T.pb_s_base, fmt(st.range.base, 0), "base"), stepRow(T.pb_global, "+50", "item"), ...itemRows(c.range, (v) => dash(v, 0)), stepRow(T.pb_s_final, fmt(s.range, 0) + " px", "final")], null));
-    rows.push(calcRow(T.pb_shot_speed, fmt(s.shotSpeed), "", [stepRow(T.pb_s_base, fmt(st.shotSpeed.base), "base"), ...itemRows(c.shot, (v) => dash(v)), stepRow(T.pb_s_final, fmt(s.shotSpeed), "final")], null));
+    rows.push(calcRow(T.pb_shot_speed, fmt(s.shotSpeed), "", [stepRow(T.pb_s_base, fmt(st.shotSpeed.base), "base"), ...itemRows(c.shot, (v) => dash(v)), ...skippedRows(r, "shot"), stepRow(T.pb_s_final, fmt(s.shotSpeed), "final")], null));
     // Luck
     const lu = st.luck;
     rows.push(calcRow(T.pb_luck, fmt(s.luck), "", [stepRow(T.pb_s_base, fmt(lu.base), "base"), ...itemRows(c.luck, (v) => dash(v)),
@@ -170,7 +171,7 @@
       lu.raw > 10 ? stepRow(T.pb_s_raw_luck, fmt(lu.raw), "sub") : null, stepRow(T.pb_s_final, fmt(s.luck), "final")], T.pb_x_luck));
     // Health
     const h = st.hp;
-    rows.push(calcRow(T.pb_health, fmt(s.hearts, 1) + " " + T.pb_hearts, "", [stepRow(T.pb_s_base, fmt(h.base / 2, 1), "base"), ...itemRows(c.hp, (v) => dash(v / 2, 1)),
+    rows.push(calcRow(T.pb_health, fmt(s.hearts, 1) + " " + T.pb_hearts, "", [stepRow(T.pb_s_base, fmt(h.base / 2, 1), "base"), ...itemRows(c.hp, (v) => dash(v / 2, 1)), ...skippedRows(r, "hp"),
       h.evo ? stepRow(T.pb_stage_bonus, dash(h.evo / 2, 1), "item") : null, stepRow(T.pb_s_final + (h.capped ? " (" + T.pb_cap + " 12)" : ""), fmt(s.hearts, 1) + " " + T.pb_hearts, "final")], null));
     return rows;
   }

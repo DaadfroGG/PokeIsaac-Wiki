@@ -316,3 +316,10 @@ pb_x_rate: "Le délai entre deux tirs diminue à chaque bonus de Cadence (rendem
 pb_x_speed: "Les bonus d'objets et les bonus conditionnels s'ajoutent à la vitesse de base, puis le niveau et la chromatique la multiplient. La vitesse ne descend jamais sous 1,6."
 pb_x_luck: "La Chance compte en entier jusqu'à 10. Au-delà, chaque point ne compte que pour un quart."
 pb_x_dps: "Dégâts par tir = Dégâts × bonus de type × multiplicateurs par coup × facteur moyen de coup critique. Puis × tirs par attaque × attaques par seconde. Les compagnons s'ajoutent par-dessus."
+pb_s_herb: annulé par l'Herbe Blanche
+pb_var_eye: Coups consécutifs sans rater
+pb_var_kills: Ennemis vaincus dans cette salle
+pb_var_roomhits: Coups reçus dans cette salle
+pb_flag_crown: Entré dans la salle à pleine santé, sans être touché depuis
+pb_when_crown: jusqu'à un coup reçu
+pb_fx_nonegatives: Tous les malus de vos stats sont annulés
