@@ -17,5 +17,7 @@
   color: --c-world
 - key: mechanics
   color: --c-mech
+- key: tips
+  color: --c-tips
 - key: music
   color: --c-music

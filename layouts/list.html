@@ -8,9 +8,7 @@
 <div class="content">
 <div class="lead">{{ .Content }}</div>
 {{- if eq $sec "world" }}{{ with site.GetPage "/world/floors" }}<p>{{ T "see_also" }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
-{{- if eq $sec "mechanics" }}{{ with site.GetPage "/mechanics/guides" }}
-<h2>{{ T "guides" }}</h2><p class="note">{{ T "guides_note" }}</p><ul class="guides">{{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>
-<h2>{{ T "sec_mechanics" }}</h2>{{ end }}{{ end }}
+{{- if eq $sec "mechanics" }}{{ with site.GetPage "/tips" }}<p>{{ T "see_also" }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
 <div class="filters" data-table="{{ $sec }}-table">
   <input type="search" placeholder="{{ T "filter_ph" }}" aria-label="{{ T "aria_filter" }}">
   {{- if $typed }}{{ $used := slice }}{{ range $ents }}{{ with .Params.element }}{{ $used = $used | append . }}{{ end }}{{ end }}

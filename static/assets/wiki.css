@@ -30,6 +30,7 @@
   --c-world: #c878ff;
   --c-mech: #ff9ae0;
   --c-music: #ffb08a;
+  --c-tips: #ffd23c;
 }
 
 * { box-sizing: border-box; }
@@ -449,3 +450,8 @@ audio.track { display: block; width: min(100%, 480px); margin: 4px 0 18px; color
 .tc-grid:has(tbody td:nth-child(17):hover) :is(td,th):nth-child(17) { background-color: rgba(255,255,255,.07); }
 .tc-grid:has(tbody td:nth-child(18):hover) :is(td,th):nth-child(18) { background-color: rgba(255,255,255,.07); }
 .tc-grid:has(tbody td:nth-child(19):hover) :is(td,th):nth-child(19) { background-color: rgba(255,255,255,.07); }
+ul.tiplist { list-style: none; padding: 0; display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+ul.tiplist li { border: 1px solid var(--line2, #3a3450); border-radius: 10px; padding: 10px 12px; }
+ul.tiplist li a { display: flex; gap: 8px; align-items: center; }
+ul.tiplist li span { display: block; font-size: 13px; color: var(--muted, #9a94b0); margin-top: 4px; }
+ul.tiplist li img { width: 40px; height: 40px; object-fit: contain; image-rendering: pixelated; }

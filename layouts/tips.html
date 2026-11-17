@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{- /* Tips: the tools and the strategy guides, in one place. Tools are pages of this section, guides live in mechanics/guides. */ -}}
+<h1 class="title">{{ .Title }}</h1>
+<div class="content">
+<div class="lead">{{ .Content }}</div>
+{{- $tools := where .RegularPages "Params.id" "!=" nil }}
+{{- if $tools }}<h2>{{ T "tips_tools" }}</h2>
+<ul class="tiplist">{{ range $tools.ByTitle }}<li><a href="{{ .RelPermalink }}">{{ partial "img.html" (dict "icon" .Params.icon) }}<b>{{ .Title }}</b></a><span>{{ with .Params.names }}{{ with index . site.Language.Lang }}{{ .desc }}{{ end }}{{ end }}</span></li>{{ end }}</ul>{{ end }}
+{{- with site.GetPage "/mechanics/guides" }}
+<h2>{{ T "guides" }}</h2><p class="note">{{ T "guides_note" }}</p>
+<ul class="guides">{{ range .RegularPages.ByWeight }}<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>{{ end }}</ul>{{ end }}
+</div>
+{{ end }}
