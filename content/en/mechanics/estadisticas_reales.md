@@ -77,13 +77,13 @@ Across the roster, half of the Pokémon are around these values (the Pokémon pa
 | **Luck** | Added to your Luck | | Full up to 10, a quarter above |
 
 ## What a fire rate bonus really does
-Shots per second = 60 ÷ (ticks between shots − counted bonus). Because the delay shrinks, each new point helps more than the last one in shots per second, but the diminishing returns hold the total back.
+Shots per second = 60 ÷ (ticks between shots − counted bonus). The game waits a whole number of ticks between two shots, so a delay that is not a whole number is rounded up (12.4 ticks is really 13). Because the delay shrinks, each new point helps more than the last one in shots per second, but the diminishing returns hold the total back.
 
 | Shots/s of the Pokémon | +1 | +2 | +3 | +5 | +7 | +10 | +15 |
 |---|---|---|---|---|---|---|---|
-| 3.5 | 3.8 | 4 | 4.3 | 4.6 | 5 | 5.3 | 6 |
-| 4.3 | 4.6 | 5 | 5.5 | 6 | 6.7 | 7.3 | 8.6 |
-| 5 | 5.5 | 6 | 6.7 | 7.5 | 8.6 | 9.6 | 12 |
+| 3.5 | 3.8 | 4 | 4.3 | 4.6 | 5 | 5 | 6 |
+| 4.3 | 4.6 | 5 | 5.5 | 6 | 6.7 | 6.7 | 8.6 |
+| 5 | 5.5 | 6 | 6.7 | 7.5 | 8.6 | 8.6 | 12 |
 | 6 | 6.7 | 7.5 | 8.6 | 10 | 12 | 12 | 12 |
 
 The columns are the total fire rate bonus from items (before the diminishing returns, which are already applied in the table). A fire rate penalty (items marked "Fire rate −") adds its points as extra delay: +4 delay on a 4.3 shots/s Pokémon gives 3.3 shots/s.
@@ -91,7 +91,7 @@ The columns are the total fire rate bonus from items (before the diminishing ret
 ## Example
 A 4 damage, 4.3 shots/s Pokémon picks up [Protein](../items/proteina.html) (Damage +0.5), [Calcium](../items/calcio.html) (Fire rate +2) and [Zinc](../items/zinc.html) (Damage +0.4, Fire rate +1.2):
 - Damage: 4 + 0.5 + 0.4 = **4.9** (+23 %).
-- Fire rate: 2 + 1.2 = 3.2 points. 3 count in full and 0.2 at half: 3.1. The delay goes from 14 to 10.9 ticks: **5.5 shots/s** (+28 %).
+- Fire rate: 2 + 1.2 = 3.2 points. 3 count in full and 0.2 at half: 3.1. The delay goes from 14 to 10.9 ticks, which the game rounds up to 11: **5.5 shots/s** (+28 %).
 
 ## What also changes the numbers
 - **Level** (Classic and Liga): a Pokémon gains damage, fire rate and speed with its level, see [Pokémon levels](niveles_pokemon.html).

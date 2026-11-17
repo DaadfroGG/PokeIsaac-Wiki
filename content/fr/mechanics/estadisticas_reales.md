@@ -77,13 +77,13 @@ Dans le roster, la moitié des Pokémon sont autour de ces valeurs (les pages Po
 | **Chance** | S'ajoute à votre Chance | | En entier jusqu'à 10, au quart au-delà |
 
 ## Ce que fait vraiment un bonus de cadence
-Tirs par seconde = 60 ÷ (ticks entre deux tirs − bonus compté). Comme le délai diminue, chaque nouveau point aide plus que le précédent en tirs par seconde, mais les rendements décroissants freinent le total.
+Tirs par seconde = 60 ÷ (ticks entre deux tirs − bonus compté). Le jeu attend un nombre entier de ticks entre deux tirs : un délai qui n'est pas entier est arrondi au tick supérieur (12,4 ticks comptent 13). Comme le délai diminue, chaque nouveau point aide plus que le précédent en tirs par seconde, mais les rendements décroissants freinent le total.
 
 | Tirs/s du Pokémon | +1 | +2 | +3 | +5 | +7 | +10 | +15 |
 |---|---|---|---|---|---|---|---|
-| 3,5 | 3,8 | 4 | 4,3 | 4,6 | 5 | 5,3 | 6 |
-| 4,3 | 4,6 | 5 | 5,5 | 6 | 6,7 | 7,3 | 8,6 |
-| 5 | 5,5 | 6 | 6,7 | 7,5 | 8,6 | 9,6 | 12 |
+| 3,5 | 3,8 | 4 | 4,3 | 4,6 | 5 | 5 | 6 |
+| 4,3 | 4,6 | 5 | 5,5 | 6 | 6,7 | 6,7 | 8,6 |
+| 5 | 5,5 | 6 | 6,7 | 7,5 | 8,6 | 8,6 | 12 |
 | 6 | 6,7 | 7,5 | 8,6 | 10 | 12 | 12 | 12 |
 
 Les colonnes sont le bonus de cadence total venant des objets (les rendements décroissants sont déjà appliqués dans le tableau). Un malus de cadence (objets marqués « Cadence − ») ajoute ses points en délai : +4 de délai sur un Pokémon à 4,3 tirs/s donne 3,3 tirs/s.
@@ -91,7 +91,7 @@ Les colonnes sont le bonus de cadence total venant des objets (les rendements d�
 ## Exemple
 Un Pokémon à 4 dégâts et 4,3 tirs/s ramasse une [Protéine](../items/proteina.html) (Dégâts +0,5), un [Calcium](../items/calcio.html) (Cadence +2) et un [Zinc](../items/zinc.html) (Dégâts +0,4, Cadence +1,2) :
 - Dégâts : 4 + 0,5 + 0,4 = **4,9** (+23 %).
-- Cadence : 2 + 1,2 = 3,2 points. 3 comptent en entier et 0,2 à moitié : 3,1. Le délai passe de 14 à 10,9 ticks : **5,5 tirs/s** (+28 %).
+- Cadence : 2 + 1,2 = 3,2 points. 3 comptent en entier et 0,2 à moitié : 3,1. Le délai passe de 14 à 10,9 ticks, que le jeu arrondit à 11 : **5,5 tirs/s** (+28 %).
 
 ## Ce qui change aussi les nombres
 - **Le niveau** (Classique et Ligue) : un Pokémon gagne dégâts, cadence et vitesse avec son niveau, voir [Niveaux des Pokémon](niveles_pokemon.html).

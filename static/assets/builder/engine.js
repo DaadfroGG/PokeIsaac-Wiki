@@ -87,8 +87,8 @@
   const WEAPON_MODELS = {
     // bolt that jumps: first target takes x0.7 (more targets add more), ready again after 1.5 x delay
     laser: (avg, R, ms) => { const n = Math.min(5, ms), cycle = (1.5 * R) / 60; return { hits: n, mult: 0.7, cycle, dps: (n * 0.7 * avg) / cycle }; },
-    // bites in a cone x1.1 with balance x0.37, and Defense Down: +12 % damage taken per stack, 3 stacks
-    knife: (avg, R, ms) => { const n = Math.min(3, ms), cycle = (1.5 * Math.max(14, R)) / 60; return { hits: n, mult: 1.1 * 0.37, cycle, dps: (n * 1.1 * 0.37 * avg) / cycle, defenseDown: 1.36 }; },
+    // bites in a cone x1.1 with balance x0.37 (extra bites from multishot cover more ground but hit one target once, as measured against the game), and Defense Down: +12 % damage taken per stack, 3 stacks
+    knife: (avg, R) => { const n = 1, cycle = (1.5 * Math.max(14, R)) / 60; return { hits: n, mult: 1.1 * 0.37, cycle, dps: (n * 1.1 * 0.37 * avg) / cycle, defenseDown: 1.36 }; },
     // blizzard zone: x0.78 every 0.25 s for 5.3 s once fully charged, balance x0.72. Zones of successive uses do not add up on one target (measured against the game), so one zone counts.
     ring: (avg) => ({ hits: 1, mult: 0.78 * 0.72, cycle: 0.25, zones: 1, dps: 0.78 * 0.72 * avg * 4 }),
     // earthquake at full charge x3.4, balance x0.53; multishot adds rings of -12 % damage each; charging goes on during the cooldown
