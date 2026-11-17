@@ -293,3 +293,26 @@ pb_el_dragon: Dragon
 pb_el_dark: Ténèbres
 pb_el_steel: Acier
 pb_el_fairy: Fée
+pb_companions: Compagnons
+pb_comp_player: Vous
+pb_comp_waiting: dans le Sac
+pb_comp_base: "Dégâts par tir de compagnon à cet étage, avant multiplicateurs :"
+pb_dps_unit: DPS
+pb_fx_companion: Compagnon ×{v}
+pb_fx_famk: "Dégâts des compagnons ×{v}"
+pb_fx_famcap: "Limite de compagnons +{v}"
+pb_how: Comment les dégâts par seconde sont calculés
+pb_s_base: Base
+pb_s_total: Total des bonus
+pb_s_dr: Après rendements décroissants
+pb_s_result_add: Base + bonus comptés
+pb_s_capped: Après le plafond des multiplicateurs
+pb_s_cond: Situation
+pb_s_ticks: Délai entre deux tirs
+pb_s_final: Résultat
+pb_s_raw_luck: Chance avant le plafond
+pb_x_dmg: "Les bonus de tous vos objets s'additionnent d'abord, puis les rendements décroissants réduisent le total (plein jusqu'à +3, moitié jusqu'à +8, un quart jusqu'à +40). Les multiplicateurs d'objets différents se multiplient entre eux, et le produit est plafonné à ×3. Le niveau et la chromatique viennent en dernier."
+pb_x_rate: "Le délai entre deux tirs diminue à chaque bonus de Cadence (rendements décroissants après 3 points). Les multiplicateurs, le niveau et la chromatique le modifient ensuite. Le jeu ne dépasse jamais 12 tirs par seconde."
+pb_x_speed: "Les bonus d'objets et les bonus conditionnels s'ajoutent à la vitesse de base, puis le niveau et la chromatique la multiplient. La vitesse ne descend jamais sous 1,6."
+pb_x_luck: "La Chance compte en entier jusqu'à 10. Au-delà, chaque point ne compte que pour un quart."
+pb_x_dps: "Dégâts par tir = Dégâts × bonus de type × multiplicateurs par coup × facteur moyen de coup critique. Puis × tirs par attaque × attaques par seconde. Les compagnons s'ajoutent par-dessus."

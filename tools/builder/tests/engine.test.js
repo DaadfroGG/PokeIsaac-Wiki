@@ -81,4 +81,26 @@ near(r3({ items: { cinta_experto: 1 }, sit: { boss: true } }).stats.avgShot / r3
 // Fire gem: +30 % damage to Fire shots only
 near(r3({ char: "charmander", items: { x_fire_gem: 1 } }).stats.avgShot / r3({ char: "charmander", items: {} }).stats.avgShot > 1.3, true);
 near(r3({ items: { x_fire_gem: 1 } }).stats.typeDamage, 1);
+
+// --- phase 4: companions ---
+// Pichu (Friend Ball): shoots every 0.5 s for 2 + 0.4 per floor passed
+let pc = r3({ floor: 1, items: { f_amigo_ball: 1 } });
+near(pc.stats.companionDps, 2 * 2); near(pc.companions[0].perShot, 2);
+near(r3({ floor: 11, items: { f_amigo_ball: 1 } }).stats.companionDps, 6 * 2);
+// Exp. Share doubles it; Igglybuff x1.8 every 40 ticks; Togepi 3 shots every 38 ticks
+near(r3({ floor: 1, items: { f_amigo_ball: 1, repartir_exp: 1 } }).stats.companionDps, 8);
+near(r3({ floor: 1, items: { f_amor_ball: 1 } }).stats.companionDps, 2 * 1.8 * 60 / 40);
+near(r3({ floor: 1, items: { f_ensueno_ball: 1 } }).stats.companionDps, 3 * 2 * 60 / 38);
+// A Fire Gem boosts a Fire companion's type only; Electric Pichu is unaffected
+near(r3({ floor: 1, items: { f_amigo_ball: 1, x_fire_gem: 1 } }).stats.companionDps, 4);
+near(r3({ floor: 1, items: { f_amigo_ball: 1, x_electric_gem: 1 } }).stats.companionDps, 4 * 1.3);
+// Expert Belt reaches companions against bosses
+near(r3({ floor: 1, items: { f_amigo_ball: 1, cinta_experto: 1 }, sit: { boss: true } }).stats.companionDps, 4 * 1.3);
+// Limit of 3 companions, 5 with an Apricorn Box
+const four = r3({ floor: 1, items: { f_amigo_ball: 4 } });
+near(four.companions.filter((c) => c.active).length, 3);
+near(r3({ floor: 1, items: { f_amigo_ball: 4, m_caja_bonguri: 1 } }).companions.filter((c) => c.active).length, 4);
+// Ditto: 75 % of your own volley, forward and backward
+const dt = r3({ items: { f_acopio_ball: 1 } });
+near(dt.stats.companionDps, dt.stats.avgShot * 0.75 * dt.stats.fireRate);
 console.log("engine tests passed");

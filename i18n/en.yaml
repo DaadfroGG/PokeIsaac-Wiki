@@ -293,3 +293,26 @@ pb_el_dragon: Dragon
 pb_el_dark: Dark
 pb_el_steel: Steel
 pb_el_fairy: Fairy
+pb_companions: Companions
+pb_comp_player: You
+pb_comp_waiting: waiting in the Bag
+pb_comp_base: "Damage per companion shot at this floor, before multipliers:"
+pb_dps_unit: DPS
+pb_fx_companion: Companion ×{v}
+pb_fx_famk: "Companion damage ×{v}"
+pb_fx_famcap: "Companion limit +{v}"
+pb_how: How the damage per second is calculated
+pb_s_base: Base
+pb_s_total: Total of the bonuses
+pb_s_dr: After diminishing returns
+pb_s_result_add: Base + counted bonuses
+pb_s_capped: After the multiplier cap
+pb_s_cond: Situation
+pb_s_ticks: Delay between shots
+pb_s_final: Result
+pb_s_raw_luck: Luck before the cap
+pb_x_dmg: "Bonuses from all your items add up first, then diminishing returns shrink the total (full up to +3, half up to +8, a quarter up to +40). Multipliers from different items multiply each other, and the product is capped at ×3. Level and shiny come last."
+pb_x_rate: "The delay between two shots goes down with each Fire rate bonus (diminishing returns after 3 points). Multipliers, level and shiny then change it. The game never goes faster than 12 shots per second."
+pb_x_speed: "Item bonuses and conditional bonuses add to the base speed, then level and shiny multiply it. Speed never drops under 1.6."
+pb_x_luck: "Luck counts in full up to 10. Above that, each point only counts for a quarter."
+pb_x_dps: "Damage per shot = Damage × type bonuses × per-hit multipliers × the average critical hit factor. Then × shots per attack × attacks per second. Companions are added on top."

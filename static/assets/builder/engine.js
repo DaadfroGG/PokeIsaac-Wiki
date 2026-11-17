@@ -66,7 +66,7 @@
       when === "odd_floor" ? (ctx.floor - 1) % 2 === 0 :
       when === "even_floor" ? (ctx.floor - 1) % 2 === 1 :
       !!sit[when];
-    const out = { stat: fx.stat, add: 0, mul: 1, active: on, when: when || null, kind: fx.k, v: fx.value };
+    const out = { stat: fx.stat, add: 0, mul: 1, active: on, when: when || null, kind: fx.k, v: fx.value, fam: !!fx.fam };
     if (!(fx.k in { add: 1, mul: 1, mulvar: 1 })) { out.active = on; return out; }
     if (fx.k === "add") {
       if (fx.var) {
@@ -101,6 +101,7 @@
     // Sum of every stat bonus given by the items (each copy counts), plus the evolution bonuses.
     const sum = { dmg: 0, rate: 0, speed: 0, hp: 0, range: 0, shot: 0, luck: 0 };
     const unsimulated = [], partial = [];
+    const contrib = { dmg: [], rate: [], speed: [], hp: [], range: [], shot: [], luck: [] };
     let nItems = 0;
     const present = [];
     for (const [slug, n] of Object.entries(b.items || {})) {
@@ -108,23 +109,29 @@
       if (!it || n <= 0) continue;
       nItems += n;
       present.push(slug);
-      for (const [k, v] of Object.entries(it.s || {})) sum[k] += v * n;
+      for (const [k, v] of Object.entries(it.s || {})) { sum[k] += v * n; if (contrib[k]) contrib[k].push({ slug, n, v: v * n }); }
       if (it.t === "none") unsimulated.push(slug);
       else if (it.t === "partial") partial.push(slug);
     }
     // Conditional effects: each item counts once, however many copies you hold.
     const ctx = { sit: b.sit || {}, elem: ch.elem, floor: b.floor || 1, nItems };
+    const addList = { dmg: [], rate: [], speed: [] };
     const effects = [], adds = { dmg: 0, rate: 0, speed: 0 }, muls = { dmg: [], rate: [], speed: [], hit: [] };
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
-    let rear = false, double = false, echo = 0, alwaysCrit = false;
+    let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
+    const comps = [];
     for (const slug of present) {
       const copies = b.items[slug];
       for (const fx of data.items[slug].e || []) {
         const r = evalFx(fx, ctx);
         r.slug = slug; effects.push(r);
-        if (r.add) adds[r.stat] += r.add;
+        if (r.add) { adds[r.stat] += r.add; addList[r.stat].push({ slug, v: r.add }); }
         if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
-        if (fx.k === "mod") { mods[fx.mod] += fx.value * copies; r.label = fx.mod; r.v = fx.value * copies * (fx.mod === "crit" ? 8 : 1); }
+        if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
+        if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
+        else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
+        else if (fx.k === "famcap") { famCapAdd += fx.value * copies; r.label = "famcap"; r.v = fx.value * copies; }
+        else if (fx.k === "mod") { mods[fx.mod] += fx.value * copies; r.label = fx.mod; r.v = fx.value * copies * (fx.mod === "crit" ? 8 : 1); }
         else if (fx.k === "typeboost") { boosts.push({ elem: fx.elem, mul: fx.mul, tier: fx.tier || 0 }); r.label = fx.tier ? "plate" : "boost"; r.v = fx.mul; r.elem = fx.elem; }
         else if (fx.k === "rear") { rear = true; r.label = "rear"; }
         else if (fx.k === "double") { double = true; r.label = "double"; }
@@ -136,7 +143,7 @@
     const evo = { hp: 0, dmg: 0, speed: 0 };
     for (let s = 1; s <= (b.stage || 0); s++) for (const k of ["hp", "dmg", "speed"]) evo[k] += EVO[Math.min(s, 2)][k] || 0;
 
-    const out = { tier, level: lv, nItems, unsimulated, partial, effects, shinyFocus: sk.focus, stats: {}, steps: {} };
+    const out = { tier, level: lv, nItems, unsimulated, partial, effects, shinyFocus: sk.focus, stats: {}, steps: {}, contrib, addList };
 
     // Damage
     const dmgBonus = sum.dmg + evo.dmg + adds.dmg;
@@ -184,7 +191,7 @@
     const elems = ch.elem2 ? [ch.elem, ch.elem2] : [ch.elem];
     const pure = ch.elem2 ? 1 : PURE_K;
     const critX = Math.min(1, mods.critX);
-    let avg = 0, critC = 0, critM = 0, kAvg = 0;
+    let avg = 0, critC = 0, critM = 0, kAvg = 0, cType = 0;
     for (const e of elems) {
       const te = tierFor(e);
       const boost = boosts.filter((x) => x.elem === e).reduce((a, x) => a * x.mul, 1);
@@ -192,13 +199,16 @@
       const m = 2 + critX + critDmg(e, te);
       const k = dmgK(e, te) * boost;
       avg += (dmg * k * hitMul * (1 + c * (m - 1))) / elems.length;
+      cType += ((isFightDark(e) ? 0.1 * pure : 0) + critAdd(e, te)) / elems.length;
       critC += c / elems.length; critM += m / elems.length; kAvg += k / elems.length;
     }
+    out.steps.crit = { items: 0.08 * mods.crit, type: cType, luck: 0.01 * out.stats.luck, always: alwaysCrit, mult: 2 + critX };
     out.stats.critChance = critC;
     out.stats.critMult = critM;
     out.stats.typeDamage = kAvg;
     out.stats.shotDamage = dmg * kAvg;
     out.stats.avgShot = avg;
+    out.steps.shot = { dmg, type: kAvg, hit: hitMul, critF: avg / (dmg * kAvg * hitMul || 1) };
     // Volley: 1 + multishot (max 9), doubled backwards by Destiny Knot and by Go-Goggles; random extra shots by chance.
     const fwd = clamp(1 + mods.multishot, 1, 9);
     const volley = fwd * (rear ? 2 : 1) * (double ? 2 : 1);
@@ -213,7 +223,32 @@
     out.stats.shotsPerVolley = perAttack + echoShots;
     out.steps.volley = { forward: fwd, rear, double, volley, extra: extraShots, echo: echoShots, hitMul, crit: mods.crit, critX };
     out.stats.hitMul = hitMul;
-    out.stats.dps = avg * out.stats.shotsPerVolley * out.stats.fireRate;
+    out.stats.playerDps = avg * out.stats.shotsPerVolley * out.stats.fireRate;
+
+    // Companions: up to 3 (+2 per Apricorn Box, never more than 6) take the Balls in the order they were added.
+    const cap = Math.min(6, 3 + famCapAdd);
+    const floorIdx = Math.max(0, (b.floor || 1) - 1);
+    const famBase = Math.max(2, 2 + 0.4 * floorIdx);
+    const ELEMS = ["normal", "fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"];
+    const boostFor = (e) => boosts.filter((x) => x.elem === e).reduce((a, x) => a * x.mul, 1);
+    const companions = [];
+    comps.forEach((c, i) => {
+      const f = c.fx, row = { slug: c.slug, active: i < cap, dps: 0, perShot: 0, interval: 0 };
+      if (f.copy) {
+        // Ditto repeats your forward and backward volleys at 75 % damage, with your own stats
+        row.perShot = avg * f.copy; row.interval = 60 / out.stats.fireRate / 60;
+        row.dps = avg * f.copy * fwd * (rear ? 2 : 1) * out.stats.fireRate; row.shots = fwd * (rear ? 2 : 1);
+      } else {
+        const boost = f.rand ? ELEMS.reduce((a, e) => a + boostFor(e), 0) / ELEMS.length : boostFor(f.elem);
+        const d = famBase * famK * (f.dmgK || 1) * famHit * boost;
+        row.perShot = d; row.shots = f.shots; row.interval = f.cd / 60; row.dps = (d * f.shots * 60) / f.cd;
+      }
+      companions.push(row);
+    });
+    out.companions = companions;
+    out.steps.companions = { cap, count: comps.length, base: famBase, famK, famHit };
+    out.stats.companionDps = companions.filter((c) => c.active).reduce((a, c) => a + c.dps, 0);
+    out.stats.dps = out.stats.playerDps + out.stats.companionDps;
     return out;
   }
 

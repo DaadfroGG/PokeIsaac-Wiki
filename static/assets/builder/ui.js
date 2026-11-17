@@ -109,28 +109,89 @@
   function parts(list) { return list.filter(Boolean).join(" · "); }
   const mult = (k) => (Math.abs(k - 1) < 1e-9 ? null : "×" + fmt(k, 3));
 
+  // One stat = a summary line plus a step-by-step table that opens on click: who adds what, then each rule applied.
+  const stepRow = (label, value, cls, who) => $("tr", { class: cls || "" }, $("td", {}, label, who ? $("span", { class: "why", text: who }) : null), $("td", { class: "v", text: value }));
+  const itemRows = (list, f) => list.map((c) => stepRow($("span", {}, $("b", { text: nameOf(c.slug) }), c.n > 1 ? " ×" + c.n : ""), f(c.v), "item"));
+  const opened = new Set(["__dps"]);
+  const keepOpen = (key) => ({ open: opened.has(key), ontoggle: (ev) => { if (ev.target.open) opened.add(key); else opened.delete(key); } });
+  function calcRow(label, value, formula, steps, explain) {
+    const body = $("div", { class: "calc-body" }, $("table", { class: "steps" }, $("tbody", {}, steps.filter(Boolean))), explain ? $("p", { class: "note", text: explain }) : null);
+    return $("tr", {}, $("td", { colspan: 2 }, $("details", Object.assign({ class: "calc" }, keepOpen(label)),
+      $("summary", {}, $("span", { class: "l" }, label, $("span", { class: "why", text: formula })), $("span", { class: "v", text: value })), body)));
+  }
+  const dash = (v, d) => (v >= 0 ? "+" : "−") + fmt(Math.abs(v), d);
+
   function summary(r) {
-    const s = r.stats, st = r.steps;
+    const s = r.stats, st = r.steps, c = r.contrib, al = r.addList;
     const rows = [];
-    rows.push(row(T.pb_damage, fmt(s.damage), parts([
-      `${T.pb_base} ${fmt(st.damage.base)}`,
-      st.damage.items ? `${T.pb_items} ${sgn(st.damage.items)} → ${T.pb_counted.toLowerCase()} ${sgn(st.damage.counted - st.damage.evo)}` : null,
-      st.damage.evo ? `${T.pb_stage_bonus} ${sgn(st.damage.evo)}` : null,
-      st.damage.multRaw !== 1 ? `${T.pb_mults} ${st.damage.mults.map((m) => "×" + fmt(m.v, 3)).join(" ")}${Math.abs(st.damage.mult - st.damage.multRaw) > 1e-9 ? " → ×" + fmt(st.damage.mult, 3) + " (" + T.pb_counted.toLowerCase() + ")" : ""}` : null,
-      st.damage.level !== 1 ? `${T.pb_level_k} ${mult(st.damage.level)}` : null,
-      st.damage.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.damage.shiny)}` : null])));
-    rows.push(row(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, parts([
-      `${T.pb_base} ${fmt(st.fireRate.baseTicks, 0)} ${T.pb_ticks}`,
-      st.fireRate.items ? `${T.pb_items} ${st.fireRate.items < 0 ? "+" : "−"}${fmt(Math.abs(st.fireRate.items))} → ${T.pb_counted.toLowerCase()} ${st.fireRate.counted < 0 ? "+" : "−"}${fmt(Math.abs(st.fireRate.counted))}` : null,
-      st.fireRate.itemMul !== 1 ? `${T.pb_items} ${mult(st.fireRate.itemMul)}` : null, st.fireRate.bug !== 1 ? mult(st.fireRate.bug) : null, st.fireRate.level !== 1 ? `${T.pb_level_k} ${mult(st.fireRate.level)}` : null,
-      st.fireRate.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.fireRate.shiny)}` : null,
-      `= ${fmt(s.ticks)} ${T.pb_ticks}`, st.fireRate.capped ? T.pb_cap + " 12" : null])));
-    rows.push(row(T.pb_speed, fmt(s.speed), parts([`${T.pb_base} ${fmt(st.speed.base)}`, st.speed.items ? `${T.pb_items} ${sgn(st.speed.items)}` : null, st.speed.evo ? `${T.pb_stage_bonus} ${sgn(st.speed.evo)}` : null, st.speed.cond ? `${T.pb_cond_short} ${sgn(st.speed.cond)}` : null, st.speed.type ? `${T.pb_type_k} ${sgn(st.speed.type)}` : null, st.speed.level !== 1 ? `${T.pb_level_k} ${mult(st.speed.level)}` : null, st.speed.shiny !== 1 ? `${T.pb_shiny_k} ${mult(st.speed.shiny)}` : null])));
-    rows.push(row(T.pb_range, fmt(s.range, 0) + " px", parts([`${T.pb_base} ${fmt(st.range.base, 0)}`, `${T.pb_global} +50`, st.range.items ? `${T.pb_items} ${sgn(st.range.items, 0)}` : null])));
-    rows.push(row(T.pb_shot_speed, fmt(s.shotSpeed), parts([`${T.pb_base} ${fmt(st.shotSpeed.base)}`, st.shotSpeed.items ? `${T.pb_items} ${sgn(st.shotSpeed.items)}` : null])));
-    rows.push(row(T.pb_luck, fmt(s.luck), parts([`${T.pb_base} ${fmt(st.luck.base)}`, st.luck.items ? `${T.pb_items} ${sgn(st.luck.items)}` : null, st.luck.shiny ? `${T.pb_shiny_k} ${sgn(st.luck.shiny)}` : null, st.luck.type ? `${T.pb_type_k} ${sgn(st.luck.type)}` : null, st.luck.raw > 10 ? `${fmt(st.luck.raw)} → ${T.pb_cap} 10 + ¼` : null])));
-    rows.push(row(T.pb_health, fmt(s.hearts, 1) + " " + T.pb_hearts, parts([`${T.pb_base} ${fmt(st.hp.base / 2, 1)}`, st.hp.items ? `${T.pb_items} ${sgn(st.hp.items / 2, 1)}` : null, st.hp.evo ? `${T.pb_stage_bonus} ${sgn(st.hp.evo / 2, 1)}` : null, st.hp.capped ? T.pb_cap + " 12" : null])));
+    // Damage
+    const d = st.damage;
+    rows.push(calcRow(T.pb_damage, fmt(s.damage),
+      parts([`(${fmt(d.base)}${d.counted ? " " + (d.counted >= 0 ? "+ " : "− ") + fmt(Math.abs(d.counted)) : ""})`, d.mult !== 1 ? "× " + fmt(d.mult, 3) : null, d.level !== 1 ? "× " + fmt(d.level, 3) : null, d.shiny !== 1 ? "× " + fmt(d.shiny, 3) : null]).replace(/ · /g, " "),
+      [stepRow(T.pb_s_base, fmt(d.base), "base"),
+        ...itemRows(c.dmg, (v) => dash(v)),
+        d.evo ? stepRow(T.pb_stage_bonus, dash(d.evo), "item") : null,
+        ...al.dmg.map((x) => stepRow($("span", {}, $("b", { text: nameOf(x.slug) }), " (" + T.pb_s_cond.toLowerCase() + ")"), dash(x.v), "item")),
+        d.items + d.evo !== d.counted ? stepRow(T.pb_s_total, dash(d.items + d.evo), "sub") : null,
+        d.items + d.evo !== d.counted ? stepRow(T.pb_s_dr, dash(d.counted), "sub") : null,
+        stepRow(T.pb_s_result_add, fmt(d.base + d.counted), "sub"),
+        ...d.mults.map((m) => stepRow($("span", {}, $("b", { text: nameOf(m.slug) })), "× " + fmt(m.v, 3), "item")),
+        d.multRaw !== d.mult ? stepRow(T.pb_s_capped, "× " + fmt(d.mult, 3), "sub") : null,
+        d.level !== 1 ? stepRow(T.pb_level_k, "× " + fmt(d.level, 3)) : null,
+        d.shiny !== 1 ? stepRow(T.pb_shiny_k, "× " + fmt(d.shiny, 3)) : null,
+        stepRow(T.pb_s_final, fmt(s.damage), "final")], T.pb_x_dmg));
+    // Fire rate
+    const f = st.fireRate;
+    rows.push(calcRow(T.pb_fire_rate, fmt(s.fireRate) + " " + T.pb_shots_s, `60 ÷ ${fmt(s.ticks)} ${T.pb_ticks}`,
+      [stepRow(T.pb_s_base, `${fmt(f.baseTicks, 0)} ${T.pb_ticks}`, "base"),
+        ...itemRows(c.rate, (v) => (v <= 0 ? "−" : "+") + fmt(Math.abs(v))),
+        f.items && f.items !== f.counted ? stepRow(T.pb_s_dr, (f.counted <= 0 ? "−" : "+") + fmt(Math.abs(f.counted)), "sub") : null,
+        ...(r.effects.filter((e) => e.stat === "rate" && e.mul !== 1 && e.active).map((e) => stepRow($("b", { text: nameOf(e.slug) }), "× " + fmt(e.mul, 3), "item"))),
+        f.bug !== 1 ? stepRow(T.pb_type_k, "× " + fmt(f.bug, 3)) : null,
+        f.level !== 1 ? stepRow(T.pb_level_k, "× " + fmt(f.level, 3)) : null,
+        f.shiny !== 1 ? stepRow(T.pb_shiny_k, "× " + fmt(f.shiny, 3)) : null,
+        stepRow(T.pb_s_ticks, fmt(s.ticks) + (f.capped ? " (" + T.pb_cap + " 5)" : ""), "sub"),
+        stepRow(T.pb_s_final, fmt(s.fireRate) + " " + T.pb_shots_s, "final")], T.pb_x_rate));
+    // Speed
+    const sp = st.speed;
+    rows.push(calcRow(T.pb_speed, fmt(s.speed), "", [stepRow(T.pb_s_base, fmt(sp.base), "base"), ...itemRows(c.speed, (v) => dash(v)),
+      sp.evo ? stepRow(T.pb_stage_bonus, dash(sp.evo), "item") : null,
+      ...al.speed.map((x) => stepRow($("span", {}, $("b", { text: nameOf(x.slug) }), " (" + T.pb_s_cond.toLowerCase() + ")"), dash(x.v), "item")),
+      sp.type ? stepRow(T.pb_type_k, dash(sp.type), "item") : null,
+      sp.level !== 1 ? stepRow(T.pb_level_k, "× " + fmt(sp.level, 3)) : null, sp.shiny !== 1 ? stepRow(T.pb_shiny_k, "× " + fmt(sp.shiny, 3)) : null,
+      stepRow(T.pb_s_final, fmt(s.speed), "final")], T.pb_x_speed));
+    // Range, shot speed
+    rows.push(calcRow(T.pb_range, fmt(s.range, 0) + " px", "", [stepRow(T.pb_s_base, fmt(st.range.base, 0), "base"), stepRow(T.pb_global, "+50", "item"), ...itemRows(c.range, (v) => dash(v, 0)), stepRow(T.pb_s_final, fmt(s.range, 0) + " px", "final")], null));
+    rows.push(calcRow(T.pb_shot_speed, fmt(s.shotSpeed), "", [stepRow(T.pb_s_base, fmt(st.shotSpeed.base), "base"), ...itemRows(c.shot, (v) => dash(v)), stepRow(T.pb_s_final, fmt(s.shotSpeed), "final")], null));
+    // Luck
+    const lu = st.luck;
+    rows.push(calcRow(T.pb_luck, fmt(s.luck), "", [stepRow(T.pb_s_base, fmt(lu.base), "base"), ...itemRows(c.luck, (v) => dash(v)),
+      lu.shiny ? stepRow(T.pb_shiny_k, dash(lu.shiny), "item") : null, lu.type ? stepRow(T.pb_type_k, dash(lu.type), "item") : null,
+      lu.raw > 10 ? stepRow(T.pb_s_raw_luck, fmt(lu.raw), "sub") : null, stepRow(T.pb_s_final, fmt(s.luck), "final")], T.pb_x_luck));
+    // Health
+    const h = st.hp;
+    rows.push(calcRow(T.pb_health, fmt(s.hearts, 1) + " " + T.pb_hearts, "", [stepRow(T.pb_s_base, fmt(h.base / 2, 1), "base"), ...itemRows(c.hp, (v) => dash(v / 2, 1)),
+      h.evo ? stepRow(T.pb_stage_bonus, dash(h.evo / 2, 1), "item") : null, stepRow(T.pb_s_final + (h.capped ? " (" + T.pb_cap + " 12)" : ""), fmt(s.hearts, 1) + " " + T.pb_hearts, "final")], null));
     return rows;
+  }
+
+  // How the damage per second is put together, step by step.
+  function dpsCalc(r) {
+    const s = r.stats, st = r.steps, v = st.volley, sh = st.shot, cr = st.crit;
+    const steps = [
+      stepRow(T.pb_damage, fmt(s.damage), "base"),
+      sh.type !== 1 ? stepRow(T.pb_typed_dmg, "× " + fmt(sh.type, 3)) : null,
+      sh.hit !== 1 ? stepRow(T.pb_hit_mul, "× " + fmt(sh.hit, 3)) : null,
+      stepRow(T.pb_crit, `${fmt(s.critChance * 100, 1)} % × ${fmt(s.critMult, 2)}  →  × ${fmt(sh.critF, 3)}`, "item",
+        parts([cr.items ? `${T.pb_items} ${fmt(cr.items * 100, 0)} %` : null, cr.type ? `${T.pb_type_k} ${fmt(cr.type * 100, 1)} %` : null, `${T.pb_luck} ${fmt(cr.luck * 100, 1)} %`, cr.always ? T.pb_fx_alwayscrit : null])),
+      stepRow(T.pb_per_shot, fmt(s.avgShot), "sub"),
+      stepRow(T.pb_volley, "× " + fmt(s.shotsPerVolley, 2), "item", volleyNote(r)),
+      stepRow(T.pb_shots_s, "× " + fmt(s.fireRate), "item"),
+      stepRow(T.pb_comp_player, fmt(s.playerDps, 1), "sub"),
+      s.companionDps ? stepRow(T.pb_companions, "+ " + fmt(s.companionDps, 1), "item") : null,
+      stepRow(T.pb_dps, fmt(s.dps, 1), "final")];
+    return $("details", Object.assign({ class: "calc" }, keepOpen("__dps")), $("summary", {}, $("span", { class: "l", text: T.pb_how }), $("span", { class: "v", text: fmt(s.dps, 1) })),
+      $("div", { class: "calc-body" }, $("table", { class: "steps" }, $("tbody", {}, steps.filter(Boolean))), $("p", { class: "note", text: T.pb_x_dps })));
   }
 
   const STATK = { dmg: "pb_damage", rate: "pb_fire_rate", speed: "pb_speed", hit: "pb_hit_mul" };
@@ -147,6 +208,15 @@
     for (const f of E.SIT_FLAGS) if (flags.has(f)) rows.push($("label", {}, $("input", { type: "checkbox", checked: !!S.t[f], onchange: (ev) => { S.t[f] = ev.target.checked ? 1 : 0; render(); } }), T["pb_flag_" + f]));
     return rows.length ? $("div", { class: "row" }, rows) : $("p", { class: "note", text: T.pb_sit_none });
   }
+  function companionList(r) {
+    if (!r.companions.length) return null;
+    const st = r.steps.companions;
+    const items = r.companions.map((c) => $("li", { class: c.active ? "on" : "off" }, $("b", { text: nameOf(c.slug) }),
+      `: ${fmt(c.dps, 1)} ${T.pb_dps_unit} (${fmt(c.perShot, 2)} × ${c.shots} / ${fmt(c.interval, 2)} s)`, " ",
+      c.active ? null : $("span", { class: "tag none", text: T.pb_comp_waiting })));
+    return $("div", { class: "warn" }, $("b", { text: `${T.pb_companions} (${Math.min(st.cap, st.count)} / ${st.cap})` }), $("ul", {}, items),
+      $("p", { class: "note", text: `${T.pb_comp_base} ${fmt(st.base, 1)}` }));
+  }
   function volleyNote(r) {
     const v = r.steps.volley, bits = [];
     bits.push(`${T.pb_volley_fwd} ${v.forward}`);
@@ -157,8 +227,9 @@
     return bits.join(" · ");
   }
   function effectList(r) {
-    if (!r.effects.length) return null;
-    const items = r.effects.map((e) => {
+    const shown = r.effects.filter((e) => e.label !== "companion");
+    if (!shown.length) return null;
+    const items = shown.map((e) => {
       const what = e.label ? T["pb_fx_" + e.label].replace("{v}", e.v == null ? "" : fmt(e.v, 2)).replace("{e}", e.elem ? (T["pb_el_" + e.elem] || e.elem) : "") : e.kind === "add" ? `${T[STATK[e.stat]]} ${sgn(e.kind === "add" && e.when || !e.var ? e.v : e.v)}` : `${T[STATK[e.stat]]} ${e.kind === "mulvar" ? "×" + fmt(e.v, 2) : "×" + fmt(e.v, 2)}`;
       const cond = e.when ? ` (${T["pb_when_" + e.when]})` : "";
       return $("li", { class: e.active ? "on" : "off" }, $("b", { text: nameOf(e.slug) }), ": " + what + cond, " ", $("span", { class: "tag " + (e.active ? "" : "none"), text: e.active ? T.pb_active : T.pb_inactive }));
@@ -204,7 +275,7 @@
     const full = Object.entries(S.i).filter(([k, n]) => n > 0 && data.items[k] && data.items[k].t === "full").length;
     const total = entries.length;
     out.replaceChildren(
-      $("div", { class: "dps" }, $("div", {}, $("div", { class: "note", text: T.pb_dps }), $("div", { class: "big", text: fmt(r.stats.dps, 1) })),
+      $("div", { class: "dps" }, $("div", {}, $("div", { class: "note", text: T.pb_dps }), $("div", { class: "big", text: fmt(r.stats.dps, 1) }), r.stats.companionDps ? $("div", { class: "note", text: `${T.pb_comp_player} ${fmt(r.stats.playerDps, 1)} + ${T.pb_companions.toLowerCase()} ${fmt(r.stats.companionDps, 1)}` }) : null),
         $("div", {}, $("div", { class: "note", text: T.pb_per_shot }), $("b", { text: fmt(r.stats.avgShot) })),
         $("div", {}, $("div", { class: "note", text: T.pb_shots_s }), $("b", { text: fmt(r.stats.fireRate) }))),
       $("table", { class: "stats" }, $("tbody", {}, summary(r),
@@ -213,13 +284,14 @@
         r.stats.hitMul !== 1 ? row(T.pb_hit_mul, "×" + fmt(r.stats.hitMul, 3), null) : null,
         r.stats.typeDamage !== 1 ? row(T.pb_typed_dmg, "×" + fmt(r.stats.typeDamage, 3), `${T.pb_type_tier} ${r.tier}`) : null)),
       total ? $("p", { class: "note", text: `${T.pb_coverage}: ${full} / ${total}` }) : null,
-      effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume }));
+      dpsCalc(r), companionList(r), effectList(r), lists(r), $("p", { class: "note", text: T.pb_assume }));
     sitBox.replaceChildren(sitControls(r));
     history.replaceState(null, "", "#" + toHash());
   }
 
   fetch(ROOT + "assets/builder/data.json").then((r) => r.json()).then((d) => {
     data = d; E = window.PIBuilder; buildIdx();
+    opened.add(T.pb_damage); opened.add(T.pb_fire_rate);
     S = location.hash.length > 1 ? fromHash(location.hash) : S;
     if (!data.chars[S.c]) S.c = Object.keys(data.chars)[0];
     window.addEventListener("hashchange", () => { if (location.hash !== "#" + toHash()) { S = fromHash(location.hash); render(); } });

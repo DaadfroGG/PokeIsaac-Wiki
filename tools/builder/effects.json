@@ -965,7 +965,8 @@
     "k": "mul",
     "stat": "hit",
     "value": 1.3,
-    "when": "boss"
+    "when": "boss",
+    "fam": true
    }
   ]
  },
@@ -976,7 +977,8 @@
     "k": "mul",
     "stat": "hit",
     "value": 1.6,
-    "when": "close"
+    "when": "close",
+    "fam": true
    }
   ]
  },
@@ -988,7 +990,8 @@
     "stat": "hit",
     "var": "rend",
     "per": 0.08,
-    "max": 9
+    "max": 9,
+    "fam": true
    }
   ]
  },
@@ -999,7 +1002,8 @@
     "k": "mul",
     "stat": "hit",
     "value": 1.3,
-    "when": "slowed"
+    "when": "slowed",
+    "fam": true
    }
   ]
  },
@@ -1061,6 +1065,138 @@
    {
     "k": "echo",
     "value": 0.5
+   }
+  ]
+ },
+ "pacto_gastly": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "ghost",
+    "cd": 30,
+    "dmgK": 1.3,
+    "shots": 1,
+    "rand": false
+   }
+  ]
+ },
+ "f_amigo_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "electric",
+    "cd": 30,
+    "dmgK": 1,
+    "shots": 1,
+    "rand": false
+   }
+  ]
+ },
+ "f_amor_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "fairy",
+    "cd": 40,
+    "dmgK": 1.8,
+    "shots": 1,
+    "rand": false
+   }
+  ]
+ },
+ "f_nido_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "psychic",
+    "cd": 36,
+    "dmgK": 1,
+    "shots": 1,
+    "rand": false
+   }
+  ]
+ },
+ "f_acopio_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "copy": 0.75,
+    "elem": "normal"
+   }
+  ]
+ },
+ "f_ensueno_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "fairy",
+    "cd": 38,
+    "dmgK": 1,
+    "shots": 3,
+    "rand": false
+   }
+  ]
+ },
+ "f_extrana_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "ghost",
+    "cd": 34,
+    "dmgK": 1,
+    "shots": 1,
+    "rand": false
+   }
+  ]
+ },
+ "f_parque_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "normal",
+    "cd": 32,
+    "dmgK": 1,
+    "shots": 1,
+    "rand": true
+   }
+  ]
+ },
+ "f_super_ball": {
+  "done": true,
+  "fx": [
+   {
+    "k": "companion",
+    "elem": "water",
+    "cd": 44,
+    "dmgK": 1,
+    "shots": 4,
+    "rand": false
+   }
+  ]
+ },
+ "m_caja_bonguri": {
+  "done": true,
+  "fx": [
+   {
+    "k": "famcap",
+    "value": 2
+   }
+  ]
+ },
+ "repartir_exp": {
+  "done": true,
+  "fx": [
+   {
+    "k": "famk",
+    "value": 2
    }
   ]
  }
