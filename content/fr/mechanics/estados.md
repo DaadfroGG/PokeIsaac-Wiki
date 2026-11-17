@@ -58,7 +58,7 @@ Vos tirs et vos objets peuvent brûler, empoisonner, ralentir, étourdir, charme
 - L'ennemi marche à **vitesse divisée par deux** pendant **1,5 seconde**. Il attaque toujours normalement.
 - Boss : seuls leurs déplacements entre deux attaques sont divisés par deux.
 - Sources : passif [Glace](pasiva_ice.html) (25 % + 2 % par point de Chance), passif [Eau](pasiva_water.html) (dès le rang 1 : 10 % + 5 % par rang, 1 s, pas sur les boss), [Noigrume Bleu](../items/m_bonguri_azul.html) (à chaque coup), [Noigrume Blanc](../items/m_bonguri_blanco.html) (30 % + 2 % par point de Chance), charme [Fée](pasiva_fairy.html) (1 s), flaques de [Miel](../items/m_miel.html), [Fertihumide](../items/a_abono_lento.html) (6 s).
-- [Bande Étreinte](../items/banda_atadura.html) : les ennemis ralentis subissent 30 % de dégâts en plus. Elle ne ralentit rien elle-même.
+- [Bande Étreinte](../items/banda_atadura.html) : les ennemis ralentis subissent 30 % de dégâts en plus.
 - Toujours actifs, sans toucher : [Ralentiqueue](../items/cola_plumbea.html) (tous les ennemis 20 % plus lents) et [Queue Ramoloss](../items/cola_slowpoke.html) (vitesse divisée par deux à moins de 150 px de vous). Aucun des deux ne marche sur les boss ; les deux se cumulent avec un ralentissement.
 
 ## Arrêter l'ennemi

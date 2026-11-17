@@ -12,7 +12,7 @@ details:
 - label: Damage
   value: +30 % to slowed enemies
 - label: Slow
-  value: 'None of its own: needs another source of slow'
+  value: Needs another source of slow
 - label: Bosses
   value: Slowed (walking only) and damaged too
 icon: items-ps/hold-item/binding-band.png
@@ -52,13 +52,12 @@ names:
 Slowed enemies take 30% more damage (slowing belongs to the Ice and Water types)
 
 ## How it works
-- **It does not slow enemies by itself.** It only adds damage to enemies that are already slowed, so it does nothing on its own.
 - Every hit you land on a slowed enemy deals 30 % more damage. A slowed enemy walks at half speed.
-- You need a source of slow, from you or from anywhere: the [Ice](../mechanics/pasiva_ice.html) and [Water](../mechanics/pasiva_water.html) passives, [Blue Apricorn](m_bonguri_azul.html), [White Apricorn](m_bonguri_blanco.html), Fairy charm, [Honey](m_miel.html) puddles and more (full list on [Status effects](../mechanics/estados.html)). The 30 % applies whatever slowed the enemy.
-- It is only offered when someone on the team is Ice or Water type, which are the types that slow. Ice with 25 % per hit keeps most enemies slowed; Water is much weaker (from rank 1, 10 % + 5 % per rank).
+- The band only adds damage: the slow has to come from somewhere else. Sources include the [Ice](../mechanics/pasiva_ice.html) and [Water](../mechanics/pasiva_water.html) passives, [Blue Apricorn](m_bonguri_azul.html), [White Apricorn](m_bonguri_blanco.html), Fairy charm and [Honey](m_miel.html) puddles (full list on [Status effects](../mechanics/estados.html)). The 30 % applies whatever slowed the enemy.
+- It is only offered when someone on the team is Ice or Water type. Ice slows 25 % of hits, enough to keep most enemies slowed; Water is much weaker (from rank 1, 10 % + 5 % per rank).
 - Bosses are slowed too (their walking only, between attacks) and take the extra 30 %.
 - The +30 % is applied when the shot lands, so it does not show in your Damage on the HUD and is not limited by the ×3 multiplier cap.
 
 ## Stacking
-- The slow effect is on/off, and the +30 % is not cumulative: a second Binding Band changes nothing.
+- The +30 % is not cumulative: a second Binding Band changes nothing.
 - It multiplies with other on-hit bonuses: against a slowed boss, the [Expert Belt](cinta_experto.html) makes it ×1.3 × 1.3 = ×1.69.

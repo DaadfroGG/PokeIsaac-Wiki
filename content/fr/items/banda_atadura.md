@@ -12,7 +12,7 @@ details:
 - label: Dégâts
   value: +30 % aux ennemis ralentis
 - label: Ralentissement
-  value: 'Aucun en propre : il faut une autre source'
+  value: Il faut une autre source de ralentissement
 - label: Boss
   value: Ralentis (marche seulement) et touchés aussi
 icon: items-ps/hold-item/binding-band.png
@@ -52,13 +52,12 @@ names:
 Les ennemis ralentis subissent 30 % de dégâts en plus (ralentir est propre aux types Glace et Eau)
 
 ## Fonctionnement
-- **Il ne ralentit pas les ennemis lui-même.** Il ajoute seulement des dégâts aux ennemis déjà ralentis : seul, il ne fait rien.
 - Chaque coup porté à un ennemi ralenti inflige 30 % de dégâts en plus. Un ennemi ralenti marche à mi-vitesse.
-- Il faut une source de ralentissement, la vôtre ou une autre : passifs [Glace](../mechanics/pasiva_ice.html) et [Eau](../mechanics/pasiva_water.html), [Noigrume Bleu](m_bonguri_azul.html), [Noigrume Blanc](m_bonguri_blanco.html), charme Fée, flaques de [Miel](m_miel.html) et d'autres (liste complète sur [Statuts](../mechanics/estados.html)). Les 30 % s'appliquent quelle que soit la cause.
-- Il n'est proposé que si quelqu'un de l'équipe est de type Glace ou Eau, les types qui ralentissent. Glace (25 % par coup) garde la plupart des ennemis ralentis ; Eau est bien plus faible (dès le rang 1, 10 % + 5 % par rang).
+- La bande n'ajoute que des dégâts : le ralentissement doit venir d'ailleurs. Sources : passifs [Glace](../mechanics/pasiva_ice.html) et [Eau](../mechanics/pasiva_water.html), [Noigrume Bleu](m_bonguri_azul.html), [Noigrume Blanc](m_bonguri_blanco.html), charme Fée, flaques de [Miel](m_miel.html) (liste complète sur [Statuts](../mechanics/estados.html)). Les 30 % s'appliquent quelle que soit la cause.
+- Il n'est proposé que si quelqu'un de l'équipe est de type Glace ou Eau. Glace ralentit 25 % des coups, assez pour garder la plupart des ennemis ralentis ; Eau est bien plus faible (dès le rang 1, 10 % + 5 % par rang).
 - Les boss sont ralentis aussi (seulement leur marche, entre deux attaques) et subissent les 30 % en plus.
 - Les +30 % sont appliqués à l'impact du tir : ils n'apparaissent donc pas dans vos Dégâts affichés et ne sont pas limités par le plafond de ×3 des multiplicateurs.
 
 ## Cumul
-- L'effet de ralentissement est tout ou rien et les +30 % ne se cumulent pas : une seconde Bande Étreinte ne change rien.
+- Les +30 % ne se cumulent pas : une seconde Bande Étreinte ne change rien.
 - Il se multiplie avec les autres bonus à l'impact : contre un boss ralenti, la [Ceinture Pro](cinta_experto.html) donne ×1,3 × 1,3 = ×1,69.

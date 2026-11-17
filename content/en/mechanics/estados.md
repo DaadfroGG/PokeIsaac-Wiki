@@ -58,7 +58,7 @@ Your shots and items can burn, poison, slow, stun, charm, confuse, scare or put 
 - The enemy walks at **half speed** for **1.5 seconds**. It still attacks normally.
 - Bosses: only their walking between attacks is halved.
 - Sources: [Ice](pasiva_ice.html) passive (25 % + 2 % per Luck), [Water](pasiva_water.html) passive (from rank 1: 10 % + 5 % per rank, 1 s, not on bosses), [Blue Apricorn](../items/m_bonguri_azul.html) (every hit), [White Apricorn](../items/m_bonguri_blanco.html) (30 % + 2 % per Luck), [Fairy](pasiva_fairy.html) charm (1 s), [Honey](../items/m_miel.html) puddles, [Damp Mulch](../items/a_abono_lento.html) (6 s).
-- [Binding Band](../items/banda_atadura.html): slowed enemies take 30 % more damage. It does not slow anything itself.
+- [Binding Band](../items/banda_atadura.html): slowed enemies take 30 % more damage.
 - Always on, no hit needed: [Lagging Tail](../items/cola_plumbea.html) (all enemies 20 % slower) and [Slowpoke Tail](../items/cola_slowpoke.html) (half speed within 150 px of you). Neither works on bosses; both stack with a slow.
 
 ## Stopping the enemy
