@@ -12,7 +12,7 @@ details:
 - label: Damage
   value: +30 % to slowed enemies
 - label: Slow
-  value: None of its own: needs another source of slow
+  value: 'None of its own: needs another source of slow'
 - label: Bosses
   value: Slowed (walking only) and damaged too
 icon: items-ps/hold-item/binding-band.png

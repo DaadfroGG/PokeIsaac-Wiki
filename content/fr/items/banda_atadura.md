@@ -12,7 +12,7 @@ details:
 - label: Dégâts
   value: +30 % aux ennemis ralentis
 - label: Ralentissement
-  value: Aucun en propre : il faut une autre source
+  value: 'Aucun en propre : il faut une autre source'
 - label: Boss
   value: Ralentis (marche seulement) et touchés aussi
 icon: items-ps/hold-item/binding-band.png
