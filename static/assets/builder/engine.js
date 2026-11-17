@@ -103,6 +103,22 @@
     },
     // Rolling Voltorbs: a normal volley (max 9) at balance x0.8; each grazes once (x0.45) and its blast (x0.6) hits the target; ready after 1.5 x max(24, 1.6 delays)
     fetus: (avg, R, ms) => { const n = Math.min(9, ms), cycle = (1.5 * Math.max(24, 1.6 * R)) / 60, per = (0.45 + 0.6) * 0.8; return { hits: n, mult: per, cycle, dps: (n * per * avg) / cycle }; },
+    // Leek: 5-swing cycle (4 slashes whose damage grows 15 % each, then a spin x1.6 with waves x2); each slash also sends a x0.4 wave
+    sword: (avg, R, ms) => {
+      let dmg = 0, ticks = 0;
+      for (let k = 0; k < 4; k++) { dmg += 0.9 * (1 + 0.15 * k); ticks += 1.5 * Math.max(12, R * (1 - 0.05 * k)); }
+      dmg += 1.6 + 2 * Math.min(3, ms); ticks += 1.5 * Math.max(12, R * (1 - 0.05 * 4));
+      const cycle = ticks / 60;
+      return { hits: 5, mult: dmg / 5, cycle: cycle / 5, dps: (dmg * 0.31 * avg) / cycle };
+    },
+    // Snowball: one ball that grows as it travels (x0.68 to x1.43), taken at mid-range, hitting about 1.5 times as it rolls through; balance x0.45
+    ludo: (avg, R) => { const cycle = (1.5 * Math.max(22, 1.8 * R)) / 60, per = 0.68 * (1 + 1.1 * 0.5) * 1.5 * 0.45; return { hits: 1.5, mult: per, cycle, dps: (per * avg) / cycle }; },
+    // Damp Rock: full charge = a line of 7 rocks x1.41, about 2 of them on the target, balance x0.36; charging goes on during the 0.3 s rest
+    lung: (avg, R) => { const charge = Math.min(110, Math.max(36, 3.2 * R)), cycle = Math.max(charge, 18) / 60, per = 2 * 1.41 * 0.36; return { hits: 2, mult: per, cycle, dps: (per * avg) / cycle }; },
+    // Fame Checker (module): links every 0.2 s from you to the mark, x0.17 with balance x0.62
+    laser2: (avg) => ({ hits: 1, mult: 0.17 * 0.62, cycle: 0.2, dps: 5 * 0.17 * 0.62 * avg }),
+    // Casteliacone (module): replaces your normal shots by charged volleys (computed separately)
+    charge: () => ({ hits: 0, mult: 1, cycle: 0, dps: 0 }),
     // Hyper Beam: meter fills 6.25 % per hit (one per delay): 16 delays, then 12 ticks of x2.3 with balance x0.33, rest 0.57 s
     beam: (avg, R) => { const cycle = (16 * R + 36 + 34) / 60; return { hits: 12, mult: 2.3 * 0.33, cycle, dps: (12 * 2.3 * 0.33 * avg) / cycle }; },
   };
@@ -147,6 +163,7 @@
     const mods = { multishot: 0, crit: 0, critX: 0 }, boosts = [], extras = [];
     let rear = false, double = false, echo = 0, alwaysCrit = false, famK = 1, famCapAdd = 0, famHit = 1;
     const comps = [], weapons = [];
+    const MODULES = ["beam", "laser2", "charge"];
     for (const slug of present) {
       const copies = b.items[slug];
       for (const fx of data.items[slug].e || []) {
@@ -156,7 +173,7 @@
         if (r.mul !== 1) muls[r.stat].push({ slug, v: r.mul });
         if (fx.fam && r.active && r.mul !== 1) famHit *= r.mul;
         if (fx.k === "companion") { for (let c = 0; c < copies; c++) comps.push({ slug, fx }); r.label = "companion"; r.v = copies; }
-        else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model }); r.label = "weapon"; }
+        else if (fx.k === "weapon") { weapons.push({ slug, model: fx.model, module: MODULES.includes(fx.model) }); r.label = "weapon"; }
         else if (fx.k === "nonegatives") { r.label = "nonegatives"; }
         else if (fx.k === "famk") { famK *= fx.value; r.label = "famk"; r.v = fx.value; }
         else if (fx.k === "famcap") { famCapAdd += fx.value * copies; r.label = "famcap"; r.v = fx.value * copies; }
@@ -278,17 +295,28 @@
     out.steps.companions = { cap, count: comps.length, base: famBase, famK, famHit };
     out.stats.companionDps = companions.filter((c) => c.active).reduce((a, c) => a + c.dps, 0);
 
-    // Equipped weapon (one at a time): a separate attack that works beside your normal shots. Single target, every hit lands.
-    const heldWeapon = weapons.find((w) => w.slug === b.weapon) || weapons[weapons.length - 1] || null;
-    out.weapons = weapons.map((w) => ({ slug: w.slug, equipped: w === heldWeapon }));
-    out.stats.weaponDps = 0; out.steps.weapon = null;
+    // Equipped weapon (one at a time) plus every module (these work with any weapon). Single target, every hit lands.
+    const mainWeapons = weapons.filter((w) => !w.module);
+    const heldWeapon = mainWeapons.find((w) => w.slug === b.weapon) || mainWeapons[mainWeapons.length - 1] || null;
+    out.weapons = weapons.map((w) => ({ slug: w.slug, module: w.module, equipped: w === heldWeapon }));
+    out.stats.weaponDps = 0; out.steps.weapons = [];
     let defenseDown = 1;
-    if (heldWeapon) {
-      const R = out.stats.ticks, ms = 1 + mods.multishot;
-      const W = WEAPON_MODELS[heldWeapon.model](avg, R, ms);
-      out.stats.weaponDps = W.dps; out.steps.weapon = Object.assign({ slug: heldWeapon.slug, model: heldWeapon.model }, W);
+    const Rt = out.stats.ticks, msv = 1 + mods.multishot;
+    for (const w of weapons) {
+      if (!w.module && w !== heldWeapon) continue;
+      const W = WEAPON_MODELS[w.model](avg, Rt, msv);
+      if (w.model === "charge") {
+        // charge to the full: a volley of balls x1.25 whose fragments (half of the 12 seek the target) add 15 % each; charging takes 2.5 delays
+        const chargeT = Math.min(85, Math.max(20, 2.5 * Rt)) / 60;
+        const per = 1.25 * (1 + 6 * 0.15);
+        const dpsC = (perAttack * per * avg) / chargeT;
+        W.dps = dpsC - out.stats.playerDps; W.replaces = true; W.mult = per; W.cycle = chargeT; W.hits = perAttack;
+      }
+      out.stats.weaponDps += W.dps;
+      out.steps.weapons.push(Object.assign({ slug: w.slug, model: w.model, module: w.module }, W));
       if (W.defenseDown) defenseDown = W.defenseDown;
     }
+    out.steps.weapon = out.steps.weapons.find((x) => !x.module) || null;
     out.stats.dps = (out.stats.playerDps + out.stats.companionDps + out.stats.weaponDps) * defenseDown;
     out.steps.defenseDown = defenseDown;
     return out;

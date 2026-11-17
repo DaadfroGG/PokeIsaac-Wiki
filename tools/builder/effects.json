@@ -1375,5 +1375,50 @@
     "model": "fetus"
    }
   ]
+ },
+ "w_puerro": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "sword"
+   }
+  ]
+ },
+ "w_bola_nieve": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "ludo"
+   }
+  ]
+ },
+ "w_roca_lluvia": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "lung"
+   }
+  ]
+ },
+ "w_porcehelado": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "charge"
+   }
+  ]
+ },
+ "w_memorin": {
+  "done": true,
+  "fx": [
+   {
+    "k": "weapon",
+    "model": "laser2"
+   }
+  ]
  }
 }

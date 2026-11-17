@@ -338,3 +338,9 @@ pb_w_fetus: "rolling Voltorbs: a volley, each grazing once (×0.45) and explodin
 sec_tips: Tips
 sub_tool: TOOL
 tips_tools: Tools
+pb_w_module: module
+pb_w_sword: "4 slashes growing 15 % each then a spin ×1.6 with waves, balance ×0.31; every swing waits 1.5 × your delay (shorter in the combo)"
+pb_w_ludo: "one ball growing as it travels (×0.68 to ×1.43, taken at mid-range), about 1.5 hits per pass, balance ×0.45; ready after 1.5 × 1.8 × your delay"
+pb_w_lung: "full charge = a line of 7 rocks ×1.41, about 2 on the target, balance ×0.36; the next charge starts during the short rest"
+pb_w_laser2: "link to the marked enemy every 0.2 s for ×0.17 of your damage (balance ×0.62); works with any weapon"
+pb_w_charge: "replaces your normal shots by fully charged volleys (balls ×1.25 plus 6 fragments at 15 % on target), one per 2.5 × your delay; shown as the difference with your normal shots"

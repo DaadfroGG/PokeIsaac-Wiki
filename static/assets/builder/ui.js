@@ -191,7 +191,7 @@
       stepRow(T.pb_shots_s, "× " + fmt(s.fireRate), "item"),
       stepRow(T.pb_comp_player, fmt(s.playerDps, 1), "sub"),
       s.companionDps ? stepRow(T.pb_companions, "+ " + fmt(s.companionDps, 1), "item") : null,
-      s.weaponDps ? stepRow(nameOf(st.weapon.slug), "+ " + fmt(s.weaponDps, 1), "item", T.pb_weapons) : null,
+      ...st.weapons.map((w) => stepRow(nameOf(w.slug), (w.replaces && w.dps < 0 ? "− " : "+ ") + fmt(Math.abs(w.dps), 1), "item", T.pb_weapons)),
       st.defenseDown !== 1 ? stepRow(T.pb_w_defdown, "× " + fmt(st.defenseDown, 2), "item") : null,
       stepRow(T.pb_dps, fmt(s.dps, 1), "final")];
     return $("details", Object.assign({ class: "calc" }, keepOpen("__dps")), $("summary", {}, $("span", { class: "l", text: T.pb_how }), $("span", { class: "v", text: fmt(s.dps, 1) })),
@@ -223,11 +223,11 @@
   }
   function weaponList(r) {
     if (!r.weapons.length) return null;
-    const w = r.steps.weapon;
-    const rows = r.weapons.map((x) => $("li", { class: x.equipped ? "on" : "off" }, $("b", { text: nameOf(x.slug) }), " ",
-      x.equipped ? $("span", { class: "tag", text: T.pb_w_equipped }) : $("button", { type: "button", class: "mini", text: T.pb_w_equip, onclick: () => { S.w = x.slug; render(); } })));
+    const ws = r.steps.weapons;
+    const rows = r.weapons.map((x) => $("li", { class: x.equipped || x.module ? "on" : "off" }, $("b", { text: nameOf(x.slug) }), " ",
+      x.module ? $("span", { class: "tag", text: T.pb_w_module }) : x.equipped ? $("span", { class: "tag", text: T.pb_w_equipped }) : $("button", { type: "button", class: "mini", text: T.pb_w_equip, onclick: () => { S.w = x.slug; render(); } })));
     return $("div", { class: "warn" }, $("b", { text: T.pb_weapons }), $("ul", {}, rows),
-      w ? $("p", { class: "note", text: `${fmt(w.dps, 1)} ${T.pb_dps_unit} · ${T["pb_w_" + w.model]}` }) : null,
+      ...ws.map((w) => $("p", { class: "note", text: `${nameOf(w.slug)}: ${fmt(w.dps, 1)} ${T.pb_dps_unit} · ${T["pb_w_" + w.model]}` })),
       $("p", { class: "note", text: T.pb_w_assume }));
   }
   function volleyNote(r) {

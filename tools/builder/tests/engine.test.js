@@ -133,4 +133,12 @@ near(r3({ items: { w_fulgorom: 1, w_colmillo: 1 }, weapon: "w_fulgorom" }).steps
 // Colress Machine: volley of Voltorbs, (0.45 + 0.6) x 0.8 each, ready after 1.5 x max(24, 1.6 delays)
 const cm = r3({ items: { w_acromaquina: 1, mt_doble: 1 } });
 near(cm.stats.weaponDps, (2 * 1.05 * 0.8 * cm.stats.avgShot) / ((1.5 * Math.max(24, 1.6 * cm.stats.ticks)) / 60));
+
+// remaining weapons give a positive DPS; modules stack with the equipped weapon
+for (const [slug, model] of [["w_puerro", "sword"], ["w_bola_nieve", "ludo"], ["w_roca_lluvia", "lung"], ["w_memorin", "laser2"]]) {
+  const r = r3({ items: { [slug]: 1 } });
+  near(r.steps.weapons[0].model === model && r.stats.weaponDps > 0, true);
+}
+const mod = r3({ items: { w_memorin: 1, w_fulgorom: 1 } });
+near(mod.steps.weapons.length, 2);
 console.log("engine tests passed");

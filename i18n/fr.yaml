@@ -338,3 +338,9 @@ pb_w_fetus: "Voltorbes roulants : une salve, chacun effleure une fois (×0,45) p
 sec_tips: Conseils
 sub_tool: OUTIL
 tips_tools: Outils
+pb_w_module: module
+pb_w_sword: "4 coups dont les dégâts montent de 15 % chacun puis une toupie ×1,6 avec ondes, équilibrage ×0,31 ; chaque coup attend 1,5 × votre délai (plus court dans le combo)"
+pb_w_ludo: "une boule qui grossit en avançant (×0,68 à ×1,43, prise à mi-parcours), environ 1,5 coup par passage, équilibrage ×0,45 ; prêt après 1,5 × 1,8 × votre délai"
+pb_w_lung: "pleine charge = une ligne de 7 rochers ×1,41, environ 2 sur la cible, équilibrage ×0,36 ; la charge suivante commence pendant le court repos"
+pb_w_laser2: "lien vers l'ennemi marqué toutes les 0,2 s pour ×0,17 de vos dégâts (équilibrage ×0,62) ; fonctionne avec toute arme"
+pb_w_charge: "remplace vos tirs normaux par des salves à pleine charge (balles ×1,25 plus 6 fragments à 15 % sur la cible), une par 2,5 × votre délai ; affiché comme la différence avec vos tirs normaux"
