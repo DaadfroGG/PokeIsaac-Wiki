@@ -62,4 +62,5 @@ Luck +1 each time you go down a floor
 
 ## Stacking
 - Each copy gives its own Luck +1 on pickup, but the per-floor Luck +1 is a single effect: it applies **once per floor however many copies you own**. Two copies are +2 when picked up, then +1 per floor, not +2.
+- The floor bonus is kept for good: if you lose the item, you lose its pickup Luck +1 but keep the Luck it already gained from floors.
 - Past 10 Luck each point counts for only a quarter on screen, so with a lot of Luck already the floor bonus shows as about +0.25.

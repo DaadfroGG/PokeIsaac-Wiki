@@ -62,4 +62,5 @@ Chance +1 à chaque étage descendu
 
 ## Cumul
 - Chaque exemplaire donne son propre Chance +1 en le prenant, mais le Chance +1 par étage est un effet unique : il s'applique **une seule fois par étage, quel que soit le nombre d'exemplaires**. Deux exemplaires font +2 au ramassage, puis +1 par étage, pas +2.
+- Le bonus d'étage est définitif : si vous perdez l'objet, vous perdez son Chance +1 de ramassage mais gardez la Chance déjà gagnée aux étages.
 - Au-delà de 10 de Chance, chaque point ne compte que pour un quart à l'écran : avec déjà beaucoup de Chance, le bonus d'étage s'affiche donc comme environ +0,25.
