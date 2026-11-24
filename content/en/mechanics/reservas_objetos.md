@@ -158,7 +158,7 @@ Actives (58 of them can drop) have their own bag, used by the [shop](../rooms/sh
 - Live event "items": one extra treasure room item.
 
 ## Co-op and modes
-- The pools are shared by the whole team, and an item a player owns is supposed to be left out of later draws for everybody. **Not reliable in co-op:** a group of 3 saw a passive taken by one player come back several floors later, once for each of the other two players. The cause is not known yet.
+- The pools are shared by the whole team, and an item a player owns is left out of later draws for everybody, **until the pool runs dry**. When no item of a pool is left that nobody owns (also counting dropped items, locked items and the tier limit), the game falls back to the last resort above, which ignores ownership: items someone already owns, even several players, are offered again. The team uses items up about as many times faster as there are players, so in co-op this comes much sooner, especially on an account with many locked items: in our tests, with three quarters of the items locked, the first repeat came on floor 14 alone, floor 7 with two players, floor 5 with three and floor 4 with four. That is how a passive such as the White Herb can come back after two teammates already hold it.
 - **Filters in co-op:**
   - A type-restricted item is allowed if any Pokémon of the team (all 3 of every player who is still connected, fainted players included) has that type.
   - Luck for the tier limit is the highest among connected players.
