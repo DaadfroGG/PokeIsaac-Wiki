@@ -49,4 +49,4 @@ names:
     name: 脫殼忍者
     desc: 牠只有半顆愛心的生命，而且無法提升：任何攻擊都會讓牠倒下。射擊更快。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Il n'a qu'un demi-cœur de vie et ne peut pas l'augmenter : le moindre coup le met K.O. Il tire plus vite. Ses tirs traversent les rochers. (les tirs alternent entre les deux types)
+Il n'a qu'un demi-cœur de vie et ne peut pas l'augmenter : le moindre coup le met K.O. Il tire plus vite. Ses tirs traversent les rochers. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

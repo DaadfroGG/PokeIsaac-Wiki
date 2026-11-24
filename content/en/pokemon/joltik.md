@@ -51,4 +51,4 @@ names:
     name: 電電蟲
     desc: 射擊更快。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Its lightning can chain between enemies. (shots alternate between the two types)
+Fires faster. Its lightning can chain between enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

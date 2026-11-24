@@ -51,4 +51,4 @@ names:
     name: 鉗尾蠍
     desc: 牠的彈可讓敵人中毒。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Its shots can poison. Fires faster. (shots alternate between the two types)
+Its shots can poison. Fires faster. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

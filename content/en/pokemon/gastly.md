@@ -52,4 +52,4 @@ names:
     name: 鬼斯
     desc: 牠的彈可穿過岩石。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Its shots pass through rocks. Its shots can poison. (shots alternate between the two types)
+Its shots pass through rocks. Its shots can poison. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

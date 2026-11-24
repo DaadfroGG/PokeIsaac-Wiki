@@ -51,4 +51,4 @@ names:
     name: 雪絨蛾
     desc: 牠的彈可讓敵人減速。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent ralentir. Tire plus vite. (les tirs alternent entre les deux types)
+Ses tirs peuvent ralentir. Tire plus vite. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

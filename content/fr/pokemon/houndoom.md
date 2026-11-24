@@ -52,4 +52,4 @@ names:
     name: 黑魯加
     desc: 更多會心一擊。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Plus de coups critiques. Ses tirs peuvent brûler. (les tirs alternent entre les deux types)
+Plus de coups critiques. Ses tirs peuvent brûler. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 紅蓮鎧騎
     desc: 牠的彈可造成灼傷。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent brûler. Certains tirs poursuivent les ennemis. (les tirs alternent entre les deux types)
+Ses tirs peuvent brûler. Certains tirs poursuivent les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

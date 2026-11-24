@@ -51,4 +51,4 @@ names:
     name: 斗笠菇
     desc: 牠的彈可貫穿敵人。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Its shots can pierce enemies. More critical hits. (shots alternate between the two types)
+Its shots can pierce enemies. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 焚焰蚣
     desc: 牠的彈可造成灼傷。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent brûler. Tire plus vite. (les tirs alternent entre les deux types)
+Ses tirs peuvent brûler. Tire plus vite. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

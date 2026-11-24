@@ -53,4 +53,4 @@ names:
     name: 大嘴蝠
     desc: 牠的彈可讓敵人中毒。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its shots can poison. Very fast. (shots alternate between the two types)
+Its shots can poison. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

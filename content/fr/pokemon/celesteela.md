@@ -49,4 +49,4 @@ names:
     name: 鐵火輝夜
     desc: 牠的彈可讓敵人暈眩。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent étourdir les ennemis. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs peuvent étourdir les ennemis. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

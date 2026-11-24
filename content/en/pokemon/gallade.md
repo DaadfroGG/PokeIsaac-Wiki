@@ -50,4 +50,4 @@ names:
     name: 艾路雷朵
     desc: 部分彈會追蹤敵人。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Some shots home in on enemies. More critical hits. (shots alternate between the two types)
+Some shots home in on enemies. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

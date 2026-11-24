@@ -53,4 +53,4 @@ names:
     name: 燈火幽靈
     desc: 牠的彈可穿過岩石。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Its shots pass through rocks. Its shots can burn. (shots alternate between the two types)
+Its shots pass through rocks. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

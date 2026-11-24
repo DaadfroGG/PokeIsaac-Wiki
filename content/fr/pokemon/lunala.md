@@ -49,4 +49,4 @@ names:
     name: 露奈雅拉
     desc: 部分彈會追蹤敵人。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Certains tirs poursuivent les ennemis. Ses tirs traversent les rochers. (les tirs alternent entre les deux types)
+Certains tirs poursuivent les ennemis. Ses tirs traversent les rochers. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

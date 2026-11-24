@@ -51,4 +51,4 @@ names:
     name: 穿著熊
     desc: 更多會心一擊。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Plus de coups critiques. Très chanceux. (les tirs alternent entre les deux types)
+Plus de coups critiques. Très chanceux. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

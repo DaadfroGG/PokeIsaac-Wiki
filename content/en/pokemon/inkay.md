@@ -51,4 +51,4 @@ names:
     name: 好啦魷
     desc: 更多會心一擊。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Some shots home in on enemies. (shots alternate between the two types)
+More critical hits. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

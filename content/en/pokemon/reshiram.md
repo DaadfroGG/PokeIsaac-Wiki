@@ -49,4 +49,4 @@ names:
     name: 萊希拉姆
     desc: 樣樣都強。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Its shots can burn. (shots alternate between the two types)
+Strong at everything. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

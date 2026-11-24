@@ -49,4 +49,4 @@ names:
     name: 盔甲鳥
     desc: 牠的彈可讓敵人暈眩。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its shots can stun enemies. Very fast. (shots alternate between the two types)
+Its shots can stun enemies. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

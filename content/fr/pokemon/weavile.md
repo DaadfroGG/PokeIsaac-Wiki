@@ -51,4 +51,4 @@ names:
     name: 瑪狃拉
     desc: 更多會心一擊。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Plus de coups critiques. Ses tirs peuvent ralentir. (les tirs alternent entre les deux types)
+Plus de coups critiques. Ses tirs peuvent ralentir. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

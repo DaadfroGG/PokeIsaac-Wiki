@@ -49,4 +49,4 @@ names:
     name: 鐵臂膀
     desc: 更多會心一擊。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Its lightning can chain between enemies. (shots alternate between the two types)
+More critical hits. Its lightning can chain between enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

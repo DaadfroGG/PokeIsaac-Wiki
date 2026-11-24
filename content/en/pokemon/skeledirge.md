@@ -52,4 +52,4 @@ names:
     name: 骨紋巨聲鱷
     desc: 牠的彈可造成灼傷。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Its shots can burn. Its shots pass through rocks. (shots alternate between the two types)
+Its shots can burn. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 大朝北鼻
     desc: 更大的彈，有時能擊退。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots can stun enemies. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots can stun enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

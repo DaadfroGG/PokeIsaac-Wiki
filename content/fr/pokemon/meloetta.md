@@ -49,4 +49,4 @@ names:
     name: 美洛耶塔
     desc: 部分彈會追蹤敵人。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Certains tirs poursuivent les ennemis. Très chanceux. (les tirs alternent entre les deux types)
+Certains tirs poursuivent les ennemis. Très chanceux. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

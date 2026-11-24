@@ -51,4 +51,4 @@ names:
     name: 斯魔茶
     desc: 牠的彈可貫穿敵人。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent transpercer les ennemis. Ses tirs traversent les rochers. (les tirs alternent entre les deux types)
+Ses tirs peuvent transpercer les ennemis. Ses tirs traversent les rochers. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

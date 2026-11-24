@@ -51,4 +51,4 @@ names:
     name: 飄飄球
     desc: 牠的彈可穿過岩石。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs traversent les rochers. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs traversent les rochers. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

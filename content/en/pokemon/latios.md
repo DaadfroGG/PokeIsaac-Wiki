@@ -50,4 +50,4 @@ names:
     name: 拉帝歐斯
     desc: 樣樣都強。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Some shots home in on enemies. (shots alternate between the two types)
+Strong at everything. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

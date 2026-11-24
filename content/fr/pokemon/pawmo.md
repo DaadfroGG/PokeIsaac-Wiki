@@ -53,4 +53,4 @@ names:
     name: 布土撥
     desc: 牠的閃電可在敵人之間連鎖。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Ses éclairs peuvent rebondir d'un ennemi à l'autre. Plus de coups critiques. (les tirs alternent entre les deux types)
+Ses éclairs peuvent rebondir d'un ennemi à l'autre. Plus de coups critiques. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

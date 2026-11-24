@@ -51,4 +51,4 @@ names:
     name: 好壞星
     desc: 牠的彈可讓敵人中毒。 牠的彈會擊退敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can poison. Its shots knock enemies back. (shots alternate between the two types)
+Its shots can poison. Its shots knock enemies back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

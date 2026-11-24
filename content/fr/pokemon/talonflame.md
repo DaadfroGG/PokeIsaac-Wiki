@@ -52,4 +52,4 @@ names:
     name: 烈箭鷹
     desc: 牠的彈可造成灼傷。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent brûler. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs peuvent brûler. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 電海燕
     desc: 牠的閃電可在敵人之間連鎖。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses éclairs peuvent rebondir d'un ennemi à l'autre. Très rapide. (les tirs alternent entre les deux types)
+Ses éclairs peuvent rebondir d'un ennemi à l'autre. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

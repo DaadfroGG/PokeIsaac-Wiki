@@ -53,4 +53,4 @@ names:
     name: 詐唬魔
     desc: 更多會心一擊。 牠的彈可迷惑敵人：敵人會暫時停在原地。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Its shots can charm: the enemy stands still for a moment. (shots alternate between the two types)
+More critical hits. Its shots can charm: the enemy stands still for a moment. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

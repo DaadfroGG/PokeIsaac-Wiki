@@ -52,4 +52,4 @@ names:
     name: 帝王拿波
     desc: 牠的彈會擊退敵人。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Ses tirs repoussent les ennemis. Ses tirs peuvent étourdir les ennemis. (les tirs alternent entre les deux types)
+Ses tirs repoussent les ennemis. Ses tirs peuvent étourdir les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

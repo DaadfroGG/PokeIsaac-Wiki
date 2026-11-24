@@ -49,4 +49,4 @@ names:
     name: 酋雷姆
     desc: 樣樣都強。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Its shots can slow. (shots alternate between the two types)
+Strong at everything. Its shots can slow. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 吉雉雞
     desc: 牠的彈可讓敵人中毒。 牠的彈可迷惑敵人：敵人會暫時停在原地。 (彈會交替使用兩種屬性)
 ---
-Its shots can poison. Its shots can charm: the enemy stands still for a moment. (shots alternate between the two types)
+Its shots can poison. Its shots can charm: the enemy stands still for a moment. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 大嘴鷗
     desc: 牠的彈會擊退敵人。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Very fast. (shots alternate between the two types)
+Its shots knock enemies back. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

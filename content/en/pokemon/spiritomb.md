@@ -49,4 +49,4 @@ names:
     name: 花岩怪
     desc: 牠的彈可穿過岩石。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Its shots pass through rocks. More critical hits. (shots alternate between the two types)
+Its shots pass through rocks. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

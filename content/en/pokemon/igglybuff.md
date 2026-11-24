@@ -52,4 +52,4 @@ names:
     name: 寶寶丁
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Its shots can charm: the enemy stands still for a moment. Very lucky. (shots alternate between the two types)
+Its shots can charm: the enemy stands still for a moment. Very lucky. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

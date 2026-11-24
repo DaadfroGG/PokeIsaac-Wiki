@@ -52,4 +52,4 @@ names:
     name: 炎武王
     desc: 牠的彈可造成灼傷。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent brûler. Plus de coups critiques. (les tirs alternent entre les deux types)
+Ses tirs peuvent brûler. Plus de coups critiques. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

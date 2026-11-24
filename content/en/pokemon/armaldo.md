@@ -51,4 +51,4 @@ names:
     name: 太古盔甲
     desc: 更大的彈，有時能擊退。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Fires faster. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Fires faster. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

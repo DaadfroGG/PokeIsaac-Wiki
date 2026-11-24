@@ -49,4 +49,4 @@ names:
     name: 鰓魚海獸
     desc: 牠的彈會擊退敵人。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Its shots can slow. (shots alternate between the two types)
+Its shots knock enemies back. Its shots can slow. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

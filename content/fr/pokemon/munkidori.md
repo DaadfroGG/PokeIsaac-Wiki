@@ -49,4 +49,4 @@ names:
     name: 願增猿
     desc: 牠的彈可讓敵人中毒。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent empoisonner. Certains tirs poursuivent les ennemis. (les tirs alternent entre les deux types)
+Ses tirs peuvent empoisonner. Certains tirs poursuivent les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

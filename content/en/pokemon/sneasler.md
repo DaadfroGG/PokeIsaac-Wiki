@@ -49,4 +49,4 @@ names:
     name: 大狃拉
     desc: 更多會心一擊。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Its shots can poison. (shots alternate between the two types)
+More critical hits. Its shots can poison. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

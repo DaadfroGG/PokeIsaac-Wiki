@@ -53,4 +53,4 @@ names:
     name: 天罩蟲
     desc: 射擊更快。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Certains tirs poursuivent les ennemis. (les tirs alternent entre les deux types)
+Tire plus vite. Certains tirs poursuivent les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -57,4 +57,4 @@ Des feuilles à longue portée qui transpercent parfois.
 
 ## Passif
 
-Ses tirs peuvent transpercer les ennemis. Ses tirs peuvent empoisonner. (les tirs alternent entre les deux types)
+Ses tirs peuvent transpercer les ennemis. Ses tirs peuvent empoisonner. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

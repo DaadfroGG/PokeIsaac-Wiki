@@ -52,4 +52,4 @@ names:
     name: 七夕青鳥
     desc: 樣樣都強。 非常快。 (彈會交替使用兩種屬性)
 ---
-Fort en tout. Très rapide. (les tirs alternent entre les deux types)
+Fort en tout. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

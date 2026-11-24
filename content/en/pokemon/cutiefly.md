@@ -51,4 +51,4 @@ names:
     name: 萌虻
     desc: 射擊更快。 牠的彈可迷惑敵人：敵人會暫時停在原地。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Its shots can charm: the enemy stands still for a moment. (shots alternate between the two types)
+Fires faster. Its shots can charm: the enemy stands still for a moment. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

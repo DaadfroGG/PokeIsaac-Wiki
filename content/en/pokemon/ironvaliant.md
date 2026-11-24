@@ -49,4 +49,4 @@ names:
     name: 鐵武者
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Its shots can charm: the enemy stands still for a moment. More critical hits. (shots alternate between the two types)
+Its shots can charm: the enemy stands still for a moment. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 死神板
     desc: 更大的彈，有時能擊退。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Ses tirs traversent les rochers. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Ses tirs traversent les rochers. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

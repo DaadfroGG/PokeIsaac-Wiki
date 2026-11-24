@@ -49,4 +49,4 @@ names:
     name: 小獅獅
     desc: 牠的彈可造成灼傷。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent brûler. Très chanceux. (les tirs alternent entre les deux types)
+Ses tirs peuvent brûler. Très chanceux. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

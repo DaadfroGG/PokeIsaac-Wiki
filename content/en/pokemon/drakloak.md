@@ -53,4 +53,4 @@ names:
     name: 多龍奇
     desc: 樣樣都強。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Its shots pass through rocks. (shots alternate between the two types)
+Strong at everything. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

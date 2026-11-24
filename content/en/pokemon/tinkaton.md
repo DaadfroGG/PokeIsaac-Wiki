@@ -52,4 +52,4 @@ names:
     name: 巨鍛匠
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Its shots can charm: the enemy stands still for a moment. Its shots can stun enemies. (shots alternate between the two types)
+Its shots can charm: the enemy stands still for a moment. Its shots can stun enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

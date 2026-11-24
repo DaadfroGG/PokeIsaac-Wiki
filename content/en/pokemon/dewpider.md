@@ -51,4 +51,4 @@ names:
     name: 滴蛛
     desc: 牠的彈會擊退敵人。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Fires faster. (shots alternate between the two types)
+Its shots knock enemies back. Fires faster. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

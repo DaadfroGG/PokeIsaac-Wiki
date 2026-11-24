@@ -51,4 +51,4 @@ names:
     name: 滴蛛霸
     desc: 牠的彈會擊退敵人。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs repoussent les ennemis. Tire plus vite. (les tirs alternent entre les deux types)
+Ses tirs repoussent les ennemis. Tire plus vite. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

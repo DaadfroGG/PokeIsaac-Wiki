@@ -52,4 +52,4 @@ names:
     name: 波克基斯
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its shots can charm: the enemy stands still for a moment. Very fast. (shots alternate between the two types)
+Its shots can charm: the enemy stands still for a moment. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

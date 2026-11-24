@@ -49,4 +49,4 @@ names:
     name: 信使鳥
     desc: 牠的彈可讓敵人減速。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its shots can slow. Very fast. (shots alternate between the two types)
+Its shots can slow. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

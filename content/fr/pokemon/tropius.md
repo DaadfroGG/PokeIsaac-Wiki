@@ -49,4 +49,4 @@ names:
     name: 熱帶龍
     desc: 牠的彈可貫穿敵人。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent transpercer les ennemis. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs peuvent transpercer les ennemis. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 龜腳腳
     desc: 更大的彈，有時能擊退。 牠的彈會擊退敵人。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots knock enemies back. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots knock enemies back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

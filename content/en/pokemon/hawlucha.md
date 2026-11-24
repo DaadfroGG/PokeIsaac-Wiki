@@ -50,4 +50,4 @@ names:
     name: 摔角鷹人
     desc: 更多會心一擊。 非常快。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Very fast. (shots alternate between the two types)
+More critical hits. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

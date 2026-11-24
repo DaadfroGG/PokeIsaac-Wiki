@@ -51,4 +51,4 @@ names:
     name: 滾滾蝙蝠
     desc: 部分彈會追蹤敵人。 非常快。 (彈會交替使用兩種屬性)
 ---
-Certains tirs poursuivent les ennemis. Très rapide. (les tirs alternent entre les deux types)
+Certains tirs poursuivent les ennemis. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

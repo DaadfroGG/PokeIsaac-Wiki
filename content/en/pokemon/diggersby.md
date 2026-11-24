@@ -51,4 +51,4 @@ names:
     name: 掘地兔
     desc: 更大的彈，有時能擊退。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Very lucky. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Very lucky. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

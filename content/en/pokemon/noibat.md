@@ -51,4 +51,4 @@ names:
     name: 嗡蝠
     desc: 非常快。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Very fast. Strong at everything. (shots alternate between the two types)
+Very fast. Strong at everything. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

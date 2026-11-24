@@ -51,4 +51,4 @@ names:
     name: 雪笠怪
     desc: 牠的彈可貫穿敵人。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent transpercer les ennemis. Ses tirs peuvent ralentir. (les tirs alternent entre les deux types)
+Ses tirs peuvent transpercer les ennemis. Ses tirs peuvent ralentir. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

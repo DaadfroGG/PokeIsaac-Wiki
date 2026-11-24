@@ -52,4 +52,4 @@ names:
     name: 大針蜂
     desc: 射擊更快。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Its shots can poison. (shots alternate between the two types)
+Fires faster. Its shots can poison. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

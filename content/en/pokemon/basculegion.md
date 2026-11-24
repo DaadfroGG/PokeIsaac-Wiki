@@ -51,4 +51,4 @@ names:
     name: 幽尾玄魚
     desc: 牠的彈會擊退敵人。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Its shots pass through rocks. (shots alternate between the two types)
+Its shots knock enemies back. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

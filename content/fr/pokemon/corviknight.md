@@ -52,4 +52,4 @@ names:
     name: 鋼鎧鴉
     desc: 非常快。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Très rapide. Ses tirs peuvent étourdir les ennemis. (les tirs alternent entre les deux types)
+Très rapide. Ses tirs peuvent étourdir les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

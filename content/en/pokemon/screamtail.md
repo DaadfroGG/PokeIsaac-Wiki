@@ -49,4 +49,4 @@ names:
     name: 吼叫尾
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can charm: the enemy stands still for a moment. Some shots home in on enemies. (shots alternate between the two types)
+Its shots can charm: the enemy stands still for a moment. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

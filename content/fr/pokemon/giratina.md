@@ -49,4 +49,4 @@ names:
     name: 騎拉帝納
     desc: 牠的彈可穿過岩石。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Ses tirs traversent les rochers. Fort en tout. (les tirs alternent entre les deux types)
+Ses tirs traversent les rochers. Fort en tout. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

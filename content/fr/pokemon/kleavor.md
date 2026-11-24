@@ -49,4 +49,4 @@ names:
     name: 劈斧螳螂
     desc: 射擊更快。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Tirs plus gros qui repoussent parfois. (les tirs alternent entre les deux types)
+Tire plus vite. Tirs plus gros qui repoussent parfois. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

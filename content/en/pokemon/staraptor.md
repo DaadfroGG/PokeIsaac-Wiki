@@ -52,4 +52,4 @@ names:
     name: 姆克鷹
     desc: 非常快。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Very fast. Very lucky. (shots alternate between the two types)
+Very fast. Very lucky. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 爬地翅
     desc: 射擊更快。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Plus de coups critiques. (les tirs alternent entre les deux types)
+Tire plus vite. Plus de coups critiques. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

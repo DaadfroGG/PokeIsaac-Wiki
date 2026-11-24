@@ -52,4 +52,4 @@ names:
     name: 海豹球
     desc: 牠的彈可讓敵人減速。 牠的彈會擊退敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can slow. Its shots knock enemies back. (shots alternate between the two types)
+Its shots can slow. Its shots knock enemies back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

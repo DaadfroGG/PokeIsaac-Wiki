@@ -49,4 +49,4 @@ names:
     name: 脫殼忍者
     desc: 牠只有半顆愛心的生命，而且無法提升：任何攻擊都會讓牠倒下。射擊更快。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-It only has half a heart and cannot raise it: any hit defeats it. Fires faster. Its shots pass through rocks. (shots alternate between the two types)
+It only has half a heart and cannot raise it: any hit defeats it. Fires faster. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

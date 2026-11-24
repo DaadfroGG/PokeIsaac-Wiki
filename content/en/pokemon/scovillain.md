@@ -51,4 +51,4 @@ names:
     name: 狠辣椒
     desc: 牠的彈可貫穿敵人。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Its shots can pierce enemies. Its shots can burn. (shots alternate between the two types)
+Its shots can pierce enemies. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

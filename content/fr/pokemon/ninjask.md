@@ -51,4 +51,4 @@ names:
     name: 鐵面忍者
     desc: 射擊更快。 非常快。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Très rapide. (les tirs alternent entre les deux types)
+Tire plus vite. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

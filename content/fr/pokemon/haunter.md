@@ -53,4 +53,4 @@ names:
     name: 鬼斯通
     desc: 牠的彈可穿過岩石。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Ses tirs traversent les rochers. Ses tirs peuvent empoisonner. (les tirs alternent entre les deux types)
+Ses tirs traversent les rochers. Ses tirs peuvent empoisonner. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

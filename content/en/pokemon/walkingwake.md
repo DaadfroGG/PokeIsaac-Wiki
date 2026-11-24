@@ -49,4 +49,4 @@ names:
     name: 波盪水
     desc: 牠的彈會擊退敵人。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Strong at everything. (shots alternate between the two types)
+Its shots knock enemies back. Strong at everything. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

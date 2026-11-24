@@ -49,4 +49,4 @@ names:
     name: 急凍鳥
     desc: 牠的彈可讓敵人減速。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent ralentir. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs peuvent ralentir. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

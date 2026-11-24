@@ -51,4 +51,4 @@ names:
     name: 小木靈
     desc: 牠的彈可穿過岩石。 牠的彈可貫穿敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots pass through rocks. Its shots can pierce enemies. (shots alternate between the two types)
+Its shots pass through rocks. Its shots can pierce enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 嗡蝠
     desc: 非常快。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Très rapide. Fort en tout. (les tirs alternent entre les deux types)
+Très rapide. Fort en tout. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

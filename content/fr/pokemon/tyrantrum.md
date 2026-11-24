@@ -51,4 +51,4 @@ names:
     name: 怪顎龍
     desc: 更大的彈，有時能擊退。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Fort en tout. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Fort en tout. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

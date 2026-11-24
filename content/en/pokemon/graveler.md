@@ -53,4 +53,4 @@ names:
     name: 隆隆石
     desc: 更大的彈，有時能擊退。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 鋁鋼龍
     desc: 牠的彈可讓敵人暈眩。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Its shots can stun enemies. Strong at everything. (shots alternate between the two types)
+Its shots can stun enemies. Strong at everything. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

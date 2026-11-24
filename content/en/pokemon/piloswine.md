@@ -53,4 +53,4 @@ names:
     name: 長毛豬
     desc: 牠的彈可讓敵人減速。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Its shots can slow. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Its shots can slow. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

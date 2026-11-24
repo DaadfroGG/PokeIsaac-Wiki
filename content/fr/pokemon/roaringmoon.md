@@ -49,4 +49,4 @@ names:
     name: 轟鳴月
     desc: 樣樣都強。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Fort en tout. Plus de coups critiques. (les tirs alternent entre les deux types)
+Fort en tout. Plus de coups critiques. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

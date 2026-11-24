@@ -51,4 +51,4 @@ names:
     name: 雪吞蟲
     desc: 牠的彈可讓敵人減速。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Its shots can slow. Fires faster. (shots alternate between the two types)
+Its shots can slow. Fires faster. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

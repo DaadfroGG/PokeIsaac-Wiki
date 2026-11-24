@@ -52,4 +52,4 @@ names:
     name: 蟲寶包
     desc: 射擊更快。 牠的彈可貫穿敵人。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Its shots can pierce enemies. (shots alternate between the two types)
+Fires faster. Its shots can pierce enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -53,4 +53,4 @@ names:
     name: 尖牙陸鯊
     desc: 樣樣都強。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Strong at everything. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

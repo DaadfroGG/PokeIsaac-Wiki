@@ -51,4 +51,4 @@ names:
     name: 沙丘娃
     desc: 牠的彈可穿過岩石。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Its shots pass through rocks. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Its shots pass through rocks. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

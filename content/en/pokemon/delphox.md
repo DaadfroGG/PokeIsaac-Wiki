@@ -52,4 +52,4 @@ names:
     name: 妖火紅狐
     desc: 牠的彈可造成灼傷。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can burn. Some shots home in on enemies. (shots alternate between the two types)
+Its shots can burn. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

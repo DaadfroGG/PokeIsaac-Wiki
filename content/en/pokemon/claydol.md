@@ -51,4 +51,4 @@ names:
     name: 念力土偶
     desc: 更大的彈，有時能擊退。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Some shots home in on enemies. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

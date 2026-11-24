@@ -51,4 +51,4 @@ names:
     name: 晶光花
     desc: 更大的彈，有時能擊退。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Ses tirs peuvent empoisonner. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Ses tirs peuvent empoisonner. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

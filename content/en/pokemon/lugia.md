@@ -49,4 +49,4 @@ names:
     name: 洛奇亞
     desc: 部分彈會追蹤敵人。 非常快。 (彈會交替使用兩種屬性)
 ---
-Some shots home in on enemies. Very fast. (shots alternate between the two types)
+Some shots home in on enemies. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -51,4 +51,4 @@ names:
     name: 熔岩蝸牛
     desc: 牠的彈可造成灼傷。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Its shots can burn. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Its shots can burn. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

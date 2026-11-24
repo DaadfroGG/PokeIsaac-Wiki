@@ -49,4 +49,4 @@ names:
     name: 花岩怪
     desc: 牠的彈可穿過岩石。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Ses tirs traversent les rochers. Plus de coups critiques. (les tirs alternent entre les deux types)
+Ses tirs traversent les rochers. Plus de coups critiques. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

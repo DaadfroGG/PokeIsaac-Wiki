@@ -49,4 +49,4 @@ names:
     name: 虛吾伊德
     desc: 更大的彈，有時能擊退。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots can poison. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots can poison. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

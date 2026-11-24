@@ -51,4 +51,4 @@ names:
     name: 大嘴鷗
     desc: 牠的彈會擊退敵人。 非常快。 (彈會交替使用兩種屬性)
 ---
-Ses tirs repoussent les ennemis. Très rapide. (les tirs alternent entre les deux types)
+Ses tirs repoussent les ennemis. Très rapide. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

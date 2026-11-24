@@ -49,4 +49,4 @@ names:
     name: 瑪夏多
     desc: 更多會心一擊。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Its shots pass through rocks. (shots alternate between the two types)
+More critical hits. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

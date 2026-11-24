@@ -52,4 +52,4 @@ names:
     name: 甲賀忍蛙
     desc: 牠的彈會擊退敵人。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. More critical hits. (shots alternate between the two types)
+Its shots knock enemies back. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

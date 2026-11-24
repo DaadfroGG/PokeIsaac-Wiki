@@ -49,4 +49,4 @@ names:
     name: 納噬草
     desc: 牠的彈可貫穿敵人。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Its shots can pierce enemies. Its shots pass through rocks. (shots alternate between the two types)
+Its shots can pierce enemies. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

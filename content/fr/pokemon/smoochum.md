@@ -51,4 +51,4 @@ names:
     name: 迷唇娃
     desc: 牠的彈可讓敵人減速。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent ralentir. Certains tirs poursuivent les ennemis. (les tirs alternent entre les deux types)
+Ses tirs peuvent ralentir. Certains tirs poursuivent les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

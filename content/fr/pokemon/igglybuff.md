@@ -52,4 +52,4 @@ names:
     name: 寶寶丁
     desc: 牠的彈可迷惑敵人：敵人會暫時停在原地。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Ses tirs peuvent charmer : l'ennemi reste immobile un instant. Très chanceux. (les tirs alternent entre les deux types)
+Ses tirs peuvent charmer : l'ennemi reste immobile un instant. Très chanceux. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

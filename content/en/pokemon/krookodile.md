@@ -52,4 +52,4 @@ names:
     name: 流氓鱷
     desc: 更大的彈，有時能擊退。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. More critical hits. (shots alternate between the two types)
+Bigger shots that sometimes knock back. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 死神板
     desc: 更大的彈，有時能擊退。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots pass through rocks. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots pass through rocks. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

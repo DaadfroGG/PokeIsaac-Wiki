@@ -49,4 +49,4 @@ names:
     name: 電飛鼠
     desc: 牠的閃電可在敵人之間連鎖。 非常快。 (彈會交替使用兩種屬性)
 ---
-Its lightning can chain between enemies. Very fast. (shots alternate between the two types)
+Its lightning can chain between enemies. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

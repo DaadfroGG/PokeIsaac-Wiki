@@ -51,4 +51,4 @@ names:
     name: 燈籠魚
     desc: 牠的彈會擊退敵人。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Its lightning can chain between enemies. (shots alternate between the two types)
+Its shots knock enemies back. Its lightning can chain between enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -52,4 +52,4 @@ names:
     name: 黑魯加
     desc: 更多會心一擊。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Its shots can burn. (shots alternate between the two types)
+More critical hits. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

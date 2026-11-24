@@ -49,4 +49,4 @@ names:
     name: 比克提尼
     desc: 部分彈會追蹤敵人。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Some shots home in on enemies. Its shots can burn. (shots alternate between the two types)
+Some shots home in on enemies. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

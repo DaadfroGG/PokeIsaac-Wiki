@@ -49,4 +49,4 @@ names:
     name: 沙鐵皮
     desc: 牠的閃電可在敵人之間連鎖。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Its lightning can chain between enemies. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Its lightning can chain between enemies. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

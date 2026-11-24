@@ -49,4 +49,4 @@ names:
     name: 捷克羅姆
     desc: 樣樣都強。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Its lightning can chain between enemies. (shots alternate between the two types)
+Strong at everything. Its lightning can chain between enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

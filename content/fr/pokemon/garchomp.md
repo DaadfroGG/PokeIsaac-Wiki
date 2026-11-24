@@ -52,4 +52,4 @@ names:
     name: 烈咬陸鯊
     desc: 樣樣都強。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Fort en tout. Tirs plus gros qui repoussent parfois. (les tirs alternent entre les deux types)
+Fort en tout. Tirs plus gros qui repoussent parfois. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

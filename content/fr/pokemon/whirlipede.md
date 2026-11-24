@@ -53,4 +53,4 @@ names:
     name: 車輪毬
     desc: 射擊更快。 牠的彈可讓敵人中毒。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Ses tirs peuvent empoisonner. (les tirs alternent entre les deux types)
+Tire plus vite. Ses tirs peuvent empoisonner. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

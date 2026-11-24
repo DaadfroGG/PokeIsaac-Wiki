@@ -51,4 +51,4 @@ names:
     name: 電燈怪
     desc: 牠的彈會擊退敵人。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Ses tirs repoussent les ennemis. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (les tirs alternent entre les deux types)
+Ses tirs repoussent les ennemis. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

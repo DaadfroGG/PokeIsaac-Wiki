@@ -52,4 +52,4 @@ names:
     name: 鋼鎧鴉
     desc: 非常快。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Very fast. Its shots can stun enemies. (shots alternate between the two types)
+Very fast. Its shots can stun enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

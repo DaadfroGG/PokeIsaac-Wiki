@@ -52,4 +52,4 @@ names:
     name: 多龍巴魯托
     desc: 樣樣都強。 牠的彈可穿過岩石。 (彈會交替使用兩種屬性)
 ---
-Fort en tout. Ses tirs traversent les rochers. (les tirs alternent entre les deux types)
+Fort en tout. Ses tirs traversent les rochers. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

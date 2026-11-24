@@ -52,4 +52,4 @@ names:
     name: 鍬農炮蟲
     desc: 射擊更快。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Tire plus vite. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (les tirs alternent entre les deux types)
+Tire plus vite. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

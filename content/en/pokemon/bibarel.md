@@ -51,4 +51,4 @@ names:
     name: 大尾狸
     desc: 牠的彈會擊退敵人。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Its shots knock enemies back. Very lucky. (shots alternate between the two types)
+Its shots knock enemies back. Very lucky. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

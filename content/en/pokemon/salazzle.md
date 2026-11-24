@@ -51,4 +51,4 @@ names:
     name: 焰后蜥
     desc: 牠的彈可讓敵人中毒。 牠的彈可造成灼傷。 (彈會交替使用兩種屬性)
 ---
-Its shots can poison. Its shots can burn. (shots alternate between the two types)
+Its shots can poison. Its shots can burn. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

@@ -52,4 +52,4 @@ names:
     name: 暴飛龍
     desc: 樣樣都強。 非常快。 (彈會交替使用兩種屬性)
 ---
-Strong at everything. Very fast. (shots alternate between the two types)
+Strong at everything. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

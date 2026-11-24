@@ -51,4 +51,4 @@ names:
     name: 銅鏡怪
     desc: 牠的彈可讓敵人暈眩。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can stun enemies. Some shots home in on enemies. (shots alternate between the two types)
+Its shots can stun enemies. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

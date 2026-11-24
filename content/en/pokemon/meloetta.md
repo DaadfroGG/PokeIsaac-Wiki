@@ -49,4 +49,4 @@ names:
     name: 美洛耶塔
     desc: 部分彈會追蹤敵人。 運氣非常好。 (彈會交替使用兩種屬性)
 ---
-Some shots home in on enemies. Very lucky. (shots alternate between the two types)
+Some shots home in on enemies. Very lucky. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

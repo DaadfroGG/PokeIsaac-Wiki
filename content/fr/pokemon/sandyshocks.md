@@ -49,4 +49,4 @@ names:
     name: 沙鐵皮
     desc: 牠的閃電可在敵人之間連鎖。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Ses éclairs peuvent rebondir d'un ennemi à l'autre. Tirs plus gros qui repoussent parfois. (les tirs alternent entre les deux types)
+Ses éclairs peuvent rebondir d'un ennemi à l'autre. Tirs plus gros qui repoussent parfois. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

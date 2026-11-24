@@ -52,4 +52,4 @@ names:
     name: 三首惡龍
     desc: 更多會心一擊。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-More critical hits. Strong at everything. (shots alternate between the two types)
+More critical hits. Strong at everything. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

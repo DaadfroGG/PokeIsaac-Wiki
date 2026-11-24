@@ -51,4 +51,4 @@ names:
     name: 具甲武者
     desc: 射擊更快。 牠的彈會擊退敵人。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Its shots knock enemies back. (shots alternate between the two types)
+Fires faster. Its shots knock enemies back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

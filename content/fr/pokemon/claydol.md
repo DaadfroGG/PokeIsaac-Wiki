@@ -51,4 +51,4 @@ names:
     name: 念力土偶
     desc: 更大的彈，有時能擊退。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Certains tirs poursuivent les ennemis. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Certains tirs poursuivent les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 波爾凱尼恩
     desc: 牠的彈可造成灼傷。 牠的彈會擊退敵人。 (彈會交替使用兩種屬性)
 ---
-Its shots can burn. Its shots knock enemies back. (shots alternate between the two types)
+Its shots can burn. Its shots knock enemies back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

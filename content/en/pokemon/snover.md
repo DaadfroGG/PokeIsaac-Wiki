@@ -51,4 +51,4 @@ names:
     name: 雪笠怪
     desc: 牠的彈可貫穿敵人。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Its shots can pierce enemies. Its shots can slow. (shots alternate between the two types)
+Its shots can pierce enemies. Its shots can slow. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

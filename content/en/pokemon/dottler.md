@@ -53,4 +53,4 @@ names:
     name: 天罩蟲
     desc: 射擊更快。 部分彈會追蹤敵人。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Some shots home in on enemies. (shots alternate between the two types)
+Fires faster. Some shots home in on enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

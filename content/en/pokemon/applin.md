@@ -52,4 +52,4 @@ names:
     name: 啃果蟲
     desc: 牠的彈可貫穿敵人。 樣樣都強。 (彈會交替使用兩種屬性)
 ---
-Its shots can pierce enemies. Strong at everything. (shots alternate between the two types)
+Its shots can pierce enemies. Strong at everything. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

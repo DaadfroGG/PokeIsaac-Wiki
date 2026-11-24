@@ -51,4 +51,4 @@ names:
     name: 觸手百合
     desc: 更大的彈，有時能擊退。 牠的彈可貫穿敵人。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots can pierce enemies. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots can pierce enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

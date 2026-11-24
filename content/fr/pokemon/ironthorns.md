@@ -49,4 +49,4 @@ names:
     name: 鐵荊棘
     desc: 更大的彈，有時能擊退。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

@@ -49,4 +49,4 @@ names:
     name: 托戈德瑪爾
     desc: 牠的閃電可在敵人之間連鎖。 牠的彈可讓敵人暈眩。 (彈會交替使用兩種屬性)
 ---
-Ses éclairs peuvent rebondir d'un ennemi à l'autre. Ses tirs peuvent étourdir les ennemis. (les tirs alternent entre les deux types)
+Ses éclairs peuvent rebondir d'un ennemi à l'autre. Ses tirs peuvent étourdir les ennemis. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

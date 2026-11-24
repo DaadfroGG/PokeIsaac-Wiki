@@ -51,4 +51,4 @@ names:
     name: 太古羽蟲
     desc: 更大的彈，有時能擊退。 射擊更快。 (彈會交替使用兩種屬性)
 ---
-Tirs plus gros qui repoussent parfois. Tire plus vite. (les tirs alternent entre les deux types)
+Tirs plus gros qui repoussent parfois. Tire plus vite. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

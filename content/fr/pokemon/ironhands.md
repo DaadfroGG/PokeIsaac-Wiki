@@ -49,4 +49,4 @@ names:
     name: 鐵臂膀
     desc: 更多會心一擊。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Plus de coups critiques. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (les tirs alternent entre les deux types)
+Plus de coups critiques. Ses éclairs peuvent rebondir d'un ennemi à l'autre. (double type : [vous choisissez le type de chaque tir](../mechanics/tipos_dobles.html))

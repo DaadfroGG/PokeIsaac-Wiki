@@ -49,4 +49,4 @@ names:
     name: 爆肌蚊
     desc: 射擊更快。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Fires faster. More critical hits. (shots alternate between the two types)
+Fires faster. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

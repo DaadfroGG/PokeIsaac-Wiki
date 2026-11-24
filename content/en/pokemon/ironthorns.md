@@ -49,4 +49,4 @@ names:
     name: 鐵荊棘
     desc: 更大的彈，有時能擊退。 牠的閃電可在敵人之間連鎖。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its lightning can chain between enemies. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its lightning can chain between enemies. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

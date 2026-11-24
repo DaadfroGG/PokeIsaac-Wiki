@@ -51,4 +51,4 @@ names:
     name: 土居忍士
     desc: 射擊更快。 更大的彈，有時能擊退。 (彈會交替使用兩種屬性)
 ---
-Fires faster. Bigger shots that sometimes knock back. (shots alternate between the two types)
+Fires faster. Bigger shots that sometimes knock back. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

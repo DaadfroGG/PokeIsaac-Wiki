@@ -52,4 +52,4 @@ names:
     name: 炎武王
     desc: 牠的彈可造成灼傷。 更多會心一擊。 (彈會交替使用兩種屬性)
 ---
-Its shots can burn. More critical hits. (shots alternate between the two types)
+Its shots can burn. More critical hits. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

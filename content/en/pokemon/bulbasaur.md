@@ -57,4 +57,4 @@ Long-range leaves that sometimes pierce.
 
 ## Passive
 
-Its shots can pierce enemies. Its shots can poison. (shots alternate between the two types)
+Its shots can pierce enemies. Its shots can poison. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

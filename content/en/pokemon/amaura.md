@@ -51,4 +51,4 @@ names:
     name: 冰雪龍
     desc: 更大的彈，有時能擊退。 牠的彈可讓敵人減速。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Its shots can slow. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Its shots can slow. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))

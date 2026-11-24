@@ -50,4 +50,4 @@ names:
     name: 化石翼龍
     desc: 更大的彈，有時能擊退。 非常快。 (彈會交替使用兩種屬性)
 ---
-Bigger shots that sometimes knock back. Very fast. (shots alternate between the two types)
+Bigger shots that sometimes knock back. Very fast. (dual type: [you choose which type each shot uses](../mechanics/tipos_dobles.html))
