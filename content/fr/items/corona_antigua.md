@@ -58,3 +58,6 @@ Vous êtes le roi : parfois, en entrant dans une salle, un ennemi se rend et vo
 
 ## Cumul
 - C'est un effet tout ou rien : un second Vieux Tortil ne donne pas un second tirage.
+
+## En coopération
+- Il fonctionne pour toute l'équipe tant qu'au moins un joueur encore debout le possède : chaque ennemi a un seul tirage à 15 % par salle, quel que soit le nombre de joueurs qui l'ont. La pièce laissée par un ennemi est partagée comme n'importe quelle pièce (voir [Coopération](../mechanics/coop.html)).

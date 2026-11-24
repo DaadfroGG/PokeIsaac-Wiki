@@ -58,3 +58,6 @@ One less enemy in each combat room
 ## Stacking
 - It is an on/off effect: a second copy does not remove a second enemy.
 - It cancels out the [Max Lure](cebo_max.html), which adds one enemy to the same rooms.
+
+## In co-op
+- It works for the whole team as long as at least one player who is still standing has it: one enemy is removed per room, however many players have it.

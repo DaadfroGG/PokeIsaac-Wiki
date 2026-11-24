@@ -56,3 +56,6 @@ Quand vous nettoyez une salle, un coffre apparaît parfois
 
 ## Cumul
 - C'est un effet tout ou rien : une seconde Coquille Tréfonds ne donne pas un second tirage.
+
+## En coopération
+- Il fonctionne pour toute l'équipe tant qu'au moins un joueur encore debout le possède : un seul tirage à 25 % par salle terminée, quel que soit le nombre de joueurs qui l'ont. Le coffre peut être ouvert par n'importe qui.

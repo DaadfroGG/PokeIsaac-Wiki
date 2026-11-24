@@ -58,3 +58,6 @@ Un ennemi de moins dans chaque salle de combat
 ## Cumul
 - C'est un effet tout ou rien : un second exemplaire ne retire pas un deuxième ennemi.
 - Il annule le [Max Leurre](cebo_max.html), qui ajoute un ennemi dans les mêmes salles.
+
+## En coopération
+- Il fonctionne pour toute l'équipe tant qu'au moins un joueur encore debout le possède : un ennemi est retiré par salle, quel que soit le nombre de joueurs qui l'ont.

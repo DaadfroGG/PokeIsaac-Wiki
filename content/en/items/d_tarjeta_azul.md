@@ -57,3 +57,6 @@ Everything in the shop costs half
 
 ## Stacking
 - It is an on/off effect: a second Blue Card does not make prices a quarter.
+
+## In co-op
+- It works for the whole team as long as at least one player who is still standing has it: everybody pays half price. Two players holding one each do not make it a quarter.

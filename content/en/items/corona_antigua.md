@@ -58,3 +58,6 @@ You're the king: sometimes, when you enter a room, an enemy surrenders and leave
 
 ## Stacking
 - It is an on/off effect: a second Relic Crown does not give a second roll.
+
+## In co-op
+- It works for the whole team as long as at least one player who is still standing has it: each enemy gets one 15 % roll per room, however many players have it. The coin an enemy leaves is shared like any other coin (see [Co-op](../mechanics/coop.html)).

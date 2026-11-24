@@ -57,3 +57,6 @@ Tout coûte moitié prix en boutique
 
 ## Cumul
 - C'est un effet tout ou rien : une seconde Carte Bleue ne ramène pas les prix au quart.
+
+## En coopération
+- Il fonctionne pour toute l'équipe tant qu'au moins un joueur encore debout le possède : tout le monde paie moitié prix. Deux joueurs qui en ont un chacun ne font pas un quart.

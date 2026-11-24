@@ -56,3 +56,6 @@ When you clear a room, a chest sometimes appears
 
 ## Stacking
 - It is an on/off effect: a second Shoal Shell does not give a second roll.
+
+## In co-op
+- It works for the whole team as long as at least one player who is still standing has it: one 25 % roll per cleared room, however many players have it. The chest can be opened by anyone.
