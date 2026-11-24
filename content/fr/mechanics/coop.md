@@ -50,7 +50,7 @@ Les ennemis et les boss ont plus de vie pour chaque joueur en plus. Leurs attaqu
 ## Ce qui est partagé
 - **Ramassé par un joueur, donné à toute l'équipe :** cœurs et demi-cœurs (chaque coéquipier à qui il manque de la vie est soigné, avec son propre bonus de Méga-Gemme et sans la limite de soin), cœurs d'âme (un cœur d'âme chacun), pièces (la [Pièce Rune](../items/amuleto.html) ou le [Haut-de-forme](../items/chistera.html) de chacun compte toujours), Voltorbes, clés et bonbons. Les pièces, Voltorbes et clés arrivent aussi aux coéquipiers K.O., jusqu'aux plafonds habituels ; les cœurs et cœurs d'âme n'arrivent qu'à ceux qui sont debout.
 - **Non partagé :** ce qui est en vente dans une boutique, les objets, les coffres et votre argent quand vous achetez. Chaque joueur paie avec ses propres Pokédollars ; n'importe quel joueur peut parler à Miaouss pour changer le stock de la boutique.
-- **Pools d'objets :** un objet que possède un joueur n'est jamais proposé aux autres (voir [Pools d'objets](reservas_objetos.html)).
+- **Pools d'objets :** un objet que possède un joueur est censé être exclu des offres suivantes pour tous, mais des joueurs ont vu l'objet d'un coéquipier revenir plus tard (voir [Pools d'objets](reservas_objetos.html)).
 - **Récompenses de salle :** quand une salle est terminée, chaque joueur encore dans la partie tire la récompense de salle de son côté, avec sa propre Chance. Plus de joueurs, plus de tirages, et ce qui tombe est partagé comme ci-dessus.
 
 ## Récompenses et tirage au sort du butin

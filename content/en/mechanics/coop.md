@@ -50,7 +50,7 @@ Enemies and bosses get more health for each extra player. Their attacks do not c
 ## What is shared
 - **Picked up by one player, given to the whole team:** hearts and half hearts (each teammate who is missing health is healed, with their own Mega Stone bonus and ignoring the healing limit), soul hearts (a soul heart each), coins (each teammate's own [Amulet Coin](../items/amuleto.html) or [Top Hat](../items/chistera.html) still counts), Voltorbs, keys and candy. Coins, Voltorbs and keys also reach fainted teammates, up to the usual caps; hearts and soul hearts only reach those who are standing.
 - **Not shared:** anything on sale in a shop, items, chests, and your own money when you buy. Each player pays with their own Pokédollars; any player can talk to Meowth to change the shop's stock.
-- **Item pools:** an item one player owns is never offered to the others (see [Item pools](reservas_objetos.html)).
+- **Item pools:** an item one player owns is meant to be left out of later offers for everybody, but players have seen a teammate's item come back later (see [Item pools](reservas_objetos.html)).
 - **Room rewards:** when a room is cleared, every player who is still in the run rolls the clear reward on their own, with their own Luck. More players means more rolls, and whatever drops is shared as above.
 
 ## Rewards and the loot draft
