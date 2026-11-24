@@ -159,6 +159,12 @@ Actives (58 of them can drop) have their own bag, used by the [shop](../rooms/sh
 
 ## Co-op and modes
 - The pools are **shared by the whole team**: an item one player owns is never offered to the others.
+- **Filters in co-op:**
+  - A type-restricted item is allowed if any Pokémon of the team (all 3 of every player who is still connected, fainted players included) has that type.
+  - Luck for the tier limit is the highest among connected players.
+  - A companion item is held back only when every standing player's companions are full.
+  - An evolution item is held back only when every connected player's active Pokémon is fully evolved, so one player who has not evolved keeps them coming.
+  - Fainted players' items count as owned, so nobody is offered a copy.
 - Treasure rooms, boss rooms and the Celestial Room give **one item per player**. All players pick in a random order, 15 seconds each; if time runs out, a random item is taken. The "choose one of two" rule only applies when playing solo.
 - **Liga**: the shop sells items from the shop and treasure pools together; the treasure room offers two items to choose from from the third floor.
 

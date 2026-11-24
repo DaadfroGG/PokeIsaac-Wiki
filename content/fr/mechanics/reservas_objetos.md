@@ -160,6 +160,12 @@ Les actifs (58 peuvent tomber) ont leur propre sac, utilisé par la [boutique](.
 ## Coop et modes
 - Les pools sont **partagés par toute l'équipe** : un objet que possède un joueur n'est jamais proposé aux autres.
 - Les salles au trésor, les salles de boss et la Salle Céleste donnent **un objet par joueur**. Les joueurs choisissent dans un ordre aléatoire, 15 secondes chacun ; si le temps s'écoule, un objet au hasard est pris. La règle « un objet sur deux » ne s'applique qu'en solo.
+- **Filtres en coopération :**
+  - Un objet réservé à un type est autorisé si un Pokémon de l'équipe (les 3 de chaque joueur encore connecté, K.O. compris) a ce type.
+  - La Chance pour la limite de palier est la plus haute parmi les joueurs connectés.
+  - Un objet de compagnon n'est retenu que si les compagnons de tous les joueurs debout sont au complet.
+  - Un objet d'évolution n'est retenu que si le Pokémon actif de chaque joueur connecté est totalement évolué ; un seul joueur non évolué suffit à les faire revenir.
+  - Les objets des joueurs K.O. comptent comme possédés : personne ne se voit proposer un exemplaire.
 - **Ligue** : la boutique vend des objets des pools boutique et trésor réunis ; la salle au trésor propose deux objets au choix dès le troisième étage.
 
 Voir aussi : [Niveaux des objets](niveles_objetos.html), [Choisir un objet sur deux](elegir_uno.html), [Succès et objets](logros.html).

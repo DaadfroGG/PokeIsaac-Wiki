@@ -65,6 +65,15 @@ Enemies and bosses get more health for each extra player. Their attacks do not c
 - On the next floor, fainted players come back with **one heart** and 1.5 seconds of invulnerability.
 - [Sacred Ash](../items/cenizas.html) revives fainted teammates at once, with 2 hearts. An item that revives you ([Max Revive](../items/d_revivir_maximo.html), for example) works for its owner only.
 
+## Team of 3 in co-op
+Every player brings their own team of up to 3 Pokémon and switches between them with keys 1-3, as in a solo run ([Team](equipo.html)).
+- **Switching is personal.** Your switch never changes your teammates' Pokémon. The Pokémon you swap out rests 8 seconds, but only while there are enemies in the room; the rest is forgotten as soon as the room is clear. Teammates can see your team and which Pokémon is resting.
+- **Health is yours, not the Pokémon's.** Hearts, soul hearts, items and upgrades belong to the player and stay when they switch. Fainting takes down the whole player, whichever Pokémon is out, and a revived player comes back with the Pokémon that was out.
+- **Experience stays inside a player's team.** The Pokémon that gets the kill earns the XP, and that player's benched Pokémon get their usual share. Nothing goes to teammates' Pokémon.
+- **No random teammates.** The "random team" setting, with its bonus (coins, key, Voltorb, soul heart), only works in solo runs and is ignored in co-op.
+- **Type-restricted items count every Pokémon.** A [Plate](../items/x_draco_plate.html), the [Binding Band](../items/banda_atadura.html) or the [Helix Fossil](../items/m_fosil_helix.html) can be offered as soon as **any** Pokémon of **any** player, benched or not, has the right type. The item then goes to whoever picks it, and it only does something while their active Pokémon has that type. See [Item pools](reservas_objetos.html).
+- **Luck is the best in the room.** The tier limit of the items on offer uses the highest Luck among all players, not the Luck of whoever opens the room.
+
 ## Items that affect the whole team
 These items work for everyone as long as **at least one player who is still standing** has them. Copies on different players do not add up: the effect is either on or off.
 

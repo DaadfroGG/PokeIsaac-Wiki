@@ -65,6 +65,15 @@ Les ennemis et les boss ont plus de vie pour chaque joueur en plus. Leurs attaqu
 - À l'étage suivant, les joueurs K.O. reviennent avec **un cœur** et 1,5 seconde d'invulnérabilité.
 - La [Cendre Sacrée](../items/cenizas.html) réanime tout de suite les coéquipiers K.O., avec 2 cœurs. Un objet qui vous réanime (le [Rappel Max](../items/d_revivir_maximo.html), par exemple) ne fonctionne que pour son propriétaire.
 
+## Équipe de 3 en coopération
+Chaque joueur apporte sa propre équipe de 3 Pokémon au plus et change avec les touches 1-3, comme en solo ([Équipe](equipo.html)).
+- **Le changement est personnel.** Votre changement ne modifie jamais les Pokémon de vos coéquipiers. Le Pokémon que vous retirez se repose 8 secondes, mais seulement tant qu'il y a des ennemis dans la salle ; le repos est oublié dès que la salle est terminée. Vos coéquipiers voient votre équipe et quel Pokémon se repose.
+- **La vie est celle du joueur, pas du Pokémon.** Les cœurs, cœurs d'âme, objets et améliorations appartiennent au joueur et restent quand il change. Un K.O. met tout le joueur à terre, quel que soit le Pokémon sorti, et un joueur réanimé revient avec le Pokémon qui était sorti.
+- **L'expérience reste dans l'équipe d'un joueur.** Le Pokémon qui porte le coup fatal gagne l'XP, et les Pokémon de réserve de ce joueur reçoivent leur part habituelle. Rien ne va aux Pokémon des coéquipiers.
+- **Pas de coéquipiers aléatoires.** Le réglage « équipe aléatoire » et son bonus (pièces, clé, Voltorbe, cœur d'âme) ne fonctionne qu'en solo et est ignoré en coopération.
+- **Les objets réservés à un type comptent tous les Pokémon.** Une [Plaque](../items/x_draco_plate.html), la [Bande Étreinte](../items/banda_atadura.html) ou le [Nautile](../items/m_fosil_helix.html) peut être proposé dès qu'**un** Pokémon de **n'importe quel** joueur, en réserve ou non, a le bon type. L'objet va à celui qui le prend, et il ne sert que tant que son Pokémon actif a ce type. Voir [Pools d'objets](reservas_objetos.html).
+- **La Chance est la meilleure de la salle.** La limite de palier des objets proposés utilise la plus haute Chance parmi tous les joueurs, pas celle de qui ouvre la salle.
+
 ## Objets qui touchent toute l'équipe
 Ces objets fonctionnent pour tout le monde tant qu'**au moins un joueur encore debout** les possède. Les exemplaires de différents joueurs ne s'additionnent pas : l'effet est actif ou non.
 
