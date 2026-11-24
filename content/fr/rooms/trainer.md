@@ -52,3 +52,5 @@ names:
     desc: 'A trainer challenges you next to a chest on a battlefield. They only let you in if your health is full. Touching the chest accepts the battle: the doors close and 3 waves of Pokémon of their favorite type arrive. From floor 9 it is hard: more enemies and, at the end, a strong Pokémon. If you win, the chest opens and leaves an item, a heart and Pokédollars; if you fall, there is no prize.'
 ---
 Un dresseur vous défie à côté d’un coffre sur un terrain de combat. Il ne vous laisse entrer que si votre santé est au maximum. Toucher le coffre accepte le combat : les portes se ferment et 3 vagues de Pokémon de son type favori arrivent. À partir de l’étage 9, c’est difficile : plus d’ennemis et, à la fin, un Pokémon puissant. Si vous gagnez, le coffre s’ouvre et laisse un objet, un cœur et des Pokédollars ; si vous tombez, pas de récompense.
+
+**En coopération :** le prix est un piédestal par joueur, et chacun en prend un seul. Voir [Coopération](../mechanics/coop.html).

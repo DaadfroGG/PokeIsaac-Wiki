@@ -51,3 +51,5 @@ names:
     desc: 中央有平台的鋼鐵競技場。站上平台就會連續挑戰三名本樓層頭目（生命比平常少），房門會關閉到結束。戰鬥之間有暫停並獲得一顆愛心。擊敗第三名後：兩件頭目道具任選一件（合作模式每位玩家一件）、黃金寶箱和金幣。需要兩把鑰匙。
 ---
 Une arène d’acier avec une plateforme au centre. Restez dessus et trois combats s’enchaînent contre des boss de l’étage (avec moins de vie que d’habitude), portes fermées jusqu’à la fin. Entre deux combats, une pause et un cœur. Après le troisième : deux objets de boss dont vous en choisissez un (en coopératif, un par joueur), un coffre doré et des pièces. Nécessite deux clés.
+
+**En coopération :** un objet de plus que de joueurs, libre pour tout le monde (sans limite par joueur), au lieu d'en choisir un sur deux. Voir [Coopération](../mechanics/coop.html).

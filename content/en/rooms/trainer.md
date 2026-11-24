@@ -52,3 +52,5 @@ names:
     desc: 'A trainer challenges you next to a chest on a battlefield. They only let you in if your health is full. Touching the chest accepts the battle: the doors close and 3 waves of Pokémon of their favorite type arrive. From floor 9 it is hard: more enemies and, at the end, a strong Pokémon. If you win, the chest opens and leaves an item, a heart and Pokédollars; if you fall, there is no prize.'
 ---
 A trainer challenges you next to a chest on a battlefield. They only let you in if your health is full. Touching the chest accepts the battle: the doors close and 3 waves of Pokémon of their favorite type arrive. From floor 9 it is hard: more enemies and, at the end, a strong Pokémon. If you win, the chest opens and leaves an item, a heart and Pokédollars; if you fall, there is no prize.
+
+**In co-op:** the prize is one pedestal for each player, and everyone takes exactly one. See [Co-op](../mechanics/coop.html).

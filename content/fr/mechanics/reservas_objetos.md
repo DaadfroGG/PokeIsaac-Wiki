@@ -159,7 +159,7 @@ Les actifs (58 peuvent tomber) ont leur propre sac, utilisé par la [boutique](.
 
 ## Coop et modes
 - Les pools sont partagés par toute l'équipe, et un objet que possède un joueur est censé être exclu des tirages suivants pour tous. **Pas fiable en coopération :** un groupe de 3 a vu un passif pris par un joueur revenir plusieurs étages plus tard, une fois pour chacun des deux autres joueurs. La cause n'est pas encore connue.
-- Les salles au trésor, les salles de boss et la Salle Céleste donnent **un objet par joueur**. Les joueurs choisissent dans un ordre aléatoire, 15 secondes chacun ; si le temps s'écoule, un objet au hasard est pris. La règle « un objet sur deux » ne s'applique qu'en solo.
+- Salles au trésor, salles de boss, prix de dresseur et de rival : **un objet par joueur** ; la Salle Céleste, la Tour de Combat, le Conseil des 4 et MissingNo. proposent des piédestaux libres. Seules les salles de boss utilisent des tours, dans un ordre aléatoire, 15 secondes chacun ; si le temps est écoulé, un objet au hasard est pris. La règle « choisir parmi » ne vaut qu'en solo. Voir [Coopération](coop.html).
 - **Filtres en coopération :**
   - Un objet réservé à un type est autorisé si un Pokémon de l'équipe (les 3 de chaque joueur encore connecté, K.O. compris) a ce type.
   - La Chance pour la limite de palier est la plus haute parmi les joueurs connectés.

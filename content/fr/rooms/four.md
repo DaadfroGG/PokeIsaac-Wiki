@@ -51,3 +51,5 @@ names:
     desc: 四份獎勵清晰可見，各自被封印，中央有一個圓圈。站上圓圈就會連續挑戰四名本樓層頭目（生命比平常少），房門會關閉到結束。每擊倒一名頭目就會破除一道封印並留下一顆愛心。第四名倒下後，四件道具降到台座上，你可帶走一件（合作模式每位玩家一件）。需要兩把鑰匙。
 ---
 Quatre prix bien en vue, chacun sous un sceau, et un cercle au centre. Restez dessus et quatre combats d'affilée commencent contre des boss de l'étage (avec moins de vie que d'habitude), portes fermées jusqu'à la fin. Chaque boss vaincu brise un sceau et laisse un cœur. Quand le quatrième tombe, les quatre objets descendent sur leurs piédestaux et vous en prenez un (en coopératif, un par joueur). Demande deux clés.
+
+**En coopération :** les quatre prix sont libres pour tout le monde, sans limite par joueur : un joueur rapide peut en prendre plusieurs. Dès qu'autant de prix ont été pris qu'il y a de joueurs, les autres disparaissent. Un prix que possède déjà quelqu'un de l'équipe est remplacé par un objet de boss ou de trésor. Voir [Coopération](../mechanics/coop.html).

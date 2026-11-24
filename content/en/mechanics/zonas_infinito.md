@@ -73,7 +73,7 @@ When the guardian falls, three pedestals appear. You take one and the other two 
 2. **Plate** of that type. Same condition: someone on the team must have that type.
 3. **Resistance berry** of that type. Always offered, whatever your team.
 
-A piece you already hold is not offered again. Each missing spot (no Pokémon of that type on the team, piece already held, or no piece for that type) is filled with a normal boss-room item. Gems, Z-Crystals and resistance berries are found nowhere else.
+In co-op the guardian leaves no prizes of its own: only the usual boss items are dropped, so gems, Z-Crystals and resistance berries cannot be obtained. A piece you already hold is not offered again. Each missing spot (no Pokémon of that type on the team, piece already held, or no piece for that type) is filled with a normal boss-room item. Gems, Z-Crystals and resistance berries are found nowhere else.
 
 ### Guardian type by zone
 | Zone | Possible guardian types |

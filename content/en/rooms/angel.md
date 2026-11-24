@@ -45,7 +45,7 @@ Jirachi grants a wish: free holy items and soul hearts. Replaces the Distortion 
 
 ## What you get
 - **Alone:** three holy items are offered and you take one of them; the other two disappear.
-- **In co-op:** one item for each player (up to four).
+- **In co-op:** as many pedestals as players (up to four), free for anyone to take: nothing limits one player to a single item.
 - The weakest items get swapped out: when an item drawn is a basic (tier 1) one, the room tries twice to replace it with a better one.
 - A soul heart always drops, and 35 % of the time a second one.
 

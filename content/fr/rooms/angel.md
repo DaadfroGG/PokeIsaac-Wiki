@@ -45,7 +45,7 @@ Jirachi exauce un vœu : des objets sacrés gratuits et des cœurs d'âme. Remp
 
 ## Ce que vous obtenez
 - **Seul :** trois objets sacrés sont proposés et vous en prenez un ; les deux autres disparaissent.
-- **En coopération :** un objet pour chaque joueur (jusqu'à quatre).
+- **En coopération :** autant de piédestaux que de joueurs (jusqu'à quatre), libres pour tout le monde : rien ne limite un joueur à un seul objet.
 - Les objets les plus faibles sont remplacés : quand l'objet tiré est de base (palier 1), la salle tente deux fois de le remplacer par un meilleur.
 - Un cœur d'âme tombe toujours, et dans 35 % des cas un second.
 

@@ -164,7 +164,7 @@ Actives (58 of them can drop) have their own bag, used by the [shop](../rooms/sh
   - Luck for the tier limit is the highest among connected players.
   - A companion item is held back only when every standing player's companions are full.
   - An evolution item is held back only when every connected player's active Pokémon is fully evolved, so one player who has not evolved keeps them coming.
-- Treasure rooms, boss rooms and the Celestial Room give **one item per player**. All players pick in a random order, 15 seconds each; if time runs out, a random item is taken. The "choose one of two" rule only applies when playing solo.
+- Treasure rooms, boss rooms, trainer and rival prizes give **one item per player**; the Celestial Room, Battle Tower, Elite Four and MissingNo. put out free pedestals. Only boss rooms use turns, in a random order, 15 seconds each; if time runs out, a random item is taken. The "choose one of" rule only applies when playing solo. See [Co-op](coop.html).
 - **Liga**: the shop sells items from the shop and treasure pools together; the treasure room offers two items to choose from from the third floor.
 
 See also: [Item tiers](niveles_objetos.html), [Choose one of two items](elegir_uno.html), [Achievements and items](logros.html).

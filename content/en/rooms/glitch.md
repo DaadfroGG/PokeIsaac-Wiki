@@ -52,3 +52,5 @@ names:
     desc: 'A corrupted room: the floor flickers with blocks of data and in the middle stands a MissingNo. made of garbage. Touching it is a one-time gamble: double your coins, Voltorbs and keys; two corrupted items to choose from; bugs that break off from it (with a golden chest when you beat them); lose half your coins in exchange for two souls; or a free boss item.'
 ---
 A corrupted room: the floor flickers with blocks of data and in the middle stands a MissingNo. made of garbage. Touching it is a one-time gamble: double your coins, Voltorbs and keys; two corrupted items to choose from; bugs that break off from it (with a golden chest when you beat them); lose half your coins in exchange for two souls; or a free boss item.
+
+**In co-op:** the corrupted item outcome puts out both items for everyone instead of a choice of one. See [Co-op](../mechanics/coop.html).

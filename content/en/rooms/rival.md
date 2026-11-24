@@ -52,3 +52,5 @@ names:
     desc: 'A human rival waits for you in a dueling circle and challenges you to a battle of 2 Pokémon in a row (3 from chapter 3). Each one is a normal floor boss with half its health; between them the rival recalls it, talks and throws another Poké Ball. It does not count as a floor boss: no trapdoor and no Mega Tickets. When beaten, the rival gives up and leaves a boss-loot item, a heart or a key and Pokédollars.'
 ---
 A human rival waits for you in a dueling circle and challenges you to a battle of 2 Pokémon in a row (3 from chapter 3). Each one is a normal floor boss with half its health; between them the rival recalls it, talks and throws another Poké Ball. It does not count as a floor boss: no trapdoor and no Mega Tickets. When beaten, the rival gives up and leaves a boss-loot item, a heart or a key and Pokédollars.
+
+**In co-op:** the prize is one pedestal for each player (everyone takes exactly one), and the boss coins are split. The rival also shows up on each floor from the second with a flat 20 % chance, with no rule against two floors in a row. See [Co-op](../mechanics/coop.html).

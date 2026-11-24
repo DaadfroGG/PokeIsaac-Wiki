@@ -42,3 +42,5 @@ names:
     desc: 台座上的免費道具（合作模式中每位玩家一個）。房門上了鎖。
 ---
 A free item on a pedestal (one per player in co-op). Its door is locked.
+
+**In co-op:** one pedestal for each player, and everyone takes exactly one, in any order. The extra choice from the Oval Charm does not apply. See [Co-op](../mechanics/coop.html).

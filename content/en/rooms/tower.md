@@ -51,3 +51,5 @@ names:
     desc: 中央有平台的鋼鐵競技場。站上平台就會連續挑戰三名本樓層頭目（生命比平常少），房門會關閉到結束。戰鬥之間有暫停並獲得一顆愛心。擊敗第三名後：兩件頭目道具任選一件（合作模式每位玩家一件）、黃金寶箱和金幣。需要兩把鑰匙。
 ---
 A steel arena with a platform in the middle. Stay on it and three battles in a row begin against bosses of the floor (with less health than usual), with the doors shut until the end. Between battles there is a pause and a heart. After the third: two boss items to choose one from (in co-op, one per player), a golden chest and coins. It needs two keys.
+
+**In co-op:** one more item than players, free for anyone to take (no limit per player), instead of choosing one of two. See [Co-op](../mechanics/coop.html).

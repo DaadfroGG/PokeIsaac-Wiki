@@ -73,7 +73,7 @@ Quand le gardien tombe, trois piédestaux apparaissent. Vous en prenez un et les
 2. **Plaque** de ce type. Même condition : quelqu'un dans l'équipe doit avoir ce type.
 3. **Baie de résistance** de ce type. Toujours proposée, quelle que soit votre équipe.
 
-Une pièce que vous avez déjà n'est plus proposée. Chaque place vide (pas de Pokémon de ce type dans l'équipe, pièce déjà prise ou pas de pièce pour ce type) est remplie par un objet normal de salle de boss. Les Joyaux, les Cristaux Z et les Baies de résistance ne se trouvent nulle part ailleurs.
+En coopération, le gardien ne laisse pas ses propres récompenses : seuls les objets de boss habituels tombent, donc les joyaux, Cristaux Z et baies de résistance sont impossibles à obtenir. Une pièce que vous avez déjà n'est plus proposée. Chaque place vide (pas de Pokémon de ce type dans l'équipe, pièce déjà prise ou pas de pièce pour ce type) est remplie par un objet normal de salle de boss. Les Joyaux, les Cristaux Z et les Baies de résistance ne se trouvent nulle part ailleurs.
 
 ### Type du gardien selon la zone
 | Zone | Types de gardien possibles |

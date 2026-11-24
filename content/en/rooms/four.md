@@ -51,3 +51,5 @@ names:
     desc: 四份獎勵清晰可見，各自被封印，中央有一個圓圈。站上圓圈就會連續挑戰四名本樓層頭目（生命比平常少），房門會關閉到結束。每擊倒一名頭目就會破除一道封印並留下一顆愛心。第四名倒下後，四件道具降到台座上，你可帶走一件（合作模式每位玩家一件）。需要兩把鑰匙。
 ---
 Four prizes in plain sight, each under a seal, and a circle in the centre. Stand on it and four battles in a row begin against bosses of the floor (with less health than usual), with the doors shut until the end. Each boss defeated breaks a seal and leaves a heart. When the fourth falls, the four items come down to their pedestals and you take one (in co-op, one per player). Needs two keys.
+
+**In co-op:** the four prizes are free for anyone to take, with no limit per player, so a quick player can take more than one. As soon as as many prizes have been taken as there are players, the rest disappear. A prize someone on the team already owns is swapped for a boss or treasure item. See [Co-op](../mechanics/coop.html).

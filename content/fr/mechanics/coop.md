@@ -54,11 +54,25 @@ Les ennemis et les boss ont plus de vie pour chaque joueur en plus. Leurs attaqu
 - **Pools d'objets :** un objet que possède un joueur est censé être exclu des offres suivantes pour tous, mais des joueurs ont vu l'objet d'un coéquipier revenir plus tard (voir [Pools d'objets](reservas_objetos.html)).
 - **Récompenses de salle :** quand une salle est terminée, chaque joueur encore dans la partie tire la récompense de salle de son côté, avec sa propre Chance. Plus de joueurs, plus de tirages, et ce qui tombe est partagé comme ci-dessus.
 
-## Récompenses et tirage au sort du butin
-- **Les salles au trésor, les salles de boss et la Salle Céleste** proposent un objet par joueur, au lieu d'un choix d'objets pour un seul joueur. La règle « choisir un parmi deux » ne vaut qu'en jouant seul.
-- **Les boss** laissent aussi un cœur par joueur, et leurs pièces sont réparties entre les joueurs : seulement environ 1/n tombent, mais chaque pièce va à tout le monde, donc chaque joueur reçoit environ 1/n de ce que rapporte une partie solo. Les méga boss laissent un second objet par joueur.
-- **Le tour de choix :** quand plusieurs objets sont proposés, les joueurs choisissent à tour de rôle dans un ordre aléatoire, 15 secondes chacun. Un joueur qui laisse filer le temps reçoit un objet au hasard. Les joueurs K.O., partis ou dont le [Sac](mochila100.html) est plein sont sautés, et ce qui reste ensuite est libre pour n'importe qui.
-- La trappe du boss reste fermée tant que tout le monde n'a pas pris son objet.
+## Récompenses de chaque salle
+Seul, vous prenez un objet parmi un choix. En coopération, la plupart des salles proposent plutôt **un piédestal par joueur**.
+
+| Salle | Seul | En coopération |
+|---|---|---|
+| [Salle au trésor](../rooms/treasure.html) | Un objet, ou un choix de deux à partir de certains étages | Un piédestal par joueur ; chacun en prend un seul, dans l'ordre qu'il veut |
+| [Salle de boss](../rooms/boss.html) | Un objet (un choix de deux ou trois plus tard) et un cœur | Un objet et un cœur par joueur, pris à tour de rôle (voir plus bas) ; un méga boss ajoute un second tour |
+| [Combat de dresseur](../rooms/trainer.html), [Rival](../rooms/rival.html) | Un objet | Un piédestal par joueur ; chacun en prend un seul, dans l'ordre qu'il veut |
+| [Salle Céleste](../rooms/angel.html) | Un parmi trois | Autant de piédestaux que de joueurs (jusqu'à quatre) |
+| [Tour de Combat](../rooms/tower.html) | Un parmi deux | Un objet de plus que de joueurs |
+| [Conseil des 4](../rooms/four.html) | Un parmi quatre | Quatre objets, qui disparaissent dès qu'autant ont été pris qu'il y a de joueurs |
+| [MissingNo.](../rooms/glitch.html) | Un parmi deux objets corrompus | Les deux objets, pour tout le monde |
+
+- Dans les quatre dernières salles, rien ne limite le nombre d'objets qu'un même joueur prend : un joueur rapide peut en attraper plusieurs avant les autres.
+- Certains bonus n'existent qu'en solo : l'objet en plus des étages sans boutique, l'objet de boss en plus d'un événement en direct, les récompenses du [gardien de zone](zonas_infinito.html) (les joyaux, Cristaux Z et baies de résistance sont introuvables en coopération) et le choix en plus du [Charme Ovale](../items/amuleto_oval.html).
+- Les boss laissent aussi un cœur par joueur, et leurs pièces sont réparties entre les joueurs : seulement environ 1/n tombent, mais chaque pièce va à tout le monde, donc chaque joueur reçoit environ 1/n de ce que rapporte une partie solo.
+
+### Le tour de choix des boss
+Seules les **salles de boss** utilisent des tours. Les joueurs choisissent dans un ordre aléatoire, 15 secondes chacun. Un joueur qui laisse filer le temps reçoit un objet au hasard. Les joueurs K.O., partis ou dont le [Sac](mochila100.html) est plein sont sautés, et les piédestaux restants après le tour sont libres pour tout le monde. Un méga boss lance un second tour pour ses objets en plus. La trappe du boss reste fermée tant que le tour n'est pas terminé.
 
 ## K.O. et réanimation
 - Un joueur à zéro de vie tombe K.O. et devient un fantôme : il flotte dans la salle et peut regarder, mais ne peut pas attaquer, et les ennemis l'ignorent. Il perd aussi ses compagnons.

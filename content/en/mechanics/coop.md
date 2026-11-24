@@ -54,11 +54,25 @@ Enemies and bosses get more health for each extra player. Their attacks do not c
 - **Item pools:** an item one player owns is meant to be left out of later offers for everybody, but players have seen a teammate's item come back later (see [Item pools](reservas_objetos.html)).
 - **Room rewards:** when a room is cleared, every player who is still in the run rolls the clear reward on their own, with their own Luck. More players means more rolls, and whatever drops is shared as above.
 
-## Rewards and the loot draft
-- **Treasure rooms, boss rooms and the Celestial Room** offer one item per player instead of a choice of items for one player. The "choose one of two" rule only applies when playing alone.
-- **Bosses** also drop one heart per player, and the boss's coins are split between players: only about 1/n of them drop, but each coin goes to everyone, so every player ends up with about 1/n of what a solo run gets. Mega bosses drop a second item per player.
-- **The draft:** when several items are on offer, the players take turns in a random order, 15 seconds each. A player who runs out of time gets a random item. Players who fainted, left or have a full [Bag](mochila100.html) are skipped, and what is left afterwards is free for anyone.
-- The boss's trapdoor stays shut until everyone has picked their item.
+## Rewards in each room
+Alone you pick one item from a choice. In co-op, most rooms put out **one pedestal per player** instead.
+
+| Room | Alone | In co-op |
+|---|---|---|
+| [Treasure room](../rooms/treasure.html) | One item, or a choice of two from some floors | One pedestal for each player; everyone takes exactly one, in any order |
+| [Boss room](../rooms/boss.html) | One item (a choice of two or three later on) and a heart | One item and one heart for each player, taken in turns (see below); a mega boss adds a second round |
+| [Trainer battle](../rooms/trainer.html), [Rival](../rooms/rival.html) | One item | One pedestal for each player; everyone takes exactly one, in any order |
+| [Celestial Room](../rooms/angel.html) | Choose one of three | As many pedestals as players (up to four) |
+| [Battle Tower](../rooms/tower.html) | Choose one of two | One more item than players |
+| [Elite Four](../rooms/four.html) | Choose one of four | Four items, and they vanish once as many have been taken as there are players |
+| [MissingNo.](../rooms/glitch.html) | Choose one of two corrupted items | Both items, for everyone |
+
+- In the last four rooms nothing limits how many a single player takes: a quick player can grab several before the others get there.
+- Some bonuses only exist alone: the extra item on floors with no shop, the extra boss item of a live event, the [zone guardian](zonas_infinito.html) prizes (gems, Z-Crystals and resistance berries can't be found in co-op), and the extra choice from the [Oval Charm](../items/amuleto_oval.html).
+- Bosses also drop one heart per player, and the boss's coins are split between players: only about 1/n of them drop, but each coin goes to everyone, so every player ends up with about 1/n of what a solo run gets.
+
+### The boss draft
+Only **boss rooms** use turns. The players pick in a random order, 15 seconds each. A player who runs out of time gets a random item. Players who fainted, left or have a full [Bag](mochila100.html) are skipped, and the pedestals left after the round are free for anyone. A mega boss starts a second round for its extra items. The boss's trapdoor stays shut until the draft is over.
 
 ## Fainting and reviving
 - A player at zero health faints and becomes a ghost: they float around the room and can watch, but cannot attack, and enemies ignore them. They also lose their companions.
