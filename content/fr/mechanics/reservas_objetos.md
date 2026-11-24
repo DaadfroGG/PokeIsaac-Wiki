@@ -79,7 +79,7 @@ Chaque objet que vous trouvez sur un piédestal vient d'un **pool** : une liste 
 | [Coffre doré](../world/goldchest.html) | Trésor | Toujours un objet |
 | [Vœu Étoile](../items/pieza_deseo.html) (actif) | Trésor | Un piédestal gratuit apparaît juste au-dessus de vous |
 | Pacte du diable | Distorsion | 2 objets (+1 par joueur en plus, 4 max) contre des cœurs. Une fois par partie, 10 % de chances que la salle soit un piège de Darkrai (le vaincre : un objet Charbon, ou un objet de boss si vous l'avez déjà) |
-| Salle Céleste | Céleste | 1 objet gratuit (1 par joueur, 4 max) |
+| Salle Céleste | Céleste | 1 objet gratuit. Seul, vous en choisissez 1 parmi 3 (avant la 1.2.0, un seul objet) ; en coopération, 1 par joueur, 4 max |
 | Salle secrète | Secret | 15 % [Kecleon](../world/kecleon.html) avec 2 objets contre des PokéDollars ; 12 % un autel avec 1 objet gratuit. Dans toute salle secrète, 15 % de trouver un objet secret gratuit de plus |
 | Salle super secrète | Super secret | Un objet d'Halloween (autel, récompense de mini-boss ou bonbons ou sort) |
 | [Salle d'Ectoplasma](../rooms/gengar.html) | Maudit | 2 objets maudits, vous en choisissez un |

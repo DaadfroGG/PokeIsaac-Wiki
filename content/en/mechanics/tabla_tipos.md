@@ -71,7 +71,7 @@ Against a Pokémon or enemy with two types, both columns count:
 
 Examples: <a class="chip" href="../types/fire.html" style="--c:#ff7a33">Fire</a> against Bug + Steel deals ×2.25. <a class="chip" href="../types/electric.html" style="--c:#ffe44d">Electric</a> against Water + Ground deals ×1. <a class="chip" href="../types/fire.html" style="--c:#ff7a33">Fire</a> against Water + Ground deals ×0.67.
 
-If **your** Pokémon has two types, its shots alternate: one shot of the first type, one of the second.
+If **your** Pokémon has two types, each shot uses one of them. By default (AUTO) it is the one that is more effective against the enemy you are aiming at; you can also lock one type or make them alternate (see [Dual type and pure type](tipos_dobles.html)). Before 1.2.0 the two types always alternated, one shot of each.
 
 ## Your shots
 - What counts is the shot's type, your Pokémon's, against the enemy's or boss's type(s).

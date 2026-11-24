@@ -41,4 +41,14 @@ names:
     name: 天界房間
     desc: 基拉祈實現願望：免費的神聖道具（每位玩家一個），有時還有靈魂之心。取代扭曲房間。
 ---
-Jirachi grants a wish: free holy items (one per player) and sometimes a soul heart. Replaces the Distortion Room.
+Jirachi grants a wish: free holy items and soul hearts. Replaces the Distortion Room.
+
+## What you get
+- **Alone:** three holy items are offered and you take one of them; the other two disappear.
+- **In co-op:** one item for each player (up to four).
+- The weakest items get swapped out: when an item drawn is a basic (tier 1) one, the room tries twice to replace it with a better one.
+- A soul heart always drops, and 35 % of the time a second one.
+
+## Changes
+- **1.2.0 (17 Nov 2026):** you now choose one of three wishes, and the weakest items are swapped for better ones. *Before:* alone you were offered a single item (one per player in co-op, as now), drawn as it came, and a soul heart dropped only half the time (never two).
+

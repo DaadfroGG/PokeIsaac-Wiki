@@ -8,7 +8,7 @@ labels:
 icon: icons/mechanics/tipos_dobles.png
 details:
 - label: Double type
-  value: Les tirs alternent entre les deux types
+  value: Chaque tir utilise l'un des deux types ; vous choisissez lequel (touche T)
 - label: Type pur
   value: Son passif, ×1,5
 - label: Ennemis et boss
@@ -51,4 +51,15 @@ names:
     name: 雙屬性與單一屬性
     desc: 雙屬性寶可夢（耿鬼、噴火龍、妙蛙種子……）的彈會在兩種屬性間交替：各自帶有被動效果和對敵人的相剋效果；受到傷害時兩種屬性都會計算（兩個弱點會造成雙倍影響）。單屬性寶可夢是「單一屬性」：其被動效果的觸發率提高50 %。只要帶有飛行屬性（不論是第一還是第二屬性），就能飛越岩石和箱子；用彈穿過岩石是幽靈屬性的專長（沒有道具能提供）。
 ---
-Les Pokémon à deux types (Ectoplasma, Dracaufeu, Bulbizarre...) alternent leurs tirs entre les deux : chacun avec son passif et son efficacité contre l'ennemi, et en subissant des dégâts les deux types comptent (deux faiblesses pèsent le double). Ceux d'un seul type sont « purs » : leur passif se déclenche 50 % plus souvent. Les types Vol, quel que soit leur emplacement, passent au-dessus des rochers et des caisses ; traverser les rochers avec les tirs est réservé aux types Spectre (aucun objet ne le donne). Les ennemis et les boss comptent aussi leurs deux types quand vos tirs les touchent. Si l'un des deux types est faible face au tir et l'autre le résiste, le coup fait des dégâts neutres ; sinon les deux multiplicateurs se cumulent, de ×0,45 à ×2,25. La même règle vaut pour les dégâts que vous subissez.
+Les Pokémon à deux types (Ectoplasma, Dracaufeu, Bulbizarre...) utilisent l'un de leurs deux types à chaque tir : chaque type a son passif et son efficacité contre l'ennemi, et en subissant des dégâts les deux types comptent (deux faiblesses pèsent le double). Ceux d'un seul type sont « purs » : leur passif se déclenche 50 % plus souvent. Les types Vol, quel que soit leur emplacement, passent au-dessus des rochers et des caisses ; traverser les rochers avec les tirs est réservé aux types Spectre (aucun objet ne le donne). Les ennemis et les boss comptent aussi leurs deux types quand vos tirs les touchent. Si l'un des deux types est faible face au tir et l'autre le résiste, le coup fait des dégâts neutres ; sinon les deux multiplicateurs se cumulent, de ×0,45 à ×2,25. La même règle vaut pour les dégâts que vous subissez.
+
+## Choisir le type des tirs
+Les Pokémon à deux types ont un mode de type, montré par une petite pastille avec les deux types dans l'ATH. Appuyez sur **T** (ou cliquez ou touchez la pastille) pour passer d'un mode à l'autre, parmi quatre ; la touche se change dans les commandes (« Type d'attaque ») et le choix est mémorisé.
+- **AUTO** (par défaut) : chaque tir utilise celui de vos deux types qui est le plus efficace contre l'ennemi le mieux aligné avec votre tir, en tenant compte de la distance. Si les deux se valent, ou s'il n'y a pas d'ennemi, ils alternent.
+- **Premier type seul** et **second type seul** : tous les tirs utilisent ce type ; la pastille atténue l'autre.
+- **Alterner** : un tir de chaque type, à tour de rôle.
+
+Les Pokémon de type pur n'ont pas ce choix.
+
+## Changements
+- **1.2.0 (17 nov. 2026) :** vous pouvez choisir comment les deux types sont utilisés (touche T ou pastille de l'ATH), et le mode par défaut, AUTO, choisit le type le plus efficace contre chaque ennemi. *Avant :* un Pokémon à double type alternait toujours ses tirs entre ses deux types, un tir de chaque. C'est maintenant le mode « Alterner ».

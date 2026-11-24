@@ -38,7 +38,7 @@ Chaque projectile que vous tirez a sa propre chance de déclencher un effet (br�
 
 <pre class="mx-code"><span class="kw">QUAND</span> vous attaquez                  <span class="cm">// au plus 12 fois par seconde</span>
   <span class="kw">POUR CHAQUE</span> projectile             <span class="cm">// 1 + multi-tir, jusqu'à 9</span>
-    type <span class="op">←</span> votre type                  <span class="cm">// double type : un sur deux</span>
+    type <span class="op">←</span> votre type                  <span class="cm">// double type : selon le mode de type (le meilleur contre l'ennemi, un seul type, ou en alternance)</span>
     dégâts <span class="op">←</span> votre stat Dégâts         <span class="cm">// <a href="rendimientos.html">rendements décroissants</a> déjà appliqués</span>
     <span class="kw">TIRAGE</span> <a href="criticos.html">coup critique</a>            <span class="cm">// dégâts ×2 ou plus</span>
     <span class="kw">TIRAGE</span> tête chercheuse, perforation <span class="cm">// <a href="pasiva_psychic.html">Psy</a>, <a href="pasiva_grass.html">Plante</a>, objets</span>

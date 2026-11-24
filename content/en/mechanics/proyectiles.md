@@ -38,7 +38,7 @@ Every projectile you fire gets its own chance to trigger effects (burn, charm, c
 
 <pre class="mx-code"><span class="kw">WHEN</span> you attack                      <span class="cm">// at most 12 times per second</span>
   <span class="kw">FOR EACH</span> projectile                <span class="cm">// 1 + multishot, up to 9</span>
-    type <span class="op">←</span> your type                   <span class="cm">// a dual type alternates, 1 in 2</span>
+    type <span class="op">←</span> your type                   <span class="cm">// a dual type: set by the type mode (best against the enemy, one type, or alternating)</span>
     damage <span class="op">←</span> your Damage stat          <span class="cm">// <a href="rendimientos.html">diminishing returns</a> already applied</span>
     <span class="kw">ROLL</span> <a href="criticos.html">critical hit</a>                <span class="cm">// damage ×2 or more</span>
     <span class="kw">ROLL</span> homing, pierce             <span class="cm">// <a href="pasiva_psychic.html">Psychic</a>, <a href="pasiva_grass.html">Grass</a>, items</span>

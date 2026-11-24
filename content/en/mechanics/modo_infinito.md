@@ -13,6 +13,8 @@ details:
   value: 'Mega boss on 40: 10 tickets; 50: 15; 60: 20...'
 - label: Tokens
   value: 15 per floor and 150 per mega boss
+- label: Bag
+  value: +10 passive item slots per level, up to 150 ([100-item Bag](mochila100.html))
 - label: Floors
   value: 'Each one different: its own scenery, colour and name'
 - label: Bosses
@@ -50,3 +52,6 @@ names:
     desc: 擊敗裝甲超夢後，你可以繼續往下走。想停下時，在暫停選單選擇「結束本局」就能領取收穫。難度會隨樓層持續上升（每10層敵人生命×3.2、頭目生命×2.6），每10層等級提升一級：頭目多一個詞綴，敵人移動更快，而且每兩級攻擊多半顆愛心。每一層仍會給代幣，每個超級頭目會給代幣和越來越多的超級票券；就算倒下，也算是勝利。
 ---
 After beating Armored Mewtwo you can keep descending. When you want to stop, “End run” in the pause menu gives you your earnings. Difficulty rises continuously with the floor (enemy health ×3.2 and boss health ×2.6 every 10 floors) and every 10 floors you go up a level: bosses bring one more affix, enemies move faster and, every two levels, hit half a heart harder. Every floor keeps giving tokens and every mega boss, tokens and ever more Mega Tickets; even if you fall, it counts as a win.
+
+## Changes
+- **1.2.0 (17 Nov 2026):** the [Bag](mochila100.html) grows by 10 slots at every level, up to 150. *Before:* the limit stayed at 100 passive items.

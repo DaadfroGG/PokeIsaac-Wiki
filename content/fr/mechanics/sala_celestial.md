@@ -11,6 +11,8 @@ details:
   value: 'Quand la faille s''ouvre après un boss : 25 % la première fois, 50 % si une Salle Distorsion est déjà apparue sans pacte'
 - label: Prix
   value: Gratuit
+- label: Choix
+  value: Seul, un objet parmi trois ; en coopération, un pour chaque joueur
 names:
   en:
     name: Celestial Room
@@ -44,3 +46,8 @@ names:
     desc: 扭曲房間的另一種選擇：基拉祈會贈送神聖道具。若本局中有人曾與達克萊伊締結契約，就不會再出現。
 ---
 L'alternative à la Salle Distorsion : Jirachi offre des objets sacrés. Si quelqu'un a conclu un pacte avec Darkrai pendant la partie, elle n'apparaît plus.
+
+Voir la [Salle Céleste](../rooms/angel.html) pour ce qu'elle offre.
+
+## Changements
+- **1.2.0 (17 nov. 2026) :** vous choisissez maintenant un vœu parmi trois, et les objets les plus faibles sont remplacés par de meilleurs. *Avant :* seul, un seul objet vous était proposé.

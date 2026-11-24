@@ -8,7 +8,7 @@ labels:
 icon: icons/mechanics/tipos_dobles.png
 details:
 - label: Dual type
-  value: Shots alternate between both types
+  value: Each shot uses one of the two types; you choose which (T key)
 - label: Pure type
   value: Its passive, ×1.5
 - label: Enemies and bosses
@@ -51,4 +51,15 @@ names:
     name: 雙屬性與單一屬性
     desc: 雙屬性寶可夢（耿鬼、噴火龍、妙蛙種子……）的彈會在兩種屬性間交替：各自帶有被動效果和對敵人的相剋效果；受到傷害時兩種屬性都會計算（兩個弱點會造成雙倍影響）。單屬性寶可夢是「單一屬性」：其被動效果的觸發率提高50 %。只要帶有飛行屬性（不論是第一還是第二屬性），就能飛越岩石和箱子；用彈穿過岩石是幽靈屬性的專長（沒有道具能提供）。
 ---
-Pokémon with two types (Gengar, Charizard, Bulbasaur...) alternate their shots between the two: each with its own passive and its effectiveness against the enemy, and when taking damage both types count (two weaknesses weigh double). Single-type Pokémon are "pure": their passive triggers 50 % more often. Flying types, in either of their two types, fly over rocks and crates; shots passing through rocks belong to Ghost types (no item gives it). Enemies and bosses also count both of their types when your shots hit them. If one of the two types is weak to the shot and the other resists it, the hit does neutral damage; otherwise both multipliers stack, from ×0.45 to ×2.25. The same rule applies to the damage you take.
+Pokémon with two types (Gengar, Charizard, Bulbasaur...) use one of their two types for each shot: each type has its own passive and its effectiveness against the enemy, and when taking damage both types count (two weaknesses weigh double). Single-type Pokémon are "pure": their passive triggers 50 % more often. Flying types, in either of their two types, fly over rocks and crates; shots passing through rocks belong to Ghost types (no item gives it). Enemies and bosses also count both of their types when your shots hit them. If one of the two types is weak to the shot and the other resists it, the hit does neutral damage; otherwise both multipliers stack, from ×0.45 to ×2.25. The same rule applies to the damage you take.
+
+## Choosing the shot type
+Pokémon with two types have a type mode, shown as a small chip with both types in the HUD. Press **T** (or click or tap the chip) to cycle through the four modes; the key can be changed in the controls ("Attack type") and the choice is remembered.
+- **AUTO** (default): each shot uses whichever of your two types is more effective against the enemy best lined up with your shot, taking distance into account. If both are equally good, or there is no enemy, the two alternate.
+- **First type only** and **second type only**: every shot uses that type; the chip dims the other one.
+- **Alternate**: one shot of each type, in turn.
+
+Pure-type Pokémon have no such choice.
+
+## Changes
+- **1.2.0 (17 Nov 2026):** you can choose how the two types are used (T key or the HUD chip), and the default, AUTO, picks the more effective type for each enemy. *Before:* a dual-type Pokémon always alternated its shots between the two types, one shot of each. That is now the "Alternate" mode.

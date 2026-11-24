@@ -79,7 +79,7 @@ Every item you find on a pedestal comes from a **pool**: a list tied to a kind o
 | [Golden chest](../world/goldchest.html) | Treasure | Always an item |
 | [Wishing Piece](../items/pieza_deseo.html) (active) | Treasure | A free item pedestal appears just above you |
 | Devil's deal | Distortion | 2 items (+1 per extra player, max 4) for hearts. Once per run, a 10 % chance that the room is a Darkrai trap instead (beat him: a Carbon item, or a boss item if you already own it) |
-| Celestial Room | Celestial | 1 free item (1 per player, max 4) |
+| Celestial Room | Celestial | 1 free item. Alone, you choose 1 of 3 (before 1.2.0, a single item); in co-op, 1 per player, max 4 |
 | Secret room | Secret | 15 % [Kecleon](../world/kecleon.html) with 2 items for PokéDollars; 12 % an altar with 1 free item. In every secret room, 15 % to find one more free secret item |
 | Super secret room | Super secret | One Halloween item (altar, miniboss reward or trick-or-treat) |
 | [Gengar's room](../rooms/gengar.html) | Cursed | 2 cursed items, you pick one |

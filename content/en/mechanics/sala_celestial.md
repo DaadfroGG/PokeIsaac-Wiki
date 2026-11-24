@@ -11,6 +11,8 @@ details:
   value: 'When the rift opens after a boss: 25 % the first time, 50 % if a Distortion Room already appeared and you made no deal'
 - label: Price
   value: Free
+- label: Choice
+  value: Alone, one of three items; in co-op, one for each player
 names:
   es:
     name: Sala Celestial
@@ -44,3 +46,8 @@ names:
     desc: 扭曲房間的另一種選擇：基拉祈會贈送神聖道具。若本局中有人曾與達克萊伊締結契約，就不會再出現。
 ---
 The alternative to the Distortion Room: Jirachi gives away holy items. If anyone has made a deal with Darkrai this run, it no longer appears.
+
+See the [Celestial Room](../rooms/angel.html) for what it gives.
+
+## Changes
+- **1.2.0 (17 Nov 2026):** you now choose one of three wishes, and the weakest items are swapped for better ones. *Before:* alone you were offered a single item.

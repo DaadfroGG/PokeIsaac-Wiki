@@ -51,6 +51,10 @@ Links between pages are ordinary relative links: from an item, `[Leftovers](rest
 
 Pages may use a little HTML where Markdown can't do it (a `<p class="note">` for a grey note, an `<img>` with a size). Two shortcodes are there for media: `{{</* clip */>}}` shows the item's recording from `static/assets/clips/<id>.webp` (with a `<id>.png` still), and `{{</* scenes */>}}…{{</* /scenes */>}}` with `{{</* scene src="arena-bosque.webp" caption="…" */>}}` lays out screenshots from `static/assets/scenes/`.
 
+## When the game changes
+
+After a game update, change the page and say what changed: add a **Changes** section (**Changements** in French) at the bottom with the version and date, the new behaviour and, in italics, what it was *before*. Pages for things that did not change are left alone. The [Game updates](content/en/world/updates.md) page lists each version and links to the pages that changed.
+
 ## AI-generated and human-verified pages
 
 The wiki was first written with AI tools, so every page starts out marked **AI-GENERATED**, and the main page warns readers about it. When you have checked a page against the game (numbers, names, where it appears, what it does), fix whatever was wrong and add this to its front matter, in both languages:

@@ -315,7 +315,7 @@ pb_x_dmg: "Bonuses from all your items add up first, then diminishing returns sh
 pb_x_rate: "The delay between two shots goes down with each Fire rate bonus (diminishing returns after 3 points). Multipliers, level and shiny then change it. The game waits whole ticks between two shots, so the delay is rounded up, and it never goes faster than 12 shots per second."
 pb_x_speed: "Item bonuses and conditional bonuses add to the base speed, then level and shiny multiply it. Speed never drops under 1.6."
 pb_x_luck: "Luck counts in full up to 10. Above that, each point only counts for a quarter."
-pb_x_dps: "Damage per shot = Damage × type bonuses × per-hit multipliers × the average critical hit factor. Then × shots per attack × attacks per second. Companions are added on top."
+pb_x_dps: "Damage per shot = Damage × type bonuses × per-hit multipliers × the average critical hit factor. Then × shots per attack × attacks per second. Companions are added on top. A dual-type Pokémon is averaged over its two types, as in the Alternate mode; AUTO depends on the enemy, which the planner does not model."
 pb_s_herb: cancelled by White Herb
 pb_var_eye: Consecutive hits without a miss
 pb_var_kills: Enemies defeated in this room

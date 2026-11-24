@@ -41,4 +41,13 @@ names:
     name: 天界房間
     desc: 基拉祈實現願望：免費的神聖道具（每位玩家一個），有時還有靈魂之心。取代扭曲房間。
 ---
-Jirachi exauce un vœu : des objets sacrés gratuits (un par joueur) et parfois un cœur d'âme. Remplace la Salle Distorsion.
+Jirachi exauce un vœu : des objets sacrés gratuits et des cœurs d'âme. Remplace la Salle Distorsion.
+
+## Ce que vous obtenez
+- **Seul :** trois objets sacrés sont proposés et vous en prenez un ; les deux autres disparaissent.
+- **En coopération :** un objet pour chaque joueur (jusqu'à quatre).
+- Les objets les plus faibles sont remplacés : quand l'objet tiré est de base (palier 1), la salle tente deux fois de le remplacer par un meilleur.
+- Un cœur d'âme tombe toujours, et dans 35 % des cas un second.
+
+## Changements
+- **1.2.0 (17 nov. 2026) :** vous choisissez maintenant un vœu parmi trois, et les objets les plus faibles sont remplacés par de meilleurs. *Avant :* seul, un seul objet vous était proposé (un par joueur en coopération, comme maintenant), tiré tel quel, et un cœur d'âme ne tombait qu'une fois sur deux (jamais deux).

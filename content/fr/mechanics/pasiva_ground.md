@@ -38,4 +38,4 @@ Les tirs Sol sont plus gros et repoussent souvent les ennemis. Le passif les ren
 ## Monter de rang
 - En Classique et dans la Ligue, votre rang monte de un tous les 8 niveaux (rang 1 au niveau 9, rang 7 au niveau 57). Voir [Passifs de type évolutifs](pasivas_escalan.html) pour les autres façons de le monter.
 - Tenir la [Plaque Terre](../items/x_earth_plate.html) ajoute 2 rangs à ce passif, si votre Pokémon a ce type. Le rang maximum est 10.
-- Un Pokémon à double type alterne ses deux types, un tir sur deux. Chaque tir utilise le passif et le rang de son propre type.
+- Un Pokémon à double type utilise l'un de ses deux types à chaque tir (vous choisissez comment : voir [Double type et type pur](tipos_dobles.html)). Chaque tir utilise le passif et le rang de son propre type. Avant la 1.2.0, les deux types alternaient toujours, un tir sur deux.

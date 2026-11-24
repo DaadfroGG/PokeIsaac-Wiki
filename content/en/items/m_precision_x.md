@@ -11,49 +11,52 @@ pools:
 pool_weight: 2
 details:
 - label: Auto-aim
-  value: Locks onto the nearest enemy and keeps firing
+  value: Locks onto the nearest enemy; your shots fly at it when you shoot
 - label: Change target
-  value: Press a fire key toward another enemy
+  value: Shoot toward another enemy
 icon: items-ps/battle-item/x-accuracy.png
 sprite: true
 names:
   es:
     name: Precisión X
-    desc: Una diana se fija sola en el enemigo más cercano y disparas hacia ella sin parar mientras haya enemigos; con las teclas de disparo eliges otro
+    desc: "Una diana se fija sola en el enemigo más cercano y, al disparar, tus disparos van hacia ella; la dirección en que disparas elige otro"
   fr:
     name: Précision +
-    desc: Une cible se verrouille seule sur l'ennemi le plus proche et vous tirez dessus sans arrêt tant qu'il reste des ennemis ; les touches de tir en choisissent un autre
+    desc: "Une cible se fixe toute seule sur l'ennemi le plus proche et, quand vous tirez, vos tirs vont vers elle ; la direction de tir en choisit une autre"
   de:
     name: X-Genauigkeit
-    desc: Eine Zielmarke richtet sich von selbst auf den nächsten Gegner aus und du schießt ununterbrochen darauf, solange Gegner da sind; mit den Schusstasten wählst du einen anderen
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   it:
     name: Precisione X
-    desc: Un bersaglio si fissa da solo sul nemico più vicino e tiri verso di lui senza sosta finché ci sono nemici; con i tasti di tiro ne scegli un altro
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   pt:
     name: Precisão X
-    desc: Um alvo se fixa sozinho no inimigo mais próximo e você atira nele sem parar enquanto houver inimigos; com as teclas de tiro você escolhe outro
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   ru:
     name: Точность X
-    desc: Прицел сам фиксируется на ближайшем враге, и ты стреляешь в него без остановки, пока есть враги; клавишами стрельбы выбираешь другого
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   ja:
     name: ヨクアタール
-    desc: 標的が最も近い敵に自動で固定され、敵がいる間はそこへ撃ち続ける。ショットキーで別の敵を選べる
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   ko:
     name: 잘-맞히기
-    desc: 과녁이 가장 가까운 적에게 저절로 고정되고, 적이 있는 동안 계속 그쪽으로 쏜다. 발사 키로 다른 적을 고른다
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   zh:
     name: 命中强化
-    desc: 准星会自动锁定最近的敌人，只要还有敌人你就会持续向其射击；按射击键可改选其他目标
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
   zt:
     name: 命中強化
-    desc: 準星會自動鎖定最近的敵人，只要還有敵人你就會不停朝它射擊；用射擊鍵可以換一個目標
+    desc: "A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another"
 ---
-A target locks onto the nearest enemy by itself and you keep firing at it while there are enemies; the fire keys pick another one
+A target locks onto the nearest enemy on its own and, when you shoot, your shots fly at it; the direction you shoot in picks another
 
 ## How it works
-- A target marker locks onto the nearest enemy by itself, and you keep firing at it as long as there are enemies in the room, even without pressing any fire key.
-- Pressing a fire key picks another enemy: the one best lined up with that direction (and close). The marker then follows it until it dies, and then goes back to the nearest one.
-- Your shots are aimed straight at the marked enemy.
+- A target marker locks onto the nearest enemy by itself and follows it. It does not shoot for you: you still press a fire key.
+- When you shoot, your shots are aimed straight at the marked enemy, whatever direction you press.
+- The direction you press also picks the target: when you shoot in a new direction, the enemy best lined up with it (and close) becomes the marked one. The marker then follows it until it dies, and then goes back to the nearest one.
 
 ## Stacking
 - It does not stack: a second copy changes nothing.
+
+## Changes
+- **1.2.0 (17 Nov 2026):** it no longer shoots by itself. The marker still locks onto the nearest enemy and your shots still fly at it, but you have to press a fire key. *Before:* it kept firing at the marked enemy as long as there were enemies in the room, even with no fire key pressed.

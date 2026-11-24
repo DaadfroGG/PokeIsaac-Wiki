@@ -13,6 +13,8 @@ details:
   value: 'Méga-boss de l''étage 40 : 10 tickets ; 50 : 15 ; 60 : 20...'
 - label: Jetons
   value: 15 par étage et 150 par Méga-boss
+- label: Sac
+  value: +10 emplacements d'objets passifs par niveau, jusqu'à 150 ([Sac de 100 objets](mochila100.html))
 - label: Étages
   value: 'Chacun différent : décor, couleur et nom propres'
 - label: Boss
@@ -50,3 +52,6 @@ names:
     desc: 擊敗裝甲超夢後，你可以繼續往下走。想停下時，在暫停選單選擇「結束本局」就能領取收穫。難度會隨樓層持續上升（每10層敵人生命×3.2、頭目生命×2.6），每10層等級提升一級：頭目多一個詞綴，敵人移動更快，而且每兩級攻擊多半顆愛心。每一層仍會給代幣，每個超級頭目會給代幣和越來越多的超級票券；就算倒下，也算是勝利。
 ---
 Après avoir vaincu Mewtwo Cuirassé, vous pouvez continuer à descendre. Quand vous voulez arrêter, « Terminer la partie » dans la pause vous donne vos gains. La difficulté augmente en continu avec l'étage (vie des ennemis ×3,2 et des boss ×2,6 tous les 10 étages) et tous les 10 étages, vous montez d'un niveau : les boss ont un affixe de plus, les ennemis vont plus vite et, tous les deux niveaux, frappent un demi-cœur plus fort. Chaque étage rapporte toujours des jetons et chaque méga-boss, des jetons et de plus en plus de Tickets Méga ; même si vous tombez, cela compte comme une victoire.
+
+## Changements
+- **1.2.0 (17 nov. 2026) :** le [Sac](mochila100.html) gagne 10 emplacements à chaque niveau, jusqu'à 150. *Avant :* la limite restait à 100 objets passifs.

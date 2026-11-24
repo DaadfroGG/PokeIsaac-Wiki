@@ -71,7 +71,7 @@ Contre un Pokémon ou un ennemi à deux types, on regarde les deux colonnes :
 
 Exemples : <a class="chip" href="../types/fire.html" style="--c:#ff7a33">Feu</a> contre Insecte + Acier fait ×2,25. <a class="chip" href="../types/electric.html" style="--c:#ffe44d">Électrik</a> contre Eau + Sol fait ×1. <a class="chip" href="../types/fire.html" style="--c:#ff7a33">Feu</a> contre Eau + Sol fait ×0,67.
 
-Si **votre** Pokémon a deux types, ses tirs alternent : un tir du premier type, un tir du second.
+Si **votre** Pokémon a deux types, chaque tir utilise l'un des deux. Par défaut (AUTO), c'est celui qui est le plus efficace contre l'ennemi que vous visez ; vous pouvez aussi verrouiller un type ou les faire alterner (voir [Double type et type pur](tipos_dobles.html)). Avant la 1.2.0, les deux types alternaient toujours, un tir de chaque.
 
 ## Vos tirs
 - C'est le type du tir qui compte, celui de votre Pokémon, contre le ou les types de l'ennemi ou du boss.
