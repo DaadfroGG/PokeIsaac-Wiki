@@ -30,6 +30,7 @@ Parties en ligne pour jusqu'à 4 dresseurs. Tout le monde explore le même étag
 ## Jouer ensemble
 - Entrer en Coopération crée votre salon. Partagez le code du salon ou invitez des amis depuis la liste d'amis ; un ami dans un salon peut demander à le rejoindre. Un salon accueille jusqu'à 4 dresseurs.
 - Tout le monde doit être prêt, et l'hôte lance la partie. Tous les joueurs doivent avoir la même version du jeu que l'hôte ; sinon, ils doivent recharger la page.
+- Une partie en coopération ne peut pas être sauvegardée puis reprise : la quitter la termine. C'est pareil pour l'Arène et le [Raid Dynamax](raid_dinamax.html).
 - Toute l'équipe est toujours dans la même salle. La partie de l'hôte fait tourner la salle pour tout le monde.
 - Un joueur qui perd la connexion plus de 8 secondes est retiré de la partie pour de bon : il compte comme K.O., perd ses compagnons et ne compte plus dans le partage des objets. Si l'hôte perd la connexion un instant, les autres attendent jusqu'à 20 secondes au lieu de fermer le salon.
 

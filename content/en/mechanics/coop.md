@@ -30,6 +30,7 @@ Online runs for up to 4 trainers. Everyone explores the same floor together, wit
 ## Playing together
 - Entering Co-op creates your room. Share the room code, or invite friends from the Friends list; a friend in a room can ask to join. Up to 4 trainers fit in a room.
 - Everyone has to be ready, and the host starts the run. All players need the same game version as the host; if not, they have to reload the page.
+- A co-op run cannot be saved and resumed: leaving it ends it. The same goes for the Arena and the [Dynamax Raid](raid_dinamax.html).
 - The whole team is always in the same room. The host's game runs the room for everyone.
 - A player who loses connection for more than 8 seconds is removed from the run for good: they count as fainted, lose their companions and no longer count when items are shared out. If the host loses connection for a moment, the others wait up to 20 seconds instead of the room closing.
 
