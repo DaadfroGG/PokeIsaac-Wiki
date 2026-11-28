@@ -80,6 +80,7 @@ A **split shot** is a small projectile born from another one when it hits someth
 
 Companion and some weapon projectiles also skip most item effects.
 
+- There is no timer: a projectile disappears once it has travelled your Range. That takes Range ÷ (shot speed × 60) seconds, about 0.63 s for a typical Pokémon (350 px at shot speed 9); +60 px of range makes it 0.75 s. Faster shots vanish sooner, more range keeps them longer.
 - A projectile also disappears when it leaves the room, or hits a rock, an obstacle or a pit, unless it can bounce.
 - Ghost projectiles go through rocks.
 - Past 450, projectiles created by other projectiles are removed first.

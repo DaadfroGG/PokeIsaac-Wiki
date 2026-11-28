@@ -80,6 +80,7 @@ Un **tir divisé** est un petit projectile né d'un autre quand celui-ci touche 
 
 Les projectiles des compagnons et de certaines armes ignorent aussi la plupart des effets d'objets.
 
+- Il n'y a pas de minuteur : un projectile disparaît quand il a parcouru votre Portée. Cela prend Portée ÷ (vitesse des tirs × 60) secondes, environ 0,63 s pour un Pokémon typique (350 px à une vitesse des tirs de 9) ; +60 px de portée le porte à 0,75 s. Des tirs plus rapides disparaissent plus tôt, plus de portée les garde plus longtemps.
 - Un projectile disparaît aussi quand il sort de la salle, ou touche un rocher, un obstacle ou un trou, sauf s'il peut rebondir.
 - Les projectiles Spectre traversent les rochers.
 - Au-delà de 450, les projectiles créés par d'autres projectiles sont supprimés en premier.
