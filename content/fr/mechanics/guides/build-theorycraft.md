@@ -170,7 +170,7 @@ Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant)
 | Aucun | 33,9 | |
 | [Peau Métal](../../items/revest_metalico.html) | 0 tant que l'argent tient | Coûte environ 200 PokéDollars par minute ; un porte-monnaie plein tient moins d'une minute |
 | [Fer](../../items/hierro.html) | 23,2 | −32 % |
-| [Bouclier Rouillé](../../items/escudo_oxidado.html) | 24,3 | −28 % |
+| [Bouclier Rouillé](../../items/escudo_oxidado.html) | 24,3 | −28 % avec un tir à la fois ; −50 % avec une salve pleine à 12 tirs/s, −54 % avec 6 Métamorph en plus |
 | [Grosse Racine](../../items/raiz_grande.html) avec le [Lait Meumeu](../../items/leche_mumu.html) | 25,3 (après soins) | −25 % (Grosse Racine seule −21 %) |
 | [Miroir Brisé](../../items/cu_espejo.html) | 30,6 | −10 % |
 | [Évoluroc](../../items/d_mineral_evol.html) | 32,8 | −3 % (un coup par salle) |

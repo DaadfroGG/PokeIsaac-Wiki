@@ -170,7 +170,7 @@ Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and 
 | None | 33.9 | |
 | [Metal Coat](../../items/revest_metalico.html) | 0 while money lasts | Costs about 200 PokéDollars per minute; a full wallet lasts under a minute |
 | [Iron](../../items/hierro.html) | 23.2 | −32 % |
-| [Rusted Shield](../../items/escudo_oxidado.html) | 24.3 | −28 % |
+| [Rusted Shield](../../items/escudo_oxidado.html) | 24.3 | −28 % with one shot at a time; −50 % with a full volley at 12 shots/s, −54 % with 6 Dittos as well |
 | [Big Root](../../items/raiz_grande.html) with [Moomoo Milk](../../items/leche_mumu.html) | 25.3 (after healing) | −25 % (Big Root alone −21 %) |
 | [Broken Mirror](../../items/cu_espejo.html) | 30.6 | −10 % |
 | [Eviolite](../../items/d_mineral_evol.html) | 32.8 | −3 % (one hit per room) |

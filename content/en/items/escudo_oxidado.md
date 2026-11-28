@@ -55,7 +55,7 @@ Your shots collide with enemy shots and destroy them
 - When one of your shots touches an enemy shot, the enemy shot is destroyed.
 - Your shot is destroyed too, unless it is a spectral shot (it then keeps flying).
 - Each of your shots can only cancel one enemy shot.
-- Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): −28 % damage taken (33.9 hearts per minute without it, 24.3 with it), from boss shots cancelled by yours.
+- Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): −28 % damage taken (33.9 hearts per minute without it, 24.3 with it), from boss shots cancelled by yours. The more shots you have on screen, the more it cancels: with a full volley at 12 shots/s (about 40 of your shots on screen) it was −50 %, with 6 Dittos as well (about 120, up to the 450 cap) −54 %. It doesn't need the cap: most of the gain comes from the first few dozen shots.
 
 ## Stacking
 
