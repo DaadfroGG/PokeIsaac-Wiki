@@ -5,7 +5,7 @@ weight: 2
 ---
 How far each stat can go, where the game stops counting, and how big a single hit can get. The ceilings come from the articles linked below; the worked example was checked in the current version of the game.
 
-**In short:** the Damage stat tops out around **82.5** (the ×3 multiplier cap included). On top of that, every shot against a boss can be multiplied by about **×277**, and one perfect shot reaches about **2.8 million**. The full calculation is below.
+**In short:** the Damage stat tops out around **198** (a Bag full of Power Lens, the ×3 multiplier cap included). On top of that, every shot against a boss can be multiplied by about **×277**, and one perfect shot reaches about **6.9 million**. The full calculation is below.
 
 ## Every ceiling at a glance
 
@@ -37,7 +37,9 @@ Base damage of your Pokémon, plus flat bonuses after [diminishing returns](../r
 
 - The highest base damage is **7.2** ([Mega Charizard X](../../pokemon/mega0006.html), [Mega Zygarde](../../pokemon/mega0718.html)); a typical Pokémon has 4.
 - Every item with a damage line, one copy each, adds **+31.9** on paper ([White Herb](../../items/hierba_blanca.html) removes the minus lines of the others). After diminishing returns: 3 + 5 × 0.5 + 23.9 × 0.25 = **+11.5**.
-- There is no hard ceiling: past +40, each extra +1 still counts +0.05.
+- **Copies stack their stats.** Owned items come back once the pools run dry, and the [Eon Ticket](../../items/a_ticket_eon.html) duplicates pedestals, so the real limit is the [Bag](../mochila100.html): 100 items, up to 150 deep in endless. Past +40, each extra +1 still counts +0.05, with no hard ceiling.
+- Best filler: [Power Lens](../../items/m_lente_recia.html), +4 per copy (its ×1.6 counts once). With [White Herb](../../items/hierba_blanca.html), copies cost no fire rate. Measured on Pikachu with the herb: 1 copy 11.2 Damage, 10 copies 27.2, 130 copies 65.6, always 4.3 shots/s.
+- With 130 copies plus the other key items: about +521.5 on paper, so 3 + 2.5 + 8 + 481.5 × 0.05 = **+37.6**.
 
 <details><summary>The 42 items with a damage line</summary>
 
@@ -76,7 +78,8 @@ All of them together make ×2,675 on paper, which still counts as ×3. Four alwa
 (base + flat) × capped multipliers × level × shiny:
 
 - Level 60: ×1.47. A [shiny](../shinys_ventaja.html) whose standout stat is damage: ×1.12 (not for Megas).
-- Best case: (7.2 + 11.5) × 3 × 1.47 = **82.5** Damage on the HUD.
+- One copy of each damage item: (7.2 + 11.5) × 3 × 1.47 = 82.5 Damage on the HUD.
+- A Bag full of Power Lens: (7.2 + 37.6) × 3 × 1.47 = **197.6**.
 - Pikachu with no flat damage: 3.5 × 3 = 10.5, and 15.5 at level 60.
 
 ### Step 4: per-hit multipliers
@@ -132,11 +135,12 @@ Pikachu, three items inside the cap, against a boss. Every line was measured in 
 
 The best Pokémon for it is [Mega Diancie](../../pokemon/mega0719.html): 6.5 base damage, Rock type (Rock passive ×1.3 at rank 10, and Rock hits Fire/Flying, Bug/Flying and Ice/Flying bosses for ×2.25).
 
-- Damage stat: (6.5 + 11.5) × 3 × 1.47 = **79.4**.
-- Per hit, steady: 1.15 (Eon Flute) × 1.15 (Stone Plate) × 1.3 (Rock passive) × 1.3 (Expert Belt) × 1.6 (Muscle Band) × 2.14 (Large Leek) × 1.3 (Binding Band) × 1.72 (Dragon Fang) × 1.5 (Scanner) × 1.6 (Metronome) × 3 (crit) × 2.25 (type) = **×277**, so about **22,000** per hit on every shot.
-- With every spike on the same shot (Normal Gem ×4, Blunder Policy ×2, Dragon Scale ×2, gold tooth ×3.2, Deep Sea Tooth ×2, and Sun Stone ×2 in place of Metronome): 22,000 ÷ 1.6 × 204.8 = about **2.8 million** in one hit.
+- Bag of 150: 20 slots for the key items (White Herb, Gold Leaf, X Sp. Atk, Lustrous Orb and the 16 per-hit items above that are not actives), 130 Power Lens. Flat damage +37.6, multipliers 1.6 × 1.8 × 1.5 × 1.25 = ×5.4, so ×3.
+- Damage stat: (6.5 + 37.6) × 3 × 1.47 = **194.7**.
+- Per hit, steady: 1.15 (Eon Flute) × 1.15 (Stone Plate) × 1.3 (Rock passive) × 1.3 (Expert Belt) × 1.6 (Muscle Band) × 2.14 (Large Leek) × 1.3 (Binding Band) × 1.72 (Dragon Fang) × 1.5 (Scanner) × 1.6 (Metronome) × 3 (crit) × 2.25 (type) = **×277**, so about **54,000** per hit on every shot.
+- With every spike on the same shot (Normal Gem ×4, Blunder Policy ×2, Dragon Scale ×2, gold tooth ×3.2, Deep Sea Tooth ×2, and Sun Stone ×2 in place of Metronome): 54,000 ÷ 1.6 × 204.8 = about **6.9 million** in one hit.
 
-That needs level 60, rank 10 (deep in [endless mode](../modo_infinito.html)), one heart left and a lot of luck with the pools. It is a ceiling, not a build.
+That needs level 60, rank 10 and the 150-item Bag (deep in [endless mode](../modo_infinito.html)), one heart left, 130 Power Lens and a lot of luck with the pools. It is a ceiling, not a build.
 
 ## How many shots?
 

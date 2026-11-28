@@ -5,7 +5,7 @@ weight: 2
 ---
 Jusqu'où va chaque stat, à partir d'où le jeu arrête de compter, et quelle taille peut atteindre un seul coup. Les plafonds viennent des articles liés ci-dessous ; l'exemple chiffré a été vérifié sur la version actuelle du jeu.
 
-**En bref :** la stat Dégâts plafonne vers **82,5** (plafond de ×3 des multiplicateurs compris). Par-dessus, chaque tir contre un boss peut être multiplié par environ **×277**, et un tir parfait atteint environ **2,8 millions**. Le calcul complet est plus bas.
+**En bref :** la stat Dégâts plafonne vers **198** (un Sac plein de Lentilles Pouvoir, plafond de ×3 des multiplicateurs compris). Par-dessus, chaque tir contre un boss peut être multiplié par environ **×277**, et un tir parfait atteint environ **6,9 millions**. Le calcul complet est plus bas.
 
 ## Tous les plafonds d'un coup d'œil
 
@@ -37,7 +37,9 @@ Dégâts de base de votre Pokémon, plus les bonus fixes après [rendements déc
 
 - Les plus gros dégâts de base sont **7,2** ([Méga-Dracaufeu X](../../pokemon/mega0006.html), [Méga-Zygarde](../../pokemon/mega0718.html)) ; un Pokémon typique en a 4.
 - Tous les objets qui ont une ligne de dégâts, un exemplaire chacun, ajoutent **+31,9** sur le papier (l'[Herbe Blanche](../../items/hierba_blanca.html) retire les lignes négatives des autres). Après rendements décroissants : 3 + 5 × 0,5 + 23,9 × 0,25 = **+11,5**.
-- Il n'y a pas de plafond strict : au-delà de +40, chaque +1 compte encore +0,05.
+- **Les exemplaires cumulent leurs stats.** Les objets possédés reviennent quand les réserves sont vides, et le [Passe Éon](../../items/a_ticket_eon.html) duplique les piédestaux, donc la vraie limite est le [Sac](../mochila100.html) : 100 objets, jusqu'à 150 loin dans l'infini. Au-delà de +40, chaque +1 compte encore +0,05, sans plafond strict.
+- Meilleur remplissage : la [Lentille Pouvoir](../../items/m_lente_recia.html), +4 par exemplaire (son ×1,6 ne compte qu'une fois). Avec l'[Herbe Blanche](../../items/hierba_blanca.html), les exemplaires ne coûtent pas de cadence. Mesuré sur Pikachu avec l'herbe : 1 exemplaire 11,2 de Dégâts, 10 exemplaires 27,2, 130 exemplaires 65,6, toujours 4,3 tirs/s.
+- Avec 130 exemplaires plus les autres objets clés : environ +521,5 sur le papier, donc 3 + 2,5 + 8 + 481,5 × 0,05 = **+37,6**.
 
 <details><summary>Les 42 objets avec une ligne de dégâts</summary>
 
@@ -76,7 +78,8 @@ Tous ensemble font ×2 675 sur le papier, qui compte toujours pour ×3. Quatre o
 (base + fixes) × multiplicateurs plafonnés × niveau × chromatique :
 
 - Niveau 60 : ×1,47. Un [chromatique](../shinys_ventaja.html) dont la stat phare est les dégâts : ×1,12 (pas pour les Méga).
-- Meilleur cas : (7,2 + 11,5) × 3 × 1,47 = **82,5** de Dégâts dans le HUD.
+- Un exemplaire de chaque objet de dégâts : (7,2 + 11,5) × 3 × 1,47 = 82,5 de Dégâts dans le HUD.
+- Un Sac plein de Lentilles Pouvoir : (7,2 + 37,6) × 3 × 1,47 = **197,6**.
 - Pikachu sans dégâts fixes : 3,5 × 3 = 10,5, et 15,5 au niveau 60.
 
 ### Étape 4 : multiplicateurs par coup
@@ -132,11 +135,12 @@ Pikachu, trois objets dans le plafond, contre un boss. Chaque ligne a été mesu
 
 Le meilleur Pokémon pour ça est [Méga-Diancie](../../pokemon/mega0719.html) : 6,5 de dégâts de base, type Roche (passif Roche ×1,3 au rang 10, et la Roche frappe les boss Feu/Vol, Insecte/Vol et Glace/Vol à ×2,25).
 
-- Stat Dégâts : (6,5 + 11,5) × 3 × 1,47 = **79,4**.
-- Par coup, en continu : 1,15 (Flûte Éon) × 1,15 (Plaque Roc) × 1,3 (passif Roche) × 1,3 (Ceinture Pro) × 1,6 (Bandeau Muscle) × 2,14 (Gros Poireau) × 1,3 (Bande Étreinte) × 1,72 (Croc Dragon) × 1,5 (Scanner) × 1,6 (Métronome) × 3 (critique) × 2,25 (type) = **×277**, soit environ **22 000** par coup, à chaque tir.
-- Avec tous les pics sur le même tir (Joyau Normal ×4, Assurance Échec ×2, Écaille Draco ×2, dent en or ×3,2, Dent Océan ×2, et Pierre Soleil ×2 à la place du Métronome) : 22 000 ÷ 1,6 × 204,8 = environ **2,8 millions** en un coup.
+- Sac de 150 : 20 places pour les objets clés (Herbe Blanche, Feuille Dorée, Atq. Spé. +, Orbe Perlé et les 16 objets par coup ci-dessus qui ne sont pas des actifs), 130 Lentilles Pouvoir. Dégâts fixes +37,6, multiplicateurs 1,6 × 1,8 × 1,5 × 1,25 = ×5,4, donc ×3.
+- Stat Dégâts : (6,5 + 37,6) × 3 × 1,47 = **194,7**.
+- Par coup, en continu : 1,15 (Flûte Éon) × 1,15 (Plaque Roc) × 1,3 (passif Roche) × 1,3 (Ceinture Pro) × 1,6 (Bandeau Muscle) × 2,14 (Gros Poireau) × 1,3 (Bande Étreinte) × 1,72 (Croc Dragon) × 1,5 (Scanner) × 1,6 (Métronome) × 3 (critique) × 2,25 (type) = **×277**, soit environ **54 000** par coup, à chaque tir.
+- Avec tous les pics sur le même tir (Joyau Normal ×4, Assurance Échec ×2, Écaille Draco ×2, dent en or ×3,2, Dent Océan ×2, et Pierre Soleil ×2 à la place du Métronome) : 54 000 ÷ 1,6 × 204,8 = environ **6,9 millions** en un coup.
 
-Il faut le niveau 60, le rang 10 (loin dans le [mode infini](../modo_infinito.html)), un seul cœur et beaucoup de chance avec les réserves. C'est un plafond, pas une build.
+Il faut le niveau 60, le rang 10 et le Sac de 150 objets (loin dans le [mode infini](../modo_infinito.html)), un seul cœur, 130 Lentilles Pouvoir et beaucoup de chance avec les réserves. C'est un plafond, pas une build.
 
 ## Combien de tirs ?
 
