@@ -58,4 +58,5 @@ Your active item can hold double charge: use it twice in a row
 
 ## Stacking
 - It is an on/off effect: a second Cell Battery does not triple the limit.
+- With [Catching Pocket](a_bolsillo_captura.html), the two uses give each permanent companion two copies for the room (6 Dittos become 18; 30 with [Devon Scuba Gear](d_bombona_devon.html)).
 - It works with the [Max Elixir](elixir_max.html) and [Ether](eter.html), which can fill the second bar too.

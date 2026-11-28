@@ -14,7 +14,7 @@ Jusqu'où va chaque stat, à partir d'où le jeu arrête de compter, et quelle t
 | Multiplicateurs à chaque coup | Aucun | Tout ce qui est listé « par-dessus le plafond » dans [Cumul des objets](../acumulacion.html), plus les critiques et l'efficacité des types. Ils se multiplient sans limite |
 | Cadence | **12 tirs par seconde** | Voir [Statistiques en pratique](../estadisticas_reales.html) |
 | Tirs par salve | **9** | Le [Nœud Destin](../../items/lazo_destino.html) ajoute une seconde salve de 9 au plus vers l'arrière ; les objets qui ajoutent des tirs en plus ne sont pas limités à 9. Voir [Tirs supplémentaires](../disparos_extra.html) |
-| Vos projectiles dans la salle | **450** | Au-delà, les plus anciens disparaissent. Voir [Tirs supplémentaires](../disparos_extra.html) |
+| Vos projectiles dans la salle | **450** | Au-delà, les plus anciens disparaissent, mais ce sont presque toujours des tirs déjà ratés, donc tirer plus ajoute quand même des dégâts. Voir [Projectiles](../proyectiles.html) |
 | Chance de critique | Aucun | Au-delà de 100 %, chaque tir est déjà critique ; la [Baie Lansat](../../items/baya_zonlan.html) le fait à un cœur. Voir [Coups critiques](../criticos.html) |
 | Dégâts critiques | **×3** | ×2 normalement, ×3 avec la [Loupe](../../items/lupa.html) ; une seconde n'ajoute rien |
 | Chance | Plafond doux à **10** | Au-delà de 10, un quart compte |
@@ -64,8 +64,8 @@ Un chromatique dont la stat phare est les dégâts ajouterait encore jusqu'à ×
 
 - Au plus 12 attaques par seconde, 9 tirs par salve : 108 tirs par seconde rien qu'avec la salve.
 - Le [Nœud Destin](../../items/lazo_destino.html) double la salve (9 devant, 9 derrière), et les extras au hasard peuvent porter une attaque jusqu'à 42 tirs. Voir [Tirs supplémentaires](../disparos_extra.html).
-- Quelle que soit la build, seuls 450 de vos projectiles tiennent dans la salle. Loin de la cible, les tirs disparaissent avant d'arriver ; restez près.
-- Chaque compagnon copie ou ajoute ses propres tirs en plus, jusqu'à 6 compagnons.
+- Quelle que soit la build, seuls 450 de vos projectiles tiennent dans la salle. Le plafond supprime les plus anciens d'abord ; les tirs qui touchent le font en une fraction de seconde, donc il supprime surtout des tirs ratés. Plus de projectiles continue d'ajouter des dégâts au-delà du plafond, un peu moins à chaque fois. Rester près double toujours à peu près les dégâts d'une build à beaucoup de tirs.
+- Chaque compagnon copie ou ajoute ses propres tirs en plus, jusqu'à 6 compagnons. Pour une salle, la [Poche de Capture](../../items/a_bolsillo_captura.html) les copie : jusqu'à 30 Métamorph avec le [Plongeur Devon](../../items/d_bombona_devon.html) et la [Pile](../../items/d_pila.html).
 
 ## Ce qui est perdu
 

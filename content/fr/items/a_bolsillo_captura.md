@@ -62,3 +62,5 @@ Vos compagnons sont doublés dans cette salle
 ## Cumul
 - Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
 - Avec le [Plongeur Devon](d_bombona_devon.html) : chaque compagnon reçoit deux copies.
+- Avec la [Pile](d_pila.html) : une fois les deux barres de charge pleines (8 salles), vous pouvez l'utiliser deux fois dans la même salle. La seconde utilisation recopie vos compagnons permanents (jamais les copies), donc chacun reçoit une seconde copie.
+- Les copies gardent les dégâts du compagnon copié. Avec 6 Métamorph de [Bis Ball](f_acopio_ball.html) : 12 après une utilisation, 18 avec le Plongeur Devon ou avec deux utilisations grâce à la Pile, 30 avec les deux.

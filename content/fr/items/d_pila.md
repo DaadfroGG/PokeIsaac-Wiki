@@ -58,4 +58,5 @@ Votre objet actif peut stocker le double de charge : utilisez-le deux fois de s
 
 ## Cumul
 - C'est un effet tout ou rien : une seconde Pile ne triple pas la limite.
+- Avec la [Poche de Capture](a_bolsillo_captura.html), les deux utilisations donnent deux copies de chaque compagnon permanent pour la salle (6 Métamorph deviennent 18 ; 30 avec le [Plongeur Devon](d_bombona_devon.html)).
 - Il fonctionne avec l'[Élixir Max](elixir_max.html) et l'[Huile](eter.html), qui peuvent aussi remplir la seconde barre.

@@ -14,7 +14,7 @@ How far each stat can go, where the game stops counting, and how big a single hi
 | Multipliers on each hit | None | Everything listed as "on top of the cap" in [Item stacking](../acumulacion.html), plus crits and type effectiveness. They multiply with no limit |
 | Fire rate | **12 shots per second** | See [Real stats](../estadisticas_reales.html) |
 | Shots per volley | **9** | [Destiny Knot](../../items/lazo_destino.html) adds a second volley of up to 9 backwards; items that add shots on top are not limited to 9. See [Extra shots](../disparos_extra.html) |
-| Your projectiles in the room | **450** | Past that, the oldest disappear. See [Extra shots](../disparos_extra.html) |
+| Your projectiles in the room | **450** | Past that, the oldest disappear, but those are almost always shots that already missed, so firing more still adds damage. See [Projectiles](../proyectiles.html) |
 | Crit chance | None | Past 100 % every shot is a crit already; [Lansat Berry](../../items/baya_zonlan.html) does that at one heart. See [Critical hits](../criticos.html) |
 | Crit damage | **×3** | ×2 normally, ×3 with [Wide Lens](../../items/lupa.html); a second one adds nothing |
 | Luck | Soft cap at **10** | Above 10, a quarter counts |
@@ -64,8 +64,8 @@ A shiny whose standout stat is damage would add up to another ×1.12.
 
 - At most 12 attacks per second, 9 shots per volley: 108 shots per second from the volley alone.
 - [Destiny Knot](../../items/lazo_destino.html) doubles the volley (9 forward, 9 back), and chance-based extras can bring one attack up to 42 shots. See [Extra shots](../disparos_extra.html).
-- Whatever the build, only 450 of your projectiles fit in the room. Far from the target, shots expire before landing; stay close.
-- Each companion copies or adds its own fire on top, up to 6 companions.
+- Whatever the build, only 450 of your projectiles fit in the room. The cap removes the oldest first; shots that hit do so within a fraction of a second, so what it removes are mostly misses. More projectiles keep adding damage past the cap, a bit less each time. Staying close still about doubles a many-shot build's damage.
+- Each companion copies or adds its own fire on top, up to 6 companions. For one room, [Catching Pocket](../../items/a_bolsillo_captura.html) copies them: up to 30 Dittos with [Devon Scuba Gear](../../items/d_bombona_devon.html) and [Cell Battery](../../items/d_pila.html).
 
 ## What is wasted
 

@@ -62,3 +62,5 @@ Your companions are doubled in this room
 ## Stacking
 - Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.
 - With [Devon Scuba Gear](d_bombona_devon.html): each companion gets two copies.
+- With [Cell Battery](d_pila.html): once both charge bars are full (8 rooms), you can use it twice in the same room. The second use copies your permanent companions again (never the copies), so each one gets a second copy.
+- Copies keep the damage of the companion they copy. With 6 [Repeat Ball](f_acopio_ball.html) Dittos: 12 after one use, 18 with Devon Scuba Gear or with two uses through Cell Battery, 30 with both.
