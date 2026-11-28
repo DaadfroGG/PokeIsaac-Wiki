@@ -53,6 +53,7 @@ You fire much, much faster, but each shot deals very little damage
 - The time between shots is cut to 28 % of what it was, about 3.5 times as many shots, but every shot deals only 45 % of your damage. Per second, that is roughly 1.6 times your damage.
 - The 12 shots per second limit still applies, so on an already fast build the gain is smaller.
 - The 0.45 is a damage multiplier like the others, so it is counted with them (see [Diminishing returns](../mechanics/rendimientos.html)).
+- Because of that, the cap absorbs part of the loss on a build whose multipliers are already past ×2.3. With multipliers at ×8 on paper, it only lowers damage to 87.5 % (×3 becomes ×2.625), not 45 %; above ×11.3 on paper it costs no damage at all.
 
 ## Stacking
 - It does not stack: a second copy changes nothing.

@@ -53,6 +53,7 @@ Vous tirez bien, bien plus vite, mais chaque tir inflige très peu de dégâts
 - Le temps entre deux tirs tombe à 28 % de sa valeur, soit environ 3,5 fois plus de tirs, mais chaque tir n'inflige que 45 % de vos dégâts. Par seconde, cela fait environ 1,6 fois vos dégâts.
 - La limite de 12 tirs par seconde s'applique toujours : sur un build déjà rapide, le gain est plus faible.
 - Le 0,45 est un multiplicateur de dégâts comme les autres, il est donc compté avec eux (voir [Rendements décroissants](../mechanics/rendimientos.html)).
+- Du coup, le plafond absorbe une partie de la perte sur un build dont les multiplicateurs dépassent déjà ×2,3. Avec des multiplicateurs à ×8 sur le papier, il ne baisse les dégâts qu'à 87,5 % (×3 devient ×2,625), pas à 45 % ; au-delà de ×11,3 sur le papier il ne coûte plus aucun dégât.
 
 ## Cumul
 - Il ne se cumule pas : un second exemplaire ne change rien.
