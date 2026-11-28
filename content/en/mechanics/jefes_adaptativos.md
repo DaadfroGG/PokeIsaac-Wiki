@@ -65,3 +65,16 @@ Before the run has measured your fights, the boss judges you from your stats and
 | Hearts lost per minute, Mega-Steelix | 22 | 42 |
 
 Measured with 12 hearts, standing still and shooting. Past a certain strength nothing more changes: 6 Dittos or 10 more [Power Lens](../items/m_lente_recia.html) gave the same boss as the full volley. So a strong build takes more damage than a weak one in the same fight; survival items are worth more on it (see [Rusted Shield](../items/escudo_oxidado.html)).
+
+## Deep in the run: the level goes down
+
+The run level compares your damage with what the game expects **at your current floor**, and that expectation keeps climbing: every doubling of damage over the expected value is worth +2.5 levels, every halving −2.5. Up to floor 29 it grows slowly; past floor 30 it grows by about 10.5 % per floor, forever.
+
+Bosses' own health grows too past floor 30: +10.5 % per floor up to floor 59, then +7 % per floor. So with a build that stops improving, the level drops. Example, same build at every floor (about 4,100 damage per second on paper):
+
+| Floor | 5 to 29 | 35 | 40 | 50 | 60+ |
+|---|---|---|---|---|---|
+| Run level | 10 | 8 | 6 | 2 | 1 |
+| Boss base health (vs floor 29) | ×1 | ×1.8 | ×3 | ×8 | ×21 at 60, ×320 at 100 |
+
+A low level is not a penalty: the boss gets less health (down to ×0.5), attacks less often and loses the extra damage of levels 8 to 10. It softens the climb, but can't cancel it: past floor 30 the boss's adjustment is capped at ×0.5 to ×2 (×0.5 to ×10 before), so floor growth wins in the end. To keep up, your damage has to grow about 10 % per floor too.

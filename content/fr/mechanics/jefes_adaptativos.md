@@ -65,3 +65,16 @@ Tant que la partie n'a pas encore mesuré vos combats, le boss vous juge d'aprè
 | Cœurs perdus par minute, Méga-Steelix | 22 | 42 |
 
 Mesuré avec 12 cœurs, immobile en tirant. Au-delà d'une certaine force, plus rien ne change : 6 Métamorph ou 10 [Lentilles Pouvoir](../items/m_lente_recia.html) de plus donnaient le même boss que la salve pleine. Une build forte subit donc plus de dégâts qu'une faible dans le même combat ; les objets de survie y valent davantage (voir [Bouclier Rouillé](../items/escudo_oxidado.html)).
+
+## Loin dans la partie : le niveau baisse
+
+Le niveau de la partie compare vos dégâts à ce que le jeu attend **à votre étage actuel**, et cette attente ne cesse de monter : chaque doublement des dégâts par rapport à l'attendu vaut +2,5 niveaux, chaque division par deux −2,5. Jusqu'à l'étage 29, elle monte doucement ; au-delà de l'étage 30, elle monte d'environ 10,5 % par étage, sans fin.
+
+La vie des boss monte aussi au-delà de l'étage 30 : +10,5 % par étage jusqu'à l'étage 59, puis +7 % par étage. Avec une build qui ne progresse plus, le niveau baisse donc. Exemple, même build à chaque étage (environ 4 100 dégâts par seconde sur le papier) :
+
+| Étage | 5 à 29 | 35 | 40 | 50 | 60+ |
+|---|---|---|---|---|---|
+| Niveau de la partie | 10 | 8 | 6 | 2 | 1 |
+| Vie de base des boss (par rapport à l'étage 29) | ×1 | ×1,8 | ×3 | ×8 | ×21 à 60, ×320 à 100 |
+
+Un niveau bas n'est pas une pénalité : le boss a moins de vie (jusqu'à ×0,5), attaque moins souvent et perd les dégâts en plus des niveaux 8 à 10. Ça adoucit la montée, sans l'annuler : au-delà de l'étage 30, l'ajustement du boss est limité à ×0,5 à ×2 (×0,5 à ×10 avant), donc la croissance des étages finit par gagner. Pour suivre, vos dégâts doivent eux aussi monter d'environ 10 % par étage.
