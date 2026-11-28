@@ -57,6 +57,7 @@ Your companions are doubled in this room
 - Only your permanent companions are copied, not temporary ones (from the [Pokémon Box Link](a_caja_pokemon.html), the [Lure](a_colonia.html), the [Card Key](a_llave_magnetica.html) or an earlier use of this item).
 - The copies don't count toward your companion limit, and they disappear when you leave the room.
 - With no permanent companion, nothing happens and you keep the charge.
+- It is still worth it on a build that already fills the 450 projectile limit. Measured with 6 [Repeat Ball](f_acopio_ball.html) Dittos on a 12 attacks/s multishot build: going to 12 Dittos multiplied damage on a boss by about 1.8 from a distance and 2.6 up close, even though many shots were then removed by the limit; with [Devon Scuba Gear](d_bombona_devon.html) (18 Dittos), about 2.5 and 3.
 
 ## Stacking
 - Active items don't stack: you hold one at a time. Picking up another active swaps them, and the old one stays on the pedestal with its charge.

@@ -57,6 +57,7 @@ Vos compagnons sont doublés dans cette salle
 - Seuls vos compagnons permanents sont copiés, pas les temporaires (de la [Boîte Pokémon](a_caja_pokemon.html), du [Parfum](a_colonia.html), de la [Carte Magnétique](a_llave_magnetica.html) ou d'une utilisation précédente de cet objet).
 - Les copies ne comptent pas dans votre limite de compagnons et disparaissent quand vous quittez la salle.
 - Sans compagnon permanent, rien ne se passe et vous gardez la charge.
+- Il reste rentable sur une build qui remplit déjà la limite de 450 projectiles. Mesuré avec 6 Métamorph de [Bis Ball](f_acopio_ball.html) sur une build à 12 attaques/s avec tir multiple : passer à 12 Métamorph a multiplié les dégâts sur un boss par environ 1,8 à distance et 2,6 de près, même si beaucoup de tirs étaient alors supprimés par la limite ; avec le [Plongeur Devon](d_bombona_devon.html) (18 Métamorph), environ 2,5 et 3.
 
 ## Cumul
 - Les objets actifs ne se cumulent pas : vous n'en portez qu'un à la fois. En ramasser un autre les échange, et l'ancien reste sur le piédestal avec sa charge.
