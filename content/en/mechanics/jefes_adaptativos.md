@@ -50,3 +50,18 @@ names:
     desc: 本局會在你遊玩時評估你：測量你在戰鬥中每秒實際造成的傷害（全部都算：彈、會心一擊、夥伴、爆炸、異常狀態）、每分鐘受到的攻擊次數，以及你的能力數值和道具。據此算出「本局等級」（1-10），每個頭目登場時都會隨之調整：等級正常（5）時按原設計登場；如果你很強或「破格」，頭目的生命會多得多、節奏更快、傷害更高；如果你打得吃力，頭目則會更弱、更慢。這樣每個人的戰鬥時間都差不多。
 ---
 The run rates you as you play: it measures the real damage you deal per second of combat (everything counts: shots, crits, companions, explosions, status effects), how many hits you take per minute, and your stats and items. From that it works out your RUN LEVEL (1-10) and each boss adjusts when it appears: at a normal level (5) it comes as designed; if you're strong or “broken”, with much more health, pace and damage, and if you're struggling, weaker and slower. That way the fight lasts about the same for everyone.
+
+## Measured: same boss, weak build vs strong build
+
+Before the run has measured your fights, the boss judges you from your stats and items. A stronger build gets a boss that attacks more:
+
+| | Weak build (one shot, 4.3/s) | Strong build (full volley, 12 shots/s) |
+|---|---|---|
+| Time between attacks | ×1.15 (slower) | ×0.8 (25 % more often) |
+| Shots per attack | ×1.0 | ×1.12 |
+| Damage per hit | As designed | +half a heart |
+| Health | ×0.6 to ×0.7 | ×2.2 to ×2.4 |
+| Hearts lost per minute, Mega-Mewtwo Y | 21 | 36 |
+| Hearts lost per minute, Mega-Steelix | 22 | 42 |
+
+Measured with 12 hearts, standing still and shooting. Past a certain strength nothing more changes: 6 Dittos or 10 more [Power Lens](../items/m_lente_recia.html) gave the same boss as the full volley. So a strong build takes more damage than a weak one in the same fight; survival items are worth more on it (see [Rusted Shield](../items/escudo_oxidado.html)).

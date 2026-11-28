@@ -50,3 +50,18 @@ names:
     desc: 本局會在你遊玩時評估你：測量你在戰鬥中每秒實際造成的傷害（全部都算：彈、會心一擊、夥伴、爆炸、異常狀態）、每分鐘受到的攻擊次數，以及你的能力數值和道具。據此算出「本局等級」（1-10），每個頭目登場時都會隨之調整：等級正常（5）時按原設計登場；如果你很強或「破格」，頭目的生命會多得多、節奏更快、傷害更高；如果你打得吃力，頭目則會更弱、更慢。這樣每個人的戰鬥時間都差不多。
 ---
 La partie vous évalue pendant que vous jouez : elle mesure les dégâts que vous infligez réellement par seconde de combat (tout compte : tirs, coups critiques, compagnons, explosions, altérations d'état), le nombre de coups reçus par minute ainsi que vos statistiques et vos objets. Elle en déduit le NIVEAU DE VOTRE PARTIE (1-10) et chaque boss s'ajuste en apparaissant : à un niveau normal (5), il est tel qu'il a été conçu ; si vous êtes fort ou « abusé », il a bien plus de vie, de rythme et de dégâts, et si vous avez du mal, il est plus faible et plus lent. Ainsi, le combat dure à peu près autant pour tout le monde.
+
+## Mesuré : même boss, build faible contre build forte
+
+Tant que la partie n'a pas encore mesuré vos combats, le boss vous juge d'après vos statistiques et vos objets. Une build plus forte reçoit un boss qui attaque davantage :
+
+| | Build faible (un tir, 4,3/s) | Build forte (salve pleine, 12 tirs/s) |
+|---|---|---|
+| Temps entre les attaques | ×1,15 (plus lent) | ×0,8 (25 % plus souvent) |
+| Tirs par attaque | ×1,0 | ×1,12 |
+| Dégâts par coup | Comme prévu | +un demi-cœur |
+| Vie | ×0,6 à ×0,7 | ×2,2 à ×2,4 |
+| Cœurs perdus par minute, Méga-Mewtwo Y | 21 | 36 |
+| Cœurs perdus par minute, Méga-Steelix | 22 | 42 |
+
+Mesuré avec 12 cœurs, immobile en tirant. Au-delà d'une certaine force, plus rien ne change : 6 Métamorph ou 10 [Lentilles Pouvoir](../items/m_lente_recia.html) de plus donnaient le même boss que la salve pleine. Une build forte subit donc plus de dégâts qu'une faible dans le même combat ; les objets de survie y valent davantage (voir [Bouclier Rouillé](../items/escudo_oxidado.html)).

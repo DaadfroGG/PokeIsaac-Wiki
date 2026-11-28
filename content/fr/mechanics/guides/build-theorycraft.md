@@ -163,7 +163,7 @@ La vitesse, la portée et la vitesse des tirs n'ont pas de plafond, mais elles n
 
 ### Objets de survie, mesurés
 
-Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant), un Pokémon perdait 33,9 cœurs par minute sans objet de survie :
+Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant), un Pokémon à un tir à la fois perdait 33,9 cœurs par minute sans objet de survie. Une build forte en perd plus : [les boss s'adaptent](../jefes_adaptativos.html) et attaquent 25 % plus souvent avec un demi-cœur de plus par coup (38 à 42 cœurs par minute avec une salve pleine ou des Métamorph).
 
 | Objet | Cœurs perdus par minute | Écart |
 |---|---|---|

@@ -163,7 +163,7 @@ Speed, range and shot speed have no ceiling, but they don't add damage: past abo
 
 ### Survival items, measured
 
-Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting), a Pokémon lost 33.9 hearts per minute with no survival item:
+Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting), a Pokémon with one shot at a time lost 33.9 hearts per minute with no survival item. A strong build loses more: [bosses adapt](../jefes_adaptativos.html) and attack 25 % more often with +half a heart per hit (38 to 42 hearts per minute with a full volley or Dittos).
 
 | Item | Hearts lost per minute | Change |
 |---|---|---|
