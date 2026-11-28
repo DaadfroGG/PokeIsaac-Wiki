@@ -52,6 +52,8 @@ Your shots fly in a zigzag and deal 15 % more damage
 ## How it works
 - Your shots swerve left and right in a wave while they fly, which makes them harder to dodge and lets them cover a wider strip.
 - They deal 15 % more damage. Range and speed are unchanged.
+- The +15 % is added to each shot as it is fired, so it does not show in your Damage stat on the HUD. It is not limited by the ×3 cap on damage multipliers: it comes on top of it.
+- It works on weapon hits too, and multiplies with critical hits, type effectiveness and [Plates](x_flame_plate.html) (×1.15 × ×1.15 = ×1.32 on shots of the Plate's type).
 - Homing still works with it; Bounce works as usual.
 
 ## Stacking

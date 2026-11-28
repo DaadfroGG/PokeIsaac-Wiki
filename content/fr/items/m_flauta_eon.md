@@ -52,6 +52,8 @@ Vos tirs zigzaguent et frappent 15 % plus fort
 ## Fonctionnement
 - Vos tirs ondulent de gauche à droite pendant leur vol, ce qui les rend plus difficiles à esquiver et leur fait couvrir une bande plus large.
 - Ils infligent 15 % de dégâts en plus. La portée et la vitesse sont inchangées.
+- Le +15 % s'ajoute à chaque tir au moment où il part, il n'apparaît donc pas dans votre stat Dégâts du HUD. Il n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts : il s'ajoute par-dessus.
+- Il marche aussi sur les coups d'arme, et se multiplie avec les coups critiques, l'efficacité des types et les [Plaques](x_flame_plate.html) (×1,15 × ×1,15 = ×1,32 sur les tirs du type de la Plaque).
 - Le guidage marche toujours avec lui ; le Rebond fonctionne comme d'habitude.
 
 ## Cumul

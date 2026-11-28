@@ -56,8 +56,10 @@ names:
 Boosts the Rock type: if your Pokémon is Rock-type, its type passive goes up 2 ranks and its shots of that type deal +15% damage
 
 ## How it works
-- It only works if the Pokémon you are playing has the Rock type. The Plate can appear as soon as anyone on the team has a Rock Pokémon, bench included, but a Pokémon without that type gets nothing from it.
-- A dual-type Pokémon only gets the bonus on its Rock shots, one shot in two.
+- Its full effect needs the Pokémon you are playing to have the Rock type. The Plate can appear as soon as anyone on the team has a Rock Pokémon, bench included, but a Pokémon without that type doesn't get the +2 ranks.
+- A dual-type Pokémon only gets the +15 % on its Rock shots. How many that is depends on your [shot-type setting](../mechanics/tipos_dobles.html): every shot if you lock it to Rock, fewer in AUTO or Alternate.
+- The +15 % follows the type of the shot, not of the Pokémon: with [Dubious Disc](disco_extrano.html) (random shot types), the shots that come out as Rock get it even if your Pokémon isn't Rock-type.
+- It multiplies with [Eon Flute](m_flauta_eon.html): ×1.15 × ×1.15 = ×1.32 on those shots.
 - The +15 % is applied when a Rock shot hits, so it does not show in your Damage stat on the HUD. It is not limited by the ×3 cap on damage multipliers.
 - The +2 ranks go to the [Rock passive](../mechanics/pasiva_rock.html). They don't change the Damage stat either.
 - Burn and poison ticks don't get the +15 %.

@@ -56,8 +56,10 @@ names:
 Renforce le type Insecte : si votre Pokémon est de type Insecte, son passif de type gagne 2 rangs et ses tirs de ce type infligent +15 % de dégâts
 
 ## Fonctionnement
-- Elle ne marche que si le Pokémon que vous jouez a le type Insecte. La Plaque peut apparaître dès que quelqu'un dans l'équipe a un Pokémon Insecte, banc compris, mais un Pokémon sans ce type n'en tire rien.
-- Un Pokémon à double type n'a le bonus que sur ses tirs Insecte, un tir sur deux.
+- Son effet complet demande que le Pokémon que vous jouez ait le type Insecte. La Plaque peut apparaître dès que quelqu'un dans l'équipe a un Pokémon Insecte, banc compris, mais un Pokémon sans ce type n'a pas les +2 rangs.
+- Un Pokémon à double type n'a le +15 % que sur ses tirs Insecte. Leur nombre dépend de votre [réglage du type des tirs](../mechanics/tipos_dobles.html) : tous les tirs si vous le bloquez sur Insecte, moins en AUTO ou Alterner.
+- Le +15 % suit le type du tir, pas celui du Pokémon : avec le [CD Douteux](disco_extrano.html) (types de tirs aléatoires), les tirs qui sortent en Insecte l'ont même si votre Pokémon n'est pas de type Insecte.
+- Il se multiplie avec la [Flûte Éon](m_flauta_eon.html) : ×1,15 × ×1,15 = ×1,32 sur ces tirs.
 - Le +15 % s'applique quand un tir Insecte touche, il n'apparaît donc pas dans votre stat Dégâts du HUD. Il n'est pas limité par le plafond de ×3 des multiplicateurs de dégâts.
 - Les +2 rangs vont au [Passif Insecte](../mechanics/pasiva_bug.html). Ils ne changent pas non plus la stat Dégâts.
 - Les ticks de brûlure et de poison n'ont pas le +15 %.
