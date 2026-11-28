@@ -54,6 +54,8 @@ Tous les 40 dégâts infligés, vous récupérez un demi-cœur
 - Tous les dégâts que vos tirs infligent aux ennemis sont additionnés. Chaque fois que le total atteint 40, vous récupérez un demi-cœur et le compteur baisse de 40.
 - Le compteur continue de se remplir à PV pleins, mais le cœur n'est donné que s'il vous manque des PV.
 - Ce soin compte dans la limite de soin des objets : les objets ne soignent au plus que 30 % de vos PV max (minimum 2 cœurs) par tranche de 10 secondes.
+- En pratique, n'importe quelle build de dégâts atteint 40 dégâts tout de suite, donc vous obtenez la limite. Mesuré avec 12 cœurs : +3,5 cœurs toutes les 10 secondes (de 1 cœur à 11,5 en 30 s), et perdre 1 cœur toutes les 3 secondes laissait le Pokémon à PV pleins.
+- Avec le [Lait Meumeu](leche_mumu.html), le soin à PV pleins devient des cœurs d'âme : mesuré, 6 cœurs d'âme (le maximum) après 15 secondes de combat à PV pleins.
 
 ## Cumul
 - Elle ne se cumule pas : un second exemplaire n'ajoute rien.

@@ -59,6 +59,7 @@ Vous soigne complètement ; désormais, les soins reçus avec toute votre vie d
 - Au ramassage, il vous soigne complètement.
 - Ensuite, chaque fois qu'un soin dépasserait vos PV max, l'excédent devient des cœurs d'âme : jusqu'à un cœur d'âme entier (2 demi-cœurs) par soin. Le total de cœurs d'âme reste plafonné à 6.
 - Les objets qui n'agissent normalement que lorsqu'il vous manque des PV (Grosse Racine, Plume Santé, Fossile Mâchoire) continuent à marcher à PV pleins, et leur soin se transforme en cœurs d'âme.
+- Seul, il ne fait rien à PV pleins : il lui faut un soin à convertir. Avec la [Grosse Racine](raiz_grande.html) sur une build de dégâts (mesuré, 12 cœurs) : 3,5 cœurs d'âme après 5 secondes, 6 après 15. Les cœurs d'âme comptent dans la même limite de soin, donc ils se remplissent à 3,5 cœurs par 10 secondes.
 
 ## Cumul
 - Elle ne se cumule pas : un second exemplaire n'ajoute rien.

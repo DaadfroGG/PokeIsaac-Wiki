@@ -59,6 +59,7 @@ Fully heals you; from now on, healing at full health turns into a soul heart (up
 - On pickup, it fully heals you.
 - From then on, every time a heal would go beyond your max health, the excess becomes soul hearts: up to one full soul heart (2 half hearts) per heal. The total of soul hearts stays capped at 6.
 - Items that normally only act when you are missing health (Big Root, Health Feather, Jaw Fossil) keep working at full health, so their healing turns into soul hearts.
+- On its own it does nothing at full health: it needs a heal to convert. With [Big Root](raiz_grande.html) on a damage build (measured, 12 hearts): 3.5 soul hearts after 5 seconds, 6 after 15. The soul hearts count toward the same healing limit, so they refill at 3.5 hearts per 10 seconds.
 
 ## Stacking
 - It does not stack: a second copy adds nothing.

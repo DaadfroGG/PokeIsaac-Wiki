@@ -54,6 +54,8 @@ For every 40 damage you deal, you recover half a heart
 - All the damage your shots deal to enemies is added up. Every time the total reaches 40, you recover half a heart and the counter goes down by 40.
 - The counter keeps filling at full health, but the heart is only given if you are missing health.
 - This healing counts toward the limit on item healing: items can heal at most 30 % of your max health (minimum 2 hearts) per 10 seconds.
+- In practice any damage build reaches 40 damage instantly, so the limit is what you get. Measured with 12 hearts: +3.5 hearts every 10 seconds (1 heart to 11.5 in 30 s), and losing 1 heart every 3 seconds kept the Pokémon at full health.
+- With [Moomoo Milk](leche_mumu.html), the healing at full health becomes soul hearts: measured, 6 soul hearts (the maximum) after 15 seconds of fighting at full health.
 
 ## Stacking
 - It does not stack: a second copy adds nothing.
