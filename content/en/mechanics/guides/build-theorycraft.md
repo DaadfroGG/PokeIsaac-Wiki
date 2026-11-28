@@ -114,7 +114,7 @@ The [Bag](../mochila100.html) holds 100 items.
 | Priority | Items | Why |
 |---|---|---|
 | 1. Extra shots | [Lens Case](../../items/m_portalentillas.html), [TM Double Team](../../items/mt_doble.html), [Go-Goggles](../../items/m_gafas_aislantes.html), [Vs. Recorder](../../items/camara_lucha.html), [Silver Powder](../../items/polvo_plata.html), [Dragon Scale](../../items/escama_dragon.html), [Repeat Ball](../../items/f_acopio_ball.html), [Marble](../../items/m_canica.html) | Multiplies damage outside every cap |
-| 2. White Herb | [White Herb](../../items/hierba_blanca.html) | Removes the fire rate cost of Lens Case, Power Lens, Gold Leaf and Toxic Orb: about ×3 damage per second on those builds |
+| 2. White Herb | [White Herb](../../items/hierba_blanca.html) | Removes the penalties of 24 items, so the strongest of them become pure gains (see below): about ×3 damage per second on a Lens Case, Power Lens and Gold Leaf build |
 | 3. Fire rate to the floor | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Coconut Milk](../../items/s_leche_coco.html), [Courage Candy](../../items/s_caramelo_mente.html), [Exp. Candy S](../../items/s_caramelo_exp_s.html), [Pungent Root](../../items/s_hierba_intensa.html), [Swift Feather](../../items/m_pluma_impetu.html) | Stop at 12 shots per second |
 | 4. Multipliers | [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Honor of Kalos](../../items/d_emblema_kalos.html), [Ring Target](../../items/m_blanco.html), [Red Apricorn](../../items/m_bonguri_rojo.html) | Reaches the ×3 cap |
 | 5. Flat damage | [Protein](../../items/proteina.html), [Muscle Feather](../../items/s_pluma_musculo.html) and similar | About +8 is enough |
@@ -125,7 +125,21 @@ The [Bag](../mochila100.html) holds 100 items.
 | 10. Survival | [Metal Coat](../../items/revest_metalico.html), [Rusted Shield](../../items/escudo_oxidado.html), [Destiny Knot (Core)](../../items/lazo_destino.html), [Broken Mirror](../../items/cu_espejo.html), [Eviolite](../../items/d_mineral_evol.html), [Max Revive](../../items/d_revivir_maximo.html) | Avoiding hits matters more than health |
 | 11. Filler | [Zinc](../../items/zinc.html) and other luck, up to 10 | Raises [Gold Teeth](../../items/m_dentadura.html) and [Deep Sea Tooth](../../items/m_diente_marino.html) chances |
 
-**Skip:** [Whipped Dream](../../items/m_dulce_nata.html); [Power Lens](../../items/m_lente_recia.html) and [Toxic Orb](../../items/m_toxisfera.html) once your fire rate is near the floor (unless you have [White Herb](../../items/hierba_blanca.html)); [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10, multipliers past about ×5 before the cap, flat damage past +10.
+### Once you have White Herb
+
+The herb deletes every stat line that lowers a stat (slower fire, less damage, speed, range, shot speed, luck or hearts), on items you hold and on everything you pick up later. Items that trade a big bonus for a penalty become pure gains, and they usually beat the clean items of the same pool. Take the herb early, then grab these instead of skipping them:
+
+| Becomes | Items |
+|---|---|
+| Big damage, no fire rate cost | [Power Lens](../../items/m_lente_recia.html) (×1.6, +4, giant shots), [Choice Band](../../items/cinta_elegida.html) (+2), [Life Orb](../../items/vidasfera.html) (+1.8), [Precooked Burger](../../items/s_hamburguesas.html) (+1.5), [Twisted Spoon](../../items/cuchara.html) (+1.2), [Choice Specs](../../items/gafas_elegidas.html) (+1), [Gold Leaf](../../items/m_hoja_oro.html) (×1.8, +1, +1 heart) |
+| Extra shots, no cost | [Lens Case](../../items/m_portalentillas.html) (triple shot), [TM Double Team](../../items/mt_doble.html) (double shot) |
+| Strong effects, no cost | [Toxic Orb](../../items/m_toxisfera.html) (exploding shots, +1), [Polished Mud Ball](../../items/m_bola_arcilla.html) (fragments, +1), [Red Orb](../../items/w_prisma_rojo.html) (Hyper Beam), [Galarica Wreath](../../items/m_corona_galanuez.html) (damaging aura, +0.5), [Large Leek](../../items/m_puerro_grueso.html) (up to ×2.2 up close; it still loses damage with distance) |
+| Pure fire rate | [Quick Claw](../../items/garra_rapida.html), [Coconut Milk](../../items/s_leche_coco.html), [Exp. Candy S](../../items/s_caramelo_exp_s.html), [Destiny Knot (Cursed)](../../items/cu_nudo.html) |
+| Pure survival | [Mixed Mushrooms](../../items/s_setas.html), [Power Weight](../../items/d_pesa_recia.html), [Choice Scarf](../../items/panuelo_elegido.html), [Broken Mirror](../../items/cu_espejo.html) (no more luck loss), [Rag Doll](../../items/cu_vudu.html) (no more heart loss) |
+
+The herb only removes stat lines. Drawbacks built into an effect stay: [Whipped Dream](../../items/m_dulce_nata.html)'s ×0.45 damage, Large Leek's falloff at range.
+
+**Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10, multipliers past about ×5 before the cap, flat damage past +10.
 
 **What the deepest runs in the Ranking carry:** several [Repeat Ball](../../items/f_acopio_ball.html) with [Apricorn Box](../../items/m_caja_bonguri.html); [Light Stone](../../items/m_orbe_claro.html), [Power Lens](../../items/m_lente_recia.html) with [White Herb](../../items/hierba_blanca.html); [Gold Teeth](../../items/m_dentadura.html), [Lens Case](../../items/m_portalentillas.html), [Dragon Scale](../../items/escama_dragon.html), [Go-Goggles](../../items/m_gafas_aislantes.html); and for survival [Metal Coat](../../items/revest_metalico.html) (coins absorb hits), [Rusted Shield](../../items/escudo_oxidado.html) (your shots cancel enemy shots) and [Destiny Knot (Core)](../../items/lazo_destino.html) (rear shots). Some go mono-type, with several Gems and Plates of their type.
 
