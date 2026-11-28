@@ -60,6 +60,9 @@ Les statistiques réduites par vos objets ne baissent plus (y compris pour ceux 
 - Les cœurs de PV max perdus reviennent (jamais au-dessus du plafond de 12 cœurs), mais ils reviennent vides.
 - Elle ne touche que les lignes de stats affichées sur la fiche de l'objet. Les multiplicateurs de dégâts sous ×1 et les autres défauts qui font partie de l'effet d'un objet restent.
 - Si vous perdez plus tard un objet, l'herbe est prise en compte : vous ne perdez pas une baisse qui n'a jamais été appliquée.
+- Peu importe que vous la preniez avant ou après les objets qu'elle corrige.
+- Mesuré sur Pikachu (4,3 tirs/s) : la [Boîte Lentilles](m_portalentillas.html) passe de 2,7 à 4,3 tirs/s, la [Lentille Pouvoir](m_lente_recia.html) de 2 à 4,3, l'[Orbe Toxique](m_toxisfera.html) de 2,5 à 4,3, la [Feuille Dorée](m_hoja_oro.html) de 3,3 à 4,3 (et elle récupère sa vitesse des tirs). Avec Boîte Lentilles, Lentille Pouvoir et Feuille Dorée ensemble, 1,4 tir/s devient 4,3 : trois fois les dégâts par seconde. Avec 8 objets de cadence en plus, 2,3 devient 8,9 tirs/s.
+- Le ×0,45 de dégâts du [Chantibonbon](m_dulce_nata.html) reste : c'est un multiplicateur, pas une ligne de stat.
 
 ## Cumul
 - Un deuxième exemplaire ne fait rien de plus.

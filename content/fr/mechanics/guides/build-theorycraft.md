@@ -9,6 +9,7 @@ Comment monter une partie qui descend loin dans le [mode infini](../modo_infinit
 
 - Les multiplicateurs de dégâts partagent un plafond : **×3** au maximum. Une fois atteint, d'autres multiplicateurs ne servent à rien.
 - La cadence a aussi un plancher : **12 tirs par seconde** au maximum.
+- **L'[Herbe Blanche](../../items/hierba_blanca.html) est un pilier.** Les meilleurs objets de dégâts (Boîte Lentilles, Lentille Pouvoir, Feuille Dorée, Orbe Toxique) ralentissent tous votre cadence ; l'herbe supprime chacun de ces malus, passés et futurs. Sur une telle build, elle triple à peu près vos dégâts par seconde.
 - La profondeur vient donc de ce qui est **hors** de ces plafonds : tirs en plus, compagnons qui copient vos tirs, effets à l'impact et dégâts en pourcentage de la vie de l'ennemi.
 - Tard dans l'infini, les ennemis gagnent environ 7 % de vie par étage. Chaque fois que vous doublez vos dégâts, vous allez environ 10 étages plus loin.
 - Vous ne pouvez pas compenser par les soins (12 cœurs au maximum, et les soins sont limités) : évitez les coups plutôt que de les encaisser.
@@ -20,6 +21,18 @@ Comment monter une partie qui descend loin dans le [mode infini](../modo_infinit
 **Les multiplicateurs de dégâts** se multiplient tous entre eux, puis sont plafonnés : jusqu'à ×2,3 en entier, un quart de ce qui dépasse, et jamais plus de ×3. Par exemple, [Feuille Dorée](../../items/m_hoja_oro.html) (×1,8) et [Atq. Spé. +](../../items/s_ataque_especial_x.html) (×1,5) font ×2,7, qui devient ×2,4. Ajoutez [Insigne de Kalos](../../items/d_emblema_kalos.html) (×2) et vous êtes au plafond. Au-delà d'environ ×5 avant plafond, les multiplicateurs en plus sont perdus.
 
 **La cadence** s'arrête à 5 images entre deux tirs, soit 12 tirs par seconde. Les objets de cadence font l'essentiel du chemin, et [Plume Sprint](../../items/m_pluma_impetu.html) (jusqu'à ×2) termine en général le travail. Au-delà, c'est perdu. [Chantibonbon](../../items/m_dulce_nata.html) est un piège : son bonus de cadence est perdu au plancher, mais son malus de dégâts reste (le plafond n'en absorbe une partie que si vos multiplicateurs dépassent déjà ×2,3).
+
+L'**[Herbe Blanche](../../items/hierba_blanca.html)** est ce qui fait marcher les gros objets. Sans elle, chaque gros objet de dégâts vous coûte de la cadence ; avec elle, ce sont des gains purs, que vous la preniez avant ou après eux. Mesuré sur Pikachu :
+
+| Build | Tirs/s sans herbe | Avec herbe | Dégâts par seconde |
+|---|---|---|---|
+| [Boîte Lentilles](../../items/m_portalentillas.html) | 2,7 | 4,3 | ×1,6 |
+| [Lentille Pouvoir](../../items/m_lente_recia.html) | 2 | 4,3 | ×2,1 |
+| [Orbe Toxique](../../items/m_toxisfera.html) | 2,5 | 4,3 | ×1,7 |
+| Boîte Lentilles + Lentille Pouvoir + [Feuille Dorée](../../items/m_hoja_oro.html) | 1,4 | 4,3 | ×3 |
+| Pareil + 8 objets de cadence | 2,3 | 8,9 | ×3,9 |
+
+Elle ne touche pas aux multiplicateurs de dégâts sous ×1, donc le [Chantibonbon](../../items/m_dulce_nata.html) reste un piège.
 
 ## Ce qui dépasse les plafonds
 
@@ -92,7 +105,6 @@ En plus, [les boss s'adaptent à vous](../jefes_adaptativos.html) : jusqu'à ×1
 - **Plus de projectiles reste rentable au-delà de 450.** Les tirs qui touchent le font presque tout de suite, et le plafond supprime les plus anciens d'abord, qui sont des tirs déjà ratés (voir [Projectiles](../proyectiles.html)). En test avec 6 Métamorph, les doubler avec la [Poche de Capture](../../items/a_bolsillo_captura.html) a multiplié les dégâts sur le boss par environ 1,8 à 2,6, et les tripler par environ 2,5 à 3, avec le plafond plein en permanence.
 - **La Poche de Capture** copie vos compagnons permanents pour la salle : 6 Métamorph deviennent 12, 18 avec le [Plongeur Devon](../../items/d_bombona_devon.html) ou deux utilisations avec la [Pile](../../items/d_pila.html), 30 avec les deux. Gardez-la pour les boss.
 - **Gardez la qualité graphique au maximum** si votre ordinateur le permet. Des effets comme les rayons de [Galet Blanc](../../items/m_orbe_claro.html) ont besoin de place dans la liste des effets, et une qualité plus basse en laisse moins : plus de rayons sont perdus.
-- **[Herbe Blanche](../../items/hierba_blanca.html)** annule tous les malus de cadence et baisses de stats que vous avez ou aurez. Elle transforme [Boîte Lentilles](../../items/m_portalentillas.html) et [Lentille Pouvoir](../../items/m_lente_recia.html) en gains purs.
 - **Les dégâts de tir avant les dégâts à l'impact**, à cause des boucliers.
 
 ## Build conseillée, par priorité
@@ -102,15 +114,16 @@ Le [Sac](../mochila100.html) contient 100 objets.
 | Priorité | Objets | Pourquoi |
 |---|---|---|
 | 1. Tirs en plus | [Boîte Lentilles](../../items/m_portalentillas.html), [CT Reflet](../../items/mt_doble.html), [Lunettes Sable](../../items/m_gafas_aislantes.html), [Magnéto VS](../../items/camara_lucha.html), [Poudre Argentée](../../items/polvo_plata.html), [Écaille Draco](../../items/escama_dragon.html), [Bis Ball](../../items/f_acopio_ball.html), [Bille](../../items/m_canica.html) | Multiplie les dégâts hors de tout plafond |
-| 2. Cadence au plancher | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Lait de Coco](../../items/s_leche_coco.html), [Bonbon Mental S](../../items/s_caramelo_mente.html), [Bonbon Exp. S](../../items/s_caramelo_exp_s.html), [Tubercule](../../items/s_hierba_intensa.html), [Plume Sprint](../../items/m_pluma_impetu.html) | Arrêtez-vous à 12 tirs par seconde |
-| 3. Multiplicateurs | [Feuille Dorée](../../items/m_hoja_oro.html), [Atq. Spé. +](../../items/s_ataque_especial_x.html), [Insigne de Kalos](../../items/d_emblema_kalos.html), [Point de Mire](../../items/m_blanco.html), [Noigrume Rouge](../../items/m_bonguri_rojo.html) | Atteint le plafond ×3 |
-| 4. Dégâts fixes | [Protéine](../../items/proteina.html), [Plume Force](../../items/s_pluma_musculo.html) et similaires | Environ +8 suffit |
-| 5. Arme | [Croc Rasoir](../../items/w_colmillo.html) | Son bonus s'applique à chaque coup après le plafond |
-| 6. À l'impact | [Dentier en Or](../../items/m_dentadura.html), [Métronome](../../items/metronomo.html), [Dent Océan](../../items/m_diente_marino.html), [Galet Blanc](../../items/m_orbe_claro.html), [Bandeau Muscle](../../items/banda_musculo.html), [Ceinture Pro](../../items/cinta_experto.html), [Croc Dragon](../../items/colmillo_dragon.html) | [Dentier en Or](../../items/m_dentadura.html) et [Métronome](../../items/metronomo.html) marchent aussi sur les boucliers |
-| 7. Compagnons | [Boîte Noigrume](../../items/m_caja_bonguri.html) et d'autres [Bis Ball](../../items/f_acopio_ball.html) | Chaque Métamorph copie chaque salve. La [Poche de Capture](../../items/a_bolsillo_captura.html) (avec le [Plongeur Devon](../../items/d_bombona_devon.html) et la [Pile](../../items/d_pila.html)) les multiplie pour une salle de boss |
-| 8. Profondeur | [Morceau Comète](../../items/fragmento_cometa.html), [Lunettes Sages](../../items/gafas_especiales.html), [Pierre Anima](../../items/hw_anima.html) s'il apparaît | Des dégâts qui ne perdent pas de valeur |
-| 9. Survie | [Peau Métal](../../items/revest_metalico.html), [Bouclier Rouillé](../../items/escudo_oxidado.html), [Nœud Destin (Base)](../../items/lazo_destino.html), [Miroir Brisé](../../items/cu_espejo.html), [Évoluroc](../../items/d_mineral_evol.html), [Rappel Max](../../items/d_revivir_maximo.html) | Éviter les coups compte plus que la vie |
-| 10. Remplissage | [Zinc](../../items/zinc.html) et autre chance, jusqu'à 10 | Augmente les chances de [Dentier en Or](../../items/m_dentadura.html) et [Dent Océan](../../items/m_diente_marino.html) |
+| 2. Herbe Blanche | [Herbe Blanche](../../items/hierba_blanca.html) | Supprime le coût en cadence de Boîte Lentilles, Lentille Pouvoir, Feuille Dorée et Orbe Toxique : environ ×3 dégâts par seconde sur ces builds |
+| 3. Cadence au plancher | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Lait de Coco](../../items/s_leche_coco.html), [Bonbon Mental S](../../items/s_caramelo_mente.html), [Bonbon Exp. S](../../items/s_caramelo_exp_s.html), [Tubercule](../../items/s_hierba_intensa.html), [Plume Sprint](../../items/m_pluma_impetu.html) | Arrêtez-vous à 12 tirs par seconde |
+| 4. Multiplicateurs | [Feuille Dorée](../../items/m_hoja_oro.html), [Atq. Spé. +](../../items/s_ataque_especial_x.html), [Insigne de Kalos](../../items/d_emblema_kalos.html), [Point de Mire](../../items/m_blanco.html), [Noigrume Rouge](../../items/m_bonguri_rojo.html) | Atteint le plafond ×3 |
+| 5. Dégâts fixes | [Protéine](../../items/proteina.html), [Plume Force](../../items/s_pluma_musculo.html) et similaires | Environ +8 suffit |
+| 6. Arme | [Croc Rasoir](../../items/w_colmillo.html) | Son bonus s'applique à chaque coup après le plafond |
+| 7. À l'impact | [Dentier en Or](../../items/m_dentadura.html), [Métronome](../../items/metronomo.html), [Dent Océan](../../items/m_diente_marino.html), [Galet Blanc](../../items/m_orbe_claro.html), [Bandeau Muscle](../../items/banda_musculo.html), [Ceinture Pro](../../items/cinta_experto.html), [Croc Dragon](../../items/colmillo_dragon.html) | [Dentier en Or](../../items/m_dentadura.html) et [Métronome](../../items/metronomo.html) marchent aussi sur les boucliers |
+| 8. Compagnons | [Boîte Noigrume](../../items/m_caja_bonguri.html) et d'autres [Bis Ball](../../items/f_acopio_ball.html) | Chaque Métamorph copie chaque salve. La [Poche de Capture](../../items/a_bolsillo_captura.html) (avec le [Plongeur Devon](../../items/d_bombona_devon.html) et la [Pile](../../items/d_pila.html)) les multiplie pour une salle de boss |
+| 9. Profondeur | [Morceau Comète](../../items/fragmento_cometa.html), [Lunettes Sages](../../items/gafas_especiales.html), [Pierre Anima](../../items/hw_anima.html) s'il apparaît | Des dégâts qui ne perdent pas de valeur |
+| 10. Survie | [Peau Métal](../../items/revest_metalico.html), [Bouclier Rouillé](../../items/escudo_oxidado.html), [Nœud Destin (Base)](../../items/lazo_destino.html), [Miroir Brisé](../../items/cu_espejo.html), [Évoluroc](../../items/d_mineral_evol.html), [Rappel Max](../../items/d_revivir_maximo.html) | Éviter les coups compte plus que la vie |
+| 11. Remplissage | [Zinc](../../items/zinc.html) et autre chance, jusqu'à 10 | Augmente les chances de [Dentier en Or](../../items/m_dentadura.html) et [Dent Océan](../../items/m_diente_marino.html) |
 
 **À éviter :** [Chantibonbon](../../items/m_dulce_nata.html) ; [Lentille Pouvoir](../../items/m_lente_recia.html) et [Orbe Toxique](../../items/m_toxisfera.html) quand votre cadence est près du plancher (sauf avec [Herbe Blanche](../../items/hierba_blanca.html)) ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10, les multiplicateurs au-delà d'environ ×5 avant plafond, les dégâts fixes au-delà de +10.
 

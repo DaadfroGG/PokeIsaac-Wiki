@@ -60,6 +60,9 @@ Stats lowered by your items stop being lowered (also for the ones you already ca
 - Lost hearts of max health come back (never above the 12-heart cap), but they come back empty.
 - It only touches the stat lines shown on the item sheet. Damage multipliers below ×1 and other drawbacks that are part of an item's effect stay.
 - If you later lose an item, the herb is taken into account: you don't lose a drop that was never applied.
+- It doesn't matter whether you pick it up before or after the items it fixes.
+- Measured on Pikachu (4.3 shots/s): [Lens Case](m_portalentillas.html) goes from 2.7 to 4.3 shots/s, [Power Lens](m_lente_recia.html) from 2 to 4.3, [Toxic Orb](m_toxisfera.html) from 2.5 to 4.3, [Gold Leaf](m_hoja_oro.html) from 3.3 to 4.3 (and gets its shot speed back). With Lens Case, Power Lens and Gold Leaf together, 1.4 shots/s becomes 4.3: three times the damage per second. With 8 fire rate items on top, 2.3 becomes 8.9 shots/s.
+- [Whipped Dream](m_dulce_nata.html)'s ×0.45 damage stays: it is a multiplier, not a stat line.
 
 ## Stacking
 - A second copy does nothing more.

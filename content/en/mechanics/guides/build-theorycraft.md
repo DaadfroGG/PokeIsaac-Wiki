@@ -9,6 +9,7 @@ How to build a run that goes deep into [endless mode](../modo_infinito.html). Th
 
 - Damage multipliers share one cap: **×3** at most. Once you're there, more multipliers do nothing.
 - Fire rate has a floor too: **12 shots per second** at most.
+- **[White Herb](../../items/hierba_blanca.html) is a core pick.** The strongest damage items (Lens Case, Power Lens, Gold Leaf, Toxic Orb) all slow your fire; the herb removes every one of those penalties, past and future. On such a build it roughly triples your damage per second.
 - So depth comes from what sits **outside** those caps: extra shots, companions that copy your shots, effects that trigger on hit, and damage based on a percentage of the enemy's health.
 - Late in endless, enemies take about 7 % more health per floor. Every time you double your damage, you go about 10 floors further.
 - You can't out-heal deep floors (12 hearts at most, and healing is capped), so avoid hits instead of tanking them.
@@ -20,6 +21,18 @@ How to build a run that goes deep into [endless mode](../modo_infinito.html). Th
 **Damage multipliers** are all multiplied together, then capped: up to ×2.3 counts in full, a quarter of anything above that, and never more than ×3. For example, [Gold Leaf](../../items/m_hoja_oro.html) (×1.8) and [X Sp. Atk](../../items/s_ataque_especial_x.html) (×1.5) make ×2.7, which becomes ×2.4. Add [Honor of Kalos](../../items/d_emblema_kalos.html) (×2) and you're at the cap. Past about ×5 before the cap, extra multipliers are wasted.
 
 **Fire rate** stops at 5 frames between shots, which is 12 shots per second. Fire rate items get you most of the way, and [Swift Feather](../../items/m_pluma_impetu.html) (up to ×2) usually finishes the job. Anything beyond is wasted. [Whipped Dream](../../items/m_dulce_nata.html) is a trap here: its fire rate boost is lost to the floor, but its damage penalty stays (the cap only absorbs part of it if your multipliers are already past ×2.3).
+
+**[White Herb](../../items/hierba_blanca.html)** is what makes the big items work. Without it, every heavy hitter costs you fire rate; with it, they are pure gains, whether you pick it up before or after them. Measured on Pikachu:
+
+| Build | Shots/s without herb | With herb | Damage per second |
+|---|---|---|---|
+| [Lens Case](../../items/m_portalentillas.html) | 2.7 | 4.3 | ×1.6 |
+| [Power Lens](../../items/m_lente_recia.html) | 2 | 4.3 | ×2.1 |
+| [Toxic Orb](../../items/m_toxisfera.html) | 2.5 | 4.3 | ×1.7 |
+| Lens Case + Power Lens + [Gold Leaf](../../items/m_hoja_oro.html) | 1.4 | 4.3 | ×3 |
+| Same + 8 fire rate items | 2.3 | 8.9 | ×3.9 |
+
+It does not touch damage multipliers below ×1, so [Whipped Dream](../../items/m_dulce_nata.html) stays a trap.
 
 ## What goes past the caps
 
@@ -92,7 +105,6 @@ On top of this, [bosses adapt to you](../jefes_adaptativos.html): up to ×10 hea
 - **More projectiles still pay off past 450.** Shots that hit do so almost at once, and the cap removes the oldest first, which are shots that already missed (see [Projectiles](../proyectiles.html)). In tests with 6 Dittos, doubling them with [Catching Pocket](../../items/a_bolsillo_captura.html) multiplied boss damage by about 1.8 to 2.6, and tripling them by about 2.5 to 3, with the cap full the whole time.
 - **Catching Pocket** copies your permanent companions for the room: 6 Dittos become 12, 18 with [Devon Scuba Gear](../../items/d_bombona_devon.html) or two uses with [Cell Battery](../../items/d_pila.html), 30 with both. Save it for bosses.
 - **Keep graphics quality on full** if your computer can take it. Effects like [Light Stone](../../items/m_orbe_claro.html)'s rays need room in the effects list, and lower quality leaves less room, so more of them are dropped.
-- **[White Herb](../../items/hierba_blanca.html)** cancels every fire rate penalty and stat drop you have or will get. It turns [Lens Case](../../items/m_portalentillas.html) and [Power Lens](../../items/m_lente_recia.html) into pure gains.
 - **Shot damage before on-hit damage**, because of shields.
 
 ## Suggested build, by priority
@@ -102,15 +114,16 @@ The [Bag](../mochila100.html) holds 100 items.
 | Priority | Items | Why |
 |---|---|---|
 | 1. Extra shots | [Lens Case](../../items/m_portalentillas.html), [TM Double Team](../../items/mt_doble.html), [Go-Goggles](../../items/m_gafas_aislantes.html), [Vs. Recorder](../../items/camara_lucha.html), [Silver Powder](../../items/polvo_plata.html), [Dragon Scale](../../items/escama_dragon.html), [Repeat Ball](../../items/f_acopio_ball.html), [Marble](../../items/m_canica.html) | Multiplies damage outside every cap |
-| 2. Fire rate to the floor | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Coconut Milk](../../items/s_leche_coco.html), [Courage Candy](../../items/s_caramelo_mente.html), [Exp. Candy S](../../items/s_caramelo_exp_s.html), [Pungent Root](../../items/s_hierba_intensa.html), [Swift Feather](../../items/m_pluma_impetu.html) | Stop at 12 shots per second |
-| 3. Multipliers | [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Honor of Kalos](../../items/d_emblema_kalos.html), [Ring Target](../../items/m_blanco.html), [Red Apricorn](../../items/m_bonguri_rojo.html) | Reaches the ×3 cap |
-| 4. Flat damage | [Protein](../../items/proteina.html), [Muscle Feather](../../items/s_pluma_musculo.html) and similar | About +8 is enough |
-| 5. Weapon | [Razor Fang](../../items/w_colmillo.html) | Its bonus applies to every hit after the cap |
-| 6. On-hit | [Gold Teeth](../../items/m_dentadura.html), [Metronome](../../items/metronomo.html), [Deep Sea Tooth](../../items/m_diente_marino.html), [Light Stone](../../items/m_orbe_claro.html), [Muscle Band](../../items/banda_musculo.html), [Expert Belt](../../items/cinta_experto.html), [Dragon Fang](../../items/colmillo_dragon.html) | [Gold Teeth](../../items/m_dentadura.html) and [Metronome](../../items/metronomo.html) also work on shields |
-| 7. Companions | [Apricorn Box](../../items/m_caja_bonguri.html) and more [Repeat Ball](../../items/f_acopio_ball.html) | Each Ditto copies every volley. [Catching Pocket](../../items/a_bolsillo_captura.html) (with [Devon Scuba Gear](../../items/d_bombona_devon.html) and [Cell Battery](../../items/d_pila.html)) multiplies them for a boss room |
-| 8. Depth | [Comet Shard](../../items/fragmento_cometa.html), [Wise Glasses](../../items/gafas_especiales.html), [Anima Stone](../../items/hw_anima.html) if it shows up | Damage that doesn't lose value |
-| 9. Survival | [Metal Coat](../../items/revest_metalico.html), [Rusted Shield](../../items/escudo_oxidado.html), [Destiny Knot (Core)](../../items/lazo_destino.html), [Broken Mirror](../../items/cu_espejo.html), [Eviolite](../../items/d_mineral_evol.html), [Max Revive](../../items/d_revivir_maximo.html) | Avoiding hits matters more than health |
-| 10. Filler | [Zinc](../../items/zinc.html) and other luck, up to 10 | Raises [Gold Teeth](../../items/m_dentadura.html) and [Deep Sea Tooth](../../items/m_diente_marino.html) chances |
+| 2. White Herb | [White Herb](../../items/hierba_blanca.html) | Removes the fire rate cost of Lens Case, Power Lens, Gold Leaf and Toxic Orb: about ×3 damage per second on those builds |
+| 3. Fire rate to the floor | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Coconut Milk](../../items/s_leche_coco.html), [Courage Candy](../../items/s_caramelo_mente.html), [Exp. Candy S](../../items/s_caramelo_exp_s.html), [Pungent Root](../../items/s_hierba_intensa.html), [Swift Feather](../../items/m_pluma_impetu.html) | Stop at 12 shots per second |
+| 4. Multipliers | [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Honor of Kalos](../../items/d_emblema_kalos.html), [Ring Target](../../items/m_blanco.html), [Red Apricorn](../../items/m_bonguri_rojo.html) | Reaches the ×3 cap |
+| 5. Flat damage | [Protein](../../items/proteina.html), [Muscle Feather](../../items/s_pluma_musculo.html) and similar | About +8 is enough |
+| 6. Weapon | [Razor Fang](../../items/w_colmillo.html) | Its bonus applies to every hit after the cap |
+| 7. On-hit | [Gold Teeth](../../items/m_dentadura.html), [Metronome](../../items/metronomo.html), [Deep Sea Tooth](../../items/m_diente_marino.html), [Light Stone](../../items/m_orbe_claro.html), [Muscle Band](../../items/banda_musculo.html), [Expert Belt](../../items/cinta_experto.html), [Dragon Fang](../../items/colmillo_dragon.html) | [Gold Teeth](../../items/m_dentadura.html) and [Metronome](../../items/metronomo.html) also work on shields |
+| 8. Companions | [Apricorn Box](../../items/m_caja_bonguri.html) and more [Repeat Ball](../../items/f_acopio_ball.html) | Each Ditto copies every volley. [Catching Pocket](../../items/a_bolsillo_captura.html) (with [Devon Scuba Gear](../../items/d_bombona_devon.html) and [Cell Battery](../../items/d_pila.html)) multiplies them for a boss room |
+| 9. Depth | [Comet Shard](../../items/fragmento_cometa.html), [Wise Glasses](../../items/gafas_especiales.html), [Anima Stone](../../items/hw_anima.html) if it shows up | Damage that doesn't lose value |
+| 10. Survival | [Metal Coat](../../items/revest_metalico.html), [Rusted Shield](../../items/escudo_oxidado.html), [Destiny Knot (Core)](../../items/lazo_destino.html), [Broken Mirror](../../items/cu_espejo.html), [Eviolite](../../items/d_mineral_evol.html), [Max Revive](../../items/d_revivir_maximo.html) | Avoiding hits matters more than health |
+| 11. Filler | [Zinc](../../items/zinc.html) and other luck, up to 10 | Raises [Gold Teeth](../../items/m_dentadura.html) and [Deep Sea Tooth](../../items/m_diente_marino.html) chances |
 
 **Skip:** [Whipped Dream](../../items/m_dulce_nata.html); [Power Lens](../../items/m_lente_recia.html) and [Toxic Orb](../../items/m_toxisfera.html) once your fire rate is near the floor (unless you have [White Herb](../../items/hierba_blanca.html)); [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10, multipliers past about ×5 before the cap, flat damage past +10.
 
