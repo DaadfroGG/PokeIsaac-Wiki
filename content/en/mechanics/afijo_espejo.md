@@ -45,7 +45,11 @@ Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and 
 |---|---|---|---|---|
 | Floor 10 | 67 / 51 | 34 / 6 | 56 / 45 | 11 / 1 |
 | Floor 50 | 73 / 57 | 49 / 10 | 54 to 60 / 42 to 49 | 11.5 / 3 to 5 |
+| Floor 100 (Mega-Mewtwo Y) | 106 / 74 | 57 / 0 | 94 / 69 | 18 / 3 |
+| Floor 150 (Mega-Rayquaza) | 132 / 68 | 92 / 8 | 92 / 55 | 40 / 3 |
+| Floor 200 (Mega-Latias) | 73 | 61 | 104 | 47 |
 
+- From floor 100 on, each boss hit costs 2.5 hearts. With the shield, a Mirror boss still hurt no more than the same boss without the affix (floor 100: 57 vs 58 standing, 18 vs 19 moving; floor 150: 92 vs 95, 40 vs 35): what hurts that deep is the boss's own attacks, not the returned shots. Floor 200's boss fires pink shots itself, so its share can't be split.
 - Moving around the boss with the shield is by far the best: the boss's own shots miss more, and the shield still catches almost every returned shot. Faster shots (shot speed 9 to 33) and [Nikodule](../items/w_acromaquina.html) changed nothing measurable.
 - Iron, Rusted Shield and [Broken Mirror](../items/cu_espejo.html) together: 10.4 hearts per minute with the full volley, 12.1 with Dittos.
 

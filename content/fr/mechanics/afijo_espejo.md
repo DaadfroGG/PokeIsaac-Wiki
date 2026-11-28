@@ -45,7 +45,11 @@ Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant)
 |---|---|---|---|---|
 | Étage 10 | 67 / 51 | 34 / 6 | 56 / 45 | 11 / 1 |
 | Étage 50 | 73 / 57 | 49 / 10 | 54 à 60 / 42 à 49 | 11,5 / 3 à 5 |
+| Étage 100 (Méga-Mewtwo Y) | 106 / 74 | 57 / 0 | 94 / 69 | 18 / 3 |
+| Étage 150 (Méga-Rayquaza) | 132 / 68 | 92 / 8 | 92 / 55 | 40 / 3 |
+| Étage 200 (Méga-Latias) | 73 | 61 | 104 | 47 |
 
+- À partir de l'étage 100, chaque coup du boss coûte 2,5 cœurs. Avec le bouclier, un boss Miroir ne faisait toujours pas plus mal que le même boss sans l'affixe (étage 100 : 57 contre 58 immobile, 18 contre 19 en bougeant ; étage 150 : 92 contre 95, 40 contre 35) : ce qui fait mal si loin, ce sont les attaques du boss lui-même, pas les tirs renvoyés. Le boss de l'étage 200 tire lui-même des tirs roses, donc sa part ne peut pas être séparée.
 - Tourner autour du boss avec le bouclier est de loin le mieux : les tirs du boss ratent plus, et le bouclier attrape encore presque tous les tirs renvoyés. Des tirs plus rapides (vitesse des tirs de 9 à 33) et le [Nikodule](../items/w_acromaquina.html) n'ont rien changé de mesurable.
 - Fer, Bouclier Rouillé et [Miroir Brisé](../items/cu_espejo.html) ensemble : 10,4 cœurs par minute avec la salve pleine, 12,1 avec des Métamorph.
 
