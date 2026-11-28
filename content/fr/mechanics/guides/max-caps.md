@@ -142,6 +142,24 @@ Le meilleur Pokémon pour ça est [Méga-Diancie](../../pokemon/mega0719.html) :
 
 Il faut le niveau 60, le rang 10 et le Sac de 150 objets (loin dans le [mode infini](../modo_infinito.html)), un seul cœur, 130 Lentilles Pouvoir et beaucoup de chance avec les réserves. C'est un plafond, pas une build.
 
+## Toutes les autres stats avec des exemplaires
+
+Les exemplaires cumulent leurs stats, donc pour chaque stat la question est : quel est le meilleur objet par exemplaire, et quand le jeu arrête-t-il de compter ? L'[Herbe Blanche](../../items/hierba_blanca.html) retire les lignes négatives des objets ci-dessous, donc leurs exemplaires ne coûtent rien. Mesuré sur Pikachu sauf mention.
+
+| Stat | Meilleur objet par exemplaire | Plafond | Exemplaires pour l'atteindre |
+|---|---|---|---|
+| Cadence | [Vive Griffe](../../items/garra_rapida.html) (cadence +4) | **12 tirs/s** | Pikachu (4,3/s) : 4 exemplaires 8,9/s, 5 exemplaires 10,4/s, **6 exemplaires 12/s**. Au niveau 60, 4 exemplaires donnent déjà 11,6/s. Le Pokémon le plus lent (3,3/s) en demande environ 10 (calculé) |
+| Tirs par salve | [Boîte Lentilles](../../items/m_portalentillas.html) (+2 tirs) | **9** | **4 exemplaires** (1 + 8). La [CT Reflet](../../items/mt_doble.html) en ajoute 1 |
+| Chance de critique | [Roche Royale](../../items/roca_rey.html), [Lunettes Noires](../../items/gafas_sol.html), [Loupe](../../items/lupa.html) (+8 % chacun) | 100 % | **13 exemplaires**, moins avec la Chance (+1 % par point) ou un type Combat/Ténèbres (+10 %). La [Baie Lansat](../../items/baya_zonlan.html) à un cœur le fait seule |
+| Dégâts critiques | [Loupe](../../items/lupa.html) | **×3** | 1 exemplaire, les suivants n'ajoutent rien |
+| Chance | [Poudre Claire](../../items/polvo_brillo.html), [Baie Nanana dorée](../../items/s_pinia_dorada.html) (+2 chacune) | En entier jusqu'à 10, puis un quart | 5 exemplaires 10,25, 25 exemplaires 20,25. Une Chance de 20 maximise le [Dentier en Or](../../items/m_dentadura.html) (50 %), 14 maximise la [Dent Océan](../../items/m_diente_marino.html) (10 %) ; au-delà elle n'ajoute que de la chance de critique |
+| Vie max | [Fer](../../items/hierro.html), [PV Plus](../../items/maspv.html) (+1 cœur) | **12 cœurs** | Pikachu (3 cœurs) : **9 exemplaires** |
+| Vitesse | [Mouchoir Choix](../../items/panuelo_elegido.html) (+0,9) | Aucun | 10 exemplaires : de 4,2 à 13,2. Un Sac plein dépasserait 130 |
+| Portée | [Plume Esprit](../../items/s_pluma_intelecto.html), [Lentille Zoom](../../items/lente_zoom.html) (+150 px) | Aucun | 10 exemplaires : de 350 à 1 850 px. Une salle normale fait 832 × 448 px, donc au-delà d'environ 950 px un tir en ligne droite touche toujours un mur avant ; la portée en plus ne sert qu'aux tirs qui rebondissent |
+| Vitesse des tirs | [Attaque +](../../items/ataquex.html), [Lentille Zoom](../../items/lente_zoom.html), [Bonbon Mental S](../../items/s_caramelo_mente.html), [Nouilles](../../items/s_fideos.html) (+2) | Aucun | Des tirs plus rapides arrivent plus tôt ; ils s'arrêtent toujours à votre portée |
+
+Une build complète n'a donc besoin que de quelques exemplaires pour chaque stat plafonnée : environ 6 Vive Griffe, 4 Boîte Lentilles et 9 cœurs d'objets de vie. Toutes les autres places peuvent aller aux dégâts ([Lentille Pouvoir](../../items/m_lente_recia.html), voir plus haut).
+
 ## Combien de tirs ?
 
 - Au plus 12 attaques par seconde, 9 tirs par salve : 108 tirs par seconde rien qu'avec la salve.

@@ -142,6 +142,24 @@ The best Pokémon for it is [Mega Diancie](../../pokemon/mega0719.html): 6.5 bas
 
 That needs level 60, rank 10 and the 150-item Bag (deep in [endless mode](../modo_infinito.html)), one heart left, 130 Power Lens and a lot of luck with the pools. It is a ceiling, not a build.
 
+## Every other stat with copies
+
+Copies stack their stats, so for each stat the question is: what is the best item per copy, and when does the game stop counting? [White Herb](../../items/hierba_blanca.html) removes the minus lines of the items below, so their copies cost nothing. Measured on Pikachu unless marked.
+
+| Stat | Best item per copy | Ceiling | Copies to reach it |
+|---|---|---|---|
+| Fire rate | [Quick Claw](../../items/garra_rapida.html) (fire rate +4) | **12 shots/s** | Pikachu (4.3/s): 4 copies 8.9/s, 5 copies 10.4/s, **6 copies 12/s**. At level 60, 4 copies already give 11.6/s. The slowest Pokémon (3.3/s) needs about 10 (calculated) |
+| Shots per volley | [Lens Case](../../items/m_portalentillas.html) (+2 shots) | **9** | **4 copies** (1 + 8). [TM Double Team](../../items/mt_doble.html) adds 1 |
+| Crit chance | [King's Rock](../../items/roca_rey.html), [Black Glasses](../../items/gafas_sol.html), [Wide Lens](../../items/lupa.html) (+8 % each) | 100 % | **13 copies**, fewer with Luck (+1 % per point) or a Fighting/Dark type (+10 %). [Lansat Berry](../../items/baya_zonlan.html) at one heart does it alone |
+| Crit damage | [Wide Lens](../../items/lupa.html) | **×3** | 1 copy, more add nothing |
+| Luck | [Bright Powder](../../items/polvo_brillo.html), [Golden Pinap Berry](../../items/s_pinia_dorada.html) (+2 each) | Full up to 10, then a quarter | 5 copies 10.25, 25 copies 20.25. Luck 20 maxes [Gold Teeth](../../items/m_dentadura.html) (50 %), luck 14 maxes [Deep Sea Tooth](../../items/m_diente_marino.html) (10 %); past that it only adds crit chance |
+| Max health | [Iron](../../items/hierro.html), [HP Up](../../items/maspv.html) (+1 heart) | **12 hearts** | Pikachu (3 hearts): **9 copies** |
+| Speed | [Choice Scarf](../../items/panuelo_elegido.html) (+0.9) | None | 10 copies: 4.2 to 13.2. A full Bag would pass 130 |
+| Range | [Genius Feather](../../items/s_pluma_intelecto.html), [Zoom Lens](../../items/lente_zoom.html) (+150 px) | None | 10 copies: 350 to 1,850 px. A normal room is 832 × 448 px, so past about 950 px a straight shot always meets a wall first; extra range only helps shots that bounce |
+| Shot speed | [X Attack](../../items/ataquex.html), [Zoom Lens](../../items/lente_zoom.html), [Courage Candy](../../items/s_caramelo_mente.html), [Instant Noodles](../../items/s_fideos.html) (+2) | None | Faster shots reach the target sooner; they still stop at your range |
+
+So a full build only needs a handful of copies for each capped stat: about 6 Quick Claw, 4 Lens Case and 9 hearts' worth of health items. Every other slot can go to damage ([Power Lens](../../items/m_lente_recia.html), see above).
+
 ## How many shots?
 
 - At most 12 attacks per second, 9 shots per volley: 108 shots per second from the volley alone.
