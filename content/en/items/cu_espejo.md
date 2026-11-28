@@ -60,6 +60,7 @@ names:
 - Blocked hits don't trigger your on-hit items, since nothing hit you.
 - The Luck penalty is permanent while you own the item.
 - **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Luck −2. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
+- Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): −10 % damage taken (33.9 to 30.6 hearts per minute). It blocks about 20 % of hits, but the short invulnerability after a block lets the next hit land sooner, so the real gain is about half.
 
 ## Stacking
 - The 20 % does not stack with a second copy. The -2 Luck is added again.

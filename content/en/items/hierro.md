@@ -61,6 +61,7 @@ Heart +1; strong hits take half a heart less
 - Any hit that would cost you a full heart or more (2 half hearts or more) costs half a heart less. Hits of half a heart are not reduced.
 - The reduction applies before soul hearts absorb the damage.
 - **Real effect** for a typical Pokémon (4 damage, 4.3 shots/s, speed 4, range 350 px, shot speed 9, 4 hearts), first copy only: Max health +1 heart: 4 → 5 hearts. See [Stats in practice](../mechanics/estadisticas_reales.html) for how the totals behave.
+- Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): −32 % damage taken (33.9 to 23.2 hearts per minute): most boss hits cost a full heart or more, so most of them are reduced.
 
 ## Stacking
 - The max heart is added again with each copy. The damage reduction does not stack.

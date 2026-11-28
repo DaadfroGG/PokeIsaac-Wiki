@@ -54,6 +54,7 @@ Un bouclier vous protège : dans chaque salle, le premier coup reçu ne vous in
 - Un bouclier est prêt à chaque entrée dans une salle (et dès que vous ramassez l'objet). Le premier coup reçu est entièrement absorbé, et le bouclier disparaît jusqu'à la salle suivante.
 - Le blocage vous donne 0,8 seconde d'invulnérabilité.
 - Le bouclier est de nouveau prêt dans chaque salle où vous entrez, salles déjà terminées comprises.
+- Mesuré contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant) : −3 % de dégâts subis (de 33,9 à 32,8 cœurs par minute) : un coup bloqué par salle compte peu dans un long combat. Il compte davantage sur beaucoup de salles courtes.
 
 ## Cumul
 - Elle ne se cumule pas : un second exemplaire n'ajoute rien.

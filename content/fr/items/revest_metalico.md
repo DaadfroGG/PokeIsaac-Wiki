@@ -58,6 +58,7 @@ Si vous avez des Pokédollars (et plus de cœurs d'âme), les coups vous coûten
 - Si vous n'avez aucun cœur d'âme et assez de Pokédollars, un coup vous coûte 3 Pokédollars par demi-cœur de dégâts au lieu de PV (un coup d'un cœur coûte 6, toujours arrondi au supérieur).
 - Le coup est alors traité comme s'il n'avait jamais touché : aucun dégât, vous gagnez l'invulnérabilité habituelle de 1,2 seconde, et vos objets « quand vous êtes touché » ne se déclenchent pas.
 - Si vous ne pouvez pas payer le prix entier, ou si vous avez un cœur d'âme, le coup vous blesse normalement.
+- Mesuré contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant) : aucun dégât tant que l'argent tient, mais environ 200 PokéDollars par minute (environ 9 par coup). Un porte-monnaie plein (99, ou 150 et 250 loin dans la partie) tient bien moins d'une minute de tirs de boss.
 
 ## Cumul
 - Elle ne se cumule pas : un second exemplaire n'ajoute rien.

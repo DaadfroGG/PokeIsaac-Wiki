@@ -56,6 +56,7 @@ For every 40 damage you deal, you recover half a heart
 - This healing counts toward the limit on item healing: items can heal at most 30 % of your max health (minimum 2 hearts) per 10 seconds.
 - In practice any damage build reaches 40 damage instantly, so the limit is what you get. Measured with 12 hearts: +3.5 hearts every 10 seconds (1 heart to 11.5 in 30 s), and losing 1 heart every 3 seconds kept the Pokémon at full health.
 - With [Moomoo Milk](leche_mumu.html), the healing at full health becomes soul hearts: measured, 6 soul hearts (the maximum) after 15 seconds of fighting at full health.
+- Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): 7.8 hearts healed per minute, so −21 % net damage taken (33.9 to 26.7 hearts per minute). With Moomoo Milk: 8.8 healed, −25 % net.
 
 ## Stacking
 - It does not stack: a second copy adds nothing.

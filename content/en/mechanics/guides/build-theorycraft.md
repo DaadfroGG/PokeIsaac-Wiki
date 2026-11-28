@@ -151,7 +151,7 @@ Copies stack their stats, so a deep run is about spending the [Bag](../mochila10
 | Cap multipliers: [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Lustrous Orb](../../items/orbe_lustre.html) | ×3 with Power Lens | 3 |
 | Per-hit and spike items (Eon Flute, Plate, Expert Belt, Muscle Band, Large Leek, Dragon Fang, Gold Teeth, Dragon Scale…) | Damage on top of the cap | About 15 |
 | [Apricorn Box](../../items/m_caja_bonguri.html) ×2 and [Repeat Ball](../../items/f_acopio_ball.html) ×6 | 6 Dittos | 8 |
-| [Iron](../../items/hierro.html), [HP Up](../../items/maspv.html) | 12 hearts | Up to 9 |
+| [Iron](../../items/hierro.html) first (it also cuts boss hits by about a third), then [HP Up](../../items/maspv.html) | 12 hearts | Up to 9 |
 | [Bright Powder](../../items/polvo_brillo.html), [Golden Pinap Berry](../../items/s_pinia_dorada.html) | Luck 10 (Gold Teeth 30 %), or 20 (Gold Teeth 50 %) | 5, or 25 |
 | Survival: Big Root, Moomoo Milk, Rusted Shield, Metal Coat, Destiny Knot (Core), Broken Mirror, Eviolite, Max Revive | Staying alive | About 8 |
 | Depth: Comet Shard, Wise Glasses, Anima Stone | Damage that ignores depth | 3 |
@@ -160,6 +160,23 @@ Copies stack their stats, so a deep run is about spending the [Bag](../mochila10
 That is about 65 slots with luck at 10. In a 150-slot Bag, the other 85 can be Power Lens: +340 flat damage on paper, which counts as +28.5 (Pikachu's base is 3.5). Copies come back once the pools run dry, and the [Eon Ticket](../../items/a_ticket_eon.html) duplicates pedestals.
 
 Speed, range and shot speed have no ceiling, but they don't add damage: past about 950 px a straight shot always hits a wall first, so a couple of range items is enough.
+
+### Survival items, measured
+
+Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting), a Pokémon lost 33.9 hearts per minute with no survival item:
+
+| Item | Hearts lost per minute | Change |
+|---|---|---|
+| None | 33.9 | |
+| [Metal Coat](../../items/revest_metalico.html) | 0 while money lasts | Costs about 200 PokéDollars per minute; a full wallet lasts under a minute |
+| [Iron](../../items/hierro.html) | 23.2 | −32 % |
+| [Rusted Shield](../../items/escudo_oxidado.html) | 24.3 | −28 % |
+| [Big Root](../../items/raiz_grande.html) with [Moomoo Milk](../../items/leche_mumu.html) | 25.3 (after healing) | −25 % (Big Root alone −21 %) |
+| [Broken Mirror](../../items/cu_espejo.html) | 30.6 | −10 % |
+| [Eviolite](../../items/d_mineral_evol.html) | 32.8 | −3 % (one hit per room) |
+| Iron + Rusted Shield + Broken Mirror | 14.6 | −57 % |
+
+They combine: three of them together more than halve the damage. [Max Revive](../../items/d_revivir_maximo.html) wasn't measured: it saves you once, whatever the fight.
 
 **Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10 (past 20 with Gold Teeth), multipliers past about ×5 before the cap, more than about 6 Quick Claw, 4 Lens Case or 12 hearts' worth of health items.
 

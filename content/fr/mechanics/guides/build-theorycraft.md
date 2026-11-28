@@ -151,7 +151,7 @@ Les exemplaires cumulent leurs stats, donc une partie profonde consiste à dépe
 | Multiplicateurs du plafond : [Feuille Dorée](../../items/m_hoja_oro.html), [Atq. Spé. +](../../items/s_ataque_especial_x.html), [Orbe Perlé](../../items/orbe_lustre.html) | ×3 avec la Lentille Pouvoir | 3 |
 | Objets par coup et pics (Flûte Éon, Plaque, Ceinture Pro, Bandeau Muscle, Gros Poireau, Croc Dragon, Dentier en Or, Écaille Draco…) | Dégâts par-dessus le plafond | Environ 15 |
 | [Boîte Noigrume](../../items/m_caja_bonguri.html) ×2 et [Bis Ball](../../items/f_acopio_ball.html) ×6 | 6 Métamorph | 8 |
-| [Fer](../../items/hierro.html), [PV Plus](../../items/maspv.html) | 12 cœurs | Jusqu'à 9 |
+| Le [Fer](../../items/hierro.html) d'abord (il réduit aussi les coups de boss d'environ un tiers), puis [PV Plus](../../items/maspv.html) | 12 cœurs | Jusqu'à 9 |
 | [Poudre Claire](../../items/polvo_brillo.html), [Baie Nanana dorée](../../items/s_pinia_dorada.html) | Chance 10 (Dentier en Or 30 %), ou 20 (Dentier en Or 50 %) | 5, ou 25 |
 | Survie : Grosse Racine, Lait Meumeu, Bouclier Rouillé, Peau Métal, Nœud Destin (Base), Miroir Brisé, Évoluroc, Rappel Max | Rester en vie | Environ 8 |
 | Profondeur : Morceau Comète, Lunettes Sages, Pierre Anima | Dégâts qui ignorent la profondeur | 3 |
@@ -160,6 +160,23 @@ Les exemplaires cumulent leurs stats, donc une partie profonde consiste à dépe
 Cela fait environ 65 places avec la chance à 10. Dans un Sac de 150, les 85 autres peuvent être des Lentilles Pouvoir : +340 dégâts fixes sur le papier, qui comptent pour +28,5 (la base de Pikachu est 3,5). Les exemplaires reviennent quand les réserves sont vides, et le [Passe Éon](../../items/a_ticket_eon.html) duplique les piédestaux.
 
 La vitesse, la portée et la vitesse des tirs n'ont pas de plafond, mais elles n'ajoutent pas de dégâts : au-delà d'environ 950 px, un tir en ligne droite touche toujours un mur avant, donc deux ou trois objets de portée suffisent.
+
+### Objets de survie, mesurés
+
+Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant), un Pokémon perdait 33,9 cœurs par minute sans objet de survie :
+
+| Objet | Cœurs perdus par minute | Écart |
+|---|---|---|
+| Aucun | 33,9 | |
+| [Peau Métal](../../items/revest_metalico.html) | 0 tant que l'argent tient | Coûte environ 200 PokéDollars par minute ; un porte-monnaie plein tient moins d'une minute |
+| [Fer](../../items/hierro.html) | 23,2 | −32 % |
+| [Bouclier Rouillé](../../items/escudo_oxidado.html) | 24,3 | −28 % |
+| [Grosse Racine](../../items/raiz_grande.html) avec le [Lait Meumeu](../../items/leche_mumu.html) | 25,3 (après soins) | −25 % (Grosse Racine seule −21 %) |
+| [Miroir Brisé](../../items/cu_espejo.html) | 30,6 | −10 % |
+| [Évoluroc](../../items/d_mineral_evol.html) | 32,8 | −3 % (un coup par salle) |
+| Fer + Bouclier Rouillé + Miroir Brisé | 14,6 | −57 % |
+
+Ils se combinent : trois ensemble font plus que diviser les dégâts par deux. Le [Rappel Max](../../items/d_revivir_maximo.html) n'a pas été mesuré : il vous sauve une fois, quel que soit le combat.
 
 **À éviter :** le [Chantibonbon](../../items/m_dulce_nata.html), toujours ; sans Herbe Blanche, les objets qui ralentissent votre cadence ([Lentille Pouvoir](../../items/m_lente_recia.html), [Orbe Toxique](../../items/m_toxisfera.html), [Boulette de Boue](../../items/m_bola_arcilla.html), [Bandeau Choix](../../items/cinta_elegida.html)…) quand votre cadence est près du plancher ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10 (de 20 avec le Dentier en Or), les multiplicateurs au-delà d'environ ×5 avant plafond, plus d'environ 6 Vive Griffe, 4 Boîte Lentilles ou 12 cœurs d'objets de vie.
 
