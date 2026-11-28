@@ -62,6 +62,7 @@ Cœur +1 ; les coups violents vous retirent un demi-cœur de moins
 - La réduction s'applique avant que les cœurs d'âme n'absorbent les dégâts.
 - **Effet réel** pour un Pokémon typique (4 dégâts, 4,3 tirs/s, vitesse 4, portée 350 px, vitesse des tirs 9, 4 cœurs), première copie seulement: PV max +1 cœur: 4 → 5 cœurs. Voir [Statistiques en pratique](../mechanics/estadisticas_reales.html) pour le comportement des totaux.
 - Mesuré contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant) : −32 % de dégâts subis (de 33,9 à 23,2 cœurs par minute) : la plupart des coups de boss coûtent un cœur ou plus, donc la plupart sont réduits.
+- Aux étages 100 à 200 (coups de boss de 2,5 cœurs), il vaut moins : −13 % à −22 %.
 
 ## Cumul
 - Le cœur max s'ajoute de nouveau avec chaque exemplaire. La réduction de dégâts ne se cumule pas.

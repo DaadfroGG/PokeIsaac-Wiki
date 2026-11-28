@@ -176,6 +176,21 @@ Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and 
 | [Eviolite](../../items/d_mineral_evol.html) | 32.8 | −3 % (one hit per room) |
 | Iron + Rusted Shield + Broken Mirror | 14.6 | −57 % |
 
+**Floors 100 to 200.** Each boss hit costs 2.5 hearts. Same test with 6 Dittos, moving around the boss (one boss per floor: Mega-Mewtwo Y, Mega-Rayquaza, Mega-Latias), hearts lost per minute:
+
+| Item | Floor 100 | Floor 150 | Floor 200 |
+|---|---|---|---|
+| None | 65 | 57 | 93.5 |
+| [Metal Coat](../../items/revest_metalico.html) | 0, for 391 PokéDollars per minute | 0, for 343 | 0, for 559 |
+| [Rusted Shield](../../items/escudo_oxidado.html) | 20.2 (−69 %) | 37.4 (−34 %) | 50.3 (−46 %) |
+| Big Root + Moomoo Milk | 44.3 after 20.7 healed (−32 %) | 37.5 (−34 %) | 70.8 (−24 %) |
+| [Iron](../../items/hierro.html) | 52.2 (−20 %) | 44.3 (−22 %) | 81.7 (−13 %) |
+| [Broken Mirror](../../items/cu_espejo.html) | 58.5 (−10 %) | 47 (−18 %) | 82.7 (−12 %) |
+| [Eviolite](../../items/d_mineral_evol.html) | 61 | 56.1 | 86 |
+| Iron + Rusted Shield + Broken Mirror | 11.6 (−82 %) | 21.4 (−62 %) | 25.9 (−72 %) |
+
+Deep down, Iron loses value (half a heart off a 2.5-heart hit), Big Root heals at its limit all fight long (about 21 hearts per minute with 12 hearts), and Metal Coat empties a full wallet (250) in under 45 seconds.
+
 Against a [Mirror](../afijo_espejo.html) boss, a Ditto build without Rusted Shield lost 69.8 hearts per minute, 19.3 with it. They are all passives, so they leave your active slot free for [Catching Pocket](../../items/a_bolsillo_captura.html). They combine: three of them together more than halve the damage. [Max Revive](../../items/d_revivir_maximo.html) wasn't measured: it saves you once, whatever the fight.
 
 **Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10 (past 20 with Gold Teeth), multipliers past about ×5 before the cap, more than about 6 Quick Claw, 4 Lens Case or 12 hearts' worth of health items.

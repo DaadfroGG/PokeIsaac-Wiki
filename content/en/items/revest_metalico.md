@@ -59,6 +59,7 @@ If you carry PokéDollars (and have no soul hearts left), hits take 3 $ per half
 - The hit is then treated as if it never landed: no damage, you get the usual 1.2 seconds of invulnerability, and your on-hit items don't trigger.
 - If you can't afford the whole price, or you have a soul heart, the hit hurts you as usual.
 - Measured against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and shooting): no damage at all while the money lasts, but about 200 PokéDollars per minute (about 9 per hit). A full wallet (99, or 150 and 250 deep in the run) lasts well under a minute of boss fire.
+- At floors 100 to 200 it costs 340 to 560 PokéDollars per minute: a full wallet (250) lasts under 45 seconds.
 
 ## Stacking
 - It does not stack: a second copy adds nothing.

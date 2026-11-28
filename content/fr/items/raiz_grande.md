@@ -57,6 +57,7 @@ Tous les 40 dégâts infligés, vous récupérez un demi-cœur
 - En pratique, n'importe quelle build de dégâts atteint 40 dégâts tout de suite, donc vous obtenez la limite. Mesuré avec 12 cœurs : +3,5 cœurs toutes les 10 secondes (de 1 cœur à 11,5 en 30 s), et perdre 1 cœur toutes les 3 secondes laissait le Pokémon à PV pleins.
 - Avec le [Lait Meumeu](leche_mumu.html), le soin à PV pleins devient des cœurs d'âme : mesuré, 6 cœurs d'âme (le maximum) après 15 secondes de combat à PV pleins.
 - Mesuré contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant) : 7,8 cœurs soignés par minute, soit −21 % de dégâts nets (de 33,9 à 26,7 cœurs par minute). Avec le Lait Meumeu : 8,8 soignés, −25 % nets.
+- Aux étages 100 à 200, elle soigne à sa limite tout le combat : environ 21 cœurs par minute avec 12 cœurs (−24 % à −34 % de dégâts nets avec le Lait Meumeu).
 
 ## Cumul
 - Elle ne se cumule pas : un second exemplaire n'ajoute rien.

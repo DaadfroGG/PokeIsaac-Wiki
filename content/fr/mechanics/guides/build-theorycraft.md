@@ -176,6 +176,21 @@ Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant)
 | [Évoluroc](../../items/d_mineral_evol.html) | 32,8 | −3 % (un coup par salle) |
 | Fer + Bouclier Rouillé + Miroir Brisé | 14,6 | −57 % |
 
+**Étages 100 à 200.** Chaque coup de boss coûte 2,5 cœurs. Même test avec 6 Métamorph, en tournant autour du boss (un boss par étage : Méga-Mewtwo Y, Méga-Rayquaza, Méga-Latias), cœurs perdus par minute :
+
+| Objet | Étage 100 | Étage 150 | Étage 200 |
+|---|---|---|---|
+| Aucun | 65 | 57 | 93,5 |
+| [Peau Métal](../../items/revest_metalico.html) | 0, pour 391 PokéDollars par minute | 0, pour 343 | 0, pour 559 |
+| [Bouclier Rouillé](../../items/escudo_oxidado.html) | 20,2 (−69 %) | 37,4 (−34 %) | 50,3 (−46 %) |
+| Grosse Racine + Lait Meumeu | 44,3 après 20,7 soignés (−32 %) | 37,5 (−34 %) | 70,8 (−24 %) |
+| [Fer](../../items/hierro.html) | 52,2 (−20 %) | 44,3 (−22 %) | 81,7 (−13 %) |
+| [Miroir Brisé](../../items/cu_espejo.html) | 58,5 (−10 %) | 47 (−18 %) | 82,7 (−12 %) |
+| [Évoluroc](../../items/d_mineral_evol.html) | 61 | 56,1 | 86 |
+| Fer + Bouclier Rouillé + Miroir Brisé | 11,6 (−82 %) | 21,4 (−62 %) | 25,9 (−72 %) |
+
+En profondeur, le Fer perd de sa valeur (un demi-cœur de moins sur un coup de 2,5 cœurs), la Grosse Racine soigne à sa limite tout le combat (environ 21 cœurs par minute avec 12 cœurs), et la Peau Métal vide un porte-monnaie plein (250) en moins de 45 secondes.
+
 Contre un boss [Miroir](../afijo_espejo.html), une build à Métamorph sans Bouclier Rouillé perdait 69,8 cœurs par minute, 19,3 avec. Ce sont tous des objets passifs, donc ils laissent votre emplacement d'objet actif libre pour la [Poche de Capture](../../items/a_bolsillo_captura.html). Ils se combinent : trois ensemble font plus que diviser les dégâts par deux. Le [Rappel Max](../../items/d_revivir_maximo.html) n'a pas été mesuré : il vous sauve une fois, quel que soit le combat.
 
 **À éviter :** le [Chantibonbon](../../items/m_dulce_nata.html), toujours ; sans Herbe Blanche, les objets qui ralentissent votre cadence ([Lentille Pouvoir](../../items/m_lente_recia.html), [Orbe Toxique](../../items/m_toxisfera.html), [Boulette de Boue](../../items/m_bola_arcilla.html), [Bandeau Choix](../../items/cinta_elegida.html)…) quand votre cadence est près du plancher ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10 (de 20 avec le Dentier en Or), les multiplicateurs au-delà d'environ ×5 avant plafond, plus d'environ 6 Vive Griffe, 4 Boîte Lentilles ou 12 cœurs d'objets de vie.

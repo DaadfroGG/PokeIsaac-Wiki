@@ -57,6 +57,7 @@ Vos tirs percutent les tirs ennemis et les détruisent
 - Chacun de vos tirs ne peut annuler qu'un seul tir ennemi.
 - Mesuré contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant) : −28 % de dégâts subis (33,9 cœurs par minute sans, 24,3 avec), grâce aux tirs de boss annulés par les vôtres. Plus vous avez de tirs à l'écran, plus il en annule : avec une salve pleine à 12 tirs/s (environ 40 de vos tirs à l'écran) c'était −50 %, avec 6 Métamorph en plus (environ 120, jusqu'au plafond de 450) −54 %. Pas besoin du plafond : l'essentiel du gain vient des premières dizaines de tirs.
 - Contre un boss [Miroir](../mechanics/afijo_espejo.html), c'est la parade : avec 6 Métamorph, les dégâts subis passaient de 69,8 à 19,3 cœurs par minute (−72 %), autant que contre un boss normal. Loin dans la partie, quelques tirs renvoyés passent (10 cœurs par minute à l'étage 50 immobile, 3 à 5 en tournant autour du boss).
+- Aux étages 100 à 200, en tournant autour du boss avec 6 Métamorph : −34 % à −69 %.
 
 ## Cumul
 
