@@ -62,7 +62,7 @@ Les Balls vous donnent des compagnons qui vous suivent et combattent avec vous. 
 
 ## Comment les obtenir
 - Chaque Ball ramassée donne **un compagnon**. Deux exemplaires de la même Ball donnent deux compagnons.
-- Vous avez **3 compagnons à la fois**. La [Boîte Noigrume](../items/m_caja_bonguri.html) monte la limite à **5**.
+- Vous avez **3 compagnons à la fois**. La [Boîte Noigrume](../items/m_caja_bonguri.html) monte la limite à **5**. Un second exemplaire (il peut revenir quand les réserves d'objets sont vides, ou par une duplication) la monte à **6**, le maximum absolu ; un troisième n'ajoute rien.
 - Si vous ramassez une Ball avec l'équipe complète, son compagnon **attend dans le Sac** et sort dès qu'une place se libère.
 - Tant que tous les joueurs sont à la limite, **plus aucune Ball n'apparaît** dans les salles d'objets et les boutiques.
 - Les compagnons qui ne durent qu'une salle ou quelques secondes ne prennent pas de place : la capture de la [Poké Ball](../items/pokeball.html) en prend une, mais pas les Statitik du [Parfum](../items/a_colonia.html) et du [Champi Suave](../items/m_seta_aroma.html), les Roucool du [Fossile Plume](../items/d_fosil_pluma.html), le Magnéti de la [Carte Magnétique](../items/a_llave_magnetica.html), les renforts de la [Casquette de Dresseur](../items/gorra.html), le compagnon de la [Boîte Pokémon](../items/a_caja_pokemon.html) ni les copies de la [Poche de Capture](../items/a_bolsillo_captura.html). Ils partent tous quand vous entrez dans une autre salle.

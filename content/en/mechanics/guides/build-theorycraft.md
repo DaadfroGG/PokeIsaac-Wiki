@@ -19,7 +19,7 @@ How to build a run that goes deep into [endless mode](../modo_infinito.html). Th
 
 **Damage multipliers** are all multiplied together, then capped: up to ×2.3 counts in full, a quarter of anything above that, and never more than ×3. For example, [Gold Leaf](../../items/m_hoja_oro.html) (×1.8) and [X Sp. Atk](../../items/s_ataque_especial_x.html) (×1.5) make ×2.7, which becomes ×2.4. Add [Honor of Kalos](../../items/d_emblema_kalos.html) (×2) and you're at the cap. Past about ×5 before the cap, extra multipliers are wasted.
 
-**Fire rate** stops at 5 frames between shots, which is 12 shots per second. Fire rate items get you most of the way, and [Swift Feather](../../items/m_pluma_impetu.html) (up to ×2) usually finishes the job. Anything beyond is wasted. [Whipped Dream](../../items/m_dulce_nata.html) is a trap here: its fire rate boost is lost to the floor, but its damage penalty stays.
+**Fire rate** stops at 5 frames between shots, which is 12 shots per second. Fire rate items get you most of the way, and [Swift Feather](../../items/m_pluma_impetu.html) (up to ×2) usually finishes the job. Anything beyond is wasted. [Whipped Dream](../../items/m_dulce_nata.html) is a trap here: its fire rate boost is lost to the floor, but its damage penalty stays (the cap only absorbs part of it if your multipliers are already past ×2.3).
 
 ## What goes past the caps
 
@@ -30,7 +30,7 @@ How to build a run that goes deep into [endless mode](../modo_infinito.html). Th
 - [Vs. Recorder](../../items/camara_lucha.html): an echo of each shot at 50 % damage
 - [Silver Powder](../../items/polvo_plata.html): shots split in two on hit
 - [Dragon Scale](../../items/escama_dragon.html): every 4th shot deals ×2
-- [Repeat Ball](../../items/f_acopio_ball.html): a Ditto that copies every volley at 75 % damage. With [Apricorn Box](../../items/m_caja_bonguri.html) you can carry more of them (6 companions at most, whatever the item text says)
+- [Repeat Ball](../../items/f_acopio_ball.html): a Ditto that copies every volley at 75 % damage. With [Apricorn Box](../../items/m_caja_bonguri.html) you can carry more of them (5 companions with one, 6 with a second one, never more)
 
 You can have up to 9 shots per volley.
 

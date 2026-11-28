@@ -19,7 +19,7 @@ Comment monter une partie qui descend loin dans le [mode infini](../modo_infinit
 
 **Les multiplicateurs de dégâts** se multiplient tous entre eux, puis sont plafonnés : jusqu'à ×2,3 en entier, un quart de ce qui dépasse, et jamais plus de ×3. Par exemple, [Feuille Dorée](../../items/m_hoja_oro.html) (×1,8) et [Atq. Spé. +](../../items/s_ataque_especial_x.html) (×1,5) font ×2,7, qui devient ×2,4. Ajoutez [Insigne de Kalos](../../items/d_emblema_kalos.html) (×2) et vous êtes au plafond. Au-delà d'environ ×5 avant plafond, les multiplicateurs en plus sont perdus.
 
-**La cadence** s'arrête à 5 images entre deux tirs, soit 12 tirs par seconde. Les objets de cadence font l'essentiel du chemin, et [Plume Sprint](../../items/m_pluma_impetu.html) (jusqu'à ×2) termine en général le travail. Au-delà, c'est perdu. [Chantibonbon](../../items/m_dulce_nata.html) est un piège : son bonus de cadence est perdu au plancher, mais son malus de dégâts reste.
+**La cadence** s'arrête à 5 images entre deux tirs, soit 12 tirs par seconde. Les objets de cadence font l'essentiel du chemin, et [Plume Sprint](../../items/m_pluma_impetu.html) (jusqu'à ×2) termine en général le travail. Au-delà, c'est perdu. [Chantibonbon](../../items/m_dulce_nata.html) est un piège : son bonus de cadence est perdu au plancher, mais son malus de dégâts reste (le plafond n'en absorbe une partie que si vos multiplicateurs dépassent déjà ×2,3).
 
 ## Ce qui dépasse les plafonds
 
@@ -30,7 +30,7 @@ Comment monter une partie qui descend loin dans le [mode infini](../modo_infinit
 - [Magnéto VS](../../items/camara_lucha.html) : un écho de chaque tir à 50 % des dégâts
 - [Poudre Argentée](../../items/polvo_plata.html) : les tirs se divisent en deux à l'impact
 - [Écaille Draco](../../items/escama_dragon.html) : un tir sur 4 fait ×2
-- [Bis Ball](../../items/f_acopio_ball.html) : un Métamorph qui copie chaque salve à 75 % des dégâts. Avec [Boîte Noigrume](../../items/m_caja_bonguri.html), vous pouvez en porter plus (6 compagnons au maximum, quoi qu'en dise le texte de l'objet)
+- [Bis Ball](../../items/f_acopio_ball.html) : un Métamorph qui copie chaque salve à 75 % des dégâts. Avec [Boîte Noigrume](../../items/m_caja_bonguri.html), vous pouvez en porter plus (5 compagnons avec une, 6 avec une seconde, jamais plus)
 
 Une salve peut compter jusqu'à 9 tirs.
 

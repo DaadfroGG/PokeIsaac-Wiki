@@ -62,7 +62,7 @@ Balls give you companions that follow you and fight alongside you. They don't wo
 
 ## How you get them
 - Each Ball you pick up gives **one companion**. Two copies of the same Ball give two companions.
-- You can have **3 companions at a time**. The [Apricorn Box](../items/m_caja_bonguri.html) raises the limit to **5**.
+- You can have **3 companions at a time**. The [Apricorn Box](../items/m_caja_bonguri.html) raises the limit to **5**. A second copy (it can come back once the item pools run dry, or through a duplicate) raises it to **6**, the most you can ever have; a third adds nothing.
 - If you pick up a Ball with a full team, its companion **waits in the Bag** and comes out as soon as a slot frees up.
 - While every player is at the limit, **no more Balls appear** in item rooms and shops.
 - Companions that only last a room or a few seconds don't take a slot: the [Poké Ball](../items/pokeball.html) capture does, but the Joltik of [Lure](../items/a_colonia.html) and [Balm Mushroom](../items/m_seta_aroma.html), the Pidgey of [Plume Fossil](../items/d_fosil_pluma.html), the Magnemite of [Card Key](../items/a_llave_magnetica.html), the helpers of [Trainer Cap](../items/gorra.html), the companion of [Pokémon Box Link](../items/a_caja_pokemon.html) and the copies made by [Catching Pocket](../items/a_bolsillo_captura.html) don't. They all leave when you enter another room.
