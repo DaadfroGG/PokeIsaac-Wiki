@@ -103,7 +103,7 @@ En plus, [les boss s'adaptent à vous](../jefes_adaptativos.html) : jusqu'à ×1
 
 - **Restez près du boss.** Il peut y avoir au plus 450 de vos tirs à l'écran ; si vous en tirez plus, les plus anciens disparaissent. Une build à beaucoup de tirs fait environ deux fois plus de dégâts de près qu'à 300 px. Restez près du corps du boss, pas de ses pieds : sa zone de collision est sur le sprite.
 - **Plus de projectiles reste rentable au-delà de 450.** Les tirs qui touchent le font presque tout de suite, et le plafond supprime les plus anciens d'abord, qui sont des tirs déjà ratés (voir [Projectiles](../proyectiles.html)). En test avec 6 Métamorph, les doubler avec la [Poche de Capture](../../items/a_bolsillo_captura.html) a multiplié les dégâts sur le boss par environ 1,8 à 2,6, et les tripler par environ 2,5 à 3, avec le plafond plein en permanence.
-- **La Poche de Capture** copie vos compagnons permanents pour la salle : 6 Métamorph deviennent 12, 18 avec le [Plongeur Devon](../../items/d_bombona_devon.html) ou deux utilisations avec la [Pile](../../items/d_pila.html), 30 avec les deux. Gardez-la pour les boss.
+- **La Poche de Capture** copie vos compagnons permanents pour la salle : 6 Métamorph deviennent 12, 18 avec le [Plongeur Devon](../../items/d_bombona_devon.html) ou deux utilisations avec la [Pile](../../items/d_pila.html), 30 avec les deux. Gardez-la pour les boss. Elle vaut mieux dans votre emplacement d'objet actif que n'importe quel actif défensif : la survie doit venir des objets passifs (voir Objets de survie, mesurés).
 - **Gardez la qualité graphique au maximum** si votre ordinateur le permet. Des effets comme les rayons de [Galet Blanc](../../items/m_orbe_claro.html) ont besoin de place dans la liste des effets, et une qualité plus basse en laisse moins : plus de rayons sont perdus.
 - **Les dégâts de tir avant les dégâts à l'impact**, à cause des boucliers.
 
@@ -176,7 +176,7 @@ Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant)
 | [Évoluroc](../../items/d_mineral_evol.html) | 32,8 | −3 % (un coup par salle) |
 | Fer + Bouclier Rouillé + Miroir Brisé | 14,6 | −57 % |
 
-Ils se combinent : trois ensemble font plus que diviser les dégâts par deux. Le [Rappel Max](../../items/d_revivir_maximo.html) n'a pas été mesuré : il vous sauve une fois, quel que soit le combat.
+Ce sont tous des objets passifs, donc ils laissent votre emplacement d'objet actif libre pour la [Poche de Capture](../../items/a_bolsillo_captura.html). Ils se combinent : trois ensemble font plus que diviser les dégâts par deux. Le [Rappel Max](../../items/d_revivir_maximo.html) n'a pas été mesuré : il vous sauve une fois, quel que soit le combat.
 
 **À éviter :** le [Chantibonbon](../../items/m_dulce_nata.html), toujours ; sans Herbe Blanche, les objets qui ralentissent votre cadence ([Lentille Pouvoir](../../items/m_lente_recia.html), [Orbe Toxique](../../items/m_toxisfera.html), [Boulette de Boue](../../items/m_bola_arcilla.html), [Bandeau Choix](../../items/cinta_elegida.html)…) quand votre cadence est près du plancher ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10 (de 20 avec le Dentier en Or), les multiplicateurs au-delà d'environ ×5 avant plafond, plus d'environ 6 Vive Griffe, 4 Boîte Lentilles ou 12 cœurs d'objets de vie.
 

@@ -103,7 +103,7 @@ On top of this, [bosses adapt to you](../jefes_adaptativos.html): up to ×10 hea
 
 - **Stay close to the boss.** You can have at most 450 shots on screen; when you fire more, the oldest disappear. A many-shot build does about twice the damage up close as from 300 px away. Aim to stay near the boss's body, not its feet: its hitbox sits on the sprite.
 - **More projectiles still pay off past 450.** Shots that hit do so almost at once, and the cap removes the oldest first, which are shots that already missed (see [Projectiles](../proyectiles.html)). In tests with 6 Dittos, doubling them with [Catching Pocket](../../items/a_bolsillo_captura.html) multiplied boss damage by about 1.8 to 2.6, and tripling them by about 2.5 to 3, with the cap full the whole time.
-- **Catching Pocket** copies your permanent companions for the room: 6 Dittos become 12, 18 with [Devon Scuba Gear](../../items/d_bombona_devon.html) or two uses with [Cell Battery](../../items/d_pila.html), 30 with both. Save it for bosses.
+- **Catching Pocket** copies your permanent companions for the room: 6 Dittos become 12, 18 with [Devon Scuba Gear](../../items/d_bombona_devon.html) or two uses with [Cell Battery](../../items/d_pila.html), 30 with both. Save it for bosses. It is worth your active slot over any defensive active: survival should come from passives (see Survival items, measured).
 - **Keep graphics quality on full** if your computer can take it. Effects like [Light Stone](../../items/m_orbe_claro.html)'s rays need room in the effects list, and lower quality leaves less room, so more of them are dropped.
 - **Shot damage before on-hit damage**, because of shields.
 
@@ -176,7 +176,7 @@ Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and 
 | [Eviolite](../../items/d_mineral_evol.html) | 32.8 | −3 % (one hit per room) |
 | Iron + Rusted Shield + Broken Mirror | 14.6 | −57 % |
 
-They combine: three of them together more than halve the damage. [Max Revive](../../items/d_revivir_maximo.html) wasn't measured: it saves you once, whatever the fight.
+They are all passives, so they leave your active slot free for [Catching Pocket](../../items/a_bolsillo_captura.html). They combine: three of them together more than halve the damage. [Max Revive](../../items/d_revivir_maximo.html) wasn't measured: it saves you once, whatever the fight.
 
 **Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10 (past 20 with Gold Teeth), multipliers past about ×5 before the cap, more than about 6 Quick Claw, 4 Lens Case or 12 hearts' worth of health items.
 
