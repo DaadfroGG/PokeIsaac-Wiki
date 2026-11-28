@@ -85,6 +85,7 @@ Les projectiles des compagnons et de certaines armes ignorent aussi la plupart d
 - Les projectiles Spectre traversent les rochers.
 - Au-delà de 450, les projectiles créés par d'autres projectiles sont supprimés en premier.
 - En pratique, le plafond n'est atteint qu'avec beaucoup de compagnons qui copient vos tirs : une build à 12 attaques/s avec de grosses salves, le Magnéto VS et la Poudre Argentée reste sous 300 projectiles, car les murs suppriment les tirs avant. Avec 6 Métamorph de [Bis Ball](../items/f_acopio_ball.html) en plus (environ 1 200 projectiles par seconde), le plafond est atteint en permanence : vos tirs principaux vivent quand même au moins 0,6 s (environ 320 px à une vitesse des tirs de 9) avant d'être supprimés, donc tout ce qui est à cette distance est touché ; les projectiles créés par d'autres projectiles sont surtout supprimés en moins d'un quart de seconde, certains dès leur apparition.
+- C'est pour ça que dépasser le plafond ajoute quand même des dégâts : les projectiles qui touchent le font presque tout de suite (la plupart en moins d'un dixième de seconde, presque tous en moins de 0,4 s), et dans les mêmes mesures aucun projectile supprimé par le plafond n'avait touché quoi que ce soit. Le plafond supprime surtout des tirs déjà ratés, donc les projectiles en plus que vous tirez touchent quand même.
 
 </details>
 
