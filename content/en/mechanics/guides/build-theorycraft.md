@@ -16,7 +16,7 @@ How to build a run that goes deep into [endless mode](../modo_infinito.html). Th
 
 ## The caps
 
-**Flat damage** has [diminishing returns](../rendimientos.html): the first +3 counts in full, up to +8 at half, up to +40 at a quarter. About +8 to +10 flat damage is all a build needs. A two-stage evolution already gives +2.5.
+**Flat damage** has [diminishing returns](../rendimientos.html): the first +3 counts in full, up to +8 at half, up to +40 at a quarter. Past +40 each +1 still counts +0.05, and copies stack, so once everything else is in place, spare Bag slots go to [Power Lens](../../items/m_lente_recia.html) (+4 per copy, see [Filling the Bag](#filling-the-bag)). A two-stage evolution already gives +2.5.
 
 **Damage multipliers** are all multiplied together, then capped: up to ×2.3 counts in full, a quarter of anything above that, and never more than ×3. For example, [Gold Leaf](../../items/m_hoja_oro.html) (×1.8) and [X Sp. Atk](../../items/s_ataque_especial_x.html) (×1.5) make ×2.7, which becomes ×2.4. Add [Honor of Kalos](../../items/d_emblema_kalos.html) (×2) and you're at the cap. Past about ×5 before the cap, extra multipliers are wasted.
 
@@ -117,12 +117,12 @@ The [Bag](../mochila100.html) holds 100 items.
 | 2. White Herb | [White Herb](../../items/hierba_blanca.html) | Removes the penalties of 24 items, so the strongest of them become pure gains (see below): about ×3 damage per second on a Lens Case, Power Lens and Gold Leaf build |
 | 3. Fire rate to the floor | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Coconut Milk](../../items/s_leche_coco.html), [Courage Candy](../../items/s_caramelo_mente.html), [Exp. Candy S](../../items/s_caramelo_exp_s.html), [Pungent Root](../../items/s_hierba_intensa.html), [Swift Feather](../../items/m_pluma_impetu.html) | Stop at 12 shots per second |
 | 4. Multipliers | [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Honor of Kalos](../../items/d_emblema_kalos.html), [Ring Target](../../items/m_blanco.html), [Red Apricorn](../../items/m_bonguri_rojo.html) | Reaches the ×3 cap |
-| 5. Flat damage | [Protein](../../items/proteina.html), [Muscle Feather](../../items/s_pluma_musculo.html) and similar | About +8 is enough |
+| 5. Flat damage | [Protein](../../items/proteina.html), [Muscle Feather](../../items/s_pluma_musculo.html) and similar | The first +8 count the most; later, fill spare slots with Power Lens |
 | 6. Weapon | [Razor Fang](../../items/w_colmillo.html) | Its bonus applies to every hit after the cap |
 | 7. On-hit | [Gold Teeth](../../items/m_dentadura.html), [Metronome](../../items/metronomo.html), [Deep Sea Tooth](../../items/m_diente_marino.html), [Light Stone](../../items/m_orbe_claro.html), [Muscle Band](../../items/banda_musculo.html), [Expert Belt](../../items/cinta_experto.html), [Dragon Fang](../../items/colmillo_dragon.html) | [Gold Teeth](../../items/m_dentadura.html) and [Metronome](../../items/metronomo.html) also work on shields |
 | 8. Companions | [Apricorn Box](../../items/m_caja_bonguri.html) and more [Repeat Ball](../../items/f_acopio_ball.html) | Each Ditto copies every volley. [Catching Pocket](../../items/a_bolsillo_captura.html) (with [Devon Scuba Gear](../../items/d_bombona_devon.html) and [Cell Battery](../../items/d_pila.html)) multiplies them for a boss room |
 | 9. Depth | [Comet Shard](../../items/fragmento_cometa.html), [Wise Glasses](../../items/gafas_especiales.html), [Anima Stone](../../items/hw_anima.html) if it shows up | Damage that doesn't lose value |
-| 10. Survival | [Metal Coat](../../items/revest_metalico.html), [Rusted Shield](../../items/escudo_oxidado.html), [Destiny Knot (Core)](../../items/lazo_destino.html), [Broken Mirror](../../items/cu_espejo.html), [Eviolite](../../items/d_mineral_evol.html), [Max Revive](../../items/d_revivir_maximo.html) | Avoiding hits matters more than health |
+| 10. Survival | [Big Root](../../items/raiz_grande.html) with [Moomoo Milk](../../items/leche_mumu.html) (healing that grows with your damage, turned into soul hearts at full health), [Metal Coat](../../items/revest_metalico.html), [Rusted Shield](../../items/escudo_oxidado.html), [Destiny Knot (Core)](../../items/lazo_destino.html), [Broken Mirror](../../items/cu_espejo.html), [Eviolite](../../items/d_mineral_evol.html), [Max Revive](../../items/d_revivir_maximo.html) | Avoiding hits matters more than health |
 | 11. Filler | [Zinc](../../items/zinc.html) and other luck, up to 10 | Raises [Gold Teeth](../../items/m_dentadura.html) and [Deep Sea Tooth](../../items/m_diente_marino.html) chances |
 
 ### Once you have White Herb
@@ -139,7 +139,29 @@ The herb deletes every stat line that lowers a stat (slower fire, less damage, s
 
 The herb only removes stat lines. Drawbacks built into an effect stay: [Whipped Dream](../../items/m_dulce_nata.html)'s ×0.45 damage, Large Leek's falloff at range.
 
-**Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10, multipliers past about ×5 before the cap, flat damage past +10.
+### Filling the Bag
+
+Copies stack their stats, so a deep run is about spending the [Bag](../mochila100.html)'s 100 slots (up to 150 deep in endless). Each capped stat only needs a few copies; past that they're wasted (numbers measured on Pikachu, see [Theoretical maximums](max-caps.html)):
+
+| Slots | For | How many |
+|---|---|---|
+| [White Herb](../../items/hierba_blanca.html) | Removes the minus lines of everything below | 1 |
+| [Quick Claw](../../items/garra_rapida.html) or other fire rate items | 12 shots per second | About 6 Quick Claw (4 at level 60) |
+| [Lens Case](../../items/m_portalentillas.html) | 9 shots per volley | 4 |
+| Cap multipliers: [Gold Leaf](../../items/m_hoja_oro.html), [X Sp. Atk](../../items/s_ataque_especial_x.html), [Lustrous Orb](../../items/orbe_lustre.html) | ×3 with Power Lens | 3 |
+| Per-hit and spike items (Eon Flute, Plate, Expert Belt, Muscle Band, Large Leek, Dragon Fang, Gold Teeth, Dragon Scale…) | Damage on top of the cap | About 15 |
+| [Apricorn Box](../../items/m_caja_bonguri.html) ×2 and [Repeat Ball](../../items/f_acopio_ball.html) ×6 | 6 Dittos | 8 |
+| [Iron](../../items/hierro.html), [HP Up](../../items/maspv.html) | 12 hearts | Up to 9 |
+| [Bright Powder](../../items/polvo_brillo.html), [Golden Pinap Berry](../../items/s_pinia_dorada.html) | Luck 10 (Gold Teeth 30 %), or 20 (Gold Teeth 50 %) | 5, or 25 |
+| Survival: Big Root, Moomoo Milk, Rusted Shield, Metal Coat, Destiny Knot (Core), Broken Mirror, Eviolite, Max Revive | Staying alive | About 8 |
+| Depth: Comet Shard, Wise Glasses, Anima Stone | Damage that ignores depth | 3 |
+| **Everything else: [Power Lens](../../items/m_lente_recia.html)** | +4 flat damage per copy, no fire rate cost with the herb | The rest |
+
+That is about 65 slots with luck at 10. In a 150-slot Bag, the other 85 can be Power Lens: +340 flat damage on paper, which counts as +28.5 (Pikachu's base is 3.5). Copies come back once the pools run dry, and the [Eon Ticket](../../items/a_ticket_eon.html) duplicates pedestals.
+
+Speed, range and shot speed have no ceiling, but they don't add damage: past about 950 px a straight shot always hits a wall first, so a couple of range items is enough.
+
+**Skip:** [Whipped Dream](../../items/m_dulce_nata.html), always; without White Herb, items that slow your fire ([Power Lens](../../items/m_lente_recia.html), [Toxic Orb](../../items/m_toxisfera.html), [Polished Mud Ball](../../items/m_bola_arcilla.html), [Choice Band](../../items/cinta_elegida.html)…) once your fire rate is near the floor; [Ability Patch](../../items/a_parche.html), which rerolls your whole build; luck past 10 (past 20 with Gold Teeth), multipliers past about ×5 before the cap, more than about 6 Quick Claw, 4 Lens Case or 12 hearts' worth of health items.
 
 **What the deepest runs in the Ranking carry:** several [Repeat Ball](../../items/f_acopio_ball.html) with [Apricorn Box](../../items/m_caja_bonguri.html); [Light Stone](../../items/m_orbe_claro.html), [Power Lens](../../items/m_lente_recia.html) with [White Herb](../../items/hierba_blanca.html); [Gold Teeth](../../items/m_dentadura.html), [Lens Case](../../items/m_portalentillas.html), [Dragon Scale](../../items/escama_dragon.html), [Go-Goggles](../../items/m_gafas_aislantes.html); and for survival [Metal Coat](../../items/revest_metalico.html) (coins absorb hits), [Rusted Shield](../../items/escudo_oxidado.html) (your shots cancel enemy shots) and [Destiny Knot (Core)](../../items/lazo_destino.html) (rear shots). Some go mono-type, with several Gems and Plates of their type.
 

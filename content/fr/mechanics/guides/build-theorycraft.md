@@ -16,7 +16,7 @@ Comment monter une partie qui descend loin dans le [mode infini](../modo_infinit
 
 ## Les plafonds
 
-**Les dégâts fixes** ont des [rendements décroissants](../rendimientos.html) : les +3 premiers comptent en entier, jusqu'à +8 à moitié, jusqu'à +40 au quart. Environ +8 à +10 de dégâts fixes suffisent. Une évolution en deux étapes donne déjà +2,5.
+**Les dégâts fixes** ont des [rendements décroissants](../rendimientos.html) : les +3 premiers comptent en entier, jusqu'à +8 à moitié, jusqu'à +40 au quart. Au-delà de +40 chaque +1 compte encore +0,05, et les exemplaires se cumulent, donc une fois le reste en place, les places libres du Sac vont à la [Lentille Pouvoir](../../items/m_lente_recia.html) (+4 par exemplaire, voir Remplir le Sac plus bas). Une évolution en deux étapes donne déjà +2,5.
 
 **Les multiplicateurs de dégâts** se multiplient tous entre eux, puis sont plafonnés : jusqu'à ×2,3 en entier, un quart de ce qui dépasse, et jamais plus de ×3. Par exemple, [Feuille Dorée](../../items/m_hoja_oro.html) (×1,8) et [Atq. Spé. +](../../items/s_ataque_especial_x.html) (×1,5) font ×2,7, qui devient ×2,4. Ajoutez [Insigne de Kalos](../../items/d_emblema_kalos.html) (×2) et vous êtes au plafond. Au-delà d'environ ×5 avant plafond, les multiplicateurs en plus sont perdus.
 
@@ -117,12 +117,12 @@ Le [Sac](../mochila100.html) contient 100 objets.
 | 2. Herbe Blanche | [Herbe Blanche](../../items/hierba_blanca.html) | Supprime les malus de 24 objets, et les meilleurs deviennent des gains purs (voir plus bas) : environ ×3 dégâts par seconde sur une build Boîte Lentilles, Lentille Pouvoir et Feuille Dorée |
 | 3. Cadence au plancher | [PP Max](../../items/v_pp_max.html), [Calcium](../../items/calcio.html), [Lait de Coco](../../items/s_leche_coco.html), [Bonbon Mental S](../../items/s_caramelo_mente.html), [Bonbon Exp. S](../../items/s_caramelo_exp_s.html), [Tubercule](../../items/s_hierba_intensa.html), [Plume Sprint](../../items/m_pluma_impetu.html) | Arrêtez-vous à 12 tirs par seconde |
 | 4. Multiplicateurs | [Feuille Dorée](../../items/m_hoja_oro.html), [Atq. Spé. +](../../items/s_ataque_especial_x.html), [Insigne de Kalos](../../items/d_emblema_kalos.html), [Point de Mire](../../items/m_blanco.html), [Noigrume Rouge](../../items/m_bonguri_rojo.html) | Atteint le plafond ×3 |
-| 5. Dégâts fixes | [Protéine](../../items/proteina.html), [Plume Force](../../items/s_pluma_musculo.html) et similaires | Environ +8 suffit |
+| 5. Dégâts fixes | [Protéine](../../items/proteina.html), [Plume Force](../../items/s_pluma_musculo.html) et similaires | Les +8 premiers comptent le plus ; ensuite, remplissez les places libres de Lentilles Pouvoir |
 | 6. Arme | [Croc Rasoir](../../items/w_colmillo.html) | Son bonus s'applique à chaque coup après le plafond |
 | 7. À l'impact | [Dentier en Or](../../items/m_dentadura.html), [Métronome](../../items/metronomo.html), [Dent Océan](../../items/m_diente_marino.html), [Galet Blanc](../../items/m_orbe_claro.html), [Bandeau Muscle](../../items/banda_musculo.html), [Ceinture Pro](../../items/cinta_experto.html), [Croc Dragon](../../items/colmillo_dragon.html) | [Dentier en Or](../../items/m_dentadura.html) et [Métronome](../../items/metronomo.html) marchent aussi sur les boucliers |
 | 8. Compagnons | [Boîte Noigrume](../../items/m_caja_bonguri.html) et d'autres [Bis Ball](../../items/f_acopio_ball.html) | Chaque Métamorph copie chaque salve. La [Poche de Capture](../../items/a_bolsillo_captura.html) (avec le [Plongeur Devon](../../items/d_bombona_devon.html) et la [Pile](../../items/d_pila.html)) les multiplie pour une salle de boss |
 | 9. Profondeur | [Morceau Comète](../../items/fragmento_cometa.html), [Lunettes Sages](../../items/gafas_especiales.html), [Pierre Anima](../../items/hw_anima.html) s'il apparaît | Des dégâts qui ne perdent pas de valeur |
-| 10. Survie | [Peau Métal](../../items/revest_metalico.html), [Bouclier Rouillé](../../items/escudo_oxidado.html), [Nœud Destin (Base)](../../items/lazo_destino.html), [Miroir Brisé](../../items/cu_espejo.html), [Évoluroc](../../items/d_mineral_evol.html), [Rappel Max](../../items/d_revivir_maximo.html) | Éviter les coups compte plus que la vie |
+| 10. Survie | [Grosse Racine](../../items/raiz_grande.html) avec le [Lait Meumeu](../../items/leche_mumu.html) (des soins qui suivent vos dégâts, changés en cœurs d'âme quand vous êtes plein), [Peau Métal](../../items/revest_metalico.html), [Bouclier Rouillé](../../items/escudo_oxidado.html), [Nœud Destin (Base)](../../items/lazo_destino.html), [Miroir Brisé](../../items/cu_espejo.html), [Évoluroc](../../items/d_mineral_evol.html), [Rappel Max](../../items/d_revivir_maximo.html) | Éviter les coups compte plus que la vie |
 | 11. Remplissage | [Zinc](../../items/zinc.html) et autre chance, jusqu'à 10 | Augmente les chances de [Dentier en Or](../../items/m_dentadura.html) et [Dent Océan](../../items/m_diente_marino.html) |
 
 ### Une fois l'Herbe Blanche en poche
@@ -139,7 +139,29 @@ L'herbe supprime chaque ligne de stat qui baisse une stat (cadence plus lente, m
 
 L'herbe ne retire que les lignes de stat. Les inconvénients qui font partie d'un effet restent : le ×0,45 de dégâts du [Chantibonbon](../../items/m_dulce_nata.html), la perte de dégâts à distance du Gros Poireau.
 
-**À éviter :** le [Chantibonbon](../../items/m_dulce_nata.html), toujours ; sans Herbe Blanche, les objets qui ralentissent votre cadence ([Lentille Pouvoir](../../items/m_lente_recia.html), [Orbe Toxique](../../items/m_toxisfera.html), [Boulette de Boue](../../items/m_bola_arcilla.html), [Bandeau Choix](../../items/cinta_elegida.html)…) quand votre cadence est près du plancher ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10, les multiplicateurs au-delà d'environ ×5 avant plafond, les dégâts fixes au-delà de +10.
+### Remplir le Sac
+
+Les exemplaires cumulent leurs stats, donc une partie profonde consiste à dépenser les 100 places du [Sac](../mochila100.html) (jusqu'à 150 loin dans l'infini). Chaque stat plafonnée ne demande que quelques exemplaires ; au-delà, c'est perdu (chiffres mesurés sur Pikachu, voir [Maximums théoriques](max-caps.html)) :
+
+| Places | Pour | Combien |
+|---|---|---|
+| [Herbe Blanche](../../items/hierba_blanca.html) | Retire les lignes négatives de tout ce qui suit | 1 |
+| [Vive Griffe](../../items/garra_rapida.html) ou d'autres objets de cadence | 12 tirs par seconde | Environ 6 Vive Griffe (4 au niveau 60) |
+| [Boîte Lentilles](../../items/m_portalentillas.html) | 9 tirs par salve | 4 |
+| Multiplicateurs du plafond : [Feuille Dorée](../../items/m_hoja_oro.html), [Atq. Spé. +](../../items/s_ataque_especial_x.html), [Orbe Perlé](../../items/orbe_lustre.html) | ×3 avec la Lentille Pouvoir | 3 |
+| Objets par coup et pics (Flûte Éon, Plaque, Ceinture Pro, Bandeau Muscle, Gros Poireau, Croc Dragon, Dentier en Or, Écaille Draco…) | Dégâts par-dessus le plafond | Environ 15 |
+| [Boîte Noigrume](../../items/m_caja_bonguri.html) ×2 et [Bis Ball](../../items/f_acopio_ball.html) ×6 | 6 Métamorph | 8 |
+| [Fer](../../items/hierro.html), [PV Plus](../../items/maspv.html) | 12 cœurs | Jusqu'à 9 |
+| [Poudre Claire](../../items/polvo_brillo.html), [Baie Nanana dorée](../../items/s_pinia_dorada.html) | Chance 10 (Dentier en Or 30 %), ou 20 (Dentier en Or 50 %) | 5, ou 25 |
+| Survie : Grosse Racine, Lait Meumeu, Bouclier Rouillé, Peau Métal, Nœud Destin (Base), Miroir Brisé, Évoluroc, Rappel Max | Rester en vie | Environ 8 |
+| Profondeur : Morceau Comète, Lunettes Sages, Pierre Anima | Dégâts qui ignorent la profondeur | 3 |
+| **Tout le reste : [Lentille Pouvoir](../../items/m_lente_recia.html)** | +4 dégâts fixes par exemplaire, sans coût en cadence avec l'herbe | Le reste |
+
+Cela fait environ 65 places avec la chance à 10. Dans un Sac de 150, les 85 autres peuvent être des Lentilles Pouvoir : +340 dégâts fixes sur le papier, qui comptent pour +28,5 (la base de Pikachu est 3,5). Les exemplaires reviennent quand les réserves sont vides, et le [Passe Éon](../../items/a_ticket_eon.html) duplique les piédestaux.
+
+La vitesse, la portée et la vitesse des tirs n'ont pas de plafond, mais elles n'ajoutent pas de dégâts : au-delà d'environ 950 px, un tir en ligne droite touche toujours un mur avant, donc deux ou trois objets de portée suffisent.
+
+**À éviter :** le [Chantibonbon](../../items/m_dulce_nata.html), toujours ; sans Herbe Blanche, les objets qui ralentissent votre cadence ([Lentille Pouvoir](../../items/m_lente_recia.html), [Orbe Toxique](../../items/m_toxisfera.html), [Boulette de Boue](../../items/m_bola_arcilla.html), [Bandeau Choix](../../items/cinta_elegida.html)…) quand votre cadence est près du plancher ; [Patch Talent](../../items/a_parche.html), qui retire toute votre build ; la chance au-delà de 10 (de 20 avec le Dentier en Or), les multiplicateurs au-delà d'environ ×5 avant plafond, plus d'environ 6 Vive Griffe, 4 Boîte Lentilles ou 12 cœurs d'objets de vie.
 
 **Ce que portent les parties les plus profondes du classement :** plusieurs [Bis Ball](../../items/f_acopio_ball.html) avec [Boîte Noigrume](../../items/m_caja_bonguri.html) ; [Galet Blanc](../../items/m_orbe_claro.html), [Lentille Pouvoir](../../items/m_lente_recia.html) avec [Herbe Blanche](../../items/hierba_blanca.html) ; [Dentier en Or](../../items/m_dentadura.html), [Boîte Lentilles](../../items/m_portalentillas.html), [Écaille Draco](../../items/escama_dragon.html), [Lunettes Sable](../../items/m_gafas_aislantes.html) ; et pour survivre [Peau Métal](../../items/revest_metalico.html) (les pièces absorbent les coups), [Bouclier Rouillé](../../items/escudo_oxidado.html) (vos tirs annulent ceux des ennemis) et [Nœud Destin (Base)](../../items/lazo_destino.html) (tirs vers l'arrière). Certaines jouent mono-type, avec plusieurs Joyaux et Plaques de leur type.
 
