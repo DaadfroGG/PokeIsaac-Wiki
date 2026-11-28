@@ -84,6 +84,7 @@ Companion and some weapon projectiles also skip most item effects.
 - A projectile also disappears when it leaves the room, or hits a rock, an obstacle or a pit, unless it can bounce.
 - Ghost projectiles go through rocks.
 - Past 450, projectiles created by other projectiles are removed first.
+- In practice the cap is only reached with many companions copying your shots: a 12 attacks/s build with big volleys, Vs. Recorder and Silver Powder stays under 300 projectiles, because walls remove shots first. With 6 [Repeat Ball](../items/f_acopio_ball.html) Dittos on top (about 1,200 projectiles per second), the cap is reached all the time: your main shots still live at least 0.6 s (about 320 px at shot speed 9) before being removed, so anything within that distance gets hit; projectiles created by other projectiles are mostly removed within a quarter of a second, some on the moment they appear.
 
 </details>
 
