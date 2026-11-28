@@ -191,7 +191,7 @@ Contre 12 boss (étages 4 à 25, 1 minute chacun, 12 cœurs, immobile en tirant)
 
 En profondeur, le Fer perd de sa valeur (un demi-cœur de moins sur un coup de 2,5 cœurs), la Grosse Racine soigne à sa limite tout le combat (environ 21 cœurs par minute avec 12 cœurs), et la Peau Métal vide un porte-monnaie plein (250) en moins de 45 secondes.
 
-**Vitesse** (même test, en tournant autour du boss sans esquiver, 0 à 10 [Mouchoir Choix](../../items/panuelo_elegido.html), vitesse de 4,2 à 13,2) : seulement −5 % à −13 % de dégâts subis. Avec le Bouclier Rouillé, plus de vitesse était souvent pire (étage 100 : 15,7 cœurs par minute à 4,2, 32 à 13,2), car vous sortez de votre propre flot de tirs qui vous protège. La vitesse paie quand vous esquivez vraiment, ce que ce test ne fait pas.
+**Vitesse** (même test, en tournant autour du boss sans esquiver, 0 à 10 [Mouchoir Choix](../../items/panuelo_elegido.html), vitesse de 4,2 à 13,2) : seulement −5 % à −13 % de dégâts subis. Avec le Bouclier Rouillé, plus de vitesse était souvent pire (étage 100 : 15,7 cœurs par minute à 4,2, 32 à 13,2), très probablement parce que vous sortez de votre propre flot de tirs, qui est ce qui vous protège. La vitesse paie quand vous esquivez vraiment, ce que ce test ne fait pas.
 
 Contre un boss [Miroir](../afijo_espejo.html), une build à Métamorph sans Bouclier Rouillé perdait 69,8 cœurs par minute, 19,3 avec. Ce sont tous des objets passifs, donc ils laissent votre emplacement d'objet actif libre pour la [Poche de Capture](../../items/a_bolsillo_captura.html). Ils se combinent : trois ensemble font plus que diviser les dégâts par deux. Le [Rappel Max](../../items/d_revivir_maximo.html) n'a pas été mesuré : il vous sauve une fois, quel que soit le combat.
 

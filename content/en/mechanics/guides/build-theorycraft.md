@@ -191,7 +191,7 @@ Against 12 bosses (floors 4 to 25, 1 minute each, 12 hearts, standing still and 
 
 Deep down, Iron loses value (half a heart off a 2.5-heart hit), Big Root heals at its limit all fight long (about 21 hearts per minute with 12 hearts), and Metal Coat empties a full wallet (250) in under 45 seconds.
 
-**Speed** (same test, circling the boss without dodging, 0 to 10 [Choice Scarf](../../items/panuelo_elegido.html), speed 4.2 to 13.2): only −5 % to −13 % damage taken. With Rusted Shield, more speed was often worse (floor 100: 15.7 hearts per minute at 4.2, 32 at 13.2), because you leave your own stream of shots that protects you. Speed pays off when you actively dodge, which this test doesn't do.
+**Speed** (same test, circling the boss without dodging, 0 to 10 [Choice Scarf](../../items/panuelo_elegido.html), speed 4.2 to 13.2): only −5 % to −13 % damage taken. With Rusted Shield, more speed was often worse (floor 100: 15.7 hearts per minute at 4.2, 32 at 13.2), most likely because you move out of your own stream of shots, which is what protects you. Speed pays off when you actively dodge, which this test doesn't do.
 
 Against a [Mirror](../afijo_espejo.html) boss, a Ditto build without Rusted Shield lost 69.8 hearts per minute, 19.3 with it. They are all passives, so they leave your active slot free for [Catching Pocket](../../items/a_bolsillo_captura.html). They combine: three of them together more than halve the damage. [Max Revive](../../items/d_revivir_maximo.html) wasn't measured: it saves you once, whatever the fight.
 
