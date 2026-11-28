@@ -54,10 +54,11 @@ Les dégâts d'un tir se construisent en deux moitiés. La première est la stat
 | + Baie Lansat à un cœur et Loupe (chaque tir est un critique ×3) | 290,6 | ×27,7 |
 | + un ennemi doublement faible à Électrik (Eau/Vol) | 653,9 | ×62,3 |
 | + niveau 60 | 962,5 | ×91,7 |
+| + les cinq pics ci-dessous sur le même tir | 98 565 | ×9 387 |
 
 Un chromatique dont la stat phare est les dégâts ajouterait encore jusqu'à ×1,12.
 
-**Pics occasionnels**, sur certains tirs seulement : [Dentier en Or](../../items/m_dentadura.html) ×3,2, [Joyau Normal](../../items/gema_normal.html) ×4 sur le premier tir d'un combat, [Écaille Draco](../../items/escama_dragon.html) ×2 un tir sur quatre, [Assurance Échec](../../items/seguro_fallo.html) ×2 après un tir dans un mur, [Pierre Soleil](../../items/p_solar.html) jusqu'à ×2 après une pause. D'autres objets par coup sont dans le [guide du mode infini](build-theorycraft.html).
+**Pics occasionnels**, sur certains tirs seulement : [Dentier en Or](../../items/m_dentadura.html) ×3,2, [Joyau Normal](../../items/gema_normal.html) ×4 sur le premier tir d'un combat, [Écaille Draco](../../items/escama_dragon.html) ×2 un tir sur quatre, [Assurance Échec](../../items/seguro_fallo.html) ×2 après un tir dans un mur, [Pierre Soleil](../../items/p_solar.html) jusqu'à ×2 après une pause. Ils se multiplient tous quand ils tombent sur le même tir : ×102,4 avec les cinq (mesuré), par-dessus tout ce qui précède. Les aligner est rare : premier tir d'un combat, tiré après 2 s de pause, après un tir dans un mur, qui soit un quatrième tir et une dent en or. D'autres objets par coup sont dans le [guide du mode infini](build-theorycraft.html).
 
 ## Combien de tirs ?
 

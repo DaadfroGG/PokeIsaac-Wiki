@@ -54,10 +54,11 @@ Your shot damage is built in two halves. The first half is the Damage stat on th
 | + Lansat Berry at one heart and Wide Lens (every shot a ×3 crit) | 290.6 | ×27.7 |
 | + an enemy weak twice to Electric (Water/Flying) | 653.9 | ×62.3 |
 | + level 60 | 962.5 | ×91.7 |
+| + all five spikes below on the same shot | 98,565 | ×9,387 |
 
 A shiny whose standout stat is damage would add up to another ×1.12.
 
-**Occasional spikes**, on some shots only: [Gold Teeth](../../items/m_dentadura.html) ×3.2, [Normal Gem](../../items/gema_normal.html) ×4 on the first shot of a fight, [Dragon Scale](../../items/escama_dragon.html) ×2 every fourth shot, [Blunder Policy](../../items/seguro_fallo.html) ×2 after a shot hits a wall, [Sun Stone](../../items/p_solar.html) up to ×2 after resting. More per-hit items are in the [endless build guide](build-theorycraft.html).
+**Occasional spikes**, on some shots only: [Gold Teeth](../../items/m_dentadura.html) ×3.2, [Normal Gem](../../items/gema_normal.html) ×4 on the first shot of a fight, [Dragon Scale](../../items/escama_dragon.html) ×2 every fourth shot, [Blunder Policy](../../items/seguro_fallo.html) ×2 after a shot hits a wall, [Sun Stone](../../items/p_solar.html) up to ×2 after resting. They all multiply when they land on the same shot: ×102.4 with all five (measured), on top of everything above. Lining them up is rare: the first shot of a fight, fired after 2 s of rest, after a wall hit, being a fourth shot and a gold tooth. More per-hit items are in the [endless build guide](build-theorycraft.html).
 
 ## How many shots?
 
